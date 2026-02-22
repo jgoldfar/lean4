@@ -1301,7 +1301,7 @@ static const lean_string_object l_Lean_Elab_Term_ElabElim_finalize___lam__0___cl
 static const lean_object* l_Lean_Elab_Term_ElabElim_finalize___lam__0___closed__16 = (const lean_object*)&l_Lean_Elab_Term_ElabElim_finalize___lam__0___closed__16_value;
 static const lean_string_object l_Lean_Elab_Term_ElabElim_finalize___lam__0___closed__17_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 33, .m_capacity = 33, .m_length = 32, .m_data = "Lean.Elab.Term.ElabElim.finalize"};
 static const lean_object* l_Lean_Elab_Term_ElabElim_finalize___lam__0___closed__17 = (const lean_object*)&l_Lean_Elab_Term_ElabElim_finalize___lam__0___closed__17_value;
-static const lean_string_object l_Lean_Elab_Term_ElabElim_finalize___lam__0___closed__18_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 101, .m_capacity = 101, .m_length = 100, .m_data = "assertion violation: ( __do_lift._@.Lean.Elab.App.725447568._hygCtx._hyg.296.0 ).args.isEmpty\n      "};
+static const lean_string_object l_Lean_Elab_Term_ElabElim_finalize___lam__0___closed__18_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 101, .m_capacity = 101, .m_length = 100, .m_data = "assertion violation: ( __do_lift._@.Lean.Elab.App.725447568._hygCtx._hyg.306.0 ).args.isEmpty\n      "};
 static const lean_object* l_Lean_Elab_Term_ElabElim_finalize___lam__0___closed__18 = (const lean_object*)&l_Lean_Elab_Term_ElabElim_finalize___lam__0___closed__18_value;
 lean_object* l_mkPanicMessageWithDecl(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 static lean_once_cell_t l_Lean_Elab_Term_ElabElim_finalize___lam__0___closed__19_once = LEAN_ONCE_CELL_INITIALIZER;
