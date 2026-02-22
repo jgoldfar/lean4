@@ -24,10 +24,19 @@ instance instX (n : Nat) : X where
 -- isDefEqArgs bumps to .instances for instance-implicit param of X.x
 example : (instX a).x = (instX b).x := by simp
 
--- Test 2: plain simp, @[reducible] X.x (BROKEN on master, fixed by isDefEqProj change)
--- isDefEqDelta unfolds X.x to .proj form, isDefEqProj needs withInstanceConfig
+-- Test 2: plain simp, @[reducible] X.x
+-- With backward.whnf.reducibleClassField = false: isDefEqDelta unfolds X.x to .proj form,
+-- isDefEqProj bumps to .instances via withInstanceConfig.
+-- With backward.whnf.reducibleClassField = true: tryHeuristic in isDefEqDelta applies the
+-- argument-comparison heuristic, and isDefEqArgs bumps to .instances for instance-implicit params.
 set_option allowUnsafeReducibility true in
 attribute [reducible] X.x in
+example : (instX a).x = (instX b).x := by simp
+
+-- Test 2b: same as Test 2 with backward.whnf.reducibleClassField explicitly enabled
+set_option allowUnsafeReducibility true in
+attribute [reducible] X.x in
+set_option backward.whnf.reducibleClassField true in
 example : (instX a).x = (instX b).x := by simp
 
 -- Test 3: simp [X.x] with semireducible args exposes stuck .proj node
