@@ -8,6 +8,7 @@ module
 prelude
 public import Init.Data.Order.LemmasExtra  -- shake: keep (instance inlined by `haveI`)
 public import Init.Data.Order.FactoriesExtra
+public import Init.Data.Order.Factories -- shake: keep (autoparam filling `Min.leftLeaningOfLE`)
 import Init.Data.Bool
 import Init.Data.Order.Lemmas
 
@@ -91,10 +92,11 @@ public structure Packages.PreorderOfLEArgs (α : Type u) where
       have := lt_iff
       DecidableLT α := by
     extract_lets
-    haveI := @_root_.Std.LawfulOrderLT.mk (lt_iff := by assumption) ..
     first
     | infer_instance
+    | (haveI := @_root_.Std.LawfulOrderLT.mk (lt_iff := by assumption) ..; infer_instance)
     | exact _root_.Std.FactoryInstances.decidableLTOfLE
+    | (haveI := @_root_.Std.LawfulOrderLT.mk (lt_iff := by assumption) ..; exact _root_.Std.FactoryInstances.decidableLTOfLE)
     | fail "Failed to automatically derive that `LT` is decidable. \
             Please ensure that a `DecidableLT` instance can be synthesized or \
             manually provide the field `decidableLT`."
