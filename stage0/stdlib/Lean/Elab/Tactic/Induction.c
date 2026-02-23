@@ -7768,7 +7768,7 @@ block_31:
 if (x_23 == 0)
 {
 uint8_t x_24; lean_object* x_25; 
-lean_dec_ref(x_22);
+lean_dec_ref(x_21);
 x_24 = 2;
 lean_inc(x_20);
 x_25 = l_Lean_MVarId_setKind___redArg(x_20, x_24, x_8);
@@ -7818,7 +7818,7 @@ lean_dec_ref(x_7);
 lean_dec_ref(x_5);
 lean_dec_ref(x_4);
 x_30 = lean_alloc_ctor(1, 1, 0);
-lean_ctor_set(x_30, 0, x_22);
+lean_ctor_set(x_30, 0, x_21);
 return x_30;
 }
 }
@@ -7831,15 +7831,15 @@ if (x_34 == 0)
 uint8_t x_35; 
 lean_inc_ref(x_32);
 x_35 = l_Lean_Exception_isRuntime(x_32);
-x_21 = lean_box(0);
-x_22 = x_32;
+x_21 = x_32;
+x_22 = lean_box(0);
 x_23 = x_35;
 goto block_31;
 }
 else
 {
-x_21 = lean_box(0);
-x_22 = x_32;
+x_21 = x_32;
+x_22 = lean_box(0);
 x_23 = x_34;
 goto block_31;
 }
@@ -8013,14 +8013,14 @@ goto block_75;
 block_44:
 {
 lean_object* x_39; lean_object* x_40; lean_object* x_41; lean_object* x_42; lean_object* x_43; 
-x_39 = l_Array_toSubarray___redArg(x_33, x_37, x_38);
+x_39 = l_Array_toSubarray___redArg(x_34, x_37, x_38);
 x_40 = l_Subarray_copy___redArg(x_39);
-x_41 = l_Subarray_copy___redArg(x_36);
+x_41 = l_Subarray_copy___redArg(x_35);
 x_42 = lean_alloc_ctor(0, 6, 0);
-lean_ctor_set(x_42, 0, x_32);
+lean_ctor_set(x_42, 0, x_36);
 lean_ctor_set(x_42, 1, x_40);
-lean_ctor_set(x_42, 2, x_34);
-lean_ctor_set(x_42, 3, x_31);
+lean_ctor_set(x_42, 2, x_31);
+lean_ctor_set(x_42, 3, x_33);
 lean_ctor_set(x_42, 4, x_29);
 lean_ctor_set(x_42, 5, x_41);
 if (lean_is_scalar(x_30)) {
@@ -8078,12 +8078,12 @@ x_62 = lean_array_get_size(x_60);
 x_63 = lean_nat_dec_le(x_61, x_13);
 if (x_63 == 0)
 {
-x_31 = x_45;
-x_32 = x_56;
-x_33 = x_60;
-x_34 = x_47;
-x_35 = lean_box(0);
-x_36 = x_54;
+x_31 = x_47;
+x_32 = lean_box(0);
+x_33 = x_45;
+x_34 = x_60;
+x_35 = x_54;
+x_36 = x_56;
 x_37 = x_61;
 x_38 = x_62;
 goto block_44;
@@ -8091,12 +8091,12 @@ goto block_44;
 else
 {
 lean_dec(x_61);
-x_31 = x_45;
-x_32 = x_56;
-x_33 = x_60;
-x_34 = x_47;
-x_35 = lean_box(0);
-x_36 = x_54;
+x_31 = x_47;
+x_32 = lean_box(0);
+x_33 = x_45;
+x_34 = x_60;
+x_35 = x_54;
+x_36 = x_56;
 x_37 = x_13;
 x_38 = x_62;
 goto block_44;
