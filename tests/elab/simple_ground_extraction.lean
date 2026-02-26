@@ -3,357 +3,390 @@
 
 
 /--
-trace: [Compiler.IR] [result]
+trace: [Compiler.simpleGround] Marked stringTest1._closed_0 as simple ground expr
+[Compiler.simpleGround] Marked stringTest1 as simple ground expr
+[Compiler.saveImpure] size: 1
     def stringTest1._closed_0 : obj :=
-      let x_1 : obj := "literal";
-      ret x_1
+      let _x.1 := "literal";
+      return _x.1
+[Compiler.saveImpure] size: 1
     def stringTest1 : obj :=
-      let x_1 : obj := stringTest1._closed_0;
-      ret x_1
-[compiler.ir.simple_ground] Marked stringTest1._closed_0 as simple ground expr
-[compiler.ir.simple_ground] Marked stringTest1 as simple ground expr
+      let _x.1 := stringTest1._closed_0;
+      return _x.1
 -/
 #guard_msgs in
-set_option trace.compiler.ir.result true in
-set_option trace.compiler.ir.simple_ground true in
+set_option trace.Compiler.saveImpure true in
+set_option trace.Compiler.simpleGround true in
 def stringTest1 : String := "literal"
 
 /--
-trace: [Compiler.IR] [result]
+trace: [Compiler.simpleGround] Marked stringTest2._closed_0 as simple ground expr
+[Compiler.simpleGround] Marked stringTest2._closed_1 as simple ground expr
+[Compiler.simpleGround] Marked stringTest2._closed_2 as simple ground expr
+[Compiler.simpleGround] Marked stringTest2._closed_3 as simple ground expr
+[Compiler.simpleGround] Marked stringTest2._closed_4 as simple ground expr
+[Compiler.simpleGround] Marked stringTest2._closed_5 as simple ground expr
+[Compiler.simpleGround] Marked stringTest2 as simple ground expr
+[Compiler.saveImpure] size: 1
     def stringTest2._closed_0 : obj :=
-      let x_1 : obj := "A";
-      ret x_1
+      let _x.1 := "A";
+      return _x.1
+[Compiler.saveImpure] size: 1
     def stringTest2._closed_1 : obj :=
-      let x_1 : obj := "B";
-      ret x_1
+      let _x.1 := "B";
+      return _x.1
+[Compiler.saveImpure] size: 1
     def stringTest2._closed_2 : obj :=
-      let x_1 : obj := "C";
-      ret x_1
+      let _x.1 := "C";
+      return _x.1
+[Compiler.saveImpure] size: 3
     def stringTest2._closed_3 : tobj :=
-      let x_1 : tagged := ctor_0[List.nil];
-      let x_2 : obj := stringTest2._closed_2;
-      let x_3 : obj := ctor_1[List.cons] x_2 x_1;
-      ret x_3
+      let _x.1 := ctor_0[List.nil];
+      let _x.2 := stringTest2._closed_2;
+      let _x.3 := ctor_1[List.cons] _x.2 _x.1;
+      return _x.3
+[Compiler.saveImpure] size: 3
     def stringTest2._closed_4 : tobj :=
-      let x_1 : tobj := stringTest2._closed_3;
-      let x_2 : obj := stringTest2._closed_1;
-      let x_3 : obj := ctor_1[List.cons] x_2 x_1;
-      ret x_3
+      let _x.1 := stringTest2._closed_3;
+      let _x.2 := stringTest2._closed_1;
+      let _x.3 := ctor_1[List.cons] _x.2 _x.1;
+      return _x.3
+[Compiler.saveImpure] size: 3
     def stringTest2._closed_5 : tobj :=
-      let x_1 : tobj := stringTest2._closed_4;
-      let x_2 : obj := stringTest2._closed_0;
-      let x_3 : obj := ctor_1[List.cons] x_2 x_1;
-      ret x_3
+      let _x.1 := stringTest2._closed_4;
+      let _x.2 := stringTest2._closed_0;
+      let _x.3 := ctor_1[List.cons] _x.2 _x.1;
+      return _x.3
+[Compiler.saveImpure] size: 1
     def stringTest2 : tobj :=
-      let x_1 : tobj := stringTest2._closed_5;
-      ret x_1
-[compiler.ir.simple_ground] Marked stringTest2._closed_0 as simple ground expr
-[compiler.ir.simple_ground] Marked stringTest2._closed_1 as simple ground expr
-[compiler.ir.simple_ground] Marked stringTest2._closed_2 as simple ground expr
-[compiler.ir.simple_ground] Marked stringTest2._closed_3 as simple ground expr
-[compiler.ir.simple_ground] Marked stringTest2._closed_4 as simple ground expr
-[compiler.ir.simple_ground] Marked stringTest2._closed_5 as simple ground expr
-[compiler.ir.simple_ground] Marked stringTest2 as simple ground expr
+      let _x.1 := stringTest2._closed_5;
+      return _x.1
 -/
 #guard_msgs in
-set_option trace.compiler.ir.result true in
-set_option trace.compiler.ir.simple_ground true in
+set_option trace.Compiler.saveImpure true in
+set_option trace.Compiler.simpleGround true in
 def stringTest2 : List String := ["A", "B", "C"]
 
 open Lean
 
 /--
-trace: [Compiler.IR] [result]
+trace: [Compiler.simpleGround] Marked nameTest1._closed_0 as simple ground expr
+[Compiler.simpleGround] Marked nameTest1 as simple ground expr
+[Compiler.saveImpure] size: 2
     def nameTest1._closed_0 : tobj :=
-      let x_1 : obj := stringTest2._closed_0;
-      let x_2 : tobj := Lean.Name.mkStr1 x_1;
-      ret x_2
+      let _x.1 := stringTest2._closed_0;
+      let _x.2 := Lean.Name.mkStr1 _x.1;
+      return _x.2
+[Compiler.saveImpure] size: 1
     def nameTest1 : tobj :=
-      let x_1 : tobj := nameTest1._closed_0;
-      ret x_1
-[compiler.ir.simple_ground] Marked nameTest1._closed_0 as simple ground expr
-[compiler.ir.simple_ground] Marked nameTest1 as simple ground expr
+      let _x.1 := nameTest1._closed_0;
+      return _x.1
 -/
 #guard_msgs in
-set_option trace.compiler.ir.result true in
-set_option trace.compiler.ir.simple_ground true in
+set_option trace.Compiler.saveImpure true in
+set_option trace.Compiler.simpleGround true in
 def nameTest1 : Name := `A
 
 /--
-trace: [Compiler.IR] [result]
+trace: [Compiler.simpleGround] Marked nameTest2._closed_0 as simple ground expr
+[Compiler.simpleGround] Marked nameTest2 as simple ground expr
+[Compiler.saveImpure] size: 3
     def nameTest2._closed_0 : tobj :=
-      let x_1 : obj := stringTest2._closed_1;
-      let x_2 : obj := stringTest2._closed_0;
-      let x_3 : tobj := Lean.Name.mkStr2 x_2 x_1;
-      ret x_3
+      let _x.1 := stringTest2._closed_1;
+      let _x.2 := stringTest2._closed_0;
+      let _x.3 := Lean.Name.mkStr2 _x.2 _x.1;
+      return _x.3
+[Compiler.saveImpure] size: 1
     def nameTest2 : tobj :=
-      let x_1 : tobj := nameTest2._closed_0;
-      ret x_1
-[compiler.ir.simple_ground] Marked nameTest2._closed_0 as simple ground expr
-[compiler.ir.simple_ground] Marked nameTest2 as simple ground expr
+      let _x.1 := nameTest2._closed_0;
+      return _x.1
 -/
 #guard_msgs in
-set_option trace.compiler.ir.result true in
-set_option trace.compiler.ir.simple_ground true in
+set_option trace.Compiler.saveImpure true in
+set_option trace.Compiler.simpleGround true in
 def nameTest2 : Name := `A.B
 
 /--
-trace: [Compiler.IR] [result]
+trace: [Compiler.simpleGround] Marked nameTest3._closed_0 as simple ground expr
+[Compiler.simpleGround] Marked nameTest3 as simple ground expr
+[Compiler.saveImpure] size: 4
     def nameTest3._closed_0 : tobj :=
-      let x_1 : obj := stringTest2._closed_2;
-      let x_2 : obj := stringTest2._closed_1;
-      let x_3 : obj := stringTest2._closed_0;
-      let x_4 : tobj := Lean.Name.mkStr3 x_3 x_2 x_1;
-      ret x_4
+      let _x.1 := stringTest2._closed_2;
+      let _x.2 := stringTest2._closed_1;
+      let _x.3 := stringTest2._closed_0;
+      let _x.4 := Lean.Name.mkStr3 _x.3 _x.2 _x.1;
+      return _x.4
+[Compiler.saveImpure] size: 1
     def nameTest3 : tobj :=
-      let x_1 : tobj := nameTest3._closed_0;
-      ret x_1
-[compiler.ir.simple_ground] Marked nameTest3._closed_0 as simple ground expr
-[compiler.ir.simple_ground] Marked nameTest3 as simple ground expr
+      let _x.1 := nameTest3._closed_0;
+      return _x.1
 -/
 #guard_msgs in
-set_option trace.compiler.ir.result true in
-set_option trace.compiler.ir.simple_ground true in
+set_option trace.Compiler.saveImpure true in
+set_option trace.Compiler.simpleGround true in
 def nameTest3 : Name := `A.B.C
 
 /--
-trace: [Compiler.IR] [result]
+trace: [Compiler.simpleGround] Marked nameTest4._closed_0 as simple ground expr
+[Compiler.simpleGround] Marked nameTest4._closed_1 as simple ground expr
+[Compiler.simpleGround] Marked nameTest4 as simple ground expr
+[Compiler.saveImpure] size: 1
     def nameTest4._closed_0 : obj :=
-      let x_1 : obj := "D";
-      ret x_1
+      let _x.1 := "D";
+      return _x.1
+[Compiler.saveImpure] size: 5
     def nameTest4._closed_1 : tobj :=
-      let x_1 : obj := nameTest4._closed_0;
-      let x_2 : obj := stringTest2._closed_2;
-      let x_3 : obj := stringTest2._closed_1;
-      let x_4 : obj := stringTest2._closed_0;
-      let x_5 : tobj := Lean.Name.mkStr4 x_4 x_3 x_2 x_1;
-      ret x_5
+      let _x.1 := nameTest4._closed_0;
+      let _x.2 := stringTest2._closed_2;
+      let _x.3 := stringTest2._closed_1;
+      let _x.4 := stringTest2._closed_0;
+      let _x.5 := Lean.Name.mkStr4 _x.4 _x.3 _x.2 _x.1;
+      return _x.5
+[Compiler.saveImpure] size: 1
     def nameTest4 : tobj :=
-      let x_1 : tobj := nameTest4._closed_1;
-      ret x_1
-[compiler.ir.simple_ground] Marked nameTest4._closed_0 as simple ground expr
-[compiler.ir.simple_ground] Marked nameTest4._closed_1 as simple ground expr
-[compiler.ir.simple_ground] Marked nameTest4 as simple ground expr
+      let _x.1 := nameTest4._closed_1;
+      return _x.1
 -/
 #guard_msgs in
-set_option trace.compiler.ir.result true in
-set_option trace.compiler.ir.simple_ground true in
+set_option trace.Compiler.saveImpure true in
+set_option trace.Compiler.simpleGround true in
 def nameTest4 : Name := `A.B.C.D
 
 /--
-trace: [Compiler.IR] [result]
+trace: [Compiler.simpleGround] Marked nameTest5._closed_0 as simple ground expr
+[Compiler.simpleGround] Marked nameTest5._closed_1 as simple ground expr
+[Compiler.simpleGround] Marked nameTest5 as simple ground expr
+[Compiler.saveImpure] size: 1
     def nameTest5._closed_0 : obj :=
-      let x_1 : obj := "E";
-      ret x_1
+      let _x.1 := "E";
+      return _x.1
+[Compiler.saveImpure] size: 6
     def nameTest5._closed_1 : tobj :=
-      let x_1 : obj := nameTest5._closed_0;
-      let x_2 : obj := nameTest4._closed_0;
-      let x_3 : obj := stringTest2._closed_2;
-      let x_4 : obj := stringTest2._closed_1;
-      let x_5 : obj := stringTest2._closed_0;
-      let x_6 : tobj := Lean.Name.mkStr5 x_5 x_4 x_3 x_2 x_1;
-      ret x_6
+      let _x.1 := nameTest5._closed_0;
+      let _x.2 := nameTest4._closed_0;
+      let _x.3 := stringTest2._closed_2;
+      let _x.4 := stringTest2._closed_1;
+      let _x.5 := stringTest2._closed_0;
+      let _x.6 := Lean.Name.mkStr5 _x.5 _x.4 _x.3 _x.2 _x.1;
+      return _x.6
+[Compiler.saveImpure] size: 1
     def nameTest5 : tobj :=
-      let x_1 : tobj := nameTest5._closed_1;
-      ret x_1
-[compiler.ir.simple_ground] Marked nameTest5._closed_0 as simple ground expr
-[compiler.ir.simple_ground] Marked nameTest5._closed_1 as simple ground expr
-[compiler.ir.simple_ground] Marked nameTest5 as simple ground expr
+      let _x.1 := nameTest5._closed_1;
+      return _x.1
 -/
 #guard_msgs in
-set_option trace.compiler.ir.result true in
-set_option trace.compiler.ir.simple_ground true in
+set_option trace.Compiler.saveImpure true in
+set_option trace.Compiler.simpleGround true in
 def nameTest5 : Name := `A.B.C.D.E
 
 /--
-trace: [Compiler.IR] [result]
+trace: [Compiler.simpleGround] Marked nameTest6._closed_0 as simple ground expr
+[Compiler.simpleGround] Marked nameTest6._closed_1 as simple ground expr
+[Compiler.simpleGround] Marked nameTest6 as simple ground expr
+[Compiler.saveImpure] size: 1
     def nameTest6._closed_0 : obj :=
-      let x_1 : obj := "F";
-      ret x_1
+      let _x.1 := "F";
+      return _x.1
+[Compiler.saveImpure] size: 7
     def nameTest6._closed_1 : tobj :=
-      let x_1 : obj := nameTest6._closed_0;
-      let x_2 : obj := nameTest5._closed_0;
-      let x_3 : obj := nameTest4._closed_0;
-      let x_4 : obj := stringTest2._closed_2;
-      let x_5 : obj := stringTest2._closed_1;
-      let x_6 : obj := stringTest2._closed_0;
-      let x_7 : tobj := Lean.Name.mkStr6 x_6 x_5 x_4 x_3 x_2 x_1;
-      ret x_7
+      let _x.1 := nameTest6._closed_0;
+      let _x.2 := nameTest5._closed_0;
+      let _x.3 := nameTest4._closed_0;
+      let _x.4 := stringTest2._closed_2;
+      let _x.5 := stringTest2._closed_1;
+      let _x.6 := stringTest2._closed_0;
+      let _x.7 := Lean.Name.mkStr6 _x.6 _x.5 _x.4 _x.3 _x.2 _x.1;
+      return _x.7
+[Compiler.saveImpure] size: 1
     def nameTest6 : tobj :=
-      let x_1 : tobj := nameTest6._closed_1;
-      ret x_1
-[compiler.ir.simple_ground] Marked nameTest6._closed_0 as simple ground expr
-[compiler.ir.simple_ground] Marked nameTest6._closed_1 as simple ground expr
-[compiler.ir.simple_ground] Marked nameTest6 as simple ground expr
+      let _x.1 := nameTest6._closed_1;
+      return _x.1
 -/
 #guard_msgs in
-set_option trace.compiler.ir.result true in
-set_option trace.compiler.ir.simple_ground true in
+set_option trace.Compiler.saveImpure true in
+set_option trace.Compiler.simpleGround true in
 def nameTest6 : Name := `A.B.C.D.E.F
 
 /--
-trace: [Compiler.IR] [result]
+trace: [Compiler.simpleGround] Marked nameTest7._closed_0 as simple ground expr
+[Compiler.simpleGround] Marked nameTest7._closed_1 as simple ground expr
+[Compiler.simpleGround] Marked nameTest7 as simple ground expr
+[Compiler.saveImpure] size: 1
     def nameTest7._closed_0 : obj :=
-      let x_1 : obj := "G";
-      ret x_1
+      let _x.1 := "G";
+      return _x.1
+[Compiler.saveImpure] size: 8
     def nameTest7._closed_1 : tobj :=
-      let x_1 : obj := nameTest7._closed_0;
-      let x_2 : obj := nameTest6._closed_0;
-      let x_3 : obj := nameTest5._closed_0;
-      let x_4 : obj := nameTest4._closed_0;
-      let x_5 : obj := stringTest2._closed_2;
-      let x_6 : obj := stringTest2._closed_1;
-      let x_7 : obj := stringTest2._closed_0;
-      let x_8 : tobj := Lean.Name.mkStr7 x_7 x_6 x_5 x_4 x_3 x_2 x_1;
-      ret x_8
+      let _x.1 := nameTest7._closed_0;
+      let _x.2 := nameTest6._closed_0;
+      let _x.3 := nameTest5._closed_0;
+      let _x.4 := nameTest4._closed_0;
+      let _x.5 := stringTest2._closed_2;
+      let _x.6 := stringTest2._closed_1;
+      let _x.7 := stringTest2._closed_0;
+      let _x.8 := Lean.Name.mkStr7 _x.7 _x.6 _x.5 _x.4 _x.3 _x.2 _x.1;
+      return _x.8
+[Compiler.saveImpure] size: 1
     def nameTest7 : tobj :=
-      let x_1 : tobj := nameTest7._closed_1;
-      ret x_1
-[compiler.ir.simple_ground] Marked nameTest7._closed_0 as simple ground expr
-[compiler.ir.simple_ground] Marked nameTest7._closed_1 as simple ground expr
-[compiler.ir.simple_ground] Marked nameTest7 as simple ground expr
+      let _x.1 := nameTest7._closed_1;
+      return _x.1
 -/
 #guard_msgs in
-set_option trace.compiler.ir.result true in
-set_option trace.compiler.ir.simple_ground true in
+set_option trace.Compiler.saveImpure true in
+set_option trace.Compiler.simpleGround true in
 def nameTest7 : Name := `A.B.C.D.E.F.G
 
 /--
-trace: [Compiler.IR] [result]
+trace: [Compiler.simpleGround] Marked nameTest8._closed_0 as simple ground expr
+[Compiler.simpleGround] Marked nameTest8._closed_1 as simple ground expr
+[Compiler.simpleGround] Marked nameTest8 as simple ground expr
+[Compiler.saveImpure] size: 1
     def nameTest8._closed_0 : obj :=
-      let x_1 : obj := "H";
-      ret x_1
+      let _x.1 := "H";
+      return _x.1
+[Compiler.saveImpure] size: 9
     def nameTest8._closed_1 : tobj :=
-      let x_1 : obj := nameTest8._closed_0;
-      let x_2 : obj := nameTest7._closed_0;
-      let x_3 : obj := nameTest6._closed_0;
-      let x_4 : obj := nameTest5._closed_0;
-      let x_5 : obj := nameTest4._closed_0;
-      let x_6 : obj := stringTest2._closed_2;
-      let x_7 : obj := stringTest2._closed_1;
-      let x_8 : obj := stringTest2._closed_0;
-      let x_9 : tobj := Lean.Name.mkStr8 x_8 x_7 x_6 x_5 x_4 x_3 x_2 x_1;
-      ret x_9
+      let _x.1 := nameTest8._closed_0;
+      let _x.2 := nameTest7._closed_0;
+      let _x.3 := nameTest6._closed_0;
+      let _x.4 := nameTest5._closed_0;
+      let _x.5 := nameTest4._closed_0;
+      let _x.6 := stringTest2._closed_2;
+      let _x.7 := stringTest2._closed_1;
+      let _x.8 := stringTest2._closed_0;
+      let _x.9 := Lean.Name.mkStr8 _x.8 _x.7 _x.6 _x.5 _x.4 _x.3 _x.2 _x.1;
+      return _x.9
+[Compiler.saveImpure] size: 1
     def nameTest8 : tobj :=
-      let x_1 : tobj := nameTest8._closed_1;
-      ret x_1
-[compiler.ir.simple_ground] Marked nameTest8._closed_0 as simple ground expr
-[compiler.ir.simple_ground] Marked nameTest8._closed_1 as simple ground expr
-[compiler.ir.simple_ground] Marked nameTest8 as simple ground expr
+      let _x.1 := nameTest8._closed_1;
+      return _x.1
 -/
 #guard_msgs in
-set_option trace.compiler.ir.result true in
-set_option trace.compiler.ir.simple_ground true in
+set_option trace.Compiler.saveImpure true in
+set_option trace.Compiler.simpleGround true in
 def nameTest8 : Name := `A.B.C.D.E.F.G.H
 
 /--
-trace: [Compiler.IR] [result]
+trace: [Compiler.simpleGround] Marked nameTest9._closed_0 as simple ground expr
+[Compiler.simpleGround] Marked nameTest9._closed_1 as simple ground expr
+[Compiler.simpleGround] Marked nameTest9._closed_2 as simple ground expr
+[Compiler.simpleGround] Marked nameTest9._closed_3 as simple ground expr
+[Compiler.simpleGround] Marked nameTest9._closed_4 as simple ground expr
+[Compiler.simpleGround] Marked nameTest9._closed_5 as simple ground expr
+[Compiler.simpleGround] Marked nameTest9._closed_6 as simple ground expr
+[Compiler.simpleGround] Marked nameTest9._closed_7 as simple ground expr
+[Compiler.simpleGround] Marked nameTest9._closed_8 as simple ground expr
+[Compiler.simpleGround] Marked nameTest9._closed_9 as simple ground expr
+[Compiler.simpleGround] Marked nameTest9 as simple ground expr
+[Compiler.saveImpure] size: 3
     def nameTest9._closed_0 : tobj :=
-      let x_1 : obj := stringTest2._closed_0;
-      let x_2 : tagged := ctor_0[Lean.Name.anonymous._impl];
-      let x_3 : tobj := Lean.Name.str._override x_2 x_1;
-      ret x_3
+      let _x.1 := stringTest2._closed_0;
+      let _x.2 := ctor_0[Lean.Name.anonymous._impl];
+      let _x.3 := Lean.Name.str._override _x.2 _x.1;
+      return _x.3
+[Compiler.saveImpure] size: 3
     def nameTest9._closed_1 : tobj :=
-      let x_1 : obj := stringTest2._closed_1;
-      let x_2 : tobj := nameTest9._closed_0;
-      let x_3 : tobj := Lean.Name.str._override x_2 x_1;
-      ret x_3
+      let _x.1 := stringTest2._closed_1;
+      let _x.2 := nameTest9._closed_0;
+      let _x.3 := Lean.Name.str._override _x.2 _x.1;
+      return _x.3
+[Compiler.saveImpure] size: 3
     def nameTest9._closed_2 : tobj :=
-      let x_1 : obj := stringTest2._closed_2;
-      let x_2 : tobj := nameTest9._closed_1;
-      let x_3 : tobj := Lean.Name.str._override x_2 x_1;
-      ret x_3
+      let _x.1 := stringTest2._closed_2;
+      let _x.2 := nameTest9._closed_1;
+      let _x.3 := Lean.Name.str._override _x.2 _x.1;
+      return _x.3
+[Compiler.saveImpure] size: 3
     def nameTest9._closed_3 : tobj :=
-      let x_1 : obj := nameTest4._closed_0;
-      let x_2 : tobj := nameTest9._closed_2;
-      let x_3 : tobj := Lean.Name.str._override x_2 x_1;
-      ret x_3
+      let _x.1 := nameTest4._closed_0;
+      let _x.2 := nameTest9._closed_2;
+      let _x.3 := Lean.Name.str._override _x.2 _x.1;
+      return _x.3
+[Compiler.saveImpure] size: 3
     def nameTest9._closed_4 : tobj :=
-      let x_1 : obj := nameTest5._closed_0;
-      let x_2 : tobj := nameTest9._closed_3;
-      let x_3 : tobj := Lean.Name.str._override x_2 x_1;
-      ret x_3
+      let _x.1 := nameTest5._closed_0;
+      let _x.2 := nameTest9._closed_3;
+      let _x.3 := Lean.Name.str._override _x.2 _x.1;
+      return _x.3
+[Compiler.saveImpure] size: 3
     def nameTest9._closed_5 : tobj :=
-      let x_1 : obj := nameTest6._closed_0;
-      let x_2 : tobj := nameTest9._closed_4;
-      let x_3 : tobj := Lean.Name.str._override x_2 x_1;
-      ret x_3
+      let _x.1 := nameTest6._closed_0;
+      let _x.2 := nameTest9._closed_4;
+      let _x.3 := Lean.Name.str._override _x.2 _x.1;
+      return _x.3
+[Compiler.saveImpure] size: 3
     def nameTest9._closed_6 : tobj :=
-      let x_1 : obj := nameTest7._closed_0;
-      let x_2 : tobj := nameTest9._closed_5;
-      let x_3 : tobj := Lean.Name.str._override x_2 x_1;
-      ret x_3
+      let _x.1 := nameTest7._closed_0;
+      let _x.2 := nameTest9._closed_5;
+      let _x.3 := Lean.Name.str._override _x.2 _x.1;
+      return _x.3
+[Compiler.saveImpure] size: 3
     def nameTest9._closed_7 : tobj :=
-      let x_1 : obj := nameTest8._closed_0;
-      let x_2 : tobj := nameTest9._closed_6;
-      let x_3 : tobj := Lean.Name.str._override x_2 x_1;
-      ret x_3
+      let _x.1 := nameTest8._closed_0;
+      let _x.2 := nameTest9._closed_6;
+      let _x.3 := Lean.Name.str._override _x.2 _x.1;
+      return _x.3
+[Compiler.saveImpure] size: 1
     def nameTest9._closed_8 : obj :=
-      let x_1 : obj := "I";
-      ret x_1
+      let _x.1 := "I";
+      return _x.1
+[Compiler.saveImpure] size: 3
     def nameTest9._closed_9 : tobj :=
-      let x_1 : obj := nameTest9._closed_8;
-      let x_2 : tobj := nameTest9._closed_7;
-      let x_3 : tobj := Lean.Name.str._override x_2 x_1;
-      ret x_3
+      let _x.1 := nameTest9._closed_8;
+      let _x.2 := nameTest9._closed_7;
+      let _x.3 := Lean.Name.str._override _x.2 _x.1;
+      return _x.3
+[Compiler.saveImpure] size: 1
     def nameTest9 : tobj :=
-      let x_1 : tobj := nameTest9._closed_9;
-      ret x_1
-[compiler.ir.simple_ground] Marked nameTest9._closed_0 as simple ground expr
-[compiler.ir.simple_ground] Marked nameTest9._closed_1 as simple ground expr
-[compiler.ir.simple_ground] Marked nameTest9._closed_2 as simple ground expr
-[compiler.ir.simple_ground] Marked nameTest9._closed_3 as simple ground expr
-[compiler.ir.simple_ground] Marked nameTest9._closed_4 as simple ground expr
-[compiler.ir.simple_ground] Marked nameTest9._closed_5 as simple ground expr
-[compiler.ir.simple_ground] Marked nameTest9._closed_6 as simple ground expr
-[compiler.ir.simple_ground] Marked nameTest9._closed_7 as simple ground expr
-[compiler.ir.simple_ground] Marked nameTest9._closed_8 as simple ground expr
-[compiler.ir.simple_ground] Marked nameTest9._closed_9 as simple ground expr
-[compiler.ir.simple_ground] Marked nameTest9 as simple ground expr
+      let _x.1 := nameTest9._closed_9;
+      return _x.1
 -/
 #guard_msgs in
-set_option trace.compiler.ir.result true in
-set_option trace.compiler.ir.simple_ground true in
+set_option trace.Compiler.saveImpure true in
+set_option trace.Compiler.simpleGround true in
 def nameTest9 : Name := `A.B.C.D.E.F.G.H.I
 
 /--
-trace: [Compiler.IR] [result]
+trace: [Compiler.simpleGround] Marked nameTest10._closed_0 as simple ground expr
+[Compiler.simpleGround] Marked nameTest10 as simple ground expr
+[Compiler.saveImpure] size: 3
     def nameTest10._closed_0 : tobj :=
-      let x_1 : tagged := 1;
-      let x_2 : tobj := nameTest3._closed_0;
-      let x_3 : tobj := Lean.Name.num._override x_2 x_1;
-      ret x_3
+      let _x.1 := 1;
+      let _x.2 := nameTest3._closed_0;
+      let _x.3 := Lean.Name.num._override _x.2 _x.1;
+      return _x.3
+[Compiler.saveImpure] size: 1
     def nameTest10 : tobj :=
-      let x_1 : tobj := nameTest10._closed_0;
-      ret x_1
-[compiler.ir.simple_ground] Marked nameTest10._closed_0 as simple ground expr
-[compiler.ir.simple_ground] Marked nameTest10 as simple ground expr
+      let _x.1 := nameTest10._closed_0;
+      return _x.1
 -/
 #guard_msgs in
-set_option trace.compiler.ir.result true in
-set_option trace.compiler.ir.simple_ground true in
+set_option trace.Compiler.saveImpure true in
+set_option trace.Compiler.simpleGround true in
 def nameTest10 : Name := .num `A.B.C 1
 
 /--
-trace: [Compiler.IR] [result]
+trace: [Compiler.simpleGround] Marked nameTest11._closed_0 as simple ground expr
+[Compiler.simpleGround] Marked nameTest11._closed_1 as simple ground expr
+[Compiler.simpleGround] Marked nameTest11 as simple ground expr
+[Compiler.saveImpure] size: 1
     def nameTest11._closed_0 : obj :=
-      let x_1 : obj := "AHHHH";
-      ret x_1
+      let _x.1 := "AHHHH";
+      return _x.1
+[Compiler.saveImpure] size: 3
     def nameTest11._closed_1 : tobj :=
-      let x_1 : obj := nameTest11._closed_0;
-      let x_2 : tobj := nameTest3._closed_0;
-      let x_3 : tobj := Lean.Name.str._override x_2 x_1;
-      ret x_3
+      let _x.1 := nameTest11._closed_0;
+      let _x.2 := nameTest3._closed_0;
+      let _x.3 := Lean.Name.str._override _x.2 _x.1;
+      return _x.3
+[Compiler.saveImpure] size: 1
     def nameTest11 : tobj :=
-      let x_1 : tobj := nameTest11._closed_1;
-      ret x_1
-[compiler.ir.simple_ground] Marked nameTest11._closed_0 as simple ground expr
-[compiler.ir.simple_ground] Marked nameTest11._closed_1 as simple ground expr
-[compiler.ir.simple_ground] Marked nameTest11 as simple ground expr
+      let _x.1 := nameTest11._closed_1;
+      return _x.1
 -/
 #guard_msgs in
-set_option trace.compiler.ir.result true in
-set_option trace.compiler.ir.simple_ground true in
+set_option trace.Compiler.saveImpure true in
+set_option trace.Compiler.simpleGround true in
 def nameTest11 : Name := .str `A.B.C "AHHHH"
 
 structure WithScalars where
@@ -364,32 +397,34 @@ structure WithScalars where
   d : UInt8
 
 /--
-trace: [Compiler.IR] [result]
+trace: [Compiler.simpleGround] Marked testWithScalars._closed_0 as simple ground expr
+[Compiler.simpleGround] Marked testWithScalars._closed_1 as simple ground expr
+[Compiler.simpleGround] Marked testWithScalars as simple ground expr
+[Compiler.saveImpure] size: 1
     def testWithScalars._closed_0 : obj :=
-      let x_1 : obj := "W";
-      ret x_1
+      let _x.1 := "W";
+      return _x.1
+[Compiler.saveImpure] size: 10
     def testWithScalars._closed_1 : obj :=
-      let x_1 : u8 := 3;
-      let x_2 : u16 := 2;
-      let x_3 : u32 := 1;
-      let x_4 : u64 := 0;
-      let x_5 : obj := testWithScalars._closed_0;
-      let x_6 : obj := ctor_0.0.15[WithScalars.mk] x_5;
-      sset x_6[1, 0] : u64 := x_4;
-      sset x_6[1, 8] : u32 := x_3;
-      sset x_6[1, 12] : u16 := x_2;
-      sset x_6[1, 14] : u8 := x_1;
-      ret x_6
+      let _x.1 := 3;
+      let _x.2 := 2;
+      let _x.3 := 1;
+      let _x.4 := 0;
+      let _x.5 := testWithScalars._closed_0;
+      let _x.6 := ctor_0.0.15[WithScalars.mk] _x.5;
+      sset _x.6[1, 0] := _x.4;
+      sset _x.6[1, 8] := _x.3;
+      sset _x.6[1, 12] := _x.2;
+      sset _x.6[1, 14] := _x.1;
+      return _x.6
+[Compiler.saveImpure] size: 1
     def testWithScalars : obj :=
-      let x_1 : obj := testWithScalars._closed_1;
-      ret x_1
-[compiler.ir.simple_ground] Marked testWithScalars._closed_0 as simple ground expr
-[compiler.ir.simple_ground] Marked testWithScalars._closed_1 as simple ground expr
-[compiler.ir.simple_ground] Marked testWithScalars as simple ground expr
+      let _x.1 := testWithScalars._closed_1;
+      return _x.1
 -/
 #guard_msgs in
-set_option trace.compiler.ir.result true in
-set_option trace.compiler.ir.simple_ground true in
+set_option trace.Compiler.saveImpure true in
+set_option trace.Compiler.simpleGround true in
 def testWithScalars : WithScalars := ⟨"W", 0, 1, 2, 3⟩
 
 structure WithUSize where
@@ -397,26 +432,28 @@ structure WithUSize where
   a : USize
 
 /--
-trace: [Compiler.IR] [result]
+trace: [Compiler.simpleGround] Marked testWithUSize._closed_0 as simple ground expr
+[Compiler.simpleGround] Marked testWithUSize._closed_1 as simple ground expr
+[Compiler.simpleGround] Marked testWithUSize as simple ground expr
+[Compiler.saveImpure] size: 1
     def testWithUSize._closed_0 : obj :=
-      let x_1 : obj := "U";
-      ret x_1
+      let _x.1 := "U";
+      return _x.1
+[Compiler.saveImpure] size: 4
     def testWithUSize._closed_1 : obj :=
-      let x_1 : usize := 0;
-      let x_2 : obj := testWithUSize._closed_0;
-      let x_3 : obj := ctor_0.1.0[WithUSize.mk] x_2;
-      uset x_3[1] := x_1;
-      ret x_3
+      let _x.1 := 0;
+      let _x.2 := testWithUSize._closed_0;
+      let _x.3 := ctor_0.1.0[WithUSize.mk] _x.2;
+      uset _x.3[1] := _x.1;
+      return _x.3
+[Compiler.saveImpure] size: 1
     def testWithUSize : obj :=
-      let x_1 : obj := testWithUSize._closed_1;
-      ret x_1
-[compiler.ir.simple_ground] Marked testWithUSize._closed_0 as simple ground expr
-[compiler.ir.simple_ground] Marked testWithUSize._closed_1 as simple ground expr
-[compiler.ir.simple_ground] Marked testWithUSize as simple ground expr
+      let _x.1 := testWithUSize._closed_1;
+      return _x.1
 -/
 #guard_msgs in
-set_option trace.compiler.ir.result true in
-set_option trace.compiler.ir.simple_ground true in
+set_option trace.Compiler.saveImpure true in
+set_option trace.Compiler.simpleGround true in
 def testWithUSize : WithUSize := ⟨"U", 0⟩
 
 structure WithUSizeAndScalars where
@@ -428,32 +465,34 @@ structure WithUSizeAndScalars where
   e : USize
 
 /--
-trace: [Compiler.IR] [result]
+trace: [Compiler.simpleGround] Marked testWithUSizeAndScalars._closed_0 as simple ground expr
+[Compiler.simpleGround] Marked testWithUSizeAndScalars._closed_1 as simple ground expr
+[Compiler.simpleGround] Marked testWithUSizeAndScalars as simple ground expr
+[Compiler.saveImpure] size: 1
     def testWithUSizeAndScalars._closed_0 : obj :=
-      let x_1 : obj := "WUAS";
-      ret x_1
+      let _x.1 := "WUAS";
+      return _x.1
+[Compiler.saveImpure] size: 12
     def testWithUSizeAndScalars._closed_1 : obj :=
-      let x_1 : usize := 4;
-      let x_2 : u8 := 3;
-      let x_3 : u16 := 2;
-      let x_4 : u32 := 1;
-      let x_5 : u64 := 0;
-      let x_6 : obj := testWithUSizeAndScalars._closed_0;
-      let x_7 : obj := ctor_0.1.15[WithUSizeAndScalars.mk] x_6;
-      sset x_7[2, 0] : u64 := x_5;
-      sset x_7[2, 8] : u32 := x_4;
-      sset x_7[2, 12] : u16 := x_3;
-      sset x_7[2, 14] : u8 := x_2;
-      uset x_7[1] := x_1;
-      ret x_7
+      let _x.1 := 4;
+      let _x.2 := 3;
+      let _x.3 := 2;
+      let _x.4 := 1;
+      let _x.5 := 0;
+      let _x.6 := testWithUSizeAndScalars._closed_0;
+      let _x.7 := ctor_0.1.15[WithUSizeAndScalars.mk] _x.6;
+      sset _x.7[2, 0] := _x.5;
+      sset _x.7[2, 8] := _x.4;
+      sset _x.7[2, 12] := _x.3;
+      sset _x.7[2, 14] := _x.2;
+      uset _x.7[1] := _x.1;
+      return _x.7
+[Compiler.saveImpure] size: 1
     def testWithUSizeAndScalars : obj :=
-      let x_1 : obj := testWithUSizeAndScalars._closed_1;
-      ret x_1
-[compiler.ir.simple_ground] Marked testWithUSizeAndScalars._closed_0 as simple ground expr
-[compiler.ir.simple_ground] Marked testWithUSizeAndScalars._closed_1 as simple ground expr
-[compiler.ir.simple_ground] Marked testWithUSizeAndScalars as simple ground expr
+      let _x.1 := testWithUSizeAndScalars._closed_1;
+      return _x.1
 -/
 #guard_msgs in
-set_option trace.compiler.ir.result true in
-set_option trace.compiler.ir.simple_ground true in
+set_option trace.Compiler.saveImpure true in
+set_option trace.Compiler.simpleGround true in
 def testWithUSizeAndScalars : WithUSizeAndScalars := ⟨"WUAS", 0, 1, 2, 3, 4⟩

@@ -13,7 +13,7 @@ public import Lean.Compiler.IR.SimpCase
 public import Lean.Compiler.ModPkgExt
 import Lean.Compiler.LCNF.Types
 import Lean.Compiler.ClosedTermCache
-import Lean.Compiler.IR.SimpleGroundExpr
+import Lean.Compiler.LCNF.SimpleGroundExpr
 import Init.Omega
 import Init.While
 import Init.Data.Range.Polymorphic.Iterators
@@ -22,7 +22,9 @@ import Lean.Runtime
 public section
 
 namespace Lean.IR.EmitC
-open Lean.Compiler.LCNF (isBoxedName)
+open Lean.Compiler.LCNF (isBoxedName isSimpleGroundDecl getSimpleGroundExpr
+  getSimpleGroundExprWithResolvedRefs uint64ToByteArrayLE SimpleGroundExpr SimpleGroundArg
+  addSimpleGroundDecl)
 
 def leanMainFn := "_lean_main"
 
@@ -222,7 +224,7 @@ where
         break
     return mkValueName (← toCName decl)
 
-  compileCtor (cidx : Nat) (objArgs : Array SimpleGroundArg) (usizeArgs : Array USize)
+  compileCtor (cidx : Nat) (objArgs : Array SimpleGroundArg) (usizeArgs : Array UInt64)
       (scalarArgs : Array UInt8) : GroundM String := do
     let header := mkCtorHeader objArgs.size usizeArgs.size scalarArgs.size cidx
     let objArgs ← objArgs.mapM groundArgToCLit

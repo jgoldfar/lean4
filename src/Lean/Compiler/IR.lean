@@ -18,7 +18,6 @@ public import Lean.Compiler.IR.Sorry
 public import Lean.Compiler.IR.ToIR
 public import Lean.Compiler.IR.ToIRType
 public import Lean.Compiler.IR.Meta
-public import Lean.Compiler.IR.SimpleGroundExpr
 
 -- The following imports are not required by the compiler. They are here to ensure that there
 -- are no orphaned modules.
@@ -36,7 +35,6 @@ def compile (decls : Array Decl) : CompilerM (Array Decl) := do
   decls ← updateSorryDep decls
   logDecls `result decls
   checkDecls decls
-  decls.forM Decl.detectSimpleGround
   addDecls decls
   inferMeta decls
   return decls
