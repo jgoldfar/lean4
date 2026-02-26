@@ -5364,8 +5364,8 @@ return x_12;
 block_19:
 {
 lean_object* x_18; 
-lean_dec(x_15);
-x_18 = l___private_Init_Data_Array_QSort_Basic_0__Array_qsort_sort___at___00__private_Lean_Meta_Tactic_Grind_EMatchAction_0__Lean_Meta_Grind_Action_getAllTheorems_spec__3___redArg(x_14, x_16, x_17);
+lean_dec(x_14);
+x_18 = l___private_Init_Data_Array_QSort_Basic_0__Array_qsort_sort___at___00__private_Lean_Meta_Tactic_Grind_EMatchAction_0__Lean_Meta_Grind_Action_getAllTheorems_spec__3___redArg(x_15, x_16, x_17);
 lean_dec(x_17);
 x_2 = x_18;
 goto block_13;
@@ -5408,17 +5408,17 @@ x_32 = lean_nat_dec_le(x_28, x_31);
 if (x_32 == 0)
 {
 lean_inc(x_31);
-x_20 = x_26;
+x_20 = x_27;
 x_21 = x_31;
-x_22 = x_27;
+x_22 = x_26;
 x_23 = x_31;
 goto block_25;
 }
 else
 {
-x_20 = x_26;
+x_20 = x_27;
 x_21 = x_31;
-x_22 = x_27;
+x_22 = x_26;
 x_23 = x_28;
 goto block_25;
 }

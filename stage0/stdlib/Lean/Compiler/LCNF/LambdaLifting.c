@@ -3723,8 +3723,8 @@ goto block_13;
 else
 {
 lean_dec(x_19);
-lean_dec_ref(x_18);
 lean_dec_ref(x_17);
+lean_dec_ref(x_18);
 lean_dec_ref(x_1);
 x_10 = lean_box(0);
 goto block_13;

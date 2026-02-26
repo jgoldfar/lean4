@@ -854,7 +854,7 @@ goto _start;
 case 8:
 {
 lean_object* x_34; 
-x_34 = lean_ctor_get(x_3, 5);
+x_34 = lean_ctor_get(x_3, 3);
 lean_inc_ref(x_34);
 lean_dec_ref(x_3);
 x_3 = x_34;
@@ -863,7 +863,7 @@ goto _start;
 case 9:
 {
 lean_object* x_36; 
-x_36 = lean_ctor_get(x_3, 2);
+x_36 = lean_ctor_get(x_3, 5);
 lean_inc_ref(x_36);
 lean_dec_ref(x_3);
 x_3 = x_36;
@@ -878,14 +878,41 @@ lean_dec_ref(x_3);
 x_3 = x_38;
 goto _start;
 }
-default: 
+case 11:
 {
 lean_object* x_40; 
+x_40 = lean_ctor_get(x_3, 2);
+lean_inc_ref(x_40);
+lean_dec_ref(x_3);
+x_3 = x_40;
+goto _start;
+}
+case 12:
+{
+lean_object* x_42; 
+x_42 = lean_ctor_get(x_3, 2);
+lean_inc_ref(x_42);
+lean_dec_ref(x_3);
+x_3 = x_42;
+goto _start;
+}
+case 13:
+{
+lean_object* x_44; 
+x_44 = lean_ctor_get(x_3, 1);
+lean_inc_ref(x_44);
+lean_dec_ref(x_3);
+x_3 = x_44;
+goto _start;
+}
+default: 
+{
+lean_object* x_46; 
 lean_dec(x_4);
 lean_dec_ref(x_3);
 lean_dec_ref(x_2);
-x_40 = lean_box(0);
-return x_40;
+x_46 = lean_box(0);
+return x_46;
 }
 }
 }

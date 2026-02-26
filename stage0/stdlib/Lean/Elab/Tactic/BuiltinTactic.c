@@ -36174,8 +36174,8 @@ lean_inc(x_13);
 lean_inc_ref(x_12);
 lean_inc(x_11);
 lean_inc_ref(x_10);
-lean_inc_ref(x_154);
-x_158 = l_Lean_Meta_addPPExplicitToExposeDiff(x_155, x_154, x_10, x_11, x_12, x_13);
+lean_inc_ref(x_155);
+x_158 = l_Lean_Meta_addPPExplicitToExposeDiff(x_154, x_155, x_10, x_11, x_12, x_13);
 if (lean_obj_tag(x_158) == 0)
 {
 lean_object* x_159; uint8_t x_160; 
@@ -36226,7 +36226,7 @@ lean_inc(x_9);
 lean_inc_ref(x_8);
 lean_inc(x_7);
 lean_inc_ref(x_6);
-x_110 = x_154;
+x_110 = x_155;
 x_111 = x_29;
 x_112 = x_30;
 x_113 = x_6;
@@ -36243,7 +36243,7 @@ goto block_153;
 else
 {
 uint8_t x_176; 
-lean_dec_ref(x_154);
+lean_dec_ref(x_155);
 lean_dec(x_76);
 lean_dec(x_72);
 lean_dec(x_70);
@@ -36321,7 +36321,7 @@ lean_inc(x_9);
 lean_inc_ref(x_8);
 lean_inc(x_7);
 lean_inc_ref(x_6);
-x_110 = x_154;
+x_110 = x_155;
 x_111 = x_29;
 x_112 = x_30;
 x_113 = x_6;
@@ -36338,7 +36338,7 @@ goto block_153;
 else
 {
 lean_object* x_195; lean_object* x_196; lean_object* x_197; 
-lean_dec_ref(x_154);
+lean_dec_ref(x_155);
 lean_dec(x_76);
 lean_dec(x_72);
 lean_dec(x_70);
@@ -36375,7 +36375,7 @@ return x_197;
 else
 {
 uint8_t x_198; 
-lean_dec_ref(x_154);
+lean_dec_ref(x_155);
 lean_dec(x_108);
 lean_dec(x_76);
 lean_dec(x_72);
@@ -36410,7 +36410,7 @@ return x_200;
 }
 else
 {
-lean_dec_ref(x_155);
+lean_dec_ref(x_154);
 lean_dec(x_108);
 lean_inc(x_13);
 lean_inc_ref(x_12);
@@ -36420,7 +36420,7 @@ lean_inc(x_9);
 lean_inc_ref(x_8);
 lean_inc(x_7);
 lean_inc_ref(x_6);
-x_110 = x_154;
+x_110 = x_155;
 x_111 = x_29;
 x_112 = x_30;
 x_113 = x_6;
@@ -36517,8 +36517,8 @@ lean_inc(x_224);
 lean_dec_ref(x_223);
 x_225 = lean_unbox(x_224);
 lean_dec(x_224);
-x_154 = x_207;
-x_155 = x_202;
+x_154 = x_202;
+x_155 = x_207;
 x_156 = x_225;
 x_157 = lean_box(0);
 goto block_201;
@@ -36533,8 +36533,8 @@ lean_inc(x_226);
 lean_dec_ref(x_223);
 x_227 = lean_unbox(x_226);
 lean_dec(x_226);
-x_154 = x_207;
-x_155 = x_202;
+x_154 = x_202;
+x_155 = x_207;
 x_156 = x_227;
 x_157 = lean_box(0);
 goto block_201;
@@ -36665,8 +36665,8 @@ lean_inc(x_264);
 lean_dec_ref(x_263);
 x_265 = lean_unbox(x_264);
 lean_dec(x_264);
-x_154 = x_207;
-x_155 = x_202;
+x_154 = x_202;
+x_155 = x_207;
 x_156 = x_265;
 x_157 = lean_box(0);
 goto block_201;
@@ -36681,8 +36681,8 @@ lean_inc(x_266);
 lean_dec_ref(x_263);
 x_267 = lean_unbox(x_266);
 lean_dec(x_266);
-x_154 = x_207;
-x_155 = x_202;
+x_154 = x_202;
+x_155 = x_207;
 x_156 = x_267;
 x_157 = lean_box(0);
 goto block_201;

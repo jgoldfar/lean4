@@ -1751,14 +1751,14 @@ goto _start;
 case 8:
 {
 lean_object* x_23; 
-x_23 = lean_ctor_get(x_2, 5);
+x_23 = lean_ctor_get(x_2, 3);
 x_2 = x_23;
 goto _start;
 }
 case 9:
 {
 lean_object* x_25; 
-x_25 = lean_ctor_get(x_2, 2);
+x_25 = lean_ctor_get(x_2, 5);
 x_2 = x_25;
 goto _start;
 }
@@ -1767,6 +1767,27 @@ case 10:
 lean_object* x_27; 
 x_27 = lean_ctor_get(x_2, 2);
 x_2 = x_27;
+goto _start;
+}
+case 11:
+{
+lean_object* x_29; 
+x_29 = lean_ctor_get(x_2, 2);
+x_2 = x_29;
+goto _start;
+}
+case 12:
+{
+lean_object* x_31; 
+x_31 = lean_ctor_get(x_2, 2);
+x_2 = x_31;
+goto _start;
+}
+case 13:
+{
+lean_object* x_33; 
+x_33 = lean_ctor_get(x_2, 1);
+x_2 = x_33;
 goto _start;
 }
 default: 
