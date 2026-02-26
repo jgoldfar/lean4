@@ -4654,6 +4654,81 @@ x_4 = lean_run_init_attrs(x_1, x_2);
 return x_4;
 }
 }
+lean_object* runtime_initialize_Lean_AddDecl(uint8_t builtin);
+lean_object* runtime_initialize_Lean_Elab_InfoTree_Main(uint8_t builtin);
+lean_object* runtime_initialize_Init_Data_Range_Polymorphic_Stream(uint8_t builtin);
+lean_object* runtime_initialize_Lean_Compiler_NameMangling(uint8_t builtin);
+lean_object* runtime_initialize_Lean_Compiler_ModPkgExt(uint8_t builtin);
+static bool _G_runtime_initialized = false;
+LEAN_EXPORT lean_object* runtime_initialize_Lean_Compiler_InitAttr(uint8_t builtin) {
+lean_object * res;
+if (_G_runtime_initialized) return lean_io_result_mk_ok(lean_box(0));
+_G_runtime_initialized = true;
+res = runtime_initialize_Lean_AddDecl(builtin)
+;
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = runtime_initialize_Lean_Elab_InfoTree_Main(builtin)
+;
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = runtime_initialize_Init_Data_Range_Polymorphic_Stream(builtin)
+;
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = runtime_initialize_Lean_Compiler_NameMangling(builtin)
+;
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = runtime_initialize_Lean_Compiler_ModPkgExt(builtin)
+;
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = l_Lean_initFn_00___x40_Lean_Compiler_InitAttr_3590725331____hygCtx___hyg_2_()
+;
+if (lean_io_result_is_error(res)) return res;
+l_Lean_interpretedModInits = lean_io_result_get_value(res);
+lean_mark_persistent(l_Lean_interpretedModInits);
+lean_dec_ref(res);
+res = l_Lean_initFn_00___x40_Lean_Compiler_InitAttr_3980671908____hygCtx___hyg_2_()
+;
+if (lean_io_result_is_error(res)) return res;
+l_Lean_regularInitAttr = lean_io_result_get_value(res);
+lean_mark_persistent(l_Lean_regularInitAttr);
+lean_dec_ref(res);
+res = l_Lean_regularInitAttr___regBuiltin_Lean_regularInitAttr_docString__1()
+;
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = l_Lean_regularInitAttr___regBuiltin_Lean_regularInitAttr_declRange__3()
+;
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = l_Lean_initFn_00___x40_Lean_Compiler_InitAttr_1632222590____hygCtx___hyg_2_()
+;
+if (lean_io_result_is_error(res)) return res;
+l_Lean_builtinInitAttr = lean_io_result_get_value(res);
+lean_mark_persistent(l_Lean_builtinInitAttr);
+lean_dec_ref(res);
+res = l_Lean_builtinInitAttr___regBuiltin_Lean_builtinInitAttr_docString__1()
+;
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = l_Lean_builtinInitAttr___regBuiltin_Lean_builtinInitAttr_declRange__3()
+;
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+return lean_io_result_mk_ok(lean_box(0));
+}
+static bool _G_meta_initialized = false;
+LEAN_EXPORT lean_object* meta_initialize_Lean_Compiler_InitAttr(uint8_t builtin) {
+lean_object * res;
+if (_G_meta_initialized) return lean_io_result_mk_ok(lean_box(0));
+_G_meta_initialized = true;
+l_Lean_registerInitAttr___auto__1 = _init_l_Lean_registerInitAttr___auto__1();
+lean_mark_persistent(l_Lean_registerInitAttr___auto__1);
+return lean_io_result_mk_ok(lean_box(0));
+}
 lean_object* initialize_Lean_AddDecl(uint8_t builtin);
 lean_object* initialize_Lean_Elab_InfoTree_Main(uint8_t builtin);
 lean_object* initialize_Init_Data_Range_Polymorphic_Stream(uint8_t builtin);
@@ -4664,51 +4739,35 @@ LEAN_EXPORT lean_object* initialize_Lean_Compiler_InitAttr(uint8_t builtin) {
 lean_object * res;
 if (_G_initialized) return lean_io_result_mk_ok(lean_box(0));
 _G_initialized = true;
-res = initialize_Lean_AddDecl(builtin);
+res = initialize_Lean_AddDecl(builtin)
+;
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-res = initialize_Lean_Elab_InfoTree_Main(builtin);
+res = initialize_Lean_Elab_InfoTree_Main(builtin)
+;
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-res = initialize_Init_Data_Range_Polymorphic_Stream(builtin);
+res = initialize_Init_Data_Range_Polymorphic_Stream(builtin)
+;
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-res = initialize_Lean_Compiler_NameMangling(builtin);
+res = initialize_Lean_Compiler_NameMangling(builtin)
+;
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-res = initialize_Lean_Compiler_ModPkgExt(builtin);
+res = initialize_Lean_Compiler_ModPkgExt(builtin)
+;
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-if (builtin) {res = l_Lean_initFn_00___x40_Lean_Compiler_InitAttr_3590725331____hygCtx___hyg_2_();
-if (lean_io_result_is_error(res)) return res;
-l_Lean_interpretedModInits = lean_io_result_get_value(res);
-lean_mark_persistent(l_Lean_interpretedModInits);
-lean_dec_ref(res);
-}l_Lean_registerInitAttr___auto__1 = _init_l_Lean_registerInitAttr___auto__1();
-lean_mark_persistent(l_Lean_registerInitAttr___auto__1);
-if (builtin) {res = l_Lean_initFn_00___x40_Lean_Compiler_InitAttr_3980671908____hygCtx___hyg_2_();
-if (lean_io_result_is_error(res)) return res;
-l_Lean_regularInitAttr = lean_io_result_get_value(res);
-lean_mark_persistent(l_Lean_regularInitAttr);
-lean_dec_ref(res);
-}if (builtin) {res = l_Lean_regularInitAttr___regBuiltin_Lean_regularInitAttr_docString__1();
+res = runtime_initialize_Lean_Compiler_InitAttr(builtin)
+;
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-}if (builtin) {res = l_Lean_regularInitAttr___regBuiltin_Lean_regularInitAttr_declRange__3();
+res = meta_initialize_Lean_Compiler_InitAttr(builtin)
+;
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-}if (builtin) {res = l_Lean_initFn_00___x40_Lean_Compiler_InitAttr_1632222590____hygCtx___hyg_2_();
-if (lean_io_result_is_error(res)) return res;
-l_Lean_builtinInitAttr = lean_io_result_get_value(res);
-lean_mark_persistent(l_Lean_builtinInitAttr);
-lean_dec_ref(res);
-}if (builtin) {res = l_Lean_builtinInitAttr___regBuiltin_Lean_builtinInitAttr_docString__1();
-if (lean_io_result_is_error(res)) return res;
-lean_dec_ref(res);
-}if (builtin) {res = l_Lean_builtinInitAttr___regBuiltin_Lean_builtinInitAttr_declRange__3();
-if (lean_io_result_is_error(res)) return res;
-lean_dec_ref(res);
-}return lean_io_result_mk_ok(lean_box(0));
+return initialize_Lean_Compiler_InitAttr(builtin);
 }
 #ifdef __cplusplus
 }

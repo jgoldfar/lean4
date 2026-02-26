@@ -23735,33 +23735,45 @@ lean_dec_ref(x_2);
 return x_7;
 }
 }
-lean_object* initialize_Lean_Meta_Instances(uint8_t builtin);
-lean_object* initialize_Lean_Compiler_ExternAttr(uint8_t builtin);
-lean_object* initialize_Lean_Compiler_Specialize(uint8_t builtin);
-lean_object* initialize_Lean_Compiler_LCNF_Types(uint8_t builtin);
-lean_object* initialize_Init_Omega(uint8_t builtin);
-static bool _G_initialized = false;
-LEAN_EXPORT lean_object* initialize_Lean_Compiler_LCNF_Basic(uint8_t builtin) {
+lean_object* runtime_initialize_Lean_Meta_Instances(uint8_t builtin);
+lean_object* runtime_initialize_Lean_Compiler_ExternAttr(uint8_t builtin);
+lean_object* runtime_initialize_Lean_Compiler_Specialize(uint8_t builtin);
+lean_object* runtime_initialize_Lean_Compiler_LCNF_Types(uint8_t builtin);
+lean_object* runtime_initialize_Init_Omega(uint8_t builtin);
+static bool _G_runtime_initialized = false;
+LEAN_EXPORT lean_object* runtime_initialize_Lean_Compiler_LCNF_Basic(uint8_t builtin) {
 lean_object * res;
-if (_G_initialized) return lean_io_result_mk_ok(lean_box(0));
-_G_initialized = true;
-res = initialize_Lean_Meta_Instances(builtin);
+if (_G_runtime_initialized) return lean_io_result_mk_ok(lean_box(0));
+_G_runtime_initialized = true;
+res = runtime_initialize_Lean_Meta_Instances(builtin)
+;
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-res = initialize_Lean_Compiler_ExternAttr(builtin);
+res = runtime_initialize_Lean_Compiler_ExternAttr(builtin)
+;
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-res = initialize_Lean_Compiler_Specialize(builtin);
+res = runtime_initialize_Lean_Compiler_Specialize(builtin)
+;
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-res = initialize_Lean_Compiler_LCNF_Types(builtin);
+res = runtime_initialize_Lean_Compiler_LCNF_Types(builtin)
+;
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-res = initialize_Init_Omega(builtin);
+res = runtime_initialize_Init_Omega(builtin)
+;
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 l_Lean_Compiler_LCNF_instInhabitedPurity_default = _init_l_Lean_Compiler_LCNF_instInhabitedPurity_default();
 l_Lean_Compiler_LCNF_instInhabitedPurity = _init_l_Lean_Compiler_LCNF_instInhabitedPurity();
+return lean_io_result_mk_ok(lean_box(0));
+}
+static bool _G_meta_initialized = false;
+LEAN_EXPORT lean_object* meta_initialize_Lean_Compiler_LCNF_Basic(uint8_t builtin) {
+lean_object * res;
+if (_G_meta_initialized) return lean_io_result_mk_ok(lean_box(0));
+_G_meta_initialized = true;
 l_Lean_Compiler_LCNF_Arg___auto__1 = _init_l_Lean_Compiler_LCNF_Arg___auto__1();
 lean_mark_persistent(l_Lean_Compiler_LCNF_Arg___auto__1);
 l_Lean_Compiler_LCNF_LetValue___auto__1 = _init_l_Lean_Compiler_LCNF_LetValue___auto__1();
@@ -23827,6 +23839,46 @@ lean_mark_persistent(l_Lean_Compiler_LCNF_CodeDecl___auto__13);
 l_Lean_Compiler_LCNF_CodeDecl___auto__15 = _init_l_Lean_Compiler_LCNF_CodeDecl___auto__15();
 lean_mark_persistent(l_Lean_Compiler_LCNF_CodeDecl___auto__15);
 return lean_io_result_mk_ok(lean_box(0));
+}
+lean_object* initialize_Lean_Meta_Instances(uint8_t builtin);
+lean_object* initialize_Lean_Compiler_ExternAttr(uint8_t builtin);
+lean_object* initialize_Lean_Compiler_Specialize(uint8_t builtin);
+lean_object* initialize_Lean_Compiler_LCNF_Types(uint8_t builtin);
+lean_object* initialize_Init_Omega(uint8_t builtin);
+static bool _G_initialized = false;
+LEAN_EXPORT lean_object* initialize_Lean_Compiler_LCNF_Basic(uint8_t builtin) {
+lean_object * res;
+if (_G_initialized) return lean_io_result_mk_ok(lean_box(0));
+_G_initialized = true;
+res = initialize_Lean_Meta_Instances(builtin)
+;
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Lean_Compiler_ExternAttr(builtin)
+;
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Lean_Compiler_Specialize(builtin)
+;
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Lean_Compiler_LCNF_Types(builtin)
+;
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Init_Omega(builtin)
+;
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = runtime_initialize_Lean_Compiler_LCNF_Basic(builtin)
+;
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = meta_initialize_Lean_Compiler_LCNF_Basic(builtin)
+;
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+return initialize_Lean_Compiler_LCNF_Basic(builtin);
 }
 #ifdef __cplusplus
 }

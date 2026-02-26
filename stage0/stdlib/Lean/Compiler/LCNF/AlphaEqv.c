@@ -2679,7 +2679,7 @@ return x_20;
 LEAN_EXPORT uint8_t l_Lean_Compiler_LCNF_AlphaEqv_eqv(uint8_t x_1, lean_object* x_2, lean_object* x_3, lean_object* x_4) {
 _start:
 {
-lean_object* x_5; lean_object* x_6; lean_object* x_7; lean_object* x_8; lean_object* x_9; lean_object* x_13; lean_object* x_14; lean_object* x_15; lean_object* x_16; lean_object* x_17; uint8_t x_18; uint8_t x_19; uint8_t x_20; lean_object* x_22; lean_object* x_23; uint8_t x_24; uint8_t x_25; lean_object* x_26; lean_object* x_27; lean_object* x_28; uint8_t x_29; uint8_t x_30; lean_object* x_31; lean_object* x_32; 
+lean_object* x_5; lean_object* x_6; lean_object* x_7; lean_object* x_8; lean_object* x_9; lean_object* x_13; uint8_t x_14; lean_object* x_15; lean_object* x_16; lean_object* x_17; lean_object* x_18; uint8_t x_19; uint8_t x_20; lean_object* x_22; lean_object* x_23; uint8_t x_24; uint8_t x_25; lean_object* x_26; lean_object* x_27; lean_object* x_28; uint8_t x_29; uint8_t x_30; lean_object* x_31; lean_object* x_32; 
 switch (lean_obj_tag(x_2)) {
 case 0:
 {
@@ -3641,21 +3641,21 @@ return x_202;
 block_12:
 {
 uint8_t x_10; 
-x_10 = l_Lean_Compiler_LCNF_AlphaEqv_eqvFVar(x_9, x_5, x_6);
+x_10 = l_Lean_Compiler_LCNF_AlphaEqv_eqvFVar(x_9, x_5, x_8);
 lean_dec(x_5);
 lean_dec(x_9);
 if (x_10 == 0)
 {
-lean_dec_ref(x_8);
+lean_dec(x_8);
 lean_dec_ref(x_7);
-lean_dec(x_6);
+lean_dec_ref(x_6);
 return x_10;
 }
 else
 {
 x_2 = x_7;
-x_3 = x_8;
-x_4 = x_6;
+x_3 = x_6;
+x_4 = x_8;
 goto _start;
 }
 }
@@ -3663,54 +3663,54 @@ block_21:
 {
 if (x_20 == 0)
 {
+lean_dec(x_18);
 lean_dec(x_17);
 lean_dec_ref(x_16);
 lean_dec_ref(x_15);
-lean_dec(x_14);
 lean_dec(x_13);
 return x_20;
 }
 else
 {
-if (x_18 == 0)
-{
 if (x_19 == 0)
 {
+if (x_14 == 0)
+{
 x_5 = x_13;
-x_6 = x_14;
+x_6 = x_16;
 x_7 = x_15;
-x_8 = x_16;
-x_9 = x_17;
+x_8 = x_17;
+x_9 = x_18;
 goto block_12;
 }
 else
 {
+lean_dec(x_18);
 lean_dec(x_17);
 lean_dec_ref(x_16);
 lean_dec_ref(x_15);
-lean_dec(x_14);
 lean_dec(x_13);
-return x_18;
+return x_19;
 }
 }
 else
 {
-if (x_19 == 0)
+if (x_14 == 0)
 {
+lean_dec(x_18);
 lean_dec(x_17);
 lean_dec_ref(x_16);
 lean_dec_ref(x_15);
-lean_dec(x_14);
 lean_dec(x_13);
-return x_19;
+return x_14;
 }
 else
 {
 x_5 = x_13;
-x_6 = x_14;
+x_6 = x_16;
 x_7 = x_15;
-x_8 = x_16;
-x_9 = x_17;
+x_8 = x_17;
+x_9 = x_18;
 goto block_12;
 }
 }
@@ -3738,12 +3738,12 @@ if (x_24 == 0)
 if (x_29 == 0)
 {
 x_13 = x_27;
-x_14 = x_32;
+x_14 = x_30;
 x_15 = x_26;
 x_16 = x_31;
-x_17 = x_22;
-x_18 = x_25;
-x_19 = x_30;
+x_17 = x_32;
+x_18 = x_22;
+x_19 = x_25;
 x_20 = x_33;
 goto block_21;
 }
@@ -3760,12 +3760,12 @@ return x_24;
 else
 {
 x_13 = x_27;
-x_14 = x_32;
+x_14 = x_30;
 x_15 = x_26;
 x_16 = x_31;
-x_17 = x_22;
-x_18 = x_25;
-x_19 = x_30;
+x_17 = x_32;
+x_18 = x_22;
+x_19 = x_25;
 x_20 = x_29;
 goto block_21;
 }
@@ -3906,6 +3906,30 @@ x_6 = lean_box(x_5);
 return x_6;
 }
 }
+lean_object* runtime_initialize_Lean_Compiler_LCNF_Basic(uint8_t builtin);
+lean_object* runtime_initialize_Init_Omega(uint8_t builtin);
+static bool _G_runtime_initialized = false;
+LEAN_EXPORT lean_object* runtime_initialize_Lean_Compiler_LCNF_AlphaEqv(uint8_t builtin) {
+lean_object * res;
+if (_G_runtime_initialized) return lean_io_result_mk_ok(lean_box(0));
+_G_runtime_initialized = true;
+res = runtime_initialize_Lean_Compiler_LCNF_Basic(builtin)
+;
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = runtime_initialize_Init_Omega(builtin)
+;
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+return lean_io_result_mk_ok(lean_box(0));
+}
+static bool _G_meta_initialized = false;
+LEAN_EXPORT lean_object* meta_initialize_Lean_Compiler_LCNF_AlphaEqv(uint8_t builtin) {
+lean_object * res;
+if (_G_meta_initialized) return lean_io_result_mk_ok(lean_box(0));
+_G_meta_initialized = true;
+return lean_io_result_mk_ok(lean_box(0));
+}
 lean_object* initialize_Lean_Compiler_LCNF_Basic(uint8_t builtin);
 lean_object* initialize_Init_Omega(uint8_t builtin);
 static bool _G_initialized = false;
@@ -3913,13 +3937,23 @@ LEAN_EXPORT lean_object* initialize_Lean_Compiler_LCNF_AlphaEqv(uint8_t builtin)
 lean_object * res;
 if (_G_initialized) return lean_io_result_mk_ok(lean_box(0));
 _G_initialized = true;
-res = initialize_Lean_Compiler_LCNF_Basic(builtin);
+res = initialize_Lean_Compiler_LCNF_Basic(builtin)
+;
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-res = initialize_Init_Omega(builtin);
+res = initialize_Init_Omega(builtin)
+;
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-return lean_io_result_mk_ok(lean_box(0));
+res = runtime_initialize_Lean_Compiler_LCNF_AlphaEqv(builtin)
+;
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = meta_initialize_Lean_Compiler_LCNF_AlphaEqv(builtin)
+;
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+return initialize_Lean_Compiler_LCNF_AlphaEqv(builtin);
 }
 #ifdef __cplusplus
 }

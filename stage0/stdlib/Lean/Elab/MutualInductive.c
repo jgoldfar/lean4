@@ -16088,9 +16088,9 @@ if (x_21 == 0)
 {
 lean_dec_ref(x_4);
 lean_dec(x_3);
-x_11 = x_24;
+x_11 = lean_box(0);
 x_12 = x_23;
-x_13 = lean_box(0);
+x_13 = x_24;
 goto block_16;
 }
 else
@@ -16295,9 +16295,9 @@ else
 {
 lean_dec_ref(x_4);
 lean_dec(x_3);
-x_11 = x_24;
+x_11 = lean_box(0);
 x_12 = x_23;
-x_13 = lean_box(0);
+x_13 = x_24;
 goto block_16;
 }
 }
@@ -16335,7 +16335,7 @@ block_16:
 {
 lean_object* x_14; lean_object* x_15; 
 x_14 = ((lean_object*)(l___private_Lean_Elab_MutualInductive_0__Lean_Elab_Command_fixedIndicesToParams_go___closed__1));
-x_15 = l_Lean_Meta_withLocalDeclD___at___00__private_Lean_Elab_MutualInductive_0__Lean_Elab_Command_fixedIndicesToParams_go_spec__2___redArg(x_14, x_11, x_12, x_6, x_7, x_8, x_9);
+x_15 = l_Lean_Meta_withLocalDeclD___at___00__private_Lean_Elab_MutualInductive_0__Lean_Elab_Command_fixedIndicesToParams_go_spec__2___redArg(x_14, x_13, x_12, x_6, x_7, x_8, x_9);
 return x_15;
 }
 }
@@ -69817,73 +69817,88 @@ x_8 = lean_box(x_7);
 return x_8;
 }
 }
-lean_object* initialize_Lean_Meta_Constructions(uint8_t builtin);
-lean_object* initialize_Lean_Meta_SizeOf(uint8_t builtin);
-lean_object* initialize_Lean_Meta_MkIffOfInductiveProp(uint8_t builtin);
-lean_object* initialize_Lean_Elab_Coinductive(uint8_t builtin);
-lean_object* initialize_Lean_Elab_Deriving_Basic(uint8_t builtin);
-lean_object* initialize_Lean_Elab_ComputedFields(uint8_t builtin);
-lean_object* initialize_Lean_Meta_Constructions_CtorIdx(uint8_t builtin);
-lean_object* initialize_Lean_Meta_Constructions_CtorElim(uint8_t builtin);
-lean_object* initialize_Lean_Meta_IndPredBelow(uint8_t builtin);
-lean_object* initialize_Lean_Meta_Injective(uint8_t builtin);
-lean_object* initialize_Init_Data_List_MapIdx(uint8_t builtin);
-lean_object* initialize_Init_Omega(uint8_t builtin);
-static bool _G_initialized = false;
-LEAN_EXPORT lean_object* initialize_Lean_Elab_MutualInductive(uint8_t builtin) {
+lean_object* runtime_initialize_Lean_Meta_Constructions(uint8_t builtin);
+lean_object* runtime_initialize_Lean_Meta_SizeOf(uint8_t builtin);
+lean_object* runtime_initialize_Lean_Meta_MkIffOfInductiveProp(uint8_t builtin);
+lean_object* runtime_initialize_Lean_Elab_Coinductive(uint8_t builtin);
+lean_object* runtime_initialize_Lean_Elab_Deriving_Basic(uint8_t builtin);
+lean_object* runtime_initialize_Lean_Elab_ComputedFields(uint8_t builtin);
+lean_object* runtime_initialize_Lean_Meta_Constructions_CtorIdx(uint8_t builtin);
+lean_object* runtime_initialize_Lean_Meta_Constructions_CtorElim(uint8_t builtin);
+lean_object* runtime_initialize_Lean_Meta_IndPredBelow(uint8_t builtin);
+lean_object* runtime_initialize_Lean_Meta_Injective(uint8_t builtin);
+lean_object* runtime_initialize_Init_Data_List_MapIdx(uint8_t builtin);
+lean_object* runtime_initialize_Init_Omega(uint8_t builtin);
+static bool _G_runtime_initialized = false;
+LEAN_EXPORT lean_object* runtime_initialize_Lean_Elab_MutualInductive(uint8_t builtin) {
 lean_object * res;
-if (_G_initialized) return lean_io_result_mk_ok(lean_box(0));
-_G_initialized = true;
-res = initialize_Lean_Meta_Constructions(builtin);
+if (_G_runtime_initialized) return lean_io_result_mk_ok(lean_box(0));
+_G_runtime_initialized = true;
+res = runtime_initialize_Lean_Meta_Constructions(builtin)
+;
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-res = initialize_Lean_Meta_SizeOf(builtin);
+res = runtime_initialize_Lean_Meta_SizeOf(builtin)
+;
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-res = initialize_Lean_Meta_MkIffOfInductiveProp(builtin);
+res = runtime_initialize_Lean_Meta_MkIffOfInductiveProp(builtin)
+;
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-res = initialize_Lean_Elab_Coinductive(builtin);
+res = runtime_initialize_Lean_Elab_Coinductive(builtin)
+;
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-res = initialize_Lean_Elab_Deriving_Basic(builtin);
+res = runtime_initialize_Lean_Elab_Deriving_Basic(builtin)
+;
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-res = initialize_Lean_Elab_ComputedFields(builtin);
+res = runtime_initialize_Lean_Elab_ComputedFields(builtin)
+;
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-res = initialize_Lean_Meta_Constructions_CtorIdx(builtin);
+res = runtime_initialize_Lean_Meta_Constructions_CtorIdx(builtin)
+;
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-res = initialize_Lean_Meta_Constructions_CtorElim(builtin);
+res = runtime_initialize_Lean_Meta_Constructions_CtorElim(builtin)
+;
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-res = initialize_Lean_Meta_IndPredBelow(builtin);
+res = runtime_initialize_Lean_Meta_IndPredBelow(builtin)
+;
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-res = initialize_Lean_Meta_Injective(builtin);
+res = runtime_initialize_Lean_Meta_Injective(builtin)
+;
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-res = initialize_Init_Data_List_MapIdx(builtin);
+res = runtime_initialize_Init_Data_List_MapIdx(builtin)
+;
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-res = initialize_Init_Omega(builtin);
+res = runtime_initialize_Init_Omega(builtin)
+;
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-if (builtin) {res = l___private_Lean_Elab_MutualInductive_0__Lean_Elab_Command_initFn_00___x40_Lean_Elab_MutualInductive_3220189436____hygCtx___hyg_2_();
+res = l___private_Lean_Elab_MutualInductive_0__Lean_Elab_Command_initFn_00___x40_Lean_Elab_MutualInductive_3220189436____hygCtx___hyg_2_()
+;
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-}if (builtin) {res = l_Lean_Elab_Command_initFn_00___x40_Lean_Elab_MutualInductive_3550478639____hygCtx___hyg_4_();
+res = l_Lean_Elab_Command_initFn_00___x40_Lean_Elab_MutualInductive_3550478639____hygCtx___hyg_4_()
+;
 if (lean_io_result_is_error(res)) return res;
 l_Lean_Elab_Command_inductive_autoPromoteIndices = lean_io_result_get_value(res);
 lean_mark_persistent(l_Lean_Elab_Command_inductive_autoPromoteIndices);
 lean_dec_ref(res);
-}if (builtin) {res = l_Lean_Elab_Command_initFn_00___x40_Lean_Elab_MutualInductive_723052858____hygCtx___hyg_4_();
+res = l_Lean_Elab_Command_initFn_00___x40_Lean_Elab_MutualInductive_723052858____hygCtx___hyg_4_()
+;
 if (lean_io_result_is_error(res)) return res;
 l_Lean_Elab_Command_bootstrap_inductiveCheckResultingUniverse = lean_io_result_get_value(res);
 lean_mark_persistent(l_Lean_Elab_Command_bootstrap_inductiveCheckResultingUniverse);
 lean_dec_ref(res);
-}l_Lean_Elab_Command_instInhabitedCtorView_default = _init_l_Lean_Elab_Command_instInhabitedCtorView_default();
+l_Lean_Elab_Command_instInhabitedCtorView_default = _init_l_Lean_Elab_Command_instInhabitedCtorView_default();
 lean_mark_persistent(l_Lean_Elab_Command_instInhabitedCtorView_default);
 l_Lean_Elab_Command_instInhabitedCtorView = _init_l_Lean_Elab_Command_instInhabitedCtorView();
 lean_mark_persistent(l_Lean_Elab_Command_instInhabitedCtorView);
@@ -69907,20 +69922,105 @@ l_Lean_Elab_Command_instInhabitedInductiveElabStep1_default = _init_l_Lean_Elab_
 lean_mark_persistent(l_Lean_Elab_Command_instInhabitedInductiveElabStep1_default);
 l_Lean_Elab_Command_instInhabitedInductiveElabStep1 = _init_l_Lean_Elab_Command_instInhabitedInductiveElabStep1();
 lean_mark_persistent(l_Lean_Elab_Command_instInhabitedInductiveElabStep1);
-if (builtin) {res = l_Lean_Elab_Command_initFn_00___x40_Lean_Elab_MutualInductive_3413988523____hygCtx___hyg_2_();
+res = l_Lean_Elab_Command_initFn_00___x40_Lean_Elab_MutualInductive_3413988523____hygCtx___hyg_2_()
+;
 if (lean_io_result_is_error(res)) return res;
 l_Lean_Elab_Command_inductiveElabAttr = lean_io_result_get_value(res);
 lean_mark_persistent(l_Lean_Elab_Command_inductiveElabAttr);
 lean_dec_ref(res);
-}if (builtin) {res = l_Lean_Elab_Command_inductiveElabAttr___regBuiltin_Lean_Elab_Command_inductiveElabAttr_docString__1();
+res = l_Lean_Elab_Command_inductiveElabAttr___regBuiltin_Lean_Elab_Command_inductiveElabAttr_docString__1()
+;
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-}if (builtin) {res = l_Lean_Elab_Command_inductiveElabAttr___regBuiltin_Lean_Elab_Command_inductiveElabAttr_declRange__3();
+res = l_Lean_Elab_Command_inductiveElabAttr___regBuiltin_Lean_Elab_Command_inductiveElabAttr_declRange__3()
+;
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-}l___private_Lean_Elab_MutualInductive_0__Lean_Elab_Command_addTermInfoViews___boxed__const__1 = _init_l___private_Lean_Elab_MutualInductive_0__Lean_Elab_Command_addTermInfoViews___boxed__const__1();
+l___private_Lean_Elab_MutualInductive_0__Lean_Elab_Command_addTermInfoViews___boxed__const__1 = _init_l___private_Lean_Elab_MutualInductive_0__Lean_Elab_Command_addTermInfoViews___boxed__const__1();
 lean_mark_persistent(l___private_Lean_Elab_MutualInductive_0__Lean_Elab_Command_addTermInfoViews___boxed__const__1);
 return lean_io_result_mk_ok(lean_box(0));
+}
+static bool _G_meta_initialized = false;
+LEAN_EXPORT lean_object* meta_initialize_Lean_Elab_MutualInductive(uint8_t builtin) {
+lean_object * res;
+if (_G_meta_initialized) return lean_io_result_mk_ok(lean_box(0));
+_G_meta_initialized = true;
+return lean_io_result_mk_ok(lean_box(0));
+}
+lean_object* initialize_Lean_Meta_Constructions(uint8_t builtin);
+lean_object* initialize_Lean_Meta_SizeOf(uint8_t builtin);
+lean_object* initialize_Lean_Meta_MkIffOfInductiveProp(uint8_t builtin);
+lean_object* initialize_Lean_Elab_Coinductive(uint8_t builtin);
+lean_object* initialize_Lean_Elab_Deriving_Basic(uint8_t builtin);
+lean_object* initialize_Lean_Elab_ComputedFields(uint8_t builtin);
+lean_object* initialize_Lean_Meta_Constructions_CtorIdx(uint8_t builtin);
+lean_object* initialize_Lean_Meta_Constructions_CtorElim(uint8_t builtin);
+lean_object* initialize_Lean_Meta_IndPredBelow(uint8_t builtin);
+lean_object* initialize_Lean_Meta_Injective(uint8_t builtin);
+lean_object* initialize_Init_Data_List_MapIdx(uint8_t builtin);
+lean_object* initialize_Init_Omega(uint8_t builtin);
+static bool _G_initialized = false;
+LEAN_EXPORT lean_object* initialize_Lean_Elab_MutualInductive(uint8_t builtin) {
+lean_object * res;
+if (_G_initialized) return lean_io_result_mk_ok(lean_box(0));
+_G_initialized = true;
+res = initialize_Lean_Meta_Constructions(builtin)
+;
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Lean_Meta_SizeOf(builtin)
+;
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Lean_Meta_MkIffOfInductiveProp(builtin)
+;
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Lean_Elab_Coinductive(builtin)
+;
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Lean_Elab_Deriving_Basic(builtin)
+;
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Lean_Elab_ComputedFields(builtin)
+;
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Lean_Meta_Constructions_CtorIdx(builtin)
+;
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Lean_Meta_Constructions_CtorElim(builtin)
+;
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Lean_Meta_IndPredBelow(builtin)
+;
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Lean_Meta_Injective(builtin)
+;
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Init_Data_List_MapIdx(builtin)
+;
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Init_Omega(builtin)
+;
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = runtime_initialize_Lean_Elab_MutualInductive(builtin)
+;
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = meta_initialize_Lean_Elab_MutualInductive(builtin)
+;
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+return initialize_Lean_Elab_MutualInductive(builtin);
 }
 #ifdef __cplusplus
 }
