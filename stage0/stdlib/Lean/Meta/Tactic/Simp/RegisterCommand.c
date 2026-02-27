@@ -636,23 +636,44 @@ goto block_266;
 }
 else
 {
-uint8_t x_269; 
-x_269 = !lean_is_exclusive(x_267);
-if (x_269 == 0)
+lean_object* x_269; lean_object* x_270; uint8_t x_271; uint8_t x_276; 
+x_269 = lean_ctor_get(x_267, 0);
+x_276 = !lean_is_exclusive(x_267);
+if (x_276 == 0)
 {
-x_255 = x_267;
-goto block_266;
+x_270 = x_267;
+x_271 = x_276;
+goto block_275;
 }
 else
 {
-lean_object* x_270; lean_object* x_271; 
-x_270 = lean_ctor_get(x_267, 0);
-lean_inc(x_270);
+lean_inc(x_269);
 lean_dec(x_267);
-x_271 = lean_alloc_ctor(1, 1, 0);
-lean_ctor_set(x_271, 0, x_270);
-x_255 = x_271;
+x_270 = lean_box(0);
+x_271 = x_276;
+goto block_275;
+}
+block_275:
+{
+lean_object* x_272; 
+if (x_271 == 0)
+{
+x_272 = x_270;
+goto block_273;
+}
+else
+{
+lean_object* x_274; 
+x_274 = lean_alloc_ctor(1, 1, 0);
+lean_ctor_set(x_274, 0, x_269);
+x_272 = x_274;
+goto block_273;
+}
+block_273:
+{
+x_255 = x_272;
 goto block_266;
+}
 }
 }
 block_254:

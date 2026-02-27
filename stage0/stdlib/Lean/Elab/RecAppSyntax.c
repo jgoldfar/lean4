@@ -55,50 +55,55 @@ x_3 = ((lean_object*)(l___private_Lean_Elab_RecAppSyntax_0__Lean_recAppKey));
 x_4 = l_Lean_KVMap_find(x_2, x_3);
 if (lean_obj_tag(x_4) == 1)
 {
-uint8_t x_5; 
-x_5 = !lean_is_exclusive(x_4);
-if (x_5 == 0)
+lean_object* x_5; lean_object* x_6; uint8_t x_7; uint8_t x_14; 
+x_5 = lean_ctor_get(x_4, 0);
+x_14 = !lean_is_exclusive(x_4);
+if (x_14 == 0)
 {
-lean_object* x_6; 
-x_6 = lean_ctor_get(x_4, 0);
-if (lean_obj_tag(x_6) == 5)
-{
-lean_object* x_7; 
-x_7 = lean_ctor_get(x_6, 0);
-lean_inc(x_7);
-lean_dec_ref(x_6);
-lean_ctor_set(x_4, 0, x_7);
-return x_4;
+x_6 = x_4;
+x_7 = x_14;
+goto block_13;
 }
 else
 {
-lean_object* x_8; 
-lean_free_object(x_4);
-lean_dec(x_6);
-x_8 = lean_box(0);
-return x_8;
-}
-}
-else
-{
-lean_object* x_9; 
-x_9 = lean_ctor_get(x_4, 0);
-lean_inc(x_9);
+lean_inc(x_5);
 lean_dec(x_4);
-if (lean_obj_tag(x_9) == 5)
+x_6 = lean_box(0);
+x_7 = x_14;
+goto block_13;
+}
+block_13:
 {
-lean_object* x_10; lean_object* x_11; 
-x_10 = lean_ctor_get(x_9, 0);
-lean_inc(x_10);
-lean_dec_ref(x_9);
+if (lean_obj_tag(x_5) == 5)
+{
+lean_object* x_8; lean_object* x_9; 
+x_8 = lean_ctor_get(x_5, 0);
+lean_inc(x_8);
+lean_dec_ref(x_5);
+if (x_7 == 0)
+{
+lean_ctor_set(x_6, 0, x_8);
+x_9 = x_6;
+goto block_10;
+}
+else
+{
+lean_object* x_11; 
 x_11 = lean_alloc_ctor(1, 1, 0);
-lean_ctor_set(x_11, 0, x_10);
-return x_11;
+lean_ctor_set(x_11, 0, x_8);
+x_9 = x_11;
+goto block_10;
+}
+block_10:
+{
+return x_9;
+}
 }
 else
 {
 lean_object* x_12; 
-lean_dec(x_9);
+lean_del_object(x_6);
+lean_dec(x_5);
 x_12 = lean_box(0);
 return x_12;
 }
@@ -106,17 +111,17 @@ return x_12;
 }
 else
 {
-lean_object* x_13; 
+lean_object* x_15; 
 lean_dec(x_4);
-x_13 = lean_box(0);
-return x_13;
+x_15 = lean_box(0);
+return x_15;
 }
 }
 else
 {
-lean_object* x_14; 
-x_14 = lean_box(0);
-return x_14;
+lean_object* x_16; 
+x_16 = lean_box(0);
+return x_16;
 }
 }
 }

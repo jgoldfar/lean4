@@ -2227,46 +2227,58 @@ return x_5;
 LEAN_EXPORT lean_object* l_Fin_instGetElem_x3fFinVal___redArg(lean_object* x_1) {
 _start:
 {
-uint8_t x_2; 
-x_2 = !lean_is_exclusive(x_1);
-if (x_2 == 0)
+lean_object* x_2; lean_object* x_3; lean_object* x_4; lean_object* x_5; uint8_t x_6; uint8_t x_14; 
+x_2 = lean_ctor_get(x_1, 0);
+x_3 = lean_ctor_get(x_1, 1);
+x_4 = lean_ctor_get(x_1, 2);
+x_14 = !lean_is_exclusive(x_1);
+if (x_14 == 0)
 {
-lean_object* x_3; lean_object* x_4; lean_object* x_5; lean_object* x_6; lean_object* x_7; lean_object* x_8; 
-x_3 = lean_ctor_get(x_1, 0);
-x_4 = lean_ctor_get(x_1, 1);
-x_5 = lean_ctor_get(x_1, 2);
-x_6 = lean_alloc_closure((void*)(l_Fin_instGetElem_x3fFinVal___redArg___lam__0), 3, 1);
-lean_closure_set(x_6, 0, x_4);
-x_7 = lean_alloc_closure((void*)(l_Fin_instGetElem_x3fFinVal___redArg___lam__1), 4, 1);
-lean_closure_set(x_7, 0, x_5);
-x_8 = lean_alloc_closure((void*)(l_Fin_instGetElemFinVal___redArg___lam__0), 4, 1);
-lean_closure_set(x_8, 0, x_3);
-lean_ctor_set(x_1, 2, x_7);
-lean_ctor_set(x_1, 1, x_6);
-lean_ctor_set(x_1, 0, x_8);
-return x_1;
+x_5 = x_1;
+x_6 = x_14;
+goto block_13;
 }
 else
 {
-lean_object* x_9; lean_object* x_10; lean_object* x_11; lean_object* x_12; lean_object* x_13; lean_object* x_14; lean_object* x_15; 
-x_9 = lean_ctor_get(x_1, 0);
-x_10 = lean_ctor_get(x_1, 1);
-x_11 = lean_ctor_get(x_1, 2);
-lean_inc(x_11);
-lean_inc(x_10);
-lean_inc(x_9);
+lean_inc(x_4);
+lean_inc(x_3);
+lean_inc(x_2);
 lean_dec(x_1);
-x_12 = lean_alloc_closure((void*)(l_Fin_instGetElem_x3fFinVal___redArg___lam__0), 3, 1);
-lean_closure_set(x_12, 0, x_10);
-x_13 = lean_alloc_closure((void*)(l_Fin_instGetElem_x3fFinVal___redArg___lam__1), 4, 1);
-lean_closure_set(x_13, 0, x_11);
-x_14 = lean_alloc_closure((void*)(l_Fin_instGetElemFinVal___redArg___lam__0), 4, 1);
-lean_closure_set(x_14, 0, x_9);
-x_15 = lean_alloc_ctor(0, 3, 0);
-lean_ctor_set(x_15, 0, x_14);
-lean_ctor_set(x_15, 1, x_12);
-lean_ctor_set(x_15, 2, x_13);
-return x_15;
+x_5 = lean_box(0);
+x_6 = x_14;
+goto block_13;
+}
+block_13:
+{
+lean_object* x_7; lean_object* x_8; lean_object* x_9; lean_object* x_10; 
+x_7 = lean_alloc_closure((void*)(l_Fin_instGetElem_x3fFinVal___redArg___lam__0), 3, 1);
+lean_closure_set(x_7, 0, x_3);
+x_8 = lean_alloc_closure((void*)(l_Fin_instGetElem_x3fFinVal___redArg___lam__1), 4, 1);
+lean_closure_set(x_8, 0, x_4);
+x_9 = lean_alloc_closure((void*)(l_Fin_instGetElemFinVal___redArg___lam__0), 4, 1);
+lean_closure_set(x_9, 0, x_2);
+if (x_6 == 0)
+{
+lean_ctor_set(x_5, 2, x_8);
+lean_ctor_set(x_5, 1, x_7);
+lean_ctor_set(x_5, 0, x_9);
+x_10 = x_5;
+goto block_11;
+}
+else
+{
+lean_object* x_12; 
+x_12 = lean_alloc_ctor(0, 3, 0);
+lean_ctor_set(x_12, 0, x_9);
+lean_ctor_set(x_12, 1, x_7);
+lean_ctor_set(x_12, 2, x_8);
+x_10 = x_12;
+goto block_11;
+}
+block_11:
+{
+return x_10;
+}
 }
 }
 }

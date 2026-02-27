@@ -639,21 +639,43 @@ return x_7;
 }
 else
 {
-uint8_t x_8; 
-x_8 = !lean_is_exclusive(x_6);
-if (x_8 == 0)
+lean_object* x_8; lean_object* x_9; uint8_t x_10; uint8_t x_15; 
+x_8 = lean_ctor_get(x_6, 0);
+x_15 = !lean_is_exclusive(x_6);
+if (x_15 == 0)
 {
-return x_6;
+x_9 = x_6;
+x_10 = x_15;
+goto block_14;
 }
 else
 {
-lean_object* x_9; lean_object* x_10; 
-x_9 = lean_ctor_get(x_6, 0);
-lean_inc(x_9);
+lean_inc(x_8);
 lean_dec(x_6);
-x_10 = lean_alloc_ctor(1, 1, 0);
-lean_ctor_set(x_10, 0, x_9);
-return x_10;
+x_9 = lean_box(0);
+x_10 = x_15;
+goto block_14;
+}
+block_14:
+{
+lean_object* x_11; 
+if (x_10 == 0)
+{
+x_11 = x_9;
+goto block_12;
+}
+else
+{
+lean_object* x_13; 
+x_13 = lean_alloc_ctor(1, 1, 0);
+lean_ctor_set(x_13, 0, x_8);
+x_11 = x_13;
+goto block_12;
+}
+block_12:
+{
+return x_11;
+}
 }
 }
 }

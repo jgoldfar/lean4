@@ -224,36 +224,55 @@ LEAN_EXPORT lean_object* l_Lake_InputDir_default(lean_object*);
 LEAN_EXPORT lean_object* l_Lake_Module_key(lean_object* x_1) {
 _start:
 {
-lean_object* x_2; lean_object* x_3; uint8_t x_4; 
+lean_object* x_2; lean_object* x_3; lean_object* x_4; lean_object* x_5; uint8_t x_6; uint8_t x_12; 
 x_2 = lean_ctor_get(x_1, 0);
 x_3 = lean_ctor_get(x_2, 0);
 lean_inc_ref(x_3);
-x_4 = !lean_is_exclusive(x_1);
-if (x_4 == 0)
+x_4 = lean_ctor_get(x_1, 1);
+x_12 = !lean_is_exclusive(x_1);
+if (x_12 == 0)
 {
-lean_object* x_5; lean_object* x_6; 
-x_5 = lean_ctor_get(x_1, 0);
-lean_dec(x_5);
-x_6 = lean_ctor_get(x_3, 2);
-lean_inc(x_6);
-lean_dec_ref(x_3);
-lean_ctor_set_tag(x_1, 2);
-lean_ctor_set(x_1, 0, x_6);
-return x_1;
+lean_object* x_13; 
+x_13 = lean_ctor_get(x_1, 0);
+lean_dec(x_13);
+x_5 = x_1;
+x_6 = x_12;
+goto block_11;
 }
 else
 {
-lean_object* x_7; lean_object* x_8; lean_object* x_9; 
-x_7 = lean_ctor_get(x_1, 1);
-lean_inc(x_7);
+lean_inc(x_4);
 lean_dec(x_1);
-x_8 = lean_ctor_get(x_3, 2);
-lean_inc(x_8);
+x_5 = lean_box(0);
+x_6 = x_12;
+goto block_11;
+}
+block_11:
+{
+lean_object* x_7; lean_object* x_8; 
+x_7 = lean_ctor_get(x_3, 2);
+lean_inc(x_7);
 lean_dec_ref(x_3);
-x_9 = lean_alloc_ctor(2, 2, 0);
-lean_ctor_set(x_9, 0, x_8);
-lean_ctor_set(x_9, 1, x_7);
-return x_9;
+if (x_6 == 0)
+{
+lean_ctor_set_tag(x_5, 2);
+lean_ctor_set(x_5, 0, x_7);
+x_8 = x_5;
+goto block_9;
+}
+else
+{
+lean_object* x_10; 
+x_10 = lean_alloc_ctor(2, 2, 0);
+lean_ctor_set(x_10, 0, x_7);
+lean_ctor_set(x_10, 1, x_4);
+x_8 = x_10;
+goto block_9;
+}
+block_9:
+{
+return x_8;
+}
 }
 }
 }
