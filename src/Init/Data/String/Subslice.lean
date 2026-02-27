@@ -77,13 +77,14 @@ instance {s : Slice} : ToString s.Subslice where
   toString
 
 @[simp]
-theorem copy_eq {s : Slice} {sl : s.Subslice} : sl.copy = sl.toSlice.copy := (rfl)
+theorem copy_eq {s : Slice} : copy (s := s) = Slice.copy ∘ toSlice := (rfl)
 
 @[simp]
-theorem toString_eq {s : Slice} {sl : s.Subslice} : sl.toString = sl.toSlice.copy := (rfl)
+theorem toString_eq {s : Slice} : toString (s := s) = Slice.copy ∘ toSlice := (rfl)
 
 @[simp]
-theorem toStringToString_eq {s : Slice} {sl : s.Subslice} : ToString.toString sl = sl.toSlice.copy := (rfl)
+theorem toStringToString_eq {s : Slice} :
+    ToString.toString (α := s.Subslice) = Slice.copy ∘ toSlice := (rfl)
 
 end Subslice
 
