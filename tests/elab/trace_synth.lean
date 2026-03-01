@@ -24,7 +24,7 @@ error: failed to synthesize instance of type class
 trace: [Meta.synthInstance] ❌️ Foo "two"
   [Meta.synthInstance] new goal Foo "two"
     [Meta.synthInstance.instances] #[@instFoo_1]
-  [Meta.synthInstance] ✅️ apply @instFoo_1 to Foo "two"
+  [Meta.synthInstance.apply] ✅️ apply @instFoo_1 to Foo "two"
     [Meta.synthInstance.tryResolve] ✅️ Foo "two" ≟ Foo "two"
     [Meta.synthInstance] no instances for Foo "three"
       [Meta.synthInstance.instances] #[]
