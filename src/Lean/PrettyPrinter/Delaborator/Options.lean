@@ -133,7 +133,7 @@ register_builtin_option pp.mvars.delayed : Bool := {
 register_builtin_option pp.fvars.anonymous : Bool := {
   defValue := true
   descr    := "(pretty printer) display names for loose free variables (not in the local context) such as `_fvar.22` when true, \
-    and otherwise display them as '_'. Useful for stabilizing output in `#guard_msgs`."
+    and otherwise display them as `_fvar._`. Useful for stabilizing output in `#guard_msgs`."
 }
 register_builtin_option pp.beta : Bool := {
   defValue := false

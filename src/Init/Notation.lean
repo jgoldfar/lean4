@@ -911,7 +911,7 @@ differ between runs or Lean versions. Use `set_option pp.mvars.anonymous false` 
 anonymous metavariables with `?_` while preserving user-named metavariables like `?a`.
 Alternatively, `set_option pp.mvars false` replaces all metavariables with `?_`.
 Similarly, `set_option pp.fvars.anonymous false` replaces loose free variable names like
-`_fvar.22` with `_`.
+`_fvar.22` with `_fvar._`.
 
 For example, `#guard_msgs (error, drop all) in cmd` means to check errors and drop
 everything else.

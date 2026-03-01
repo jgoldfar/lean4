@@ -51,7 +51,7 @@ def delabFVar : Delab := do
       -- use internal name like `_fvar.22`
       maybeAddBlockImplicit <| mkIdent (fvarId.name.replacePrefix `_uniq `_fvar)
     else
-      maybeAddBlockImplicit <| mkIdent `_
+      maybeAddBlockImplicit <| mkIdent `_fvar._
 
 -- loose bound variable, use pseudo syntax
 @[builtin_delab bvar]
