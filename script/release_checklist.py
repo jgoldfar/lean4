@@ -966,7 +966,8 @@ def main():
         # Find the actual minor version in CMakeLists.txt
         for line in cmake_lines:
             if line.strip().startswith("set(LEAN_VERSION_MINOR "):
-                actual_minor = int(line.split()[-1].rstrip(")"))
+                m = re.search(r'set\(LEAN_VERSION_MINOR\s+(\d+)', line)
+                actual_minor = int(m.group(1)) if m else 0
                 version_minor_correct = actual_minor >= next_minor
                 break
         else:
