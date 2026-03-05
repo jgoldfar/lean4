@@ -1014,7 +1014,7 @@ def main():
             version_minor_correct = False
             
         is_release_correct = any(
-            l.strip().startswith("set(LEAN_VERSION_IS_RELEASE 0)") 
+            re.match(r'set\(LEAN_VERSION_IS_RELEASE\s+0[\s)]', l.strip())
             for l in cmake_lines
         )
         
