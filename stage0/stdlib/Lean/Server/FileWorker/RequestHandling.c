@@ -3331,8 +3331,8 @@ return x_20;
 else
 {
 lean_object* x_39; lean_object* x_40; uint8_t x_41; uint8_t x_47; 
-lean_dec_ref(x_7);
 lean_dec(x_10);
+lean_dec_ref(x_7);
 lean_del_object(x_8);
 x_39 = lean_ctor_get(x_14, 0);
 x_47 = !lean_is_exclusive(x_14);
