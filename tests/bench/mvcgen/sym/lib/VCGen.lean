@@ -256,7 +256,7 @@ meta def mkBackwardRuleFromSpec (specThm : SpecTheoremNew) (m σs ps instWP : Ex
     if needPostVC then
       let nmQ' ← mkFreshUserName `Q
       let nmHPost ← mkFreshUserName `hpost
-      let entailment Q' := preprocessExpr <| mkApp4 (mkConst ``PostCond.entails [u]) ps α Q Q'
+      let entailment Q' := preprocessExpr <| mkApp4 (mkConst ``PostCond.entails [u]) α ps Q Q'
       declInfos := declInfos ++
                    #[(nmQ', .default, fun _ => pure typeQ),
                      (nmHPost, .default, fun xs => entailment xs.back!)]
@@ -367,8 +367,8 @@ public structure VCGen.Context where
   postCondEntailsMkRule : BackwardRule
   /-- The backward rule for `ExceptConds.entails.rfl`. -/
   exceptCondsEntailsRflRule : BackwardRule
-  /-- The backward rule for `Triple.of_wp`. -/
-  tripleOfWPRule : BackwardRule
+  /-- The backward rule for `Triple.of_entails_wp`. -/
+  tripleOfEntailsWPRule : BackwardRule
 
 public structure VCGen.State where
   /--
@@ -431,8 +431,8 @@ Unfold `⦃P⦄ x ⦃Q⦄` into `P ⊢ₛ wp⟦x⟧ Q` by applying `Tiple.of_wp`
 is reduced.
 -/
 meta def tripleOfWP (goal : MVarId) : _root_.VCGenM MVarId := goal.withContext do
-  let .goals [goal] ← (← read).tripleOfWPRule.apply goal
-    | throwError "Applying {.ofConstName ``Triple.of_wp} to {goal} failed"
+  let .goals [goal] ← (← read).tripleOfEntailsWPRule.apply goal
+    | throwError "Applying {.ofConstName ``Triple.of_entails_wp} to {goal} failed"
   goal.withContext do
     let target ← goal.getType
     let_expr ent@SPred.entails σs P Q := target | throwError "Expected SPred.entails: {target}"
@@ -787,14 +787,14 @@ meta def mkSpecContext (lemmas : Syntax) (ignoreStarArg := false) : TacticM VCGe
   let entailsConsIntroRule ← mkBackwardRuleFromDecl ``SPred.entails_cons_intro
   let postCondEntailsMkRule ← mkBackwardRuleFromDecl ``PostCond.entails.mk
   let exceptCondsEntailsRflRule ← mkBackwardRuleFromDecl ``ExceptConds.entails.rfl
-  let tripleOfWPRule ← mkBackwardRuleFromDecl ``Triple.of_wp
+  let tripleOfEntailsWPRule ← mkBackwardRuleFromDecl ``Triple.of_entails_wp
   let specThmsNew ← SymM.run <| migrateSpecTheoremsDatabase specThms
   return {
     specThms := specThmsNew,
     entailsConsIntroRule,
     postCondEntailsMkRule,
     exceptCondsEntailsRflRule,
-    tripleOfWPRule,
+    tripleOfEntailsWPRule,
   }
 
 end VCGen
