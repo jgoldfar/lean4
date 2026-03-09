@@ -411,7 +411,7 @@ goto block_107;
 block_107:
 {
 uint8_t x_65; lean_object* x_66; lean_object* x_67; 
-x_65 = lean_ctor_get_uint8(x_40, sizeof(void*)*26);
+x_65 = lean_ctor_get_uint8(x_40, sizeof(void*)*27);
 x_66 = lean_alloc_ctor(1, 1, 0);
 lean_ctor_set(x_66, 0, x_39);
 lean_inc_ref(x_45);

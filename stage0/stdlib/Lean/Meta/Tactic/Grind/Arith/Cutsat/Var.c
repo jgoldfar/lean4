@@ -2121,7 +2121,7 @@ block_29:
 uint8_t x_21; 
 lean_inc(x_20);
 lean_inc(x_2);
-x_21 = l_List_elem___redArg(x_18, x_2, x_20);
+x_21 = l_List_elem___redArg(x_19, x_2, x_20);
 if (x_21 == 0)
 {
 lean_object* x_22; lean_object* x_23; lean_object* x_24; 
@@ -2131,15 +2131,15 @@ lean_closure_set(x_22, 0, x_2);
 lean_closure_set(x_22, 1, x_20);
 lean_closure_set(x_22, 2, x_15);
 x_23 = l_Lean_Meta_Grind_Arith_Cutsat_cutsatExt;
-x_24 = l___private_Lean_Meta_Tactic_Grind_Types_0__Lean_Meta_Grind_SolverExtension_modifyStateImpl___redArg(x_23, x_22, x_19);
-lean_dec(x_19);
+x_24 = l___private_Lean_Meta_Tactic_Grind_Types_0__Lean_Meta_Grind_SolverExtension_modifyStateImpl___redArg(x_23, x_22, x_18);
+lean_dec(x_18);
 return x_24;
 }
 else
 {
 lean_object* x_25; lean_object* x_26; 
 lean_dec(x_20);
-lean_dec(x_19);
+lean_dec(x_18);
 lean_dec(x_15);
 lean_dec(x_2);
 x_25 = lean_box(0);
@@ -2183,8 +2183,8 @@ if (lean_obj_tag(x_36) == 0)
 {
 lean_object* x_37; 
 x_37 = lean_box(0);
-x_18 = x_35;
-x_19 = x_30;
+x_18 = x_30;
+x_19 = x_35;
 x_20 = x_37;
 goto block_29;
 }
@@ -2194,8 +2194,8 @@ lean_object* x_38;
 x_38 = lean_ctor_get(x_36, 0);
 lean_inc(x_38);
 lean_dec_ref(x_36);
-x_18 = x_35;
-x_19 = x_30;
+x_18 = x_30;
+x_19 = x_35;
 x_20 = x_38;
 goto block_29;
 }

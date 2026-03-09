@@ -4808,7 +4808,7 @@ lean_inc_ref(x_105);
 x_106 = l___private_Lean_Compiler_LCNF_Simp_JpCases_0__Lean_Compiler_LCNF_Simp_simpJpCases_x3f_visit(x_105, x_10, x_11, x_12, x_13, x_14, x_15, x_16);
 if (lean_obj_tag(x_106) == 0)
 {
-lean_object* x_107; lean_object* x_117; lean_object* x_118; lean_object* x_119; lean_object* x_120; uint8_t x_121; lean_object* x_122; lean_object* x_123; lean_object* x_132; lean_object* x_133; lean_object* x_180; lean_object* x_181; lean_object* x_182; 
+lean_object* x_107; lean_object* x_117; lean_object* x_118; lean_object* x_119; uint8_t x_120; lean_object* x_121; lean_object* x_122; lean_object* x_123; lean_object* x_132; lean_object* x_133; lean_object* x_180; lean_object* x_181; lean_object* x_182; 
 x_107 = lean_ctor_get(x_106, 0);
 lean_inc(x_107);
 lean_dec_ref(x_106);
@@ -4871,12 +4871,12 @@ goto block_22;
 block_131:
 {
 lean_object* x_124; lean_object* x_125; lean_object* x_126; lean_object* x_127; lean_object* x_128; lean_object* x_129; lean_object* x_130; 
-x_124 = lean_ctor_get(x_119, 0);
+x_124 = lean_ctor_get(x_122, 0);
 lean_inc(x_124);
-lean_dec_ref(x_119);
+lean_dec_ref(x_122);
 lean_inc(x_117);
 lean_inc_ref(x_4);
-x_125 = l___private_Lean_Compiler_LCNF_Simp_JpCases_0__Lean_Compiler_LCNF_Simp_mkJmpArgsAtJp(x_4, x_117, x_122, x_121);
+x_125 = l___private_Lean_Compiler_LCNF_Simp_JpCases_0__Lean_Compiler_LCNF_Simp_mkJmpArgsAtJp(x_4, x_117, x_121, x_120);
 x_126 = lean_alloc_ctor(3, 2, 0);
 lean_ctor_set(x_126, 0, x_124);
 lean_ctor_set(x_126, 1, x_125);
@@ -4884,7 +4884,7 @@ lean_inc_ref(x_34);
 x_127 = l___private_Lean_Compiler_LCNF_Basic_0__Lean_Compiler_LCNF_updateAltCodeImp___redArg(x_34, x_126);
 x_128 = lean_array_push(x_26, x_127);
 x_129 = lean_alloc_ctor(0, 2, 0);
-lean_ctor_set(x_129, 0, x_120);
+lean_ctor_set(x_129, 0, x_119);
 lean_ctor_set(x_129, 1, x_123);
 x_130 = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(x_130, 0, x_128);
@@ -4995,10 +4995,10 @@ x_149 = lean_array_push(x_29, x_148);
 x_150 = lean_ctor_get(x_147, 0);
 lean_inc(x_150);
 lean_dec(x_147);
-x_119 = x_143;
-x_120 = x_149;
-x_121 = x_144;
-x_122 = x_139;
+x_119 = x_149;
+x_120 = x_144;
+x_121 = x_139;
+x_122 = x_143;
 x_123 = x_150;
 goto block_131;
 }

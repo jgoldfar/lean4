@@ -2667,9 +2667,9 @@ goto block_245;
 block_236:
 {
 lean_object* x_229; lean_object* x_230; 
-x_229 = lean_nat_add(x_226, x_228);
+x_229 = lean_nat_add(x_227, x_228);
 lean_dec(x_228);
-lean_dec(x_226);
+lean_dec(x_227);
 if (x_223 == 0)
 {
 lean_ctor_set(x_222, 4, x_193);
@@ -2698,7 +2698,7 @@ lean_object* x_231;
 if (x_212 == 0)
 {
 lean_ctor_set(x_211, 4, x_230);
-lean_ctor_set(x_211, 3, x_227);
+lean_ctor_set(x_211, 3, x_226);
 lean_ctor_set(x_211, 2, x_215);
 lean_ctor_set(x_211, 1, x_214);
 lean_ctor_set(x_211, 0, x_225);
@@ -2712,7 +2712,7 @@ x_233 = lean_alloc_ctor(0, 5, 0);
 lean_ctor_set(x_233, 0, x_225);
 lean_ctor_set(x_233, 1, x_214);
 lean_ctor_set(x_233, 2, x_215);
-lean_ctor_set(x_233, 3, x_227);
+lean_ctor_set(x_233, 3, x_226);
 lean_ctor_set(x_233, 4, x_230);
 x_231 = x_233;
 goto block_232;
@@ -2760,8 +2760,8 @@ if (lean_obj_tag(x_217) == 0)
 lean_object* x_241; 
 x_241 = lean_ctor_get(x_217, 0);
 lean_inc(x_241);
-x_226 = x_240;
-x_227 = x_239;
+x_226 = x_239;
+x_227 = x_240;
 x_228 = x_241;
 goto block_236;
 }
@@ -2769,8 +2769,8 @@ else
 {
 lean_object* x_242; 
 x_242 = lean_unsigned_to_nat(0u);
-x_226 = x_240;
-x_227 = x_239;
+x_226 = x_239;
+x_227 = x_240;
 x_228 = x_242;
 goto block_236;
 }

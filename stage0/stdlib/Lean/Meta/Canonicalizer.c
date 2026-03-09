@@ -1740,8 +1740,8 @@ lean_dec(x_113);
 lean_dec_ref(x_112);
 lean_dec(x_111);
 lean_dec_ref(x_110);
-lean_dec_ref(x_1);
 lean_dec_ref(x_93);
+lean_dec_ref(x_1);
 x_118 = lean_ctor_get(x_116, 0);
 x_125 = !lean_is_exclusive(x_116);
 if (x_125 == 0)

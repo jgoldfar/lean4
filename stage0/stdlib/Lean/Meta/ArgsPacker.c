@@ -2019,8 +2019,8 @@ if (x_36 == 0)
 lean_dec_ref(x_35);
 lean_dec(x_21);
 lean_del_object(x_19);
-lean_dec_ref(x_12);
 lean_dec(x_18);
+lean_dec_ref(x_12);
 lean_dec_ref(x_5);
 lean_dec_ref(x_4);
 lean_dec(x_3);
@@ -2267,8 +2267,8 @@ else
 {
 lean_dec(x_21);
 lean_del_object(x_19);
-lean_dec_ref(x_12);
 lean_dec(x_18);
+lean_dec_ref(x_12);
 lean_dec(x_9);
 lean_dec_ref(x_8);
 lean_dec(x_7);

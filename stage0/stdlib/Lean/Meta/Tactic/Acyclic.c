@@ -2388,7 +2388,7 @@ block_46:
 if (x_12 == 0)
 {
 lean_object* x_13; lean_object* x_14; lean_object* x_15; lean_object* x_16; uint8_t x_17; uint8_t x_45; 
-lean_dec_ref(x_11);
+lean_dec_ref(x_10);
 x_13 = ((lean_object*)(l___private_Lean_Meta_Tactic_Acyclic_0__Lean_MVarId_acyclic_go___closed__3));
 x_14 = l_Lean_isTracingEnabledFor___at___00__private_Lean_Meta_Tactic_Acyclic_0__Lean_MVarId_acyclic_go_spec__0___redArg(x_13, x_7);
 x_15 = lean_ctor_get(x_14, 0);
@@ -2415,7 +2415,7 @@ lean_dec(x_15);
 if (x_18 == 0)
 {
 lean_object* x_19; lean_object* x_20; 
-lean_dec_ref(x_10);
+lean_dec_ref(x_11);
 lean_dec(x_8);
 lean_dec_ref(x_7);
 lean_dec(x_6);
@@ -2445,7 +2445,7 @@ else
 lean_object* x_23; lean_object* x_24; lean_object* x_25; lean_object* x_26; 
 lean_del_object(x_16);
 x_23 = lean_obj_once(&l___private_Lean_Meta_Tactic_Acyclic_0__Lean_MVarId_acyclic_go___closed__5, &l___private_Lean_Meta_Tactic_Acyclic_0__Lean_MVarId_acyclic_go___closed__5_once, _init_l___private_Lean_Meta_Tactic_Acyclic_0__Lean_MVarId_acyclic_go___closed__5);
-x_24 = l_Lean_Exception_toMessageData(x_10);
+x_24 = l_Lean_Exception_toMessageData(x_11);
 x_25 = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(x_25, 0, x_23);
 lean_ctor_set(x_25, 1, x_24);
@@ -2544,12 +2544,12 @@ return x_39;
 }
 else
 {
-lean_dec_ref(x_10);
+lean_dec_ref(x_11);
 lean_dec(x_8);
 lean_dec_ref(x_7);
 lean_dec(x_6);
 lean_dec_ref(x_5);
-return x_11;
+return x_10;
 }
 }
 block_51:
@@ -2561,15 +2561,15 @@ if (x_49 == 0)
 uint8_t x_50; 
 lean_inc_ref(x_48);
 x_50 = l_Lean_Exception_isRuntime(x_48);
-x_10 = x_48;
-x_11 = x_47;
+x_10 = x_47;
+x_11 = x_48;
 x_12 = x_50;
 goto block_46;
 }
 else
 {
-x_10 = x_48;
-x_11 = x_47;
+x_10 = x_47;
+x_11 = x_48;
 x_12 = x_49;
 goto block_46;
 }

@@ -2116,7 +2116,7 @@ return x_7;
 LEAN_EXPORT lean_object* l_Lean_Elab_Do_getExprPatternVarsEx___redArg(lean_object* x_1) {
 _start:
 {
-lean_object* x_3; lean_object* x_9; size_t x_10; lean_object* x_11; lean_object* x_17; uint8_t x_18; 
+lean_object* x_3; size_t x_9; lean_object* x_10; lean_object* x_11; lean_object* x_17; uint8_t x_18; 
 x_17 = ((lean_object*)(l_Lean_Elab_Do_getExprPatternVarsEx___redArg___closed__1));
 lean_inc(x_1);
 x_18 = l_Lean_Syntax_isOfKind(x_1, x_17);
@@ -2253,8 +2253,8 @@ x_48 = lean_nat_dec_lt(x_20, x_46);
 if (x_48 == 0)
 {
 lean_dec_ref(x_29);
-x_9 = x_45;
-x_10 = x_44;
+x_9 = x_44;
+x_10 = x_45;
 x_11 = x_47;
 goto block_16;
 }
@@ -2267,8 +2267,8 @@ if (x_49 == 0)
 if (x_48 == 0)
 {
 lean_dec_ref(x_29);
-x_9 = x_45;
-x_10 = x_44;
+x_9 = x_44;
+x_10 = x_45;
 x_11 = x_47;
 goto block_16;
 }
@@ -2278,8 +2278,8 @@ size_t x_50; lean_object* x_51;
 x_50 = lean_usize_of_nat(x_46);
 x_51 = l___private_Init_Data_Array_Basic_0__Array_foldlMUnsafe_fold___at___00Lean_Elab_Do_getExprPatternVarsEx_spec__1(x_29, x_44, x_50, x_47);
 lean_dec_ref(x_29);
-x_9 = x_45;
-x_10 = x_44;
+x_9 = x_44;
+x_10 = x_45;
 x_11 = x_51;
 goto block_16;
 }
@@ -2290,8 +2290,8 @@ size_t x_52; lean_object* x_53;
 x_52 = lean_usize_of_nat(x_46);
 x_53 = l___private_Init_Data_Array_Basic_0__Array_foldlMUnsafe_fold___at___00Lean_Elab_Do_getExprPatternVarsEx_spec__1(x_29, x_44, x_52, x_47);
 lean_dec_ref(x_29);
-x_9 = x_45;
-x_10 = x_44;
+x_9 = x_44;
+x_10 = x_45;
 x_11 = x_53;
 goto block_16;
 }
@@ -2313,10 +2313,10 @@ return x_7;
 block_16:
 {
 lean_object* x_12; size_t x_13; lean_object* x_14; lean_object* x_15; 
-x_12 = l_Array_append___redArg(x_9, x_11);
+x_12 = l_Array_append___redArg(x_10, x_11);
 lean_dec_ref(x_11);
 x_13 = lean_array_size(x_12);
-x_14 = l___private_Init_Data_Array_Basic_0__Array_mapMUnsafe_map___at___00Lean_Elab_Do_getExprPatternVarsEx_spec__0(x_13, x_10, x_12);
+x_14 = l___private_Init_Data_Array_Basic_0__Array_mapMUnsafe_map___at___00Lean_Elab_Do_getExprPatternVarsEx_spec__0(x_13, x_9, x_12);
 x_15 = lean_alloc_ctor(0, 1, 0);
 lean_ctor_set(x_15, 0, x_14);
 return x_15;

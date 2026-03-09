@@ -6928,7 +6928,7 @@ block_51:
 lean_object* x_40; lean_object* x_41; 
 x_40 = lean_box(0);
 lean_inc_ref(x_28);
-x_41 = lean_grind_internalize(x_28, x_39, x_40, x_34, x_38, x_30, x_29, x_33, x_32, x_37, x_35, x_36, x_31);
+x_41 = lean_grind_internalize(x_28, x_39, x_40, x_32, x_31, x_37, x_30, x_34, x_38, x_35, x_36, x_33, x_29);
 if (lean_obj_tag(x_41) == 0)
 {
 lean_object* x_42; 
@@ -7012,32 +7012,32 @@ x_66 = lean_nat_dec_le(x_63, x_65);
 if (x_66 == 0)
 {
 lean_dec(x_65);
-x_29 = x_55;
-x_30 = x_54;
-x_31 = x_61;
-x_32 = x_57;
-x_33 = x_56;
-x_34 = x_52;
-x_35 = x_59;
-x_36 = x_60;
-x_37 = x_58;
-x_38 = x_53;
+x_29 = x_61;
+x_30 = x_55;
+x_31 = x_53;
+x_32 = x_52;
+x_33 = x_60;
+x_34 = x_56;
+x_35 = x_58;
+x_36 = x_59;
+x_37 = x_54;
+x_38 = x_57;
 x_39 = x_63;
 goto block_51;
 }
 else
 {
 lean_dec(x_63);
-x_29 = x_55;
-x_30 = x_54;
-x_31 = x_61;
-x_32 = x_57;
-x_33 = x_56;
-x_34 = x_52;
-x_35 = x_59;
-x_36 = x_60;
-x_37 = x_58;
-x_38 = x_53;
+x_29 = x_61;
+x_30 = x_55;
+x_31 = x_53;
+x_32 = x_52;
+x_33 = x_60;
+x_34 = x_56;
+x_35 = x_58;
+x_36 = x_59;
+x_37 = x_54;
+x_38 = x_57;
 x_39 = x_65;
 goto block_51;
 }
@@ -7839,7 +7839,7 @@ block_95:
 {
 lean_object* x_94; 
 lean_dec(x_91);
-x_94 = l___private_Init_Data_Array_QSort_Basic_0__Array_qsort_sort___at___00Lean_Meta_Grind_mbtc_spec__10___redArg(x_90, x_92, x_93);
+x_94 = l___private_Init_Data_Array_QSort_Basic_0__Array_qsort_sort___at___00Lean_Meta_Grind_mbtc_spec__10___redArg(x_92, x_90, x_93);
 lean_dec(x_93);
 x_46 = x_94;
 goto block_89;
@@ -7847,23 +7847,23 @@ goto block_89;
 block_101:
 {
 uint8_t x_100; 
-x_100 = lean_nat_dec_le(x_99, x_97);
+x_100 = lean_nat_dec_le(x_99, x_98);
 if (x_100 == 0)
 {
-lean_dec(x_97);
+lean_dec(x_98);
 lean_inc(x_99);
-x_90 = x_96;
-x_91 = x_98;
-x_92 = x_99;
+x_90 = x_99;
+x_91 = x_96;
+x_92 = x_97;
 x_93 = x_99;
 goto block_95;
 }
 else
 {
-x_90 = x_96;
-x_91 = x_98;
-x_92 = x_99;
-x_93 = x_97;
+x_90 = x_99;
+x_91 = x_96;
+x_92 = x_97;
+x_93 = x_98;
 goto block_95;
 }
 }
@@ -7881,17 +7881,17 @@ x_107 = lean_nat_dec_le(x_30, x_106);
 if (x_107 == 0)
 {
 lean_inc(x_106);
-x_96 = x_102;
-x_97 = x_106;
-x_98 = x_103;
+x_96 = x_103;
+x_97 = x_102;
+x_98 = x_106;
 x_99 = x_106;
 goto block_101;
 }
 else
 {
-x_96 = x_102;
-x_97 = x_106;
-x_98 = x_103;
+x_96 = x_103;
+x_97 = x_102;
+x_98 = x_106;
 x_99 = x_30;
 goto block_101;
 }

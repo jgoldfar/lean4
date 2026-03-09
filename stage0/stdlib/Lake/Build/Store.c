@@ -508,8 +508,8 @@ return x_14;
 else
 {
 lean_object* x_20; 
-lean_dec_ref(x_2);
 lean_dec_ref(x_5);
+lean_dec_ref(x_2);
 lean_dec_ref(x_3);
 x_20 = lean_alloc_ctor(1, 1, 0);
 lean_ctor_set(x_20, 0, x_4);

@@ -2165,8 +2165,8 @@ else
 lean_object* x_77; lean_object* x_78; uint8_t x_79; uint8_t x_84; 
 lean_dec(x_16);
 lean_dec_ref(x_15);
-lean_dec_ref(x_14);
 lean_dec_ref(x_3);
+lean_dec_ref(x_14);
 lean_dec(x_6);
 lean_dec_ref(x_5);
 lean_dec_ref(x_2);
@@ -4628,8 +4628,8 @@ return x_30;
 block_45:
 {
 lean_object* x_44; 
-lean_dec(x_42);
-x_44 = l___private_Init_Data_Array_QSort_Basic_0__Array_qsort_sort___at___00Lean_Linter_unusedSimpArgs_spec__8___redArg(x_41, x_40, x_43);
+lean_dec(x_41);
+x_44 = l___private_Init_Data_Array_QSort_Basic_0__Array_qsort_sort___at___00Lean_Linter_unusedSimpArgs_spec__8___redArg(x_40, x_42, x_43);
 lean_dec(x_43);
 x_28 = x_44;
 goto block_39;
@@ -4642,17 +4642,17 @@ if (x_50 == 0)
 {
 lean_dec(x_48);
 lean_inc(x_49);
-x_40 = x_49;
+x_40 = x_47;
 x_41 = x_46;
-x_42 = x_47;
+x_42 = x_49;
 x_43 = x_49;
 goto block_45;
 }
 else
 {
-x_40 = x_49;
+x_40 = x_47;
 x_41 = x_46;
-x_42 = x_47;
+x_42 = x_49;
 x_43 = x_48;
 goto block_45;
 }
@@ -4671,16 +4671,16 @@ x_57 = lean_nat_dec_le(x_17, x_56);
 if (x_57 == 0)
 {
 lean_inc(x_56);
-x_46 = x_52;
-x_47 = x_53;
+x_46 = x_53;
+x_47 = x_52;
 x_48 = x_56;
 x_49 = x_56;
 goto block_51;
 }
 else
 {
-x_46 = x_52;
-x_47 = x_53;
+x_46 = x_53;
+x_47 = x_52;
 x_48 = x_56;
 x_49 = x_17;
 goto block_51;

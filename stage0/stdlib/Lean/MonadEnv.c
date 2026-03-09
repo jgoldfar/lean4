@@ -177,9 +177,9 @@ LEAN_EXPORT lean_object* l_Lean_matchConstStructure___redArg___lam__1(lean_objec
 LEAN_EXPORT lean_object* l_Lean_matchConstStructure___redArg(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l_Lean_matchConstStructure(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 uint8_t lean_nat_dec_eq(lean_object*, lean_object*);
-LEAN_EXPORT lean_object* l_Lean_matchConstStructureLike___redArg___lam__1(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-LEAN_EXPORT lean_object* l_Lean_matchConstStructureLike___redArg(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-LEAN_EXPORT lean_object* l_Lean_matchConstStructureLike(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* l_Lean_matchConstNonRecStructure___redArg___lam__1(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* l_Lean_matchConstNonRecStructure___redArg(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* l_Lean_matchConstNonRecStructure(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 uint8_t lean_has_compile_error(lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l_Lean_hasCompileError___boxed(lean_object*, lean_object*);
 lean_object* l_Lean_Environment_evalConst___redArg(lean_object*, lean_object*, lean_object*, uint8_t);
@@ -2638,7 +2638,7 @@ return x_16;
 }
 }
 }
-LEAN_EXPORT lean_object* l_Lean_matchConstStructureLike___redArg___lam__1(lean_object* x_1, lean_object* x_2, lean_object* x_3, lean_object* x_4, lean_object* x_5, lean_object* x_6, lean_object* x_7, lean_object* x_8, lean_object* x_9) {
+LEAN_EXPORT lean_object* l_Lean_matchConstNonRecStructure___redArg___lam__1(lean_object* x_1, lean_object* x_2, lean_object* x_3, lean_object* x_4, lean_object* x_5, lean_object* x_6, lean_object* x_7, lean_object* x_8, lean_object* x_9) {
 _start:
 {
 uint8_t x_16; lean_object* x_17; 
@@ -2776,7 +2776,7 @@ return x_14;
 }
 }
 }
-LEAN_EXPORT lean_object* l_Lean_matchConstStructureLike___redArg(lean_object* x_1, lean_object* x_2, lean_object* x_3, lean_object* x_4, lean_object* x_5, lean_object* x_6) {
+LEAN_EXPORT lean_object* l_Lean_matchConstNonRecStructure___redArg(lean_object* x_1, lean_object* x_2, lean_object* x_3, lean_object* x_4, lean_object* x_5, lean_object* x_6) {
 _start:
 {
 if (lean_obj_tag(x_4) == 4)
@@ -2792,7 +2792,7 @@ lean_dec_ref(x_4);
 x_10 = lean_ctor_get(x_2, 0);
 lean_inc(x_10);
 lean_inc(x_7);
-x_11 = lean_alloc_closure((void*)(l_Lean_matchConstStructureLike___redArg___lam__1), 9, 8);
+x_11 = lean_alloc_closure((void*)(l_Lean_matchConstNonRecStructure___redArg___lam__1), 9, 8);
 lean_closure_set(x_11, 0, x_8);
 lean_closure_set(x_11, 1, x_5);
 lean_closure_set(x_11, 2, x_6);
@@ -2818,7 +2818,7 @@ return x_14;
 }
 }
 }
-LEAN_EXPORT lean_object* l_Lean_matchConstStructureLike(lean_object* x_1, lean_object* x_2, lean_object* x_3, lean_object* x_4, lean_object* x_5, lean_object* x_6, lean_object* x_7, lean_object* x_8) {
+LEAN_EXPORT lean_object* l_Lean_matchConstNonRecStructure(lean_object* x_1, lean_object* x_2, lean_object* x_3, lean_object* x_4, lean_object* x_5, lean_object* x_6, lean_object* x_7, lean_object* x_8) {
 _start:
 {
 if (lean_obj_tag(x_6) == 4)
@@ -2834,7 +2834,7 @@ lean_dec_ref(x_6);
 x_12 = lean_ctor_get(x_4, 0);
 lean_inc(x_12);
 lean_inc(x_9);
-x_13 = lean_alloc_closure((void*)(l_Lean_matchConstStructureLike___redArg___lam__1), 9, 8);
+x_13 = lean_alloc_closure((void*)(l_Lean_matchConstNonRecStructure___redArg___lam__1), 9, 8);
 lean_closure_set(x_13, 0, x_10);
 lean_closure_set(x_13, 1, x_7);
 lean_closure_set(x_13, 2, x_8);

@@ -3050,8 +3050,8 @@ return x_38;
 }
 else
 {
-lean_dec_ref(x_14);
 lean_dec(x_28);
+lean_dec_ref(x_14);
 lean_del_object(x_15);
 x_17 = x_3;
 x_18 = x_4;

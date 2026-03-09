@@ -12509,8 +12509,8 @@ return x_128;
 else
 {
 lean_object* x_133; lean_object* x_134; uint8_t x_135; uint8_t x_140; 
-lean_dec_ref(x_69);
 lean_dec_ref(x_1);
+lean_dec_ref(x_69);
 lean_dec(x_6);
 lean_dec_ref(x_5);
 lean_dec(x_4);
@@ -12719,11 +12719,11 @@ return x_77;
 block_48:
 {
 lean_object* x_25; lean_object* x_26; lean_object* x_27; 
-x_25 = l_Lean_Compiler_LCNF_attachCodeDecls(x_17, x_22, x_24);
-lean_dec_ref(x_22);
+x_25 = l_Lean_Compiler_LCNF_attachCodeDecls(x_17, x_19, x_24);
+lean_dec_ref(x_19);
 x_26 = lean_alloc_closure((void*)(l___private_Lean_Compiler_LCNF_FloatLetIn_0__Lean_Compiler_LCNF_FloatLetIn_floatLetIn_go___boxed), 7, 1);
 lean_closure_set(x_26, 0, x_25);
-x_27 = l_Lean_Compiler_LCNF_FloatLetIn_withNewScope___redArg(x_26, x_19, x_23, x_20, x_21);
+x_27 = l_Lean_Compiler_LCNF_FloatLetIn_withNewScope___redArg(x_26, x_21, x_20, x_23, x_22);
 if (lean_obj_tag(x_27) == 0)
 {
 lean_object* x_28; lean_object* x_29; size_t x_30; size_t x_31; uint8_t x_32; 
@@ -12815,11 +12815,11 @@ case 0:
 lean_object* x_56; 
 x_56 = lean_ctor_get(x_18, 2);
 lean_inc_ref(x_56);
-x_19 = x_51;
-x_20 = x_53;
-x_21 = x_54;
-x_22 = x_55;
-x_23 = x_52;
+x_19 = x_55;
+x_20 = x_52;
+x_21 = x_51;
+x_22 = x_54;
+x_23 = x_53;
 x_24 = x_56;
 goto block_48;
 }
@@ -12828,11 +12828,11 @@ case 1:
 lean_object* x_57; 
 x_57 = lean_ctor_get(x_18, 1);
 lean_inc_ref(x_57);
-x_19 = x_51;
-x_20 = x_53;
-x_21 = x_54;
-x_22 = x_55;
-x_23 = x_52;
+x_19 = x_55;
+x_20 = x_52;
+x_21 = x_51;
+x_22 = x_54;
+x_23 = x_53;
 x_24 = x_57;
 goto block_48;
 }
@@ -12841,11 +12841,11 @@ default:
 lean_object* x_58; 
 x_58 = lean_ctor_get(x_18, 0);
 lean_inc_ref(x_58);
-x_19 = x_51;
-x_20 = x_53;
-x_21 = x_54;
-x_22 = x_55;
-x_23 = x_52;
+x_19 = x_55;
+x_20 = x_52;
+x_21 = x_51;
+x_22 = x_54;
+x_23 = x_53;
 x_24 = x_58;
 goto block_48;
 }

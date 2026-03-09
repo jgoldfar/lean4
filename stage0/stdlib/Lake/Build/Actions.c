@@ -2705,7 +2705,7 @@ return x_3;
 LEAN_EXPORT lean_object* l_Lake_tar(lean_object* x_1, lean_object* x_2, uint8_t x_3, lean_object* x_4, lean_object* x_5) {
 _start:
 {
-lean_object* x_7; lean_object* x_8; uint8_t x_9; lean_object* x_10; lean_object* x_11; lean_object* x_12; lean_object* x_13; lean_object* x_18; 
+lean_object* x_7; lean_object* x_8; lean_object* x_9; lean_object* x_10; uint8_t x_11; lean_object* x_12; lean_object* x_13; lean_object* x_18; 
 lean_inc_ref(x_2);
 x_18 = l_Lake_createParentDirs(x_2);
 if (lean_obj_tag(x_18) == 0)
@@ -2760,10 +2760,10 @@ if (x_37 == 0)
 lean_object* x_39; 
 x_39 = ((lean_object*)(l_Lake_compileO___closed__2));
 x_7 = x_36;
-x_8 = x_25;
-x_9 = x_38;
-x_10 = x_35;
-x_11 = x_26;
+x_8 = x_35;
+x_9 = x_26;
+x_10 = x_25;
+x_11 = x_38;
 x_12 = x_27;
 x_13 = x_39;
 goto block_17;
@@ -2773,10 +2773,10 @@ else
 lean_object* x_40; 
 x_40 = ((lean_object*)(l_Lake_tar___closed__6));
 x_7 = x_36;
-x_8 = x_25;
-x_9 = x_38;
-x_10 = x_35;
-x_11 = x_26;
+x_8 = x_35;
+x_9 = x_26;
+x_10 = x_25;
+x_11 = x_38;
 x_12 = x_27;
 x_13 = x_40;
 goto block_17;
@@ -2855,14 +2855,14 @@ block_17:
 uint8_t x_14; lean_object* x_15; lean_object* x_16; 
 x_14 = 0;
 x_15 = lean_alloc_ctor(0, 5, 2);
-lean_ctor_set(x_15, 0, x_11);
+lean_ctor_set(x_15, 0, x_9);
 lean_ctor_set(x_15, 1, x_12);
-lean_ctor_set(x_15, 2, x_10);
+lean_ctor_set(x_15, 2, x_8);
 lean_ctor_set(x_15, 3, x_7);
 lean_ctor_set(x_15, 4, x_13);
-lean_ctor_set_uint8(x_15, sizeof(void*)*5, x_9);
+lean_ctor_set_uint8(x_15, sizeof(void*)*5, x_11);
 lean_ctor_set_uint8(x_15, sizeof(void*)*5 + 1, x_14);
-x_16 = l_Lake_proc(x_15, x_9, x_8);
+x_16 = l_Lake_proc(x_15, x_11, x_10);
 return x_16;
 }
 }

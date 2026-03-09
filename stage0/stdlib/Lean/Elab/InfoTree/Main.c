@@ -9199,8 +9199,8 @@ else
 {
 lean_del_object(x_12);
 lean_dec_ref(x_11);
-lean_dec_ref(x_10);
 lean_dec_ref(x_2);
+lean_dec_ref(x_10);
 return x_15;
 }
 }

@@ -4468,8 +4468,8 @@ return x_50;
 else
 {
 lean_object* x_55; 
-lean_dec(x_28);
 lean_dec_ref(x_25);
+lean_dec(x_28);
 x_55 = l___private_Lean_Meta_Tactic_UnifyEq_0__Lean_Meta_unifyEq_x3f_substEq(x_2, x_1, x_3, x_4, x_12, x_23, x_26, x_14, x_6, x_7, x_8, x_9);
 lean_dec(x_12);
 return x_55;

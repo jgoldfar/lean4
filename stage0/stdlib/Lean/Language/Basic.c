@@ -2475,7 +2475,7 @@ return x_3;
 LEAN_EXPORT lean_object* l___private_Init_Data_Array_Basic_0__Array_foldlMUnsafe_fold___at___00Lean_PersistentArray_foldlM___at___00__private_Lean_Language_Basic_0__Lean_Language_reportMessages_spec__4_spec__5(lean_object* x_1, uint8_t x_2, uint8_t x_3, lean_object* x_4, lean_object* x_5, size_t x_6, size_t x_7, lean_object* x_8) {
 _start:
 {
-lean_object* x_10; uint8_t x_15; lean_object* x_16; uint8_t x_28; lean_object* x_29; lean_object* x_30; uint8_t x_31; uint8_t x_54; 
+lean_object* x_10; lean_object* x_15; uint8_t x_16; lean_object* x_28; uint8_t x_29; lean_object* x_30; uint8_t x_31; uint8_t x_54; 
 x_54 = lean_usize_dec_eq(x_6, x_7);
 if (x_54 == 0)
 {
@@ -2576,8 +2576,8 @@ x_72 = lean_unbox(x_70);
 lean_dec(x_70);
 lean_ctor_set_uint8(x_71, sizeof(void*)*5 + 1, x_72);
 lean_ctor_set_uint8(x_71, sizeof(void*)*5 + 2, x_63);
-x_28 = x_58;
-x_29 = x_57;
+x_28 = x_57;
+x_29 = x_58;
 x_30 = x_71;
 x_31 = x_63;
 goto block_53;
@@ -2589,8 +2589,8 @@ else
 uint8_t x_82; 
 lean_dec(x_67);
 x_82 = lean_ctor_get_uint8(x_55, sizeof(void*)*5 + 2);
-x_28 = x_58;
-x_29 = x_57;
+x_28 = x_57;
+x_29 = x_58;
 x_30 = x_55;
 x_31 = x_82;
 goto block_53;
@@ -2662,8 +2662,8 @@ goto block_100;
 block_100:
 {
 lean_ctor_set_uint8(x_99, sizeof(void*)*5 + 1, x_91);
-x_28 = x_58;
-x_29 = x_57;
+x_28 = x_57;
+x_29 = x_58;
 x_30 = x_99;
 x_31 = x_87;
 goto block_53;
@@ -2726,9 +2726,9 @@ goto _start;
 }
 block_27:
 {
-if (x_15 == 0)
+if (x_16 == 0)
 {
-x_10 = x_16;
+x_10 = x_15;
 goto block_14;
 }
 else
@@ -2739,13 +2739,13 @@ x_18 = lean_io_exit(x_17);
 if (lean_obj_tag(x_18) == 0)
 {
 lean_dec_ref(x_18);
-x_10 = x_16;
+x_10 = x_15;
 goto block_14;
 }
 else
 {
 lean_object* x_19; lean_object* x_20; uint8_t x_21; uint8_t x_26; 
-lean_dec(x_16);
+lean_dec(x_15);
 x_19 = lean_ctor_get(x_18, 0);
 x_26 = !lean_is_exclusive(x_18);
 if (x_26 == 0)
@@ -2805,7 +2805,7 @@ goto block_27;
 else
 {
 lean_object* x_34; lean_object* x_35; uint8_t x_36; uint8_t x_41; 
-lean_dec(x_29);
+lean_dec(x_28);
 x_34 = lean_ctor_get(x_33, 0);
 x_41 = !lean_is_exclusive(x_33);
 if (x_41 == 0)
@@ -2861,7 +2861,7 @@ goto block_27;
 else
 {
 lean_object* x_45; lean_object* x_46; uint8_t x_47; uint8_t x_52; 
-lean_dec(x_29);
+lean_dec(x_28);
 x_45 = lean_ctor_get(x_44, 0);
 x_52 = !lean_is_exclusive(x_44);
 if (x_52 == 0)

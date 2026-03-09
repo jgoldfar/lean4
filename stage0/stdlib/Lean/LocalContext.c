@@ -12676,27 +12676,27 @@ lean_object* x_17;
 x_17 = l_Lean_LocalContext_setUserName(x_2, x_16, x_14);
 x_1 = x_12;
 x_2 = x_17;
-x_3 = x_15;
-x_4 = x_13;
+x_3 = x_13;
+x_4 = x_15;
 goto _start;
 }
 block_27:
 {
 lean_object* x_22; lean_object* x_23; lean_object* x_24; lean_object* x_25; lean_object* x_26; 
-lean_inc(x_20);
-x_22 = l_Lean_NameSet_insert(x_3, x_20);
-x_23 = l_Lean_sanitizeName(x_20, x_4);
+lean_inc(x_21);
+x_22 = l_Lean_NameSet_insert(x_3, x_21);
+x_23 = l_Lean_sanitizeName(x_21, x_4);
 x_24 = lean_ctor_get(x_23, 0);
 lean_inc(x_24);
 x_25 = lean_ctor_get(x_23, 1);
 lean_inc(x_25);
 lean_dec_ref(x_23);
-x_26 = lean_ctor_get(x_21, 1);
+x_26 = lean_ctor_get(x_20, 1);
 lean_inc(x_26);
-lean_dec_ref(x_21);
-x_13 = x_25;
+lean_dec_ref(x_20);
+x_13 = x_22;
 x_14 = x_24;
-x_15 = x_22;
+x_15 = x_25;
 x_16 = x_26;
 goto block_19;
 }
@@ -12705,8 +12705,8 @@ block_33:
 if (x_30 == 0)
 {
 lean_object* x_31; 
-lean_dec_ref(x_29);
-x_31 = l_Lean_NameSet_insert(x_3, x_28);
+lean_dec_ref(x_28);
+x_31 = l_Lean_NameSet_insert(x_3, x_29);
 x_1 = x_12;
 x_3 = x_31;
 goto _start;
@@ -12727,15 +12727,15 @@ if (x_36 == 0)
 lean_object* x_37; uint8_t x_38; 
 x_37 = lean_ctor_get(x_34, 2);
 x_38 = l_Lean_NameSet_contains(x_3, x_37);
-x_28 = x_35;
-x_29 = x_34;
+x_28 = x_34;
+x_29 = x_35;
 x_30 = x_38;
 goto block_33;
 }
 else
 {
-x_20 = x_35;
-x_21 = x_34;
+x_20 = x_34;
+x_21 = x_35;
 goto block_27;
 }
 }
@@ -12896,8 +12896,8 @@ lean_dec_ref(x_19);
 x_22 = lean_ctor_get(x_17, 1);
 lean_inc(x_22);
 lean_dec(x_17);
-x_10 = x_18;
-x_11 = x_21;
+x_10 = x_21;
+x_11 = x_18;
 x_12 = x_22;
 goto block_14;
 }
@@ -12927,10 +12927,10 @@ return x_8;
 block_14:
 {
 lean_object* x_13; 
-x_13 = lean_ctor_get(x_11, 1);
+x_13 = lean_ctor_get(x_10, 1);
 lean_inc(x_13);
-lean_dec_ref(x_11);
-x_3 = x_10;
+lean_dec_ref(x_10);
+x_3 = x_11;
 x_4 = x_12;
 x_5 = x_13;
 goto block_9;

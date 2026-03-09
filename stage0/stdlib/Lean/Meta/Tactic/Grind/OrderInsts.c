@@ -777,8 +777,8 @@ return x_23;
 else
 {
 lean_object* x_25; 
-lean_dec(x_24);
 lean_dec_ref(x_23);
+lean_dec(x_24);
 x_25 = l_Lean_Meta_Grind_getConfig___redArg(x_5);
 if (lean_obj_tag(x_25) == 0)
 {

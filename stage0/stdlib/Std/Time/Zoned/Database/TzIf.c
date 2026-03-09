@@ -1338,7 +1338,7 @@ if (x_5 == 0)
 {
 lean_ctor_set_tag(x_4, 4);
 lean_ctor_set(x_4, 1, x_9);
-lean_ctor_set(x_4, 0, x_8);
+lean_ctor_set(x_4, 0, x_6);
 x_10 = x_4;
 goto block_20;
 }
@@ -1346,7 +1346,7 @@ else
 {
 lean_object* x_21; 
 x_21 = lean_alloc_ctor(4, 2, 0);
-lean_ctor_set(x_21, 0, x_8);
+lean_ctor_set(x_21, 0, x_6);
 lean_ctor_set(x_21, 1, x_9);
 x_10 = x_21;
 goto block_20;
@@ -1358,7 +1358,7 @@ x_11 = lean_alloc_ctor(6, 1, 1);
 lean_ctor_set(x_11, 0, x_10);
 lean_ctor_set_uint8(x_11, sizeof(void*)*1, x_7);
 x_12 = lean_alloc_ctor(5, 2, 0);
-lean_ctor_set(x_12, 0, x_6);
+lean_ctor_set(x_12, 0, x_8);
 lean_ctor_set(x_12, 1, x_11);
 x_13 = lean_obj_once(&l_Std_Time_TimeZone_TZif_instReprHeader_repr___redArg___closed__25, &l_Std_Time_TimeZone_TZif_instReprHeader_repr___redArg___closed__25_once, _init_l_Std_Time_TimeZone_TZif_instReprHeader_repr___redArg___closed__25);
 x_14 = ((lean_object*)(l_Std_Time_TimeZone_TZif_instReprHeader_repr___redArg___closed__26));
@@ -1417,9 +1417,9 @@ x_42 = l_Int_repr(x_3);
 lean_dec(x_3);
 x_43 = lean_alloc_ctor(3, 1, 0);
 lean_ctor_set(x_43, 0, x_42);
-x_6 = x_37;
+x_6 = x_38;
 x_7 = x_28;
-x_8 = x_38;
+x_8 = x_37;
 x_9 = x_43;
 goto block_22;
 }
@@ -1431,9 +1431,9 @@ lean_dec(x_3);
 x_45 = lean_alloc_ctor(3, 1, 0);
 lean_ctor_set(x_45, 0, x_44);
 x_46 = l_Repr_addAppParen(x_45, x_39);
-x_6 = x_37;
+x_6 = x_38;
 x_7 = x_28;
-x_8 = x_38;
+x_8 = x_37;
 x_9 = x_46;
 goto block_22;
 }

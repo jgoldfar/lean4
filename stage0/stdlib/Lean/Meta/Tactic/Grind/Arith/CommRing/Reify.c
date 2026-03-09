@@ -6082,16 +6082,16 @@ lean_inc(x_70);
 lean_dec_ref(x_69);
 x_71 = l_Lean_Meta_Sym_shareCommon___redArg(x_70, x_61);
 lean_dec(x_61);
-x_13 = x_55;
-x_14 = x_56;
+x_13 = x_56;
+x_14 = x_55;
 x_15 = x_71;
 goto block_35;
 }
 else
 {
 lean_dec(x_61);
-x_13 = x_55;
-x_14 = x_56;
+x_13 = x_56;
+x_14 = x_55;
 x_15 = x_69;
 goto block_35;
 }
@@ -6162,8 +6162,8 @@ lean_dec_ref(x_15);
 lean_inc(x_16);
 x_17 = lean_alloc_closure((void*)(l_Lean_Meta_Grind_Arith_CommRing_getIntCastFn___at___00Lean_Meta_Grind_Arith_CommRing_isIntCastInst___at___00Lean_Meta_Grind_Arith_CommRing_reifyCore_x3f___at___00Lean_Meta_Grind_Arith_CommRing_reify_x3f_spec__0_spec__7_spec__15___lam__0), 2, 1);
 lean_closure_set(x_17, 0, x_16);
-x_18 = l_Lean_Meta_Grind_Arith_CommRing_RingM_modifyCommRing___redArg(x_17, x_13, x_14);
-lean_dec(x_14);
+x_18 = l_Lean_Meta_Grind_Arith_CommRing_RingM_modifyCommRing___redArg(x_17, x_14, x_13);
+lean_dec(x_13);
 if (lean_obj_tag(x_18) == 0)
 {
 lean_object* x_19; uint8_t x_20; uint8_t x_25; 
@@ -6252,8 +6252,8 @@ return x_30;
 }
 else
 {
-lean_dec(x_14);
-lean_dec_ref(x_13);
+lean_dec_ref(x_14);
+lean_dec(x_13);
 return x_15;
 }
 }
@@ -16672,16 +16672,16 @@ lean_inc(x_69);
 lean_dec_ref(x_68);
 x_70 = l_Lean_Meta_Sym_shareCommon___redArg(x_69, x_60);
 lean_dec(x_60);
-x_13 = x_55;
-x_14 = x_54;
+x_13 = x_54;
+x_14 = x_55;
 x_15 = x_70;
 goto block_35;
 }
 else
 {
 lean_dec(x_60);
-x_13 = x_55;
-x_14 = x_54;
+x_13 = x_54;
+x_14 = x_55;
 x_15 = x_68;
 goto block_35;
 }
@@ -16752,8 +16752,8 @@ lean_dec_ref(x_15);
 lean_inc(x_16);
 x_17 = lean_alloc_closure((void*)(l_Lean_Meta_Grind_Arith_CommRing_getIntCastFn___at___00Lean_Meta_Grind_Arith_CommRing_isIntCastInst___at___00Lean_Meta_Grind_Arith_CommRing_reifyCore_x3f___at___00Lean_Meta_Grind_Arith_CommRing_ncreify_x3f_spec__0_spec__7_spec__13___lam__0), 2, 1);
 lean_closure_set(x_17, 0, x_16);
-x_18 = l_Lean_Meta_Grind_Arith_CommRing_NonCommRingM_modifyRing___redArg(x_17, x_14, x_13);
-lean_dec(x_13);
+x_18 = l_Lean_Meta_Grind_Arith_CommRing_NonCommRingM_modifyRing___redArg(x_17, x_13, x_14);
+lean_dec(x_14);
 if (lean_obj_tag(x_18) == 0)
 {
 lean_object* x_19; uint8_t x_20; uint8_t x_25; 

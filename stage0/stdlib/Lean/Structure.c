@@ -445,15 +445,15 @@ lean_object* l_List_reverse___redArg(lean_object*);
 LEAN_EXPORT lean_object* l___private_Init_Data_Array_Basic_0__Array_firstM_go___at___00__private_Lean_Structure_0__Lean_getPathToBaseStructure_x3f_go_spec__0(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l___private_Init_Data_Array_Basic_0__Array_firstM_go___at___00__private_Lean_Structure_0__Lean_getPathToBaseStructure_x3f_go_spec__0___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l_Lean_getPathToBaseStructure_x3f(lean_object*, lean_object*, lean_object*);
-LEAN_EXPORT uint8_t l_Lean_isStructureLike(lean_object*, lean_object*);
-LEAN_EXPORT lean_object* l_Lean_isStructureLike___boxed(lean_object*, lean_object*);
-LEAN_EXPORT lean_object* l_panic___at___00Lean_getStructureLikeCtor_x3f_spec__0(lean_object*);
-static const lean_string_object l_Lean_getStructureLikeCtor_x3f___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 27, .m_capacity = 27, .m_length = 26, .m_data = "Lean.getStructureLikeCtor\?"};
-static const lean_object* l_Lean_getStructureLikeCtor_x3f___closed__0 = (const lean_object*)&l_Lean_getStructureLikeCtor_x3f___closed__0_value;
-static lean_once_cell_t l_Lean_getStructureLikeCtor_x3f___closed__1_once = LEAN_ONCE_CELL_INITIALIZER;
-static lean_object* l_Lean_getStructureLikeCtor_x3f___closed__1;
-LEAN_EXPORT lean_object* l_Lean_getStructureLikeCtor_x3f(lean_object*, lean_object*);
-LEAN_EXPORT lean_object* l_Lean_getStructureLikeNumFields(lean_object*, lean_object*);
+LEAN_EXPORT uint8_t l_Lean_isNonRecStructure(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* l_Lean_isNonRecStructure___boxed(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* l_panic___at___00Lean_getNonRecStructureCtor_x3f_spec__0(lean_object*);
+static const lean_string_object l_Lean_getNonRecStructureCtor_x3f___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 29, .m_capacity = 29, .m_length = 28, .m_data = "Lean.getNonRecStructureCtor\?"};
+static const lean_object* l_Lean_getNonRecStructureCtor_x3f___closed__0 = (const lean_object*)&l_Lean_getNonRecStructureCtor_x3f___closed__0_value;
+static lean_once_cell_t l_Lean_getNonRecStructureCtor_x3f___closed__1_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* l_Lean_getNonRecStructureCtor_x3f___closed__1;
+LEAN_EXPORT lean_object* l_Lean_getNonRecStructureCtor_x3f(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* l_Lean_getNonRecStructureNumFields(lean_object*, lean_object*);
 static lean_once_cell_t l_Lean_instInhabitedStructureResolutionState_default___closed__0_once = LEAN_ONCE_CELL_INITIALIZER;
 static lean_object* l_Lean_instInhabitedStructureResolutionState_default___closed__0;
 static lean_once_cell_t l_Lean_instInhabitedStructureResolutionState_default___closed__1_once = LEAN_ONCE_CELL_INITIALIZER;
@@ -3618,7 +3618,7 @@ _start:
 lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; lean_object* x_5; lean_object* x_6; 
 x_1 = ((lean_object*)(l_Lean_getStructureInfo___closed__2));
 x_2 = lean_unsigned_to_nat(9u);
-x_3 = lean_unsigned_to_nat(155u);
+x_3 = lean_unsigned_to_nat(154u);
 x_4 = ((lean_object*)(l_Lean_getStructureCtor___closed__0));
 x_5 = ((lean_object*)(l_Lean_getStructureInfo___closed__0));
 x_6 = l_mkPanicMessageWithDecl(x_5, x_4, x_3, x_2, x_1);
@@ -3631,7 +3631,7 @@ _start:
 lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; lean_object* x_5; lean_object* x_6; 
 x_1 = ((lean_object*)(l_Lean_getStructureCtor___closed__2));
 x_2 = lean_unsigned_to_nat(11u);
-x_3 = lean_unsigned_to_nat(154u);
+x_3 = lean_unsigned_to_nat(153u);
 x_4 = ((lean_object*)(l_Lean_getStructureCtor___closed__0));
 x_5 = ((lean_object*)(l_Lean_getStructureInfo___closed__0));
 x_6 = l_mkPanicMessageWithDecl(x_5, x_4, x_3, x_2, x_1);
@@ -5377,7 +5377,7 @@ lean_dec_ref(x_6);
 return x_7;
 }
 }
-LEAN_EXPORT uint8_t l_Lean_isStructureLike(lean_object* x_1, lean_object* x_2) {
+LEAN_EXPORT uint8_t l_Lean_isNonRecStructure(lean_object* x_1, lean_object* x_2) {
 _start:
 {
 uint8_t x_3; lean_object* x_4; 
@@ -5454,16 +5454,16 @@ return x_3;
 }
 }
 }
-LEAN_EXPORT lean_object* l_Lean_isStructureLike___boxed(lean_object* x_1, lean_object* x_2) {
+LEAN_EXPORT lean_object* l_Lean_isNonRecStructure___boxed(lean_object* x_1, lean_object* x_2) {
 _start:
 {
 uint8_t x_3; lean_object* x_4; 
-x_3 = l_Lean_isStructureLike(x_1, x_2);
+x_3 = l_Lean_isNonRecStructure(x_1, x_2);
 x_4 = lean_box(x_3);
 return x_4;
 }
 }
-LEAN_EXPORT lean_object* l_panic___at___00Lean_getStructureLikeCtor_x3f_spec__0(lean_object* x_1) {
+LEAN_EXPORT lean_object* l_panic___at___00Lean_getNonRecStructureCtor_x3f_spec__0(lean_object* x_1) {
 _start:
 {
 lean_object* x_2; lean_object* x_3; 
@@ -5472,20 +5472,20 @@ x_3 = lean_panic_fn(x_2, x_1);
 return x_3;
 }
 }
-static lean_object* _init_l_Lean_getStructureLikeCtor_x3f___closed__1(void) {
+static lean_object* _init_l_Lean_getNonRecStructureCtor_x3f___closed__1(void) {
 _start:
 {
 lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; lean_object* x_5; lean_object* x_6; 
 x_1 = ((lean_object*)(l_Lean_getStructureCtor___closed__2));
 x_2 = lean_unsigned_to_nat(11u);
-x_3 = lean_unsigned_to_nat(375u);
-x_4 = ((lean_object*)(l_Lean_getStructureLikeCtor_x3f___closed__0));
+x_3 = lean_unsigned_to_nat(374u);
+x_4 = ((lean_object*)(l_Lean_getNonRecStructureCtor_x3f___closed__0));
 x_5 = ((lean_object*)(l_Lean_getStructureInfo___closed__0));
 x_6 = l_mkPanicMessageWithDecl(x_5, x_4, x_3, x_2, x_1);
 return x_6;
 }
 }
-LEAN_EXPORT lean_object* l_Lean_getStructureLikeCtor_x3f(lean_object* x_1, lean_object* x_2) {
+LEAN_EXPORT lean_object* l_Lean_getNonRecStructureCtor_x3f(lean_object* x_1, lean_object* x_2) {
 _start:
 {
 uint8_t x_6; lean_object* x_7; 
@@ -5644,13 +5644,13 @@ return x_32;
 block_5:
 {
 lean_object* x_3; lean_object* x_4; 
-x_3 = lean_obj_once(&l_Lean_getStructureLikeCtor_x3f___closed__1, &l_Lean_getStructureLikeCtor_x3f___closed__1_once, _init_l_Lean_getStructureLikeCtor_x3f___closed__1);
-x_4 = l_panic___at___00Lean_getStructureLikeCtor_x3f_spec__0(x_3);
+x_3 = lean_obj_once(&l_Lean_getNonRecStructureCtor_x3f___closed__1, &l_Lean_getNonRecStructureCtor_x3f___closed__1_once, _init_l_Lean_getNonRecStructureCtor_x3f___closed__1);
+x_4 = l_panic___at___00Lean_getNonRecStructureCtor_x3f_spec__0(x_3);
 return x_4;
 }
 }
 }
-LEAN_EXPORT lean_object* l_Lean_getStructureLikeNumFields(lean_object* x_1, lean_object* x_2) {
+LEAN_EXPORT lean_object* l_Lean_getNonRecStructureNumFields(lean_object* x_1, lean_object* x_2) {
 _start:
 {
 uint8_t x_3; lean_object* x_4; 

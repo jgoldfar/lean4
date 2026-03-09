@@ -4820,7 +4820,7 @@ block_257:
 {
 lean_object* x_246; lean_object* x_247; lean_object* x_248; 
 x_246 = l_Lean_eagerReflBoolTrue;
-x_247 = l_Lean_mkApp9(x_242, x_235, x_236, x_237, x_22, x_244, x_243, x_245, x_246, x_213);
+x_247 = l_Lean_mkApp9(x_242, x_235, x_236, x_237, x_22, x_243, x_244, x_245, x_246, x_213);
 if (x_215 == 0)
 {
 lean_ctor_set(x_214, 1, x_247);
@@ -4899,8 +4899,8 @@ x_268 = lean_nat_to_int(x_261);
 x_269 = l_Lean_instToExprRat_mkInt(x_268);
 lean_dec(x_268);
 x_270 = l_Lean_mkApp6(x_264, x_265, x_265, x_265, x_266, x_267, x_269);
-x_243 = x_259;
-x_244 = x_258;
+x_243 = x_258;
+x_244 = x_259;
 x_245 = x_270;
 goto block_257;
 }
@@ -4910,8 +4910,8 @@ lean_object* x_271;
 lean_dec(x_261);
 x_271 = l_Lean_instToExprRat_mkInt(x_260);
 lean_dec(x_260);
-x_243 = x_259;
-x_244 = x_258;
+x_243 = x_258;
+x_244 = x_259;
 x_245 = x_271;
 goto block_257;
 }

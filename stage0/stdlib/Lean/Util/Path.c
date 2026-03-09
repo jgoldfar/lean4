@@ -2233,8 +2233,8 @@ return x_38;
 block_43:
 {
 lean_object* x_42; 
-x_42 = lean_string_append(x_41, x_40);
-lean_dec_ref(x_40);
+x_42 = lean_string_append(x_40, x_41);
+lean_dec_ref(x_41);
 x_21 = x_42;
 goto block_39;
 }
@@ -2254,8 +2254,8 @@ x_49 = lean_obj_once(&l_Lean_moduleNameOfFileName___closed__4, &l_Lean_moduleNam
 x_50 = lean_nat_dec_le(x_49, x_48);
 if (x_50 == 0)
 {
-x_40 = x_47;
-x_41 = x_46;
+x_40 = x_46;
+x_41 = x_47;
 goto block_43;
 }
 else
@@ -2267,8 +2267,8 @@ x_53 = lean_string_memcmp(x_46, x_47, x_52, x_51, x_49);
 lean_dec(x_52);
 if (x_53 == 0)
 {
-x_40 = x_47;
-x_41 = x_46;
+x_40 = x_46;
+x_41 = x_47;
 goto block_43;
 }
 else

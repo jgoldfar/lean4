@@ -4204,7 +4204,7 @@ goto block_64;
 }
 block_64:
 {
-lean_object* x_19; uint8_t x_20; lean_object* x_21; lean_object* x_36; lean_object* x_37; 
+uint8_t x_19; lean_object* x_20; lean_object* x_21; lean_object* x_36; lean_object* x_37; 
 if (lean_obj_tag(x_3) == 0)
 {
 lean_object* x_48; 
@@ -4291,13 +4291,13 @@ lean_object* x_22; lean_object* x_23; lean_object* x_24; lean_object* x_25; lean
 x_22 = l_Std_DHashMap_Internal_Raw_u2080_erase___at___00Lean_Elab_Tactic_Do_countUsesDecl_spec__1___redArg(x_21, x_1);
 x_23 = lean_box(0);
 x_24 = ((lean_object*)(l_Lean_Elab_Tactic_Do_countUsesDecl___closed__1));
-x_25 = l_Lean_Elab_Tactic_Do_Uses_toNat(x_20);
+x_25 = l_Lean_Elab_Tactic_Do_Uses_toNat(x_19);
 x_26 = l_Lean_KVMap_setNat(x_23, x_24, x_25);
 x_27 = l_Lean_Elab_Tactic_Do_addMData(x_26, x_15);
 if (x_18 == 0)
 {
 lean_ctor_set(x_17, 1, x_22);
-lean_ctor_set(x_17, 0, x_19);
+lean_ctor_set(x_17, 0, x_20);
 x_28 = x_17;
 goto block_33;
 }
@@ -4305,7 +4305,7 @@ else
 {
 lean_object* x_34; 
 x_34 = lean_alloc_ctor(0, 2, 0);
-lean_ctor_set(x_34, 0, x_19);
+lean_ctor_set(x_34, 0, x_20);
 lean_ctor_set(x_34, 1, x_22);
 x_28 = x_34;
 goto block_33;
@@ -4354,8 +4354,8 @@ x_44 = l_Lean_Elab_Tactic_Do_FVarUses_add(x_43, x_37);
 lean_dec_ref(x_43);
 x_45 = lean_unbox(x_40);
 lean_dec(x_40);
-x_19 = x_36;
-x_20 = x_45;
+x_19 = x_45;
+x_20 = x_36;
 x_21 = x_44;
 goto block_35;
 }
@@ -4366,8 +4366,8 @@ lean_dec_ref(x_37);
 lean_dec(x_16);
 x_46 = lean_unbox(x_40);
 lean_dec(x_40);
-x_19 = x_36;
-x_20 = x_46;
+x_19 = x_46;
+x_20 = x_36;
 x_21 = x_4;
 goto block_35;
 }

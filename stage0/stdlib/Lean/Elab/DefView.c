@@ -6387,12 +6387,12 @@ block_44:
 lean_object* x_33; lean_object* x_34; lean_object* x_35; 
 x_33 = ((lean_object*)(l_Lean_Elab_Command_mkDefViewOfOpaque___closed__1));
 x_34 = ((lean_object*)(l_Lean_Elab_Command_mkDefViewOfOpaque___closed__2));
-lean_inc(x_32);
+lean_inc(x_31);
 if (x_12 == 0)
 {
 lean_ctor_set_tag(x_11, 2);
 lean_ctor_set(x_11, 1, x_34);
-lean_ctor_set(x_11, 0, x_32);
+lean_ctor_set(x_11, 0, x_31);
 x_35 = x_11;
 goto block_42;
 }
@@ -6400,7 +6400,7 @@ else
 {
 lean_object* x_43; 
 x_43 = lean_alloc_ctor(2, 2, 0);
-lean_ctor_set(x_43, 0, x_32);
+lean_ctor_set(x_43, 0, x_31);
 lean_ctor_set(x_43, 1, x_34);
 x_35 = x_43;
 goto block_42;
@@ -6411,15 +6411,15 @@ lean_object* x_36; lean_object* x_37; lean_object* x_38; lean_object* x_39; lean
 x_36 = ((lean_object*)(l_Lean_Elab_Command_mkDefViewOfOpaque___closed__5));
 x_37 = ((lean_object*)(l_Lean_Elab_Command_mkDefViewOfAbbrev___closed__7));
 x_38 = lean_obj_once(&l_Lean_Elab_Command_mkDefViewOfOpaque___closed__6, &l_Lean_Elab_Command_mkDefViewOfOpaque___closed__6_once, _init_l_Lean_Elab_Command_mkDefViewOfOpaque___closed__6);
-lean_inc(x_32);
+lean_inc(x_31);
 x_39 = lean_alloc_ctor(1, 3, 0);
-lean_ctor_set(x_39, 0, x_32);
+lean_ctor_set(x_39, 0, x_31);
 lean_ctor_set(x_39, 1, x_37);
 lean_ctor_set(x_39, 2, x_38);
 lean_inc_ref_n(x_39, 2);
-lean_inc(x_32);
-x_40 = l_Lean_Syntax_node2(x_32, x_36, x_39, x_39);
-x_41 = l_Lean_Syntax_node4(x_32, x_33, x_35, x_31, x_40, x_39);
+lean_inc(x_31);
+x_40 = l_Lean_Syntax_node2(x_31, x_36, x_39, x_39);
+x_41 = l_Lean_Syntax_node4(x_31, x_33, x_35, x_32, x_40, x_39);
 x_13 = x_41;
 goto block_30;
 }
@@ -6448,14 +6448,14 @@ if (lean_obj_tag(x_51) == 0)
 lean_object* x_54; 
 x_54 = l_Lean_getMainModule___at___00Lean_Elab_Command_mkDefViewOfInstance_spec__3___redArg(x_47);
 lean_dec_ref(x_54);
-x_31 = x_45;
-x_32 = x_53;
+x_31 = x_53;
+x_32 = x_45;
 goto block_44;
 }
 else
 {
-x_31 = x_45;
-x_32 = x_53;
+x_31 = x_53;
+x_32 = x_45;
 goto block_44;
 }
 }

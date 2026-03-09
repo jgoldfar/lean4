@@ -63764,7 +63764,7 @@ return x_14;
 LEAN_EXPORT lean_object* l___private_Lean_Meta_Sym_Simp_EvalGround_0__Lean_Meta_Sym_Simp_evalBinBoolPredRat___redArg(lean_object* x_1, lean_object* x_2, lean_object* x_3, lean_object* x_4) {
 _start:
 {
-uint8_t x_6; lean_object* x_7; lean_object* x_8; lean_object* x_12; 
+lean_object* x_6; uint8_t x_7; lean_object* x_8; lean_object* x_12; 
 x_12 = l_Lean_Meta_Sym_getRatValue_x3f(x_2);
 if (lean_obj_tag(x_12) == 1)
 {
@@ -63828,8 +63828,8 @@ if (x_23 == 0)
 {
 lean_object* x_24; 
 x_24 = l_Lean_eagerReflBoolFalse;
-x_6 = x_22;
-x_7 = x_21;
+x_6 = x_21;
+x_7 = x_22;
 x_8 = x_24;
 goto block_11;
 }
@@ -63837,8 +63837,8 @@ else
 {
 lean_object* x_25; 
 x_25 = l_Lean_eagerReflBoolTrue;
-x_6 = x_22;
-x_7 = x_21;
+x_6 = x_21;
+x_7 = x_22;
 x_8 = x_25;
 goto block_11;
 }
@@ -63930,9 +63930,9 @@ block_11:
 {
 lean_object* x_9; lean_object* x_10; 
 x_9 = lean_alloc_ctor(1, 2, 1);
-lean_ctor_set(x_9, 0, x_7);
+lean_ctor_set(x_9, 0, x_6);
 lean_ctor_set(x_9, 1, x_8);
-lean_ctor_set_uint8(x_9, sizeof(void*)*2, x_6);
+lean_ctor_set_uint8(x_9, sizeof(void*)*2, x_7);
 x_10 = lean_alloc_ctor(0, 1, 0);
 lean_ctor_set(x_10, 0, x_9);
 return x_10;
@@ -63951,7 +63951,7 @@ return x_6;
 LEAN_EXPORT lean_object* l___private_Lean_Meta_Sym_Simp_EvalGround_0__Lean_Meta_Sym_Simp_evalBinBoolPredRat(lean_object* x_1, lean_object* x_2, lean_object* x_3, lean_object* x_4, lean_object* x_5, lean_object* x_6, lean_object* x_7, lean_object* x_8, lean_object* x_9, lean_object* x_10, lean_object* x_11, lean_object* x_12) {
 _start:
 {
-uint8_t x_14; lean_object* x_15; lean_object* x_16; lean_object* x_20; 
+lean_object* x_14; uint8_t x_15; lean_object* x_16; lean_object* x_20; 
 x_20 = l_Lean_Meta_Sym_getRatValue_x3f(x_2);
 if (lean_obj_tag(x_20) == 1)
 {
@@ -64015,8 +64015,8 @@ if (x_31 == 0)
 {
 lean_object* x_32; 
 x_32 = l_Lean_eagerReflBoolFalse;
-x_14 = x_30;
-x_15 = x_29;
+x_14 = x_29;
+x_15 = x_30;
 x_16 = x_32;
 goto block_19;
 }
@@ -64024,8 +64024,8 @@ else
 {
 lean_object* x_33; 
 x_33 = l_Lean_eagerReflBoolTrue;
-x_14 = x_30;
-x_15 = x_29;
+x_14 = x_29;
+x_15 = x_30;
 x_16 = x_33;
 goto block_19;
 }
@@ -64117,9 +64117,9 @@ block_19:
 {
 lean_object* x_17; lean_object* x_18; 
 x_17 = lean_alloc_ctor(1, 2, 1);
-lean_ctor_set(x_17, 0, x_15);
+lean_ctor_set(x_17, 0, x_14);
 lean_ctor_set(x_17, 1, x_16);
-lean_ctor_set_uint8(x_17, sizeof(void*)*2, x_14);
+lean_ctor_set_uint8(x_17, sizeof(void*)*2, x_15);
 x_18 = lean_alloc_ctor(0, 1, 0);
 lean_ctor_set(x_18, 0, x_17);
 return x_18;
@@ -64528,7 +64528,7 @@ return x_14;
 LEAN_EXPORT lean_object* l___private_Lean_Meta_Sym_Simp_EvalGround_0__Lean_Meta_Sym_Simp_evalBinBoolPredUInt16___redArg(lean_object* x_1, lean_object* x_2, lean_object* x_3, lean_object* x_4) {
 _start:
 {
-uint8_t x_6; lean_object* x_7; lean_object* x_8; lean_object* x_12; 
+lean_object* x_6; uint8_t x_7; lean_object* x_8; lean_object* x_12; 
 x_12 = l_Lean_Meta_Sym_getUInt16Value_x3f(x_2);
 if (lean_obj_tag(x_12) == 1)
 {
@@ -64592,8 +64592,8 @@ if (x_23 == 0)
 {
 lean_object* x_24; 
 x_24 = l_Lean_eagerReflBoolFalse;
-x_6 = x_22;
-x_7 = x_21;
+x_6 = x_21;
+x_7 = x_22;
 x_8 = x_24;
 goto block_11;
 }
@@ -64601,8 +64601,8 @@ else
 {
 lean_object* x_25; 
 x_25 = l_Lean_eagerReflBoolTrue;
-x_6 = x_22;
-x_7 = x_21;
+x_6 = x_21;
+x_7 = x_22;
 x_8 = x_25;
 goto block_11;
 }
@@ -64694,9 +64694,9 @@ block_11:
 {
 lean_object* x_9; lean_object* x_10; 
 x_9 = lean_alloc_ctor(1, 2, 1);
-lean_ctor_set(x_9, 0, x_7);
+lean_ctor_set(x_9, 0, x_6);
 lean_ctor_set(x_9, 1, x_8);
-lean_ctor_set_uint8(x_9, sizeof(void*)*2, x_6);
+lean_ctor_set_uint8(x_9, sizeof(void*)*2, x_7);
 x_10 = lean_alloc_ctor(0, 1, 0);
 lean_ctor_set(x_10, 0, x_9);
 return x_10;
@@ -64715,7 +64715,7 @@ return x_6;
 LEAN_EXPORT lean_object* l___private_Lean_Meta_Sym_Simp_EvalGround_0__Lean_Meta_Sym_Simp_evalBinBoolPredUInt16(lean_object* x_1, lean_object* x_2, lean_object* x_3, lean_object* x_4, lean_object* x_5, lean_object* x_6, lean_object* x_7, lean_object* x_8, lean_object* x_9, lean_object* x_10, lean_object* x_11, lean_object* x_12) {
 _start:
 {
-uint8_t x_14; lean_object* x_15; lean_object* x_16; lean_object* x_20; 
+lean_object* x_14; uint8_t x_15; lean_object* x_16; lean_object* x_20; 
 x_20 = l_Lean_Meta_Sym_getUInt16Value_x3f(x_2);
 if (lean_obj_tag(x_20) == 1)
 {
@@ -64779,8 +64779,8 @@ if (x_31 == 0)
 {
 lean_object* x_32; 
 x_32 = l_Lean_eagerReflBoolFalse;
-x_14 = x_30;
-x_15 = x_29;
+x_14 = x_29;
+x_15 = x_30;
 x_16 = x_32;
 goto block_19;
 }
@@ -64788,8 +64788,8 @@ else
 {
 lean_object* x_33; 
 x_33 = l_Lean_eagerReflBoolTrue;
-x_14 = x_30;
-x_15 = x_29;
+x_14 = x_29;
+x_15 = x_30;
 x_16 = x_33;
 goto block_19;
 }
@@ -64881,9 +64881,9 @@ block_19:
 {
 lean_object* x_17; lean_object* x_18; 
 x_17 = lean_alloc_ctor(1, 2, 1);
-lean_ctor_set(x_17, 0, x_15);
+lean_ctor_set(x_17, 0, x_14);
 lean_ctor_set(x_17, 1, x_16);
-lean_ctor_set_uint8(x_17, sizeof(void*)*2, x_14);
+lean_ctor_set_uint8(x_17, sizeof(void*)*2, x_15);
 x_18 = lean_alloc_ctor(0, 1, 0);
 lean_ctor_set(x_18, 0, x_17);
 return x_18;
@@ -64910,7 +64910,7 @@ return x_14;
 LEAN_EXPORT lean_object* l___private_Lean_Meta_Sym_Simp_EvalGround_0__Lean_Meta_Sym_Simp_evalBinBoolPredUInt32___redArg(lean_object* x_1, lean_object* x_2, lean_object* x_3, lean_object* x_4) {
 _start:
 {
-uint8_t x_6; lean_object* x_7; lean_object* x_8; lean_object* x_12; 
+lean_object* x_6; uint8_t x_7; lean_object* x_8; lean_object* x_12; 
 x_12 = l_Lean_Meta_Sym_getUInt32Value_x3f(x_2);
 if (lean_obj_tag(x_12) == 1)
 {
@@ -64974,8 +64974,8 @@ if (x_23 == 0)
 {
 lean_object* x_24; 
 x_24 = l_Lean_eagerReflBoolFalse;
-x_6 = x_22;
-x_7 = x_21;
+x_6 = x_21;
+x_7 = x_22;
 x_8 = x_24;
 goto block_11;
 }
@@ -64983,8 +64983,8 @@ else
 {
 lean_object* x_25; 
 x_25 = l_Lean_eagerReflBoolTrue;
-x_6 = x_22;
-x_7 = x_21;
+x_6 = x_21;
+x_7 = x_22;
 x_8 = x_25;
 goto block_11;
 }
@@ -65076,9 +65076,9 @@ block_11:
 {
 lean_object* x_9; lean_object* x_10; 
 x_9 = lean_alloc_ctor(1, 2, 1);
-lean_ctor_set(x_9, 0, x_7);
+lean_ctor_set(x_9, 0, x_6);
 lean_ctor_set(x_9, 1, x_8);
-lean_ctor_set_uint8(x_9, sizeof(void*)*2, x_6);
+lean_ctor_set_uint8(x_9, sizeof(void*)*2, x_7);
 x_10 = lean_alloc_ctor(0, 1, 0);
 lean_ctor_set(x_10, 0, x_9);
 return x_10;
@@ -65097,7 +65097,7 @@ return x_6;
 LEAN_EXPORT lean_object* l___private_Lean_Meta_Sym_Simp_EvalGround_0__Lean_Meta_Sym_Simp_evalBinBoolPredUInt32(lean_object* x_1, lean_object* x_2, lean_object* x_3, lean_object* x_4, lean_object* x_5, lean_object* x_6, lean_object* x_7, lean_object* x_8, lean_object* x_9, lean_object* x_10, lean_object* x_11, lean_object* x_12) {
 _start:
 {
-uint8_t x_14; lean_object* x_15; lean_object* x_16; lean_object* x_20; 
+lean_object* x_14; uint8_t x_15; lean_object* x_16; lean_object* x_20; 
 x_20 = l_Lean_Meta_Sym_getUInt32Value_x3f(x_2);
 if (lean_obj_tag(x_20) == 1)
 {
@@ -65161,8 +65161,8 @@ if (x_31 == 0)
 {
 lean_object* x_32; 
 x_32 = l_Lean_eagerReflBoolFalse;
-x_14 = x_30;
-x_15 = x_29;
+x_14 = x_29;
+x_15 = x_30;
 x_16 = x_32;
 goto block_19;
 }
@@ -65170,8 +65170,8 @@ else
 {
 lean_object* x_33; 
 x_33 = l_Lean_eagerReflBoolTrue;
-x_14 = x_30;
-x_15 = x_29;
+x_14 = x_29;
+x_15 = x_30;
 x_16 = x_33;
 goto block_19;
 }
@@ -65263,9 +65263,9 @@ block_19:
 {
 lean_object* x_17; lean_object* x_18; 
 x_17 = lean_alloc_ctor(1, 2, 1);
-lean_ctor_set(x_17, 0, x_15);
+lean_ctor_set(x_17, 0, x_14);
 lean_ctor_set(x_17, 1, x_16);
-lean_ctor_set_uint8(x_17, sizeof(void*)*2, x_14);
+lean_ctor_set_uint8(x_17, sizeof(void*)*2, x_15);
 x_18 = lean_alloc_ctor(0, 1, 0);
 lean_ctor_set(x_18, 0, x_17);
 return x_18;
@@ -65674,7 +65674,7 @@ return x_14;
 LEAN_EXPORT lean_object* l___private_Lean_Meta_Sym_Simp_EvalGround_0__Lean_Meta_Sym_Simp_evalBinBoolPredInt8___redArg(lean_object* x_1, lean_object* x_2, lean_object* x_3, lean_object* x_4) {
 _start:
 {
-lean_object* x_6; uint8_t x_7; lean_object* x_8; lean_object* x_12; 
+uint8_t x_6; lean_object* x_7; lean_object* x_8; lean_object* x_12; 
 x_12 = l_Lean_Meta_Sym_getInt8Value_x3f(x_2);
 if (lean_obj_tag(x_12) == 1)
 {
@@ -65738,8 +65738,8 @@ if (x_23 == 0)
 {
 lean_object* x_24; 
 x_24 = l_Lean_eagerReflBoolFalse;
-x_6 = x_21;
-x_7 = x_22;
+x_6 = x_22;
+x_7 = x_21;
 x_8 = x_24;
 goto block_11;
 }
@@ -65747,8 +65747,8 @@ else
 {
 lean_object* x_25; 
 x_25 = l_Lean_eagerReflBoolTrue;
-x_6 = x_21;
-x_7 = x_22;
+x_6 = x_22;
+x_7 = x_21;
 x_8 = x_25;
 goto block_11;
 }
@@ -65840,9 +65840,9 @@ block_11:
 {
 lean_object* x_9; lean_object* x_10; 
 x_9 = lean_alloc_ctor(1, 2, 1);
-lean_ctor_set(x_9, 0, x_6);
+lean_ctor_set(x_9, 0, x_7);
 lean_ctor_set(x_9, 1, x_8);
-lean_ctor_set_uint8(x_9, sizeof(void*)*2, x_7);
+lean_ctor_set_uint8(x_9, sizeof(void*)*2, x_6);
 x_10 = lean_alloc_ctor(0, 1, 0);
 lean_ctor_set(x_10, 0, x_9);
 return x_10;
@@ -65861,7 +65861,7 @@ return x_6;
 LEAN_EXPORT lean_object* l___private_Lean_Meta_Sym_Simp_EvalGround_0__Lean_Meta_Sym_Simp_evalBinBoolPredInt8(lean_object* x_1, lean_object* x_2, lean_object* x_3, lean_object* x_4, lean_object* x_5, lean_object* x_6, lean_object* x_7, lean_object* x_8, lean_object* x_9, lean_object* x_10, lean_object* x_11, lean_object* x_12) {
 _start:
 {
-lean_object* x_14; uint8_t x_15; lean_object* x_16; lean_object* x_20; 
+uint8_t x_14; lean_object* x_15; lean_object* x_16; lean_object* x_20; 
 x_20 = l_Lean_Meta_Sym_getInt8Value_x3f(x_2);
 if (lean_obj_tag(x_20) == 1)
 {
@@ -65925,8 +65925,8 @@ if (x_31 == 0)
 {
 lean_object* x_32; 
 x_32 = l_Lean_eagerReflBoolFalse;
-x_14 = x_29;
-x_15 = x_30;
+x_14 = x_30;
+x_15 = x_29;
 x_16 = x_32;
 goto block_19;
 }
@@ -65934,8 +65934,8 @@ else
 {
 lean_object* x_33; 
 x_33 = l_Lean_eagerReflBoolTrue;
-x_14 = x_29;
-x_15 = x_30;
+x_14 = x_30;
+x_15 = x_29;
 x_16 = x_33;
 goto block_19;
 }
@@ -66027,9 +66027,9 @@ block_19:
 {
 lean_object* x_17; lean_object* x_18; 
 x_17 = lean_alloc_ctor(1, 2, 1);
-lean_ctor_set(x_17, 0, x_14);
+lean_ctor_set(x_17, 0, x_15);
 lean_ctor_set(x_17, 1, x_16);
-lean_ctor_set_uint8(x_17, sizeof(void*)*2, x_15);
+lean_ctor_set_uint8(x_17, sizeof(void*)*2, x_14);
 x_18 = lean_alloc_ctor(0, 1, 0);
 lean_ctor_set(x_18, 0, x_17);
 return x_18;

@@ -3332,10 +3332,10 @@ x_37 = lean_ctor_get(x_31, 1);
 lean_inc_ref(x_31);
 lean_inc(x_37);
 x_38 = l_Lean_PersistentHashMap_insert___at___00Lean_Meta_AbstractNestedProofs_visit_spec__3___redArg(x_32, x_37, x_31);
-x_17 = x_31;
-x_18 = x_33;
-x_19 = x_34;
-x_20 = x_38;
+x_17 = x_38;
+x_18 = x_34;
+x_19 = x_33;
+x_20 = x_31;
 x_21 = x_36;
 goto block_25;
 }
@@ -3354,13 +3354,13 @@ block_25:
 {
 lean_object* x_22; lean_object* x_23; lean_object* x_24; 
 x_22 = lean_alloc_ctor(1, 1, 0);
-lean_ctor_set(x_22, 0, x_17);
-x_23 = l_Lean_PersistentArray_set___redArg(x_18, x_21, x_22);
+lean_ctor_set(x_22, 0, x_20);
+x_23 = l_Lean_PersistentArray_set___redArg(x_19, x_21, x_22);
 lean_dec(x_21);
 x_24 = lean_alloc_ctor(0, 3, 0);
-lean_ctor_set(x_24, 0, x_20);
+lean_ctor_set(x_24, 0, x_17);
 lean_ctor_set(x_24, 1, x_23);
-lean_ctor_set(x_24, 2, x_19);
+lean_ctor_set(x_24, 2, x_18);
 x_12 = x_24;
 goto block_16;
 }

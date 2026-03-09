@@ -6153,8 +6153,8 @@ return x_148;
 }
 else
 {
-lean_dec(x_45);
 lean_dec_ref(x_15);
+lean_dec(x_45);
 lean_del_object(x_17);
 x_29 = x_5;
 goto block_40;

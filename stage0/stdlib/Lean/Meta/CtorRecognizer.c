@@ -2648,8 +2648,8 @@ return x_85;
 else
 {
 lean_object* x_87; 
-lean_dec_ref(x_85);
 lean_dec(x_86);
+lean_dec_ref(x_85);
 lean_inc(x_5);
 lean_inc_ref(x_4);
 lean_inc(x_3);

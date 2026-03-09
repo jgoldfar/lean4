@@ -39543,8 +39543,8 @@ lean_object* x_270; lean_object* x_271; lean_object* x_272;
 lean_dec_ref(x_21);
 lean_del_object(x_204);
 lean_dec(x_193);
-lean_dec(x_192);
 lean_dec_ref(x_191);
+lean_dec(x_192);
 lean_del_object(x_188);
 lean_dec(x_20);
 lean_dec(x_19);
@@ -42444,9 +42444,9 @@ goto block_80;
 block_71:
 {
 lean_object* x_64; lean_object* x_65; 
-x_64 = lean_nat_add(x_61, x_63);
+x_64 = lean_nat_add(x_62, x_63);
 lean_dec(x_63);
-lean_dec(x_61);
+lean_dec(x_62);
 if (x_57 == 0)
 {
 lean_ctor_set(x_56, 4, x_27);
@@ -42475,7 +42475,7 @@ lean_object* x_66;
 if (x_46 == 0)
 {
 lean_ctor_set(x_45, 4, x_65);
-lean_ctor_set(x_45, 3, x_62);
+lean_ctor_set(x_45, 3, x_61);
 lean_ctor_set(x_45, 2, x_49);
 lean_ctor_set(x_45, 1, x_48);
 lean_ctor_set(x_45, 0, x_60);
@@ -42489,7 +42489,7 @@ x_68 = lean_alloc_ctor(0, 5, 0);
 lean_ctor_set(x_68, 0, x_60);
 lean_ctor_set(x_68, 1, x_48);
 lean_ctor_set(x_68, 2, x_49);
-lean_ctor_set(x_68, 3, x_62);
+lean_ctor_set(x_68, 3, x_61);
 lean_ctor_set(x_68, 4, x_65);
 x_66 = x_68;
 goto block_67;
@@ -42537,8 +42537,8 @@ if (lean_obj_tag(x_51) == 0)
 lean_object* x_76; 
 x_76 = lean_ctor_get(x_51, 0);
 lean_inc(x_76);
-x_61 = x_75;
-x_62 = x_74;
+x_61 = x_74;
+x_62 = x_75;
 x_63 = x_76;
 goto block_71;
 }
@@ -42546,8 +42546,8 @@ else
 {
 lean_object* x_77; 
 x_77 = lean_unsigned_to_nat(0u);
-x_61 = x_75;
-x_62 = x_74;
+x_61 = x_74;
+x_62 = x_75;
 x_63 = x_77;
 goto block_71;
 }
@@ -42641,8 +42641,8 @@ else
 lean_object* x_103; lean_object* x_104; lean_object* x_105; 
 lean_del_object(x_45);
 lean_dec(x_34);
-lean_dec(x_33);
 lean_dec_ref(x_32);
+lean_dec(x_33);
 lean_del_object(x_29);
 lean_dec(x_27);
 lean_dec(x_25);
@@ -43414,8 +43414,8 @@ lean_object* x_270; lean_object* x_271; lean_object* x_272;
 lean_dec_ref(x_21);
 lean_del_object(x_204);
 lean_dec(x_193);
-lean_dec(x_192);
 lean_dec_ref(x_191);
+lean_dec(x_192);
 lean_del_object(x_188);
 lean_dec(x_20);
 lean_dec(x_19);
@@ -43431,8 +43431,8 @@ else
 lean_object* x_273; lean_object* x_274; lean_object* x_275; 
 lean_del_object(x_204);
 lean_dec(x_193);
-lean_dec(x_192);
 lean_dec_ref(x_191);
+lean_dec(x_192);
 lean_del_object(x_188);
 lean_dec(x_22);
 lean_dec(x_20);

@@ -2860,24 +2860,24 @@ goto block_18;
 else
 {
 lean_dec_ref(x_41);
-lean_dec_ref(x_13);
 lean_del_object(x_39);
+lean_dec_ref(x_13);
 goto block_18;
 }
 }
 else
 {
 lean_dec(x_41);
-lean_dec_ref(x_13);
 lean_del_object(x_39);
+lean_dec_ref(x_13);
 goto block_18;
 }
 }
 }
 default: 
 {
-lean_dec_ref(x_12);
 lean_dec(x_13);
+lean_dec_ref(x_12);
 lean_dec(x_5);
 lean_dec_ref(x_4);
 lean_dec(x_3);
