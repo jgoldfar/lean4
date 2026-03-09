@@ -742,7 +742,7 @@ def setPostponed (postponed : PersistentArray PostponedEntry) : MetaM Unit :=
   for the inductive datatype `inductName`.
 
   Recall we have three different settings: `.none` (never use it), `.all` (always use it), `.notClasses`
-  (enabled only for structure-like inductive types that are not classes).
+  (enabled only for non-recursive structure types that are not classes).
 
   The parameter `inductName` affects the result only if the current setting is `.notClasses`.
 -/
