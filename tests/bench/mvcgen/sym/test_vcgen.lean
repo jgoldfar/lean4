@@ -14,6 +14,7 @@ Each case exercises a different aspect of the VC generation:
 
 - `AddSubCancel`: Basic add/sub loop in `StateM`
 - `AddSubCancelDeep`: Same loop through a deep monad transformer stack
+- `AddSubCancelSimp`: Like `AddSubCancel` but using simp/equational specs
 - `GetThrowSet`: Exception handling with `ExceptT`/`StateM`
 - `PurePrecond`: Pure hypotheses `⌜φ⌝` in preconditions
 - `ReaderState`: `ReaderT`/`StateM` combination
@@ -28,6 +29,9 @@ open AddSubCancel in
 #eval runBenchUsingTactic ``Goal [``loop, ``step] `(tactic| mvcgen') `(tactic| grind) [10]
 
 open AddSubCancelDeep in
+#eval runBenchUsingTactic ``Goal [``loop, ``step] `(tactic| mvcgen') `(tactic| grind) [10]
+
+open AddSubCancelSimp in
 #eval runBenchUsingTactic ``Goal [``loop, ``step] `(tactic| mvcgen') `(tactic| grind) [10]
 
 open GetThrowSet in

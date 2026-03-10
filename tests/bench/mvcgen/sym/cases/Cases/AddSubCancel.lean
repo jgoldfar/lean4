@@ -14,12 +14,12 @@ set_option mvcgen.warning false
 @[spec high]
 theorem Spec.MonadState_get {m ps} [Monad m] [WPMonad m ps] {σ} {Q : PostCond σ (.arg σ ps)} :
     ⦃fun s => Q.fst s s⦄ get (m := StateT σ m) ⦃Q⦄ := by
-  mvcgen
+  mvcgen'
 
 @[spec high]
 theorem Spec.MonadStateOf_set {m ps} [Monad m] [WPMonad m ps] {σ} {Q : PostCond PUnit (.arg σ ps)} {s : σ} :
     ⦃fun _ => Q.fst ⟨⟩ s⦄ set (m := StateT σ m) s ⦃Q⦄ := by
-  mvcgen
+  mvcgen'
 
 def step (v : Nat) : StateM Nat Unit := do
   let s ← get
