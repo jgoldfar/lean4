@@ -1,6 +1,6 @@
 // Lean compiler output
 // Module: Init.System.IO
-// Imports: public import Init.System.IOError public import Init.System.FilePath import Init.Data.String.TakeDrop import Init.Data.String.Search public import Init.Data.Ord.Basic public import Init.Data.String.Basic import Init.Data.List.MapIdx import Init.Data.Ord.UInt import Init.Data.ToString.Macro import Init.Data.List.Impl
+// Imports: public import Init.Control.Do public import Init.System.IOError public import Init.System.FilePath import Init.Data.String.TakeDrop import Init.Data.String.Search public import Init.Data.Ord.Basic public import Init.Data.String.Basic import Init.Data.List.MapIdx import Init.Data.Ord.UInt import Init.Data.ToString.Macro import Init.Data.List.Impl
 #include <lean/lean.h>
 #if defined(__clang__)
 #pragma clang diagnostic ignored "-Wunused-parameter"
@@ -7109,26 +7109,26 @@ x_17 = lean_uint32_dec_eq(x_15, x_16);
 if (x_17 == 0)
 {
 lean_dec(x_14);
-lean_dec(x_12);
-x_8 = x_13;
+lean_dec(x_13);
+x_8 = x_12;
 goto block_11;
 }
 else
 {
 lean_object* x_18; lean_object* x_19; lean_object* x_20; lean_object* x_21; 
-x_18 = lean_string_utf8_byte_size(x_13);
-lean_inc(x_12);
-lean_inc_ref(x_13);
+x_18 = lean_string_utf8_byte_size(x_12);
+lean_inc(x_14);
+lean_inc_ref(x_12);
 x_19 = lean_alloc_ctor(0, 3, 0);
-lean_ctor_set(x_19, 0, x_13);
-lean_ctor_set(x_19, 1, x_12);
+lean_ctor_set(x_19, 0, x_12);
+lean_ctor_set(x_19, 1, x_14);
 lean_ctor_set(x_19, 2, x_18);
-x_20 = l_String_Slice_Pos_prevn(x_19, x_18, x_14);
+x_20 = l_String_Slice_Pos_prevn(x_19, x_18, x_13);
 lean_dec_ref(x_19);
-x_21 = lean_string_utf8_extract(x_13, x_12, x_20);
+x_21 = lean_string_utf8_extract(x_12, x_14, x_20);
 lean_dec(x_20);
-lean_dec(x_12);
-lean_dec_ref(x_13);
+lean_dec(x_14);
+lean_dec_ref(x_12);
 x_8 = x_21;
 goto block_11;
 }
@@ -7190,9 +7190,9 @@ if (lean_obj_tag(x_38) == 0)
 uint32_t x_39; 
 lean_dec_ref(x_37);
 x_39 = 65;
-x_12 = x_31;
-x_13 = x_35;
-x_14 = x_30;
+x_12 = x_35;
+x_13 = x_30;
+x_14 = x_31;
 x_15 = x_39;
 goto block_22;
 }
@@ -7209,9 +7209,9 @@ if (lean_obj_tag(x_41) == 0)
 {
 uint32_t x_42; 
 x_42 = 65;
-x_12 = x_31;
-x_13 = x_35;
-x_14 = x_30;
+x_12 = x_35;
+x_13 = x_30;
+x_14 = x_31;
 x_15 = x_42;
 goto block_22;
 }
@@ -7223,9 +7223,9 @@ lean_inc(x_43);
 lean_dec_ref(x_41);
 x_44 = lean_unbox_uint32(x_43);
 lean_dec(x_43);
-x_12 = x_31;
-x_13 = x_35;
-x_14 = x_30;
+x_12 = x_35;
+x_13 = x_30;
+x_14 = x_31;
 x_15 = x_44;
 goto block_22;
 }
@@ -12943,27 +12943,27 @@ x_17 = 13;
 x_18 = lean_uint32_dec_eq(x_16, x_17);
 if (x_18 == 0)
 {
-lean_dec(x_15);
+lean_dec(x_14);
 lean_dec(x_13);
-x_9 = x_14;
+x_9 = x_15;
 goto block_12;
 }
 else
 {
 lean_object* x_19; lean_object* x_20; lean_object* x_21; lean_object* x_22; 
-x_19 = lean_string_utf8_byte_size(x_14);
+x_19 = lean_string_utf8_byte_size(x_15);
 lean_inc(x_13);
-lean_inc_ref(x_14);
+lean_inc_ref(x_15);
 x_20 = lean_alloc_ctor(0, 3, 0);
-lean_ctor_set(x_20, 0, x_14);
+lean_ctor_set(x_20, 0, x_15);
 lean_ctor_set(x_20, 1, x_13);
 lean_ctor_set(x_20, 2, x_19);
-x_21 = l_String_Slice_Pos_prevn(x_20, x_19, x_15);
+x_21 = l_String_Slice_Pos_prevn(x_20, x_19, x_14);
 lean_dec_ref(x_20);
-x_22 = lean_string_utf8_extract(x_14, x_13, x_21);
+x_22 = lean_string_utf8_extract(x_15, x_13, x_21);
 lean_dec(x_21);
 lean_dec(x_13);
-lean_dec_ref(x_14);
+lean_dec_ref(x_15);
 x_9 = x_22;
 goto block_12;
 }
@@ -13027,8 +13027,8 @@ uint32_t x_40;
 lean_dec_ref(x_38);
 x_40 = 65;
 x_13 = x_32;
-x_14 = x_36;
-x_15 = x_31;
+x_14 = x_31;
+x_15 = x_36;
 x_16 = x_40;
 goto block_23;
 }
@@ -13046,8 +13046,8 @@ if (lean_obj_tag(x_42) == 0)
 uint32_t x_43; 
 x_43 = 65;
 x_13 = x_32;
-x_14 = x_36;
-x_15 = x_31;
+x_14 = x_31;
+x_15 = x_36;
 x_16 = x_43;
 goto block_23;
 }
@@ -13060,8 +13060,8 @@ lean_dec_ref(x_42);
 x_45 = lean_unbox_uint32(x_44);
 lean_dec(x_44);
 x_13 = x_32;
-x_14 = x_36;
-x_15 = x_31;
+x_14 = x_31;
+x_15 = x_36;
 x_16 = x_45;
 goto block_23;
 }
@@ -13677,6 +13677,7 @@ x_4 = lean_runtime_forget(x_2);
 return x_4;
 }
 }
+lean_object* runtime_initialize_Init_Control_Do(uint8_t builtin);
 lean_object* runtime_initialize_Init_System_IOError(uint8_t builtin);
 lean_object* runtime_initialize_Init_System_FilePath(uint8_t builtin);
 lean_object* runtime_initialize_Init_Data_String_TakeDrop(uint8_t builtin);
@@ -13692,6 +13693,10 @@ LEAN_EXPORT lean_object* runtime_initialize_Init_System_IO(uint8_t builtin) {
 lean_object * res;
 if (_G_runtime_initialized) return lean_io_result_mk_ok(lean_box(0));
 _G_runtime_initialized = true;
+res = runtime_initialize_Init_Control_Do(builtin)
+;
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
 res = runtime_initialize_Init_System_IOError(builtin)
 ;
 if (lean_io_result_is_error(res)) return res;
@@ -13762,6 +13767,7 @@ l_IO_waitAny_x27___auto__1 = _init_l_IO_waitAny_x27___auto__1();
 lean_mark_persistent(l_IO_waitAny_x27___auto__1);
 return lean_io_result_mk_ok(lean_box(0));
 }
+lean_object* initialize_Init_Control_Do(uint8_t builtin);
 lean_object* initialize_Init_System_IOError(uint8_t builtin);
 lean_object* initialize_Init_System_FilePath(uint8_t builtin);
 lean_object* initialize_Init_Data_String_TakeDrop(uint8_t builtin);
@@ -13777,6 +13783,10 @@ LEAN_EXPORT lean_object* initialize_Init_System_IO(uint8_t builtin) {
 lean_object * res;
 if (_G_initialized) return lean_io_result_mk_ok(lean_box(0));
 _G_initialized = true;
+res = initialize_Init_Control_Do(builtin)
+;
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
 res = initialize_Init_System_IOError(builtin)
 ;
 if (lean_io_result_is_error(res)) return res;

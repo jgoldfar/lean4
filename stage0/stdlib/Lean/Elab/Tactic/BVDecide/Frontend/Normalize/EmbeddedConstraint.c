@@ -709,7 +709,7 @@ goto block_14;
 else
 {
 uint8_t x_51; 
-x_51 = l_Std_DHashMap_Internal_Raw_u2080_contains___at___00Lean_Elab_Tactic_BVDecide_Frontend_Normalize_embeddedConstraintPass_spec__0___redArg(x_25, x_40);
+x_51 = l_Std_DHashMap_Internal_Raw_u2080_contains___at___00Lean_Elab_Tactic_BVDecide_Frontend_Normalize_embeddedConstraintPass_spec__0___redArg(x_24, x_40);
 if (x_51 == 0)
 {
 lean_object* x_52; 
@@ -731,7 +731,7 @@ lean_inc(x_8);
 lean_inc_ref(x_7);
 lean_inc(x_6);
 lean_inc_ref(x_5);
-x_57 = l_Lean_Meta_SimpTheoremsArray_addTheorem(x_24, x_55, x_54, x_56, x_5, x_6, x_7, x_8);
+x_57 = l_Lean_Meta_SimpTheoremsArray_addTheorem(x_21, x_55, x_54, x_56, x_5, x_6, x_7, x_8);
 if (lean_obj_tag(x_57) == 0)
 {
 lean_object* x_58; lean_object* x_59; lean_object* x_60; lean_object* x_61; lean_object* x_62; 
@@ -739,12 +739,12 @@ x_58 = lean_ctor_get(x_57, 0);
 lean_inc(x_58);
 lean_dec_ref(x_57);
 x_59 = lean_box(0);
-x_60 = l_Std_DHashMap_Internal_Raw_u2080_insertIfNew___at___00Lean_Elab_Tactic_BVDecide_Frontend_Normalize_embeddedConstraintPass_spec__1___redArg(x_25, x_40, x_59);
+x_60 = l_Std_DHashMap_Internal_Raw_u2080_insertIfNew___at___00Lean_Elab_Tactic_BVDecide_Frontend_Normalize_embeddedConstraintPass_spec__1___redArg(x_24, x_40, x_59);
 x_61 = lean_alloc_ctor(0, 2, 0);
-lean_ctor_set(x_61, 0, x_58);
-lean_ctor_set(x_61, 1, x_60);
+lean_ctor_set(x_61, 0, x_60);
+lean_ctor_set(x_61, 1, x_25);
 x_62 = lean_alloc_ctor(0, 2, 0);
-lean_ctor_set(x_62, 0, x_21);
+lean_ctor_set(x_62, 0, x_58);
 lean_ctor_set(x_62, 1, x_61);
 x_10 = x_62;
 goto block_14;
@@ -754,7 +754,7 @@ else
 lean_object* x_63; lean_object* x_64; uint8_t x_65; uint8_t x_70; 
 lean_dec_ref(x_40);
 lean_dec(x_25);
-lean_dec(x_21);
+lean_dec(x_24);
 lean_dec(x_8);
 lean_dec_ref(x_7);
 lean_dec(x_6);
@@ -853,12 +853,12 @@ else
 lean_object* x_79; lean_object* x_80; lean_object* x_81; 
 lean_dec_ref(x_40);
 lean_inc(x_17);
-x_79 = lean_array_push(x_21, x_17);
+x_79 = lean_array_push(x_25, x_17);
 x_80 = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(x_80, 0, x_24);
-lean_ctor_set(x_80, 1, x_25);
+lean_ctor_set(x_80, 1, x_79);
 x_81 = lean_alloc_ctor(0, 2, 0);
-lean_ctor_set(x_81, 0, x_79);
+lean_ctor_set(x_81, 0, x_21);
 lean_ctor_set(x_81, 1, x_80);
 x_10 = x_81;
 goto block_14;
@@ -1010,8 +1010,8 @@ static lean_object* _init_l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_embedde
 _start:
 {
 lean_object* x_1; lean_object* x_2; lean_object* x_3; 
-x_1 = lean_obj_once(&l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_embeddedConstraintPass___lam__1___closed__2, &l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_embeddedConstraintPass___lam__1___closed__2_once, _init_l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_embeddedConstraintPass___lam__1___closed__2);
-x_2 = ((lean_object*)(l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_embeddedConstraintPass___lam__1___closed__0));
+x_1 = ((lean_object*)(l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_embeddedConstraintPass___lam__1___closed__0));
+x_2 = lean_obj_once(&l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_embeddedConstraintPass___lam__1___closed__2, &l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_embeddedConstraintPass___lam__1___closed__2_once, _init_l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_embeddedConstraintPass___lam__1___closed__2);
 x_3 = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(x_3, 0, x_2);
 lean_ctor_set(x_3, 1, x_1);
@@ -1152,15 +1152,15 @@ lean_inc(x_19);
 x_20 = lean_ctor_get(x_18, 0);
 lean_inc(x_20);
 lean_dec(x_18);
-x_21 = lean_ctor_get(x_19, 0);
+x_21 = lean_ctor_get(x_19, 1);
 lean_inc(x_21);
 lean_dec(x_19);
 lean_inc(x_8);
 lean_inc_ref(x_7);
 lean_inc(x_6);
 lean_inc_ref(x_5);
-x_22 = l_Lean_MVarId_tryClearMany(x_1, x_20, x_5, x_6, x_7, x_8);
-lean_dec(x_20);
+x_22 = l_Lean_MVarId_tryClearMany(x_1, x_21, x_5, x_6, x_7, x_8);
+lean_dec(x_21);
 if (lean_obj_tag(x_22) == 0)
 {
 lean_object* x_23; lean_object* x_24; uint8_t x_25; uint8_t x_100; 
@@ -1183,7 +1183,7 @@ goto block_99;
 block_99:
 {
 lean_object* x_26; uint8_t x_27; 
-x_26 = lean_array_get_size(x_21);
+x_26 = lean_array_get_size(x_20);
 x_27 = lean_nat_dec_eq(x_26, x_12);
 if (x_27 == 0)
 {
@@ -1205,51 +1205,51 @@ lean_dec_ref(x_28);
 x_30 = l_Lean_Meta_getSimpCongrTheorems___redArg(x_8);
 if (lean_obj_tag(x_30) == 0)
 {
-lean_object* x_31; lean_object* x_32; lean_object* x_33; uint8_t x_34; uint8_t x_35; lean_object* x_36; lean_object* x_37; lean_object* x_38; 
+lean_object* x_31; lean_object* x_32; uint8_t x_33; lean_object* x_34; uint8_t x_35; lean_object* x_36; lean_object* x_37; lean_object* x_38; 
 x_31 = lean_ctor_get(x_30, 0);
 lean_inc(x_31);
 lean_dec_ref(x_30);
 x_32 = lean_ctor_get(x_3, 1);
 lean_inc(x_32);
 lean_dec_ref(x_3);
-x_33 = lean_unsigned_to_nat(2u);
-x_34 = 1;
+x_33 = 1;
+x_34 = lean_unsigned_to_nat(2u);
 x_35 = 0;
 x_36 = lean_box(0);
 x_37 = lean_alloc_ctor(0, 3, 29);
 lean_ctor_set(x_37, 0, x_32);
-lean_ctor_set(x_37, 1, x_33);
+lean_ctor_set(x_37, 1, x_34);
 lean_ctor_set(x_37, 2, x_36);
 lean_ctor_set_uint8(x_37, sizeof(void*)*3, x_27);
-lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 1, x_34);
+lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 1, x_33);
 lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 2, x_27);
-lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 3, x_34);
-lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 4, x_34);
-lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 5, x_34);
+lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 3, x_33);
+lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 4, x_33);
+lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 5, x_33);
 lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 6, x_35);
-lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 7, x_34);
-lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 8, x_34);
+lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 7, x_33);
+lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 8, x_33);
 lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 9, x_27);
 lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 10, x_27);
 lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 11, x_27);
-lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 12, x_34);
+lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 12, x_33);
 lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 13, x_27);
 lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 14, x_27);
 lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 15, x_27);
 lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 16, x_27);
-lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 17, x_34);
+lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 17, x_33);
 lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 18, x_27);
-lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 19, x_34);
-lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 20, x_34);
-lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 21, x_34);
-lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 22, x_34);
-lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 23, x_34);
-lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 24, x_34);
-lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 25, x_34);
+lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 19, x_33);
+lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 20, x_33);
+lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 21, x_33);
+lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 22, x_33);
+lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 23, x_33);
+lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 24, x_33);
+lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 25, x_33);
 lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 26, x_27);
 lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 27, x_27);
-lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 28, x_34);
-x_38 = l_Lean_Meta_Simp_mkContext___redArg(x_37, x_21, x_31, x_5, x_7, x_8);
+lean_ctor_set_uint8(x_37, sizeof(void*)*3 + 28, x_33);
+x_38 = l_Lean_Meta_Simp_mkContext___redArg(x_37, x_20, x_31, x_5, x_7, x_8);
 if (lean_obj_tag(x_38) == 0)
 {
 lean_object* x_39; lean_object* x_40; lean_object* x_41; 
@@ -1257,7 +1257,7 @@ x_39 = lean_ctor_get(x_38, 0);
 lean_inc(x_39);
 lean_dec_ref(x_38);
 x_40 = lean_obj_once(&l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_embeddedConstraintPass___lam__1___closed__11, &l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_embeddedConstraintPass___lam__1___closed__11_once, _init_l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_embeddedConstraintPass___lam__1___closed__11);
-x_41 = l_Lean_Meta_simpGoal(x_23, x_39, x_13, x_36, x_34, x_29, x_40, x_5, x_6, x_7, x_8);
+x_41 = l_Lean_Meta_simpGoal(x_23, x_39, x_13, x_36, x_33, x_29, x_40, x_5, x_6, x_7, x_8);
 if (lean_obj_tag(x_41) == 0)
 {
 lean_object* x_42; lean_object* x_43; uint8_t x_44; uint8_t x_62; 
@@ -1466,7 +1466,7 @@ else
 lean_object* x_79; lean_object* x_80; uint8_t x_81; uint8_t x_86; 
 lean_dec(x_29);
 lean_dec(x_23);
-lean_dec(x_21);
+lean_dec(x_20);
 lean_dec(x_8);
 lean_dec_ref(x_7);
 lean_dec(x_6);
@@ -1515,7 +1515,7 @@ else
 {
 lean_object* x_87; lean_object* x_88; uint8_t x_89; uint8_t x_94; 
 lean_dec(x_23);
-lean_dec(x_21);
+lean_dec(x_20);
 lean_dec(x_8);
 lean_dec_ref(x_7);
 lean_dec(x_6);
@@ -1563,7 +1563,7 @@ return x_90;
 else
 {
 lean_object* x_95; lean_object* x_96; 
-lean_dec(x_21);
+lean_dec(x_20);
 lean_dec(x_8);
 lean_dec_ref(x_7);
 lean_dec(x_6);
@@ -1597,7 +1597,7 @@ return x_96;
 else
 {
 lean_object* x_101; lean_object* x_102; uint8_t x_103; uint8_t x_108; 
-lean_dec(x_21);
+lean_dec(x_20);
 lean_dec(x_8);
 lean_dec_ref(x_7);
 lean_dec(x_6);

@@ -814,10 +814,10 @@ x_100 = lean_obj_once(&l_Lean_Meta_forallTelescopeCompatibleAux___redArg___close
 x_101 = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(x_101, 0, x_99);
 lean_ctor_set(x_101, 1, x_100);
-x_102 = l_Lean_throwError___at___00Lean_Meta_forallTelescopeCompatibleAux_spec__0___redArg(x_101, x_89, x_88, x_90, x_87);
+x_102 = l_Lean_throwError___at___00Lean_Meta_forallTelescopeCompatibleAux_spec__0___redArg(x_101, x_89, x_90, x_88, x_87);
 lean_dec(x_87);
-lean_dec_ref(x_90);
-lean_dec(x_88);
+lean_dec_ref(x_88);
+lean_dec(x_90);
 lean_dec_ref(x_89);
 x_103 = lean_ctor_get(x_102, 0);
 x_110 = !lean_is_exclusive(x_102);
@@ -874,8 +874,8 @@ else
 {
 lean_dec(x_29);
 x_43 = x_114;
-x_44 = x_113;
-x_45 = x_115;
+x_44 = x_115;
+x_45 = x_113;
 x_46 = x_112;
 goto block_86;
 }
@@ -916,9 +916,9 @@ x_130 = l_Lean_BinderInfo_isInstImplicit(x_28);
 if (x_130 == 0)
 {
 x_118 = x_128;
-x_119 = x_126;
+x_119 = x_127;
 x_120 = x_125;
-x_121 = x_127;
+x_121 = x_126;
 x_122 = x_130;
 goto block_124;
 }
@@ -927,9 +927,9 @@ else
 uint8_t x_131; 
 x_131 = l_Lean_Name_hasMacroScopes(x_25);
 x_118 = x_128;
-x_119 = x_126;
+x_119 = x_127;
 x_120 = x_125;
-x_121 = x_127;
+x_121 = x_126;
 x_122 = x_131;
 goto block_124;
 }
@@ -937,9 +937,9 @@ goto block_124;
 else
 {
 x_112 = x_128;
-x_113 = x_126;
+x_113 = x_127;
 x_114 = x_125;
-x_115 = x_127;
+x_115 = x_126;
 x_116 = x_129;
 goto block_117;
 }
@@ -1697,8 +1697,8 @@ return x_11;
 block_18:
 {
 lean_object* x_17; 
-lean_dec(x_15);
-x_17 = l___private_Init_Data_Array_QSort_Basic_0__Array_qsort_sort___at___00Lean_Elab_sortDeclLevelParams_spec__3___redArg(x_13, x_14, x_16);
+lean_dec(x_13);
+x_17 = l___private_Init_Data_Array_QSort_Basic_0__Array_qsort_sort___at___00Lean_Elab_sortDeclLevelParams_spec__3___redArg(x_15, x_14, x_16);
 lean_dec(x_16);
 x_8 = x_17;
 goto block_12;
@@ -1740,17 +1740,17 @@ x_31 = lean_nat_dec_le(x_25, x_30);
 if (x_31 == 0)
 {
 lean_inc(x_30);
-x_19 = x_26;
+x_19 = x_27;
 x_20 = x_30;
-x_21 = x_27;
+x_21 = x_26;
 x_22 = x_30;
 goto block_24;
 }
 else
 {
-x_19 = x_26;
+x_19 = x_27;
 x_20 = x_30;
-x_21 = x_27;
+x_21 = x_26;
 x_22 = x_25;
 goto block_24;
 }

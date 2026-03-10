@@ -285,7 +285,7 @@ block_24:
 {
 lean_object* x_15; uint8_t x_16; 
 x_15 = l___private_Lean_Compiler_LCNF_Simp_DefaultAlt_0__Lean_Compiler_LCNF_Simp_getMaxOccs_getNumOccsOf(x_2, x_3);
-x_16 = lean_nat_dec_lt(x_11, x_15);
+x_16 = lean_nat_dec_lt(x_12, x_15);
 if (x_16 == 0)
 {
 lean_object* x_17; 
@@ -319,8 +319,8 @@ x_20 = lean_array_fget_borrowed(x_2, x_3);
 lean_inc(x_20);
 if (x_14 == 0)
 {
-lean_ctor_set(x_13, 1, x_20);
-lean_ctor_set(x_13, 0, x_15);
+lean_ctor_set(x_13, 1, x_15);
+lean_ctor_set(x_13, 0, x_20);
 x_21 = x_13;
 goto block_22;
 }
@@ -328,8 +328,8 @@ else
 {
 lean_object* x_23; 
 x_23 = lean_alloc_ctor(0, 2, 0);
-lean_ctor_set(x_23, 0, x_15);
-lean_ctor_set(x_23, 1, x_20);
+lean_ctor_set(x_23, 0, x_20);
+lean_ctor_set(x_23, 1, x_15);
 x_21 = x_23;
 goto block_22;
 }
@@ -375,8 +375,8 @@ x_6 = lean_array_get_borrowed(x_2, x_1, x_5);
 x_7 = l___private_Lean_Compiler_LCNF_Simp_DefaultAlt_0__Lean_Compiler_LCNF_Simp_getMaxOccs_getNumOccsOf(x_1, x_5);
 lean_inc(x_6);
 x_8 = lean_alloc_ctor(0, 2, 0);
-lean_ctor_set(x_8, 0, x_7);
-lean_ctor_set(x_8, 1, x_6);
+lean_ctor_set(x_8, 0, x_6);
+lean_ctor_set(x_8, 1, x_7);
 x_9 = l_WellFounded_opaqueFix_u2083___at___00__private_Lean_Compiler_LCNF_Simp_DefaultAlt_0__Lean_Compiler_LCNF_Simp_getMaxOccs_spec__0___redArg(x_4, x_1, x_3, x_8);
 x_10 = lean_ctor_get(x_9, 0);
 x_11 = lean_ctor_get(x_9, 1);
@@ -401,8 +401,6 @@ block_17:
 lean_object* x_14; 
 if (x_13 == 0)
 {
-lean_ctor_set(x_12, 1, x_10);
-lean_ctor_set(x_12, 0, x_11);
 x_14 = x_12;
 goto block_15;
 }
@@ -410,8 +408,8 @@ else
 {
 lean_object* x_16; 
 x_16 = lean_alloc_ctor(0, 2, 0);
-lean_ctor_set(x_16, 0, x_11);
-lean_ctor_set(x_16, 1, x_10);
+lean_ctor_set(x_16, 0, x_10);
+lean_ctor_set(x_16, 1, x_11);
 x_14 = x_16;
 goto block_15;
 }

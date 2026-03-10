@@ -600,8 +600,8 @@ return x_27;
 else
 {
 lean_object* x_28; 
-lean_dec(x_14);
 lean_dec_ref(x_13);
+lean_dec(x_14);
 lean_dec_ref(x_12);
 lean_dec_ref(x_11);
 lean_dec_ref(x_10);
@@ -613,8 +613,8 @@ return x_28;
 else
 {
 lean_object* x_29; 
-lean_dec_ref(x_12);
 lean_dec(x_13);
+lean_dec_ref(x_12);
 lean_dec_ref(x_11);
 lean_dec_ref(x_10);
 lean_dec_ref(x_5);
@@ -625,8 +625,8 @@ return x_29;
 else
 {
 lean_object* x_30; 
-lean_dec_ref(x_11);
 lean_dec(x_12);
+lean_dec_ref(x_11);
 lean_dec_ref(x_10);
 lean_dec_ref(x_5);
 x_30 = lean_box(0);

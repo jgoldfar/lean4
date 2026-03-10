@@ -1550,8 +1550,8 @@ if (lean_obj_tag(x_15) == 0)
 {
 lean_object* x_18; lean_object* x_19; 
 lean_dec(x_11);
-lean_dec(x_10);
 lean_dec_ref(x_1);
+lean_dec(x_10);
 lean_dec(x_8);
 lean_dec_ref(x_7);
 lean_dec(x_6);
@@ -2015,8 +2015,8 @@ else
 {
 lean_object* x_102; lean_object* x_103; uint8_t x_104; uint8_t x_109; 
 lean_dec(x_11);
-lean_dec(x_10);
 lean_dec_ref(x_1);
+lean_dec(x_10);
 lean_dec(x_8);
 lean_dec_ref(x_7);
 lean_dec(x_6);
@@ -2067,8 +2067,8 @@ else
 {
 lean_object* x_110; lean_object* x_111; uint8_t x_112; uint8_t x_117; 
 lean_dec(x_11);
-lean_dec(x_10);
 lean_dec_ref(x_1);
+lean_dec(x_10);
 lean_dec(x_8);
 lean_dec_ref(x_7);
 lean_dec(x_6);

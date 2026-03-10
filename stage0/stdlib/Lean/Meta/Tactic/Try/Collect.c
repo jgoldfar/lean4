@@ -1802,11 +1802,11 @@ lean_dec(x_9);
 if (x_12 == 0)
 {
 lean_object* x_13; 
+lean_del_object(x_10);
 x_13 = l_Lean_realizeGlobalConstNoOverloadCore(x_6, x_2, x_3);
 if (lean_obj_tag(x_13) == 0)
 {
 lean_object* x_14; lean_object* x_15; uint8_t x_16; uint8_t x_22; 
-lean_del_object(x_10);
 x_14 = lean_ctor_get(x_13, 0);
 x_22 = !lean_is_exclusive(x_13);
 if (x_22 == 0)
@@ -1869,68 +1869,67 @@ goto block_37;
 }
 block_37:
 {
-lean_object* x_26; 
+uint8_t x_26; uint8_t x_35; 
+x_35 = l_Lean_Exception_isInterrupt(x_23);
+if (x_35 == 0)
+{
+uint8_t x_36; 
 lean_inc(x_23);
+x_36 = l_Lean_Exception_isRuntime(x_23);
+x_26 = x_36;
+goto block_34;
+}
+else
+{
+x_26 = x_35;
+goto block_34;
+}
+block_34:
+{
+if (x_26 == 0)
+{
+lean_object* x_27; lean_object* x_28; 
+lean_dec(x_23);
+x_27 = lean_box(0);
 if (x_25 == 0)
 {
-x_26 = x_24;
-goto block_35;
+lean_ctor_set_tag(x_24, 0);
+lean_ctor_set(x_24, 0, x_27);
+x_28 = x_24;
+goto block_29;
 }
 else
 {
-lean_object* x_36; 
-x_36 = lean_alloc_ctor(1, 1, 0);
-lean_ctor_set(x_36, 0, x_23);
-x_26 = x_36;
-goto block_35;
+lean_object* x_30; 
+x_30 = lean_alloc_ctor(0, 1, 0);
+lean_ctor_set(x_30, 0, x_27);
+x_28 = x_30;
+goto block_29;
 }
-block_35:
+block_29:
 {
-uint8_t x_27; uint8_t x_33; 
-x_33 = l_Lean_Exception_isInterrupt(x_23);
-if (x_33 == 0)
-{
-uint8_t x_34; 
-x_34 = l_Lean_Exception_isRuntime(x_23);
-x_27 = x_34;
-goto block_32;
+return x_28;
 }
-else
-{
-lean_dec(x_23);
-x_27 = x_33;
-goto block_32;
-}
-block_32:
-{
-if (x_27 == 0)
-{
-lean_object* x_28; lean_object* x_29; 
-lean_dec_ref(x_26);
-x_28 = lean_box(0);
-if (x_11 == 0)
-{
-lean_ctor_set(x_10, 0, x_28);
-x_29 = x_10;
-goto block_30;
 }
 else
 {
 lean_object* x_31; 
-x_31 = lean_alloc_ctor(0, 1, 0);
-lean_ctor_set(x_31, 0, x_28);
-x_29 = x_31;
-goto block_30;
-}
-block_30:
+if (x_25 == 0)
 {
-return x_29;
-}
+x_31 = x_24;
+goto block_32;
 }
 else
 {
-lean_del_object(x_10);
-return x_26;
+lean_object* x_33; 
+x_33 = lean_alloc_ctor(1, 1, 0);
+lean_ctor_set(x_33, 0, x_23);
+x_31 = x_33;
+goto block_32;
+}
+block_32:
+{
+return x_31;
 }
 }
 }

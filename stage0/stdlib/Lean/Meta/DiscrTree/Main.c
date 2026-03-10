@@ -2126,8 +2126,8 @@ x_69 = l___private_Lean_Meta_DiscrTree_Main_0__Lean_Meta_DiscrTree_toNatLit_x3f(
 if (lean_obj_tag(x_69) == 1)
 {
 lean_object* x_70; 
-lean_dec_ref(x_27);
 lean_dec(x_61);
+lean_dec_ref(x_27);
 lean_dec(x_17);
 lean_dec(x_8);
 lean_dec_ref(x_7);
@@ -2185,8 +2185,8 @@ goto block_68;
 else
 {
 lean_object* x_76; lean_object* x_77; lean_object* x_78; 
-lean_dec_ref(x_27);
 lean_dec(x_61);
+lean_dec_ref(x_27);
 lean_dec(x_17);
 lean_dec(x_8);
 lean_dec_ref(x_7);
@@ -2220,8 +2220,8 @@ return x_78;
 else
 {
 lean_object* x_83; lean_object* x_84; uint8_t x_85; uint8_t x_90; 
-lean_dec_ref(x_27);
 lean_dec(x_61);
+lean_dec_ref(x_27);
 lean_dec(x_17);
 lean_dec(x_8);
 lean_dec_ref(x_7);

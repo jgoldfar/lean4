@@ -3646,8 +3646,8 @@ return x_13;
 else
 {
 lean_object* x_14; lean_object* x_15; lean_object* x_16; uint8_t x_17; uint8_t x_59; 
-x_14 = lean_ctor_get(x_5, 0);
-x_15 = lean_ctor_get(x_5, 1);
+x_14 = lean_ctor_get(x_5, 1);
+x_15 = lean_ctor_get(x_5, 0);
 x_59 = !lean_is_exclusive(x_5);
 if (x_59 == 0)
 {
@@ -3657,8 +3657,8 @@ goto block_58;
 }
 else
 {
-lean_inc(x_15);
 lean_inc(x_14);
+lean_inc(x_15);
 lean_dec(x_5);
 x_16 = lean_box(0);
 x_17 = x_59;
@@ -3683,8 +3683,8 @@ else
 {
 lean_object* x_25; 
 x_25 = lean_alloc_ctor(0, 2, 0);
-lean_ctor_set(x_25, 0, x_14);
-lean_ctor_set(x_25, 1, x_15);
+lean_ctor_set(x_25, 0, x_15);
+lean_ctor_set(x_25, 1, x_14);
 x_22 = x_25;
 goto block_24;
 }
@@ -3761,8 +3761,8 @@ lean_object* x_41;
 lean_dec(x_29);
 lean_del_object(x_16);
 x_41 = lean_alloc_ctor(0, 2, 0);
-lean_ctor_set(x_41, 0, x_32);
-lean_ctor_set(x_41, 1, x_15);
+lean_ctor_set(x_41, 0, x_15);
+lean_ctor_set(x_41, 1, x_32);
 x_7 = x_41;
 goto block_11;
 }
@@ -3832,8 +3832,8 @@ lean_object* x_50;
 lean_dec(x_29);
 lean_del_object(x_16);
 x_50 = lean_alloc_ctor(0, 2, 0);
-lean_ctor_set(x_50, 0, x_32);
-lean_ctor_set(x_50, 1, x_15);
+lean_ctor_set(x_50, 0, x_15);
+lean_ctor_set(x_50, 1, x_32);
 x_7 = x_50;
 goto block_11;
 }
@@ -3843,8 +3843,8 @@ lean_object* x_34; lean_object* x_35;
 x_34 = lean_box(x_33);
 if (x_17 == 0)
 {
-lean_ctor_set(x_16, 1, x_34);
-lean_ctor_set(x_16, 0, x_32);
+lean_ctor_set(x_16, 1, x_32);
+lean_ctor_set(x_16, 0, x_34);
 x_35 = x_16;
 goto block_36;
 }
@@ -3852,8 +3852,8 @@ else
 {
 lean_object* x_37; 
 x_37 = lean_alloc_ctor(0, 2, 0);
-lean_ctor_set(x_37, 0, x_32);
-lean_ctor_set(x_37, 1, x_34);
+lean_ctor_set(x_37, 0, x_34);
+lean_ctor_set(x_37, 1, x_32);
 x_35 = x_37;
 goto block_36;
 }
@@ -3986,8 +3986,8 @@ x_35 = lean_array_get_size(x_32);
 x_36 = l_Array_toSubarray___redArg(x_32, x_34, x_35);
 x_37 = lean_box(x_33);
 x_38 = lean_alloc_ctor(0, 2, 0);
-lean_ctor_set(x_38, 0, x_36);
-lean_ctor_set(x_38, 1, x_37);
+lean_ctor_set(x_38, 0, x_37);
+lean_ctor_set(x_38, 1, x_36);
 x_39 = lean_array_size(x_23);
 x_40 = 0;
 x_41 = l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00__private_Lean_Compiler_LCNF_ResetReuse_0__Lean_Compiler_LCNF_classifyUse_spec__0___redArg(x_2, x_23, x_39, x_40, x_38);
@@ -4015,7 +4015,7 @@ goto block_49;
 block_49:
 {
 lean_object* x_45; lean_object* x_46; 
-x_45 = lean_ctor_get(x_42, 1);
+x_45 = lean_ctor_get(x_42, 0);
 lean_inc(x_45);
 lean_dec(x_42);
 if (x_44 == 0)

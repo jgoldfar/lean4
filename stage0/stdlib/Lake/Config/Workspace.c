@@ -4829,7 +4829,7 @@ block_37:
 {
 lean_object* x_15; lean_object* x_16; lean_object* x_17; lean_object* x_18; lean_object* x_19; lean_object* x_20; lean_object* x_21; lean_object* x_22; lean_object* x_23; lean_object* x_24; lean_object* x_25; lean_object* x_26; lean_object* x_27; lean_object* x_28; lean_object* x_29; uint8_t x_30; 
 x_15 = lean_alloc_ctor(0, 2, 0);
-lean_ctor_set(x_15, 0, x_11);
+lean_ctor_set(x_15, 0, x_10);
 lean_ctor_set(x_15, 1, x_14);
 x_16 = ((lean_object*)(l_Lake_Workspace_augmentedEnvVars___closed__1));
 x_17 = l_Lake_Workspace_augmentedPath(x_1);
@@ -4842,9 +4842,9 @@ lean_ctor_set(x_20, 1, x_19);
 x_21 = lean_unsigned_to_nat(6u);
 x_22 = lean_mk_empty_array_with_capacity(x_21);
 x_23 = lean_array_push(x_22, x_9);
-x_24 = lean_array_push(x_23, x_13);
-x_25 = lean_array_push(x_24, x_12);
-x_26 = lean_array_push(x_25, x_10);
+x_24 = lean_array_push(x_23, x_11);
+x_25 = lean_array_push(x_24, x_13);
+x_26 = lean_array_push(x_25, x_12);
 x_27 = lean_array_push(x_26, x_15);
 x_28 = lean_array_push(x_27, x_20);
 x_29 = l_Array_append___redArg(x_6, x_28);
@@ -4901,10 +4901,10 @@ lean_object* x_54; lean_object* x_55;
 x_54 = l_Lake_Env_leanGithash(x_2);
 x_55 = lean_alloc_ctor(1, 1, 0);
 lean_ctor_set(x_55, 0, x_54);
-x_10 = x_52;
-x_11 = x_53;
-x_12 = x_47;
-x_13 = x_42;
+x_10 = x_53;
+x_11 = x_42;
+x_12 = x_52;
+x_13 = x_47;
 x_14 = x_55;
 goto block_37;
 }
@@ -4912,10 +4912,10 @@ else
 {
 lean_object* x_56; 
 x_56 = lean_box(0);
-x_10 = x_52;
-x_11 = x_53;
-x_12 = x_47;
-x_13 = x_42;
+x_10 = x_53;
+x_11 = x_42;
+x_12 = x_52;
+x_13 = x_47;
 x_14 = x_56;
 goto block_37;
 }

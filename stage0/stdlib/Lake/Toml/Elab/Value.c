@@ -3695,7 +3695,7 @@ block_18:
 {
 lean_object* x_10; lean_object* x_11; lean_object* x_12; lean_object* x_13; lean_object* x_14; lean_object* x_15; lean_object* x_16; lean_object* x_17; 
 x_10 = lean_obj_once(&l___private_Lake_Toml_Elab_Value_0__Lake_Toml_elabBasicStringCore___closed__1, &l___private_Lake_Toml_Elab_Value_0__Lake_Toml_elabBasicStringCore___closed__1_once, _init_l___private_Lake_Toml_Elab_Value_0__Lake_Toml_elabBasicStringCore___closed__1);
-x_11 = lean_substring_tostring(x_9);
+x_11 = lean_substring_tostring(x_8);
 x_12 = lean_alloc_ctor(3, 1, 0);
 lean_ctor_set(x_12, 0, x_11);
 x_13 = l_Lean_MessageData_ofFormat(x_12);
@@ -3706,22 +3706,22 @@ x_15 = lean_obj_once(&l___private_Lake_Toml_Elab_Value_0__Lake_Toml_elabBasicStr
 x_16 = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(x_16, 0, x_14);
 lean_ctor_set(x_16, 1, x_15);
-x_17 = l_Lean_throwError___at___00Lean_throwErrorAt___at___00__private_Lake_Toml_Elab_Value_0__Lake_Toml_elabBoolean_spec__0_spec__0___redArg(x_16, x_8, x_7);
+x_17 = l_Lean_throwError___at___00Lean_throwErrorAt___at___00__private_Lake_Toml_Elab_Value_0__Lake_Toml_elabBoolean_spec__0_spec__0___redArg(x_16, x_7, x_9);
 return x_17;
 }
 block_27:
 {
 lean_object* x_23; uint32_t x_24; lean_object* x_25; 
-x_23 = lean_ctor_get(x_22, 2);
+x_23 = lean_ctor_get(x_21, 2);
 lean_inc(x_23);
-lean_dec_ref(x_22);
-x_24 = lean_uint32_of_nat(x_19);
-lean_dec(x_19);
+lean_dec_ref(x_21);
+x_24 = lean_uint32_of_nat(x_20);
+lean_dec(x_20);
 x_25 = lean_string_push(x_3, x_24);
 x_2 = x_23;
 x_3 = x_25;
-x_4 = x_21;
-x_5 = x_20;
+x_4 = x_19;
+x_5 = x_22;
 goto _start;
 }
 block_38:
@@ -3741,9 +3741,9 @@ if (x_35 == 0)
 lean_dec(x_31);
 lean_dec_ref(x_3);
 lean_dec_ref(x_1);
-x_7 = x_30;
-x_8 = x_29;
-x_9 = x_28;
+x_7 = x_29;
+x_8 = x_28;
+x_9 = x_30;
 goto block_18;
 }
 else
@@ -3756,27 +3756,27 @@ if (x_37 == 0)
 lean_dec(x_31);
 lean_dec_ref(x_3);
 lean_dec_ref(x_1);
-x_7 = x_30;
-x_8 = x_29;
-x_9 = x_28;
+x_7 = x_29;
+x_8 = x_28;
+x_9 = x_30;
 goto block_18;
 }
 else
 {
-x_19 = x_31;
-x_20 = x_30;
-x_21 = x_29;
-x_22 = x_28;
+x_19 = x_29;
+x_20 = x_31;
+x_21 = x_28;
+x_22 = x_30;
 goto block_27;
 }
 }
 }
 else
 {
-x_19 = x_31;
-x_20 = x_30;
-x_21 = x_29;
-x_22 = x_28;
+x_19 = x_29;
+x_20 = x_31;
+x_21 = x_28;
+x_22 = x_30;
 goto block_27;
 }
 }

@@ -753,10 +753,10 @@ block_78:
 {
 if (x_44 == 0)
 {
-lean_inc_ref(x_42);
 lean_inc_ref(x_43);
-x_30 = x_43;
-x_31 = x_42;
+lean_inc_ref(x_42);
+x_30 = x_42;
+x_31 = x_43;
 x_32 = x_45;
 x_33 = x_46;
 x_34 = x_47;
@@ -799,10 +799,10 @@ x_61 = l_Lean_throwError___at___00Lean_Meta_GeneralizeTelescope_generalizeTelesc
 if (lean_obj_tag(x_61) == 0)
 {
 lean_dec_ref(x_61);
-lean_inc_ref(x_42);
 lean_inc_ref(x_43);
-x_30 = x_43;
-x_31 = x_42;
+lean_inc_ref(x_42);
+x_30 = x_42;
+x_31 = x_43;
 x_32 = x_45;
 x_33 = x_46;
 x_34 = x_47;
@@ -861,10 +861,10 @@ return x_65;
 }
 else
 {
-lean_inc_ref(x_42);
 lean_inc_ref(x_43);
-x_30 = x_43;
-x_31 = x_42;
+lean_inc_ref(x_42);
+x_30 = x_42;
+x_31 = x_43;
 x_32 = x_45;
 x_33 = x_46;
 x_34 = x_47;
@@ -1002,8 +1002,8 @@ block_37:
 lean_object* x_36; 
 x_36 = ((lean_object*)(l_Lean_Meta_GeneralizeTelescope_generalizeTelescopeAux___redArg___closed__1));
 x_10 = x_36;
-x_11 = x_31;
-x_12 = x_30;
+x_11 = x_30;
+x_12 = x_31;
 x_13 = x_32;
 x_14 = x_33;
 x_15 = x_34;

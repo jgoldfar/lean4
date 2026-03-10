@@ -1171,14 +1171,14 @@ x_21 = l_Lean_Expr_getAppFn(x_14);
 lean_dec(x_14);
 x_22 = l_Lean_Expr_constLevels_x21(x_21);
 lean_dec_ref(x_21);
-x_23 = l_Lean_Expr_appFn_x21(x_15);
-lean_dec_ref(x_15);
+x_23 = l_Lean_Expr_appFn_x21(x_16);
+lean_dec_ref(x_16);
 x_24 = l_Lean_Expr_appArg_x21(x_23);
 lean_dec_ref(x_23);
 x_25 = ((lean_object*)(l_Lean_MVarId_refl___lam__0___closed__0));
 x_26 = l_Lean_Name_mkStr2(x_25, x_3);
 x_27 = l_Lean_mkConst(x_26, x_22);
-x_28 = l_Lean_mkAppB(x_27, x_24, x_16);
+x_28 = l_Lean_mkAppB(x_27, x_24, x_15);
 x_29 = l_Lean_MVarId_assign___at___00Lean_MVarId_refl_spec__1___redArg(x_1, x_28, x_18);
 lean_dec(x_18);
 return x_29;
@@ -1197,8 +1197,8 @@ x_40 = l_Lean_instantiateMVars___at___00Lean_MVarId_refl_spec__0___redArg(x_39, 
 if (x_4 == 0)
 {
 lean_dec_ref(x_40);
-x_15 = x_35;
-x_16 = x_38;
+x_15 = x_38;
+x_16 = x_35;
 x_17 = x_31;
 x_18 = x_32;
 x_19 = x_33;
@@ -1283,8 +1283,8 @@ x_56 = l_Lean_Meta_throwTacticEx___redArg(x_47, x_1, x_55, x_31, x_32, x_33, x_3
 if (lean_obj_tag(x_56) == 0)
 {
 lean_dec_ref(x_56);
-x_15 = x_35;
-x_16 = x_38;
+x_15 = x_38;
+x_16 = x_35;
 x_17 = x_31;
 x_18 = x_32;
 x_19 = x_33;
@@ -1310,8 +1310,8 @@ else
 {
 lean_del_object(x_42);
 lean_dec(x_41);
-x_15 = x_35;
-x_16 = x_38;
+x_15 = x_38;
+x_16 = x_35;
 x_17 = x_31;
 x_18 = x_32;
 x_19 = x_33;

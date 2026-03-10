@@ -2371,7 +2371,7 @@ lean_dec_ref(x_31);
 x_33 = lean_array_get_size(x_32);
 x_34 = lean_unsigned_to_nat(0u);
 x_35 = ((lean_object*)(l___private_Lean_Compiler_LCNF_Irrelevant_0__Lean_Compiler_LCNF_Irrelevant_hasTrivialStructure_x3f_fillCache___closed__0));
-x_36 = l_WellFounded_opaqueFix_u2083___at___00__private_Lean_Compiler_LCNF_Irrelevant_0__Lean_Compiler_LCNF_Irrelevant_hasTrivialStructure_x3f_fillCache_spec__0___redArg(x_33, x_19, x_24, x_32, x_9, x_34, x_35);
+x_36 = l_WellFounded_opaqueFix_u2083___at___00__private_Lean_Compiler_LCNF_Irrelevant_0__Lean_Compiler_LCNF_Irrelevant_hasTrivialStructure_x3f_fillCache_spec__0___redArg(x_33, x_19, x_24, x_32, x_30, x_34, x_35);
 lean_dec(x_32);
 lean_dec_ref(x_19);
 if (lean_obj_tag(x_36) == 0)

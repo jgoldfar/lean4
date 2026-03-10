@@ -1499,13 +1499,13 @@ goto block_21;
 }
 block_21:
 {
-lean_object* x_15; lean_object* x_16; lean_object* x_17; uint8_t x_18; lean_object* x_19; lean_object* x_20; 
+lean_object* x_15; uint8_t x_16; lean_object* x_17; lean_object* x_18; lean_object* x_19; lean_object* x_20; 
 x_15 = lean_st_ref_set(x_2, x_14);
-x_16 = lean_io_promise_result_opt(x_6);
+x_16 = 0;
+x_17 = lean_io_promise_result_opt(x_6);
 lean_dec(x_6);
-x_17 = lean_unsigned_to_nat(0u);
-x_18 = 0;
-x_19 = lean_io_bind_task(x_16, x_1, x_17, x_18);
+x_18 = lean_unsigned_to_nat(0u);
+x_19 = lean_io_bind_task(x_17, x_1, x_18, x_16);
 x_20 = lean_alloc_ctor(0, 1, 0);
 lean_ctor_set(x_20, 0, x_19);
 return x_20;

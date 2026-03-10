@@ -184,7 +184,7 @@ static const lean_ctor_object l_Lean_Meta_Grind_mkEqCongrSymmProof___closed__4_v
 static const lean_ctor_object l_Lean_Meta_Grind_mkEqCongrSymmProof___closed__4_value_aux_1 = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&l_Lean_Meta_Grind_mkEqCongrSymmProof___closed__4_value_aux_0),((lean_object*)&l___private_Lean_Meta_Tactic_Grind_Proof_0__Lean_Meta_Grind_mkNestedDecidableCongr___closed__1_value),LEAN_SCALAR_PTR_LITERAL(116, 4, 170, 185, 29, 24, 60, 188)}};
 static const lean_ctor_object l_Lean_Meta_Grind_mkEqCongrSymmProof___closed__4_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&l_Lean_Meta_Grind_mkEqCongrSymmProof___closed__4_value_aux_1),((lean_object*)&l_Lean_Meta_Grind_mkEqCongrSymmProof___closed__3_value),LEAN_SCALAR_PTR_LITERAL(12, 59, 80, 84, 143, 62, 233, 44)}};
 static const lean_object* l_Lean_Meta_Grind_mkEqCongrSymmProof___closed__4 = (const lean_object*)&l_Lean_Meta_Grind_mkEqCongrSymmProof___closed__4_value;
-static const lean_string_object l_Lean_Meta_Grind_mkEqCongrSymmProof___closed__5_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 225, .m_capacity = 225, .m_length = 216, .m_data = "assertion violation: ( __do_lift._@.Lean.Meta.Tactic.Grind.Proof.1529172837._hygCtx._hyg.759.0 ).hasSameRoot a₁ b₂ && ( __do_lift._@.Lean.Meta.Tactic.Grind.Proof.1529172837._hygCtx._hyg.759.1 ).hasSameRoot b₁ a₂\n    "};
+static const lean_string_object l_Lean_Meta_Grind_mkEqCongrSymmProof___closed__5_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 225, .m_capacity = 225, .m_length = 216, .m_data = "assertion violation: ( __do_lift._@.Lean.Meta.Tactic.Grind.Proof.1529172837._hygCtx._hyg.980.0 ).hasSameRoot a₁ b₂ && ( __do_lift._@.Lean.Meta.Tactic.Grind.Proof.1529172837._hygCtx._hyg.980.1 ).hasSameRoot b₁ a₂\n    "};
 static const lean_object* l_Lean_Meta_Grind_mkEqCongrSymmProof___closed__5 = (const lean_object*)&l_Lean_Meta_Grind_mkEqCongrSymmProof___closed__5_value;
 static lean_once_cell_t l_Lean_Meta_Grind_mkEqCongrSymmProof___closed__6_once = LEAN_ONCE_CELL_INITIALIZER;
 static lean_object* l_Lean_Meta_Grind_mkEqCongrSymmProof___closed__6;
@@ -259,7 +259,7 @@ static const lean_ctor_object l_Lean_Meta_Grind_mkEqCongrProof___closed__4_value
 static const lean_ctor_object l_Lean_Meta_Grind_mkEqCongrProof___closed__4_value_aux_1 = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&l_Lean_Meta_Grind_mkEqCongrProof___closed__4_value_aux_0),((lean_object*)&l___private_Lean_Meta_Tactic_Grind_Proof_0__Lean_Meta_Grind_mkNestedDecidableCongr___closed__1_value),LEAN_SCALAR_PTR_LITERAL(116, 4, 170, 185, 29, 24, 60, 188)}};
 static const lean_ctor_object l_Lean_Meta_Grind_mkEqCongrProof___closed__4_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&l_Lean_Meta_Grind_mkEqCongrProof___closed__4_value_aux_1),((lean_object*)&l_Lean_Meta_Grind_mkEqCongrProof___closed__3_value),LEAN_SCALAR_PTR_LITERAL(42, 237, 37, 65, 223, 91, 106, 181)}};
 static const lean_object* l_Lean_Meta_Grind_mkEqCongrProof___closed__4 = (const lean_object*)&l_Lean_Meta_Grind_mkEqCongrProof___closed__4_value;
-static const lean_string_object l_Lean_Meta_Grind_mkEqCongrProof___closed__5_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 225, .m_capacity = 225, .m_length = 216, .m_data = "assertion violation: ( __do_lift._@.Lean.Meta.Tactic.Grind.Proof.1529172837._hygCtx._hyg.224.0 ).hasSameRoot a₁ a₂ && ( __do_lift._@.Lean.Meta.Tactic.Grind.Proof.1529172837._hygCtx._hyg.224.1 ).hasSameRoot b₁ b₂\n    "};
+static const lean_string_object l_Lean_Meta_Grind_mkEqCongrProof___closed__5_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 225, .m_capacity = 225, .m_length = 216, .m_data = "assertion violation: ( __do_lift._@.Lean.Meta.Tactic.Grind.Proof.1529172837._hygCtx._hyg.502.0 ).hasSameRoot a₁ a₂ && ( __do_lift._@.Lean.Meta.Tactic.Grind.Proof.1529172837._hygCtx._hyg.502.1 ).hasSameRoot b₁ b₂\n    "};
 static const lean_object* l_Lean_Meta_Grind_mkEqCongrProof___closed__5 = (const lean_object*)&l_Lean_Meta_Grind_mkEqCongrProof___closed__5_value;
 static lean_once_cell_t l_Lean_Meta_Grind_mkEqCongrProof___closed__6_once = LEAN_ONCE_CELL_INITIALIZER;
 static lean_object* l_Lean_Meta_Grind_mkEqCongrProof___closed__6;
@@ -2401,8 +2401,8 @@ goto block_42;
 block_42:
 {
 lean_object* x_13; 
-lean_inc(x_9);
-x_13 = l_Lean_Meta_Grind_Goal_getENode(x_8, x_9, x_3, x_4, x_5, x_6);
+lean_inc(x_10);
+x_13 = l_Lean_Meta_Grind_Goal_getENode(x_8, x_10, x_3, x_4, x_5, x_6);
 if (lean_obj_tag(x_13) == 0)
 {
 lean_object* x_14; lean_object* x_15; uint8_t x_16; uint8_t x_33; 
@@ -2432,19 +2432,19 @@ lean_inc(x_18);
 x_19 = lean_ctor_get(x_14, 7);
 lean_inc(x_19);
 lean_dec(x_14);
-x_20 = l_Std_DTreeMap_Internal_Impl_insert___at___00__private_Lean_Meta_Tactic_Grind_Proof_0__Lean_Meta_Grind_findCommon_spec__0___redArg(x_19, x_17, x_10);
+x_20 = l_Std_DTreeMap_Internal_Impl_insert___at___00__private_Lean_Meta_Tactic_Grind_Proof_0__Lean_Meta_Grind_findCommon_spec__0___redArg(x_19, x_17, x_9);
 if (lean_obj_tag(x_18) == 1)
 {
 lean_object* x_21; lean_object* x_22; 
 lean_del_object(x_15);
-lean_dec(x_9);
+lean_dec(x_10);
 x_21 = lean_ctor_get(x_18, 0);
 lean_inc(x_21);
 lean_dec_ref(x_18);
 if (x_12 == 0)
 {
-lean_ctor_set(x_11, 1, x_20);
-lean_ctor_set(x_11, 0, x_21);
+lean_ctor_set(x_11, 1, x_21);
+lean_ctor_set(x_11, 0, x_20);
 x_22 = x_11;
 goto block_24;
 }
@@ -2452,8 +2452,8 @@ else
 {
 lean_object* x_25; 
 x_25 = lean_alloc_ctor(0, 2, 0);
-lean_ctor_set(x_25, 0, x_21);
-lean_ctor_set(x_25, 1, x_20);
+lean_ctor_set(x_25, 0, x_20);
+lean_ctor_set(x_25, 1, x_21);
 x_22 = x_25;
 goto block_24;
 }
@@ -2469,7 +2469,7 @@ lean_object* x_26;
 lean_dec(x_18);
 if (x_12 == 0)
 {
-lean_ctor_set(x_11, 1, x_20);
+lean_ctor_set(x_11, 0, x_20);
 x_26 = x_11;
 goto block_30;
 }
@@ -2477,8 +2477,8 @@ else
 {
 lean_object* x_31; 
 x_31 = lean_alloc_ctor(0, 2, 0);
-lean_ctor_set(x_31, 0, x_9);
-lean_ctor_set(x_31, 1, x_20);
+lean_ctor_set(x_31, 0, x_20);
+lean_ctor_set(x_31, 1, x_10);
 x_26 = x_31;
 goto block_30;
 }
@@ -2960,8 +2960,8 @@ _start:
 lean_object* x_14; lean_object* x_15; lean_object* x_16; 
 x_14 = lean_box(1);
 x_15 = lean_alloc_ctor(0, 2, 0);
-lean_ctor_set(x_15, 0, x_1);
-lean_ctor_set(x_15, 1, x_14);
+lean_ctor_set(x_15, 0, x_14);
+lean_ctor_set(x_15, 1, x_1);
 x_16 = l___private_Init_While_0__Lean_Loop_forIn_loop___at___00__private_Lean_Meta_Tactic_Grind_Proof_0__Lean_Meta_Grind_findCommon_spec__1___redArg(x_15, x_3, x_9, x_10, x_11, x_12);
 if (lean_obj_tag(x_16) == 0)
 {
@@ -2969,12 +2969,12 @@ lean_object* x_17; lean_object* x_18; lean_object* x_19; uint8_t x_20; uint8_t x
 x_17 = lean_ctor_get(x_16, 0);
 lean_inc(x_17);
 lean_dec_ref(x_16);
-x_18 = lean_ctor_get(x_17, 1);
+x_18 = lean_ctor_get(x_17, 0);
 x_47 = !lean_is_exclusive(x_17);
 if (x_47 == 0)
 {
 lean_object* x_48; 
-x_48 = lean_ctor_get(x_17, 0);
+x_48 = lean_ctor_get(x_17, 1);
 lean_dec(x_48);
 x_19 = x_17;
 x_20 = x_47;
@@ -7592,8 +7592,8 @@ return x_46;
 else
 {
 lean_object* x_53; lean_object* x_54; 
-lean_dec(x_21);
 lean_dec_ref(x_20);
+lean_dec(x_21);
 lean_dec(x_19);
 lean_dec(x_3);
 lean_dec_ref(x_1);

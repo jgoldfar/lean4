@@ -3214,18 +3214,18 @@ x_51 = lean_ctor_get(x_50, 0);
 lean_inc(x_51);
 lean_dec_ref(x_50);
 x_52 = lean_local_ctx_erase(x_42, x_3);
-lean_inc(x_44);
-x_53 = l___private_Init_Data_Array_Basic_0__Array_findFinIdx_x3f_loop(lean_box(0), x_4, x_51, x_44);
+lean_inc(x_45);
+x_53 = l___private_Init_Data_Array_Basic_0__Array_findFinIdx_x3f_loop(lean_box(0), x_4, x_51, x_45);
 if (lean_obj_tag(x_53) == 0)
 {
-x_10 = x_43;
-x_11 = x_48;
-x_12 = x_44;
-x_13 = x_46;
-x_14 = x_47;
-x_15 = x_49;
-x_16 = x_52;
-x_17 = x_45;
+x_10 = x_46;
+x_11 = x_52;
+x_12 = x_49;
+x_13 = x_47;
+x_14 = x_43;
+x_15 = x_44;
+x_16 = x_45;
+x_17 = x_48;
 x_18 = x_51;
 goto block_40;
 }
@@ -3236,14 +3236,14 @@ x_54 = lean_ctor_get(x_53, 0);
 lean_inc(x_54);
 lean_dec_ref(x_53);
 x_55 = l_Array_eraseIdx___redArg(x_51, x_54);
-x_10 = x_43;
-x_11 = x_48;
-x_12 = x_44;
-x_13 = x_46;
-x_14 = x_47;
-x_15 = x_49;
-x_16 = x_52;
-x_17 = x_45;
+x_10 = x_46;
+x_11 = x_52;
+x_12 = x_49;
+x_13 = x_47;
+x_14 = x_43;
+x_15 = x_44;
+x_16 = x_45;
+x_17 = x_48;
 x_18 = x_55;
 goto block_40;
 }
@@ -3358,8 +3358,8 @@ if (x_80 == 0)
 lean_del_object(x_78);
 lean_dec(x_2);
 x_43 = x_75;
-x_44 = x_71;
-x_45 = x_70;
+x_44 = x_70;
+x_45 = x_71;
 x_46 = x_65;
 x_47 = x_66;
 x_48 = x_67;
@@ -3404,8 +3404,8 @@ if (lean_obj_tag(x_88) == 0)
 {
 lean_dec_ref(x_88);
 x_43 = x_75;
-x_44 = x_71;
-x_45 = x_70;
+x_44 = x_70;
+x_45 = x_71;
 x_46 = x_65;
 x_47 = x_66;
 x_48 = x_67;
@@ -3661,8 +3661,8 @@ block_40:
 {
 uint8_t x_19; lean_object* x_20; 
 x_19 = 2;
-x_20 = l_Lean_Meta_mkFreshExprMVarAt(x_16, x_18, x_10, x_19, x_17, x_12, x_13, x_14, x_11, x_15);
-lean_dec_ref(x_13);
+x_20 = l_Lean_Meta_mkFreshExprMVarAt(x_11, x_18, x_14, x_19, x_15, x_16, x_10, x_13, x_17, x_12);
+lean_dec_ref(x_10);
 if (lean_obj_tag(x_20) == 0)
 {
 lean_object* x_21; lean_object* x_22; lean_object* x_23; uint8_t x_24; uint8_t x_30; 
@@ -3670,7 +3670,7 @@ x_21 = lean_ctor_get(x_20, 0);
 lean_inc(x_21);
 lean_dec_ref(x_20);
 lean_inc(x_21);
-x_22 = l_Lean_MVarId_assign___at___00Lean_MVarId_clear_spec__2___redArg(x_1, x_21, x_14);
+x_22 = l_Lean_MVarId_assign___at___00Lean_MVarId_clear_spec__2___redArg(x_1, x_21, x_13);
 x_30 = !lean_is_exclusive(x_22);
 if (x_30 == 0)
 {

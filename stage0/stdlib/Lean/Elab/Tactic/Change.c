@@ -2255,16 +2255,16 @@ else
 lean_object* x_46; 
 x_46 = lean_alloc_ctor(1, 1, 0);
 lean_ctor_set(x_46, 0, x_42);
-x_16 = x_35;
-x_17 = x_33;
+x_16 = x_6;
+x_17 = x_4;
 x_18 = x_5;
 x_19 = x_9;
-x_20 = x_3;
-x_21 = x_4;
-x_22 = x_7;
-x_23 = x_8;
-x_24 = x_6;
-x_25 = x_2;
+x_20 = x_7;
+x_21 = x_8;
+x_22 = x_3;
+x_23 = x_33;
+x_24 = x_2;
+x_25 = x_35;
 x_26 = x_46;
 goto block_30;
 }
@@ -2275,16 +2275,16 @@ else
 lean_object* x_47; 
 lean_dec(x_37);
 x_47 = lean_box(0);
-x_16 = x_35;
-x_17 = x_33;
+x_16 = x_6;
+x_17 = x_4;
 x_18 = x_5;
 x_19 = x_9;
-x_20 = x_3;
-x_21 = x_4;
-x_22 = x_7;
-x_23 = x_8;
-x_24 = x_6;
-x_25 = x_2;
+x_20 = x_7;
+x_21 = x_8;
+x_22 = x_3;
+x_23 = x_33;
+x_24 = x_2;
+x_25 = x_35;
 x_26 = x_47;
 goto block_30;
 }
@@ -2294,7 +2294,7 @@ lean_object* x_27; lean_object* x_28; lean_object* x_29;
 x_27 = l_Lean_mkOptionalNode(x_26);
 x_28 = l_Lean_Elab_Tactic_expandOptLocation(x_27);
 lean_dec(x_27);
-x_29 = l_Lean_Elab_Tactic_withLocation(x_28, x_16, x_17, x_15, x_25, x_20, x_21, x_18, x_24, x_22, x_23, x_19);
+x_29 = l_Lean_Elab_Tactic_withLocation(x_28, x_25, x_23, x_15, x_24, x_22, x_17, x_18, x_16, x_20, x_21, x_19);
 lean_dec(x_28);
 return x_29;
 }

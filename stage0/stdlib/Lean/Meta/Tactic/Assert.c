@@ -2291,8 +2291,8 @@ return x_7;
 else
 {
 lean_object* x_8; lean_object* x_9; lean_object* x_10; uint8_t x_11; uint8_t x_43; 
-x_8 = lean_ctor_get(x_4, 0);
-x_9 = lean_ctor_get(x_4, 1);
+x_8 = lean_ctor_get(x_4, 1);
+x_9 = lean_ctor_get(x_4, 0);
 x_43 = !lean_is_exclusive(x_4);
 if (x_43 == 0)
 {
@@ -2302,8 +2302,8 @@ goto block_42;
 }
 else
 {
-lean_inc(x_9);
 lean_inc(x_8);
+lean_inc(x_9);
 lean_dec(x_4);
 x_10 = lean_box(0);
 x_11 = x_43;
@@ -2328,8 +2328,8 @@ else
 {
 lean_object* x_19; 
 x_19 = lean_alloc_ctor(0, 2, 0);
-lean_ctor_set(x_19, 0, x_8);
-lean_ctor_set(x_19, 1, x_9);
+lean_ctor_set(x_19, 0, x_9);
+lean_ctor_set(x_19, 1, x_8);
 x_16 = x_19;
 goto block_18;
 }
@@ -2400,8 +2400,8 @@ lean_inc(x_22);
 x_28 = l_Lean_Meta_FVarSubst_insert(x_9, x_22, x_27);
 if (x_11 == 0)
 {
-lean_ctor_set(x_10, 1, x_28);
-lean_ctor_set(x_10, 0, x_26);
+lean_ctor_set(x_10, 1, x_26);
+lean_ctor_set(x_10, 0, x_28);
 x_29 = x_10;
 goto block_33;
 }
@@ -2409,8 +2409,8 @@ else
 {
 lean_object* x_34; 
 x_34 = lean_alloc_ctor(0, 2, 0);
-lean_ctor_set(x_34, 0, x_26);
-lean_ctor_set(x_34, 1, x_28);
+lean_ctor_set(x_34, 0, x_28);
+lean_ctor_set(x_34, 1, x_26);
 x_29 = x_34;
 goto block_33;
 }
@@ -2535,8 +2535,8 @@ x_35 = lean_array_get_size(x_29);
 x_36 = l_Array_toSubarray___redArg(x_29, x_34, x_35);
 if (x_32 == 0)
 {
-lean_ctor_set(x_31, 1, x_33);
-lean_ctor_set(x_31, 0, x_36);
+lean_ctor_set(x_31, 1, x_36);
+lean_ctor_set(x_31, 0, x_33);
 x_37 = x_31;
 goto block_59;
 }
@@ -2544,8 +2544,8 @@ else
 {
 lean_object* x_60; 
 x_60 = lean_alloc_ctor(0, 2, 0);
-lean_ctor_set(x_60, 0, x_36);
-lean_ctor_set(x_60, 1, x_33);
+lean_ctor_set(x_60, 0, x_33);
+lean_ctor_set(x_60, 1, x_36);
 x_37 = x_60;
 goto block_59;
 }
@@ -2578,7 +2578,7 @@ goto block_49;
 block_49:
 {
 lean_object* x_44; lean_object* x_45; lean_object* x_46; 
-x_44 = lean_ctor_get(x_41, 1);
+x_44 = lean_ctor_get(x_41, 0);
 lean_inc(x_44);
 lean_dec(x_41);
 x_45 = lean_alloc_ctor(0, 3, 0);

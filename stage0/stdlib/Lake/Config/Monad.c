@@ -2655,7 +2655,7 @@ LEAN_EXPORT lean_object* l_Lake_getLeanSharedLib___redArg___lam__0(lean_object* 
 _start:
 {
 lean_object* x_2; 
-x_2 = lean_ctor_get(x_1, 9);
+x_2 = lean_ctor_get(x_1, 10);
 lean_inc_ref(x_2);
 return x_2;
 }
@@ -2703,7 +2703,7 @@ LEAN_EXPORT lean_object* l_Lake_getLeanAr___redArg___lam__0(lean_object* x_1) {
 _start:
 {
 lean_object* x_2; 
-x_2 = lean_ctor_get(x_1, 11);
+x_2 = lean_ctor_get(x_1, 12);
 lean_inc_ref(x_2);
 return x_2;
 }
@@ -2751,7 +2751,7 @@ LEAN_EXPORT lean_object* l_Lake_getLeanCc___redArg___lam__0(lean_object* x_1) {
 _start:
 {
 lean_object* x_2; 
-x_2 = lean_ctor_get(x_1, 12);
+x_2 = lean_ctor_get(x_1, 13);
 lean_inc_ref(x_2);
 return x_2;
 }
@@ -2829,7 +2829,7 @@ LEAN_EXPORT lean_object* l_Lake_getLeanLinkSharedFlags___redArg___lam__0(lean_ob
 _start:
 {
 lean_object* x_2; 
-x_2 = lean_ctor_get(x_1, 18);
+x_2 = lean_ctor_get(x_1, 19);
 lean_inc_ref(x_2);
 return x_2;
 }

@@ -1624,8 +1624,8 @@ goto block_127;
 else
 {
 lean_object* x_133; lean_object* x_134; uint8_t x_135; uint8_t x_140; 
-lean_dec_ref(x_93);
 lean_dec_ref(x_1);
+lean_dec_ref(x_93);
 lean_dec(x_7);
 lean_dec_ref(x_6);
 lean_dec(x_5);

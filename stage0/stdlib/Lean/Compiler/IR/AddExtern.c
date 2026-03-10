@@ -282,17 +282,17 @@ LEAN_EXPORT lean_object* l___private_Init_While_0__Lean_Loop_forIn_loop___at___0
 _start:
 {
 lean_object* x_5; 
-x_5 = lean_ctor_get(x_1, 1);
+x_5 = lean_ctor_get(x_1, 0);
 lean_inc(x_5);
 if (lean_obj_tag(x_5) == 7)
 {
 lean_object* x_6; lean_object* x_7; uint8_t x_8; uint8_t x_30; 
-x_6 = lean_ctor_get(x_1, 0);
+x_6 = lean_ctor_get(x_1, 1);
 x_30 = !lean_is_exclusive(x_1);
 if (x_30 == 0)
 {
 lean_object* x_31; 
-x_31 = lean_ctor_get(x_1, 1);
+x_31 = lean_ctor_get(x_1, 0);
 lean_dec(x_31);
 x_7 = x_1;
 x_8 = x_30;
@@ -332,8 +332,8 @@ lean_ctor_set_uint8(x_15, sizeof(void*)*3, x_14);
 x_16 = lean_array_push(x_6, x_15);
 if (x_8 == 0)
 {
-lean_ctor_set(x_7, 1, x_11);
-lean_ctor_set(x_7, 0, x_16);
+lean_ctor_set(x_7, 1, x_16);
+lean_ctor_set(x_7, 0, x_11);
 x_17 = x_7;
 goto block_19;
 }
@@ -341,8 +341,8 @@ else
 {
 lean_object* x_20; 
 x_20 = lean_alloc_ctor(0, 2, 0);
-lean_ctor_set(x_20, 0, x_16);
-lean_ctor_set(x_20, 1, x_11);
+lean_ctor_set(x_20, 0, x_11);
+lean_ctor_set(x_20, 1, x_16);
 x_17 = x_20;
 goto block_19;
 }
@@ -403,12 +403,12 @@ return x_24;
 else
 {
 lean_object* x_32; lean_object* x_33; uint8_t x_34; uint8_t x_40; 
-x_32 = lean_ctor_get(x_1, 0);
+x_32 = lean_ctor_get(x_1, 1);
 x_40 = !lean_is_exclusive(x_1);
 if (x_40 == 0)
 {
 lean_object* x_41; 
-x_41 = lean_ctor_get(x_1, 1);
+x_41 = lean_ctor_get(x_1, 0);
 lean_dec(x_41);
 x_33 = x_1;
 x_34 = x_40;
@@ -434,8 +434,8 @@ else
 {
 lean_object* x_38; 
 x_38 = lean_alloc_ctor(0, 2, 0);
-lean_ctor_set(x_38, 0, x_32);
-lean_ctor_set(x_38, 1, x_5);
+lean_ctor_set(x_38, 0, x_5);
+lean_ctor_set(x_38, 1, x_32);
 x_35 = x_38;
 goto block_37;
 }
@@ -477,8 +477,8 @@ lean_dec_ref(x_6);
 x_8 = ((lean_object*)(l___private_Lean_Compiler_IR_AddExtern_0__Lean_IR_addExtern_addMono___closed__0));
 lean_inc(x_7);
 x_9 = lean_alloc_ctor(0, 2, 0);
-lean_ctor_set(x_9, 0, x_8);
-lean_ctor_set(x_9, 1, x_7);
+lean_ctor_set(x_9, 0, x_7);
+lean_ctor_set(x_9, 1, x_8);
 x_10 = l___private_Init_While_0__Lean_Loop_forIn_loop___at___00__private_Lean_Compiler_IR_AddExtern_0__Lean_IR_addExtern_addMono_spec__1(x_9, x_3, x_4);
 lean_dec_ref(x_3);
 if (lean_obj_tag(x_10) == 0)
@@ -487,7 +487,7 @@ lean_object* x_11; lean_object* x_12; lean_object* x_13; uint8_t x_14; lean_obje
 x_11 = lean_ctor_get(x_10, 0);
 lean_inc(x_11);
 lean_dec_ref(x_10);
-x_12 = lean_ctor_get(x_11, 0);
+x_12 = lean_ctor_get(x_11, 1);
 lean_inc(x_12);
 lean_dec(x_11);
 x_13 = lean_box(0);

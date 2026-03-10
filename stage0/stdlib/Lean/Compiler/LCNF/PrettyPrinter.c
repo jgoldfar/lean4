@@ -852,75 +852,90 @@ return x_14;
 }
 else
 {
-lean_object* x_19; lean_object* x_20; uint8_t x_21; uint8_t x_34; 
+lean_object* x_19; lean_object* x_20; uint8_t x_21; uint8_t x_36; 
 x_19 = lean_ctor_get(x_7, 0);
-x_34 = !lean_is_exclusive(x_7);
-if (x_34 == 0)
+x_36 = !lean_is_exclusive(x_7);
+if (x_36 == 0)
 {
 x_20 = x_7;
-x_21 = x_34;
-goto block_33;
+x_21 = x_36;
+goto block_35;
 }
 else
 {
 lean_inc(x_19);
 lean_dec(x_7);
 x_20 = lean_box(0);
-x_21 = x_34;
-goto block_33;
+x_21 = x_36;
+goto block_35;
 }
-block_33:
+block_35:
 {
-lean_object* x_22; 
+uint8_t x_22; uint8_t x_33; 
+x_33 = l_Lean_Exception_isInterrupt(x_19);
+if (x_33 == 0)
+{
+uint8_t x_34; 
 lean_inc(x_19);
+x_34 = l_Lean_Exception_isRuntime(x_19);
+x_22 = x_34;
+goto block_32;
+}
+else
+{
+x_22 = x_33;
+goto block_32;
+}
+block_32:
+{
+if (x_22 == 0)
+{
+uint8_t x_23; lean_object* x_24; lean_object* x_25; lean_object* x_26; 
+lean_dec(x_19);
+x_23 = 1;
+x_24 = l_Lean_Name_toString(x_1, x_23);
+x_25 = lean_alloc_ctor(3, 1, 0);
+lean_ctor_set(x_25, 0, x_24);
 if (x_21 == 0)
 {
-x_22 = x_20;
-goto block_31;
+lean_ctor_set_tag(x_20, 0);
+lean_ctor_set(x_20, 0, x_25);
+x_26 = x_20;
+goto block_27;
 }
 else
 {
-lean_object* x_32; 
-x_32 = lean_alloc_ctor(1, 1, 0);
-lean_ctor_set(x_32, 0, x_19);
-x_22 = x_32;
-goto block_31;
+lean_object* x_28; 
+x_28 = lean_alloc_ctor(0, 1, 0);
+lean_ctor_set(x_28, 0, x_25);
+x_26 = x_28;
+goto block_27;
 }
-block_31:
+block_27:
 {
-uint8_t x_23; uint8_t x_29; 
-x_29 = l_Lean_Exception_isInterrupt(x_19);
-if (x_29 == 0)
-{
-uint8_t x_30; 
-x_30 = l_Lean_Exception_isRuntime(x_19);
-x_23 = x_30;
-goto block_28;
+return x_26;
+}
 }
 else
 {
-lean_dec(x_19);
-x_23 = x_29;
-goto block_28;
-}
-block_28:
-{
-if (x_23 == 0)
-{
-uint8_t x_24; lean_object* x_25; lean_object* x_26; lean_object* x_27; 
-lean_dec_ref(x_22);
-x_24 = 1;
-x_25 = l_Lean_Name_toString(x_1, x_24);
-x_26 = lean_alloc_ctor(3, 1, 0);
-lean_ctor_set(x_26, 0, x_25);
-x_27 = lean_alloc_ctor(0, 1, 0);
-lean_ctor_set(x_27, 0, x_26);
-return x_27;
-}
-else
-{
+lean_object* x_29; 
 lean_dec(x_1);
-return x_22;
+if (x_21 == 0)
+{
+x_29 = x_20;
+goto block_30;
+}
+else
+{
+lean_object* x_31; 
+x_31 = lean_alloc_ctor(1, 1, 0);
+lean_ctor_set(x_31, 0, x_19);
+x_29 = x_31;
+goto block_30;
+}
+block_30:
+{
+return x_29;
 }
 }
 }

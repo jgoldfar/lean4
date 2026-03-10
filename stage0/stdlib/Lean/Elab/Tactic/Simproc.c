@@ -1966,8 +1966,8 @@ goto block_20;
 }
 else
 {
-lean_dec_ref(x_23);
 lean_dec(x_24);
+lean_dec_ref(x_23);
 lean_dec_ref(x_22);
 lean_del_object(x_7);
 x_9 = x_2;

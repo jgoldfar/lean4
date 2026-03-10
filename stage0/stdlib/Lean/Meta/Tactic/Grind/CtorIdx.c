@@ -607,11 +607,11 @@ x_213 = l_Lean_executeReservedNameAction(x_211, x_13, x_14);
 if (lean_obj_tag(x_213) == 0)
 {
 lean_dec_ref(x_213);
-x_55 = x_191;
-x_56 = x_187;
-x_57 = x_195;
-x_58 = x_211;
-x_59 = x_210;
+x_55 = x_211;
+x_56 = x_210;
+x_57 = x_191;
+x_58 = x_187;
+x_59 = x_195;
 x_60 = x_5;
 x_61 = x_6;
 x_62 = x_7;
@@ -650,11 +650,11 @@ return x_213;
 }
 else
 {
-x_55 = x_191;
-x_56 = x_187;
-x_57 = x_195;
-x_58 = x_211;
-x_59 = x_210;
+x_55 = x_211;
+x_56 = x_210;
+x_57 = x_191;
+x_58 = x_187;
+x_59 = x_195;
 x_60 = x_5;
 x_61 = x_6;
 x_62 = x_7;
@@ -1514,24 +1514,24 @@ return x_283;
 block_110:
 {
 lean_object* x_70; lean_object* x_71; lean_object* x_72; lean_object* x_73; lean_object* x_74; lean_object* x_75; lean_object* x_76; lean_object* x_77; lean_object* x_78; lean_object* x_79; lean_object* x_80; lean_object* x_81; lean_object* x_82; lean_object* x_83; lean_object* x_84; 
-lean_inc(x_58);
-x_70 = l_Lean_mkConst(x_58, x_59);
+lean_inc(x_55);
+x_70 = l_Lean_mkConst(x_55, x_56);
 x_71 = lean_obj_once(&l_Lean_Expr_withAppAux___at___00Lean_Meta_Grind_propagateCtorIdxUp_spec__1___closed__0, &l_Lean_Expr_withAppAux___at___00Lean_Meta_Grind_propagateCtorIdxUp_spec__1___closed__0_once, _init_l_Lean_Expr_withAppAux___at___00Lean_Meta_Grind_propagateCtorIdxUp_spec__1___closed__0);
-x_72 = l_Lean_Expr_getAppNumArgs(x_55);
+x_72 = l_Lean_Expr_getAppNumArgs(x_57);
 lean_inc(x_72);
 x_73 = lean_mk_array(x_72, x_71);
 x_74 = lean_nat_sub(x_72, x_38);
 lean_dec(x_72);
-x_75 = l___private_Lean_Expr_0__Lean_Expr_getAppArgsAux(x_55, x_73, x_74);
+x_75 = l___private_Lean_Expr_0__Lean_Expr_getAppArgsAux(x_57, x_73, x_74);
 x_76 = l_Lean_mkAppN(x_70, x_75);
 lean_dec_ref(x_75);
 x_77 = l_Lean_Expr_app___override(x_76, x_47);
-x_78 = l_Lean_Expr_getAppNumArgs(x_57);
+x_78 = l_Lean_Expr_getAppNumArgs(x_59);
 lean_inc(x_78);
 x_79 = lean_mk_array(x_78, x_71);
 x_80 = lean_nat_sub(x_78, x_38);
 lean_dec(x_78);
-x_81 = l___private_Lean_Expr_0__Lean_Expr_getAppArgsAux(x_57, x_79, x_80);
+x_81 = l___private_Lean_Expr_0__Lean_Expr_getAppArgsAux(x_59, x_79, x_80);
 x_82 = l_Lean_mkAppN(x_77, x_81);
 lean_dec_ref(x_81);
 x_83 = l_Lean_Expr_app___override(x_82, x_52);
@@ -1550,7 +1550,7 @@ lean_dec_ref(x_84);
 if (x_32 == 0)
 {
 lean_ctor_set_tag(x_31, 0);
-lean_ctor_set(x_31, 0, x_58);
+lean_ctor_set(x_31, 0, x_55);
 x_86 = x_31;
 goto block_100;
 }
@@ -1558,7 +1558,7 @@ else
 {
 lean_object* x_101; 
 x_101 = lean_alloc_ctor(0, 1, 0);
-lean_ctor_set(x_101, 0, x_58);
+lean_ctor_set(x_101, 0, x_55);
 x_86 = x_101;
 goto block_100;
 }
@@ -1583,7 +1583,7 @@ goto block_98;
 block_98:
 {
 lean_object* x_88; 
-x_88 = l_Lean_Meta_Grind_addNewRawFact(x_83, x_85, x_56, x_87, x_60, x_61, x_62, x_63, x_64, x_65, x_66, x_67, x_68, x_69);
+x_88 = l_Lean_Meta_Grind_addNewRawFact(x_83, x_85, x_58, x_87, x_60, x_61, x_62, x_63, x_64, x_65, x_66, x_67, x_68, x_69);
 lean_dec(x_65);
 lean_dec_ref(x_64);
 lean_dec(x_63);
@@ -1656,7 +1656,7 @@ lean_dec_ref(x_62);
 lean_dec(x_61);
 lean_dec(x_60);
 lean_dec(x_58);
-lean_dec(x_56);
+lean_dec(x_55);
 lean_del_object(x_31);
 lean_del_object(x_24);
 x_102 = lean_ctor_get(x_84, 0);

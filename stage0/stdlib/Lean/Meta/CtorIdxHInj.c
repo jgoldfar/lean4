@@ -831,8 +831,8 @@ return x_16;
 else
 {
 lean_object* x_17; lean_object* x_18; lean_object* x_19; uint8_t x_20; uint8_t x_86; 
-x_17 = lean_ctor_get(x_4, 0);
-x_18 = lean_ctor_get(x_4, 1);
+x_17 = lean_ctor_get(x_4, 1);
+x_18 = lean_ctor_get(x_4, 0);
 x_86 = !lean_is_exclusive(x_4);
 if (x_86 == 0)
 {
@@ -842,8 +842,8 @@ goto block_85;
 }
 else
 {
-lean_inc(x_18);
 lean_inc(x_17);
+lean_inc(x_18);
 lean_dec(x_4);
 x_19 = lean_box(0);
 x_20 = x_86;
@@ -872,8 +872,8 @@ else
 {
 lean_object* x_28; 
 x_28 = lean_alloc_ctor(0, 2, 0);
-lean_ctor_set(x_28, 0, x_17);
-lean_ctor_set(x_28, 1, x_18);
+lean_ctor_set(x_28, 0, x_18);
+lean_ctor_set(x_28, 1, x_17);
 x_25 = x_28;
 goto block_27;
 }
@@ -983,8 +983,8 @@ x_46 = 0;
 x_47 = l_Lean_mkForall(x_45, x_46, x_43, x_18);
 if (x_20 == 0)
 {
-lean_ctor_set(x_19, 1, x_47);
-lean_ctor_set(x_19, 0, x_37);
+lean_ctor_set(x_19, 1, x_37);
+lean_ctor_set(x_19, 0, x_47);
 x_48 = x_19;
 goto block_49;
 }
@@ -992,8 +992,8 @@ else
 {
 lean_object* x_50; 
 x_50 = lean_alloc_ctor(0, 2, 0);
-lean_ctor_set(x_50, 0, x_37);
-lean_ctor_set(x_50, 1, x_47);
+lean_ctor_set(x_50, 0, x_47);
+lean_ctor_set(x_50, 1, x_37);
 x_48 = x_50;
 goto block_49;
 }
@@ -1109,7 +1109,7 @@ lean_object* x_67;
 lean_dec(x_34);
 if (x_20 == 0)
 {
-lean_ctor_set(x_19, 0, x_37);
+lean_ctor_set(x_19, 1, x_37);
 x_67 = x_19;
 goto block_68;
 }
@@ -1117,8 +1117,8 @@ else
 {
 lean_object* x_69; 
 x_69 = lean_alloc_ctor(0, 2, 0);
-lean_ctor_set(x_69, 0, x_37);
-lean_ctor_set(x_69, 1, x_18);
+lean_ctor_set(x_69, 0, x_18);
+lean_ctor_set(x_69, 1, x_37);
 x_67 = x_69;
 goto block_68;
 }
@@ -1239,8 +1239,8 @@ x_23 = l_Array_toSubarray___redArg(x_20, x_21, x_22);
 lean_inc_ref(x_14);
 x_24 = l_Array_reverse___redArg(x_14);
 x_25 = lean_alloc_ctor(0, 2, 0);
-lean_ctor_set(x_25, 0, x_23);
-lean_ctor_set(x_25, 1, x_19);
+lean_ctor_set(x_25, 0, x_19);
+lean_ctor_set(x_25, 1, x_23);
 x_26 = lean_array_size(x_24);
 x_27 = 0;
 lean_inc(x_10);
@@ -1255,7 +1255,7 @@ lean_object* x_29; lean_object* x_30; lean_object* x_31; uint8_t x_32; uint8_t x
 x_29 = lean_ctor_get(x_28, 0);
 lean_inc(x_29);
 lean_dec_ref(x_28);
-x_30 = lean_ctor_get(x_29, 1);
+x_30 = lean_ctor_get(x_29, 0);
 lean_inc(x_30);
 lean_dec(x_29);
 x_31 = l_Array_append___redArg(x_14, x_16);
@@ -2633,8 +2633,8 @@ x_12 = ((lean_object*)(l___private_Lean_Meta_CtorIdxHInj_0__Lean_Meta_hinjSuffix
 x_13 = lean_string_dec_eq(x_11, x_12);
 if (x_13 == 0)
 {
-lean_dec(x_10);
 lean_dec_ref(x_2);
+lean_dec(x_10);
 lean_dec(x_4);
 lean_dec_ref(x_3);
 lean_dec(x_1);
