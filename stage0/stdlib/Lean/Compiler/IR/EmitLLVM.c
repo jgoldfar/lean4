@@ -1,6 +1,6 @@
 // Lean compiler output
 // Module: Lean.Compiler.IR.EmitLLVM
-// Imports: public import Lean.Compiler.NameMangling public import Lean.Compiler.IR.EmitUtil public import Lean.Compiler.IR.NormIds public import Lean.Compiler.IR.SimpCase public import Lean.Compiler.IR.LLVMBindings import Lean.Compiler.LCNF.Types import Lean.Compiler.ModPkgExt import Lean.Runtime import Lean.Compiler.ClosedTermCache import Init.Data.Range.Polymorphic.Iterators
+// Imports: public import Lean.Compiler.NameMangling public import Lean.Compiler.IR.EmitUtil public import Lean.Compiler.IR.NormIds public import Lean.Compiler.IR.LLVMBindings import Lean.Compiler.LCNF.Types import Lean.Compiler.ModPkgExt import Lean.Runtime import Lean.Compiler.ClosedTermCache import Init.Data.Range.Polymorphic.Iterators
 #include <lean/lean.h>
 #if defined(__clang__)
 #pragma clang diagnostic ignored "-Wunused-parameter"
@@ -6269,7 +6269,7 @@ _start:
 lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; lean_object* x_5; lean_object* x_6; 
 x_1 = ((lean_object*)(l_Lean_IR_EmitLLVM_toLLVMType___closed__2));
 x_2 = lean_unsigned_to_nat(25u);
-x_3 = lean_unsigned_to_nat(345u);
+x_3 = lean_unsigned_to_nat(344u);
 x_4 = ((lean_object*)(l_Lean_IR_EmitLLVM_toLLVMType___closed__1));
 x_5 = ((lean_object*)(l_Lean_IR_EmitLLVM_toLLVMType___closed__0));
 x_6 = l_mkPanicMessageWithDecl(x_5, x_4, x_3, x_2, x_1);
@@ -6282,7 +6282,7 @@ _start:
 lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; lean_object* x_5; lean_object* x_6; 
 x_1 = ((lean_object*)(l_Lean_IR_EmitLLVM_toLLVMType___closed__2));
 x_2 = lean_unsigned_to_nat(25u);
-x_3 = lean_unsigned_to_nat(346u);
+x_3 = lean_unsigned_to_nat(345u);
 x_4 = ((lean_object*)(l_Lean_IR_EmitLLVM_toLLVMType___closed__1));
 x_5 = ((lean_object*)(l_Lean_IR_EmitLLVM_toLLVMType___closed__0));
 x_6 = l_mkPanicMessageWithDecl(x_5, x_4, x_3, x_2, x_1);
@@ -13853,7 +13853,7 @@ _start:
 lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; lean_object* x_5; lean_object* x_6; 
 x_1 = ((lean_object*)(l_Lean_IR_EmitLLVM_emitExternCall___closed__7));
 x_2 = lean_unsigned_to_nat(31u);
-x_3 = lean_unsigned_to_nat(686u);
+x_3 = lean_unsigned_to_nat(685u);
 x_4 = ((lean_object*)(l_Lean_IR_EmitLLVM_emitExternCall___closed__6));
 x_5 = ((lean_object*)(l_Lean_IR_EmitLLVM_toLLVMType___closed__0));
 x_6 = l_mkPanicMessageWithDecl(x_5, x_4, x_3, x_2, x_1);
@@ -47027,7 +47027,6 @@ return x_5;
 lean_object* runtime_initialize_Lean_Compiler_NameMangling(uint8_t builtin);
 lean_object* runtime_initialize_Lean_Compiler_IR_EmitUtil(uint8_t builtin);
 lean_object* runtime_initialize_Lean_Compiler_IR_NormIds(uint8_t builtin);
-lean_object* runtime_initialize_Lean_Compiler_IR_SimpCase(uint8_t builtin);
 lean_object* runtime_initialize_Lean_Compiler_IR_LLVMBindings(uint8_t builtin);
 lean_object* runtime_initialize_Lean_Compiler_LCNF_Types(uint8_t builtin);
 lean_object* runtime_initialize_Lean_Compiler_ModPkgExt(uint8_t builtin);
@@ -47048,10 +47047,6 @@ res = runtime_initialize_Lean_Compiler_IR_EmitUtil(builtin)
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 res = runtime_initialize_Lean_Compiler_IR_NormIds(builtin)
-;
-if (lean_io_result_is_error(res)) return res;
-lean_dec_ref(res);
-res = runtime_initialize_Lean_Compiler_IR_SimpCase(builtin)
 ;
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
@@ -47091,7 +47086,6 @@ return lean_io_result_mk_ok(lean_box(0));
 lean_object* initialize_Lean_Compiler_NameMangling(uint8_t builtin);
 lean_object* initialize_Lean_Compiler_IR_EmitUtil(uint8_t builtin);
 lean_object* initialize_Lean_Compiler_IR_NormIds(uint8_t builtin);
-lean_object* initialize_Lean_Compiler_IR_SimpCase(uint8_t builtin);
 lean_object* initialize_Lean_Compiler_IR_LLVMBindings(uint8_t builtin);
 lean_object* initialize_Lean_Compiler_LCNF_Types(uint8_t builtin);
 lean_object* initialize_Lean_Compiler_ModPkgExt(uint8_t builtin);
@@ -47112,10 +47106,6 @@ res = initialize_Lean_Compiler_IR_EmitUtil(builtin)
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 res = initialize_Lean_Compiler_IR_NormIds(builtin)
-;
-if (lean_io_result_is_error(res)) return res;
-lean_dec_ref(res);
-res = initialize_Lean_Compiler_IR_SimpCase(builtin)
 ;
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);

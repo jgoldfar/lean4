@@ -111,6 +111,12 @@ static const lean_closure_object l___private_Lean_Compiler_LCNF_SimpCase_0__Lean
 static const lean_object* l___private_Lean_Compiler_LCNF_SimpCase_0__Lean_Compiler_LCNF_Decl_simpCase___closed__0 = (const lean_object*)&l___private_Lean_Compiler_LCNF_SimpCase_0__Lean_Compiler_LCNF_Decl_simpCase___closed__0_value;
 LEAN_EXPORT lean_object* l___private_Lean_Compiler_LCNF_SimpCase_0__Lean_Compiler_LCNF_Decl_simpCase(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l___private_Lean_Compiler_LCNF_SimpCase_0__Lean_Compiler_LCNF_Decl_simpCase___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT uint8_t l___private_Init_Data_Array_Basic_0__Array_anyMUnsafe_any___at___00Lean_Compiler_LCNF_ensureHasDefault_spec__0(lean_object*, size_t, size_t);
+LEAN_EXPORT lean_object* l___private_Init_Data_Array_Basic_0__Array_anyMUnsafe_any___at___00Lean_Compiler_LCNF_ensureHasDefault_spec__0___boxed(lean_object*, lean_object*, lean_object*);
+lean_object* lean_nat_sub(lean_object*, lean_object*);
+lean_object* lean_array_get(lean_object*, lean_object*, lean_object*);
+lean_object* lean_array_pop(lean_object*);
+LEAN_EXPORT lean_object* l_Lean_Compiler_LCNF_ensureHasDefault(lean_object*);
 static const lean_string_object l_Lean_Compiler_LCNF_simpCase___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 9, .m_capacity = 9, .m_length = 8, .m_data = "simpCase"};
 static const lean_object* l_Lean_Compiler_LCNF_simpCase___closed__0 = (const lean_object*)&l_Lean_Compiler_LCNF_simpCase___closed__0_value;
 lean_object* l_Lean_Name_mkStr1(lean_object*);
@@ -3724,6 +3730,153 @@ _start:
 lean_object* x_7; 
 x_7 = l___private_Lean_Compiler_LCNF_SimpCase_0__Lean_Compiler_LCNF_Decl_simpCase(x_1, x_2, x_3, x_4, x_5);
 return x_7;
+}
+}
+LEAN_EXPORT uint8_t l___private_Init_Data_Array_Basic_0__Array_anyMUnsafe_any___at___00Lean_Compiler_LCNF_ensureHasDefault_spec__0(lean_object* x_1, size_t x_2, size_t x_3) {
+_start:
+{
+uint8_t x_4; 
+x_4 = lean_usize_dec_eq(x_2, x_3);
+if (x_4 == 0)
+{
+uint8_t x_5; lean_object* x_6; 
+x_5 = 1;
+x_6 = lean_array_uget_borrowed(x_1, x_2);
+if (lean_obj_tag(x_6) == 2)
+{
+return x_5;
+}
+else
+{
+if (x_4 == 0)
+{
+size_t x_7; size_t x_8; 
+x_7 = 1;
+x_8 = lean_usize_add(x_2, x_7);
+x_2 = x_8;
+goto _start;
+}
+else
+{
+return x_5;
+}
+}
+}
+else
+{
+uint8_t x_10; 
+x_10 = 0;
+return x_10;
+}
+}
+}
+LEAN_EXPORT lean_object* l___private_Init_Data_Array_Basic_0__Array_anyMUnsafe_any___at___00Lean_Compiler_LCNF_ensureHasDefault_spec__0___boxed(lean_object* x_1, lean_object* x_2, lean_object* x_3) {
+_start:
+{
+size_t x_4; size_t x_5; uint8_t x_6; lean_object* x_7; 
+x_4 = lean_unbox_usize(x_2);
+lean_dec(x_2);
+x_5 = lean_unbox_usize(x_3);
+lean_dec(x_3);
+x_6 = l___private_Init_Data_Array_Basic_0__Array_anyMUnsafe_any___at___00Lean_Compiler_LCNF_ensureHasDefault_spec__0(x_1, x_4, x_5);
+lean_dec_ref(x_1);
+x_7 = lean_box(x_6);
+return x_7;
+}
+}
+LEAN_EXPORT lean_object* l_Lean_Compiler_LCNF_ensureHasDefault(lean_object* x_1) {
+_start:
+{
+lean_object* x_2; lean_object* x_3; lean_object* x_7; lean_object* x_8; uint8_t x_20; 
+x_7 = lean_unsigned_to_nat(0u);
+x_8 = lean_array_get_size(x_1);
+x_20 = lean_nat_dec_lt(x_7, x_8);
+if (x_20 == 0)
+{
+goto block_19;
+}
+else
+{
+if (x_20 == 0)
+{
+goto block_19;
+}
+else
+{
+size_t x_21; size_t x_22; uint8_t x_23; 
+x_21 = 0;
+x_22 = lean_usize_of_nat(x_8);
+x_23 = l___private_Init_Data_Array_Basic_0__Array_anyMUnsafe_any___at___00Lean_Compiler_LCNF_ensureHasDefault_spec__0(x_1, x_21, x_22);
+if (x_23 == 0)
+{
+goto block_19;
+}
+else
+{
+return x_1;
+}
+}
+}
+block_6:
+{
+lean_object* x_4; lean_object* x_5; 
+x_4 = lean_alloc_ctor(2, 1, 0);
+lean_ctor_set(x_4, 0, x_3);
+x_5 = lean_array_push(x_2, x_4);
+return x_5;
+}
+block_19:
+{
+lean_object* x_9; uint8_t x_10; 
+x_9 = lean_unsigned_to_nat(2u);
+x_10 = lean_nat_dec_lt(x_8, x_9);
+if (x_10 == 0)
+{
+lean_object* x_11; lean_object* x_12; lean_object* x_13; lean_object* x_14; lean_object* x_15; 
+x_11 = lean_obj_once(&l___private_Lean_Compiler_LCNF_SimpCase_0__Lean_Compiler_LCNF_getMaxOccs_getNumOccsOf___closed__0, &l___private_Lean_Compiler_LCNF_SimpCase_0__Lean_Compiler_LCNF_getMaxOccs_getNumOccsOf___closed__0_once, _init_l___private_Lean_Compiler_LCNF_SimpCase_0__Lean_Compiler_LCNF_getMaxOccs_getNumOccsOf___closed__0);
+x_12 = lean_unsigned_to_nat(1u);
+x_13 = lean_nat_sub(x_8, x_12);
+x_14 = lean_array_get(x_11, x_1, x_13);
+lean_dec(x_13);
+x_15 = lean_array_pop(x_1);
+switch (lean_obj_tag(x_14)) {
+case 0:
+{
+lean_object* x_16; 
+x_16 = lean_ctor_get(x_14, 2);
+lean_inc_ref(x_16);
+lean_dec_ref(x_14);
+x_2 = x_15;
+x_3 = x_16;
+goto block_6;
+}
+case 1:
+{
+lean_object* x_17; 
+x_17 = lean_ctor_get(x_14, 1);
+lean_inc_ref(x_17);
+lean_dec_ref(x_14);
+x_2 = x_15;
+x_3 = x_17;
+goto block_6;
+}
+default: 
+{
+lean_object* x_18; 
+x_18 = lean_ctor_get(x_14, 0);
+lean_inc_ref(x_18);
+lean_dec_ref(x_14);
+x_2 = x_15;
+x_3 = x_18;
+goto block_6;
+}
+}
+}
+else
+{
+return x_1;
+}
+}
 }
 }
 static lean_object* _init_l_Lean_Compiler_LCNF_simpCase___closed__3(void) {

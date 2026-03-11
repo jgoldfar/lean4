@@ -21110,7 +21110,7 @@ if (x_4 == 0)
 lean_object* x_5; lean_object* x_6; lean_object* x_7; lean_object* x_8; lean_object* x_9; lean_object* x_10; lean_object* x_17; lean_object* x_18; 
 x_5 = ((lean_object*)(l_Lean_Compiler_LCNF_Purity_withAssertPurity___redArg___closed__0));
 x_6 = ((lean_object*)(l_Lean_Compiler_LCNF_Decl_castPurity_x21___closed__0));
-x_7 = lean_unsigned_to_nat(1043u);
+x_7 = lean_unsigned_to_nat(1045u);
 x_8 = lean_unsigned_to_nat(4u);
 x_17 = ((lean_object*)(l_Lean_Compiler_LCNF_Decl_castPurity_x21___closed__1));
 if (x_1 == 0)
@@ -22310,7 +22310,7 @@ _start:
 lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; lean_object* x_5; lean_object* x_6; 
 x_1 = ((lean_object*)(l___private_Lean_Compiler_LCNF_Basic_0__Lean_Compiler_LCNF_Arg_updateTypeImp___closed__1));
 x_2 = lean_unsigned_to_nat(29u);
-x_3 = lean_unsigned_to_nat(1108u);
+x_3 = lean_unsigned_to_nat(1110u);
 x_4 = ((lean_object*)(l___private_Lean_Compiler_LCNF_Basic_0__Lean_Compiler_LCNF_collectType___closed__0));
 x_5 = ((lean_object*)(l_Lean_Compiler_LCNF_Purity_withAssertPurity___redArg___closed__0));
 x_6 = l_mkPanicMessageWithDecl(x_5, x_4, x_3, x_2, x_1);
