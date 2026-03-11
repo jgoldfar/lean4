@@ -123,27 +123,23 @@ LEAN_EXPORT uint8_t l_Lean_Name_isNum(lean_object*);
 LEAN_EXPORT lean_object* l_Lean_Name_isNum___boxed(lean_object*);
 LEAN_EXPORT uint8_t l_Lean_Name_anyS(lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l_Lean_Name_anyS___boxed(lean_object*, lean_object*);
-LEAN_EXPORT uint8_t l_Option_instBEq_beq___at___00Lean_Name_isMetaprogramming_spec__0(lean_object*, lean_object*);
-LEAN_EXPORT lean_object* l_Option_instBEq_beq___at___00Lean_Name_isMetaprogramming_spec__0___boxed(lean_object*, lean_object*);
 static const lean_string_object l_Lean_Name_isMetaprogramming___lam__0___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 7, .m_capacity = 7, .m_length = 6, .m_data = "Tactic"};
 static const lean_object* l_Lean_Name_isMetaprogramming___lam__0___closed__0 = (const lean_object*)&l_Lean_Name_isMetaprogramming___lam__0___closed__0_value;
-lean_object* l_Lean_Name_mkStr1(lean_object*);
-static const lean_ctor_object l_Lean_Name_isMetaprogramming___lam__0___closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)(((size_t)(0) << 1) | 1)),((lean_object*)&l_Lean_Name_isMetaprogramming___lam__0___closed__0_value),LEAN_SCALAR_PTR_LITERAL(186, 205, 46, 93, 234, 75, 44, 75)}};
+static const lean_string_object l_Lean_Name_isMetaprogramming___lam__0___closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 7, .m_capacity = 7, .m_length = 6, .m_data = "Linter"};
 static const lean_object* l_Lean_Name_isMetaprogramming___lam__0___closed__1 = (const lean_object*)&l_Lean_Name_isMetaprogramming___lam__0___closed__1_value;
-static const lean_string_object l_Lean_Name_isMetaprogramming___lam__0___closed__2_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 7, .m_capacity = 7, .m_length = 6, .m_data = "Linter"};
+static const lean_string_object l_Lean_Name_isMetaprogramming___lam__0___closed__2_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 8, .m_capacity = 8, .m_length = 7, .m_data = "Simproc"};
 static const lean_object* l_Lean_Name_isMetaprogramming___lam__0___closed__2 = (const lean_object*)&l_Lean_Name_isMetaprogramming___lam__0___closed__2_value;
-static const lean_ctor_object l_Lean_Name_isMetaprogramming___lam__0___closed__3_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)(((size_t)(0) << 1) | 1)),((lean_object*)&l_Lean_Name_isMetaprogramming___lam__0___closed__2_value),LEAN_SCALAR_PTR_LITERAL(121, 50, 177, 192, 218, 101, 157, 15)}};
+static const lean_string_object l_Lean_Name_isMetaprogramming___lam__0___closed__3_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 5, .m_capacity = 5, .m_length = 4, .m_data = "Meta"};
 static const lean_object* l_Lean_Name_isMetaprogramming___lam__0___closed__3 = (const lean_object*)&l_Lean_Name_isMetaprogramming___lam__0___closed__3_value;
 LEAN_EXPORT uint8_t l_Lean_Name_isMetaprogramming___lam__0(lean_object*);
 LEAN_EXPORT lean_object* l_Lean_Name_isMetaprogramming___lam__0___boxed(lean_object*);
-static const lean_string_object l_Lean_Name_isMetaprogramming___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 5, .m_capacity = 5, .m_length = 4, .m_data = "Lean"};
+static const lean_closure_object l_Lean_Name_isMetaprogramming___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_closure_object) + sizeof(void*)*0, .m_other = 0, .m_tag = 245}, .m_fun = (void*)l_Lean_Name_isMetaprogramming___lam__0___boxed, .m_arity = 1, .m_num_fixed = 0, .m_objs = {} };
 static const lean_object* l_Lean_Name_isMetaprogramming___closed__0 = (const lean_object*)&l_Lean_Name_isMetaprogramming___closed__0_value;
-static const lean_ctor_object l_Lean_Name_isMetaprogramming___closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)(((size_t)(0) << 1) | 1)),((lean_object*)&l_Lean_Name_isMetaprogramming___closed__0_value),LEAN_SCALAR_PTR_LITERAL(70, 193, 83, 126, 233, 67, 208, 165)}};
+static const lean_string_object l_Lean_Name_isMetaprogramming___closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 5, .m_capacity = 5, .m_length = 4, .m_data = "Lean"};
 static const lean_object* l_Lean_Name_isMetaprogramming___closed__1 = (const lean_object*)&l_Lean_Name_isMetaprogramming___closed__1_value;
-static const lean_ctor_object l_Lean_Name_isMetaprogramming___closed__2_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*1 + 0, .m_other = 1, .m_tag = 1}, .m_objs = {((lean_object*)&l_Lean_Name_isMetaprogramming___closed__1_value)}};
+lean_object* l_Lean_Name_mkStr1(lean_object*);
+static const lean_ctor_object l_Lean_Name_isMetaprogramming___closed__2_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)(((size_t)(0) << 1) | 1)),((lean_object*)&l_Lean_Name_isMetaprogramming___closed__1_value),LEAN_SCALAR_PTR_LITERAL(70, 193, 83, 126, 233, 67, 208, 165)}};
 static const lean_object* l_Lean_Name_isMetaprogramming___closed__2 = (const lean_object*)&l_Lean_Name_isMetaprogramming___closed__2_value;
-static const lean_closure_object l_Lean_Name_isMetaprogramming___closed__3_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_closure_object) + sizeof(void*)*0, .m_other = 0, .m_tag = 245}, .m_fun = (void*)l_Lean_Name_isMetaprogramming___lam__0___boxed, .m_arity = 1, .m_num_fixed = 0, .m_objs = {} };
-static const lean_object* l_Lean_Name_isMetaprogramming___closed__3 = (const lean_object*)&l_Lean_Name_isMetaprogramming___closed__3_value;
 lean_object* l_List_head_x3f___redArg(lean_object*);
 uint8_t l_List_any___redArg(lean_object*, lean_object*);
 LEAN_EXPORT uint8_t l_Lean_Name_isMetaprogramming(lean_object*);
@@ -1672,70 +1668,63 @@ x_4 = lean_box(x_3);
 return x_4;
 }
 }
-LEAN_EXPORT uint8_t l_Option_instBEq_beq___at___00Lean_Name_isMetaprogramming_spec__0(lean_object* x_1, lean_object* x_2) {
-_start:
-{
-if (lean_obj_tag(x_1) == 0)
-{
-if (lean_obj_tag(x_2) == 0)
-{
-uint8_t x_3; 
-x_3 = 1;
-return x_3;
-}
-else
-{
-uint8_t x_4; 
-x_4 = 0;
-return x_4;
-}
-}
-else
-{
-if (lean_obj_tag(x_2) == 0)
-{
-uint8_t x_5; 
-x_5 = 0;
-return x_5;
-}
-else
-{
-lean_object* x_6; lean_object* x_7; uint8_t x_8; 
-x_6 = lean_ctor_get(x_1, 0);
-x_7 = lean_ctor_get(x_2, 0);
-x_8 = lean_name_eq(x_6, x_7);
-return x_8;
-}
-}
-}
-}
-LEAN_EXPORT lean_object* l_Option_instBEq_beq___at___00Lean_Name_isMetaprogramming_spec__0___boxed(lean_object* x_1, lean_object* x_2) {
-_start:
-{
-uint8_t x_3; lean_object* x_4; 
-x_3 = l_Option_instBEq_beq___at___00Lean_Name_isMetaprogramming_spec__0(x_1, x_2);
-lean_dec(x_2);
-lean_dec(x_1);
-x_4 = lean_box(x_3);
-return x_4;
-}
-}
 LEAN_EXPORT uint8_t l_Lean_Name_isMetaprogramming___lam__0(lean_object* x_1) {
 _start:
 {
-lean_object* x_2; uint8_t x_3; 
-x_2 = ((lean_object*)(l_Lean_Name_isMetaprogramming___lam__0___closed__1));
-x_3 = lean_name_eq(x_1, x_2);
-if (x_3 == 0)
+if (lean_obj_tag(x_1) == 1)
 {
-lean_object* x_4; uint8_t x_5; 
-x_4 = ((lean_object*)(l_Lean_Name_isMetaprogramming___lam__0___closed__3));
-x_5 = lean_name_eq(x_1, x_4);
-return x_5;
+lean_object* x_2; 
+x_2 = lean_ctor_get(x_1, 0);
+if (lean_obj_tag(x_2) == 0)
+{
+lean_object* x_3; lean_object* x_4; uint8_t x_5; 
+x_3 = lean_ctor_get(x_1, 1);
+x_4 = ((lean_object*)(l_Lean_Name_isMetaprogramming___lam__0___closed__0));
+x_5 = lean_string_dec_eq(x_3, x_4);
+if (x_5 == 0)
+{
+lean_object* x_6; uint8_t x_7; 
+x_6 = ((lean_object*)(l_Lean_Name_isMetaprogramming___lam__0___closed__1));
+x_7 = lean_string_dec_eq(x_3, x_6);
+if (x_7 == 0)
+{
+lean_object* x_8; uint8_t x_9; 
+x_8 = ((lean_object*)(l_Lean_Name_isMetaprogramming___lam__0___closed__2));
+x_9 = lean_string_dec_eq(x_3, x_8);
+if (x_9 == 0)
+{
+lean_object* x_10; uint8_t x_11; 
+x_10 = ((lean_object*)(l_Lean_Name_isMetaprogramming___lam__0___closed__3));
+x_11 = lean_string_dec_eq(x_3, x_10);
+return x_11;
 }
 else
 {
-return x_3;
+return x_9;
+}
+}
+else
+{
+return x_7;
+}
+}
+else
+{
+return x_5;
+}
+}
+else
+{
+uint8_t x_12; 
+x_12 = 0;
+return x_12;
+}
+}
+else
+{
+uint8_t x_13; 
+x_13 = 0;
+return x_13;
 }
 }
 }
@@ -1752,23 +1741,36 @@ return x_3;
 LEAN_EXPORT uint8_t l_Lean_Name_isMetaprogramming(lean_object* x_1) {
 _start:
 {
-lean_object* x_2; lean_object* x_3; lean_object* x_4; uint8_t x_5; 
-x_2 = l_Lean_Name_components(x_1);
-x_3 = l_List_head_x3f___redArg(x_2);
-x_4 = ((lean_object*)(l_Lean_Name_isMetaprogramming___closed__2));
-x_5 = l_Option_instBEq_beq___at___00Lean_Name_isMetaprogramming_spec__0(x_3, x_4);
-lean_dec(x_3);
-if (x_5 == 0)
+lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_2 = ((lean_object*)(l_Lean_Name_isMetaprogramming___closed__0));
+x_3 = l_Lean_Name_components(x_1);
+x_4 = l_List_head_x3f___redArg(x_3);
+if (lean_obj_tag(x_4) == 0)
 {
-lean_object* x_6; uint8_t x_7; 
-x_6 = ((lean_object*)(l_Lean_Name_isMetaprogramming___closed__3));
-x_7 = l_List_any___redArg(x_2, x_6);
-return x_7;
+uint8_t x_5; 
+x_5 = l_List_any___redArg(x_3, x_2);
+return x_5;
 }
 else
 {
-lean_dec(x_2);
-return x_5;
+lean_object* x_6; lean_object* x_7; uint8_t x_8; 
+x_6 = lean_ctor_get(x_4, 0);
+lean_inc(x_6);
+lean_dec_ref(x_4);
+x_7 = ((lean_object*)(l_Lean_Name_isMetaprogramming___closed__2));
+x_8 = lean_name_eq(x_6, x_7);
+lean_dec(x_6);
+if (x_8 == 0)
+{
+uint8_t x_9; 
+x_9 = l_List_any___redArg(x_3, x_2);
+return x_9;
+}
+else
+{
+lean_dec(x_3);
+return x_8;
+}
 }
 }
 }
