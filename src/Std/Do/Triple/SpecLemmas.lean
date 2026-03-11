@@ -714,6 +714,18 @@ abbrev Invariant.withEarlyReturn {α} {xs : List α} {γ : Type (max u₁ u₂)}
   (onContinue : List.Cursor xs → β → Assertion ps)
   (onReturn : γ → β → Assertion ps)
   (onExcept : ExceptConds ps := ExceptConds.false) :
+    Invariant xs (MProd (Option γ) β) ps :=
+  ⟨fun ⟨xs, x, b⟩ => spred(
+        (⌜x = none⌝ ∧ onContinue xs b)
+      ∨ (∃ r, ⌜x = some r⌝ ∧ ⌜xs.suffix = []⌝ ∧ onReturn r b)),
+   onExcept⟩
+
+/-- Like `Invariant.withEarlyReturn`, but for the new `do` elaborator which uses `Prod`
+instead of `MProd` for the state tuple. -/
+abbrev Invariant.withEarlyReturnNewDo {α} {xs : List α} {γ : Type (max u₁ u₂)}
+  (onContinue : List.Cursor xs → β → Assertion ps)
+  (onReturn : γ → β → Assertion ps)
+  (onExcept : ExceptConds ps := ExceptConds.false) :
     Invariant xs (Prod (Option γ) β) ps :=
   ⟨fun ⟨xs, x, b⟩ => spred(
         (⌜x = none⌝ ∧ onContinue xs b)
@@ -2039,6 +2051,19 @@ abbrev StringInvariant.withEarlyReturn {s : String}
       ∨ (∃ r, ⌜x = some r⌝ ∧ ⌜pos = s.endPos⌝ ∧ onReturn r b)),
    onExcept⟩
 
+/-- Like `StringInvariant.withEarlyReturn`, but for the new `do` elaborator which uses `Prod`
+instead of `MProd` for the state tuple. -/
+abbrev StringInvariant.withEarlyReturnNewDo {s : String}
+  (onContinue : s.Pos → β → Assertion ps)
+  (onReturn : γ → β → Assertion ps)
+  (onExcept : ExceptConds ps := ExceptConds.false) :
+    StringInvariant s (Prod (Option γ) β) ps
+    :=
+  ⟨fun ⟨pos, x, b⟩ => spred(
+        (⌜x = none⌝ ∧ onContinue pos b)
+      ∨ (∃ r, ⌜x = some r⌝ ∧ ⌜pos = s.endPos⌝ ∧ onReturn r b)),
+   onExcept⟩
+
 @[spec]
 theorem Spec.forIn_string
     {s : String} {init : β} {f : Char → β → m (ForInStep β)}
@@ -2105,6 +2130,19 @@ abbrev StringSliceInvariant.withEarlyReturn {s : String.Slice}
   (onReturn : γ → β → Assertion ps)
   (onExcept : ExceptConds ps := ExceptConds.false) :
     StringSliceInvariant s (MProd (Option γ) β) ps
+    :=
+  ⟨fun ⟨pos, x, b⟩ => spred(
+        (⌜x = none⌝ ∧ onContinue pos b)
+      ∨ (∃ r, ⌜x = some r⌝ ∧ ⌜pos = s.endPos⌝ ∧ onReturn r b)),
+   onExcept⟩
+
+/-- Like `StringSliceInvariant.withEarlyReturn`, but for the new `do` elaborator which uses `Prod`
+instead of `MProd` for the state tuple. -/
+abbrev StringSliceInvariant.withEarlyReturnNewDo {s : String.Slice}
+  (onContinue : s.Pos → β → Assertion ps)
+  (onReturn : γ → β → Assertion ps)
+  (onExcept : ExceptConds ps := ExceptConds.false) :
+    StringSliceInvariant s (Prod (Option γ) β) ps
     :=
   ⟨fun ⟨pos, x, b⟩ => spred(
         (⌜x = none⌝ ∧ onContinue pos b)
