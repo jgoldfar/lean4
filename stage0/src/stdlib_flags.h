@@ -1,5 +1,5 @@
 #include "util/options.h"
-
+//update stage0 to make @[mvcgen_invariant_type] attribute available
 namespace lean {
 options get_default_options() {
     options opts;
