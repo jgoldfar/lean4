@@ -112,14 +112,20 @@ def tryEquations : Simproc := fun e => do
     return .rfl
   let some appFn := e.getAppFn.constName? | return .rfl
   let thms ← getEqnTheorems appFn
-  Simproc.tryCatch (thms.rewrite (d := dischargeNone)) e
+  let result ← Simproc.tryCatch (thms.rewrite (d := dischargeNone)) e
+  if let .step e' .. := result then
+    trace[Meta.Tactic.cbv.rewrite] "equation `{appFn}`:{indentExpr e}\n==>{indentExpr e'}"
+  return result
 
 def tryUnfold : Simproc := fun e => do
   unless e.isApp do
     return .rfl
   let some appFn := e.getAppFn.constName? | return .rfl
   let some thm ← getUnfoldTheorem appFn | return .rfl
-  Simproc.tryCatch (fun e => Theorem.rewrite thm e) e
+  let result ← Simproc.tryCatch (fun e => Theorem.rewrite thm e) e
+  if let .step e' .. := result then
+    trace[Meta.Tactic.cbv.unfold] "unfold `{appFn}`:{indentExpr e}\n==>{indentExpr e'}"
+  return result
 
 /-- Try equation theorems, then unfold equations. Skip `@[cbv_opaque]` constants. -/
 def handleConstApp : Simproc := fun e => do
@@ -132,12 +138,16 @@ def betaReduce : Simproc := fun e => do
   -- TODO: Improve term sharing
   let new := e.headBeta
   let new ← Sym.share new
+  trace[Debug.Meta.Tactic.cbv.reduce] "beta:{indentExpr e}\n==>{indentExpr new}"
   return .step new (← Sym.mkEqRefl new)
 
 def tryCbvTheorems : Simproc := fun e => do
   let some fnName := e.getAppFn.constName? | return .rfl
   let some evalLemmas ← getCbvEvalLemmas fnName | return .rfl
-  Simproc.tryCatch (Theorems.rewrite evalLemmas (d := dischargeNone)) e
+  let result ← Simproc.tryCatch (Theorems.rewrite evalLemmas (d := dischargeNone)) e
+  if let .step e' .. := result then
+    trace[Meta.Tactic.cbv.rewrite] "@[cbv_eval] `{fnName}`:{indentExpr e}\n==>{indentExpr e'}"
+  return result
 
 /--
 Post-pass handler for applications. For a constant-headed application, tries
@@ -167,15 +177,18 @@ def isOpaqueConst : Simproc := fun e => do
     return .rfl (← isCbvOpaque constName)
 
 def foldLit : Simproc := fun e => do
- let some n := e.rawNatLit? | return .rfl
- -- TODO: check performance of sharing
-  return .step (← Sym.share <| mkNatLit n) (← Sym.mkEqRefl e)
+  let some n := e.rawNatLit? | return .rfl
+  -- TODO: check performance of sharing
+  let new ← Sym.share <| mkNatLit n
+  trace[Debug.Meta.Tactic.cbv.reduce] "foldLit: {e} ==> {new}"
+  return .step new (← Sym.mkEqRefl e)
 
 def zetaReduce : Simproc := fun e => do
   let .letE _ _ value body _ := e | return .rfl
   let new := expandLet body #[value]
   -- TODO: Improve sharing
   let new ← Sym.share new
+  trace[Debug.Meta.Tactic.cbv.reduce] "zeta:{indentExpr e}\n==>{indentExpr new}"
   return .step new (← Sym.mkEqRefl new)
 
 /--
@@ -186,6 +199,11 @@ the original and rewritten struct are definitionally equal, falls back to `HCong
 -/
 def handleProj : Simproc := fun e => do
   let Expr.proj typeName idx struct := e | return .rfl
+  withTraceNode `Debug.Meta.Tactic.cbv.reduce (fun
+      | .ok (Result.step e' ..) => return m!"proj `{typeName}`.{idx}:{indentExpr e}\n==>{indentExpr e'}"
+      | .ok (Result.rfl true)   => return m!"proj `{typeName}`.{idx}: stuck{indentExpr e}"
+      | .ok _                   => return m!"proj `{typeName}`.{idx}: no change"
+      | .error err              => return m!"proj `{typeName}`.{idx}: {err.toMessageData}") do
   -- We recursively simplify the projection
   let res ← simp struct
   match res with
@@ -241,6 +259,7 @@ def simplifyAppFn : Simproc := fun e => do
       let congrArgFun := Lean.mkLambda `x .default newType (mkAppN (.bvar 0) e.getAppArgs)
       let newValue ← mkAppNS e' e.getAppArgs
       let newProof ← mkCongrArg congrArgFun proof
+      trace[Debug.Meta.Tactic.cbv.reduce] "simplifyAppFn:{indentExpr e}\n==>{indentExpr newValue}"
       return .step newValue newProof
 
 def handleConst : Simproc := fun e => do
@@ -253,6 +272,7 @@ def handleConst : Simproc := fun e => do
   unless info.hasValue && info.levelParams.length == lvls.length do return .rfl
   let fBody ← instantiateValueLevelParams info lvls
   let eNew ← Sym.share fBody
+  trace[Meta.Tactic.cbv.unfold] "const `{n}`:{indentExpr e}\n==>{indentExpr eNew}"
   return .step eNew (← Sym.mkEqRefl eNew)
 
 /--
@@ -296,7 +316,10 @@ def cbvCore (e : Expr) (config : Sym.Simp.Config := {}) : Sym.SymM Result := do
 /-- Reduce a single expression. Unfolds reducibles, shares subterms, then runs the
 simplifier with `cbvPre`/`cbvPost`. Used by `conv => cbv`. -/
 public def cbvEntry (e : Expr) : MetaM Result := do
-  trace[Meta.Tactic.cbv] "Called cbv tactic to simplify {e}"
+  withTraceNode `Meta.Tactic.cbv (fun
+      | .ok (Result.step e' ..) => return m!"cbv:{indentExpr e}\n==>{indentExpr e'}"
+      | .ok (Result.rfl ..)     => return m!"cbv: no change{indentExpr e}"
+      | .error err              => return m!"cbv: {err.toMessageData}") do
   let simprocs ← getCbvSimprocs
   let config : Sym.Simp.Config := { maxSteps := cbv.maxSteps.get (← getOptions) }
   let methods := mkCbvMethods simprocs
@@ -330,7 +353,11 @@ public def cbvGoal (mvarId : MVarId) (simplifyTarget : Bool := true) (fvarIdsToS
       for fvarId in fvarIdsToSimp do
         let localDecl ← fvarId.getDecl
         let type := localDecl.type
-        let result ← cbvCore type config
+        let result ← withTraceNode `Meta.Tactic.cbv (fun
+            | .ok (Result.step type' ..) => return m!"hypothesis `{localDecl.userName}`:{indentExpr type}\n==>{indentExpr type'}"
+            | .ok (Result.rfl ..)        => return m!"hypothesis `{localDecl.userName}`: no change"
+            | .error err                 => return m!"hypothesis `{localDecl.userName}`: {err.toMessageData}") do
+          cbvCore type config
         match result with
         | .rfl _ => pure ()
         | .step type' proof _ =>
@@ -344,7 +371,11 @@ public def cbvGoal (mvarId : MVarId) (simplifyTarget : Bool := true) (fvarIdsToS
       -- Process target
       if simplifyTarget then
         let target ← mvarIdNew.getType
-        let result ← cbvCore target config
+        let result ← withTraceNode `Meta.Tactic.cbv (fun
+            | .ok (Result.step target' ..) => return m!"target:{indentExpr target}\n==>{indentExpr target'}"
+            | .ok (Result.rfl ..)          => return m!"target: no change"
+            | .error err                   => return m!"target: {err.toMessageData}") do
+          cbvCore target config
         match result with
         | .rfl _ => pure ()
         | .step target' proof _ =>
@@ -370,6 +401,9 @@ Attempt to close a goal of the form `decide P = true` by reducing only the LHS u
 - Otherwise, throws a user-friendly error showing where the reduction got stuck.
 -/
 public def cbvDecideGoal (m : MVarId) : MetaM Unit := do
+  withTraceNode `Meta.Tactic.cbv (fun
+      | .ok ()   => return m!"decide_cbv: closed goal"
+      | .error err => return m!"decide_cbv: {err.toMessageData}") do
   let config : Sym.Simp.Config := { maxSteps := cbv.maxSteps.get (← getOptions) }
   Sym.SymM.run do
     let m ← Sym.preprocessMVar m
@@ -377,6 +411,7 @@ public def cbvDecideGoal (m : MVarId) : MetaM Unit := do
     let some (_, lhs, _) := mType.eq? |
       throwError "`decide_cbv`: expected goal of the form `decide _ = true`, got: {indentExpr mType}"
     let result ← cbvCore lhs config
+    trace[Meta.Tactic.cbv] "decide_cbv:{indentExpr lhs}\n==>{indentExpr (result.getResultExpr lhs)}"
     let checkResult (e : Expr) (onTrue : Sym.SymM Unit) : Sym.SymM Unit := do
       if (← Sym.isBoolTrueExpr e) then
         onTrue
