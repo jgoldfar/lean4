@@ -84,7 +84,7 @@ Lake: Lean
 	+"${LEAN_BIN}/leanmake" -C lake lib lib.export ../${LIB}/temp/LakeMain.o.export  PKG=Lake $(LEANMAKE_OPTS) OUT="../${LIB}" LIB_OUT="../${LIB}/lean" TEMP_OUT="../${LIB}/temp" OLEAN_OUT="../${LIB}/lean" EXTRA_SRC_ROOTS=LakeMain.lean
 
 LeanChecker: Lake
-	+"${LEAN_BIN}/leanmake" lib PKG=LeanChecker $(LEANMAKE_OPTS) OUT="$(OUTARC)" LIB_OUT="$(OUTARC)" OLEAN_OUT="$(OUTARC)"
+	+"${LEAN_BIN}/leanmake" lib PKG=LeanChecker $(LEANMAKE_OPTS) OUT="$(OUTARC)" LIB_OUT="$(OUTARC)" TEMP_OUT="${LIB}/temp" OLEAN_OUT="$(OUTARC)"
 
 endif
 
