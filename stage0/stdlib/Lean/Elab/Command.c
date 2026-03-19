@@ -33193,7 +33193,6 @@ v_reusejp_10527_:
 {
 lean_object* v___x_10529_; lean_object* v_str_10530_; lean_object* v_startInclusive_10531_; lean_object* v_endExclusive_10532_; lean_object* v___x_10533_; uint64_t v___x_10534_; lean_object* v___x_10535_; lean_object* v___x_10537_; 
 v___x_10529_ = l_String_Slice_trimAscii(v___x_10528_);
-lean_dec_ref(v___x_10528_);
 v_str_10530_ = lean_ctor_get(v___x_10529_, 0);
 lean_inc_ref(v_str_10530_);
 v_startInclusive_10531_ = lean_ctor_get(v___x_10529_, 1);

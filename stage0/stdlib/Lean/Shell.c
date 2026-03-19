@@ -9970,7 +9970,6 @@ lean_ctor_set(v___x_2963_, 0, v_str_2956_);
 lean_ctor_set(v___x_2963_, 1, v_startInclusive_2957_);
 lean_ctor_set(v___x_2963_, 2, v___x_2962_);
 v___x_2964_ = l_String_Slice_trimAscii(v___x_2963_);
-lean_dec_ref(v___x_2963_);
 v___x_2965_ = lean_obj_once(&l___private_Lean_Shell_0__Lean_shellMain___closed__22, &l___private_Lean_Shell_0__Lean_shellMain___closed__22_once, _init_l___private_Lean_Shell_0__Lean_shellMain___closed__22);
 v___x_2966_ = l_String_Slice_beq(v___x_2964_, v___x_2965_);
 if (v___x_2966_ == 0)

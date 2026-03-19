@@ -62932,7 +62932,6 @@ lean_ctor_set(v___x_16806_, 0, v_directive_16711_);
 lean_ctor_set(v___x_16806_, 1, v___x_16802_);
 lean_ctor_set(v___x_16806_, 2, v___x_16805_);
 v___x_16807_ = l_String_Slice_trimAscii(v___x_16806_);
-lean_dec_ref(v___x_16806_);
 v_str_16808_ = lean_ctor_get(v___x_16807_, 0);
 v_startInclusive_16809_ = lean_ctor_get(v___x_16807_, 1);
 v_endExclusive_16810_ = lean_ctor_get(v___x_16807_, 2);
@@ -63001,7 +63000,6 @@ v_reusejp_16824_:
 {
 lean_object* v___x_16826_; lean_object* v_str_16827_; lean_object* v_startInclusive_16828_; lean_object* v_endExclusive_16829_; lean_object* v___x_16830_; 
 v___x_16826_ = l_String_Slice_trimAscii(v___x_16825_);
-lean_dec_ref(v___x_16825_);
 v_str_16827_ = lean_ctor_get(v___x_16826_, 0);
 lean_inc_ref(v_str_16827_);
 v_startInclusive_16828_ = lean_ctor_get(v___x_16826_, 1);
