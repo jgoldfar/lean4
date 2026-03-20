@@ -1,5 +1,7 @@
 module
 
+meta import Init.Data.String
+
 /-!
 # Tests for `String` functions
 -/

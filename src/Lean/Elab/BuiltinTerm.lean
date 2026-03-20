@@ -388,6 +388,8 @@ private opaque evalFilePath (stx : Syntax) : TermElabM System.FilePath
         if compile then
           -- Inline as changing visibility should not affect run time.
           setInlineAttribute name
+          if (← read).declName?.any (isMarkedMeta (← getEnv)) then
+            modifyEnv (markMeta · name)
           compileDecls #[name]
         return e
     else
