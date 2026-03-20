@@ -23,7 +23,7 @@ open Lean.Meta.Tactic.Cbv
   let evalResult ← cbvEntry lhs
   match evalResult with
   | .rfl .. => return ()
-  | .step e' proof _ =>
+  | .step e' proof _ _ =>
     updateLhs e' proof
 
 end Lean.Elab.Tactic.Conv

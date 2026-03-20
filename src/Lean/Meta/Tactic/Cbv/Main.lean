@@ -243,20 +243,20 @@ def handleProj : Simproc := fun e => do
   let Expr.proj typeName idx struct := e | return .rfl
   withTraceNode `Debug.Meta.Tactic.cbv.reduce (fun
       | .ok (Result.step e' ..) => return m!"proj `{typeName}`.{idx}:{indentExpr e}\n==>{indentExpr e'}"
-      | .ok (Result.rfl true)   => return m!"proj `{typeName}`.{idx}: stuck{indentExpr e}"
+      | .ok (Result.rfl true _) => return m!"proj `{typeName}`.{idx}: stuck{indentExpr e}"
       | .ok _                   => return m!"proj `{typeName}`.{idx}: no change"
       | .error err              => return m!"proj `{typeName}`.{idx}: {err.toMessageData}") do
   -- We recursively simplify the projection
   let res ← simp struct
   match res with
-  | .rfl _ =>
+  | .rfl _ _ =>
     let some reduced ← withCbvOpaqueGuard <| reduceProj? <| .proj typeName idx struct | do
       return .rfl (done := true)
 
     -- TODO: Figure if we can share this term incrementally
     let reduced ← Sym.share reduced
     return .step reduced (← Sym.mkEqRefl reduced)
-  | .step e' proof _ =>
+  | .step e' proof _ _ =>
     let type ← Sym.inferType e'
     let congrArgFun := Lean.mkLambda `x .default type <| .proj typeName idx <| .bvar 0
     let congrArgFunType ← inferType congrArgFun
@@ -295,8 +295,8 @@ def simplifyAppFn : Simproc := fun e => do
     else
     let res ← simp fn
     match res with
-    | .rfl _ => return res
-    | .step e' proof _ =>
+    | .rfl _ _ => return res
+    | .step e' proof _ _ =>
       let newType ← Sym.inferType e'
       let congrArgFun := Lean.mkLambda `x .default newType (mkAppN (.bvar 0) e.getAppArgs)
       let newValue ← mkAppNS e' e.getAppArgs
@@ -401,8 +401,8 @@ public def cbvGoal (mvarId : MVarId) (simplifyTarget : Bool := true) (fvarIdsToS
             | .error err                 => return m!"hypothesis `{localDecl.userName}`: {err.toMessageData}") do
           cbvCore type config
         match result with
-        | .rfl _ => pure ()
-        | .step type' proof _ =>
+        | .rfl _ _ => pure ()
+        | .step type' proof _ _ =>
           if type'.isFalse then
             let u ← getLevel type
             mvarIdNew.assign (← mkFalseElim (← mvarIdNew.getType) (mkApp4 (mkConst ``Eq.mp [u]) type type' proof (mkFVar fvarId)))
@@ -419,8 +419,8 @@ public def cbvGoal (mvarId : MVarId) (simplifyTarget : Bool := true) (fvarIdsToS
             | .error err                   => return m!"target: {err.toMessageData}") do
           cbvCore target config
         match result with
-        | .rfl _ => pure ()
-        | .step target' proof _ =>
+        | .rfl _ _ => pure ()
+        | .step target' proof _ _ =>
           if target'.isTrue then
             mvarIdNew.assign (← mkOfEqTrue proof)
             return none
@@ -462,8 +462,8 @@ public def cbvDecideGoal (m : MVarId) : MetaM Unit := do
       else
         throwError "`decide_cbv` failed: could not reduce the expression to a boolean value; got stuck at: {indentExpr e}"
     match result with
-    | .rfl _ => checkResult lhs (m.refl)
-    | .step e' proof _ => checkResult e' (m.assign proof)
+    | .rfl _ _ => checkResult lhs (m.refl)
+    | .step e' proof _ _ => checkResult e' (m.assign proof)
 
 
 end Lean.Meta.Tactic.Cbv
