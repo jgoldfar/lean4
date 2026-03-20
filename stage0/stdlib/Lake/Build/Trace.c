@@ -1,6 +1,6 @@
 // Lean compiler output
 // Module: Lake.Build.Trace
-// Imports: public import Lean.Data.Json import Init.Data.Nat.Fold import Lake.Util.String public import Init.Data.String.Search public import Init.Data.String.Extra import Init.Data.Option.Coe
+// Imports: public import Lean.Data.Json import Init.Data.Nat.Fold meta import Init.Data.Nat.Fold import Lake.Util.String public import Init.Data.String.Search public import Init.Data.String.Extra import Init.Data.Option.Coe
 #include <lean/lean.h>
 #if defined(__clang__)
 #pragma clang diagnostic ignored "-Wunused-parameter"
@@ -3753,14 +3753,19 @@ l_Lake_BuildTrace_instNilTrace = _init_l_Lake_BuildTrace_instNilTrace();
 lean_mark_persistent(l_Lake_BuildTrace_instNilTrace);
 return lean_io_result_mk_ok(lean_box(0));
 }
+lean_object* runtime_initialize_Init_Data_Nat_Fold(uint8_t builtin);
 static bool _G_meta_initialized = false;
 LEAN_EXPORT lean_object* meta_initialize_Lake_Build_Trace(uint8_t builtin) {
 lean_object * res;
 if (_G_meta_initialized) return lean_io_result_mk_ok(lean_box(0));
 _G_meta_initialized = true;
+res = runtime_initialize_Init_Data_Nat_Fold(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
 return lean_io_result_mk_ok(lean_box(0));
 }
 lean_object* initialize_Lean_Data_Json(uint8_t builtin);
+lean_object* initialize_Init_Data_Nat_Fold(uint8_t builtin);
 lean_object* initialize_Init_Data_Nat_Fold(uint8_t builtin);
 lean_object* initialize_Lake_Util_String(uint8_t builtin);
 lean_object* initialize_Init_Data_String_Search(uint8_t builtin);
@@ -3772,6 +3777,9 @@ lean_object * res;
 if (_G_initialized) return lean_io_result_mk_ok(lean_box(0));
 _G_initialized = true;
 res = initialize_Lean_Data_Json(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Init_Data_Nat_Fold(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 res = initialize_Init_Data_Nat_Fold(builtin);

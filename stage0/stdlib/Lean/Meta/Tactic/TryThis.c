@@ -1,6 +1,6 @@
 // Lean compiler output
 // Module: Lean.Meta.Tactic.TryThis
-// Imports: import Lean.Server.CodeActions import Lean.Meta.Tactic.ExposeNames public import Lean.Widget.UserWidget
+// Imports: import Lean.Server.CodeActions import Lean.Meta.Tactic.ExposeNames public import Lean.Widget.UserWidget meta import Lean.Widget.UserWidget
 #include <lean/lean.h>
 #if defined(__clang__)
 #pragma clang diagnostic ignored "-Wunused-parameter"
@@ -9707,15 +9707,20 @@ if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 return lean_io_result_mk_ok(lean_box(0));
 }
+lean_object* runtime_initialize_Lean_Widget_UserWidget(uint8_t builtin);
 static bool _G_meta_initialized = false;
 LEAN_EXPORT lean_object* meta_initialize_Lean_Meta_Tactic_TryThis(uint8_t builtin) {
 lean_object * res;
 if (_G_meta_initialized) return lean_io_result_mk_ok(lean_box(0));
 _G_meta_initialized = true;
+res = runtime_initialize_Lean_Widget_UserWidget(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
 return lean_io_result_mk_ok(lean_box(0));
 }
 lean_object* initialize_Lean_Server_CodeActions(uint8_t builtin);
 lean_object* initialize_Lean_Meta_Tactic_ExposeNames(uint8_t builtin);
+lean_object* initialize_Lean_Widget_UserWidget(uint8_t builtin);
 lean_object* initialize_Lean_Widget_UserWidget(uint8_t builtin);
 static bool _G_initialized = false;
 LEAN_EXPORT lean_object* initialize_Lean_Meta_Tactic_TryThis(uint8_t builtin) {
@@ -9726,6 +9731,9 @@ res = initialize_Lean_Server_CodeActions(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 res = initialize_Lean_Meta_Tactic_ExposeNames(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Lean_Widget_UserWidget(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 res = initialize_Lean_Widget_UserWidget(builtin);

@@ -329,7 +329,7 @@ lean_object* l_Lean_Elab_sortDeclLevelParams(lean_object*, lean_object*, lean_ob
 lean_object* l_Lean_Meta_removeUnused(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Expr_collectFVars(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Syntax_getArgs(lean_object*);
-lean_object* l_Lean_KeyedDeclsAttribute_Def___private__1(lean_object*, lean_object*, lean_object*);
+lean_object* l_Lean_KeyedDeclsAttribute_evalIdentKey(lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_KeyedDeclsAttribute_init___redArg(lean_object*, lean_object*);
 lean_object* l_Lean_KeyedDeclsAttribute_getEntries___redArg(lean_object*, lean_object*, lean_object*);
 uint8_t l_List_isEmpty___redArg(lean_object*);
@@ -3630,7 +3630,7 @@ LEAN_EXPORT lean_object* l___private_Lean_Elab_MutualInductive_0__Lean_Elab_Comm
 _start:
 {
 lean_object* v___x_351_; 
-v___x_351_ = l_Lean_KeyedDeclsAttribute_Def___private__1(v_stx_347_, v___y_348_, v___y_349_);
+v___x_351_ = l_Lean_KeyedDeclsAttribute_evalIdentKey(v_stx_347_, v___y_348_, v___y_349_);
 return v___x_351_;
 }
 }

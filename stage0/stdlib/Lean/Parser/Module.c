@@ -1,6 +1,6 @@
 // Lean compiler output
 // Module: Lean.Parser.Module
-// Imports: public import Lean.Parser.Module.Syntax meta import Lean.Parser.Module.Syntax import Init.While
+// Imports: public import Lean.Parser.Module.Syntax meta import Lean.Parser.Module.Syntax import Init.While meta import Lean.Parser.Extra
 #include <lean/lean.h>
 #if defined(__clang__)
 #pragma clang diagnostic ignored "-Wunused-parameter"
@@ -326,7 +326,7 @@ _start:
 lean_object* v___x_8_; lean_object* v___x_9_; lean_object* v___x_10_; lean_object* v___x_11_; lean_object* v___x_12_; lean_object* v___x_13_; 
 v___x_8_ = ((lean_object*)(l_Lean_Parser_Module_updateTokens___closed__2));
 v___x_9_ = lean_unsigned_to_nat(26u);
-v___x_10_ = lean_unsigned_to_nat(23u);
+v___x_10_ = lean_unsigned_to_nat(24u);
 v___x_11_ = ((lean_object*)(l_Lean_Parser_Module_updateTokens___closed__1));
 v___x_12_ = ((lean_object*)(l_Lean_Parser_Module_updateTokens___closed__0));
 v___x_13_ = l_mkPanicMessageWithDecl(v___x_12_, v___x_11_, v___x_10_, v___x_9_, v___x_8_);
@@ -4441,6 +4441,7 @@ lean_dec_ref(res);
 return lean_io_result_mk_ok(lean_box(0));
 }
 lean_object* runtime_initialize_Lean_Parser_Module_Syntax(uint8_t builtin);
+lean_object* runtime_initialize_Lean_Parser_Extra(uint8_t builtin);
 static bool _G_meta_initialized = false;
 LEAN_EXPORT lean_object* meta_initialize_Lean_Parser_Module(uint8_t builtin) {
 lean_object * res;
@@ -4449,11 +4450,15 @@ _G_meta_initialized = true;
 res = runtime_initialize_Lean_Parser_Module_Syntax(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
+res = runtime_initialize_Lean_Parser_Extra(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
 return lean_io_result_mk_ok(lean_box(0));
 }
 lean_object* initialize_Lean_Parser_Module_Syntax(uint8_t builtin);
 lean_object* initialize_Lean_Parser_Module_Syntax(uint8_t builtin);
 lean_object* initialize_Init_While(uint8_t builtin);
+lean_object* initialize_Lean_Parser_Extra(uint8_t builtin);
 static bool _G_initialized = false;
 LEAN_EXPORT lean_object* initialize_Lean_Parser_Module(uint8_t builtin) {
 lean_object * res;
@@ -4466,6 +4471,9 @@ res = initialize_Lean_Parser_Module_Syntax(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 res = initialize_Init_While(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Lean_Parser_Extra(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 res = runtime_initialize_Lean_Parser_Module(builtin);

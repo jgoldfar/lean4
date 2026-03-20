@@ -1,6 +1,6 @@
 // Lean compiler output
 // Module: Lean.Elab.DocString.Builtin.Scopes
-// Imports: public import Lean.Elab.DocString import Lean.Elab.DocString.Builtin.Parsing
+// Imports: public import Lean.Elab.DocString public import Lean.Elab.DocString.Builtin.Parsing
 #include <lean/lean.h>
 #if defined(__clang__)
 #pragma clang diagnostic ignored "-Wunused-parameter"

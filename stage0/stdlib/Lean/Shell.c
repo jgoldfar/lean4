@@ -114,7 +114,7 @@ lean_object* l_Lean_getBuildDir();
 lean_object* l_Lean_getLibDir(lean_object*);
 lean_object* lean_decode_lossy_utf8(lean_object*);
 LEAN_EXPORT lean_object* l___private_Lean_Shell_0__Lean_decodeLossyUTF8___boxed(lean_object*);
-uint32_t lean_run_main(lean_object*, lean_object*, lean_object*);
+uint32_t lean_eval_main(lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l___private_Lean_Shell_0__Lean_runMain___boxed(lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* lean_init_llvm();
 LEAN_EXPORT lean_object* l___private_Lean_Shell_0__Lean_initLLVM___boxed(lean_object*);
@@ -598,7 +598,7 @@ LEAN_EXPORT lean_object* l___private_Lean_Shell_0__Lean_runMain___boxed(lean_obj
 _start:
 {
 uint32_t v_res_12_; lean_object* v_r_13_; 
-v_res_12_ = lean_run_main(v_env_8_, v_opts_9_, v_args_10_);
+v_res_12_ = lean_eval_main(v_env_8_, v_opts_9_, v_args_10_);
 lean_dec(v_args_10_);
 lean_dec_ref(v_opts_9_);
 lean_dec_ref(v_env_8_);
@@ -9601,7 +9601,7 @@ lean_dec(v_cFileName_x3f_2786_);
 v_val_2889_ = lean_ctor_get(v_a_2829_, 0);
 lean_inc(v_val_2889_);
 lean_dec_ref(v_a_2829_);
-v___x_2890_ = lean_run_main(v_val_2889_, v_leanOpts_2772_, v___y_2824_);
+v___x_2890_ = lean_eval_main(v_val_2889_, v_leanOpts_2772_, v___y_2824_);
 lean_dec(v___y_2824_);
 lean_dec_ref(v_leanOpts_2772_);
 lean_dec(v_val_2889_);

@@ -1,6 +1,6 @@
 // Lean compiler output
 // Module: Lean.Data.Lsp.LanguageFeatures
-// Imports: public import Lean.Data.Lsp.Basic public import Lean.Expr public import Init.Data.String.Search public import Init.Data.Array.GetLit
+// Imports: public import Lean.Data.Lsp.Basic public import Lean.Expr public import Init.Data.String.Search public import Init.Data.Array.GetLit meta import Lean.Data.Json.FromToJson.Basic
 #include <lean/lean.h>
 #if defined(__clang__)
 #pragma clang diagnostic ignored "-Wunused-parameter"
@@ -53269,17 +53269,22 @@ l_Lean_Lsp_instInhabitedCallHierarchyOutgoingCall = _init_l_Lean_Lsp_instInhabit
 lean_mark_persistent(l_Lean_Lsp_instInhabitedCallHierarchyOutgoingCall);
 return lean_io_result_mk_ok(lean_box(0));
 }
+lean_object* runtime_initialize_Lean_Data_Json_FromToJson_Basic(uint8_t builtin);
 static bool _G_meta_initialized = false;
 LEAN_EXPORT lean_object* meta_initialize_Lean_Data_Lsp_LanguageFeatures(uint8_t builtin) {
 lean_object * res;
 if (_G_meta_initialized) return lean_io_result_mk_ok(lean_box(0));
 _G_meta_initialized = true;
+res = runtime_initialize_Lean_Data_Json_FromToJson_Basic(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
 return lean_io_result_mk_ok(lean_box(0));
 }
 lean_object* initialize_Lean_Data_Lsp_Basic(uint8_t builtin);
 lean_object* initialize_Lean_Expr(uint8_t builtin);
 lean_object* initialize_Init_Data_String_Search(uint8_t builtin);
 lean_object* initialize_Init_Data_Array_GetLit(uint8_t builtin);
+lean_object* initialize_Lean_Data_Json_FromToJson_Basic(uint8_t builtin);
 static bool _G_initialized = false;
 LEAN_EXPORT lean_object* initialize_Lean_Data_Lsp_LanguageFeatures(uint8_t builtin) {
 lean_object * res;
@@ -53295,6 +53300,9 @@ res = initialize_Init_Data_String_Search(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 res = initialize_Init_Data_Array_GetLit(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Lean_Data_Json_FromToJson_Basic(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 res = runtime_initialize_Lean_Data_Lsp_LanguageFeatures(builtin);

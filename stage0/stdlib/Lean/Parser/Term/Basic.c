@@ -1,6 +1,6 @@
 // Lean compiler output
 // Module: Lean.Parser.Term.Basic
-// Imports: public import Lean.Parser.Attr public import Lean.Parser.Level public import Lean.Parser.Term.Doc
+// Imports: public import Lean.Parser.Attr public import Lean.Parser.Level public import Lean.Parser.Term.Doc meta import Lean.Parser.Basic
 #include <lean/lean.h>
 #if defined(__clang__)
 #pragma clang diagnostic ignored "-Wunused-parameter"
@@ -7855,11 +7855,15 @@ l_Lean_Parser_Term_structInstField = _init_l_Lean_Parser_Term_structInstField();
 lean_mark_persistent(l_Lean_Parser_Term_structInstField);
 return lean_io_result_mk_ok(lean_box(0));
 }
+lean_object* runtime_initialize_Lean_Parser_Basic(uint8_t builtin);
 static bool _G_meta_initialized = false;
 LEAN_EXPORT lean_object* meta_initialize_Lean_Parser_Term_Basic(uint8_t builtin) {
 lean_object * res;
 if (_G_meta_initialized) return lean_io_result_mk_ok(lean_box(0));
 _G_meta_initialized = true;
+res = runtime_initialize_Lean_Parser_Basic(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
 l___private_Lean_Parser_Term_Basic_0__Lean_Parser_Term_binderDefaultM = _init_l___private_Lean_Parser_Term_Basic_0__Lean_Parser_Term_binderDefaultM();
 lean_mark_persistent(l___private_Lean_Parser_Term_Basic_0__Lean_Parser_Term_binderDefaultM);
 return lean_io_result_mk_ok(lean_box(0));
@@ -7867,6 +7871,7 @@ return lean_io_result_mk_ok(lean_box(0));
 lean_object* initialize_Lean_Parser_Attr(uint8_t builtin);
 lean_object* initialize_Lean_Parser_Level(uint8_t builtin);
 lean_object* initialize_Lean_Parser_Term_Doc(uint8_t builtin);
+lean_object* initialize_Lean_Parser_Basic(uint8_t builtin);
 static bool _G_initialized = false;
 LEAN_EXPORT lean_object* initialize_Lean_Parser_Term_Basic(uint8_t builtin) {
 lean_object * res;
@@ -7879,6 +7884,9 @@ res = initialize_Lean_Parser_Level(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 res = initialize_Lean_Parser_Term_Doc(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Lean_Parser_Basic(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 res = runtime_initialize_Lean_Parser_Term_Basic(builtin);

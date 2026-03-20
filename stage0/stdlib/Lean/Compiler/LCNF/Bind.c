@@ -41,6 +41,7 @@ lean_object* l_Lean_mkFVar(lean_object*);
 lean_object* l_Lean_Compiler_LCNF_instantiateForall(lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* lean_mk_empty_array_with_capacity(lean_object*);
 lean_object* lean_expr_instantiate_rev(lean_object*, lean_object*);
+uint8_t l_Lean_isMarkedBorrowed(lean_object*);
 lean_object* l_Lean_Expr_fvar___override(lean_object*);
 lean_object* lean_array_push(lean_object*, lean_object*);
 lean_object* l_Lean_Expr_headBeta(lean_object*);
@@ -3167,7 +3168,7 @@ lean_inc_ref(v_body_764_);
 lean_dec_ref(v_type_755_);
 v_d_765_ = lean_expr_instantiate_rev(v_binderType_763_, v_xs_756_);
 lean_dec_ref(v_binderType_763_);
-v___x_766_ = 0;
+v___x_766_ = l_Lean_isMarkedBorrowed(v_d_765_);
 v___x_767_ = l_Lean_Compiler_LCNF_mkAuxParam(v_pu_754_, v_d_765_, v___x_766_, v_a_758_, v_a_759_, v_a_760_, v_a_761_);
 if (lean_obj_tag(v___x_767_) == 0)
 {

@@ -87,7 +87,7 @@ extern lean_object* l_Lean_Elab_unsupportedSyntaxExceptionId;
 lean_object* l_Lean_Syntax_getKind(lean_object*);
 lean_object* l_Lean_MessageData_ofSyntax(lean_object*);
 lean_object* l_Lean_indentD(lean_object*);
-lean_object* l_Lean_KeyedDeclsAttribute_Def___private__1(lean_object*, lean_object*, lean_object*);
+lean_object* l_Lean_KeyedDeclsAttribute_evalIdentKey(lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Name_mkStr5(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_KeyedDeclsAttribute_init___redArg(lean_object*, lean_object*);
 lean_object* l_Lean_KeyedDeclsAttribute_getValues___redArg(lean_object*, lean_object*, lean_object*);
@@ -1118,7 +1118,7 @@ LEAN_EXPORT lean_object* l_Lean_Elab_Term_Quotation_initFn___lam__0_00___x40_Lea
 _start:
 {
 lean_object* v___x_215_; 
-v___x_215_ = l_Lean_KeyedDeclsAttribute_Def___private__1(v_stx_211_, v___y_212_, v___y_213_);
+v___x_215_ = l_Lean_KeyedDeclsAttribute_evalIdentKey(v_stx_211_, v___y_212_, v___y_213_);
 return v___x_215_;
 }
 }

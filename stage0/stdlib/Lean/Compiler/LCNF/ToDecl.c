@@ -127,7 +127,7 @@ lean_object* l_Lean_ConstantInfo_type(lean_object*);
 lean_object* l_Lean_Compiler_LCNF_toLCNFType(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 uint8_t l_Lean_hasInitAttr(lean_object*, lean_object*);
 lean_object* l_Lean_ConstantInfo_value_x3f(lean_object*, uint8_t);
-lean_object* l_Lean_Compiler_LCNF_ToLCNF_toLCNF(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
+lean_object* l_Lean_Compiler_LCNF_ToLCNF_toLCNF(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Compiler_LCNF_eraseFunDecl___redArg(uint8_t, lean_object*, uint8_t, lean_object*);
 LEAN_EXPORT lean_object* l_Lean_Compiler_LCNF_macroInline___lam__0(lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l_Lean_Compiler_LCNF_macroInline___lam__0___boxed(lean_object*, lean_object*, lean_object*, lean_object*);
@@ -11252,7 +11252,8 @@ lean_inc(v_a_3780_);
 lean_inc_ref(v_a_3779_);
 lean_inc(v_a_3778_);
 lean_inc_ref(v_a_3777_);
-v___x_3972_ = l_Lean_Compiler_LCNF_ToLCNF_toLCNF(v_a_3970_, v_a_3777_, v_a_3778_, v_a_3779_, v_a_3780_);
+lean_inc(v_a_3957_);
+v___x_3972_ = l_Lean_Compiler_LCNF_ToLCNF_toLCNF(v_a_3970_, v_a_3957_, v_a_3777_, v_a_3778_, v_a_3779_, v_a_3780_);
 if (lean_obj_tag(v___x_3972_) == 0)
 {
 lean_object* v_a_3973_; 
