@@ -9,12 +9,12 @@ prelude
 public import Lean.Compiler.LCNF.CompilerM
 public import Lean.Compiler.LCNF.PassManager
 import Lean.Compiler.ExportAttr
-import Std.Data.Iterators.Producers.Array
-import Std.Data.Iterators.Combinators.Zip
 import Lean.Compiler.LCNF.MonadScope
 import Lean.Compiler.LCNF.FVarUtil
 import Lean.Compiler.LCNF.PhaseExt
 import Lean.Compiler.LCNF.PrettyPrinter
+import Std.Data.Iterators.Producers.Monadic.Array
+import Std.Data.Iterators.Combinators.Monadic.Zip
 
 /-!
 This pass is responsible for inferring borrow annotations to the parameters of functions and join
@@ -240,18 +240,13 @@ def OwnReason.isForced (reason : OwnReason) : Bool :=
   -- All of these reasons propagate through ABI decisions and can thus safely be ignored as they
   -- will be accounted for by the reference counting pass.
   | .constructorArg .. | .functionCallArg .. | .fvarCall .. | .partialApplication ..
-  | .jpArgPropagation ..
-  -- If a projection of a value is used in an owned fashion that does not necessarily mean we have
-  -- to make the value itself owned. Note that this will however prevent potential reset-reuse
-  -- opportunities.
-  | .backwardProjectionProp .. => false
+  | .jpArgPropagation .. => false
   -- Results of functions and constructors are naturally owned.
   | .constructorResult .. | .functionCallResult ..
   -- We cannot pass borrowed values to reset or have borrow annotations destroy tail calls for
   -- correctness reasons.
   | .resetReuse .. | .tailCallPreservation .. | .jpTailCallPreservation ..
-  -- If a value is owned and we project from it its projectee is always owned as well.
-  | .forwardProjectionProp .. => true
+  | .forwardProjectionProp .. | .backwardProjectionProp .. => true
 
 /--
 Infer the borrowing annotations in a SCC through dataflow analysis.
