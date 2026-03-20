@@ -5131,10 +5131,10 @@ lean_object* v___y_1790_ = _args[18];
 lean_object* v___y_1791_ = _args[19];
 _start:
 {
-size_t v___x_8971__boxed_1792_; lean_object* v_res_1793_; 
-v___x_8971__boxed_1792_ = lean_unbox_usize(v___x_1776_);
+size_t v___x_8972__boxed_1792_; lean_object* v_res_1793_; 
+v___x_8972__boxed_1792_ = lean_unbox_usize(v___x_1776_);
 lean_dec(v___x_1776_);
-v_res_1793_ = l___private_Lean_Elab_Coinductive_0__Lean_Elab_Command_generateCoinductiveConstructor___lam__1(v___x_1772_, v_numParams_1773_, v___x_1774_, v___x_1775_, v___x_8971__boxed_1792_, v_cls_1777_, v___x_1778_, v_name_1779_, v_name_1780_, v_levelParams_1781_, v_ctorSyntax_1782_, v_args_1783_, v_body_1784_, v___y_1785_, v___y_1786_, v___y_1787_, v___y_1788_, v___y_1789_, v___y_1790_);
+v_res_1793_ = l___private_Lean_Elab_Coinductive_0__Lean_Elab_Command_generateCoinductiveConstructor___lam__1(v___x_1772_, v_numParams_1773_, v___x_1774_, v___x_1775_, v___x_8972__boxed_1792_, v_cls_1777_, v___x_1778_, v_name_1779_, v_name_1780_, v_levelParams_1781_, v_ctorSyntax_1782_, v_args_1783_, v_body_1784_, v___y_1785_, v___y_1786_, v___y_1787_, v___y_1788_, v___y_1789_, v___y_1790_);
 lean_dec_ref(v_body_1784_);
 return v_res_1793_;
 }

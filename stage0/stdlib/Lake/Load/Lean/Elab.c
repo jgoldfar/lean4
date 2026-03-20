@@ -3904,6 +3904,7 @@ _start:
 {
 lean_object* v_res_1163_; 
 v_res_1163_ = l___private_Lake_Load_Lean_Elab_0__Lake_importConfigFileCore(v_olean_1160_, v_leanOpts_1161_);
+lean_dec_ref(v_olean_1160_);
 return v_res_1163_;
 }
 }
@@ -8739,6 +8740,7 @@ lean_dec(v_pkgName_2119_);
 lean_dec(v_pkgIdx_2118_);
 lean_dec_ref(v_lakeEnv_2117_);
 v___x_2349_ = l___private_Lake_Load_Lean_Elab_0__Lake_importConfigFileCore(v___x_2143_, v_leanOpts_2123_);
+lean_dec_ref(v___x_2143_);
 if (lean_obj_tag(v___x_2349_) == 0)
 {
 lean_object* v_a_2350_; lean_object* v___x_2351_; 

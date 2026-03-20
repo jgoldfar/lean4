@@ -5773,10 +5773,10 @@ lean_object* v___y_1825_ = _args[15];
 lean_object* v___y_1826_ = _args[16];
 _start:
 {
-uint8_t v___x_18301__boxed_1827_; uint8_t v___y_18303__boxed_1828_; lean_object* v_res_1829_; 
-v___x_18301__boxed_1827_ = lean_unbox(v___x_1811_);
-v___y_18303__boxed_1828_ = lean_unbox(v___y_1814_);
-v_res_1829_ = l_WellFounded_opaqueFix_u2083___at___00Lean_Elab_Tactic_withRWRulesSeq_spec__1___redArg___lam__3(v___x_1810_, v___x_18301__boxed_1827_, v___x_1812_, v_x_1813_, v___y_18303__boxed_1828_, v___x_1815_, v___x_1816_, v___f_1817_, v___y_1818_, v___y_1819_, v___y_1820_, v___y_1821_, v___y_1822_, v___y_1823_, v___y_1824_, v___y_1825_);
+uint8_t v___x_18302__boxed_1827_; uint8_t v___y_18304__boxed_1828_; lean_object* v_res_1829_; 
+v___x_18302__boxed_1827_ = lean_unbox(v___x_1811_);
+v___y_18304__boxed_1828_ = lean_unbox(v___y_1814_);
+v_res_1829_ = l_WellFounded_opaqueFix_u2083___at___00Lean_Elab_Tactic_withRWRulesSeq_spec__1___redArg___lam__3(v___x_1810_, v___x_18302__boxed_1827_, v___x_1812_, v_x_1813_, v___y_18304__boxed_1828_, v___x_1815_, v___x_1816_, v___f_1817_, v___y_1818_, v___y_1819_, v___y_1820_, v___y_1821_, v___y_1822_, v___y_1823_, v___y_1824_, v___y_1825_);
 lean_dec(v___x_1816_);
 lean_dec(v___x_1815_);
 lean_dec(v___x_1810_);
@@ -6484,9 +6484,9 @@ return v___x_2007_;
 LEAN_EXPORT lean_object* l_WellFounded_opaqueFix_u2083___at___00Lean_Elab_Tactic_withRWRulesSeq_spec__1___redArg___lam__2___boxed(lean_object* v_x_2010_, lean_object* v___y_2011_, lean_object* v___x_2012_, lean_object* v___x_2013_, lean_object* v_id_2014_, lean_object* v___y_2015_, lean_object* v___y_2016_, lean_object* v___y_2017_, lean_object* v___y_2018_, lean_object* v___y_2019_, lean_object* v___y_2020_, lean_object* v___y_2021_, lean_object* v___y_2022_, lean_object* v___y_2023_){
 _start:
 {
-uint8_t v___y_18501__boxed_2024_; lean_object* v_res_2025_; 
-v___y_18501__boxed_2024_ = lean_unbox(v___y_2011_);
-v_res_2025_ = l_WellFounded_opaqueFix_u2083___at___00Lean_Elab_Tactic_withRWRulesSeq_spec__1___redArg___lam__2(v_x_2010_, v___y_18501__boxed_2024_, v___x_2012_, v___x_2013_, v_id_2014_, v___y_2015_, v___y_2016_, v___y_2017_, v___y_2018_, v___y_2019_, v___y_2020_, v___y_2021_, v___y_2022_);
+uint8_t v___y_18502__boxed_2024_; lean_object* v_res_2025_; 
+v___y_18502__boxed_2024_ = lean_unbox(v___y_2011_);
+v_res_2025_ = l_WellFounded_opaqueFix_u2083___at___00Lean_Elab_Tactic_withRWRulesSeq_spec__1___redArg___lam__2(v_x_2010_, v___y_18502__boxed_2024_, v___x_2012_, v___x_2013_, v_id_2014_, v___y_2015_, v___y_2016_, v___y_2017_, v___y_2018_, v___y_2019_, v___y_2020_, v___y_2021_, v___y_2022_);
 lean_dec(v___x_2012_);
 return v_res_2025_;
 }

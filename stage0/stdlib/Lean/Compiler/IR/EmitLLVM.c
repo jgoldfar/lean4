@@ -117,7 +117,7 @@ uint8_t l_Lean_IR_isTailCallTo(lean_object*, lean_object*);
 size_t lean_llvm_build_mul(size_t, size_t, size_t, size_t, lean_object*);
 size_t lean_llvm_build_add(size_t, size_t, size_t, size_t, lean_object*);
 size_t l_LLVM_i16Type(size_t);
-lean_object* l_Lean_IR_instToFormatIRType___private__1(lean_object*);
+lean_object* l___private_Lean_Compiler_IR_Format_0__Lean_IR_formatIRType(lean_object*);
 extern lean_object* l_Std_Format_defWidth;
 lean_object* l_Std_Format_pretty(lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_IR_findEnvDecl(lean_object*, lean_object*);
@@ -20874,7 +20874,7 @@ lean_object* v___x_6766_; lean_object* v___x_6767_; lean_object* v___x_6768_; le
 lean_dec(v_x_6693_);
 lean_dec(v_z_6689_);
 v___x_6766_ = ((lean_object*)(l_Lean_IR_EmitLLVM_emitSProj___closed__6));
-v___x_6767_ = l_Lean_IR_instToFormatIRType___private__1(v_t_6690_);
+v___x_6767_ = l___private_Lean_Compiler_IR_Format_0__Lean_IR_formatIRType(v_t_6690_);
 v___x_6768_ = l_Std_Format_defWidth;
 v___x_6769_ = lean_unsigned_to_nat(0u);
 v___x_6770_ = l_Std_Format_pretty(v___x_6767_, v___x_6768_, v___x_6769_, v___x_6769_);
@@ -28787,7 +28787,7 @@ lean_object* v___x_9012_; lean_object* v___x_9013_; lean_object* v___x_9014_; le
 lean_dec(v_y_8905_);
 lean_dec(v_x_8902_);
 v___x_9012_ = ((lean_object*)(l_Lean_IR_EmitLLVM_emitSSet___closed__6));
-v___x_9013_ = l_Lean_IR_instToFormatIRType___private__1(v_t_8906_);
+v___x_9013_ = l___private_Lean_Compiler_IR_Format_0__Lean_IR_formatIRType(v_t_8906_);
 v___x_9014_ = l_Std_Format_defWidth;
 v___x_9015_ = lean_unsigned_to_nat(0u);
 v___x_9016_ = l_Std_Format_pretty(v___x_9013_, v___x_9014_, v___x_9015_, v___x_9015_);
@@ -30630,7 +30630,7 @@ v___x_9470_ = lean_unbox_usize(v_a_9467_);
 lean_dec(v_a_9467_);
 v___x_9471_ = lean_llvm_build_zext(v_llvmctx_9431_, v_builder_9432_, v___x_9470_, v___x_9468_, v___x_9469_);
 v___x_9472_ = ((lean_object*)(l_Lean_IR_EmitLLVM_emitCase___closed__0));
-v___x_9473_ = l_Lean_IR_instToFormatIRType___private__1(v_xType_9434_);
+v___x_9473_ = l___private_Lean_Compiler_IR_Format_0__Lean_IR_formatIRType(v_xType_9434_);
 v___x_9474_ = l_Std_Format_defWidth;
 v___x_9475_ = lean_unsigned_to_nat(0u);
 v___x_9476_ = l_Std_Format_pretty(v___x_9473_, v___x_9474_, v___x_9475_, v___x_9475_);
@@ -31623,20 +31623,20 @@ return v_res_9678_;
 LEAN_EXPORT lean_object* l___private_Init_Data_Array_Basic_0__Array_foldlMUnsafe_fold___at___00Lean_IR_EmitLLVM_emitCase_spec__0___boxed(lean_object* v___x_9679_, lean_object* v_llvmctx_9680_, lean_object* v_builder_9681_, lean_object* v_val_9682_, lean_object* v_a_9683_, lean_object* v_as_9684_, lean_object* v_i_9685_, lean_object* v_stop_9686_, lean_object* v_b_9687_, lean_object* v___y_9688_, lean_object* v___y_9689_, lean_object* v___y_9690_){
 _start:
 {
-size_t v_llvmctx_boxed_9691_; size_t v_builder_boxed_9692_; size_t v_val_24099__boxed_9693_; size_t v_a_24100__boxed_9694_; size_t v_i_boxed_9695_; size_t v_stop_boxed_9696_; lean_object* v_res_9697_; 
+size_t v_llvmctx_boxed_9691_; size_t v_builder_boxed_9692_; size_t v_val_24101__boxed_9693_; size_t v_a_24102__boxed_9694_; size_t v_i_boxed_9695_; size_t v_stop_boxed_9696_; lean_object* v_res_9697_; 
 v_llvmctx_boxed_9691_ = lean_unbox_usize(v_llvmctx_9680_);
 lean_dec(v_llvmctx_9680_);
 v_builder_boxed_9692_ = lean_unbox_usize(v_builder_9681_);
 lean_dec(v_builder_9681_);
-v_val_24099__boxed_9693_ = lean_unbox_usize(v_val_9682_);
+v_val_24101__boxed_9693_ = lean_unbox_usize(v_val_9682_);
 lean_dec(v_val_9682_);
-v_a_24100__boxed_9694_ = lean_unbox_usize(v_a_9683_);
+v_a_24102__boxed_9694_ = lean_unbox_usize(v_a_9683_);
 lean_dec(v_a_9683_);
 v_i_boxed_9695_ = lean_unbox_usize(v_i_9685_);
 lean_dec(v_i_9685_);
 v_stop_boxed_9696_ = lean_unbox_usize(v_stop_9686_);
 lean_dec(v_stop_9686_);
-v_res_9697_ = l___private_Init_Data_Array_Basic_0__Array_foldlMUnsafe_fold___at___00Lean_IR_EmitLLVM_emitCase_spec__0(v___x_9679_, v_llvmctx_boxed_9691_, v_builder_boxed_9692_, v_val_24099__boxed_9693_, v_a_24100__boxed_9694_, v_as_9684_, v_i_boxed_9695_, v_stop_boxed_9696_, v_b_9687_, v___y_9688_, v___y_9689_);
+v_res_9697_ = l___private_Init_Data_Array_Basic_0__Array_foldlMUnsafe_fold___at___00Lean_IR_EmitLLVM_emitCase_spec__0(v___x_9679_, v_llvmctx_boxed_9691_, v_builder_boxed_9692_, v_val_24101__boxed_9693_, v_a_24102__boxed_9694_, v_as_9684_, v_i_boxed_9695_, v_stop_boxed_9696_, v_b_9687_, v___y_9688_, v___y_9689_);
 lean_dec_ref(v_as_9684_);
 return v_res_9697_;
 }

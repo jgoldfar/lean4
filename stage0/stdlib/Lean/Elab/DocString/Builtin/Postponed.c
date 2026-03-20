@@ -79,7 +79,7 @@ lean_object* l_Lean_Expr_const___override(lean_object*, lean_object*);
 lean_object* l___private_Lean_Data_Name_0__Lean_Name_quickCmpImpl___boxed(lean_object*, lean_object*);
 lean_object* lean_nat_to_int(lean_object*);
 lean_object* lean_string_length(lean_object*);
-lean_object* l_Lean_instToExprName___private__1(lean_object*);
+lean_object* l___private_Lean_ToExpr_0__Lean_Name_toExprAux(lean_object*);
 lean_object* l_Lean_Expr_app___override(lean_object*, lean_object*);
 LEAN_EXPORT uint8_t l_Lean_Doc_instBEqPostponedImport_beq(lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l_Lean_Doc_instBEqPostponedImport_beq___boxed(lean_object*, lean_object*);
@@ -557,7 +557,7 @@ _start:
 {
 lean_object* v___x_88_; lean_object* v___x_89_; lean_object* v___x_90_; 
 v___x_88_ = lean_obj_once(&l_Lean_Doc_instToExprPostponedImport___lam__0___closed__5, &l_Lean_Doc_instToExprPostponedImport___lam__0___closed__5_once, _init_l_Lean_Doc_instToExprPostponedImport___lam__0___closed__5);
-v___x_89_ = l_Lean_instToExprName___private__1(v_x_87_);
+v___x_89_ = l___private_Lean_ToExpr_0__Lean_Name_toExprAux(v_x_87_);
 v___x_90_ = l_Lean_Expr_app___override(v___x_88_, v___x_89_);
 return v___x_90_;
 }

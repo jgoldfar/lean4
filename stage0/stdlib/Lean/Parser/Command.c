@@ -11569,11 +11569,11 @@ return v___x_1178_;
 LEAN_EXPORT lean_object* l_Lean_Parser_Command_declId___lam__0___boxed(lean_object* v___x_1196_, lean_object* v_c_1197_){
 _start:
 {
-uint8_t v___x_244__boxed_1198_; uint32_t v_c_boxed_1199_; uint8_t v_res_1200_; lean_object* v_r_1201_; 
-v___x_244__boxed_1198_ = lean_unbox(v___x_1196_);
+uint8_t v___x_245__boxed_1198_; uint32_t v_c_boxed_1199_; uint8_t v_res_1200_; lean_object* v_r_1201_; 
+v___x_245__boxed_1198_ = lean_unbox(v___x_1196_);
 v_c_boxed_1199_ = lean_unbox_uint32(v_c_1197_);
 lean_dec(v_c_1197_);
-v_res_1200_ = l_Lean_Parser_Command_declId___lam__0(v___x_244__boxed_1198_, v_c_boxed_1199_);
+v_res_1200_ = l_Lean_Parser_Command_declId___lam__0(v___x_245__boxed_1198_, v_c_boxed_1199_);
 v_r_1201_ = lean_box(v_res_1200_);
 return v_r_1201_;
 }

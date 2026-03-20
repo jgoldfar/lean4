@@ -6149,10 +6149,10 @@ lean_object* v___y_2242_ = _args[19];
 lean_object* v___y_2243_ = _args[20];
 _start:
 {
-uint8_t v___x_2619__boxed_2244_; uint8_t v_kind_boxed_2245_; lean_object* v_res_2246_; 
-v___x_2619__boxed_2244_ = lean_unbox(v___x_2227_);
+uint8_t v___x_2620__boxed_2244_; uint8_t v_kind_boxed_2245_; lean_object* v_res_2246_; 
+v___x_2620__boxed_2244_ = lean_unbox(v___x_2227_);
 v_kind_boxed_2245_ = lean_unbox(v_kind_2229_);
-v_res_2246_ = l_Lean_Elab_WF_packMutual___lam__0(v_preDefs_2223_, v_perms_2224_, v___x_2225_, v_argsPacker_2226_, v___x_2619__boxed_2244_, v_ref_2228_, v_kind_boxed_2245_, v_levelParams_2230_, v_modifiers_2231_, v_newFn_2232_, v_binders_2233_, v_numSectionVars_2234_, v_value_2235_, v_termination_2236_, v_fixedParamPerms_2237_, v_ys_2238_, v___y_2239_, v___y_2240_, v___y_2241_, v___y_2242_);
+v_res_2246_ = l_Lean_Elab_WF_packMutual___lam__0(v_preDefs_2223_, v_perms_2224_, v___x_2225_, v_argsPacker_2226_, v___x_2620__boxed_2244_, v_ref_2228_, v_kind_boxed_2245_, v_levelParams_2230_, v_modifiers_2231_, v_newFn_2232_, v_binders_2233_, v_numSectionVars_2234_, v_value_2235_, v_termination_2236_, v_fixedParamPerms_2237_, v_ys_2238_, v___y_2239_, v___y_2240_, v___y_2241_, v___y_2242_);
 lean_dec_ref(v_perms_2224_);
 return v_res_2246_;
 }

@@ -531,9 +531,9 @@ goto _start;
 LEAN_EXPORT lean_object* l_Array_binSearchAux___at___00Lean_isDeclMeta_spec__0___redArg___boxed(lean_object* v___x_178_, lean_object* v_as_179_, lean_object* v_k_180_, lean_object* v_x_181_, lean_object* v_x_182_){
 _start:
 {
-uint8_t v___x_434__boxed_183_; uint8_t v_res_184_; lean_object* v_r_185_; 
-v___x_434__boxed_183_ = lean_unbox(v___x_178_);
-v_res_184_ = l_Array_binSearchAux___at___00Lean_isDeclMeta_spec__0___redArg(v___x_434__boxed_183_, v_as_179_, v_k_180_, v_x_181_, v_x_182_);
+uint8_t v___x_435__boxed_183_; uint8_t v_res_184_; lean_object* v_r_185_; 
+v___x_435__boxed_183_ = lean_unbox(v___x_178_);
+v_res_184_ = l_Array_binSearchAux___at___00Lean_isDeclMeta_spec__0___redArg(v___x_435__boxed_183_, v_as_179_, v_k_180_, v_x_181_, v_x_182_);
 lean_dec(v_k_180_);
 lean_dec_ref(v_as_179_);
 v_r_185_ = lean_box(v_res_184_);
@@ -668,9 +668,9 @@ return v___x_232_;
 LEAN_EXPORT lean_object* l_Array_binSearchAux___at___00Lean_isDeclMeta_spec__0___boxed(lean_object* v___x_233_, lean_object* v_as_234_, lean_object* v_k_235_, lean_object* v_x_236_, lean_object* v_x_237_, lean_object* v_x_238_){
 _start:
 {
-uint8_t v___x_533__boxed_239_; uint8_t v_res_240_; lean_object* v_r_241_; 
-v___x_533__boxed_239_ = lean_unbox(v___x_233_);
-v_res_240_ = l_Array_binSearchAux___at___00Lean_isDeclMeta_spec__0(v___x_533__boxed_239_, v_as_234_, v_k_235_, v_x_236_, v_x_237_, v_x_238_);
+uint8_t v___x_534__boxed_239_; uint8_t v_res_240_; lean_object* v_r_241_; 
+v___x_534__boxed_239_ = lean_unbox(v___x_233_);
+v_res_240_ = l_Array_binSearchAux___at___00Lean_isDeclMeta_spec__0(v___x_534__boxed_239_, v_as_234_, v_k_235_, v_x_236_, v_x_237_, v_x_238_);
 lean_dec(v_k_235_);
 lean_dec_ref(v_as_234_);
 v_r_241_ = lean_box(v_res_240_);

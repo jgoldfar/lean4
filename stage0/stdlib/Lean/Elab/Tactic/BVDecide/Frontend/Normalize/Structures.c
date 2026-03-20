@@ -3345,9 +3345,9 @@ return v___x_1084_;
 LEAN_EXPORT lean_object* l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_structuresPass___lam__0___boxed(lean_object* v___x_1085_, lean_object* v_interestingStructures_1086_, lean_object* v_decl_1087_, lean_object* v___y_1088_, lean_object* v___y_1089_, lean_object* v___y_1090_, lean_object* v___y_1091_, lean_object* v___y_1092_){
 _start:
 {
-uint8_t v___x_3322__boxed_1093_; lean_object* v_res_1094_; 
-v___x_3322__boxed_1093_ = lean_unbox(v___x_1085_);
-v_res_1094_ = l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_structuresPass___lam__0(v___x_3322__boxed_1093_, v_interestingStructures_1086_, v_decl_1087_, v___y_1088_, v___y_1089_, v___y_1090_, v___y_1091_);
+uint8_t v___x_3323__boxed_1093_; lean_object* v_res_1094_; 
+v___x_3323__boxed_1093_ = lean_unbox(v___x_1085_);
+v_res_1094_ = l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_structuresPass___lam__0(v___x_3323__boxed_1093_, v_interestingStructures_1086_, v_decl_1087_, v___y_1088_, v___y_1089_, v___y_1090_, v___y_1091_);
 lean_dec(v___y_1091_);
 lean_dec_ref(v___y_1090_);
 lean_dec(v___y_1089_);

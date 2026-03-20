@@ -473,6 +473,8 @@ lean_inc_ref(v_env_102_);
 lean_dec(v___x_101_);
 v_options_103_ = lean_ctor_get(v___y_95_, 2);
 v___x_104_ = l_Lean_Environment_evalConst___redArg(v_env_102_, v_options_103_, v_constName_93_, v_checkMeta_94_);
+lean_dec(v_constName_93_);
+lean_dec_ref(v_env_102_);
 v___x_105_ = l_Lean_ofExcept___at___00Lean_evalConst___at___00Lean_PrettyPrinter_runForNodeKind_spec__2_spec__4___redArg(v___x_104_, v___y_95_, v___y_96_);
 return v___x_105_;
 }
@@ -490,6 +492,8 @@ lean_inc_ref(v_env_108_);
 lean_dec(v___x_107_);
 v_options_109_ = lean_ctor_get(v___y_95_, 2);
 v___x_110_ = l_Lean_Environment_evalConst___redArg(v_env_108_, v_options_109_, v_constName_93_, v_checkMeta_94_);
+lean_dec(v_constName_93_);
+lean_dec_ref(v_env_108_);
 v___x_111_ = l_Lean_ofExcept___at___00Lean_evalConst___at___00Lean_PrettyPrinter_runForNodeKind_spec__2_spec__4___redArg(v___x_110_, v___y_95_, v___y_96_);
 return v___x_111_;
 }

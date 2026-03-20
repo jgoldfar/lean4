@@ -1725,9 +1725,9 @@ return v___x_409_;
 LEAN_EXPORT lean_object* l_List_forIn_x27_loop___at___00main_spec__5___redArg___boxed(lean_object* v___y_417_, lean_object* v_as_x27_418_, lean_object* v_b_419_, lean_object* v___y_420_){
 _start:
 {
-uint8_t v___y_7701__boxed_421_; lean_object* v_res_422_; 
-v___y_7701__boxed_421_ = lean_unbox(v___y_417_);
-v_res_422_ = l_List_forIn_x27_loop___at___00main_spec__5___redArg(v___y_7701__boxed_421_, v_as_x27_418_, v_b_419_);
+uint8_t v___y_7702__boxed_421_; lean_object* v_res_422_; 
+v___y_7702__boxed_421_ = lean_unbox(v___y_417_);
+v_res_422_ = l_List_forIn_x27_loop___at___00main_spec__5___redArg(v___y_7702__boxed_421_, v_as_x27_418_, v_b_419_);
 return v_res_422_;
 }
 }
@@ -2379,13 +2379,13 @@ goto _start;
 LEAN_EXPORT lean_object* l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00main_spec__4___boxed(lean_object* v___y_594_, lean_object* v_as_595_, lean_object* v_sz_596_, lean_object* v_i_597_, lean_object* v_b_598_, lean_object* v___y_599_){
 _start:
 {
-uint8_t v___y_7961__boxed_600_; size_t v_sz_boxed_601_; size_t v_i_boxed_602_; lean_object* v_res_603_; 
-v___y_7961__boxed_600_ = lean_unbox(v___y_594_);
+uint8_t v___y_7962__boxed_600_; size_t v_sz_boxed_601_; size_t v_i_boxed_602_; lean_object* v_res_603_; 
+v___y_7962__boxed_600_ = lean_unbox(v___y_594_);
 v_sz_boxed_601_ = lean_unbox_usize(v_sz_596_);
 lean_dec(v_sz_596_);
 v_i_boxed_602_ = lean_unbox_usize(v_i_597_);
 lean_dec(v_i_597_);
-v_res_603_ = l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00main_spec__4(v___y_7961__boxed_600_, v_as_595_, v_sz_boxed_601_, v_i_boxed_602_, v_b_598_);
+v_res_603_ = l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00main_spec__4(v___y_7962__boxed_600_, v_as_595_, v_sz_boxed_601_, v_i_boxed_602_, v_b_598_);
 lean_dec_ref(v_as_595_);
 return v_res_603_;
 }
@@ -3019,9 +3019,9 @@ return v___x_779_;
 LEAN_EXPORT lean_object* l_List_forIn_x27_loop___at___00main_spec__5___boxed(lean_object* v___y_780_, lean_object* v_as_781_, lean_object* v_as_x27_782_, lean_object* v_b_783_, lean_object* v_a_784_, lean_object* v___y_785_){
 _start:
 {
-uint8_t v___y_8336__boxed_786_; lean_object* v_res_787_; 
-v___y_8336__boxed_786_ = lean_unbox(v___y_780_);
-v_res_787_ = l_List_forIn_x27_loop___at___00main_spec__5(v___y_8336__boxed_786_, v_as_781_, v_as_x27_782_, v_b_783_, v_a_784_);
+uint8_t v___y_8337__boxed_786_; lean_object* v_res_787_; 
+v___y_8337__boxed_786_ = lean_unbox(v___y_780_);
+v_res_787_ = l_List_forIn_x27_loop___at___00main_spec__5(v___y_8337__boxed_786_, v_as_781_, v_as_x27_782_, v_b_783_, v_a_784_);
 lean_dec(v_as_781_);
 return v_res_787_;
 }
@@ -3056,20 +3056,8 @@ void lean_initialize();
 #if defined(WIN32) || defined(_WIN32)
 #include <windows.h>
 #endif
-int main(int argc, char ** argv) {
-#if defined(WIN32) || defined(_WIN32)
-  SetErrorMode(SEM_FAILCRITICALERRORS);
-  SetConsoleOutputCP(CP_UTF8);
-#endif
-  lean_object* in; lean_object* res;
-  argv = lean_setup_args(argc, argv);
-  lean_initialize();
-  res = initialize_LeanChecker(1 /* builtin */);
-  lean_io_mark_end_initialization();
-  if (lean_io_result_is_ok(res)) {
-    lean_dec_ref(res);
-    lean_init_task_manager();
-    in = lean_box(0);
+lean_object* run_main(int argc, char ** argv) {
+    lean_object* in = lean_box(0);
     int i = argc;
     while (i > 1) {
       lean_object* n;
@@ -3077,7 +3065,22 @@ int main(int argc, char ** argv) {
       n = lean_alloc_ctor(1,2,0); lean_ctor_set(n, 0, lean_mk_string(argv[i])); lean_ctor_set(n, 1, in);
       in = n;
     }
-    res = _lean_main(in);
+    return _lean_main(in);
+}
+int main(int argc, char ** argv) {
+#if defined(WIN32) || defined(_WIN32)
+  SetErrorMode(SEM_FAILCRITICALERRORS);
+  SetConsoleOutputCP(CP_UTF8);
+#endif
+  lean_object* res;
+  argv = lean_setup_args(argc, argv);
+  lean_initialize();
+  res = initialize_LeanChecker(1 /* builtin */);
+  lean_io_mark_end_initialization();
+  if (lean_io_result_is_ok(res)) {
+    lean_dec_ref(res);
+    lean_init_task_manager();
+    res = lean_run_main(&run_main, argc, argv);
   }
   lean_finalize_task_manager();
   if (lean_io_result_is_ok(res)) {

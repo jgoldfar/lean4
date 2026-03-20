@@ -278,9 +278,9 @@ return v___x_37_;
 LEAN_EXPORT lean_object* l___private_Lean_Elab_PreDefinition_Structural_Preprocess_0__Lean_Elab_Structural_shouldBetaReduce___lam__0___boxed(lean_object* v___x_38_, lean_object* v_recFnNames_39_, lean_object* v_e_40_){
 _start:
 {
-uint8_t v___x_322__boxed_41_; uint8_t v_res_42_; lean_object* v_r_43_; 
-v___x_322__boxed_41_ = lean_unbox(v___x_38_);
-v_res_42_ = l___private_Lean_Elab_PreDefinition_Structural_Preprocess_0__Lean_Elab_Structural_shouldBetaReduce___lam__0(v___x_322__boxed_41_, v_recFnNames_39_, v_e_40_);
+uint8_t v___x_324__boxed_41_; uint8_t v_res_42_; lean_object* v_r_43_; 
+v___x_324__boxed_41_ = lean_unbox(v___x_38_);
+v_res_42_ = l___private_Lean_Elab_PreDefinition_Structural_Preprocess_0__Lean_Elab_Structural_shouldBetaReduce___lam__0(v___x_324__boxed_41_, v_recFnNames_39_, v_e_40_);
 lean_dec_ref(v_e_40_);
 lean_dec_ref(v_recFnNames_39_);
 v_r_43_ = lean_box(v_res_42_);

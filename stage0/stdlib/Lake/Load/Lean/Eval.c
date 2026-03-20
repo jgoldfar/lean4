@@ -298,6 +298,8 @@ else
 lean_object* v___x_41_; 
 lean_dec(v_inst_25_);
 v___x_41_ = l_Lean_Environment_evalConst___redArg(v_env_23_, v_opts_24_, v_const_26_, v___x_39_);
+lean_dec(v_const_26_);
+lean_dec_ref(v_env_23_);
 return v___x_41_;
 }
 }

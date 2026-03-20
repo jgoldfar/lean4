@@ -2279,9 +2279,9 @@ return v___x_532_;
 LEAN_EXPORT lean_object* l_Lean_Syntax_structRangeEqWithTraceReuse___lam__0___boxed(lean_object* v___x_534_, lean_object* v_x_535_){
 _start:
 {
-uint8_t v___x_205__boxed_536_; uint8_t v_res_537_; lean_object* v_r_538_; 
-v___x_205__boxed_536_ = lean_unbox(v___x_534_);
-v_res_537_ = l_Lean_Syntax_structRangeEqWithTraceReuse___lam__0(v___x_205__boxed_536_, v_x_535_);
+uint8_t v___x_207__boxed_536_; uint8_t v_res_537_; lean_object* v_r_538_; 
+v___x_207__boxed_536_ = lean_unbox(v___x_534_);
+v_res_537_ = l_Lean_Syntax_structRangeEqWithTraceReuse___lam__0(v___x_207__boxed_536_, v_x_535_);
 v_r_538_ = lean_box(v_res_537_);
 return v_r_538_;
 }

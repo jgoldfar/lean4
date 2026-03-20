@@ -523,6 +523,8 @@ lean_inc_ref(v_env_127_);
 lean_dec(v___x_126_);
 v_options_128_ = lean_ctor_get(v___y_120_, 2);
 v___x_129_ = l_Lean_Environment_evalConst___redArg(v_env_127_, v_options_128_, v_constName_116_, v_checkMeta_117_);
+lean_dec(v_constName_116_);
+lean_dec_ref(v_env_127_);
 v___x_130_ = l_Lean_ofExcept___at___00Lean_evalConst___at___00__private_Lean_Meta_Native_0__Lean_Meta_nativeEqTrue_unsafe__1_spec__0_spec__0___redArg(v___x_129_, v___y_118_, v___y_119_, v___y_120_, v___y_121_);
 return v___x_130_;
 }
@@ -540,6 +542,8 @@ lean_inc_ref(v_env_133_);
 lean_dec(v___x_132_);
 v_options_134_ = lean_ctor_get(v___y_120_, 2);
 v___x_135_ = l_Lean_Environment_evalConst___redArg(v_env_133_, v_options_134_, v_constName_116_, v_checkMeta_117_);
+lean_dec(v_constName_116_);
+lean_dec_ref(v_env_133_);
 v___x_136_ = l_Lean_ofExcept___at___00Lean_evalConst___at___00__private_Lean_Meta_Native_0__Lean_Meta_nativeEqTrue_unsafe__1_spec__0_spec__0___redArg(v___x_135_, v___y_118_, v___y_119_, v___y_120_, v___y_121_);
 return v___x_136_;
 }

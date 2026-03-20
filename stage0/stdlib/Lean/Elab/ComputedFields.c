@@ -5773,9 +5773,9 @@ return v___x_1723_;
 LEAN_EXPORT lean_object* l_Array_zipWithMAux___at___00Lean_Elab_ComputedFields_overrideCasesOn_spec__4___lam__0___boxed(lean_object* v_b_1726_, lean_object* v_a_1727_, lean_object* v_constMotive_1728_, lean_object* v___x_1729_, lean_object* v_compFieldVars_1730_, lean_object* v_args_1731_, lean_object* v_x_1732_, lean_object* v___y_1733_, lean_object* v___y_1734_, lean_object* v___y_1735_, lean_object* v___y_1736_, lean_object* v___y_1737_, lean_object* v___y_1738_){
 _start:
 {
-uint8_t v___x_12739__boxed_1739_; lean_object* v_res_1740_; 
-v___x_12739__boxed_1739_ = lean_unbox(v___x_1729_);
-v_res_1740_ = l_Array_zipWithMAux___at___00Lean_Elab_ComputedFields_overrideCasesOn_spec__4___lam__0(v_b_1726_, v_a_1727_, v_constMotive_1728_, v___x_12739__boxed_1739_, v_compFieldVars_1730_, v_args_1731_, v_x_1732_, v___y_1733_, v___y_1734_, v___y_1735_, v___y_1736_, v___y_1737_);
+uint8_t v___x_12740__boxed_1739_; lean_object* v_res_1740_; 
+v___x_12740__boxed_1739_ = lean_unbox(v___x_1729_);
+v_res_1740_ = l_Array_zipWithMAux___at___00Lean_Elab_ComputedFields_overrideCasesOn_spec__4___lam__0(v_b_1726_, v_a_1727_, v_constMotive_1728_, v___x_12740__boxed_1739_, v_compFieldVars_1730_, v_args_1731_, v_x_1732_, v___y_1733_, v___y_1734_, v___y_1735_, v___y_1736_, v___y_1737_);
 lean_dec_ref(v___y_1733_);
 lean_dec_ref(v_x_1732_);
 lean_dec_ref(v_args_1731_);
@@ -6672,12 +6672,12 @@ goto v_reusejp_2025_;
 }
 v_reusejp_2025_:
 {
-lean_object* v___x_2027_; lean_object* v___x_2028_; lean_object* v___x_2029_; lean_object* v___x_11266__overap_2030_; lean_object* v___x_2031_; 
+lean_object* v___x_2027_; lean_object* v___x_2028_; lean_object* v___x_2029_; lean_object* v___x_11267__overap_2030_; lean_object* v___x_2031_; 
 v___x_2027_ = l_ReaderT_instMonad___redArg(v___x_2026_);
 v___x_2028_ = lean_box(0);
 v___x_2029_ = l_instInhabitedOfMonad___redArg(v___x_2027_, v___x_2028_);
-v___x_11266__overap_2030_ = lean_panic_fn(v___x_2029_, v_msg_1971_);
-v___x_2031_ = lean_apply_6(v___x_11266__overap_2030_, v___y_1972_, v___y_1973_, v___y_1974_, v___y_1975_, v___y_1976_, lean_box(0));
+v___x_11267__overap_2030_ = lean_panic_fn(v___x_2029_, v_msg_1971_);
+v___x_2031_ = lean_apply_6(v___x_11267__overap_2030_, v___y_1972_, v___y_1973_, v___y_1974_, v___y_1975_, v___y_1976_, lean_box(0));
 return v___x_2031_;
 }
 }

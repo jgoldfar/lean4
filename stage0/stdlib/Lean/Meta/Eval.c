@@ -588,6 +588,8 @@ lean_inc_ref(v_env_158_);
 lean_dec(v___x_157_);
 v_options_159_ = lean_ctor_get(v___y_151_, 2);
 v___x_160_ = l_Lean_Environment_evalConst___redArg(v_env_158_, v_options_159_, v_constName_147_, v_checkMeta_148_);
+lean_dec(v_constName_147_);
+lean_dec_ref(v_env_158_);
 v___x_161_ = l_Lean_ofExcept___at___00Lean_evalConst___at___00Lean_Meta_evalExprCore_spec__4_spec__5___redArg(v___x_160_, v___y_149_, v___y_150_, v___y_151_, v___y_152_);
 return v___x_161_;
 }
@@ -605,6 +607,8 @@ lean_inc_ref(v_env_164_);
 lean_dec(v___x_163_);
 v_options_165_ = lean_ctor_get(v___y_151_, 2);
 v___x_166_ = l_Lean_Environment_evalConst___redArg(v_env_164_, v_options_165_, v_constName_147_, v_checkMeta_148_);
+lean_dec(v_constName_147_);
+lean_dec_ref(v_env_164_);
 v___x_167_ = l_Lean_ofExcept___at___00Lean_evalConst___at___00Lean_Meta_evalExprCore_spec__4_spec__5___redArg(v___x_166_, v___y_149_, v___y_150_, v___y_151_, v___y_152_);
 return v___x_167_;
 }

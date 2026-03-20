@@ -2056,8 +2056,8 @@ goto v___jp_472_;
 }
 else
 {
-lean_dec_ref(v_pre_491_);
 lean_dec(v_pre_492_);
+lean_dec_ref(v_pre_491_);
 lean_dec_ref(v_pre_490_);
 lean_dec_ref(v_kind_489_);
 lean_dec_ref(v___x_487_);
@@ -2083,8 +2083,8 @@ goto v___jp_472_;
 }
 else
 {
-lean_dec_ref(v___x_487_);
 lean_dec(v_kind_489_);
+lean_dec_ref(v___x_487_);
 goto v___jp_472_;
 }
 }
@@ -2221,7 +2221,7 @@ goto v___jp_571_;
 v___jp_535_:
 {
 lean_object* v___x_540_; lean_object* v_env_541_; lean_object* v_messages_542_; lean_object* v_scopes_543_; lean_object* v_usedQuotCtxts_544_; lean_object* v_nextMacroScope_545_; lean_object* v_maxRecDepth_546_; lean_object* v_ngen_547_; lean_object* v_auxDeclNGen_548_; lean_object* v_infoState_549_; lean_object* v_traceState_550_; lean_object* v_snapshotTasks_551_; lean_object* v___x_553_; uint8_t v_isShared_554_; uint8_t v_isSharedCheck_570_; 
-v___x_540_ = lean_st_ref_take(v___y_538_);
+v___x_540_ = lean_st_ref_take(v___y_537_);
 v_env_541_ = lean_ctor_get(v___x_540_, 0);
 v_messages_542_ = lean_ctor_get(v___x_540_, 1);
 v_scopes_543_ = lean_ctor_get(v___x_540_, 2);
@@ -2269,8 +2269,8 @@ lean_inc(v_asyncMode_557_);
 lean_dec_ref(v_toEnvExtension_556_);
 v___x_558_ = l_Lean_TSyntax_getId(v___y_536_);
 lean_dec(v___y_536_);
-v___x_559_ = l_Lean_TSyntax_getString(v___y_537_);
-lean_dec(v___y_537_);
+v___x_559_ = l_Lean_TSyntax_getString(v___y_538_);
+lean_dec(v___y_538_);
 v___x_560_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_560_, 0, v___x_559_);
 lean_ctor_set(v___x_560_, 1, v_a_539_);
@@ -2307,7 +2307,7 @@ goto v_reusejp_564_;
 v_reusejp_564_:
 {
 lean_object* v___x_566_; lean_object* v___x_567_; lean_object* v___x_568_; 
-v___x_566_ = lean_st_ref_set(v___y_538_, v___x_565_);
+v___x_566_ = lean_st_ref_set(v___y_537_, v___x_565_);
 v___x_567_ = lean_box(0);
 v___x_568_ = lean_alloc_ctor(0, 1, 0);
 lean_ctor_set(v___x_568_, 0, v___x_567_);
@@ -2360,8 +2360,8 @@ lean_object* v___x_587_;
 lean_dec_ref(v___y_573_);
 v___x_587_ = lean_box(0);
 v___y_536_ = v_tag_576_;
-v___y_537_ = v_user_582_;
-v___y_538_ = v___y_574_;
+v___y_537_ = v___y_574_;
+v___y_538_ = v_user_582_;
 v_a_539_ = v___x_587_;
 goto v___jp_535_;
 }
@@ -2411,8 +2411,8 @@ goto v_reusejp_594_;
 v_reusejp_594_:
 {
 v___y_536_ = v_tag_576_;
-v___y_537_ = v_user_582_;
-v___y_538_ = v___y_574_;
+v___y_537_ = v___y_574_;
+v___y_538_ = v_user_582_;
 v_a_539_ = v___x_595_;
 goto v___jp_535_;
 }

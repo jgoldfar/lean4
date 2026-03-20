@@ -7633,18 +7633,35 @@ return v_res_2842_;
 LEAN_EXPORT lean_object* l___private_Lean_Meta_Tactic_Grind_Action_0__Lean_Meta_Grind_Action_loop_match__1_splitter(lean_object* v_motive_2843_, lean_object* v_n_2844_, lean_object* v_h__1_2845_, lean_object* v_h__2_2846_){
 _start:
 {
-lean_object* v___x_2847_; 
-v___x_2847_ = l___private_Lean_Meta_Tactic_Grind_Action_0__Lean_Meta_Grind_Action_loop_match__1_splitter___redArg(v_n_2844_, v_h__1_2845_, v_h__2_2846_);
-return v___x_2847_;
+lean_object* v_zero_2847_; uint8_t v_isZero_2848_; 
+v_zero_2847_ = lean_unsigned_to_nat(0u);
+v_isZero_2848_ = lean_nat_dec_eq(v_n_2844_, v_zero_2847_);
+if (v_isZero_2848_ == 1)
+{
+lean_object* v___x_2849_; lean_object* v___x_2850_; 
+lean_dec(v_h__2_2846_);
+v___x_2849_ = lean_box(0);
+v___x_2850_ = lean_apply_1(v_h__1_2845_, v___x_2849_);
+return v___x_2850_;
+}
+else
+{
+lean_object* v_one_2851_; lean_object* v_n_2852_; lean_object* v___x_2853_; 
+lean_dec(v_h__1_2845_);
+v_one_2851_ = lean_unsigned_to_nat(1u);
+v_n_2852_ = lean_nat_sub(v_n_2844_, v_one_2851_);
+v___x_2853_ = lean_apply_1(v_h__2_2846_, v_n_2852_);
+return v___x_2853_;
 }
 }
-LEAN_EXPORT lean_object* l___private_Lean_Meta_Tactic_Grind_Action_0__Lean_Meta_Grind_Action_loop_match__1_splitter___boxed(lean_object* v_motive_2848_, lean_object* v_n_2849_, lean_object* v_h__1_2850_, lean_object* v_h__2_2851_){
+}
+LEAN_EXPORT lean_object* l___private_Lean_Meta_Tactic_Grind_Action_0__Lean_Meta_Grind_Action_loop_match__1_splitter___boxed(lean_object* v_motive_2854_, lean_object* v_n_2855_, lean_object* v_h__1_2856_, lean_object* v_h__2_2857_){
 _start:
 {
-lean_object* v_res_2852_; 
-v_res_2852_ = l___private_Lean_Meta_Tactic_Grind_Action_0__Lean_Meta_Grind_Action_loop_match__1_splitter(v_motive_2848_, v_n_2849_, v_h__1_2850_, v_h__2_2851_);
-lean_dec(v_n_2849_);
-return v_res_2852_;
+lean_object* v_res_2858_; 
+v_res_2858_ = l___private_Lean_Meta_Tactic_Grind_Action_0__Lean_Meta_Grind_Action_loop_match__1_splitter(v_motive_2854_, v_n_2855_, v_h__1_2856_, v_h__2_2857_);
+lean_dec(v_n_2855_);
+return v_res_2858_;
 }
 }
 lean_object* runtime_initialize_Lean_Meta_Tactic_Grind_Types(uint8_t builtin);

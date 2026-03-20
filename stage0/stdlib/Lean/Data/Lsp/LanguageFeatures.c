@@ -72,7 +72,7 @@ lean_object* lean_nat_to_int(lean_object*);
 uint8_t lean_int_dec_lt(lean_object*, lean_object*);
 lean_object* lean_nat_abs(lean_object*);
 uint8_t l_Lean_Lsp_instDecidableEqMarkupContent_decEq(lean_object*, lean_object*);
-uint8_t l_Lean_Json_instBEq___private__1(lean_object*, lean_object*);
+uint8_t l___private_Lean_Data_Json_Basic_0__Lean_Json_beq_x27(lean_object*, lean_object*);
 uint8_t lean_nat_dec_le(lean_object*, lean_object*);
 size_t lean_usize_of_nat(lean_object*);
 uint8_t lean_usize_dec_eq(size_t, size_t);
@@ -86,7 +86,7 @@ lean_object* l_Lean_Lsp_instFromJsonLocation_fromJson(lean_object*);
 lean_object* l_Lean_Lsp_instFromJsonCommand_fromJson(lean_object*);
 lean_object* l_Array_fromJson_x3f___redArg(lean_object*, lean_object*);
 lean_object* l_Lean_Lsp_instFromJsonResolveSupport_fromJson(lean_object*);
-uint64_t l_Lean_Json_instHashable___private__1(lean_object*);
+uint64_t l___private_Lean_Data_Json_Basic_0__Lean_Json_hash_x27(lean_object*);
 lean_object* l_Repr_addAppParen(lean_object*, lean_object*);
 lean_object* l_Lean_Lsp_instToJsonResolveSupport_toJson(lean_object*);
 lean_object* lean_mk_empty_array_with_capacity(lean_object*);
@@ -10385,7 +10385,7 @@ else
 lean_object* v_val_2083_; lean_object* v_val_2084_; uint8_t v___x_2085_; 
 v_val_2083_ = lean_ctor_get(v_x_2078_, 0);
 v_val_2084_ = lean_ctor_get(v_x_2079_, 0);
-v___x_2085_ = l_Lean_Json_instBEq___private__1(v_val_2083_, v_val_2084_);
+v___x_2085_ = l___private_Lean_Data_Json_Basic_0__Lean_Json_beq_x27(v_val_2083_, v_val_2084_);
 return v___x_2085_;
 }
 }
@@ -10763,7 +10763,7 @@ else
 {
 lean_object* v_val_2214_; uint64_t v___x_2215_; uint64_t v___x_2216_; uint64_t v___x_2217_; 
 v_val_2214_ = lean_ctor_get(v_data_x3f_2189_, 0);
-v___x_2215_ = l_Lean_Json_instHashable___private__1(v_val_2214_);
+v___x_2215_ = l___private_Lean_Data_Json_Basic_0__Lean_Json_hash_x27(v_val_2214_);
 v___x_2216_ = 13ULL;
 v___x_2217_ = lean_uint64_mix_hash(v___x_2215_, v___x_2216_);
 v___y_2192_ = v___x_2212_;
@@ -32391,7 +32391,7 @@ else
 {
 lean_object* v_val_7916_; uint64_t v___x_7917_; uint64_t v___x_7918_; uint64_t v___x_7919_; uint64_t v___x_7920_; 
 v_val_7916_ = lean_ctor_get(v_data_x3f_7903_, 0);
-v___x_7917_ = l_Lean_Json_instHashable___private__1(v_val_7916_);
+v___x_7917_ = l___private_Lean_Data_Json_Basic_0__Lean_Json_hash_x27(v_val_7916_);
 v___x_7918_ = 13ULL;
 v___x_7919_ = lean_uint64_mix_hash(v___x_7917_, v___x_7918_);
 v___x_7920_ = lean_uint64_mix_hash(v___x_7913_, v___x_7919_);

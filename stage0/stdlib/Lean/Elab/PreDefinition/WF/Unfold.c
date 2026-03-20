@@ -7631,10 +7631,10 @@ return v_res_2728_;
 LEAN_EXPORT lean_object* l_panic___at___00__private_Lean_Elab_PreDefinition_WF_Unfold_0__Lean_Elab_WF_matcherPushArg_spec__2(lean_object* v_msg_2730_, lean_object* v___y_2731_, lean_object* v___y_2732_, lean_object* v___y_2733_, lean_object* v___y_2734_, lean_object* v___y_2735_, lean_object* v___y_2736_, lean_object* v___y_2737_){
 _start:
 {
-lean_object* v___f_2739_; lean_object* v___x_47246__overap_2740_; lean_object* v___x_2741_; 
+lean_object* v___f_2739_; lean_object* v___x_47248__overap_2740_; lean_object* v___x_2741_; 
 v___f_2739_ = ((lean_object*)(l_panic___at___00__private_Lean_Elab_PreDefinition_WF_Unfold_0__Lean_Elab_WF_matcherPushArg_spec__2___closed__0));
-v___x_47246__overap_2740_ = lean_panic_fn(v___f_2739_, v_msg_2730_);
-v___x_2741_ = lean_apply_8(v___x_47246__overap_2740_, v___y_2731_, v___y_2732_, v___y_2733_, v___y_2734_, v___y_2735_, v___y_2736_, v___y_2737_, lean_box(0));
+v___x_47248__overap_2740_ = lean_panic_fn(v___f_2739_, v_msg_2730_);
+v___x_2741_ = lean_apply_8(v___x_47248__overap_2740_, v___y_2731_, v___y_2732_, v___y_2733_, v___y_2734_, v___y_2735_, v___y_2736_, v___y_2737_, lean_box(0));
 return v___x_2741_;
 }
 }
@@ -7768,11 +7768,11 @@ return v___x_2860_;
 LEAN_EXPORT lean_object* l___private_Lean_Elab_PreDefinition_WF_Unfold_0__Lean_Elab_WF_matcherPushArg___lam__0___boxed(lean_object* v___x_2861_, lean_object* v___x_2862_, lean_object* v___x_2863_, lean_object* v_xs_2864_, lean_object* v_motiveBody_2865_, lean_object* v___y_2866_, lean_object* v___y_2867_, lean_object* v___y_2868_, lean_object* v___y_2869_, lean_object* v___y_2870_, lean_object* v___y_2871_, lean_object* v___y_2872_, lean_object* v___y_2873_){
 _start:
 {
-uint8_t v___x_55058__boxed_2874_; uint8_t v___x_55059__boxed_2875_; uint8_t v___x_55060__boxed_2876_; lean_object* v_res_2877_; 
-v___x_55058__boxed_2874_ = lean_unbox(v___x_2861_);
-v___x_55059__boxed_2875_ = lean_unbox(v___x_2862_);
-v___x_55060__boxed_2876_ = lean_unbox(v___x_2863_);
-v_res_2877_ = l___private_Lean_Elab_PreDefinition_WF_Unfold_0__Lean_Elab_WF_matcherPushArg___lam__0(v___x_55058__boxed_2874_, v___x_55059__boxed_2875_, v___x_55060__boxed_2876_, v_xs_2864_, v_motiveBody_2865_, v___y_2866_, v___y_2867_, v___y_2868_, v___y_2869_, v___y_2870_, v___y_2871_, v___y_2872_);
+uint8_t v___x_55060__boxed_2874_; uint8_t v___x_55061__boxed_2875_; uint8_t v___x_55062__boxed_2876_; lean_object* v_res_2877_; 
+v___x_55060__boxed_2874_ = lean_unbox(v___x_2861_);
+v___x_55061__boxed_2875_ = lean_unbox(v___x_2862_);
+v___x_55062__boxed_2876_ = lean_unbox(v___x_2863_);
+v_res_2877_ = l___private_Lean_Elab_PreDefinition_WF_Unfold_0__Lean_Elab_WF_matcherPushArg___lam__0(v___x_55060__boxed_2874_, v___x_55061__boxed_2875_, v___x_55062__boxed_2876_, v_xs_2864_, v_motiveBody_2865_, v___y_2866_, v___y_2867_, v___y_2868_, v___y_2869_, v___y_2870_, v___y_2871_, v___y_2872_);
 lean_dec(v___y_2872_);
 lean_dec_ref(v___y_2871_);
 lean_dec(v___y_2870_);
@@ -8700,14 +8700,14 @@ goto v_reusejp_3247_;
 }
 v_reusejp_3247_:
 {
-lean_object* v___x_3249_; lean_object* v___x_3250_; lean_object* v___x_3251_; lean_object* v___x_3252_; lean_object* v___x_3253_; lean_object* v___x_49367__overap_3254_; lean_object* v___x_3255_; 
+lean_object* v___x_3249_; lean_object* v___x_3250_; lean_object* v___x_3251_; lean_object* v___x_3252_; lean_object* v___x_3253_; lean_object* v___x_49369__overap_3254_; lean_object* v___x_3255_; 
 v___x_3249_ = l_ReaderT_instMonad___redArg(v___x_3248_);
 v___x_3250_ = l_ReaderT_instMonad___redArg(v___x_3249_);
 v___x_3251_ = l_ReaderT_instMonad___redArg(v___x_3250_);
 v___x_3252_ = l_Lean_Meta_Match_instInhabitedAltParamInfo_default;
 v___x_3253_ = l_instInhabitedOfMonad___redArg(v___x_3251_, v___x_3252_);
-v___x_49367__overap_3254_ = lean_panic_fn(v___x_3253_, v_msg_3191_);
-v___x_3255_ = lean_apply_8(v___x_49367__overap_3254_, v___y_3192_, v___y_3193_, v___y_3194_, v___y_3195_, v___y_3196_, v___y_3197_, v___y_3198_, lean_box(0));
+v___x_49369__overap_3254_ = lean_panic_fn(v___x_3253_, v_msg_3191_);
+v___x_3255_ = lean_apply_8(v___x_49369__overap_3254_, v___y_3192_, v___y_3193_, v___y_3194_, v___y_3195_, v___y_3196_, v___y_3197_, v___y_3198_, lean_box(0));
 return v___x_3255_;
 }
 }

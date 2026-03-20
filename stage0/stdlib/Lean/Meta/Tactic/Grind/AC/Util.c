@@ -1905,7 +1905,7 @@ goto v_resetjp_803_;
 }
 v_resetjp_803_:
 {
-uint8_t v_ring_806_; lean_object* v___y_808_; uint8_t v___y_809_; 
+uint8_t v_ring_806_; uint8_t v___y_808_; lean_object* v___y_809_; 
 v_ring_806_ = lean_ctor_get_uint8(v_a_802_, sizeof(void*)*11 + 21);
 lean_dec(v_a_802_);
 if (v_ring_806_ == 0)
@@ -2047,7 +2047,7 @@ return v___x_871_;
 v___jp_807_:
 {
 lean_object* v___x_810_; 
-v___x_810_ = l_Lean_Meta_Grind_Arith_CommRing_getCommSemiringId_x3f(v___y_808_, v_a_786_, v_a_787_, v_a_788_, v_a_789_, v_a_790_, v_a_791_, v_a_792_, v_a_793_, v_a_794_, v_a_795_);
+v___x_810_ = l_Lean_Meta_Grind_Arith_CommRing_getCommSemiringId_x3f(v___y_809_, v_a_786_, v_a_787_, v_a_788_, v_a_789_, v_a_790_, v_a_791_, v_a_792_, v_a_793_, v_a_794_, v_a_795_);
 if (lean_obj_tag(v___x_810_) == 0)
 {
 lean_object* v_a_811_; lean_object* v___x_813_; uint8_t v_isShared_814_; uint8_t v_isSharedCheck_819_; 
@@ -2077,7 +2077,7 @@ goto v___jp_797_;
 else
 {
 lean_dec_ref(v_a_811_);
-if (v___y_809_ == 0)
+if (v___y_808_ == 0)
 {
 lean_del_object(v___x_813_);
 goto v___jp_797_;
@@ -2215,8 +2215,8 @@ v_resetjp_837_:
 if (lean_obj_tag(v_a_836_) == 0)
 {
 lean_del_object(v___x_838_);
-v___y_808_ = v___x_834_;
-v___y_809_ = v___x_831_;
+v___y_808_ = v___x_831_;
+v___y_809_ = v___x_834_;
 goto v___jp_807_;
 }
 else
@@ -2225,8 +2225,8 @@ lean_dec_ref(v_a_836_);
 if (v___x_831_ == 0)
 {
 lean_del_object(v___x_838_);
-v___y_808_ = v___x_834_;
-v___y_809_ = v___x_831_;
+v___y_808_ = v___x_831_;
+v___y_809_ = v___x_834_;
 goto v___jp_807_;
 }
 else

@@ -6260,10 +6260,10 @@ return v___x_1565_;
 LEAN_EXPORT lean_object* l___private_Lean_DocString_Parser_0__Lean_Doc_Parser_skipBlock_nonEmptyLine___lam__0___boxed(lean_object* v_x_1570_){
 _start:
 {
-uint32_t v_x_357__boxed_1571_; uint8_t v_res_1572_; lean_object* v_r_1573_; 
-v_x_357__boxed_1571_ = lean_unbox_uint32(v_x_1570_);
+uint32_t v_x_358__boxed_1571_; uint8_t v_res_1572_; lean_object* v_r_1573_; 
+v_x_358__boxed_1571_ = lean_unbox_uint32(v_x_1570_);
 lean_dec(v_x_1570_);
-v_res_1572_ = l___private_Lean_DocString_Parser_0__Lean_Doc_Parser_skipBlock_nonEmptyLine___lam__0(v_x_357__boxed_1571_);
+v_res_1572_ = l___private_Lean_DocString_Parser_0__Lean_Doc_Parser_skipBlock_nonEmptyLine___lam__0(v_x_358__boxed_1571_);
 v_r_1573_ = lean_box(v_res_1572_);
 return v_r_1573_;
 }
@@ -6355,13 +6355,13 @@ goto v___jp_1585_;
 LEAN_EXPORT lean_object* l___private_Lean_DocString_Parser_0__Lean_Doc_Parser_skipBlock_nonEmptyLine___lam__2___boxed(lean_object* v___x_1599_, lean_object* v___x_1600_, lean_object* v_c_1601_){
 _start:
 {
-uint32_t v___x_407__boxed_1602_; uint8_t v___x_408__boxed_1603_; uint32_t v_c_boxed_1604_; uint8_t v_res_1605_; lean_object* v_r_1606_; 
-v___x_407__boxed_1602_ = lean_unbox_uint32(v___x_1599_);
+uint32_t v___x_408__boxed_1602_; uint8_t v___x_409__boxed_1603_; uint32_t v_c_boxed_1604_; uint8_t v_res_1605_; lean_object* v_r_1606_; 
+v___x_408__boxed_1602_ = lean_unbox_uint32(v___x_1599_);
 lean_dec(v___x_1599_);
-v___x_408__boxed_1603_ = lean_unbox(v___x_1600_);
+v___x_409__boxed_1603_ = lean_unbox(v___x_1600_);
 v_c_boxed_1604_ = lean_unbox_uint32(v_c_1601_);
 lean_dec(v_c_1601_);
-v_res_1605_ = l___private_Lean_DocString_Parser_0__Lean_Doc_Parser_skipBlock_nonEmptyLine___lam__2(v___x_407__boxed_1602_, v___x_408__boxed_1603_, v_c_boxed_1604_);
+v_res_1605_ = l___private_Lean_DocString_Parser_0__Lean_Doc_Parser_skipBlock_nonEmptyLine___lam__2(v___x_408__boxed_1602_, v___x_409__boxed_1603_, v_c_boxed_1604_);
 v_r_1606_ = lean_box(v_res_1605_);
 return v_r_1606_;
 }
@@ -13924,9 +13924,9 @@ return v___x_5005_;
 LEAN_EXPORT lean_object* l_Lean_Doc_Parser_lookaheadOrderedListIndicator___lam__1___boxed(lean_object* v___x_5006_, lean_object* v___y_5007_, lean_object* v___y_5008_){
 _start:
 {
-uint8_t v___x_2754__boxed_5009_; lean_object* v_res_5010_; 
-v___x_2754__boxed_5009_ = lean_unbox(v___x_5006_);
-v_res_5010_ = l_Lean_Doc_Parser_lookaheadOrderedListIndicator___lam__1(v___x_2754__boxed_5009_, v___y_5007_, v___y_5008_);
+uint8_t v___x_2755__boxed_5009_; lean_object* v_res_5010_; 
+v___x_2755__boxed_5009_ = lean_unbox(v___x_5006_);
+v_res_5010_ = l_Lean_Doc_Parser_lookaheadOrderedListIndicator___lam__1(v___x_2755__boxed_5009_, v___y_5007_, v___y_5008_);
 return v_res_5010_;
 }
 }

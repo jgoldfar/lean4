@@ -4680,9 +4680,9 @@ return v___x_1399_;
 LEAN_EXPORT lean_object* l___private_Lean_Meta_Sym_InstantiateS_0__Lean_Meta_Sym_betaRevS___boxed(lean_object* v_f_1400_, lean_object* v_revArgs_1401_, lean_object* v_a_1402_, lean_object* v_a_1403_){
 _start:
 {
-uint8_t v_a_251__boxed_1404_; lean_object* v_res_1405_; 
-v_a_251__boxed_1404_ = lean_unbox(v_a_1402_);
-v_res_1405_ = l___private_Lean_Meta_Sym_InstantiateS_0__Lean_Meta_Sym_betaRevS(v_f_1400_, v_revArgs_1401_, v_a_251__boxed_1404_, v_a_1403_);
+uint8_t v_a_252__boxed_1404_; lean_object* v_res_1405_; 
+v_a_252__boxed_1404_ = lean_unbox(v_a_1402_);
+v_res_1405_ = l___private_Lean_Meta_Sym_InstantiateS_0__Lean_Meta_Sym_betaRevS(v_f_1400_, v_revArgs_1401_, v_a_252__boxed_1404_, v_a_1403_);
 lean_dec_ref(v_revArgs_1401_);
 return v_res_1405_;
 }

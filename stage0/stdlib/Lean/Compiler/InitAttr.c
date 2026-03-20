@@ -1871,10 +1871,10 @@ return v___x_462_;
 LEAN_EXPORT lean_object* l_Lean_registerInitAttrUnsafe___lam__2___boxed(lean_object* v_runAfterImport_463_, lean_object* v___x_464_, lean_object* v_env_465_, lean_object* v_declName_466_, lean_object* v_x_467_){
 _start:
 {
-uint8_t v_runAfterImport_boxed_468_; uint8_t v___x_4402__boxed_469_; uint8_t v_res_470_; lean_object* v_r_471_; 
+uint8_t v_runAfterImport_boxed_468_; uint8_t v___x_4403__boxed_469_; uint8_t v_res_470_; lean_object* v_r_471_; 
 v_runAfterImport_boxed_468_ = lean_unbox(v_runAfterImport_463_);
-v___x_4402__boxed_469_ = lean_unbox(v___x_464_);
-v_res_470_ = l_Lean_registerInitAttrUnsafe___lam__2(v_runAfterImport_boxed_468_, v___x_4402__boxed_469_, v_env_465_, v_declName_466_, v_x_467_);
+v___x_4403__boxed_469_ = lean_unbox(v___x_464_);
+v_res_470_ = l_Lean_registerInitAttrUnsafe___lam__2(v_runAfterImport_boxed_468_, v___x_4403__boxed_469_, v_env_465_, v_declName_466_, v_x_467_);
 lean_dec(v_x_467_);
 v_r_471_ = lean_box(v_res_470_);
 return v_r_471_;
@@ -3796,8 +3796,6 @@ return v___x_1290_;
 else
 {
 lean_object* v___x_1291_; lean_object* v___x_1292_; 
-lean_inc(v_fst_1284_);
-lean_inc_ref(v_env_1267_);
 v___x_1291_ = l_Lean_Environment_evalConst___redArg(v_env_1267_, v_opts_1268_, v_fst_1284_, v___y_1288_);
 v___x_1292_ = l_IO_ofExcept___at___00Lean_declareBuiltin_spec__1___redArg(v___x_1291_);
 if (lean_obj_tag(v___x_1292_) == 0)

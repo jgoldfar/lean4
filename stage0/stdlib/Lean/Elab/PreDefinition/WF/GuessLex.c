@@ -22016,11 +22016,11 @@ return v___x_7890_;
 LEAN_EXPORT lean_object* l___private_Lean_Elab_PreDefinition_WF_GuessLex_0__Lean_Elab_WF_GuessLex_solve_go___redArg___lam__4___boxed(lean_object* v_snd_7891_, lean_object* v_a_7892_, lean_object* v___x_7893_, lean_object* v_fst_7894_, lean_object* v_toPure_7895_, lean_object* v_fst_7896_, lean_object* v_all__le_7897_, lean_object* v_entry_7898_){
 _start:
 {
-uint8_t v___x_1121__boxed_7899_; uint8_t v_all__le_boxed_7900_; uint8_t v_entry_boxed_7901_; lean_object* v_res_7902_; 
-v___x_1121__boxed_7899_ = lean_unbox(v___x_7893_);
+uint8_t v___x_1122__boxed_7899_; uint8_t v_all__le_boxed_7900_; uint8_t v_entry_boxed_7901_; lean_object* v_res_7902_; 
+v___x_1122__boxed_7899_ = lean_unbox(v___x_7893_);
 v_all__le_boxed_7900_ = lean_unbox(v_all__le_7897_);
 v_entry_boxed_7901_ = lean_unbox(v_entry_7898_);
-v_res_7902_ = l___private_Lean_Elab_PreDefinition_WF_GuessLex_0__Lean_Elab_WF_GuessLex_solve_go___redArg___lam__4(v_snd_7891_, v_a_7892_, v___x_1121__boxed_7899_, v_fst_7894_, v_toPure_7895_, v_fst_7896_, v_all__le_boxed_7900_, v_entry_boxed_7901_);
+v_res_7902_ = l___private_Lean_Elab_PreDefinition_WF_GuessLex_0__Lean_Elab_WF_GuessLex_solve_go___redArg___lam__4(v_snd_7891_, v_a_7892_, v___x_1122__boxed_7899_, v_fst_7894_, v_toPure_7895_, v_fst_7896_, v_all__le_boxed_7900_, v_entry_boxed_7901_);
 return v_res_7902_;
 }
 }
@@ -22057,10 +22057,10 @@ return v___x_7919_;
 LEAN_EXPORT lean_object* l___private_Lean_Elab_PreDefinition_WF_GuessLex_0__Lean_Elab_WF_GuessLex_solve_go___redArg___lam__5___boxed(lean_object* v___x_7920_, lean_object* v_toPure_7921_, lean_object* v_all__le_7922_, lean_object* v___x_7923_, lean_object* v_toBind_7924_, lean_object* v_a_7925_, lean_object* v_x_7926_, lean_object* v___y_7927_){
 _start:
 {
-uint8_t v___x_1172__boxed_7928_; uint8_t v_all__le_boxed_7929_; lean_object* v_res_7930_; 
-v___x_1172__boxed_7928_ = lean_unbox(v___x_7920_);
+uint8_t v___x_1173__boxed_7928_; uint8_t v_all__le_boxed_7929_; lean_object* v_res_7930_; 
+v___x_1173__boxed_7928_ = lean_unbox(v___x_7920_);
 v_all__le_boxed_7929_ = lean_unbox(v_all__le_7922_);
-v_res_7930_ = l___private_Lean_Elab_PreDefinition_WF_GuessLex_0__Lean_Elab_WF_GuessLex_solve_go___redArg___lam__5(v___x_1172__boxed_7928_, v_toPure_7921_, v_all__le_boxed_7929_, v___x_7923_, v_toBind_7924_, v_a_7925_, v_x_7926_, v___y_7927_);
+v_res_7930_ = l___private_Lean_Elab_PreDefinition_WF_GuessLex_0__Lean_Elab_WF_GuessLex_solve_go___redArg___lam__5(v___x_1173__boxed_7928_, v_toPure_7921_, v_all__le_boxed_7929_, v___x_7923_, v_toBind_7924_, v_a_7925_, v_x_7926_, v___y_7927_);
 return v_res_7930_;
 }
 }
@@ -22084,10 +22084,10 @@ lean_object* v_h_7949_ = _args[15];
 lean_object* v_G_7950_ = _args[16];
 _start:
 {
-uint8_t v___x_1198__boxed_7951_; uint8_t v_all__le_boxed_7952_; lean_object* v_res_7953_; 
-v___x_1198__boxed_7951_ = lean_unbox(v___x_7937_);
+uint8_t v___x_1199__boxed_7951_; uint8_t v_all__le_boxed_7952_; lean_object* v_res_7953_; 
+v___x_1199__boxed_7951_ = lean_unbox(v___x_7937_);
 v_all__le_boxed_7952_ = lean_unbox(v_all__le_7938_);
-v_res_7953_ = l___private_Lean_Elab_PreDefinition_WF_GuessLex_0__Lean_Elab_WF_GuessLex_solve_go___redArg___lam__7(v___x_7934_, v_toPure_7935_, v_measures_7936_, v___x_1198__boxed_7951_, v_all__le_boxed_7952_, v_toBind_7939_, v___x_7940_, v_acc_7941_, v_inst_7942_, v___f_7943_, v___x_7944_, v_calls_7945_, v___f_7946_, v_next_7947_, v_acc_7948_, v_h_7949_, v_G_7950_);
+v_res_7953_ = l___private_Lean_Elab_PreDefinition_WF_GuessLex_0__Lean_Elab_WF_GuessLex_solve_go___redArg___lam__7(v___x_7934_, v_toPure_7935_, v_measures_7936_, v___x_1199__boxed_7951_, v_all__le_boxed_7952_, v_toBind_7939_, v___x_7940_, v_acc_7941_, v_inst_7942_, v___f_7943_, v___x_7944_, v_calls_7945_, v___f_7946_, v_next_7947_, v_acc_7948_, v_h_7949_, v_G_7950_);
 lean_dec(v___x_7944_);
 lean_dec(v___x_7934_);
 return v_res_7953_;
@@ -22245,9 +22245,9 @@ goto v___jp_7991_;
 LEAN_EXPORT lean_object* l___private_Lean_Elab_PreDefinition_WF_GuessLex_0__Lean_Elab_WF_GuessLex_solve_go___redArg___lam__6___boxed(lean_object* v___x_8006_, lean_object* v_toPure_8007_, lean_object* v___x_8008_, lean_object* v_measures_8009_, lean_object* v_next_8010_, lean_object* v_acc_8011_, lean_object* v___x_8012_, lean_object* v_inst_8013_, lean_object* v_toBind_8014_, lean_object* v___f_8015_, lean_object* v_____s_8016_){
 _start:
 {
-uint8_t v___x_1219__boxed_8017_; lean_object* v_res_8018_; 
-v___x_1219__boxed_8017_ = lean_unbox(v___x_8008_);
-v_res_8018_ = l___private_Lean_Elab_PreDefinition_WF_GuessLex_0__Lean_Elab_WF_GuessLex_solve_go___redArg___lam__6(v___x_8006_, v_toPure_8007_, v___x_1219__boxed_8017_, v_measures_8009_, v_next_8010_, v_acc_8011_, v___x_8012_, v_inst_8013_, v_toBind_8014_, v___f_8015_, v_____s_8016_);
+uint8_t v___x_1220__boxed_8017_; lean_object* v_res_8018_; 
+v___x_1220__boxed_8017_ = lean_unbox(v___x_8008_);
+v_res_8018_ = l___private_Lean_Elab_PreDefinition_WF_GuessLex_0__Lean_Elab_WF_GuessLex_solve_go___redArg___lam__6(v___x_8006_, v_toPure_8007_, v___x_1220__boxed_8017_, v_measures_8009_, v_next_8010_, v_acc_8011_, v___x_8012_, v_inst_8013_, v_toBind_8014_, v___f_8015_, v_____s_8016_);
 return v_res_8018_;
 }
 }

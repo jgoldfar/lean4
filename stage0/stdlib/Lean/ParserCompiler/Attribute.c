@@ -2935,6 +2935,8 @@ lean_inc_ref(v_env_947_);
 lean_dec(v___x_946_);
 v_options_948_ = lean_ctor_get(v___y_940_, 2);
 v___x_949_ = l_Lean_Environment_evalConst___redArg(v_env_947_, v_options_948_, v_constName_938_, v_checkMeta_939_);
+lean_dec(v_constName_938_);
+lean_dec_ref(v_env_947_);
 v___x_950_ = l_Lean_ofExcept___at___00Lean_evalConst___at___00Lean_ParserCompiler_CombinatorAttribute_runDeclFor_spec__0_spec__0___redArg(v___x_949_, v___y_940_, v___y_941_);
 return v___x_950_;
 }
@@ -2952,6 +2954,8 @@ lean_inc_ref(v_env_953_);
 lean_dec(v___x_952_);
 v_options_954_ = lean_ctor_get(v___y_940_, 2);
 v___x_955_ = l_Lean_Environment_evalConst___redArg(v_env_953_, v_options_954_, v_constName_938_, v_checkMeta_939_);
+lean_dec(v_constName_938_);
+lean_dec_ref(v_env_953_);
 v___x_956_ = l_Lean_ofExcept___at___00Lean_evalConst___at___00Lean_ParserCompiler_CombinatorAttribute_runDeclFor_spec__0_spec__0___redArg(v___x_955_, v___y_940_, v___y_941_);
 return v___x_956_;
 }

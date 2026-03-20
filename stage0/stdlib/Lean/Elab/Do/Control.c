@@ -7395,8 +7395,8 @@ lean_closure_set(v___x_2572_, 0, v_pureBase_2558_);
 lean_closure_set(v___x_2572_, 1, v_resultName_2560_);
 v___x_2573_ = lean_alloc_ctor(0, 3, 0);
 lean_ctor_set(v___x_2573_, 0, v___y_2556_);
-lean_ctor_set(v___x_2573_, 1, v___y_2555_);
-lean_ctor_set(v___x_2573_, 2, v___y_2554_);
+lean_ctor_set(v___x_2573_, 1, v___y_2554_);
+lean_ctor_set(v___x_2573_, 2, v___y_2555_);
 v___x_2574_ = l_Lean_Elab_Do_ContInfo_toContInfoRefImpl(v___x_2573_);
 lean_dec_ref(v___x_2573_);
 v___x_2575_ = 1;
@@ -7500,8 +7500,8 @@ goto v_reusejp_2598_;
 }
 v_reusejp_2598_:
 {
-v___y_2554_ = v___y_2590_;
-v___y_2555_ = v___y_2589_;
+v___y_2554_ = v___y_2589_;
+v___y_2555_ = v___y_2590_;
 v___y_2556_ = v___x_2599_;
 goto v___jp_2553_;
 }
@@ -7509,8 +7509,8 @@ goto v___jp_2553_;
 }
 else
 {
-v___y_2554_ = v___y_2590_;
-v___y_2555_ = v___y_2589_;
+v___y_2554_ = v___y_2589_;
+v___y_2555_ = v___y_2590_;
 v___y_2556_ = v_a_2552_;
 goto v___jp_2553_;
 }

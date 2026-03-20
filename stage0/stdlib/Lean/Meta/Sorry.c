@@ -42,7 +42,7 @@ lean_object* l_Lean_Core_mkFreshUserName(lean_object*, lean_object*, lean_object
 lean_object* l_Lean_Name_num___override(lean_object*, lean_object*);
 lean_object* l_Lean_Environment_header(lean_object*);
 lean_object* l_Lean_mkForall(lean_object*, uint8_t, lean_object*, lean_object*);
-lean_object* l_Lean_instToExprName___private__1(lean_object*);
+lean_object* l___private_Lean_ToExpr_0__Lean_Name_toExprAux(lean_object*);
 lean_object* l_Lean_mkApp4(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Expr_app___override(lean_object*, lean_object*);
 lean_object* l_Lean_Syntax_getPos_x3f(lean_object*, uint8_t);
@@ -893,7 +893,7 @@ lean_object* v___x_281_; lean_object* v___x_282_; lean_object* v___x_283_; lean_
 v___x_281_ = lean_obj_once(&l_Lean_Meta_mkLabeledSorry___closed__14, &l_Lean_Meta_mkLabeledSorry___closed__14_once, _init_l_Lean_Meta_mkLabeledSorry___closed__14);
 v___x_282_ = lean_obj_once(&l_Lean_Meta_mkLabeledSorry___closed__15, &l_Lean_Meta_mkLabeledSorry___closed__15_once, _init_l_Lean_Meta_mkLabeledSorry___closed__15);
 v___x_283_ = lean_obj_once(&l_Lean_Meta_mkLabeledSorry___closed__18, &l_Lean_Meta_mkLabeledSorry___closed__18_once, _init_l_Lean_Meta_mkLabeledSorry___closed__18);
-v___x_284_ = l_Lean_instToExprName___private__1(v_tag_267_);
+v___x_284_ = l___private_Lean_ToExpr_0__Lean_Name_toExprAux(v_tag_267_);
 v___x_285_ = l_Lean_mkApp4(v___x_281_, v___x_274_, v___x_282_, v___x_283_, v___x_284_);
 v___x_286_ = l_Lean_Expr_app___override(v_a_277_, v___x_285_);
 if (v_isShared_280_ == 0)
@@ -952,7 +952,7 @@ goto v_resetjp_297_;
 v_resetjp_297_:
 {
 lean_object* v___x_300_; lean_object* v___x_301_; lean_object* v___x_303_; 
-v___x_300_ = l_Lean_instToExprName___private__1(v_tag_267_);
+v___x_300_ = l___private_Lean_ToExpr_0__Lean_Name_toExprAux(v_tag_267_);
 v___x_301_ = l_Lean_Expr_app___override(v_a_296_, v___x_300_);
 if (v_isShared_299_ == 0)
 {

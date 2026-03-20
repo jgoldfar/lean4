@@ -2683,11 +2683,11 @@ goto v_reusejp_856_;
 }
 v_reusejp_856_:
 {
-lean_object* v___x_858_; lean_object* v___x_859_; lean_object* v___x_4073__overap_860_; lean_object* v___x_861_; 
+lean_object* v___x_858_; lean_object* v___x_859_; lean_object* v___x_4074__overap_860_; lean_object* v___x_861_; 
 v___x_858_ = l_Lean_Meta_Match_instInhabitedAltParamInfo_default;
 v___x_859_ = l_instInhabitedOfMonad___redArg(v___x_857_, v___x_858_);
-v___x_4073__overap_860_ = lean_panic_fn(v___x_859_, v_msg_803_);
-v___x_861_ = lean_apply_5(v___x_4073__overap_860_, v___y_804_, v___y_805_, v___y_806_, v___y_807_, lean_box(0));
+v___x_4074__overap_860_ = lean_panic_fn(v___x_859_, v_msg_803_);
+v___x_861_ = lean_apply_5(v___x_4074__overap_860_, v___y_804_, v___y_805_, v___y_806_, v___y_807_, lean_box(0));
 return v___x_861_;
 }
 }
@@ -4105,12 +4105,12 @@ return v_res_1277_;
 LEAN_EXPORT lean_object* l_Lean_PersistentHashMap_insertAux___at___00Lean_PersistentHashMap_insert___at___00Lean_MVarId_assign___at___00Lean_Meta_Grind_casesMatch_spec__1_spec__5_spec__8___redArg___boxed(lean_object* v_x_1278_, lean_object* v_x_1279_, lean_object* v_x_1280_, lean_object* v_x_1281_, lean_object* v_x_1282_){
 _start:
 {
-size_t v_x_9074__boxed_1283_; size_t v_x_9075__boxed_1284_; lean_object* v_res_1285_; 
-v_x_9074__boxed_1283_ = lean_unbox_usize(v_x_1279_);
+size_t v_x_9075__boxed_1283_; size_t v_x_9076__boxed_1284_; lean_object* v_res_1285_; 
+v_x_9075__boxed_1283_ = lean_unbox_usize(v_x_1279_);
 lean_dec(v_x_1279_);
-v_x_9075__boxed_1284_ = lean_unbox_usize(v_x_1280_);
+v_x_9076__boxed_1284_ = lean_unbox_usize(v_x_1280_);
 lean_dec(v_x_1280_);
-v_res_1285_ = l_Lean_PersistentHashMap_insertAux___at___00Lean_PersistentHashMap_insert___at___00Lean_MVarId_assign___at___00Lean_Meta_Grind_casesMatch_spec__1_spec__5_spec__8___redArg(v_x_1278_, v_x_9074__boxed_1283_, v_x_9075__boxed_1284_, v_x_1281_, v_x_1282_);
+v_res_1285_ = l_Lean_PersistentHashMap_insertAux___at___00Lean_PersistentHashMap_insert___at___00Lean_MVarId_assign___at___00Lean_Meta_Grind_casesMatch_spec__1_spec__5_spec__8___redArg(v_x_1278_, v_x_9075__boxed_1283_, v_x_9076__boxed_1284_, v_x_1281_, v_x_1282_);
 return v_res_1285_;
 }
 }
@@ -4902,9 +4902,9 @@ return v___x_1475_;
 LEAN_EXPORT lean_object* l_Lean_Meta_Grind_casesMatch___lam__0___boxed(lean_object* v_e_1478_, lean_object* v___x_1479_, lean_object* v_mvarId_1480_, lean_object* v___y_1481_, lean_object* v___y_1482_, lean_object* v___y_1483_, lean_object* v___y_1484_, lean_object* v___y_1485_){
 _start:
 {
-uint8_t v___x_9309__boxed_1486_; lean_object* v_res_1487_; 
-v___x_9309__boxed_1486_ = lean_unbox(v___x_1479_);
-v_res_1487_ = l_Lean_Meta_Grind_casesMatch___lam__0(v_e_1478_, v___x_9309__boxed_1486_, v_mvarId_1480_, v___y_1481_, v___y_1482_, v___y_1483_, v___y_1484_);
+uint8_t v___x_9310__boxed_1486_; lean_object* v_res_1487_; 
+v___x_9310__boxed_1486_ = lean_unbox(v___x_1479_);
+v_res_1487_ = l_Lean_Meta_Grind_casesMatch___lam__0(v_e_1478_, v___x_9310__boxed_1486_, v_mvarId_1480_, v___y_1481_, v___y_1482_, v___y_1483_, v___y_1484_);
 return v_res_1487_;
 }
 }
@@ -5009,12 +5009,12 @@ return v___x_1564_;
 LEAN_EXPORT lean_object* l_Lean_PersistentHashMap_insertAux___at___00Lean_PersistentHashMap_insert___at___00Lean_MVarId_assign___at___00Lean_Meta_Grind_casesMatch_spec__1_spec__5_spec__8___boxed(lean_object* v_00_u03b2_1565_, lean_object* v_x_1566_, lean_object* v_x_1567_, lean_object* v_x_1568_, lean_object* v_x_1569_, lean_object* v_x_1570_){
 _start:
 {
-size_t v_x_9658__boxed_1571_; size_t v_x_9659__boxed_1572_; lean_object* v_res_1573_; 
-v_x_9658__boxed_1571_ = lean_unbox_usize(v_x_1567_);
+size_t v_x_9659__boxed_1571_; size_t v_x_9660__boxed_1572_; lean_object* v_res_1573_; 
+v_x_9659__boxed_1571_ = lean_unbox_usize(v_x_1567_);
 lean_dec(v_x_1567_);
-v_x_9659__boxed_1572_ = lean_unbox_usize(v_x_1568_);
+v_x_9660__boxed_1572_ = lean_unbox_usize(v_x_1568_);
 lean_dec(v_x_1568_);
-v_res_1573_ = l_Lean_PersistentHashMap_insertAux___at___00Lean_PersistentHashMap_insert___at___00Lean_MVarId_assign___at___00Lean_Meta_Grind_casesMatch_spec__1_spec__5_spec__8(v_00_u03b2_1565_, v_x_1566_, v_x_9658__boxed_1571_, v_x_9659__boxed_1572_, v_x_1569_, v_x_1570_);
+v_res_1573_ = l_Lean_PersistentHashMap_insertAux___at___00Lean_PersistentHashMap_insert___at___00Lean_MVarId_assign___at___00Lean_Meta_Grind_casesMatch_spec__1_spec__5_spec__8(v_00_u03b2_1565_, v_x_1566_, v_x_9659__boxed_1571_, v_x_9660__boxed_1572_, v_x_1569_, v_x_1570_);
 return v_res_1573_;
 }
 }

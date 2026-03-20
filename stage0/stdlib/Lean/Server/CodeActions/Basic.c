@@ -96,7 +96,7 @@ lean_object* l_Lean_FileMap_lspPosToUtf8Pos(lean_object*, lean_object*);
 lean_object* l_Lean_Server_RequestM_withWaitFindSnap___redArg(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_PersistentEnvExtension_addEntry___redArg(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_mkConst(lean_object*, lean_object*);
-lean_object* l_Lean_instToExprName___private__1(lean_object*);
+lean_object* l___private_Lean_ToExpr_0__Lean_Name_toExprAux(lean_object*);
 lean_object* l_Lean_mkAppB(lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_declareBuiltin(lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Environment_find_x3f(lean_object*, lean_object*, uint8_t);
@@ -2973,7 +2973,7 @@ v___x_851_ = ((lean_object*)(l___private_Lean_Server_CodeActions_Basic_0__Lean_S
 v___x_852_ = l_Lean_Name_mkStr3(v___x_830_, v___x_831_, v___x_851_);
 v___x_853_ = l_Lean_mkConst(v___x_852_, v___x_849_);
 lean_inc(v_decl_833_);
-v___x_854_ = l_Lean_instToExprName___private__1(v_decl_833_);
+v___x_854_ = l___private_Lean_ToExpr_0__Lean_Name_toExprAux(v_decl_833_);
 v___x_855_ = l_Lean_mkAppB(v___x_853_, v___x_854_, v___x_850_);
 v___x_856_ = l_Lean_declareBuiltin(v_decl_833_, v___x_855_, v___y_840_, v___y_841_);
 return v___x_856_;
