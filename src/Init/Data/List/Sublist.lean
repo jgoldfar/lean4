@@ -1297,6 +1297,31 @@ instance [DecidableEq α] (l₁ l₂ : List α) : Decidable (l₁ <+: l₂) :=
 instance [DecidableEq α] (l₁ l₂ : List α) : Decidable (l₁ <:+ l₂) :=
   decidable_of_iff (l₁.isSuffixOf l₂) isSuffixOf_iff_suffix
 
+/-
+  Used internally by the `cbv` tactic.
+-/
+theorem isInfixOf_internal_iff_isInfix [BEq α] [LawfulBEq α] {l₁ l₂ : List α} :
+    l₁.isInfixOf_internal l₂ ↔ l₁ <:+: l₂ := by
+  induction l₂ with
+  | nil => simp [isInfixOf_internal, IsInfix]
+  | cons a l₂ ih =>
+    simp only [isInfixOf_internal, Bool.or_eq_true]
+    constructor
+    · rintro (h | h)
+      · exact (isPrefixOf_iff_prefix.mp h).isInfix
+      · exact infix_cons <| ih.mp h
+    · intro ⟨s, t, h⟩
+      match s with
+      | [] => left; exact isPrefixOf_iff_prefix.mpr ⟨t, h⟩
+      | a' :: s' =>
+        right; exact ih.mpr ⟨s', t, List.cons.inj h |>.2⟩
+
+/-
+  Used internally by the `cbv` tactic.
+-/
+instance [DecidableEq α] (l₁ l₂ : List α) : Decidable (l₁ <:+: l₂) :=
+  decidable_of_iff (l₁.isInfixOf_internal l₂) isInfixOf_internal_iff_isInfix
+
 theorem prefix_iff_eq_append : l₁ <+: l₂ ↔ l₁ ++ drop (length l₁) l₂ = l₂ :=
   ⟨by rintro ⟨r, rfl⟩; rw [drop_left], fun e => ⟨_, e⟩⟩
 
