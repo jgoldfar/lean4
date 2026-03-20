@@ -945,7 +945,6 @@ Examples:
  * {lean}`"123_".toSlice.isNat = false`
  * {lean}`"12__34".toSlice.isNat = false`
 -/
-@[inline]
 def isNat (s : Slice) : Bool := Id.run do
   let mut lastWasDigit := false
 
@@ -1054,12 +1053,13 @@ Examples:
  * {lean}`" 5".toSlice.isInt = false`
  * {lean}`"2-3".toSlice.isInt = false`
  * {lean}`"0xff".toSlice.isInt = false`
+ * {lean}`"-0_1".toSlice.isInt = true`
+ * {lean}`"-_1".toSlice.isInt = false`
 -/
 def isInt (s : Slice) : Bool :=
-  if s.front = '-' then
-    (s.drop 1).isNat
-  else
-    s.isNat
+  match s.dropPrefix? '-' with
+  | some rest => rest.isNat
+  | none => s.isNat
 
 /--
 Interprets a slice as the decimal representation of an integer, returning it. Returns {lean}`none` if
@@ -1083,12 +1083,13 @@ Examples:
  * {lean}`" 5".toSlice.toInt? = none`
  * {lean}`"2-3".toSlice.toInt? = none`
  * {lean}`"0xff".toSlice.toInt? = none`
+ * {lean}`"-0_1".toSlice.toInt? = some (-1)`
+ * {lean}`"-_1".toSlice.toInt? = none`
 -/
 def toInt? (s : Slice) : Option Int :=
-  if s.front = '-' then
-    Int.negOfNat <$> (s.drop 1).toNat?
-  else
-   Int.ofNat <$> s.toNat?
+  match s.dropPrefix? '-' with
+  | some rest => rest.toNat?.map Int.negOfNat
+  | none => s.toNat?.map Int.ofNat
 
 /--
 Interprets a string as the decimal representation of an integer, returning it. Panics if the string
