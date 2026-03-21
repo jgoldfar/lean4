@@ -1912,11 +1912,12 @@ Sequential conjunction: executes both `x` and `y`.
 def Action.andAlso (x y : Action) : Action := fun goal kna kp => do
   x goal (fun goal => y goal kna kp) (fun goal => y goal kp kp)
 
-/-
-Creates an action that tries all solver extensions. It uses the `Action.andAlso`
-to combine them.
+/--
+Combines all solver extensions into a single action using `Action.andAlso`.
+Does not drain `newRawFacts`; use `Solvers.mkAction` (defined in `Intro.lean`) which
+wraps this with `assertAll`.
 -/
-def Solvers.mkAction : IO Action := do
+def Solvers.mkActionCore : IO Action := do
   let exts ← solverExtensionsRef.get
   let rec go (i : Nat) (acc : Action) : Action :=
     if h : i < exts.size then
