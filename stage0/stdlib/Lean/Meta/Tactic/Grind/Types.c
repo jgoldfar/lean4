@@ -2512,10 +2512,10 @@ LEAN_EXPORT lean_object* l_Lean_Meta_Grind_Action_andAlso___lam__1(lean_object*,
 LEAN_EXPORT lean_object* l_Lean_Meta_Grind_Action_andAlso___lam__1___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l_Lean_Meta_Grind_Action_andAlso(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l_Lean_Meta_Grind_Action_andAlso___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-LEAN_EXPORT lean_object* l___private_Lean_Meta_Tactic_Grind_Types_0__Lean_Meta_Grind_Solvers_mkAction_go(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-LEAN_EXPORT lean_object* l___private_Lean_Meta_Tactic_Grind_Types_0__Lean_Meta_Grind_Solvers_mkAction_go___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-LEAN_EXPORT lean_object* l_Lean_Meta_Grind_Solvers_mkAction();
-LEAN_EXPORT lean_object* l_Lean_Meta_Grind_Solvers_mkAction___boxed(lean_object*);
+LEAN_EXPORT lean_object* l___private_Lean_Meta_Tactic_Grind_Types_0__Lean_Meta_Grind_Solvers_mkActionCore_go(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* l___private_Lean_Meta_Tactic_Grind_Types_0__Lean_Meta_Grind_Solvers_mkActionCore_go___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* l_Lean_Meta_Grind_Solvers_mkActionCore();
+LEAN_EXPORT lean_object* l_Lean_Meta_Grind_Solvers_mkActionCore___boxed(lean_object*);
 LEAN_EXPORT lean_object* l___private_Lean_Meta_Tactic_Grind_Types_0__Lean_Meta_Grind_Solvers_propagateDiseqs_go(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l___private_Lean_Meta_Tactic_Grind_Types_0__Lean_Meta_Grind_Solvers_propagateDiseqs_go___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l___private_Lean_Meta_Tactic_Grind_Types_0__Lean_Meta_Grind_Solvers_propagateDiseqs_go_match__1_splitter___redArg(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
@@ -49281,7 +49281,7 @@ v_res_18258_ = l_Lean_Meta_Grind_Action_andAlso(v_x_18243_, v_y_18244_, v_goal_1
 return v_res_18258_;
 }
 }
-LEAN_EXPORT lean_object* l___private_Lean_Meta_Tactic_Grind_Types_0__Lean_Meta_Grind_Solvers_mkAction_go(lean_object* v_exts_18259_, lean_object* v_i_18260_, lean_object* v_acc_18261_, lean_object* v_a_18262_, lean_object* v_kna_18263_, lean_object* v_kp_18264_, lean_object* v_a_18265_, lean_object* v_a_18266_, lean_object* v_a_18267_, lean_object* v_a_18268_, lean_object* v_a_18269_, lean_object* v_a_18270_, lean_object* v_a_18271_, lean_object* v_a_18272_, lean_object* v_a_18273_){
+LEAN_EXPORT lean_object* l___private_Lean_Meta_Tactic_Grind_Types_0__Lean_Meta_Grind_Solvers_mkActionCore_go(lean_object* v_exts_18259_, lean_object* v_i_18260_, lean_object* v_acc_18261_, lean_object* v_a_18262_, lean_object* v_kna_18263_, lean_object* v_kp_18264_, lean_object* v_a_18265_, lean_object* v_a_18266_, lean_object* v_a_18267_, lean_object* v_a_18268_, lean_object* v_a_18269_, lean_object* v_a_18270_, lean_object* v_a_18271_, lean_object* v_a_18272_, lean_object* v_a_18273_){
 _start:
 {
 lean_object* v___x_18275_; uint8_t v___x_18276_; 
@@ -49312,16 +49312,16 @@ goto _start;
 }
 }
 }
-LEAN_EXPORT lean_object* l___private_Lean_Meta_Tactic_Grind_Types_0__Lean_Meta_Grind_Solvers_mkAction_go___boxed(lean_object* v_exts_18284_, lean_object* v_i_18285_, lean_object* v_acc_18286_, lean_object* v_a_18287_, lean_object* v_kna_18288_, lean_object* v_kp_18289_, lean_object* v_a_18290_, lean_object* v_a_18291_, lean_object* v_a_18292_, lean_object* v_a_18293_, lean_object* v_a_18294_, lean_object* v_a_18295_, lean_object* v_a_18296_, lean_object* v_a_18297_, lean_object* v_a_18298_, lean_object* v_a_18299_){
+LEAN_EXPORT lean_object* l___private_Lean_Meta_Tactic_Grind_Types_0__Lean_Meta_Grind_Solvers_mkActionCore_go___boxed(lean_object* v_exts_18284_, lean_object* v_i_18285_, lean_object* v_acc_18286_, lean_object* v_a_18287_, lean_object* v_kna_18288_, lean_object* v_kp_18289_, lean_object* v_a_18290_, lean_object* v_a_18291_, lean_object* v_a_18292_, lean_object* v_a_18293_, lean_object* v_a_18294_, lean_object* v_a_18295_, lean_object* v_a_18296_, lean_object* v_a_18297_, lean_object* v_a_18298_, lean_object* v_a_18299_){
 _start:
 {
 lean_object* v_res_18300_; 
-v_res_18300_ = l___private_Lean_Meta_Tactic_Grind_Types_0__Lean_Meta_Grind_Solvers_mkAction_go(v_exts_18284_, v_i_18285_, v_acc_18286_, v_a_18287_, v_kna_18288_, v_kp_18289_, v_a_18290_, v_a_18291_, v_a_18292_, v_a_18293_, v_a_18294_, v_a_18295_, v_a_18296_, v_a_18297_, v_a_18298_);
+v_res_18300_ = l___private_Lean_Meta_Tactic_Grind_Types_0__Lean_Meta_Grind_Solvers_mkActionCore_go(v_exts_18284_, v_i_18285_, v_acc_18286_, v_a_18287_, v_kna_18288_, v_kp_18289_, v_a_18290_, v_a_18291_, v_a_18292_, v_a_18293_, v_a_18294_, v_a_18295_, v_a_18296_, v_a_18297_, v_a_18298_);
 lean_dec_ref(v_exts_18284_);
 return v_res_18300_;
 }
 }
-LEAN_EXPORT lean_object* l_Lean_Meta_Grind_Solvers_mkAction(){
+LEAN_EXPORT lean_object* l_Lean_Meta_Grind_Solvers_mkActionCore(){
 _start:
 {
 lean_object* v___x_18302_; lean_object* v___x_18303_; lean_object* v___x_18304_; lean_object* v___x_18305_; uint8_t v___x_18306_; 
@@ -49347,7 +49347,7 @@ v_action_18310_ = lean_ctor_get(v___x_18309_, 6);
 lean_inc_ref(v_action_18310_);
 lean_dec(v___x_18309_);
 v___x_18311_ = lean_unsigned_to_nat(1u);
-v___x_18312_ = lean_alloc_closure((void*)(l___private_Lean_Meta_Tactic_Grind_Types_0__Lean_Meta_Grind_Solvers_mkAction_go___boxed), 16, 3);
+v___x_18312_ = lean_alloc_closure((void*)(l___private_Lean_Meta_Tactic_Grind_Types_0__Lean_Meta_Grind_Solvers_mkActionCore_go___boxed), 16, 3);
 lean_closure_set(v___x_18312_, 0, v___x_18303_);
 lean_closure_set(v___x_18312_, 1, v___x_18311_);
 lean_closure_set(v___x_18312_, 2, v_action_18310_);
@@ -49357,11 +49357,11 @@ return v___x_18313_;
 }
 }
 }
-LEAN_EXPORT lean_object* l_Lean_Meta_Grind_Solvers_mkAction___boxed(lean_object* v_a_18314_){
+LEAN_EXPORT lean_object* l_Lean_Meta_Grind_Solvers_mkActionCore___boxed(lean_object* v_a_18314_){
 _start:
 {
 lean_object* v_res_18315_; 
-v_res_18315_ = l_Lean_Meta_Grind_Solvers_mkAction();
+v_res_18315_ = l_Lean_Meta_Grind_Solvers_mkActionCore();
 return v_res_18315_;
 }
 }
