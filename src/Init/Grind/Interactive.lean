@@ -304,5 +304,16 @@ syntax (name := symInternalizeAll) "internalize_all" : grind
 Only available in `sym =>` mode. -/
 syntax (name := symByContra) "by_contra" : grind
 
+/--
+`simp` applies the structural simplifier to the goal target.
+Only available in `sym =>` mode.
+
+- `simp` — uses the default (identity) variant
+- `simp myVariant` — uses a named variant registered via `register_sym_simp`
+- `simp [thm₁, thm₂, ...]` — default variant with extra rewrite theorems appended to `post`
+- `simp myVariant [thm₁, thm₂, ...]` — named variant with extra theorems
+-/
+syntax (name := symSimp) "simp" (ppSpace colGt ident)? (" [" ident,* "]")? : grind
+
 end Grind
 end Lean.Parser.Tactic

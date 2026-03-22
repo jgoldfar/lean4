@@ -6,7 +6,15 @@ Authors: Leonardo de Moura
 module
 prelude
 import Lean.Elab.Tactic.Grind.Basic
+import Lean.Elab.Tactic.Grind.SimprocDSL
 import Lean.Meta.Sym.Grind
+import Lean.Meta.Sym.Simp.Variant
+import Lean.Meta.Sym.Simp.Rewrite
+import Lean.Meta.Sym.Simp.EvalGround
+import Lean.Meta.Sym.Simp.Goal
+import Lean.Meta.Sym.Simp.Attr
+import Lean.Meta.Sym.Simp.ControlFlow
+import Lean.Meta.Sym.Simp.Forall
 import Lean.Meta.Tactic.Apply
 import Lean.Elab.SyntheticMVars
 namespace Lean.Elab.Tactic.Grind
@@ -134,5 +142,61 @@ private def getOrCreateBackwardRuleFromTerm (term : Syntax) : GrindTacticM Sym.B
   -- Internalize the negated hypothesis so the E-graph can detect contradictions
   let goal ← liftGrindM <| Grind.Goal.internalizeAll goal
   replaceMainGoal [goal]
+
+section
+open Sym.Simp
+
+def trivialSimproc : Simproc := fun _ =>
+  return .rfl
+
+def elabOptSimproc (stx? : Option Syntax) : GrindTacticM Simproc := do
+  let some stx := stx? | return trivialSimproc
+  elabSymSimproc stx
+
+def addExtraTheorems (post : Simproc) (extraNames : Array Name) : GrindTacticM Simproc := do
+  if extraNames.isEmpty then return post
+  let mut thms : Theorems := {}
+  for name in extraNames do
+    thms := thms.insert (← mkTheoremFromDecl name)
+  return post >> thms.rewrite
+
+def mkDefaultMethods (extraNames : Array Name) : GrindTacticM Sym.Simp.Methods := do
+  let thms ← getSymSimpTheorems
+  let pre := simpControl >> simpArrowTelescope
+  let post ← addExtraTheorems (evalGround >> thms.rewrite) extraNames
+  return { pre, post }
+
+def elabVariant (variantName : Name) (extraNames : Array Name) : GrindTacticM (Sym.Simp.Methods × Sym.Simp.Config) := do
+  if variantName.isAnonymous then
+    return (← mkDefaultMethods extraNames, {})
+  let some v := getSymSimpVariant? (← getEnv) variantName
+    | throwError "unknown Sym.simp variant `{variantName}`"
+  let pre ← elabOptSimproc v.pre?
+  let post ← addExtraTheorems (← elabOptSimproc v.post?) extraNames
+  return ({ pre, post}, v.config)
+
+@[builtin_grind_tactic Parser.Tactic.Grind.symSimp] def evalSymSimp : GrindTactic := fun stx => do
+  ensureSym
+  let `(grind| simp $[$variantId?]? $[[ $[$extraIds],* ]]?) := stx | throwUnsupportedSyntax
+  -- Resolve variant
+  let variantName := variantId?.map (·.getId) |>.getD .anonymous
+  -- Compose extra theorems into post
+  let extraNames ← (extraIds.getD #[]).mapM fun id => realizeGlobalConstNoOverload id
+  -- Cache lookup/creation
+  let cacheKey : SimpCacheKey := { variant := variantName, extras := extraNames.toList }
+  let simpState := (← get).cache.simpState[cacheKey]?.getD {}
+  let (methods, config) ← elabVariant variantName extraNames
+  let goal ← getMainGoal
+  let (simpResult, simpState) ← liftGrindM <| goal.withContext do
+    Sym.Simp.SimpM.run (Sym.Simp.simp (← goal.mvarId.getType)) methods config simpState
+  -- Save updated cache
+  modify fun s => { s with cache.simpState := s.cache.simpState.insert cacheKey simpState }
+  -- Apply result to goal
+  match (← liftGrindM <| Sym.Simp.Result.toSimpGoalResult simpResult goal.mvarId) with
+  | .closed => replaceMainGoal []
+  | .goal mvarId => replaceMainGoal [{ goal with mvarId }]
+  | .noProgress => throwError "`Sym.simp` made no progress"
+
+end
 
 end Lean.Elab.Tactic.Grind
