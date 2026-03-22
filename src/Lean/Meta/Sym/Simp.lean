@@ -24,4 +24,5 @@ public import Lean.Meta.Sym.Simp.ControlFlow
 public import Lean.Meta.Sym.Simp.Goal
 public import Lean.Meta.Sym.Simp.Telescope
 public import Lean.Meta.Sym.Simp.Attr
+public import Lean.Meta.Sym.Simp.Variant
 public import Lean.Meta.Sym.Simp.RegisterCommand

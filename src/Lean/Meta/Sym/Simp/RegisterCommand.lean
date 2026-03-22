@@ -6,6 +6,7 @@ Authors: Leonardo de Moura
 module
 prelude
 public import Lean.Meta.Sym.Simp.Attr
+public import Lean.Meta.Sym.Simp.Variant
 public meta import Init.Data.ToString.Name
 public meta import Init.Data.String.Extra
 public section

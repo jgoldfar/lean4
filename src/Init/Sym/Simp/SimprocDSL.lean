@@ -84,3 +84,46 @@ syntax (name := dischNone) "none" : sym_discharger
 syntax (name := dischParen) "(" sym_discharger ")" : sym_discharger
 
 end Lean.Parser.Sym.Simp
+
+/-!
+## `register_sym_simp` command
+
+Declares a named `Sym.simp` variant with `pre`/`post` simproc chains and optional config overrides.
+
+```
+register_sym_simp myVariant where
+  pre  := telescope
+  post := ground >> rewrite mySet with self
+```
+-/
+
+namespace Lean.Parser.Command
+
+declare_syntax_cat sym_simp_field (behavior := both)
+
+/-- Pre-processing simproc chain. -/
+syntax (name := symSimpFieldPre) "pre" " := " sym_simproc : sym_simp_field
+
+/-- Post-processing simproc chain. -/
+syntax (name := symSimpFieldPost) "post" " := " sym_simproc : sym_simp_field
+
+/-- Maximum number of simplification steps. -/
+syntax (name := symSimpFieldMaxSteps) "maxSteps" " := " num : sym_simp_field
+
+/-- Maximum depth of recursive discharge attempts. -/
+syntax (name := symSimpFieldMaxDischargeDepth) "maxDischargeDepth" " := " num : sym_simp_field
+
+/--
+Register a named `Sym.simp` variant.
+
+```
+register_sym_simp myVariant where
+  pre  := telescope
+  post := ground >> rewrite [thm1, thm2] with self
+  maxSteps := 50000
+```
+-/
+syntax (name := registerSymSimp) "register_sym_simp" ident "where"
+  (colGt sym_simp_field)* : command
+
+end Lean.Parser.Command
