@@ -17,3 +17,4 @@ public import Lean.Elab.Tactic.Grind.LintExceptions
 public import Lean.Elab.Tactic.Grind.Annotated
 public import Lean.Elab.Tactic.Grind.Sym
 public import Lean.Elab.Tactic.Grind.SimprocDSL
+public import Lean.Elab.Tactic.Grind.SimprocDSLBuiltin

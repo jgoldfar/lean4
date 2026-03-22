@@ -54,11 +54,4 @@ def elabSymDischarger (stx : Syntax) : GrindTacticM Discharger := do
       | _ => throw ex
   throwErrorAt stx "unsupported sym_discharger syntax `{stx.getKind}`"
 
-/-- Get the `Discharger` from an optional `with` clause.
-Returns `dischargeNone` if the clause is absent. -/
-def elabWithClause (withClause : Syntax) : GrindTacticM Discharger := do
-  if withClause.isNone then
-    return dischargeNone
-  elabSymDischarger withClause[0][1]
-
 end Lean.Elab.Tactic.Grind
