@@ -70,3 +70,30 @@ example (x : Nat) : ¬ p x := by
 
 example (x : Nat) : p x = q x := by
   sym => simp simple [iff_thm]
+
+-- Tests for local hypothesis support in `simp [h]`
+
+-- Local hypothesis `h : p x` rewrites `p x` to `True`
+example (x : Nat) (h : p x) : p x = True := by
+  sym => simp simple [h]
+
+-- Local hypothesis `h : ¬ p x` rewrites `p x` to `False`
+example (x : Nat) (h : ¬ p x) : p x = False := by
+  sym => simp simple [h]
+
+-- Local hypothesis `h : p x ↔ q x` rewrites `p x` to `q x`
+example (x : Nat) (h : p x ↔ q x) : p x = q x := by
+  sym => simp simple [h]
+
+-- Local hypothesis `h : p x = q x` (already an equality)
+example (x : Nat) (h : p x = q x) : p x = q x := by
+  sym => simp simple [h]
+
+-- Local hypothesis with intro
+example (x : Nat) : p x → p x = True := by
+  sym =>
+    intro h
+    simp simple [h]
+
+example (h : ∀ x, p x = q x) : p a = q a ∧ p b = q b := by
+  sym => simp simple [h, and_true]

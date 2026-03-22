@@ -25,10 +25,16 @@ structure Context extends Tactic.Context where
 
 open Meta.Grind (Goal)
 
-/-- Cache key for `Sym.simp` variant invocations: variant name + ordered extra theorem names. -/
+/-- An extra theorem passed to `simp` in `sym =>` mode. -/
+inductive ExtraTheorem where
+  | const (declName : Name)
+  | fvar  (fvarId : FVarId)
+  deriving BEq, Hashable
+
+/-- Cache key for `Sym.simp` variant invocations. -/
 structure SimpCacheKey where
   variant : Name
-  extras  : List Name
+  extras  : Array ExtraTheorem
   deriving BEq, Hashable
 
 structure Cache where
