@@ -88,7 +88,7 @@ uint8_t lean_name_eq(lean_object*, lean_object*);
 uint8_t l_Lean_Environment_contains(lean_object*, lean_object*, uint8_t);
 lean_object* l_Lean_Environment_find_x3f(lean_object*, lean_object*, uint8_t);
 uint8_t l_Lean_ConstantInfo_hasValue(lean_object*, uint8_t);
-lean_object* l_Lean_Core_instantiateValueLevelParams(lean_object*, lean_object*, lean_object*, lean_object*);
+lean_object* l_Lean_Core_instantiateValueLevelParams(lean_object*, lean_object*, uint8_t, lean_object*, lean_object*);
 lean_object* l_ST_Prim_mkRef___boxed(lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_WellFounded_opaqueFix_u2083___redArg(lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Meta_getFunInfoNArgs___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
@@ -10851,7 +10851,7 @@ goto v_resetjp_4611_;
 v_resetjp_4611_:
 {
 uint8_t v___x_4614_; 
-v___x_4614_ = l_Lean_ConstantInfo_hasValue(v_val_4610_, v___x_4600_);
+v___x_4614_ = l_Lean_ConstantInfo_hasValue(v_val_4610_, v___x_4607_);
 if (v___x_4614_ == 0)
 {
 lean_object* v___x_4616_; 
@@ -10884,7 +10884,7 @@ else
 lean_object* v___x_4619_; 
 lean_inc(v_us_4606_);
 lean_dec_ref(v_e_4601_);
-v___x_4619_ = l_Lean_Core_instantiateValueLevelParams(v_val_4610_, v_us_4606_, v___y_4602_, v___y_4603_);
+v___x_4619_ = l_Lean_Core_instantiateValueLevelParams(v_val_4610_, v_us_4606_, v___x_4607_, v___y_4602_, v___y_4603_);
 lean_dec(v_val_4610_);
 if (lean_obj_tag(v___x_4619_) == 0)
 {
@@ -11606,7 +11606,7 @@ if (lean_obj_tag(v_val_4883_) == 2)
 lean_object* v___x_4884_; lean_object* v___x_4885_; lean_object* v___x_4887_; uint8_t v_isShared_4888_; uint8_t v_isSharedCheck_4909_; 
 v___x_4884_ = l_Lean_Expr_constLevels_x21(v_x_4861_);
 lean_dec_ref(v_x_4861_);
-v___x_4885_ = l_Lean_Core_instantiateValueLevelParams(v_val_4883_, v___x_4884_, v___y_4863_, v___y_4864_);
+v___x_4885_ = l_Lean_Core_instantiateValueLevelParams(v_val_4883_, v___x_4884_, v___x_4873_, v___y_4863_, v___y_4864_);
 v_isSharedCheck_4909_ = !lean_is_exclusive(v_val_4883_);
 if (v_isSharedCheck_4909_ == 0)
 {

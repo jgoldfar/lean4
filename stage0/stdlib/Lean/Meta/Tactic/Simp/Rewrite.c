@@ -195,7 +195,7 @@ lean_object* l_Lean_Meta_Simp_userPreSimprocs(lean_object*, lean_object*, lean_o
 lean_object* l_Lean_Meta_Simp_mkEqTransResultStep(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Meta_Simp_userPostSimprocs(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 uint8_t l_Lean_Expr_hasExprMVar(lean_object*);
-lean_object* l_Lean_Core_instantiateValueLevelParams(lean_object*, lean_object*, lean_object*, lean_object*);
+lean_object* l_Lean_Core_instantiateValueLevelParams(lean_object*, lean_object*, uint8_t, lean_object*, lean_object*);
 lean_object* l___private_Lean_Expr_0__Lean_Expr_getAppRevArgsAux(lean_object*, lean_object*);
 lean_object* l_Lean_Expr_betaRev(lean_object*, lean_object*, uint8_t, uint8_t);
 lean_object* l_Lean_Environment_find_x3f(lean_object*, lean_object*, uint8_t);
@@ -25449,7 +25449,7 @@ return v___x_7287_;
 else
 {
 lean_object* v___x_7288_; 
-v___x_7288_ = l_Lean_Core_instantiateValueLevelParams(v___y_7281_, v_us_7270_, v___y_7283_, v___y_7280_);
+v___x_7288_ = l_Lean_Core_instantiateValueLevelParams(v___y_7281_, v_us_7270_, v___x_7267_, v___y_7283_, v___y_7280_);
 lean_dec_ref(v___y_7281_);
 if (lean_obj_tag(v___x_7288_) == 0)
 {

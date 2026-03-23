@@ -172,7 +172,7 @@ uint8_t l_Lean_isPrivateName(lean_object*);
 extern lean_object* l_Lean_unknownIdentifierMessageTag;
 uint8_t l_Lean_ConstantInfo_isDefinition(lean_object*);
 lean_object* l_Lean_Meta_whnfD(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-lean_object* l_Lean_Core_instantiateValueLevelParams(lean_object*, lean_object*, lean_object*, lean_object*);
+lean_object* l_Lean_Core_instantiateValueLevelParams(lean_object*, lean_object*, uint8_t, lean_object*, lean_object*);
 uint8_t l_Lean_ConstantInfo_hasValue(lean_object*, uint8_t);
 lean_object* l_Lean_ConstantInfo_levelParams(lean_object*);
 lean_object* l_List_lengthTR___redArg(lean_object*);
@@ -20079,7 +20079,7 @@ else
 lean_object* v___x_5960_; 
 lean_del_object(v___x_5922_);
 lean_inc(v_us_5906_);
-v___x_5960_ = l_Lean_Core_instantiateValueLevelParams(v_a_5908_, v_us_5906_, v_a_5902_, v_a_5903_);
+v___x_5960_ = l_Lean_Core_instantiateValueLevelParams(v_a_5908_, v_us_5906_, v___x_5928_, v_a_5902_, v_a_5903_);
 lean_dec(v_a_5908_);
 if (lean_obj_tag(v___x_5960_) == 0)
 {
