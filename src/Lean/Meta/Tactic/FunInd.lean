@@ -742,6 +742,13 @@ partial def buildInductionBody (toErase toClear : Array FVarId) (goal : Expr)
         let b' ← buildInductionBody toErase toClear goal' oldIH newIH isRecCall (b.instantiate1 x)
         mkLambdaFVars #[x] b'
 
+  -- Unfold constant applications that take `oldIH` as an argument (e.g. `_f` auxiliary
+  -- definitions from structural recursion), so that we can see their body structure.
+  -- Similar to the case in `foldAndCollect`.
+  if e.getAppFn.isConst && e.getAppArgs.any (·.isFVarOf oldIH) then
+    if let some e' ← withTransparency .all (unfoldDefinition? e) then
+      return ← buildInductionBody toErase toClear goal oldIH newIH isRecCall e'
+
   liftM <| buildInductionCase oldIH newIH isRecCall toErase toClear goal e
 
 /--
