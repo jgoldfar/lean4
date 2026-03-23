@@ -505,9 +505,9 @@ lean_object* v___x_89_; lean_object* v___x_90_; lean_object* v___x_91_;
 lean_del_object(v___x_82_);
 v___x_89_ = lean_box(1);
 v___x_90_ = ((lean_object*)(l_Lean_Server_FileWorker_SignatureHelp_determineSignatureHelp___lam__1___closed__0));
-lean_inc(v___y_75_);
-lean_inc_ref(v___y_74_);
 v___x_91_ = l_Lean_PrettyPrinter_delabCore___redArg(v_a_80_, v___x_89_, v___x_90_, v___y_72_, v___y_73_, v___y_74_, v___y_75_);
+lean_dec(v___y_73_);
+lean_dec_ref(v___y_72_);
 if (lean_obj_tag(v___x_91_) == 0)
 {
 lean_object* v_a_92_; lean_object* v_fst_93_; lean_object* v___x_94_; 
@@ -518,6 +518,8 @@ v_fst_93_ = lean_ctor_get(v_a_92_, 0);
 lean_inc(v_fst_93_);
 lean_dec(v_a_92_);
 v___x_94_ = l_Lean_PrettyPrinter_ppTerm(v_fst_93_, v___y_74_, v___y_75_);
+lean_dec(v___y_75_);
+lean_dec_ref(v___y_74_);
 if (lean_obj_tag(v___x_94_) == 0)
 {
 lean_object* v_a_95_; lean_object* v___x_97_; uint8_t v_isShared_98_; uint8_t v_isSharedCheck_103_; 

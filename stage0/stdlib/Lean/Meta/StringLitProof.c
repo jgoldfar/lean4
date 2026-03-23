@@ -696,10 +696,6 @@ if (v___x_280_ == 0)
 {
 lean_object* v_nExpr_281_; lean_object* v___x_282_; uint8_t v___x_283_; lean_object* v___x_284_; lean_object* v___x_285_; lean_object* v___x_286_; lean_object* v_dropFn_287_; lean_object* v_dropL1_288_; lean_object* v_dropL2_289_; lean_object* v_dropEq_290_; lean_object* v___x_291_; lean_object* v_congrArgFn_292_; uint8_t v___x_293_; 
 lean_dec(v___y_276_);
-lean_dec(v_a_218_);
-lean_dec_ref(v_a_217_);
-lean_dec(v_a_216_);
-lean_dec_ref(v_a_215_);
 lean_inc(v___y_274_);
 v_nExpr_281_ = l_Lean_mkNatLit(v___y_274_);
 v___x_282_ = ((lean_object*)(l_Lean_Meta_mkStringLitNeProof___closed__39));
@@ -867,6 +863,10 @@ _start:
 {
 lean_object* v_res_344_; 
 v_res_344_ = l_Lean_Meta_mkStringLitNeProof(v_s_u2081_337_, v_s_u2082_338_, v_a_339_, v_a_340_, v_a_341_, v_a_342_);
+lean_dec(v_a_342_);
+lean_dec_ref(v_a_341_);
+lean_dec(v_a_340_);
+lean_dec_ref(v_a_339_);
 return v_res_344_;
 }
 }

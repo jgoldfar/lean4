@@ -1614,8 +1614,6 @@ return v___x_541_;
 else
 {
 lean_object* v_a_542_; lean_object* v___x_544_; uint8_t v_isShared_545_; uint8_t v_isSharedCheck_550_; 
-lean_dec(v_a_537_);
-lean_dec_ref(v_a_536_);
 v_a_542_ = lean_ctor_get(v_x_535_, 0);
 v_isSharedCheck_550_ = !lean_is_exclusive(v_x_535_);
 if (v_isSharedCheck_550_ == 0)
@@ -1665,6 +1663,8 @@ _start:
 {
 lean_object* v_res_555_; 
 v_res_555_ = l_Lean_Meta_Tactic_TryThis_SuggestionText_pretty(v_x_551_, v_a_552_, v_a_553_);
+lean_dec(v_a_553_);
+lean_dec_ref(v_a_552_);
 return v_res_555_;
 }
 }
@@ -1797,8 +1797,6 @@ return v___x_584_;
 else
 {
 lean_object* v_a_590_; lean_object* v___x_592_; uint8_t v_isShared_593_; uint8_t v_isSharedCheck_597_; 
-lean_dec(v_a_561_);
-lean_dec_ref(v_a_560_);
 lean_dec(v_column_559_);
 lean_dec(v_indent_558_);
 lean_dec(v_w_557_);
@@ -1848,6 +1846,8 @@ _start:
 {
 lean_object* v_res_605_; 
 v_res_605_ = l_Lean_Meta_Tactic_TryThis_SuggestionText_prettyExtra(v_s_598_, v_w_599_, v_indent_600_, v_column_601_, v_a_602_, v_a_603_);
+lean_dec(v_a_603_);
+lean_dec_ref(v_a_602_);
 return v_res_605_;
 }
 }
@@ -1867,6 +1867,8 @@ _start:
 {
 lean_object* v_res_622_; 
 v_res_622_ = l_Lean_Meta_Tactic_TryThis_Suggestion_pretty(v_s_615_, v_w_616_, v_indent_617_, v_column_618_, v_a_619_, v_a_620_);
+lean_dec(v_a_620_);
+lean_dec_ref(v_a_619_);
 return v_res_622_;
 }
 }
@@ -1886,6 +1888,7 @@ lean_inc(v_snd_631_);
 lean_dec_ref(v___x_629_);
 v___x_632_ = lean_box(0);
 v___x_633_ = l_Lean_Meta_Tactic_TryThis_Suggestion_pretty(v_s_623_, v___x_632_, v_fst_630_, v_snd_631_, v_a_625_, v_a_626_);
+lean_dec_ref(v_a_625_);
 if (lean_obj_tag(v___x_633_) == 0)
 {
 lean_object* v_a_634_; lean_object* v___x_636_; uint8_t v_isShared_637_; uint8_t v_isSharedCheck_643_; 
@@ -1984,6 +1987,7 @@ _start:
 {
 lean_object* v_res_657_; 
 v_res_657_ = l_Lean_Meta_Tactic_TryThis_Suggestion_processEdit(v_s_652_, v_range_653_, v_a_654_, v_a_655_);
+lean_dec(v_a_655_);
 return v_res_657_;
 }
 }

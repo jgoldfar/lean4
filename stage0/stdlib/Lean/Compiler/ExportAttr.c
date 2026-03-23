@@ -743,7 +743,6 @@ LEAN_EXPORT lean_object* l_Lean_initFn___lam__0_00___x40_Lean_Compiler_ExportAtt
 _start:
 {
 lean_object* v___x_178_; 
-lean_inc_ref(v___y_175_);
 v___x_178_ = l_Lean_Attribute_Builtin_getId(v_stx_174_, v___y_175_, v___y_176_);
 if (lean_obj_tag(v___x_178_) == 0)
 {
@@ -766,7 +765,6 @@ v___x_185_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_185_, 0, v___x_183_);
 lean_ctor_set(v___x_185_, 1, v___x_184_);
 v___x_186_ = l_Lean_throwError___at___00Lean_initFn_00___x40_Lean_Compiler_ExportAttr_1307678936____hygCtx___hyg_2__spec__0___redArg(v___x_185_, v___y_175_, v___y_176_);
-lean_dec_ref(v___y_175_);
 v_a_187_ = lean_ctor_get(v___x_186_, 0);
 v_isSharedCheck_194_ = !lean_is_exclusive(v___x_186_);
 if (v_isSharedCheck_194_ == 0)
@@ -808,13 +806,11 @@ return v___x_192_;
 else
 {
 lean_dec(v_a_179_);
-lean_dec_ref(v___y_175_);
 return v___x_178_;
 }
 }
 else
 {
-lean_dec_ref(v___y_175_);
 return v___x_178_;
 }
 }
@@ -825,6 +821,7 @@ _start:
 lean_object* v_res_200_; 
 v_res_200_ = l_Lean_initFn___lam__0_00___x40_Lean_Compiler_ExportAttr_1307678936____hygCtx___hyg_2_(v_x_195_, v_stx_196_, v___y_197_, v___y_198_);
 lean_dec(v___y_198_);
+lean_dec_ref(v___y_197_);
 lean_dec(v_x_195_);
 return v_res_200_;
 }

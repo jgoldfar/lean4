@@ -456,7 +456,6 @@ v___x_80_ = lean_st_mk_ref(v___x_79_);
 v_imports_81_ = lean_ctor_get(v___y_76_, 0);
 lean_inc_ref(v_imports_81_);
 lean_dec_ref(v___y_76_);
-lean_inc(v___x_80_);
 v___x_82_ = l_Lean_importModulesCore(v_imports_81_, v___y_74_, v___y_75_, v___y_78_, v___x_80_);
 if (lean_obj_tag(v___x_82_) == 0)
 {
@@ -547,6 +546,7 @@ v_fst_107_ = lean_ctor_get(v_a_106_, 0);
 lean_inc(v_fst_107_);
 lean_dec(v_a_106_);
 v___x_108_ = l_Lean_Environment_replay(v_fst_107_, v_a_87_);
+lean_dec(v_fst_107_);
 if (lean_obj_tag(v___x_108_) == 0)
 {
 lean_object* v_a_109_; lean_object* v___x_110_; 
@@ -903,6 +903,7 @@ v_map_u2081_208_ = lean_ctor_get(v___x_207_, 0);
 lean_inc_ref(v_map_u2081_208_);
 lean_dec_ref(v___x_207_);
 v___x_209_ = l_Lean_Environment_replay(v_map_u2081_208_, v_a_206_);
+lean_dec_ref(v_map_u2081_208_);
 if (lean_obj_tag(v___x_209_) == 0)
 {
 lean_object* v___x_211_; uint8_t v_isShared_212_; uint8_t v_isSharedCheck_217_; 

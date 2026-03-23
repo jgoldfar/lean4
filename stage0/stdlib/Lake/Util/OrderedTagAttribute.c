@@ -1086,7 +1086,6 @@ LEAN_EXPORT lean_object* l_Lake_registerOrderedTagAttribute___lam__7(lean_object
 _start:
 {
 lean_object* v___y_342_; lean_object* v___y_343_; lean_object* v___y_378_; lean_object* v___y_379_; lean_object* v___x_384_; 
-lean_inc_ref(v___y_338_);
 v___x_384_ = l_Lean_Attribute_Builtin_ensureNoArgs(v_stx_336_, v___y_338_, v___y_339_);
 if (lean_obj_tag(v___x_384_) == 0)
 {
@@ -1101,8 +1100,6 @@ lean_dec(v_decl_335_);
 lean_dec_ref(v_a_333_);
 lean_dec_ref(v_validate_332_);
 v___x_387_ = l_Lean_throwAttrMustBeGlobal___at___00Lake_registerOrderedTagAttribute_spec__2___redArg(v_name_334_, v_kind_337_, v___y_338_, v___y_339_);
-lean_dec(v___y_339_);
-lean_dec_ref(v___y_338_);
 return v___x_387_;
 }
 else
@@ -1114,8 +1111,6 @@ goto v___jp_377_;
 }
 else
 {
-lean_dec(v___y_339_);
-lean_dec_ref(v___y_338_);
 lean_dec(v_decl_335_);
 lean_dec(v_name_334_);
 lean_dec_ref(v_a_333_);
@@ -1126,6 +1121,7 @@ v___jp_341_:
 {
 lean_object* v___x_344_; 
 lean_inc(v___y_343_);
+lean_inc_ref(v___y_342_);
 lean_inc(v_decl_335_);
 v___x_344_ = lean_apply_4(v_validate_332_, v_decl_335_, v___y_342_, v___y_343_, lean_box(0));
 if (lean_obj_tag(v___x_344_) == 0)
@@ -1222,7 +1218,6 @@ v_reusejp_365_:
 {
 lean_object* v___x_367_; lean_object* v___x_368_; lean_object* v___x_370_; 
 v___x_367_ = lean_st_ref_set(v___y_343_, v___x_366_);
-lean_dec(v___y_343_);
 v___x_368_ = lean_box(0);
 if (v_isShared_347_ == 0)
 {
@@ -1248,7 +1243,6 @@ return v___x_370_;
 }
 else
 {
-lean_dec(v___y_343_);
 lean_dec(v_decl_335_);
 lean_dec_ref(v_a_333_);
 return v___x_344_;
@@ -1277,8 +1271,6 @@ lean_dec_ref(v___x_382_);
 lean_dec_ref(v_a_333_);
 lean_dec_ref(v_validate_332_);
 v___x_383_ = l_Lean_throwAttrDeclInImportedModule___at___00Lake_registerOrderedTagAttribute_spec__1___redArg(v_name_334_, v_decl_335_, v___y_378_, v___y_379_);
-lean_dec(v___y_379_);
-lean_dec_ref(v___y_378_);
 return v___x_383_;
 }
 }
@@ -1290,6 +1282,8 @@ _start:
 uint8_t v_kind_boxed_397_; lean_object* v_res_398_; 
 v_kind_boxed_397_ = lean_unbox(v_kind_393_);
 v_res_398_ = l_Lake_registerOrderedTagAttribute___lam__7(v_validate_388_, v_a_389_, v_name_390_, v_decl_391_, v_stx_392_, v_kind_boxed_397_, v___y_394_, v___y_395_);
+lean_dec(v___y_395_);
+lean_dec_ref(v___y_394_);
 return v_res_398_;
 }
 }

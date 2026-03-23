@@ -2041,6 +2041,7 @@ v___x_650_ = lean_st_ref_get(v___y_648_);
 lean_inc(v___y_648_);
 v___f_651_ = lean_alloc_closure((void*)(l_Std_Notify_selector___lam__0___boxed), 3, 1);
 lean_closure_set(v___f_651_, 0, v___y_648_);
+lean_inc(v___y_648_);
 v___f_652_ = lean_alloc_closure((void*)(l_Std_Notify_selector___lam__1___boxed), 4, 2);
 lean_closure_set(v___f_652_, 0, v___y_648_);
 lean_closure_set(v___f_652_, 1, v___f_651_);
@@ -2059,6 +2060,7 @@ _start:
 {
 lean_object* v_res_660_; 
 v_res_660_ = l_Std_Notify_selector___lam__2(v___y_658_);
+lean_dec(v___y_658_);
 return v_res_660_;
 }
 }

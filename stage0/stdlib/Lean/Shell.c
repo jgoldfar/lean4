@@ -8799,6 +8799,8 @@ lean_ctor_set(v___x_2570_, 13, v_inheritedTraceOptions_2566_);
 lean_ctor_set_uint8(v___x_2570_, sizeof(void*)*14, v___x_2552_);
 lean_ctor_set_uint8(v___x_2570_, sizeof(void*)*14 + 1, v_suppressElabErrors_2565_);
 v___x_2571_ = l_Lean_Compiler_LCNF_emitC(v_mainModuleName_2531_, v___x_2570_, v___y_2567_);
+lean_dec(v___y_2567_);
+lean_dec_ref(v___x_2570_);
 if (lean_obj_tag(v___x_2571_) == 0)
 {
 lean_object* v_a_2572_; lean_object* v___x_2573_; lean_object* v___x_2574_; lean_object* v___x_2575_; 

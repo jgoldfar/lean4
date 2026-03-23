@@ -5085,6 +5085,10 @@ v_resetjp_1466_:
 {
 lean_object* v___x_1469_; 
 v___x_1469_ = l_Lean_Server_Completion_getDotCompletionTypeNames(v_a_1465_, v___y_1447_, v___y_1448_, v___y_1449_, v___y_1450_);
+lean_dec(v___y_1450_);
+lean_dec_ref(v___y_1449_);
+lean_dec(v___y_1448_);
+lean_dec_ref(v___y_1447_);
 if (lean_obj_tag(v___x_1469_) == 0)
 {
 lean_object* v_a_1470_; lean_object* v___x_1472_; uint8_t v_isShared_1473_; uint8_t v_isSharedCheck_1480_; 
@@ -6728,6 +6732,7 @@ LEAN_EXPORT lean_object* l_Lean_Server_RequestM_sendServerRequest___at___00Lean_
 _start:
 {
 lean_object* v___x_1948_; 
+lean_inc_ref(v_a_1946_);
 v___x_1948_ = l_Lean_Server_RequestM_sendServerRequest___at___00Lean_Server_FileWorker_handleUnknownIdentifierCodeAction_spec__1___redArg(v_method_1944_, v_param_1945_, v_a_1946_);
 return v___x_1948_;
 }
@@ -6737,6 +6742,7 @@ _start:
 {
 lean_object* v_res_1954_; 
 v_res_1954_ = l_Lean_Server_RequestM_sendServerRequest___at___00Lean_Server_FileWorker_handleUnknownIdentifierCodeAction_spec__1(v_inst_1949_, v_method_1950_, v_param_1951_, v_a_1952_);
+lean_dec_ref(v_a_1952_);
 lean_dec_ref(v_inst_1949_);
 return v_res_1954_;
 }

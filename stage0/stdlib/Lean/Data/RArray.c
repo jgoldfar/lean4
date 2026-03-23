@@ -471,6 +471,10 @@ _start:
 {
 lean_object* v_res_193_; 
 v_res_193_ = l_Lean_RArray_toExpr___redArg(v_ty_185_, v_f_186_, v_a_187_, v_a_188_, v_a_189_, v_a_190_, v_a_191_);
+lean_dec(v_a_191_);
+lean_dec_ref(v_a_190_);
+lean_dec(v_a_189_);
+lean_dec_ref(v_a_188_);
 return v_res_193_;
 }
 }
@@ -487,6 +491,10 @@ _start:
 {
 lean_object* v_res_213_; 
 v_res_213_ = l_Lean_RArray_toExpr(v_00_u03b1_204_, v_ty_205_, v_f_206_, v_a_207_, v_a_208_, v_a_209_, v_a_210_, v_a_211_);
+lean_dec(v_a_211_);
+lean_dec_ref(v_a_210_);
+lean_dec(v_a_209_);
+lean_dec_ref(v_a_208_);
 return v_res_213_;
 }
 }

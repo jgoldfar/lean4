@@ -373,6 +373,7 @@ lean_closure_set(v___f_131_, 0, v___x_127_);
 lean_closure_set(v___f_131_, 1, v___x_129_);
 lean_closure_set(v___f_131_, 2, v___x_130_);
 v___x_132_ = l_Lake_loadWorkspace(v_loadConfig_103_, v___f_131_);
+lean_dec_ref(v___f_131_);
 if (lean_obj_tag(v___x_132_) == 0)
 {
 lean_object* v_a_133_; lean_object* v___x_134_; lean_object* v___x_135_; 

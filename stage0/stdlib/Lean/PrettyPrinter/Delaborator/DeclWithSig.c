@@ -159,6 +159,10 @@ _start:
 {
 lean_object* v_res_40_; 
 v_res_40_ = l_Lean_PrettyPrinter_Delaborator_declSigWithId_formatter(v_a_35_, v_a_36_, v_a_37_, v_a_38_);
+lean_dec(v_a_38_);
+lean_dec_ref(v_a_37_);
+lean_dec(v_a_36_);
+lean_dec_ref(v_a_35_);
 return v_res_40_;
 }
 }
@@ -233,6 +237,10 @@ _start:
 {
 lean_object* v_res_86_; 
 v_res_86_ = l_Lean_PrettyPrinter_Delaborator_declSigWithId_parenthesizer(v_a_81_, v_a_82_, v_a_83_, v_a_84_);
+lean_dec(v_a_84_);
+lean_dec_ref(v_a_83_);
+lean_dec(v_a_82_);
+lean_dec_ref(v_a_81_);
 return v_res_86_;
 }
 }
