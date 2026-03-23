@@ -373,6 +373,16 @@ where
     | .oproj _ x _ =>
       if ← isOwned x then ownFVar z (.forwardProjectionProp z)
       if ← isOwned z then ownFVar x (.backwardProjectionProp z)
+    -- Keep in sync with ExplicitRC, PropagateBorrow
+    | .fap ``Array.getInternal args =>
+      if let .fvar parent := args[1]! then
+        if ← isOwned parent then ownFVar z (.forwardProjectionProp z)
+    | .fap ``Array.get!Internal args =>
+      if let .fvar parent := args[2]! then
+        if ← isOwned parent then ownFVar z (.forwardProjectionProp z)
+    | .fap ``Array.uget args =>
+      if let .fvar parent := args[1]! then
+        if ← isOwned parent then ownFVar z (.forwardProjectionProp z)
     | .fap f args =>
       let ps ← getParamInfo (.decl f)
       ownFVar z (.functionCallResult z)

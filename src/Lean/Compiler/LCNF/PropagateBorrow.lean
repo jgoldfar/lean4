@@ -105,9 +105,22 @@ where
 
   collectLetValue (z : FVarId) (v : LetValue .impure) : InferM Unit := do
     match v with
-    | .oproj _ x _ =>
-      let xVal ← getOwnedness x
-      join z xVal
+    | .oproj _ parent _ =>
+      let parentVal ← getOwnedness parent
+      join z parentVal
+    -- Keep in sync with ExplicitRC, InferBorrow
+    | .fap ``Array.getInternal args =>
+      if let .fvar parent := args[1]! then
+        let parentVal ← getOwnedness parent
+        join z parentVal
+    | .fap ``Array.get!Internal args =>
+      if let .fvar parent := args[2]! then
+        let parentVal ← getOwnedness parent
+        join z parentVal
+    | .fap ``Array.uget args =>
+      if let .fvar parent := args[1]! then
+        let parentVal ← getOwnedness parent
+        join z parentVal
     | .ctor .. | .fap .. | .fvar .. | .pap .. | .sproj .. | .uproj .. | .erased .. | .lit .. =>
       join z .own
     | _ => unreachable!

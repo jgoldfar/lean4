@@ -81,3 +81,86 @@ def testWithoutAnnotation (n : Nat) (p q : Prod Nat Nat) : Prod Nat Nat :=
     | 0 => (123, p)
     | n + 1 => (n * (n + 1), q)
   { helper with fst := value }
+
+/--
+trace: [Compiler.inferBorrow] own _x.28: result of ctor call _x.28
+[Compiler.inferBorrow] own _x.30: result of ctor call _x.30
+[Compiler.inferBorrow] own n: argument to constructor call _x.30
+[Compiler.inferBorrow] own _x.29: result of function call _x.29
+[Compiler.inferBorrow] size: 2
+    def testArrayWithAnnotation._closed_0 : obj :=
+      let _x.1 := 0;
+      let _x.2 := ctor_0[Prod.mk] _x.1 _x.1;
+      return _x.2
+[Compiler.inferBorrow] size: 4
+    def testArrayWithAnnotation n @&ps : obj :=
+      let _x.1 := testArrayWithAnnotation._closed_0;
+      let pair := Array.get!Internal ◾ _x.1 ps n;
+      let snd := oproj[1] pair;
+      let _x.2 := ctor_0[Prod.mk] n snd;
+      return _x.2
+-/
+#guard_msgs in
+set_option trace.Compiler.inferBorrow true in
+def testArrayWithAnnotation (n : Nat) (ps : @&Array (Nat × Nat)) : Nat × Nat :=
+  let pair := ps[n]!
+  { pair with fst := n }
+
+/--
+trace: [Compiler.inferBorrow] own _x.28: used in reset reuse _x.28
+[Compiler.inferBorrow] own _x.29: used in reset reuse _x.28
+[Compiler.inferBorrow] own n: argument to constructor call _x.28
+[Compiler.inferBorrow] own pair: used in reset reuse _x.29
+[Compiler.inferBorrow] own snd: fwd projection propagation snd
+[Compiler.inferBorrow] own _x.27: result of function call _x.27
+[Compiler.inferBorrow] size: 5
+    def testArrayWithoutAnnotation n @&ps : obj :=
+      let _x.1 := testArrayWithAnnotation._closed_0;
+      let pair := Array.get!Internal ◾ _x.1 ps n;
+      let snd := oproj[1] pair;
+      let _x.2 := reset[2] pair;
+      let _x.3 := reuse _x.2 in ctor_0[Prod.mk] n snd;
+      return _x.3
+-/
+#guard_msgs in
+set_option trace.Compiler.inferBorrow true in
+def testArrayWithoutAnnotation (n : Nat) (ps : Array (Nat × Nat)) : Nat × Nat :=
+  let pair := ps[n]!
+  { pair with fst := n }
+
+/--
+warning: declaration uses `sorry`
+---
+trace: [Compiler.inferBorrow] own _x.11: result of ctor call _x.11
+[Compiler.inferBorrow] own n: argument to constructor call _x.11
+[Compiler.inferBorrow] size: 3
+    def testArrayWithAnnotation' n @&ps : obj :=
+      let pair := Array.getInternal ◾ ps n ◾;
+      let snd := oproj[1] pair;
+      let _x.1 := ctor_0[Prod.mk] n snd;
+      return _x.1
+-/
+#guard_msgs in
+set_option trace.Compiler.inferBorrow true in
+def testArrayWithAnnotation' (n : Nat) (ps : @&Array (Nat × Nat)) : Nat × Nat :=
+  let pair := ps[n]'sorry
+  { pair with fst := n }
+
+/--
+warning: declaration uses `sorry`
+---
+trace: [Compiler.inferBorrow] own _x.13: result of ctor call _x.13
+[Compiler.inferBorrow] own _x.12: result of function call _x.12
+[Compiler.inferBorrow] size: 4
+    def testArrayWithAnnotation'' n @&ps : obj :=
+      let pair := Array.uget ◾ ps n ◾;
+      let snd := oproj[1] pair;
+      let _x.1 := USize.toNat n;
+      let _x.2 := ctor_0[Prod.mk] _x.1 snd;
+      return _x.2
+-/
+#guard_msgs in
+set_option trace.Compiler.inferBorrow true in
+def testArrayWithAnnotation'' (n : USize) (ps : @&Array (Nat × Nat)) : Nat × Nat :=
+  let pair := ps[n]'sorry
+  { pair with fst := n.toNat }
