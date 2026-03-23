@@ -230,10 +230,10 @@ return v___x_35_;
 LEAN_EXPORT lean_object* l_Lean_ForEachExprWhere_visited___redArg___lam__0___boxed(lean_object* v___x_38_, lean_object* v_e_39_, lean_object* v_s_40_){
 _start:
 {
-size_t v___x_383__boxed_41_; lean_object* v_res_42_; 
-v___x_383__boxed_41_ = lean_unbox_usize(v___x_38_);
+size_t v___x_331__boxed_41_; lean_object* v_res_42_; 
+v___x_331__boxed_41_ = lean_unbox_usize(v___x_38_);
 lean_dec(v___x_38_);
-v_res_42_ = l_Lean_ForEachExprWhere_visited___redArg___lam__0(v___x_383__boxed_41_, v_e_39_, v_s_40_);
+v_res_42_ = l_Lean_ForEachExprWhere_visited___redArg___lam__0(v___x_331__boxed_41_, v_e_39_, v_s_40_);
 return v_res_42_;
 }
 }
@@ -252,9 +252,9 @@ return v___x_48_;
 LEAN_EXPORT lean_object* l_Lean_ForEachExprWhere_visited___redArg___lam__1___boxed(lean_object* v_toApplicative_49_, lean_object* v___x_50_, lean_object* v_a_51_){
 _start:
 {
-uint8_t v___x_406__boxed_52_; lean_object* v_res_53_; 
-v___x_406__boxed_52_ = lean_unbox(v___x_50_);
-v_res_53_ = l_Lean_ForEachExprWhere_visited___redArg___lam__1(v_toApplicative_49_, v___x_406__boxed_52_, v_a_51_);
+uint8_t v___x_354__boxed_52_; lean_object* v_res_53_; 
+v___x_354__boxed_52_ = lean_unbox(v___x_50_);
+v_res_53_ = l_Lean_ForEachExprWhere_visited___redArg___lam__1(v_toApplicative_49_, v___x_354__boxed_52_, v_a_51_);
 return v_res_53_;
 }
 }
@@ -418,9 +418,9 @@ return v___x_123_;
 LEAN_EXPORT lean_object* l_Lean_ForEachExprWhere_checked___redArg___lam__1___boxed(lean_object* v_toApplicative_124_, lean_object* v___x_125_, lean_object* v_a_126_){
 _start:
 {
-uint8_t v___x_426__boxed_127_; lean_object* v_res_128_; 
-v___x_426__boxed_127_ = lean_unbox(v___x_125_);
-v_res_128_ = l_Lean_ForEachExprWhere_checked___redArg___lam__1(v_toApplicative_124_, v___x_426__boxed_127_, v_a_126_);
+uint8_t v___x_374__boxed_127_; lean_object* v_res_128_; 
+v___x_374__boxed_127_ = lean_unbox(v___x_125_);
+v_res_128_ = l_Lean_ForEachExprWhere_checked___redArg___lam__1(v_toApplicative_124_, v___x_374__boxed_127_, v_a_126_);
 return v_res_128_;
 }
 }

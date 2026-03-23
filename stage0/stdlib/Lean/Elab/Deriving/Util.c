@@ -1713,9 +1713,9 @@ goto _start;
 LEAN_EXPORT lean_object* l_List_filterTR_loop___at___00Lean_Elab_Deriving_withoutExposeFromCtors_spec__3___boxed(lean_object* v___x_710_, lean_object* v_a_711_, lean_object* v_a_712_){
 _start:
 {
-uint8_t v___x_5475__boxed_713_; lean_object* v_res_714_; 
-v___x_5475__boxed_713_ = lean_unbox(v___x_710_);
-v_res_714_ = l_List_filterTR_loop___at___00Lean_Elab_Deriving_withoutExposeFromCtors_spec__3(v___x_5475__boxed_713_, v_a_711_, v_a_712_);
+uint8_t v___x_5366__boxed_713_; lean_object* v_res_714_; 
+v___x_5366__boxed_713_ = lean_unbox(v___x_710_);
+v_res_714_ = l_List_filterTR_loop___at___00Lean_Elab_Deriving_withoutExposeFromCtors_spec__3(v___x_5366__boxed_713_, v_a_711_, v_a_712_);
 return v_res_714_;
 }
 }
@@ -1801,9 +1801,9 @@ return v___x_736_;
 LEAN_EXPORT lean_object* l_Lean_Elab_Deriving_withoutExposeFromCtors___redArg___lam__0___boxed(lean_object* v___x_739_, lean_object* v_sc_740_){
 _start:
 {
-uint8_t v___x_5570__boxed_741_; lean_object* v_res_742_; 
-v___x_5570__boxed_741_ = lean_unbox(v___x_739_);
-v_res_742_ = l_Lean_Elab_Deriving_withoutExposeFromCtors___redArg___lam__0(v___x_5570__boxed_741_, v_sc_740_);
+uint8_t v___x_5461__boxed_741_; lean_object* v_res_742_; 
+v___x_5461__boxed_741_ = lean_unbox(v___x_739_);
+v_res_742_ = l_Lean_Elab_Deriving_withoutExposeFromCtors___redArg___lam__0(v___x_5461__boxed_741_, v_sc_740_);
 return v_res_742_;
 }
 }
@@ -1893,9 +1893,9 @@ return v___x_744_;
 LEAN_EXPORT lean_object* l_Lean_Elab_Deriving_withoutExposeFromCtors___redArg___lam__1___boxed(lean_object* v___x_762_, lean_object* v___x_763_, lean_object* v_x_764_){
 _start:
 {
-uint8_t v___x_5617__boxed_765_; uint8_t v_res_766_; lean_object* v_r_767_; 
-v___x_5617__boxed_765_ = lean_unbox(v___x_763_);
-v_res_766_ = l_Lean_Elab_Deriving_withoutExposeFromCtors___redArg___lam__1(v___x_762_, v___x_5617__boxed_765_, v_x_764_);
+uint8_t v___x_5508__boxed_765_; uint8_t v_res_766_; lean_object* v_r_767_; 
+v___x_5508__boxed_765_ = lean_unbox(v___x_763_);
+v_res_766_ = l_Lean_Elab_Deriving_withoutExposeFromCtors___redArg___lam__1(v___x_762_, v___x_5508__boxed_765_, v_x_764_);
 lean_dec(v___x_762_);
 v_r_767_ = lean_box(v_res_766_);
 return v_r_767_;

@@ -25,8 +25,8 @@ lean_object* l_Lean_Expr_getAppFn(lean_object*);
 lean_object* l_Lean_Meta_Grind_Goal_getRoot_x3f(lean_object*, lean_object*);
 lean_object* lean_mk_empty_array_with_capacity(lean_object*);
 lean_object* l_mkPanicMessageWithDecl(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-lean_object* l_instMonadEST(lean_object*, lean_object*);
-lean_object* l_ReaderT_instMonad___redArg(lean_object*);
+lean_object* l_instMonadEIO(lean_object*);
+lean_object* l_StateRefT_x27_instMonad___redArg(lean_object*);
 lean_object* l_Lean_Core_instMonadCoreM___lam__0___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Core_instMonadCoreM___lam__1___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_ReaderT_instFunctorOfMonad___redArg___lam__0(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
@@ -36,6 +36,7 @@ lean_object* l_ReaderT_instApplicativeOfMonad___redArg___lam__3(lean_object*, le
 lean_object* l_ReaderT_instApplicativeOfMonad___redArg___lam__4(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Meta_instMonadMetaM___lam__0___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Meta_instMonadMetaM___lam__1___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
+lean_object* l_ReaderT_instMonad___redArg(lean_object*);
 lean_object* l_instInhabitedOfMonad___redArg(lean_object*, lean_object*);
 lean_object* lean_panic_fn(lean_object*, lean_object*);
 lean_object* lean_array_get_size(lean_object*);
@@ -157,7 +158,7 @@ static lean_object* _init_l_panic___at___00Lean_Meta_Grind_getEqcLambdas_spec__1
 _start:
 {
 lean_object* v___x_1_; 
-v___x_1_ = l_instMonadEST(lean_box(0), lean_box(0));
+v___x_1_ = l_instMonadEIO(lean_box(0));
 return v___x_1_;
 }
 }
@@ -166,7 +167,7 @@ _start:
 {
 lean_object* v___x_18_; lean_object* v___x_19_; lean_object* v_toApplicative_20_; lean_object* v___x_22_; uint8_t v_isShared_23_; uint8_t v_isSharedCheck_87_; 
 v___x_18_ = lean_obj_once(&l_panic___at___00Lean_Meta_Grind_getEqcLambdas_spec__1___closed__0, &l_panic___at___00Lean_Meta_Grind_getEqcLambdas_spec__1___closed__0_once, _init_l_panic___at___00Lean_Meta_Grind_getEqcLambdas_spec__1___closed__0);
-v___x_19_ = l_ReaderT_instMonad___redArg(v___x_18_);
+v___x_19_ = l_StateRefT_x27_instMonad___redArg(v___x_18_);
 v_toApplicative_20_ = lean_ctor_get(v___x_19_, 0);
 v_isSharedCheck_87_ = !lean_is_exclusive(v___x_19_);
 if (v_isSharedCheck_87_ == 0)
@@ -277,7 +278,7 @@ goto v_reusejp_41_;
 v_reusejp_41_:
 {
 lean_object* v___x_43_; lean_object* v_toApplicative_44_; lean_object* v___x_46_; uint8_t v_isShared_47_; uint8_t v_isSharedCheck_81_; 
-v___x_43_ = l_ReaderT_instMonad___redArg(v___x_42_);
+v___x_43_ = l_StateRefT_x27_instMonad___redArg(v___x_42_);
 v_toApplicative_44_ = lean_ctor_get(v___x_43_, 0);
 v_isSharedCheck_81_ = !lean_is_exclusive(v___x_43_);
 if (v_isSharedCheck_81_ == 0)
@@ -387,17 +388,17 @@ goto v_reusejp_65_;
 }
 v_reusejp_65_:
 {
-lean_object* v___x_67_; lean_object* v___x_68_; lean_object* v___x_69_; lean_object* v___x_70_; lean_object* v___x_71_; lean_object* v___x_72_; lean_object* v___x_73_; lean_object* v___x_74_; lean_object* v___x_2576__overap_75_; lean_object* v___x_76_; 
-v___x_67_ = l_ReaderT_instMonad___redArg(v___x_66_);
+lean_object* v___x_67_; lean_object* v___x_68_; lean_object* v___x_69_; lean_object* v___x_70_; lean_object* v___x_71_; lean_object* v___x_72_; lean_object* v___x_73_; lean_object* v___x_74_; lean_object* v___x_2204__overap_75_; lean_object* v___x_76_; 
+v___x_67_ = l_StateRefT_x27_instMonad___redArg(v___x_66_);
 v___x_68_ = l_ReaderT_instMonad___redArg(v___x_67_);
-v___x_69_ = l_ReaderT_instMonad___redArg(v___x_68_);
+v___x_69_ = l_StateRefT_x27_instMonad___redArg(v___x_68_);
 v___x_70_ = l_ReaderT_instMonad___redArg(v___x_69_);
 v___x_71_ = l_ReaderT_instMonad___redArg(v___x_70_);
-v___x_72_ = l_ReaderT_instMonad___redArg(v___x_71_);
+v___x_72_ = l_StateRefT_x27_instMonad___redArg(v___x_71_);
 v___x_73_ = lean_box(0);
 v___x_74_ = l_instInhabitedOfMonad___redArg(v___x_72_, v___x_73_);
-v___x_2576__overap_75_ = lean_panic_fn(v___x_74_, v_msg_6_);
-v___x_76_ = lean_apply_11(v___x_2576__overap_75_, v___y_7_, v___y_8_, v___y_9_, v___y_10_, v___y_11_, v___y_12_, v___y_13_, v___y_14_, v___y_15_, v___y_16_, lean_box(0));
+v___x_2204__overap_75_ = lean_panic_fn(v___x_74_, v_msg_6_);
+v___x_76_ = lean_apply_11(v___x_2204__overap_75_, v___y_7_, v___y_8_, v___y_9_, v___y_10_, v___y_11_, v___y_12_, v___y_13_, v___y_14_, v___y_15_, v___y_16_, lean_box(0));
 return v___x_76_;
 }
 }
@@ -2322,8 +2323,8 @@ lean_inc(v___y_703_);
 lean_inc_ref(v___y_702_);
 lean_inc(v___y_701_);
 lean_inc(v___y_700_);
-v___y_721_ = v_snd_764_;
-v___y_722_ = v_fst_763_;
+v___y_721_ = v_fst_763_;
+v___y_722_ = v_snd_764_;
 v___y_723_ = v_a_758_;
 v___y_724_ = v___y_700_;
 v___y_725_ = v___y_701_;
@@ -2408,8 +2409,8 @@ lean_inc(v___y_703_);
 lean_inc_ref(v___y_702_);
 lean_inc(v___y_701_);
 lean_inc(v___y_700_);
-v___y_721_ = v_snd_766_;
-v___y_722_ = v_fst_765_;
+v___y_721_ = v_fst_765_;
+v___y_722_ = v_snd_766_;
 v___y_723_ = v_a_758_;
 v___y_724_ = v___y_700_;
 v___y_725_ = v___y_701_;
@@ -2871,12 +2872,12 @@ v___jp_720_:
 {
 lean_object* v___x_734_; lean_object* v___x_735_; lean_object* v___x_736_; lean_object* v___x_737_; 
 v___x_734_ = lean_unsigned_to_nat(1u);
-v___x_735_ = lean_nat_add(v___y_722_, v___x_734_);
-lean_dec(v___y_722_);
+v___x_735_ = lean_nat_add(v___y_721_, v___x_734_);
+lean_dec(v___y_721_);
 lean_inc(v_a_719_);
 v___x_736_ = lean_alloc_ctor(3, 1, 0);
 lean_ctor_set(v___x_736_, 0, v_a_719_);
-v___x_737_ = l_Lean_Meta_Grind_addNewRawFact(v___y_721_, v___y_723_, v___x_735_, v___x_736_, v___y_724_, v___y_725_, v___y_726_, v___y_727_, v___y_728_, v___y_729_, v___y_730_, v___y_731_, v___y_732_, v___y_733_);
+v___x_737_ = l_Lean_Meta_Grind_addNewRawFact(v___y_722_, v___y_723_, v___x_735_, v___x_736_, v___y_724_, v___y_725_, v___y_726_, v___y_727_, v___y_728_, v___y_729_, v___y_730_, v___y_731_, v___y_732_, v___y_733_);
 lean_dec(v___y_729_);
 lean_dec_ref(v___y_728_);
 lean_dec(v___y_727_);

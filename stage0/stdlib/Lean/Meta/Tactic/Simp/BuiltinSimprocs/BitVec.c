@@ -53,6 +53,7 @@ lean_object* lean_nat_mul(lean_object*, lean_object*);
 lean_object* l_BitVec_replicate(lean_object*, lean_object*, lean_object*);
 lean_object* l_BitVec_not(lean_object*, lean_object*);
 lean_object* l_Lean_Meta_Simp_addSimprocBuiltinAttr(lean_object*, uint8_t, lean_object*);
+uint8_t lean_nat_dec_le(lean_object*, lean_object*);
 lean_object* lean_nat_land(lean_object*, lean_object*);
 uint8_t lean_nat_dec_lt(lean_object*, lean_object*);
 lean_object* l_BitVec_signExtend(lean_object*, lean_object*, lean_object*);
@@ -69,6 +70,7 @@ lean_object* lean_nat_shiftr(lean_object*, lean_object*);
 lean_object* l_BitVec_sdiv(lean_object*, lean_object*, lean_object*);
 lean_object* l_BitVec_smod(lean_object*, lean_object*, lean_object*);
 uint8_t l_Nat_testBit(lean_object*, lean_object*);
+uint8_t l_instDecidableLtBitVec___aux__1___redArg(lean_object*, lean_object*);
 lean_object* l_BitVec_mul(lean_object*, lean_object*, lean_object*);
 lean_object* l_BitVec_rotateLeft(lean_object*, lean_object*, lean_object*);
 lean_object* lean_nat_sub(lean_object*, lean_object*);
@@ -28611,7 +28613,7 @@ else
 {
 uint8_t v___x_8075_; lean_object* v___x_8076_; 
 lean_del_object(v___x_8063_);
-v___x_8075_ = lean_nat_dec_lt(v_value_8067_, v_value_8069_);
+v___x_8075_ = l_instDecidableLtBitVec___aux__1___redArg(v_value_8067_, v_value_8069_);
 lean_dec(v_value_8069_);
 lean_dec(v_value_8067_);
 v___x_8076_ = l_Lean_Meta_Simp_evalPropStep___redArg(v_e_8040_, v___x_8075_, v_a_8041_, v_a_8042_, v_a_8043_, v_a_8044_);
@@ -29411,7 +29413,7 @@ else
 {
 uint8_t v___x_8347_; lean_object* v___x_8348_; 
 lean_del_object(v___x_8335_);
-v___x_8347_ = lean_nat_dec_lt(v_value_8341_, v_value_8339_);
+v___x_8347_ = l_instDecidableLtBitVec___aux__1___redArg(v_value_8341_, v_value_8339_);
 lean_dec(v_value_8339_);
 lean_dec(v_value_8341_);
 v___x_8348_ = l_Lean_Meta_Simp_evalPropStep___redArg(v_e_8312_, v___x_8347_, v_a_8313_, v_a_8314_, v_a_8315_, v_a_8316_);

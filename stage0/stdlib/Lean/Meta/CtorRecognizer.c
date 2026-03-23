@@ -1494,8 +1494,8 @@ return v___x_459_;
 else
 {
 lean_object* v___x_461_; 
-lean_dec_ref(v___x_459_);
 lean_dec(v_a_460_);
+lean_dec_ref(v___x_459_);
 lean_inc(v_a_404_);
 lean_inc_ref(v_a_403_);
 lean_inc(v_a_402_);
@@ -2648,8 +2648,8 @@ return v___x_803_;
 else
 {
 lean_object* v___x_805_; 
-lean_dec(v_a_804_);
 lean_dec_ref(v___x_803_);
+lean_dec(v_a_804_);
 lean_inc(v_a_722_);
 lean_inc_ref(v_a_721_);
 lean_inc(v_a_720_);

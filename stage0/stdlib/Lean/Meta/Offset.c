@@ -67,8 +67,8 @@ lean_object* l_Lean_mkNatLit(lean_object*);
 uint8_t lean_nat_dec_lt(lean_object*, lean_object*);
 lean_object* l_Lean_mkNatAdd(lean_object*, lean_object*);
 lean_object* l_OptionT_lift___redArg___lam__0(lean_object*, lean_object*);
-lean_object* l_instMonadEST(lean_object*, lean_object*);
-lean_object* l_ReaderT_instMonad___redArg(lean_object*);
+lean_object* l_instMonadEIO(lean_object*);
+lean_object* l_StateRefT_x27_instMonad___redArg(lean_object*);
 lean_object* l_ReaderT_instFunctorOfMonad___redArg___lam__0(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_ReaderT_instFunctorOfMonad___redArg___lam__1(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_ReaderT_instApplicativeOfMonad___redArg___lam__1(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
@@ -269,7 +269,7 @@ static lean_object* _init_l___private_Lean_Meta_Offset_0__Lean_Meta_withInstanti
 _start:
 {
 lean_object* v___x_1_; 
-v___x_1_ = l_instMonadEST(lean_box(0), lean_box(0));
+v___x_1_ = l_instMonadEIO(lean_box(0));
 return v___x_1_;
 }
 }
@@ -278,7 +278,7 @@ _start:
 {
 lean_object* v___x_2_; lean_object* v___x_3_; 
 v___x_2_ = lean_obj_once(&l___private_Lean_Meta_Offset_0__Lean_Meta_withInstantiatedMVars___redArg___closed__0, &l___private_Lean_Meta_Offset_0__Lean_Meta_withInstantiatedMVars___redArg___closed__0_once, _init_l___private_Lean_Meta_Offset_0__Lean_Meta_withInstantiatedMVars___redArg___closed__0);
-v___x_3_ = l_ReaderT_instMonad___redArg(v___x_2_);
+v___x_3_ = l_StateRefT_x27_instMonad___redArg(v___x_2_);
 return v___x_3_;
 }
 }
@@ -397,7 +397,7 @@ goto v_reusejp_39_;
 v_reusejp_39_:
 {
 lean_object* v___x_41_; lean_object* v_toApplicative_42_; lean_object* v___x_44_; uint8_t v_isShared_45_; uint8_t v_isSharedCheck_120_; 
-v___x_41_ = l_ReaderT_instMonad___redArg(v___x_40_);
+v___x_41_ = l_StateRefT_x27_instMonad___redArg(v___x_40_);
 v_toApplicative_42_ = lean_ctor_get(v___x_41_, 0);
 v_isSharedCheck_120_ = !lean_is_exclusive(v___x_41_);
 if (v_isSharedCheck_120_ == 0)
@@ -880,7 +880,7 @@ goto v_reusejp_166_;
 v_reusejp_166_:
 {
 lean_object* v___x_168_; lean_object* v_toApplicative_169_; lean_object* v___x_171_; uint8_t v_isShared_172_; uint8_t v_isSharedCheck_247_; 
-v___x_168_ = l_ReaderT_instMonad___redArg(v___x_167_);
+v___x_168_ = l_StateRefT_x27_instMonad___redArg(v___x_167_);
 v_toApplicative_169_ = lean_ctor_get(v___x_168_, 0);
 v_isSharedCheck_247_ = !lean_is_exclusive(v___x_168_);
 if (v_isSharedCheck_247_ == 0)
@@ -5893,9 +5893,9 @@ return v___x_1274_;
 LEAN_EXPORT lean_object* l_Lean_Meta_matchesInstance___lam__0___boxed(lean_object* v___x_1286_, lean_object* v_e_1287_, lean_object* v_inst_1288_, lean_object* v___y_1289_, lean_object* v___y_1290_, lean_object* v___y_1291_, lean_object* v___y_1292_, lean_object* v___y_1293_){
 _start:
 {
-uint8_t v___x_746__boxed_1294_; lean_object* v_res_1295_; 
-v___x_746__boxed_1294_ = lean_unbox(v___x_1286_);
-v_res_1295_ = l_Lean_Meta_matchesInstance___lam__0(v___x_746__boxed_1294_, v_e_1287_, v_inst_1288_, v___y_1289_, v___y_1290_, v___y_1291_, v___y_1292_);
+uint8_t v___x_684__boxed_1294_; lean_object* v_res_1295_; 
+v___x_684__boxed_1294_ = lean_unbox(v___x_1286_);
+v_res_1295_ = l_Lean_Meta_matchesInstance___lam__0(v___x_684__boxed_1294_, v_e_1287_, v_inst_1288_, v___y_1289_, v___y_1290_, v___y_1291_, v___y_1292_);
 return v_res_1295_;
 }
 }
@@ -7375,9 +7375,9 @@ return v___x_1659_;
 LEAN_EXPORT lean_object* l_Lean_Meta_isDefEqOffset___lam__1___boxed(lean_object* v___x_1660_, lean_object* v___y_1661_, lean_object* v___y_1662_, lean_object* v___y_1663_, lean_object* v___y_1664_, lean_object* v___y_1665_){
 _start:
 {
-uint8_t v___x_3826__boxed_1666_; lean_object* v_res_1667_; 
-v___x_3826__boxed_1666_ = lean_unbox(v___x_1660_);
-v_res_1667_ = l_Lean_Meta_isDefEqOffset___lam__1(v___x_3826__boxed_1666_, v___y_1661_, v___y_1662_, v___y_1663_, v___y_1664_);
+uint8_t v___x_3578__boxed_1666_; lean_object* v_res_1667_; 
+v___x_3578__boxed_1666_ = lean_unbox(v___x_1660_);
+v_res_1667_ = l_Lean_Meta_isDefEqOffset___lam__1(v___x_3578__boxed_1666_, v___y_1661_, v___y_1662_, v___y_1663_, v___y_1664_);
 lean_dec(v___y_1664_);
 lean_dec_ref(v___y_1663_);
 lean_dec(v___y_1662_);

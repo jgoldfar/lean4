@@ -18,7 +18,7 @@ lean_object* lean_nat_add(lean_object*, lean_object*);
 lean_object* l_List_foldl___redArg(lean_object*, lean_object*, lean_object*);
 uint8_t lean_nat_dec_eq(lean_object*, lean_object*);
 uint8_t lean_nat_dec_le(lean_object*, lean_object*);
-uint8_t lean_nat_dec_lt(lean_object*, lean_object*);
+uint8_t l_String_instDecidableLtRaw___aux__1(lean_object*, lean_object*);
 lean_object* lean_string_push(lean_object*, uint32_t);
 lean_object* l_mkPanicMessageWithDecl(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 extern uint8_t l_instInhabitedUInt8;
@@ -662,7 +662,7 @@ LEAN_EXPORT uint8_t l_String_instDecidableLtPos___redArg(lean_object* v_l_177_, 
 _start:
 {
 uint8_t v___x_179_; 
-v___x_179_ = lean_nat_dec_lt(v_l_177_, v_r_178_);
+v___x_179_ = l_String_instDecidableLtRaw___aux__1(v_l_177_, v_r_178_);
 return v___x_179_;
 }
 }
@@ -681,7 +681,7 @@ LEAN_EXPORT uint8_t l_String_instDecidableLtPos(lean_object* v_s_184_, lean_obje
 _start:
 {
 uint8_t v___x_187_; 
-v___x_187_ = lean_nat_dec_lt(v_l_185_, v_r_186_);
+v___x_187_ = l_String_instDecidableLtRaw___aux__1(v_l_185_, v_r_186_);
 return v___x_187_;
 }
 }
@@ -900,7 +900,7 @@ v_str_289_ = lean_ctor_get(v_s_287_, 0);
 v_startInclusive_290_ = lean_ctor_get(v_s_287_, 1);
 v_endExclusive_291_ = lean_ctor_get(v_s_287_, 2);
 v___x_292_ = lean_nat_sub(v_endExclusive_291_, v_startInclusive_290_);
-v___x_293_ = lean_nat_dec_lt(v_p_288_, v___x_292_);
+v___x_293_ = l_String_instDecidableLtRaw___aux__1(v_p_288_, v___x_292_);
 lean_dec(v___x_292_);
 if (v___x_293_ == 0)
 {
@@ -1137,7 +1137,7 @@ LEAN_EXPORT uint8_t l_String_instDecidableLtPos__1___redArg(lean_object* v_l_372
 _start:
 {
 uint8_t v___x_374_; 
-v___x_374_ = lean_nat_dec_lt(v_l_372_, v_r_373_);
+v___x_374_ = l_String_instDecidableLtRaw___aux__1(v_l_372_, v_r_373_);
 return v___x_374_;
 }
 }
@@ -1156,7 +1156,7 @@ LEAN_EXPORT uint8_t l_String_instDecidableLtPos__1(lean_object* v_s_379_, lean_o
 _start:
 {
 uint8_t v___x_382_; 
-v___x_382_ = lean_nat_dec_lt(v_l_380_, v_r_381_);
+v___x_382_ = l_String_instDecidableLtRaw___aux__1(v_l_380_, v_r_381_);
 return v___x_382_;
 }
 }

@@ -530,9 +530,9 @@ return v___x_110_;
 LEAN_EXPORT lean_object* l___private_Init_While_0__Lean_Loop_forIn_loop___at___00__private_Lean_Compiler_IR_AddExtern_0__Lean_IR_addExtern_addMono_spec__2___boxed(lean_object* v___x_114_, lean_object* v_b_115_, lean_object* v___y_116_, lean_object* v___y_117_, lean_object* v___y_118_){
 _start:
 {
-uint8_t v___x_1974__boxed_119_; lean_object* v_res_120_; 
-v___x_1974__boxed_119_ = lean_unbox(v___x_114_);
-v_res_120_ = l___private_Init_While_0__Lean_Loop_forIn_loop___at___00__private_Lean_Compiler_IR_AddExtern_0__Lean_IR_addExtern_addMono_spec__2(v___x_1974__boxed_119_, v_b_115_, v___y_116_, v___y_117_);
+uint8_t v___x_1647__boxed_119_; lean_object* v_res_120_; 
+v___x_1647__boxed_119_ = lean_unbox(v___x_114_);
+v_res_120_ = l___private_Init_While_0__Lean_Loop_forIn_loop___at___00__private_Lean_Compiler_IR_AddExtern_0__Lean_IR_addExtern_addMono_spec__2(v___x_1647__boxed_119_, v_b_115_, v___y_116_, v___y_117_);
 lean_dec(v___y_117_);
 lean_dec_ref(v___y_116_);
 return v_res_120_;
@@ -1187,12 +1187,12 @@ return v___x_297_;
 LEAN_EXPORT lean_object* l___private_Lean_Compiler_IR_AddExtern_0__Lean_IR_addExtern_addImpure___lam__0___boxed(lean_object* v___x_300_, lean_object* v___x_301_, lean_object* v___x_302_, lean_object* v___x_303_, lean_object* v___x_304_, lean_object* v___y_305_, lean_object* v___y_306_, lean_object* v___y_307_, lean_object* v___y_308_, lean_object* v___y_309_){
 _start:
 {
-uint8_t v___x_2944__boxed_310_; uint8_t v___x_2947__boxed_311_; size_t v___x_2948__boxed_312_; lean_object* v_res_313_; 
-v___x_2944__boxed_310_ = lean_unbox(v___x_300_);
-v___x_2947__boxed_311_ = lean_unbox(v___x_303_);
-v___x_2948__boxed_312_ = lean_unbox_usize(v___x_304_);
+uint8_t v___x_2773__boxed_310_; uint8_t v___x_2776__boxed_311_; size_t v___x_2777__boxed_312_; lean_object* v_res_313_; 
+v___x_2773__boxed_310_ = lean_unbox(v___x_300_);
+v___x_2776__boxed_311_ = lean_unbox(v___x_303_);
+v___x_2777__boxed_312_ = lean_unbox_usize(v___x_304_);
 lean_dec(v___x_304_);
-v_res_313_ = l___private_Lean_Compiler_IR_AddExtern_0__Lean_IR_addExtern_addImpure___lam__0(v___x_2944__boxed_310_, v___x_301_, v___x_302_, v___x_2947__boxed_311_, v___x_2948__boxed_312_, v___y_305_, v___y_306_, v___y_307_, v___y_308_);
+v_res_313_ = l___private_Lean_Compiler_IR_AddExtern_0__Lean_IR_addExtern_addImpure___lam__0(v___x_2773__boxed_310_, v___x_301_, v___x_302_, v___x_2776__boxed_311_, v___x_2777__boxed_312_, v___y_305_, v___y_306_, v___y_307_, v___y_308_);
 return v_res_313_;
 }
 }

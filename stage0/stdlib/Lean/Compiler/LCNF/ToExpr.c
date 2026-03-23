@@ -28,7 +28,7 @@ lean_object* l_Lean_Name_mkStr1(lean_object*);
 lean_object* lean_array_get_size(lean_object*);
 uint8_t lean_nat_dec_lt(lean_object*, lean_object*);
 lean_object* l_Lean_Compiler_LCNF_LetValue_toExpr(uint8_t, lean_object*);
-lean_object* l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_FVarIdSet_insert_spec__1___redArg(lean_object*, lean_object*, lean_object*);
+lean_object* l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_instSingletonFVarIdFVarIdSet_spec__1___redArg(lean_object*, lean_object*, lean_object*);
 size_t lean_array_size(lean_object*);
 uint8_t lean_usize_dec_lt(size_t, size_t);
 lean_object* lean_array_uget_borrowed(lean_object*, size_t);
@@ -589,7 +589,7 @@ _start:
 {
 lean_object* v___x_161_; lean_object* v___x_162_; lean_object* v___x_163_; lean_object* v___x_164_; 
 lean_inc(v_a_159_);
-v___x_161_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_FVarIdSet_insert_spec__1___redArg(v_fvarId_157_, v_a_159_, v_a_160_);
+v___x_161_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_instSingletonFVarIdFVarIdSet_spec__1___redArg(v_fvarId_157_, v_a_159_, v_a_160_);
 v___x_162_ = lean_unsigned_to_nat(1u);
 v___x_163_ = lean_nat_add(v_a_159_, v___x_162_);
 lean_dec(v_a_159_);
@@ -602,7 +602,7 @@ _start:
 {
 lean_object* v___x_170_; lean_object* v___x_171_; lean_object* v___x_172_; lean_object* v___x_173_; 
 lean_inc(v_a_168_);
-v___x_170_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_FVarIdSet_insert_spec__1___redArg(v_fvarId_166_, v_a_168_, v_a_169_);
+v___x_170_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_instSingletonFVarIdFVarIdSet_spec__1___redArg(v_fvarId_166_, v_a_168_, v_a_169_);
 v___x_171_ = lean_unsigned_to_nat(1u);
 v___x_172_ = lean_nat_add(v_a_168_, v___x_171_);
 lean_dec(v_a_168_);
@@ -633,7 +633,7 @@ v___x_185_ = lean_nat_add(v_i_176_, v___x_184_);
 lean_dec(v_i_176_);
 lean_inc(v_a_177_);
 lean_inc(v_fvarId_183_);
-v___x_186_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_FVarIdSet_insert_spec__1___redArg(v_fvarId_183_, v_a_177_, v_a_178_);
+v___x_186_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_instSingletonFVarIdFVarIdSet_spec__1___redArg(v_fvarId_183_, v_a_177_, v_a_178_);
 v___x_187_ = lean_nat_add(v_a_177_, v___x_184_);
 lean_dec(v_a_177_);
 v_i_176_ = v___x_185_;
@@ -737,14 +737,14 @@ if (lean_obj_tag(v_x1_250_) == 0)
 lean_object* v_size_252_; lean_object* v___x_253_; 
 v_size_252_ = lean_ctor_get(v_x1_250_, 0);
 lean_inc(v_size_252_);
-v___x_253_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_FVarIdSet_insert_spec__1___redArg(v_x2_251_, v_size_252_, v_x1_250_);
+v___x_253_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_instSingletonFVarIdFVarIdSet_spec__1___redArg(v_x2_251_, v_size_252_, v_x1_250_);
 return v___x_253_;
 }
 else
 {
 lean_object* v___x_254_; lean_object* v___x_255_; 
 v___x_254_ = lean_unsigned_to_nat(0u);
-v___x_255_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_FVarIdSet_insert_spec__1___redArg(v_x2_251_, v___x_254_, v_x1_250_);
+v___x_255_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_instSingletonFVarIdFVarIdSet_spec__1___redArg(v_x2_251_, v___x_254_, v_x1_250_);
 return v___x_255_;
 }
 }
@@ -1205,7 +1205,7 @@ v___x_489_ = l___private_Lean_Compiler_LCNF_ToExpr_0__Lean_Expr_abstract_x27_go(
 v___x_490_ = l_Lean_Compiler_LCNF_LetValue_toExpr(v_pu_479_, v_value_488_);
 v___x_491_ = l___private_Lean_Compiler_LCNF_ToExpr_0__Lean_Expr_abstract_x27_go(v_a_482_, v_a_481_, v___x_490_);
 lean_inc(v_a_481_);
-v___x_492_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_FVarIdSet_insert_spec__1___redArg(v_fvarId_485_, v_a_481_, v_a_482_);
+v___x_492_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_instSingletonFVarIdFVarIdSet_spec__1___redArg(v_fvarId_485_, v_a_481_, v_a_482_);
 v___x_493_ = lean_unsigned_to_nat(1u);
 v___x_494_ = lean_nat_add(v_a_481_, v___x_493_);
 lean_dec(v_a_481_);
@@ -1427,7 +1427,7 @@ lean_dec_ref(v___x_557_);
 lean_inc(v_fvarId_553_);
 v___x_560_ = l_Lean_Expr_fvar___override(v_fvarId_553_);
 lean_inc(v_a_481_);
-v___x_561_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_FVarIdSet_insert_spec__1___redArg(v_fvarId_553_, v_a_481_, v_snd_559_);
+v___x_561_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_instSingletonFVarIdFVarIdSet_spec__1___redArg(v_fvarId_553_, v_a_481_, v_snd_559_);
 v___x_562_ = lean_unsigned_to_nat(1u);
 v___x_563_ = lean_nat_add(v_a_481_, v___x_562_);
 lean_dec(v_a_481_);
@@ -1496,7 +1496,7 @@ lean_dec_ref(v_code_480_);
 lean_inc(v_fvarId_581_);
 v___x_585_ = l_Lean_Expr_fvar___override(v_fvarId_581_);
 lean_inc(v_a_481_);
-v___x_586_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_FVarIdSet_insert_spec__1___redArg(v_fvarId_581_, v_a_481_, v_a_482_);
+v___x_586_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_instSingletonFVarIdFVarIdSet_spec__1___redArg(v_fvarId_581_, v_a_481_, v_a_482_);
 v___x_587_ = lean_unsigned_to_nat(1u);
 v___x_588_ = lean_nat_add(v_a_481_, v___x_587_);
 lean_dec(v_a_481_);
@@ -1570,7 +1570,7 @@ lean_dec_ref(v_code_480_);
 lean_inc(v_fvarId_607_);
 v___x_613_ = l_Lean_Expr_fvar___override(v_fvarId_607_);
 lean_inc(v_a_481_);
-v___x_614_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_FVarIdSet_insert_spec__1___redArg(v_fvarId_607_, v_a_481_, v_a_482_);
+v___x_614_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_instSingletonFVarIdFVarIdSet_spec__1___redArg(v_fvarId_607_, v_a_481_, v_a_482_);
 v___x_615_ = lean_unsigned_to_nat(1u);
 v___x_616_ = lean_nat_add(v_a_481_, v___x_615_);
 lean_dec(v_a_481_);
@@ -1638,7 +1638,7 @@ lean_inc_ref(v_k_638_);
 lean_dec_ref(v_code_480_);
 lean_inc(v_a_481_);
 lean_inc(v_fvarId_636_);
-v___x_639_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_FVarIdSet_insert_spec__1___redArg(v_fvarId_636_, v_a_481_, v_a_482_);
+v___x_639_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_instSingletonFVarIdFVarIdSet_spec__1___redArg(v_fvarId_636_, v_a_481_, v_a_482_);
 v___x_640_ = lean_unsigned_to_nat(1u);
 v___x_641_ = lean_nat_add(v_a_481_, v___x_640_);
 lean_dec(v_a_481_);
@@ -1727,7 +1727,7 @@ v___jp_668_:
 {
 lean_object* v___x_671_; lean_object* v___x_672_; lean_object* v___x_673_; lean_object* v___x_674_; lean_object* v_fst_675_; lean_object* v_snd_676_; lean_object* v___x_678_; uint8_t v_isShared_679_; uint8_t v_isSharedCheck_688_; 
 lean_inc(v_a_481_);
-v___x_671_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_FVarIdSet_insert_spec__1___redArg(v_fvarId_660_, v_a_481_, v_a_482_);
+v___x_671_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_instSingletonFVarIdFVarIdSet_spec__1___redArg(v_fvarId_660_, v_a_481_, v_a_482_);
 v___x_672_ = lean_unsigned_to_nat(1u);
 v___x_673_ = lean_nat_add(v_a_481_, v___x_672_);
 lean_dec(v_a_481_);
@@ -1813,7 +1813,7 @@ lean_inc_ref(v_k_699_);
 lean_dec_ref(v_code_480_);
 lean_inc(v_a_481_);
 lean_inc(v_fvarId_695_);
-v___x_700_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_FVarIdSet_insert_spec__1___redArg(v_fvarId_695_, v_a_481_, v_a_482_);
+v___x_700_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_instSingletonFVarIdFVarIdSet_spec__1___redArg(v_fvarId_695_, v_a_481_, v_a_482_);
 v___x_701_ = lean_unsigned_to_nat(1u);
 v___x_702_ = lean_nat_add(v_a_481_, v___x_701_);
 lean_dec(v_a_481_);
@@ -1915,7 +1915,7 @@ lean_inc_ref(v_k_731_);
 lean_dec_ref(v_code_480_);
 lean_inc(v_a_481_);
 lean_inc(v_fvarId_730_);
-v___x_732_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_FVarIdSet_insert_spec__1___redArg(v_fvarId_730_, v_a_481_, v_a_482_);
+v___x_732_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_instSingletonFVarIdFVarIdSet_spec__1___redArg(v_fvarId_730_, v_a_481_, v_a_482_);
 v___x_733_ = lean_unsigned_to_nat(1u);
 v___x_734_ = lean_nat_add(v_a_481_, v___x_733_);
 lean_dec(v_a_481_);
@@ -1992,7 +1992,7 @@ v_snd_760_ = lean_ctor_get(v___x_758_, 1);
 lean_inc(v_snd_760_);
 lean_dec_ref(v___x_758_);
 lean_inc(v_a_481_);
-v___x_761_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_FVarIdSet_insert_spec__1___redArg(v_fvarId_754_, v_a_481_, v_snd_760_);
+v___x_761_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_instSingletonFVarIdFVarIdSet_spec__1___redArg(v_fvarId_754_, v_a_481_, v_snd_760_);
 v___x_762_ = lean_unsigned_to_nat(1u);
 v___x_763_ = lean_nat_add(v_a_481_, v___x_762_);
 lean_dec(v_a_481_);
@@ -2110,7 +2110,7 @@ v___x_800_ = lean_nat_add(v_i_780_, v___x_799_);
 lean_dec(v_i_780_);
 lean_inc(v_a_781_);
 lean_inc(v_fvarId_798_);
-v___x_801_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_FVarIdSet_insert_spec__1___redArg(v_fvarId_798_, v_a_781_, v_a_782_);
+v___x_801_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_instSingletonFVarIdFVarIdSet_spec__1___redArg(v_fvarId_798_, v_a_781_, v_a_782_);
 v___x_802_ = lean_nat_add(v_a_781_, v___x_799_);
 lean_dec(v_a_781_);
 v_i_780_ = v___x_800_;
@@ -2234,7 +2234,7 @@ lean_object* v_size_891_; lean_object* v___x_892_;
 v_size_891_ = lean_ctor_get(v_b_883_, 0);
 lean_inc(v_size_891_);
 lean_inc(v___x_890_);
-v___x_892_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_FVarIdSet_insert_spec__1___redArg(v___x_890_, v_size_891_, v_b_883_);
+v___x_892_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_instSingletonFVarIdFVarIdSet_spec__1___redArg(v___x_890_, v_size_891_, v_b_883_);
 v___y_885_ = v___x_892_;
 goto v___jp_884_;
 }
@@ -2243,7 +2243,7 @@ else
 lean_object* v___x_893_; lean_object* v___x_894_; 
 v___x_893_ = lean_unsigned_to_nat(0u);
 lean_inc(v___x_890_);
-v___x_894_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_FVarIdSet_insert_spec__1___redArg(v___x_890_, v___x_893_, v_b_883_);
+v___x_894_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_instSingletonFVarIdFVarIdSet_spec__1___redArg(v___x_890_, v___x_893_, v_b_883_);
 v___y_885_ = v___x_894_;
 goto v___jp_884_;
 }

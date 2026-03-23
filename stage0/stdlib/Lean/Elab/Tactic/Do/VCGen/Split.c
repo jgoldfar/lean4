@@ -75,8 +75,8 @@ lean_object* l_Lean_Meta_MatcherApp_transform___redArg(lean_object*, lean_object
 lean_object* l_Lean_Expr_abstractM___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Expr_sort___override(lean_object*);
 lean_object* l_Lean_Core_instMonadCoreM___lam__0___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-lean_object* l_instMonadEST(lean_object*, lean_object*);
-lean_object* l_ReaderT_instMonad___redArg(lean_object*);
+lean_object* l_instMonadEIO(lean_object*);
+lean_object* l_StateRefT_x27_instMonad___redArg(lean_object*);
 lean_object* l_Lean_Core_instMonadCoreM___lam__1___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_ReaderT_instFunctorOfMonad___redArg___lam__0(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_ReaderT_instFunctorOfMonad___redArg___lam__1(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
@@ -1650,7 +1650,7 @@ static lean_object* _init_l_Lean_Elab_Tactic_Do_SplitInfo_withAbstract___redArg_
 _start:
 {
 lean_object* v___x_686_; 
-v___x_686_ = l_instMonadEST(lean_box(0), lean_box(0));
+v___x_686_ = l_instMonadEIO(lean_box(0));
 return v___x_686_;
 }
 }
@@ -1659,7 +1659,7 @@ _start:
 {
 lean_object* v___x_687_; lean_object* v___x_688_; 
 v___x_687_ = lean_obj_once(&l_Lean_Elab_Tactic_Do_SplitInfo_withAbstract___redArg___closed__0, &l_Lean_Elab_Tactic_Do_SplitInfo_withAbstract___redArg___closed__0_once, _init_l_Lean_Elab_Tactic_Do_SplitInfo_withAbstract___redArg___closed__0);
-v___x_688_ = l_ReaderT_instMonad___redArg(v___x_687_);
+v___x_688_ = l_StateRefT_x27_instMonad___redArg(v___x_687_);
 return v___x_688_;
 }
 }
@@ -1760,7 +1760,7 @@ lean_object* v___x_726_; lean_object* v___x_727_; lean_object* v___x_728_; lean_
 v___x_726_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_726_, 0, v___x_725_);
 lean_ctor_set(v___x_726_, 1, v___f_717_);
-v___x_727_ = l_ReaderT_instMonad___redArg(v___x_726_);
+v___x_727_ = l_StateRefT_x27_instMonad___redArg(v___x_726_);
 v___x_728_ = lean_alloc_closure((void*)(l_ReaderT_pure___boxed), 6, 3);
 lean_closure_set(v___x_728_, 0, lean_box(0));
 lean_closure_set(v___x_728_, 1, lean_box(0));
@@ -1874,7 +1874,7 @@ goto v_reusejp_749_;
 v_reusejp_749_:
 {
 lean_object* v___x_751_; lean_object* v_toApplicative_752_; lean_object* v___x_754_; uint8_t v_isShared_755_; uint8_t v_isSharedCheck_810_; 
-v___x_751_ = l_ReaderT_instMonad___redArg(v___x_750_);
+v___x_751_ = l_StateRefT_x27_instMonad___redArg(v___x_750_);
 v_toApplicative_752_ = lean_ctor_get(v___x_751_, 0);
 v_isSharedCheck_810_ = !lean_is_exclusive(v___x_751_);
 if (v_isSharedCheck_810_ == 0)
@@ -3806,7 +3806,7 @@ goto v_reusejp_1676_;
 v_reusejp_1676_:
 {
 lean_object* v___x_1678_; lean_object* v_toApplicative_1679_; lean_object* v___x_1681_; uint8_t v_isShared_1682_; uint8_t v_isSharedCheck_1710_; 
-v___x_1678_ = l_ReaderT_instMonad___redArg(v___x_1677_);
+v___x_1678_ = l_StateRefT_x27_instMonad___redArg(v___x_1677_);
 v_toApplicative_1679_ = lean_ctor_get(v___x_1678_, 0);
 v_isSharedCheck_1710_ = !lean_is_exclusive(v___x_1678_);
 if (v_isSharedCheck_1710_ == 0)
@@ -3916,11 +3916,11 @@ goto v_reusejp_1700_;
 }
 v_reusejp_1700_:
 {
-lean_object* v___x_1702_; lean_object* v___x_1703_; lean_object* v___x_3049__overap_1704_; lean_object* v___x_1705_; 
+lean_object* v___x_1702_; lean_object* v___x_1703_; lean_object* v___x_2925__overap_1704_; lean_object* v___x_1705_; 
 v___x_1702_ = l_Lean_Meta_Match_instInhabitedAltParamInfo_default;
 v___x_1703_ = l_instInhabitedOfMonad___redArg(v___x_1701_, v___x_1702_);
-v___x_3049__overap_1704_ = lean_panic_fn(v___x_1703_, v_msg_1648_);
-v___x_1705_ = lean_apply_5(v___x_3049__overap_1704_, v___y_1649_, v___y_1650_, v___y_1651_, v___y_1652_, lean_box(0));
+v___x_2925__overap_1704_ = lean_panic_fn(v___x_1703_, v_msg_1648_);
+v___x_1705_ = lean_apply_5(v___x_2925__overap_1704_, v___y_1649_, v___y_1650_, v___y_1651_, v___y_1652_, lean_box(0));
 return v___x_1705_;
 }
 }

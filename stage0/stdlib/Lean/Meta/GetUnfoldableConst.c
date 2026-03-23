@@ -2015,8 +2015,8 @@ return v___x_640_;
 }
 default: 
 {
-lean_dec(v_val_601_);
 lean_dec_ref(v___x_600_);
+lean_dec(v_val_601_);
 lean_dec(v_a_592_);
 lean_dec_ref(v_a_591_);
 lean_dec_ref(v_a_589_);

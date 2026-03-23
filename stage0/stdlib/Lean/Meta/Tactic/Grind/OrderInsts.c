@@ -513,8 +513,8 @@ return v___x_162_;
 else
 {
 lean_object* v___x_164_; 
-lean_dec(v_a_163_);
 lean_dec_ref(v___x_162_);
+lean_dec(v_a_163_);
 v___x_164_ = l_Lean_Meta_Grind_getConfig___redArg(v_a_144_);
 if (lean_obj_tag(v___x_164_) == 0)
 {

@@ -2382,12 +2382,12 @@ return v___x_626_;
 LEAN_EXPORT lean_object* l___private_Lean_Data_PersistentArray_0__Lean_PersistentArray_forFromMAux___at___00Lean_PersistentArray_forM___at___00Lean_MessageLog_forM___at___00__private_Lake_Load_Lean_Elab_0__Lake_elabConfigFile_spec__0_spec__0_spec__1___boxed(lean_object* v_f_627_, lean_object* v_x_628_, lean_object* v_x_629_, lean_object* v_x_630_, lean_object* v___y_631_, lean_object* v___y_632_){
 _start:
 {
-size_t v_x_17196__boxed_633_; size_t v_x_17197__boxed_634_; lean_object* v_res_635_; 
-v_x_17196__boxed_633_ = lean_unbox_usize(v_x_629_);
+size_t v_x_13978__boxed_633_; size_t v_x_13979__boxed_634_; lean_object* v_res_635_; 
+v_x_13978__boxed_633_ = lean_unbox_usize(v_x_629_);
 lean_dec(v_x_629_);
-v_x_17197__boxed_634_ = lean_unbox_usize(v_x_630_);
+v_x_13979__boxed_634_ = lean_unbox_usize(v_x_630_);
 lean_dec(v_x_630_);
-v_res_635_ = l___private_Lean_Data_PersistentArray_0__Lean_PersistentArray_forFromMAux___at___00Lean_PersistentArray_forM___at___00Lean_MessageLog_forM___at___00__private_Lake_Load_Lean_Elab_0__Lake_elabConfigFile_spec__0_spec__0_spec__1(v_f_627_, v_x_628_, v_x_17196__boxed_633_, v_x_17197__boxed_634_, v___y_631_);
+v_res_635_ = l___private_Lean_Data_PersistentArray_0__Lean_PersistentArray_forFromMAux___at___00Lean_PersistentArray_forM___at___00Lean_MessageLog_forM___at___00__private_Lake_Load_Lean_Elab_0__Lake_elabConfigFile_spec__0_spec__0_spec__1(v_f_627_, v_x_628_, v_x_13978__boxed_633_, v_x_13979__boxed_634_, v___y_631_);
 lean_dec_ref(v_x_628_);
 return v_res_635_;
 }

@@ -26,7 +26,7 @@ lean_object* l_Lean_Attribute_Builtin_getId(lean_object*, lean_object*, lean_obj
 lean_object* lean_nat_add(lean_object*, lean_object*);
 lean_object* lean_string_utf8_next_fast(lean_object*, lean_object*);
 lean_object* lean_nat_sub(lean_object*, lean_object*);
-uint8_t lean_nat_dec_lt(lean_object*, lean_object*);
+uint8_t l_String_instDecidableLtRaw___aux__1(lean_object*, lean_object*);
 uint8_t lean_nat_dec_eq(lean_object*, lean_object*);
 uint32_t lean_string_utf8_get_fast(lean_object*, lean_object*);
 uint8_t lean_uint32_dec_eq(uint32_t, uint32_t);
@@ -269,7 +269,7 @@ v___x_12_ = lean_nat_sub(v___x_11_, v___x_9_);
 lean_dec(v___x_9_);
 v___x_13_ = lean_nat_add(v_pos_5_, v___x_12_);
 lean_dec(v___x_12_);
-v___x_14_ = lean_nat_dec_lt(v_pos_5_, v___x_13_);
+v___x_14_ = l_String_instDecidableLtRaw___aux__1(v_pos_5_, v___x_13_);
 if (v___x_14_ == 0)
 {
 lean_dec(v___x_13_);
@@ -862,9 +862,9 @@ return v___x_218_;
 LEAN_EXPORT lean_object* l_Lean_initFn___lam__2_00___x40_Lean_Compiler_ExportAttr_1307678936____hygCtx___hyg_2____boxed(lean_object* v___x_219_, lean_object* v_env_220_, lean_object* v_n_221_, lean_object* v_x_222_){
 _start:
 {
-uint8_t v___x_1739__boxed_223_; uint8_t v_res_224_; lean_object* v_r_225_; 
-v___x_1739__boxed_223_ = lean_unbox(v___x_219_);
-v_res_224_ = l_Lean_initFn___lam__2_00___x40_Lean_Compiler_ExportAttr_1307678936____hygCtx___hyg_2_(v___x_1739__boxed_223_, v_env_220_, v_n_221_, v_x_222_);
+uint8_t v___x_1523__boxed_223_; uint8_t v_res_224_; lean_object* v_r_225_; 
+v___x_1523__boxed_223_ = lean_unbox(v___x_219_);
+v_res_224_ = l_Lean_initFn___lam__2_00___x40_Lean_Compiler_ExportAttr_1307678936____hygCtx___hyg_2_(v___x_1523__boxed_223_, v_env_220_, v_n_221_, v_x_222_);
 lean_dec(v_x_222_);
 v_r_225_ = lean_box(v_res_224_);
 return v_r_225_;

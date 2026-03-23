@@ -21,7 +21,7 @@ uint8_t lean_expr_eqv(lean_object*, lean_object*);
 uint8_t l___private_Lean_Data_Name_0__Lean_Name_quickCmpImpl(lean_object*, lean_object*);
 uint8_t l_Lean_instBEqFVarId_beq(lean_object*, lean_object*);
 lean_object* lean_nat_add(lean_object*, lean_object*);
-lean_object* l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_FVarIdSet_insert_spec__1___redArg(lean_object*, lean_object*, lean_object*);
+lean_object* l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_instSingletonFVarIdFVarIdSet_spec__1___redArg(lean_object*, lean_object*, lean_object*);
 uint8_t lean_nat_dec_eq(lean_object*, lean_object*);
 uint8_t lean_name_eq(lean_object*, lean_object*);
 lean_object* l_Array_toSubarray___redArg(lean_object*, lean_object*, lean_object*);
@@ -1593,7 +1593,7 @@ LEAN_EXPORT lean_object* l_Lean_Compiler_LCNF_AlphaEqv_withFVar___redArg(lean_ob
 _start:
 {
 lean_object* v___x_418_; lean_object* v___x_419_; 
-v___x_418_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_FVarIdSet_insert_spec__1___redArg(v_fvarId_u2082_415_, v_fvarId_u2081_414_, v_a_417_);
+v___x_418_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_instSingletonFVarIdFVarIdSet_spec__1___redArg(v_fvarId_u2082_415_, v_fvarId_u2081_414_, v_a_417_);
 v___x_419_ = lean_apply_1(v_x_416_, v___x_418_);
 return v___x_419_;
 }
@@ -1602,7 +1602,7 @@ LEAN_EXPORT lean_object* l_Lean_Compiler_LCNF_AlphaEqv_withFVar(lean_object* v_0
 _start:
 {
 lean_object* v___x_425_; lean_object* v___x_426_; 
-v___x_425_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_FVarIdSet_insert_spec__1___redArg(v_fvarId_u2082_422_, v_fvarId_u2081_421_, v_a_424_);
+v___x_425_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_instSingletonFVarIdFVarIdSet_spec__1___redArg(v_fvarId_u2082_422_, v_fvarId_u2081_421_, v_a_424_);
 v___x_426_ = lean_apply_1(v_x_423_, v___x_425_);
 return v___x_426_;
 }
@@ -1646,7 +1646,7 @@ v___x_444_ = lean_nat_add(v_i_430_, v___x_443_);
 lean_dec(v_i_430_);
 lean_inc(v_fvarId_437_);
 lean_inc(v_fvarId_440_);
-v___x_445_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_FVarIdSet_insert_spec__1___redArg(v_fvarId_440_, v_fvarId_437_, v_a_431_);
+v___x_445_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_instSingletonFVarIdFVarIdSet_spec__1___redArg(v_fvarId_440_, v_fvarId_437_, v_a_431_);
 v_i_430_ = v___x_444_;
 v_a_431_ = v___x_445_;
 goto _start;
@@ -2547,7 +2547,7 @@ return v___x_748_;
 else
 {
 lean_object* v___x_749_; 
-v___x_749_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_FVarIdSet_insert_spec__1___redArg(v_fvarId_744_, v_fvarId_741_, v_a_706_);
+v___x_749_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_instSingletonFVarIdFVarIdSet_spec__1___redArg(v_fvarId_744_, v_fvarId_741_, v_a_706_);
 v_code_u2081_704_ = v_k_739_;
 v_code_u2082_705_ = v_k_740_;
 v_a_706_ = v___x_749_;
@@ -2653,7 +2653,7 @@ return v___x_769_;
 else
 {
 lean_object* v___x_770_; 
-v___x_770_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_FVarIdSet_insert_spec__1___redArg(v_fvarId_760_, v_fvarId_756_, v_a_706_);
+v___x_770_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_instSingletonFVarIdFVarIdSet_spec__1___redArg(v_fvarId_760_, v_fvarId_756_, v_a_706_);
 v_code_u2081_704_ = v_k_754_;
 v_code_u2082_705_ = v_k_755_;
 v_a_706_ = v___x_770_;
@@ -2760,7 +2760,7 @@ return v___x_790_;
 else
 {
 lean_object* v___x_791_; 
-v___x_791_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_FVarIdSet_insert_spec__1___redArg(v_fvarId_781_, v_fvarId_777_, v_a_706_);
+v___x_791_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_instSingletonFVarIdFVarIdSet_spec__1___redArg(v_fvarId_781_, v_fvarId_777_, v_a_706_);
 v_code_u2081_704_ = v_k_775_;
 v_code_u2082_705_ = v_k_776_;
 v_a_706_ = v___x_791_;
@@ -3618,7 +3618,7 @@ v___x_923_ = lean_nat_add(v_i_910_, v___x_922_);
 lean_dec(v_i_910_);
 lean_inc(v_fvarId_916_);
 lean_inc(v_fvarId_919_);
-v___x_924_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_FVarIdSet_insert_spec__1___redArg(v_fvarId_919_, v_fvarId_916_, v_a_911_);
+v___x_924_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_instSingletonFVarIdFVarIdSet_spec__1___redArg(v_fvarId_919_, v_fvarId_916_, v_a_911_);
 v_i_910_ = v___x_923_;
 v_a_911_ = v___x_924_;
 goto _start;

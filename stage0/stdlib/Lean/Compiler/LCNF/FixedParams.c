@@ -25,7 +25,7 @@ size_t lean_array_size(lean_object*);
 uint8_t lean_usize_dec_lt(size_t, size_t);
 lean_object* lean_array_fget(lean_object*, lean_object*);
 lean_object* lean_nat_add(lean_object*, lean_object*);
-lean_object* l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_FVarIdSet_insert_spec__1___redArg(lean_object*, lean_object*, lean_object*);
+lean_object* l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_instSingletonFVarIdFVarIdSet_spec__1___redArg(lean_object*, lean_object*, lean_object*);
 lean_object* lean_mk_empty_array_with_capacity(lean_object*);
 lean_object* lean_array_push(lean_object*, lean_object*);
 lean_object* lean_array_fget_borrowed(lean_object*, lean_object*);
@@ -960,7 +960,7 @@ v_reusejp_260_:
 {
 lean_object* v___x_262_; lean_object* v___x_264_; 
 lean_inc(v_fvarId_256_);
-v___x_262_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_FVarIdSet_insert_spec__1___redArg(v_fvarId_256_, v___x_257_, v_fst_241_);
+v___x_262_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_instSingletonFVarIdFVarIdSet_spec__1___redArg(v_fvarId_256_, v___x_257_, v_fst_241_);
 if (v_isShared_244_ == 0)
 {
 lean_ctor_set(v___x_243_, 1, v___x_261_);
@@ -3278,7 +3278,7 @@ goto v_reusejp_985_;
 v_reusejp_985_:
 {
 lean_object* v___x_987_; lean_object* v___x_989_; 
-v___x_987_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_FVarIdSet_insert_spec__1___redArg(v_fvarId_978_, v___x_986_, v_assignment_981_);
+v___x_987_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_instSingletonFVarIdFVarIdSet_spec__1___redArg(v_fvarId_978_, v___x_986_, v_assignment_981_);
 if (v_isShared_984_ == 0)
 {
 lean_ctor_set(v___x_983_, 2, v___x_987_);

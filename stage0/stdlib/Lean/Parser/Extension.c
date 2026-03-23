@@ -163,6 +163,7 @@ lean_object* l_Lean_Syntax_getId(lean_object*);
 extern lean_object* l_Lean_Parser_categoryParserFnRef;
 uint8_t l___private_Lean_Data_Name_0__Lean_Name_quickCmpImpl(lean_object*, lean_object*);
 lean_object* lean_string_utf8_byte_size(lean_object*);
+uint8_t lean_nat_dec_le(lean_object*, lean_object*);
 lean_object* l_Lean_FileMap_ofString(lean_object*);
 lean_object* l_Lean_FileMap_toPosition(lean_object*, lean_object*);
 lean_object* l_String_crlfToLf(lean_object*);
@@ -6587,8 +6588,8 @@ return v___x_1729_;
 }
 else
 {
-lean_del_object(v___x_1675_);
 lean_dec_ref(v_pre_1673_);
+lean_del_object(v___x_1675_);
 lean_dec_ref(v_pre_1672_);
 lean_dec_ref(v_declName_1671_);
 lean_dec_ref(v_opts_1658_);

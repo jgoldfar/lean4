@@ -2811,8 +2811,8 @@ else
 {
 uint8_t v___x_1000_; lean_object* v___x_1001_; lean_object* v___x_1002_; 
 lean_dec(v___x_960_);
-lean_dec_ref(v_name_946_);
 lean_dec(v_pre_954_);
+lean_dec_ref(v_name_946_);
 lean_dec(v___y_948_);
 lean_dec_ref(v___y_947_);
 lean_dec(v___x_945_);

@@ -759,10 +759,10 @@ lean_object* v___y_219_ = _args[19];
 lean_object* v___y_220_ = _args[20];
 _start:
 {
-uint8_t v___x_5238__boxed_221_; uint8_t v___x_5239__boxed_222_; lean_object* v_res_223_; 
-v___x_5238__boxed_221_ = lean_unbox(v___x_204_);
-v___x_5239__boxed_222_ = lean_unbox(v___x_205_);
-v_res_223_ = l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_shortCircuitPass___lam__0(v_theorems_200_, v___x_201_, v___x_202_, v___x_203_, v___x_5238__boxed_221_, v___x_5239__boxed_222_, v___x_206_, v___x_207_, v___x_208_, v___x_209_, v___x_210_, v___x_211_, v___x_212_, v_goal_213_, v___y_214_, v___y_215_, v___y_216_, v___y_217_, v___y_218_, v___y_219_);
+uint8_t v___x_5231__boxed_221_; uint8_t v___x_5232__boxed_222_; lean_object* v_res_223_; 
+v___x_5231__boxed_221_ = lean_unbox(v___x_204_);
+v___x_5232__boxed_222_ = lean_unbox(v___x_205_);
+v_res_223_ = l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_shortCircuitPass___lam__0(v_theorems_200_, v___x_201_, v___x_202_, v___x_203_, v___x_5231__boxed_221_, v___x_5232__boxed_222_, v___x_206_, v___x_207_, v___x_208_, v___x_209_, v___x_210_, v___x_211_, v___x_212_, v_goal_213_, v___y_214_, v___y_215_, v___y_216_, v___y_217_, v___y_218_, v___y_219_);
 lean_dec(v___y_215_);
 lean_dec_ref(v___y_214_);
 return v_res_223_;

@@ -55,7 +55,7 @@ lean_object* lean_mk_thunk(lean_object*);
 lean_object* lean_array_get_size(lean_object*);
 lean_object* lean_thunk_get_own(lean_object*);
 size_t lean_array_size(lean_object*);
-lean_object* l_instMonadEST(lean_object*, lean_object*);
+lean_object* l_instMonadEIO(lean_object*);
 lean_object* l_Lean_Core_instMonadCoreM___lam__1___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 extern lean_object* l_Lean_Meta_Grind_Arith_CommRing_ringExt;
 lean_object* l___private_Lean_Meta_Tactic_Grind_Types_0__Lean_Meta_Grind_SolverExtension_getStateCoreImpl___redArg(lean_object*, lean_object*);
@@ -65,7 +65,7 @@ lean_object* l_Lean_Meta_instMonadMetaM___lam__1___boxed(lean_object*, lean_obje
 lean_object* lean_array_fget(lean_object*, lean_object*);
 lean_object* lean_io_error_to_string(lean_object*);
 lean_object* l_Lean_Core_instMonadCoreM___lam__0___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-lean_object* l_ReaderT_instMonad___redArg(lean_object*);
+lean_object* l_StateRefT_x27_instMonad___redArg(lean_object*);
 lean_object* l_ReaderT_instFunctorOfMonad___redArg___lam__0(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_ReaderT_instFunctorOfMonad___redArg___lam__1(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_ReaderT_instApplicativeOfMonad___redArg___lam__1(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
@@ -492,7 +492,7 @@ static lean_object* _init_l___private_Lean_Meta_Tactic_Grind_Arith_CommRing_PP_0
 _start:
 {
 lean_object* v___x_58_; 
-v___x_58_ = l_instMonadEST(lean_box(0), lean_box(0));
+v___x_58_ = l_instMonadEIO(lean_box(0));
 return v___x_58_;
 }
 }
@@ -501,7 +501,7 @@ _start:
 {
 lean_object* v___x_59_; lean_object* v___x_60_; 
 v___x_59_ = lean_obj_once(&l___private_Lean_Meta_Tactic_Grind_Arith_CommRing_PP_0__Lean_Meta_Grind_Arith_CommRing_instMonadCommRingM___closed__0, &l___private_Lean_Meta_Tactic_Grind_Arith_CommRing_PP_0__Lean_Meta_Grind_Arith_CommRing_instMonadCommRingM___closed__0_once, _init_l___private_Lean_Meta_Tactic_Grind_Arith_CommRing_PP_0__Lean_Meta_Grind_Arith_CommRing_instMonadCommRingM___closed__0);
-v___x_60_ = l_ReaderT_instMonad___redArg(v___x_59_);
+v___x_60_ = l_StateRefT_x27_instMonad___redArg(v___x_59_);
 return v___x_60_;
 }
 }
@@ -620,7 +620,7 @@ goto v_reusejp_87_;
 v_reusejp_87_:
 {
 lean_object* v___x_89_; lean_object* v_toApplicative_90_; lean_object* v___x_92_; uint8_t v_isShared_93_; uint8_t v_isSharedCheck_122_; 
-v___x_89_ = l_ReaderT_instMonad___redArg(v___x_88_);
+v___x_89_ = l_StateRefT_x27_instMonad___redArg(v___x_88_);
 v_toApplicative_90_ = lean_ctor_get(v___x_89_, 0);
 v_isSharedCheck_122_ = !lean_is_exclusive(v___x_89_);
 if (v_isSharedCheck_122_ == 0)

@@ -53,7 +53,7 @@ lean_object* l___private_Init_Dynamic_0__Dynamic_get_x3fImpl___redArg(lean_objec
 lean_object* l___private_Init_Dynamic_0__Dynamic_typeNameImpl(lean_object*);
 lean_object* lean_string_append(lean_object*, lean_object*);
 lean_object* l_mkPanicMessageWithDecl(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-lean_object* l_instMonadST(lean_object*);
+extern lean_object* l_instMonadBaseIO;
 lean_object* l_instInhabitedOfMonad___redArg(lean_object*, lean_object*);
 lean_object* lean_panic_fn(lean_object*, lean_object*);
 extern lean_object* l_Std_Format_defWidth;
@@ -4074,20 +4074,20 @@ return v___x_969_;
 static lean_object* _init_l_panic___at___00Lean_MessageData_formatAux_spec__3___closed__0(void){
 _start:
 {
-lean_object* v___x_970_; 
-v___x_970_ = l_instMonadST(lean_box(0));
-return v___x_970_;
+lean_object* v___x_970_; lean_object* v___x_971_; lean_object* v___x_972_; 
+v___x_970_ = lean_box(0);
+v___x_971_ = l_instMonadBaseIO;
+v___x_972_ = l_instInhabitedOfMonad___redArg(v___x_971_, v___x_970_);
+return v___x_972_;
 }
 }
-LEAN_EXPORT lean_object* l_panic___at___00Lean_MessageData_formatAux_spec__3(lean_object* v_msg_971_){
+LEAN_EXPORT lean_object* l_panic___at___00Lean_MessageData_formatAux_spec__3(lean_object* v_msg_973_){
 _start:
 {
-lean_object* v___x_973_; lean_object* v___x_974_; lean_object* v___x_975_; lean_object* v___x_2744__overap_976_; lean_object* v___x_977_; 
-v___x_973_ = lean_obj_once(&l_panic___at___00Lean_MessageData_formatAux_spec__3___closed__0, &l_panic___at___00Lean_MessageData_formatAux_spec__3___closed__0_once, _init_l_panic___at___00Lean_MessageData_formatAux_spec__3___closed__0);
-v___x_974_ = lean_box(0);
-v___x_975_ = l_instInhabitedOfMonad___redArg(v___x_973_, v___x_974_);
-v___x_2744__overap_976_ = lean_panic_fn(v___x_975_, v_msg_971_);
-v___x_977_ = lean_apply_1(v___x_2744__overap_976_, lean_box(0));
+lean_object* v___x_975_; lean_object* v___x_2068__overap_976_; lean_object* v___x_977_; 
+v___x_975_ = lean_obj_once(&l_panic___at___00Lean_MessageData_formatAux_spec__3___closed__0, &l_panic___at___00Lean_MessageData_formatAux_spec__3___closed__0_once, _init_l_panic___at___00Lean_MessageData_formatAux_spec__3___closed__0);
+v___x_2068__overap_976_ = lean_panic_fn(v___x_975_, v_msg_973_);
+v___x_977_ = lean_apply_1(v___x_2068__overap_976_, lean_box(0));
 return v___x_977_;
 }
 }

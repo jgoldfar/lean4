@@ -902,9 +902,9 @@ return v___x_236_;
 LEAN_EXPORT lean_object* l_Std_CancellationToken_Consumer_resolve___lam__0___boxed(lean_object* v___x_238_, lean_object* v___y_239_){
 _start:
 {
-uint8_t v___x_681__boxed_240_; uint8_t v_res_241_; lean_object* v_r_242_; 
-v___x_681__boxed_240_ = lean_unbox(v___x_238_);
-v_res_241_ = l_Std_CancellationToken_Consumer_resolve___lam__0(v___x_681__boxed_240_);
+uint8_t v___x_408__boxed_240_; uint8_t v_res_241_; lean_object* v_r_242_; 
+v___x_408__boxed_240_ = lean_unbox(v___x_238_);
+v_res_241_ = l_Std_CancellationToken_Consumer_resolve___lam__0(v___x_408__boxed_240_);
 v_r_242_ = lean_box(v_res_241_);
 return v_r_242_;
 }
@@ -1265,29 +1265,29 @@ return v_res_377_;
 LEAN_EXPORT lean_object* l_Std_Mutex_atomically___at___00Std_CancellationToken_wait_spec__0___redArg(lean_object* v_mutex_378_, lean_object* v_k_379_){
 _start:
 {
-lean_object* v_ref_381_; lean_object* v_mutex_382_; lean_object* v___x_383_; lean_object* v___x_384_; 
+lean_object* v_ref_381_; lean_object* v_mutex_382_; lean_object* v___x_383_; lean_object* v_r_384_; 
 v_ref_381_ = lean_ctor_get(v_mutex_378_, 0);
 lean_inc(v_ref_381_);
 v_mutex_382_ = lean_ctor_get(v_mutex_378_, 1);
 lean_inc(v_mutex_382_);
 lean_dec_ref(v_mutex_378_);
 v___x_383_ = lean_io_basemutex_lock(v_mutex_382_);
-v___x_384_ = lean_apply_2(v_k_379_, v_ref_381_, lean_box(0));
-if (lean_obj_tag(v___x_384_) == 0)
+v_r_384_ = lean_apply_2(v_k_379_, v_ref_381_, lean_box(0));
+if (lean_obj_tag(v_r_384_) == 0)
 {
 lean_object* v_a_385_; lean_object* v___x_387_; uint8_t v_isShared_388_; uint8_t v_isSharedCheck_393_; 
-v_a_385_ = lean_ctor_get(v___x_384_, 0);
-v_isSharedCheck_393_ = !lean_is_exclusive(v___x_384_);
+v_a_385_ = lean_ctor_get(v_r_384_, 0);
+v_isSharedCheck_393_ = !lean_is_exclusive(v_r_384_);
 if (v_isSharedCheck_393_ == 0)
 {
-v___x_387_ = v___x_384_;
+v___x_387_ = v_r_384_;
 v_isShared_388_ = v_isSharedCheck_393_;
 goto v_resetjp_386_;
 }
 else
 {
 lean_inc(v_a_385_);
-lean_dec(v___x_384_);
+lean_dec(v_r_384_);
 v___x_387_ = lean_box(0);
 v_isShared_388_ = v_isSharedCheck_393_;
 goto v_resetjp_386_;
@@ -1319,18 +1319,18 @@ return v___x_391_;
 else
 {
 lean_object* v_a_394_; lean_object* v___x_396_; uint8_t v_isShared_397_; uint8_t v_isSharedCheck_402_; 
-v_a_394_ = lean_ctor_get(v___x_384_, 0);
-v_isSharedCheck_402_ = !lean_is_exclusive(v___x_384_);
+v_a_394_ = lean_ctor_get(v_r_384_, 0);
+v_isSharedCheck_402_ = !lean_is_exclusive(v_r_384_);
 if (v_isSharedCheck_402_ == 0)
 {
-v___x_396_ = v___x_384_;
+v___x_396_ = v_r_384_;
 v_isShared_397_ = v_isSharedCheck_402_;
 goto v_resetjp_395_;
 }
 else
 {
 lean_inc(v_a_394_);
-lean_dec(v___x_384_);
+lean_dec(v_r_384_);
 v___x_396_ = lean_box(0);
 v_isShared_397_ = v_isSharedCheck_402_;
 goto v_resetjp_395_;
@@ -1689,9 +1689,9 @@ return v___x_500_;
 LEAN_EXPORT lean_object* l_Std_Internal_IO_Async_Waiter_race___at___00Std_CancellationToken_selector_spec__0___lam__0___boxed(lean_object* v___x_504_, lean_object* v_x_505_, lean_object* v___y_506_){
 _start:
 {
-uint8_t v___x_6633__boxed_507_; lean_object* v_res_508_; 
-v___x_6633__boxed_507_ = lean_unbox(v___x_504_);
-v_res_508_ = l_Std_Internal_IO_Async_Waiter_race___at___00Std_CancellationToken_selector_spec__0___lam__0(v___x_6633__boxed_507_, v_x_505_);
+uint8_t v___x_6363__boxed_507_; lean_object* v_res_508_; 
+v___x_6363__boxed_507_ = lean_unbox(v___x_504_);
+v_res_508_ = l_Std_Internal_IO_Async_Waiter_race___at___00Std_CancellationToken_selector_spec__0___lam__0(v___x_6363__boxed_507_, v_x_505_);
 return v_res_508_;
 }
 }
@@ -2253,9 +2253,9 @@ return v___x_693_;
 LEAN_EXPORT lean_object* l_Std_CancellationToken_selector___lam__0___boxed(lean_object* v___x_694_, lean_object* v___y_695_, lean_object* v___y_696_){
 _start:
 {
-uint8_t v___x_6951__boxed_697_; lean_object* v_res_698_; 
-v___x_6951__boxed_697_ = lean_unbox(v___x_694_);
-v_res_698_ = l_Std_CancellationToken_selector___lam__0(v___x_6951__boxed_697_, v___y_695_);
+uint8_t v___x_6681__boxed_697_; lean_object* v_res_698_; 
+v___x_6681__boxed_697_ = lean_unbox(v___x_694_);
+v_res_698_ = l_Std_CancellationToken_selector___lam__0(v___x_6681__boxed_697_, v___y_695_);
 lean_dec(v___y_695_);
 return v_res_698_;
 }

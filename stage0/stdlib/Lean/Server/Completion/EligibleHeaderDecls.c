@@ -1286,9 +1286,9 @@ return v___x_381_;
 LEAN_EXPORT lean_object* l_List_allM___at___00Lean_isEnumType___at___00Lean_Server_Completion_getCompletionKindForDecl_spec__1_spec__2___boxed(lean_object* v___x_384_, lean_object* v_x_385_, lean_object* v___y_386_, lean_object* v___y_387_, lean_object* v___y_388_, lean_object* v___y_389_, lean_object* v___y_390_){
 _start:
 {
-uint8_t v___x_7709__boxed_391_; lean_object* v_res_392_; 
-v___x_7709__boxed_391_ = lean_unbox(v___x_384_);
-v_res_392_ = l_List_allM___at___00Lean_isEnumType___at___00Lean_Server_Completion_getCompletionKindForDecl_spec__1_spec__2(v___x_7709__boxed_391_, v_x_385_, v___y_386_, v___y_387_, v___y_388_, v___y_389_);
+uint8_t v___x_7433__boxed_391_; lean_object* v_res_392_; 
+v___x_7433__boxed_391_ = lean_unbox(v___x_384_);
+v_res_392_ = l_List_allM___at___00Lean_isEnumType___at___00Lean_Server_Completion_getCompletionKindForDecl_spec__1_spec__2(v___x_7433__boxed_391_, v_x_385_, v___y_386_, v___y_387_, v___y_388_, v___y_389_);
 lean_dec(v___y_389_);
 lean_dec(v___y_387_);
 lean_dec_ref(v___y_386_);
@@ -2489,9 +2489,9 @@ return v___x_809_;
 LEAN_EXPORT lean_object* l___private_Std_Data_DHashMap_Internal_AssocList_Basic_0__Std_DHashMap_Internal_AssocList_forInStep_go___at___00Lean_Server_Completion_getEligibleHeaderDecls_spec__1___redArg___lam__0___boxed(lean_object* v_a_810_, lean_object* v___y_811_, lean_object* v___y_812_, lean_object* v___y_813_, lean_object* v___y_814_, lean_object* v___y_815_){
 _start:
 {
-uint8_t v_a_5287__boxed_816_; lean_object* v_res_817_; 
-v_a_5287__boxed_816_ = lean_unbox(v_a_810_);
-v_res_817_ = l___private_Std_Data_DHashMap_Internal_AssocList_Basic_0__Std_DHashMap_Internal_AssocList_forInStep_go___at___00Lean_Server_Completion_getEligibleHeaderDecls_spec__1___redArg___lam__0(v_a_5287__boxed_816_, v___y_811_, v___y_812_, v___y_813_, v___y_814_);
+uint8_t v_a_4537__boxed_816_; lean_object* v_res_817_; 
+v_a_4537__boxed_816_ = lean_unbox(v_a_810_);
+v_res_817_ = l___private_Std_Data_DHashMap_Internal_AssocList_Basic_0__Std_DHashMap_Internal_AssocList_forInStep_go___at___00Lean_Server_Completion_getEligibleHeaderDecls_spec__1___redArg___lam__0(v_a_4537__boxed_816_, v___y_811_, v___y_812_, v___y_813_, v___y_814_);
 lean_dec(v___y_814_);
 lean_dec_ref(v___y_813_);
 lean_dec(v___y_812_);

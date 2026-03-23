@@ -964,9 +964,9 @@ return v___x_282_;
 LEAN_EXPORT lean_object* l_List_forIn_x27_loop___at___00Lean_SearchPath_findAllWithExt_spec__2___redArg___lam__0___boxed(lean_object* v_val_283_, lean_object* v_x_284_, lean_object* v___y_285_){
 _start:
 {
-uint8_t v_val_1633__boxed_286_; lean_object* v_res_287_; 
-v_val_1633__boxed_286_ = lean_unbox(v_val_283_);
-v_res_287_ = l_List_forIn_x27_loop___at___00Lean_SearchPath_findAllWithExt_spec__2___redArg___lam__0(v_val_1633__boxed_286_, v_x_284_);
+uint8_t v_val_1031__boxed_286_; lean_object* v_res_287_; 
+v_val_1031__boxed_286_ = lean_unbox(v_val_283_);
+v_res_287_ = l_List_forIn_x27_loop___at___00Lean_SearchPath_findAllWithExt_spec__2___redArg___lam__0(v_val_1031__boxed_286_, v_x_284_);
 lean_dec_ref(v_x_284_);
 return v_res_287_;
 }

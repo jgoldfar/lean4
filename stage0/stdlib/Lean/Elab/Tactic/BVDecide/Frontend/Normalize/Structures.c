@@ -57,8 +57,8 @@ lean_object* l_List_head_x21___redArg(lean_object*, lean_object*);
 lean_object* l_Lean_Environment_findAsync_x3f(lean_object*, lean_object*, uint8_t);
 lean_object* l_Lean_AsyncConstantInfo_toConstantInfo(lean_object*);
 lean_object* l_mkPanicMessageWithDecl(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-lean_object* l_instMonadEST(lean_object*, lean_object*);
-lean_object* l_ReaderT_instMonad___redArg(lean_object*);
+lean_object* l_instMonadEIO(lean_object*);
+lean_object* l_StateRefT_x27_instMonad___redArg(lean_object*);
 lean_object* l_Lean_Core_instMonadCoreM___lam__0___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Core_instMonadCoreM___lam__1___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_ReaderT_instFunctorOfMonad___redArg___lam__0(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
@@ -68,6 +68,7 @@ lean_object* l_ReaderT_instApplicativeOfMonad___redArg___lam__3(lean_object*, le
 lean_object* l_ReaderT_instApplicativeOfMonad___redArg___lam__4(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Meta_instMonadMetaM___lam__0___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Meta_instMonadMetaM___lam__1___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
+lean_object* l_ReaderT_instMonad___redArg(lean_object*);
 lean_object* l_instInhabitedOfMonad___redArg(lean_object*, lean_object*);
 lean_object* lean_panic_fn(lean_object*, lean_object*);
 lean_object* l_Lean_getStructureInfo(lean_object*, lean_object*);
@@ -743,7 +744,7 @@ static lean_object* _init_l_panic___at___00Lean_getConstInfoCtor___at___00Lean_E
 _start:
 {
 lean_object* v___x_193_; 
-v___x_193_ = l_instMonadEST(lean_box(0), lean_box(0));
+v___x_193_ = l_instMonadEIO(lean_box(0));
 return v___x_193_;
 }
 }
@@ -752,7 +753,7 @@ _start:
 {
 lean_object* v___x_206_; lean_object* v___x_207_; lean_object* v_toApplicative_208_; lean_object* v___x_210_; uint8_t v_isShared_211_; uint8_t v_isSharedCheck_271_; 
 v___x_206_ = lean_obj_once(&l_panic___at___00Lean_getConstInfoCtor___at___00Lean_Elab_Tactic_BVDecide_Frontend_Normalize_addStructureSimpLemmas_spec__1_spec__2___closed__0, &l_panic___at___00Lean_getConstInfoCtor___at___00Lean_Elab_Tactic_BVDecide_Frontend_Normalize_addStructureSimpLemmas_spec__1_spec__2___closed__0_once, _init_l_panic___at___00Lean_getConstInfoCtor___at___00Lean_Elab_Tactic_BVDecide_Frontend_Normalize_addStructureSimpLemmas_spec__1_spec__2___closed__0);
-v___x_207_ = l_ReaderT_instMonad___redArg(v___x_206_);
+v___x_207_ = l_StateRefT_x27_instMonad___redArg(v___x_206_);
 v_toApplicative_208_ = lean_ctor_get(v___x_207_, 0);
 v_isSharedCheck_271_ = !lean_is_exclusive(v___x_207_);
 if (v_isSharedCheck_271_ == 0)
@@ -863,7 +864,7 @@ goto v_reusejp_229_;
 v_reusejp_229_:
 {
 lean_object* v___x_231_; lean_object* v_toApplicative_232_; lean_object* v___x_234_; uint8_t v_isShared_235_; uint8_t v_isSharedCheck_265_; 
-v___x_231_ = l_ReaderT_instMonad___redArg(v___x_230_);
+v___x_231_ = l_StateRefT_x27_instMonad___redArg(v___x_230_);
 v_toApplicative_232_ = lean_ctor_get(v___x_231_, 0);
 v_isSharedCheck_265_ = !lean_is_exclusive(v___x_231_);
 if (v_isSharedCheck_265_ == 0)
@@ -973,13 +974,13 @@ goto v_reusejp_253_;
 }
 v_reusejp_253_:
 {
-lean_object* v___x_255_; lean_object* v___x_256_; lean_object* v___x_257_; lean_object* v___x_258_; lean_object* v___x_19760__overap_259_; lean_object* v___x_260_; 
-v___x_255_ = l_ReaderT_instMonad___redArg(v___x_254_);
+lean_object* v___x_255_; lean_object* v___x_256_; lean_object* v___x_257_; lean_object* v___x_258_; lean_object* v___x_19421__overap_259_; lean_object* v___x_260_; 
+v___x_255_ = l_StateRefT_x27_instMonad___redArg(v___x_254_);
 v___x_256_ = l_ReaderT_instMonad___redArg(v___x_255_);
 v___x_257_ = lean_box(0);
 v___x_258_ = l_instInhabitedOfMonad___redArg(v___x_256_, v___x_257_);
-v___x_19760__overap_259_ = lean_panic_fn(v___x_258_, v_msg_198_);
-v___x_260_ = lean_apply_7(v___x_19760__overap_259_, v___y_199_, v___y_200_, v___y_201_, v___y_202_, v___y_203_, v___y_204_, lean_box(0));
+v___x_19421__overap_259_ = lean_panic_fn(v___x_258_, v_msg_198_);
+v___x_260_ = lean_apply_7(v___x_19421__overap_259_, v___y_199_, v___y_200_, v___y_201_, v___y_202_, v___y_203_, v___y_204_, lean_box(0));
 return v___x_260_;
 }
 }
@@ -3345,9 +3346,9 @@ return v___x_1084_;
 LEAN_EXPORT lean_object* l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_structuresPass___lam__0___boxed(lean_object* v___x_1085_, lean_object* v_interestingStructures_1086_, lean_object* v_decl_1087_, lean_object* v___y_1088_, lean_object* v___y_1089_, lean_object* v___y_1090_, lean_object* v___y_1091_, lean_object* v___y_1092_){
 _start:
 {
-uint8_t v___x_3323__boxed_1093_; lean_object* v_res_1094_; 
-v___x_3323__boxed_1093_ = lean_unbox(v___x_1085_);
-v_res_1094_ = l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_structuresPass___lam__0(v___x_3323__boxed_1093_, v_interestingStructures_1086_, v_decl_1087_, v___y_1088_, v___y_1089_, v___y_1090_, v___y_1091_);
+uint8_t v___x_3219__boxed_1093_; lean_object* v_res_1094_; 
+v___x_3219__boxed_1093_ = lean_unbox(v___x_1085_);
+v_res_1094_ = l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_structuresPass___lam__0(v___x_3219__boxed_1093_, v_interestingStructures_1086_, v_decl_1087_, v___y_1088_, v___y_1089_, v___y_1090_, v___y_1091_);
 lean_dec(v___y_1091_);
 lean_dec_ref(v___y_1090_);
 lean_dec(v___y_1089_);

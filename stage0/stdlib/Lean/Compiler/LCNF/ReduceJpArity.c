@@ -40,7 +40,7 @@ lean_object* l___private_Lean_Compiler_LCNF_Basic_0__Lean_Compiler_LCNF_collectT
 uint8_t lean_nat_dec_eq(lean_object*, lean_object*);
 lean_object* l_Lean_Compiler_LCNF_Code_inferType(uint8_t, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Compiler_LCNF_mkForallParams(uint8_t, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-lean_object* l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_FVarIdSet_insert_spec__1___redArg(lean_object*, lean_object*, lean_object*);
+lean_object* l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_instSingletonFVarIdFVarIdSet_spec__1___redArg(lean_object*, lean_object*, lean_object*);
 uint8_t l___private_Lean_Data_Name_0__Lean_Name_quickCmpImpl(lean_object*, lean_object*);
 lean_object* l_Array_toSubarray___redArg(lean_object*, lean_object*, lean_object*);
 uint8_t lean_nat_dec_lt(lean_object*, lean_object*);
@@ -1234,7 +1234,7 @@ lean_dec_ref(v___x_291_);
 v_fvarId_293_ = lean_ctor_get(v_a_292_, 0);
 v___x_294_ = l_Array_reverse___redArg(v_fst_278_);
 lean_inc(v_fvarId_293_);
-v___x_295_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_FVarIdSet_insert_spec__1___redArg(v_fvarId_293_, v___x_294_, v_a_177_);
+v___x_295_ = l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_instSingletonFVarIdFVarIdSet_spec__1___redArg(v_fvarId_293_, v___x_294_, v_a_177_);
 v___x_296_ = l_Lean_Compiler_LCNF_ReduceJpArity_reduce(v_k_261_, v___x_295_, v_a_178_, v_a_179_, v_a_180_, v_a_181_);
 if (lean_obj_tag(v___x_296_) == 0)
 {

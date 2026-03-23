@@ -47,6 +47,7 @@ lean_object* lean_array_uget_borrowed(lean_object*, size_t);
 size_t lean_usize_add(size_t, size_t);
 lean_object* lean_string_utf8_byte_size(lean_object*);
 lean_object* l_Substring_Raw_nextn(lean_object*, lean_object*, lean_object*);
+uint8_t l_String_instDecidableLtRaw___aux__1(lean_object*, lean_object*);
 lean_object* lean_string_utf8_prev(lean_object*, lean_object*);
 uint32_t lean_string_utf8_get(lean_object*, lean_object*);
 uint8_t lean_uint32_dec_eq(uint32_t, uint32_t);
@@ -1056,7 +1057,7 @@ LEAN_EXPORT lean_object* l_Substring_Raw_takeRightWhileAux___at___00Lean_JsonNum
 _start:
 {
 uint8_t v___x_218_; 
-v___x_218_ = lean_nat_dec_lt(v_begPos_216_, v_i_217_);
+v___x_218_ = l_String_instDecidableLtRaw___aux__1(v_begPos_216_, v_i_217_);
 if (v___x_218_ == 0)
 {
 return v_i_217_;

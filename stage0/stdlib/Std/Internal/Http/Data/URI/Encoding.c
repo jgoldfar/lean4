@@ -582,10 +582,10 @@ return v___x_63_;
 LEAN_EXPORT lean_object* l_Std_Http_URI_instDecidableIsAllowedEncodedChars___lam__0___boxed(lean_object* v_r_64_, lean_object* v___x_65_, lean_object* v_v_66_){
 _start:
 {
-uint8_t v___x_74__boxed_67_; uint8_t v_v_boxed_68_; uint8_t v_res_69_; lean_object* v_r_70_; 
-v___x_74__boxed_67_ = lean_unbox(v___x_65_);
+uint8_t v___x_71__boxed_67_; uint8_t v_v_boxed_68_; uint8_t v_res_69_; lean_object* v_r_70_; 
+v___x_71__boxed_67_ = lean_unbox(v___x_65_);
 v_v_boxed_68_ = lean_unbox(v_v_66_);
-v_res_69_ = l_Std_Http_URI_instDecidableIsAllowedEncodedChars___lam__0(v_r_64_, v___x_74__boxed_67_, v_v_boxed_68_);
+v_res_69_ = l_Std_Http_URI_instDecidableIsAllowedEncodedChars___lam__0(v_r_64_, v___x_71__boxed_67_, v_v_boxed_68_);
 v_r_70_ = lean_box(v_res_69_);
 return v_r_70_;
 }
@@ -670,10 +670,10 @@ return v___x_113_;
 LEAN_EXPORT lean_object* l_Std_Http_URI_instDecidableIsAllowedEncodedQueryChars___lam__0___boxed(lean_object* v_r_114_, lean_object* v___x_115_, lean_object* v_v_116_){
 _start:
 {
-uint8_t v___x_74__boxed_117_; uint8_t v_v_boxed_118_; uint8_t v_res_119_; lean_object* v_r_120_; 
-v___x_74__boxed_117_ = lean_unbox(v___x_115_);
+uint8_t v___x_71__boxed_117_; uint8_t v_v_boxed_118_; uint8_t v_res_119_; lean_object* v_r_120_; 
+v___x_71__boxed_117_ = lean_unbox(v___x_115_);
 v_v_boxed_118_ = lean_unbox(v_v_116_);
-v_res_119_ = l_Std_Http_URI_instDecidableIsAllowedEncodedQueryChars___lam__0(v_r_114_, v___x_74__boxed_117_, v_v_boxed_118_);
+v_res_119_ = l_Std_Http_URI_instDecidableIsAllowedEncodedQueryChars___lam__0(v_r_114_, v___x_71__boxed_117_, v_v_boxed_118_);
 v_r_120_ = lean_box(v_res_119_);
 return v_r_120_;
 }

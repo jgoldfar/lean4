@@ -740,8 +740,8 @@ return v___x_209_;
 else
 {
 lean_object* v___x_211_; 
-lean_dec(v_a_210_);
 lean_dec_ref(v___x_209_);
+lean_dec(v_a_210_);
 lean_inc(v_a_207_);
 lean_inc_ref(v_a_206_);
 lean_inc(v_a_205_);

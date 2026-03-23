@@ -2110,9 +2110,9 @@ goto _start;
 LEAN_EXPORT lean_object* l_List_partition_loop___at___00Lake_recFetchAcyclic___at___00__private_Lake_Build_Index_0__Lake_recFetchWithIndex_spec__0_spec__1___boxed(lean_object* v___x_510_, lean_object* v___x_511_, lean_object* v_a_512_, lean_object* v_a_513_){
 _start:
 {
-uint8_t v___x_3616__boxed_514_; lean_object* v_res_515_; 
-v___x_3616__boxed_514_ = lean_unbox(v___x_511_);
-v_res_515_ = l_List_partition_loop___at___00Lake_recFetchAcyclic___at___00__private_Lake_Build_Index_0__Lake_recFetchWithIndex_spec__0_spec__1(v___x_510_, v___x_3616__boxed_514_, v_a_512_, v_a_513_);
+uint8_t v___x_3059__boxed_514_; lean_object* v_res_515_; 
+v___x_3059__boxed_514_ = lean_unbox(v___x_511_);
+v_res_515_ = l_List_partition_loop___at___00Lake_recFetchAcyclic___at___00__private_Lake_Build_Index_0__Lake_recFetchWithIndex_spec__0_spec__1(v___x_510_, v___x_3059__boxed_514_, v_a_512_, v_a_513_);
 lean_dec_ref(v___x_510_);
 return v_res_515_;
 }

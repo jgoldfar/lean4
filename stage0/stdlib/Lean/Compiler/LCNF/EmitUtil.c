@@ -34,8 +34,8 @@ lean_object* l_Lean_Compiler_LCNF_getImpureSignature_x3f___redArg(lean_object*, 
 lean_object* l_Lean_Name_toStringWithToken___at___00Lean_Name_toString_spec__0(lean_object*, uint8_t);
 lean_object* lean_string_append(lean_object*, lean_object*);
 lean_object* l_mkPanicMessageWithDecl(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-lean_object* l_instMonadEST(lean_object*, lean_object*);
-lean_object* l_ReaderT_instMonad___redArg(lean_object*);
+lean_object* l_instMonadEIO(lean_object*);
+lean_object* l_StateRefT_x27_instMonad___redArg(lean_object*);
 lean_object* l_Lean_Core_instMonadCoreM___lam__0___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Core_instMonadCoreM___lam__1___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_ReaderT_instFunctorOfMonad___redArg___lam__0(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
@@ -96,7 +96,7 @@ static lean_object* _init_l_panic___at___00__private_Lean_Compiler_LCNF_EmitUtil
 _start:
 {
 lean_object* v___x_1_; 
-v___x_1_ = l_instMonadEST(lean_box(0), lean_box(0));
+v___x_1_ = l_instMonadEIO(lean_box(0));
 return v___x_1_;
 }
 }
@@ -105,7 +105,7 @@ _start:
 {
 lean_object* v___x_9_; lean_object* v___x_10_; lean_object* v_toApplicative_11_; lean_object* v___x_13_; uint8_t v_isShared_14_; uint8_t v_isSharedCheck_43_; 
 v___x_9_ = lean_obj_once(&l_panic___at___00__private_Lean_Compiler_LCNF_EmitUtil_0__Lean_Compiler_LCNF_collectUsedDecls_go_spec__2___closed__0, &l_panic___at___00__private_Lean_Compiler_LCNF_EmitUtil_0__Lean_Compiler_LCNF_collectUsedDecls_go_spec__2___closed__0_once, _init_l_panic___at___00__private_Lean_Compiler_LCNF_EmitUtil_0__Lean_Compiler_LCNF_collectUsedDecls_go_spec__2___closed__0);
-v___x_10_ = l_ReaderT_instMonad___redArg(v___x_9_);
+v___x_10_ = l_StateRefT_x27_instMonad___redArg(v___x_9_);
 v_toApplicative_11_ = lean_ctor_get(v___x_10_, 0);
 v_isSharedCheck_43_ = !lean_is_exclusive(v___x_10_);
 if (v_isSharedCheck_43_ == 0)
@@ -215,12 +215,12 @@ goto v_reusejp_32_;
 }
 v_reusejp_32_:
 {
-lean_object* v___x_34_; lean_object* v___x_35_; lean_object* v___x_36_; lean_object* v___x_6147__overap_37_; lean_object* v___x_38_; 
-v___x_34_ = l_ReaderT_instMonad___redArg(v___x_33_);
+lean_object* v___x_34_; lean_object* v___x_35_; lean_object* v___x_36_; lean_object* v___x_5857__overap_37_; lean_object* v___x_38_; 
+v___x_34_ = l_StateRefT_x27_instMonad___redArg(v___x_33_);
 v___x_35_ = lean_box(0);
 v___x_36_ = l_instInhabitedOfMonad___redArg(v___x_34_, v___x_35_);
-v___x_6147__overap_37_ = lean_panic_fn(v___x_36_, v_msg_4_);
-v___x_38_ = lean_apply_4(v___x_6147__overap_37_, v___y_5_, v___y_6_, v___y_7_, lean_box(0));
+v___x_5857__overap_37_ = lean_panic_fn(v___x_36_, v_msg_4_);
+v___x_38_ = lean_apply_4(v___x_5857__overap_37_, v___y_5_, v___y_6_, v___y_7_, lean_box(0));
 return v___x_38_;
 }
 }
@@ -310,9 +310,9 @@ return v_res_74_;
 LEAN_EXPORT lean_object* l___private_Init_Data_Array_Basic_0__Array_foldlMUnsafe_fold___at___00__private_Lean_Compiler_LCNF_EmitUtil_0__Lean_Compiler_LCNF_collectUsedDecls_go_spec__3___lam__0___boxed(lean_object* v___x_75_, lean_object* v_x_76_, lean_object* v___y_77_, lean_object* v___y_78_, lean_object* v___y_79_, lean_object* v___y_80_){
 _start:
 {
-uint8_t v___x_6994__boxed_81_; lean_object* v_res_82_; 
-v___x_6994__boxed_81_ = lean_unbox(v___x_75_);
-v_res_82_ = l___private_Init_Data_Array_Basic_0__Array_foldlMUnsafe_fold___at___00__private_Lean_Compiler_LCNF_EmitUtil_0__Lean_Compiler_LCNF_collectUsedDecls_go_spec__3___lam__0(v___x_6994__boxed_81_, v_x_76_, v___y_77_, v___y_78_, v___y_79_);
+uint8_t v___x_6661__boxed_81_; lean_object* v_res_82_; 
+v___x_6661__boxed_81_ = lean_unbox(v___x_75_);
+v_res_82_ = l___private_Init_Data_Array_Basic_0__Array_foldlMUnsafe_fold___at___00__private_Lean_Compiler_LCNF_EmitUtil_0__Lean_Compiler_LCNF_collectUsedDecls_go_spec__3___lam__0(v___x_6661__boxed_81_, v_x_76_, v___y_77_, v___y_78_, v___y_79_);
 return v_res_82_;
 }
 }

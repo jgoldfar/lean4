@@ -13,7 +13,7 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-uint8_t lean_nat_dec_lt(lean_object*, lean_object*);
+uint8_t l_String_instDecidableLtRaw___aux__1(lean_object*, lean_object*);
 lean_object* lean_nat_add(lean_object*, lean_object*);
 uint8_t lean_string_get_byte_fast(lean_object*, lean_object*);
 uint8_t lean_uint8_dec_eq(uint8_t, uint8_t);
@@ -1148,7 +1148,7 @@ LEAN_EXPORT uint8_t l___private_Init_Data_String_Pattern_Basic_0__String_Slice_P
 _start:
 {
 uint8_t v___x_365_; 
-v___x_365_ = lean_nat_dec_lt(v_curr_364_, v_len_363_);
+v___x_365_ = l_String_instDecidableLtRaw___aux__1(v_curr_364_, v_len_363_);
 if (v___x_365_ == 0)
 {
 uint8_t v___x_366_; 

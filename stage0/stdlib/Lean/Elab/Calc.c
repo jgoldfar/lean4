@@ -1103,10 +1103,10 @@ return v_res_286_;
 LEAN_EXPORT lean_object* l_panic___at___00Lean_Elab_Term_mkCalcTrans_spec__1(lean_object* v_msg_288_, lean_object* v___y_289_, lean_object* v___y_290_, lean_object* v___y_291_, lean_object* v___y_292_){
 _start:
 {
-lean_object* v___f_294_; lean_object* v___x_7458__overap_295_; lean_object* v___x_296_; 
+lean_object* v___f_294_; lean_object* v___x_7427__overap_295_; lean_object* v___x_296_; 
 v___f_294_ = ((lean_object*)(l_panic___at___00Lean_Elab_Term_mkCalcTrans_spec__1___closed__0));
-v___x_7458__overap_295_ = lean_panic_fn(v___f_294_, v_msg_288_);
-v___x_296_ = lean_apply_5(v___x_7458__overap_295_, v___y_289_, v___y_290_, v___y_291_, v___y_292_, lean_box(0));
+v___x_7427__overap_295_ = lean_panic_fn(v___f_294_, v_msg_288_);
+v___x_296_ = lean_apply_5(v___x_7427__overap_295_, v___y_289_, v___y_290_, v___y_291_, v___y_292_, lean_box(0));
 return v___x_296_;
 }
 }
