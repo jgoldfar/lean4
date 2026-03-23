@@ -343,13 +343,13 @@ def instantiateTypeLevelParams (c : ConstantVal) (us : List Level) : CoreM Expr 
   modifyInstLevelTypeCache fun s => s.insert c.name (us, r)
   return r
 
-def instantiateValueLevelParams (c : ConstantInfo) (us : List Level) : CoreM Expr := do
+def instantiateValueLevelParams (c : ConstantInfo) (us : List Level) (allowOpaque := false) : CoreM Expr := do
   if let some (us', r) := (← get).cache.instLevelValue.find? c.name then
     if us == us' then
       return r
-  unless c.hasValue do
+  unless c.hasValue (allowOpaque := allowOpaque) do
     throwError "Not a definition or theorem: {.ofConstName c.name}"
-  let r := c.instantiateValueLevelParams! us
+  let r := c.instantiateValueLevelParams! us (allowOpaque := allowOpaque)
   modifyInstLevelValueCache fun s => s.insert c.name (us, r)
   return r
 

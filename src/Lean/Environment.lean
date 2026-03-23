@@ -1193,8 +1193,8 @@ namespace ConstantInfo
 def instantiateTypeLevelParams (c : ConstantInfo) (ls : List Level) : Expr :=
   c.toConstantVal.instantiateTypeLevelParams ls
 
-def instantiateValueLevelParams! (c : ConstantInfo) (ls : List Level) : Expr :=
-  c.value!.instantiateLevelParams c.levelParams ls
+def instantiateValueLevelParams! (c : ConstantInfo) (ls : List Level) (allowOpaque := false) : Expr :=
+  (c.value! (allowOpaque := allowOpaque)).instantiateLevelParams c.levelParams ls
 
 end ConstantInfo
 
