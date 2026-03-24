@@ -27,8 +27,8 @@ trace: [Compiler.explicitRc] size: 17
 [Compiler.explicitRc] size: 4
     def testWithAnnotation._boxed n p q : obj :=
       let res := testWithAnnotation n p q;
-      dec q;
-      dec p;
+      dec[ref] q;
+      dec[ref] p;
       dec n;
       return res
 -/
@@ -55,11 +55,11 @@ trace: [Compiler.explicitRc] size: 20
       let isZero := Nat.decEq n zero;
       cases isZero : obj
       | Bool.true =>
-        dec q;
+        dec[ref] q;
         let _x.6 := 123;
         goto _jp.1 _x.6 p
       | Bool.false =>
-        dec p;
+        dec[ref] p;
         let one := 1;
         let n.7 := Nat.sub n one;
         let _x.8 := Nat.add n.7 one;

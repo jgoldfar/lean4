@@ -17,7 +17,7 @@ trace: [Compiler.explicitRc] size: 19
         cases path : obj
         | List.nil =>
           let x.1 := oproj[0] tree;
-          inc x.1;
+          inc[ref] x.1;
           return x.1
         | _ =>
           let _x.2 := instInhabitedNAryTree.default._closed_0;
@@ -39,7 +39,7 @@ trace: [Compiler.explicitRc] size: 19
     def followPath._boxed tree path : obj :=
       let res := followPath tree path;
       dec path;
-      dec tree;
+      dec[ref] tree;
       return res
 -/
 #guard_msgs in
