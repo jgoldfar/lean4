@@ -885,7 +885,7 @@ _start:
 lean_object* v___x_281_; lean_object* v___x_282_; lean_object* v___x_283_; lean_object* v___x_284_; lean_object* v___x_285_; lean_object* v___x_286_; 
 v___x_281_ = ((lean_object*)(l_String_Slice_getUTF8Byte_x21___closed__2));
 v___x_282_ = lean_unsigned_to_nat(4u);
-v___x_283_ = lean_unsigned_to_nat(509u);
+v___x_283_ = lean_unsigned_to_nat(512u);
 v___x_284_ = ((lean_object*)(l_String_Slice_getUTF8Byte_x21___closed__1));
 v___x_285_ = ((lean_object*)(l_String_Slice_getUTF8Byte_x21___closed__0));
 v___x_286_ = l_mkPanicMessageWithDecl(v___x_285_, v___x_284_, v___x_283_, v___x_282_, v___x_281_);

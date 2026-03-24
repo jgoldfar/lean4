@@ -3050,7 +3050,7 @@ _start:
 lean_object* v___x_831_; lean_object* v___x_832_; lean_object* v___x_833_; lean_object* v___x_834_; lean_object* v___x_835_; lean_object* v___x_836_; 
 v___x_831_ = ((lean_object*)(l___private_Lean_Compiler_LCNF_ExplicitRC_0__Lean_Compiler_LCNF_CollectDerivedValInfo_collectCode___closed__6));
 v___x_832_ = lean_unsigned_to_nat(59u);
-v___x_833_ = lean_unsigned_to_nat(120u);
+v___x_833_ = lean_unsigned_to_nat(121u);
 v___x_834_ = ((lean_object*)(l___private_Lean_Compiler_LCNF_ExplicitRC_0__Lean_Compiler_LCNF_CollectDerivedValInfo_collectCode___closed__5));
 v___x_835_ = ((lean_object*)(l___private_Lean_Compiler_LCNF_ExplicitRC_0__Lean_Compiler_LCNF_CollectDerivedValInfo_collectCode___closed__4));
 v___x_836_ = l_mkPanicMessageWithDecl(v___x_835_, v___x_834_, v___x_833_, v___x_832_, v___x_831_);
@@ -7300,7 +7300,7 @@ _start:
 lean_object* v___x_2488_; lean_object* v___x_2489_; lean_object* v___x_2490_; lean_object* v___x_2491_; lean_object* v___x_2492_; lean_object* v___x_2493_; 
 v___x_2488_ = ((lean_object*)(l___private_Lean_Compiler_LCNF_ExplicitRC_0__Lean_Compiler_LCNF_CollectDerivedValInfo_collectCode___closed__6));
 v___x_2489_ = lean_unsigned_to_nat(20u);
-v___x_2490_ = lean_unsigned_to_nat(337u);
+v___x_2490_ = lean_unsigned_to_nat(338u);
 v___x_2491_ = ((lean_object*)(l___private_Lean_Compiler_LCNF_ExplicitRC_0__Lean_Compiler_LCNF_useLetValue___closed__0));
 v___x_2492_ = ((lean_object*)(l___private_Lean_Compiler_LCNF_ExplicitRC_0__Lean_Compiler_LCNF_CollectDerivedValInfo_collectCode___closed__4));
 v___x_2493_ = l_mkPanicMessageWithDecl(v___x_2492_, v___x_2491_, v___x_2490_, v___x_2489_, v___x_2488_);
@@ -10993,7 +10993,7 @@ _start:
 lean_object* v___x_4047_; lean_object* v___x_4048_; lean_object* v___x_4049_; lean_object* v___x_4050_; lean_object* v___x_4051_; lean_object* v___x_4052_; 
 v___x_4047_ = ((lean_object*)(l___private_Lean_Compiler_LCNF_ExplicitRC_0__Lean_Compiler_LCNF_CollectDerivedValInfo_collectCode___closed__6));
 v___x_4048_ = lean_unsigned_to_nat(22u);
-v___x_4049_ = lean_unsigned_to_nat(551u);
+v___x_4049_ = lean_unsigned_to_nat(552u);
 v___x_4050_ = ((lean_object*)(l___private_Lean_Compiler_LCNF_ExplicitRC_0__Lean_Compiler_LCNF_LetDecl_explicitRc___closed__11));
 v___x_4051_ = ((lean_object*)(l___private_Lean_Compiler_LCNF_ExplicitRC_0__Lean_Compiler_LCNF_CollectDerivedValInfo_collectCode___closed__4));
 v___x_4052_ = l_mkPanicMessageWithDecl(v___x_4051_, v___x_4050_, v___x_4049_, v___x_4048_, v___x_4047_);
@@ -13616,7 +13616,7 @@ _start:
 lean_object* v___x_4787_; lean_object* v___x_4788_; lean_object* v___x_4789_; lean_object* v___x_4790_; lean_object* v___x_4791_; lean_object* v___x_4792_; 
 v___x_4787_ = ((lean_object*)(l___private_Lean_Compiler_LCNF_ExplicitRC_0__Lean_Compiler_LCNF_CollectDerivedValInfo_collectCode___closed__6));
 v___x_4788_ = lean_unsigned_to_nat(59u);
-v___x_4789_ = lean_unsigned_to_nat(627u);
+v___x_4789_ = lean_unsigned_to_nat(628u);
 v___x_4790_ = ((lean_object*)(l___private_Lean_Compiler_LCNF_ExplicitRC_0__Lean_Compiler_LCNF_Code_explicitRc___closed__0));
 v___x_4791_ = ((lean_object*)(l___private_Lean_Compiler_LCNF_ExplicitRC_0__Lean_Compiler_LCNF_CollectDerivedValInfo_collectCode___closed__4));
 v___x_4792_ = l_mkPanicMessageWithDecl(v___x_4791_, v___x_4790_, v___x_4789_, v___x_4788_, v___x_4787_);
