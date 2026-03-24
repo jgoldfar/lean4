@@ -33,7 +33,7 @@ lean_object* l_List_head_x3f___redArg(lean_object*);
 lean_object* l_String_quote(lean_object*);
 lean_object* lean_string_append(lean_object*, lean_object*);
 lean_object* l_mkPanicMessageWithDecl(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-lean_object* lean_panic_fn(lean_object*, lean_object*);
+lean_object* lean_panic_fn_borrowed(lean_object*, lean_object*);
 uint8_t lean_string_dec_eq(lean_object*, lean_object*);
 uint8_t l_Std_Net_instDecidableEqIPv4Addr_decEq(lean_object*, lean_object*);
 uint8_t l_Std_Net_instDecidableEqIPv6Addr_decEq(lean_object*, lean_object*);
@@ -1119,7 +1119,7 @@ _start:
 {
 lean_object* v___x_82_; lean_object* v___x_83_; 
 v___x_82_ = ((lean_object*)(l_Std_Http_URI_instInhabitedScheme___closed__0));
-v___x_83_ = lean_panic_fn(v___x_82_, v_msg_81_);
+v___x_83_ = lean_panic_fn_borrowed(v___x_82_, v_msg_81_);
 return v___x_83_;
 }
 }
@@ -7883,7 +7883,7 @@ _start:
 {
 lean_object* v___x_2363_; lean_object* v___x_2364_; 
 v___x_2363_ = l_Std_Http_URI_instInhabitedBuilder_default;
-v___x_2364_ = lean_panic_fn(v___x_2363_, v_msg_2362_);
+v___x_2364_ = lean_panic_fn_borrowed(v___x_2363_, v_msg_2362_);
 return v___x_2364_;
 }
 }

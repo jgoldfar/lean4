@@ -104,7 +104,7 @@ lean_object* l_Lean_MessageData_ofSyntax(lean_object*);
 lean_object* l_Lean_indentD(lean_object*);
 lean_object* l_mkPanicMessageWithDecl(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Elab_Term_instInhabitedTermElabM(lean_object*);
-lean_object* lean_panic_fn(lean_object*, lean_object*);
+lean_object* lean_panic_fn_borrowed(lean_object*, lean_object*);
 lean_object* l_Lean_Name_mkStr1(lean_object*);
 uint8_t l_Lean_instBEqBinderInfo_beq(uint8_t, uint8_t);
 lean_object* l_Lean_Meta_getFVarsToGeneralize(lean_object*, lean_object*, uint8_t, lean_object*, lean_object*, lean_object*, lean_object*);
@@ -6566,7 +6566,7 @@ _start:
 {
 lean_object* v___x_1899_; lean_object* v___x_15670__overap_1900_; lean_object* v___x_1901_; 
 v___x_1899_ = lean_obj_once(&l_panic___at___00__private_Lean_Elab_Tactic_RCases_0__Lean_Elab_Tactic_RCases_rcasesCore_spec__4___closed__0, &l_panic___at___00__private_Lean_Elab_Tactic_RCases_0__Lean_Elab_Tactic_RCases_rcasesCore_spec__4___closed__0_once, _init_l_panic___at___00__private_Lean_Elab_Tactic_RCases_0__Lean_Elab_Tactic_RCases_rcasesCore_spec__4___closed__0);
-v___x_15670__overap_1900_ = lean_panic_fn(v___x_1899_, v_msg_1891_);
+v___x_15670__overap_1900_ = lean_panic_fn_borrowed(v___x_1899_, v_msg_1891_);
 lean_inc(v___y_1897_);
 lean_inc_ref(v___y_1896_);
 lean_inc(v___y_1895_);
@@ -7190,7 +7190,6 @@ lean_dec_ref(v___x_1955_);
 lean_dec(v_snd_1954_);
 lean_dec(v_tail_1952_);
 lean_dec(v_head_1950_);
-lean_dec_ref(v___x_1947_);
 lean_dec(v_snd_1944_);
 v_a_2082_ = lean_ctor_get(v___x_1968_, 0);
 v_isSharedCheck_2089_ = !lean_is_exclusive(v___x_1968_);
@@ -7240,7 +7239,6 @@ lean_dec_ref(v___x_1955_);
 lean_dec(v_snd_1954_);
 lean_dec(v_tail_1952_);
 lean_dec(v_head_1950_);
-lean_dec_ref(v___x_1947_);
 lean_dec_ref(v___x_1945_);
 lean_dec(v_snd_1944_);
 v_a_2090_ = lean_ctor_get(v___x_1966_, 0);
@@ -7290,7 +7288,6 @@ lean_dec_ref(v___x_1955_);
 lean_dec(v_snd_1954_);
 lean_dec(v_tail_1952_);
 lean_dec(v_head_1950_);
-lean_dec_ref(v___x_1947_);
 lean_dec_ref(v___x_1945_);
 lean_dec(v_snd_1944_);
 v_a_2098_ = lean_ctor_get(v___x_1964_, 0);
@@ -7370,6 +7367,7 @@ lean_dec_ref(v___y_2121_);
 lean_dec_ref(v_fst_2115_);
 lean_dec(v___x_2113_);
 lean_dec_ref(v___x_2112_);
+lean_dec_ref(v___x_2111_);
 lean_dec(v___x_2110_);
 return v_res_2129_;
 }
@@ -7995,9 +7993,8 @@ lean_inc(v_a_2336_);
 lean_dec_ref(v___x_2335_);
 v_macroStack_2337_ = lean_ctor_get(v___y_2327_, 1);
 lean_inc(v_macroStack_2337_);
-lean_dec_ref(v___y_2327_);
-lean_inc(v_macroStack_2337_);
 v___x_2338_ = l_Lean_Elab_getBetterRef(v_ref_2334_, v_macroStack_2337_);
+lean_inc(v_macroStack_2337_);
 v___x_2339_ = l_Lean_Elab_addMacroStack___at___00Lean_throwError___at___00__private_Lean_Elab_Tactic_RCases_0__Lean_Elab_Tactic_RCases_rcasesCore_spec__8_spec__9___redArg(v_a_2336_, v_macroStack_2337_, v___y_2331_);
 v_a_2340_ = lean_ctor_get(v___x_2339_, 0);
 v_isSharedCheck_2348_ = !lean_is_exclusive(v___x_2339_);
@@ -8053,6 +8050,7 @@ lean_dec_ref(v___y_2354_);
 lean_dec(v___y_2353_);
 lean_dec_ref(v___y_2352_);
 lean_dec(v___y_2351_);
+lean_dec_ref(v___y_2350_);
 return v_res_2357_;
 }
 }
@@ -8095,7 +8093,6 @@ v___x_2382_ = lean_obj_once(&l___private_Lean_Elab_Tactic_RCases_0__Lean_Elab_Ta
 v___x_2383_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_2383_, 0, v___x_2381_);
 lean_ctor_set(v___x_2383_, 1, v___x_2382_);
-lean_inc_ref(v___y_2368_);
 v___x_2384_ = l_Lean_throwError___at___00__private_Lean_Elab_Tactic_RCases_0__Lean_Elab_Tactic_RCases_rcasesCore_spec__8___redArg(v___x_2383_, v___y_2368_, v___y_2369_, v___y_2370_, v___y_2371_, v___y_2372_, v___y_2373_);
 return v___x_2384_;
 }
@@ -10688,7 +10685,6 @@ LEAN_EXPORT lean_object* l_Lean_throwError___at___00__private_Lean_Elab_Tactic_R
 _start:
 {
 lean_object* v___x_3263_; 
-lean_inc_ref(v___y_3256_);
 v___x_3263_ = l_Lean_throwError___at___00__private_Lean_Elab_Tactic_RCases_0__Lean_Elab_Tactic_RCases_rcasesCore_spec__8___redArg(v_msg_3255_, v___y_3256_, v___y_3257_, v___y_3258_, v___y_3259_, v___y_3260_, v___y_3261_);
 return v___x_3263_;
 }

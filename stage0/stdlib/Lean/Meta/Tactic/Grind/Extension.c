@@ -32,7 +32,7 @@ lean_object* l_Lean_PersistentHashMap_mkEmptyEntriesArray(lean_object*, lean_obj
 uint8_t l_Lean_instDecidableEqOLeanLevel(uint8_t, uint8_t);
 uint8_t l_Lean_isPrivateName(lean_object*);
 lean_object* l_mkPanicMessageWithDecl(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-lean_object* lean_panic_fn(lean_object*, lean_object*);
+lean_object* lean_panic_fn_borrowed(lean_object*, lean_object*);
 lean_object* l_Lean_Name_reprPrec(lean_object*, lean_object*);
 size_t lean_uint64_to_usize(uint64_t);
 size_t lean_usize_sub(size_t, size_t);
@@ -6298,7 +6298,8 @@ lean_ctor_set(v___x_1980_, 0, v___x_1979_);
 lean_ctor_set(v___x_1980_, 1, v___f_1977_);
 v___x_1981_ = lean_obj_once(&l_panic___at___00Lean_Meta_Grind_Theorems_insert___at___00Lean_Meta_Grind_ExtensionState_addEntry_spec__0_spec__0___closed__7, &l_panic___at___00Lean_Meta_Grind_Theorems_insert___at___00Lean_Meta_Grind_ExtensionState_addEntry_spec__0_spec__0___closed__7_once, _init_l_panic___at___00Lean_Meta_Grind_Theorems_insert___at___00Lean_Meta_Grind_ExtensionState_addEntry_spec__0_spec__0___closed__7);
 v___x_1982_ = l_instInhabitedOfMonad___redArg(v___x_1980_, v___x_1981_);
-v___x_1983_ = lean_panic_fn(v___x_1982_, v_msg_1970_);
+v___x_1983_ = lean_panic_fn_borrowed(v___x_1982_, v_msg_1970_);
+lean_dec(v___x_1982_);
 return v___x_1983_;
 }
 }
@@ -7085,7 +7086,8 @@ lean_ctor_set(v___x_2186_, 0, v___x_2185_);
 lean_ctor_set(v___x_2186_, 1, v___f_2183_);
 v___x_2187_ = lean_obj_once(&l_panic___at___00Lean_Meta_Grind_Theorems_insert___at___00Lean_Meta_Grind_ExtensionState_addEntry_spec__0_spec__0___closed__7, &l_panic___at___00Lean_Meta_Grind_Theorems_insert___at___00Lean_Meta_Grind_ExtensionState_addEntry_spec__0_spec__0___closed__7_once, _init_l_panic___at___00Lean_Meta_Grind_Theorems_insert___at___00Lean_Meta_Grind_ExtensionState_addEntry_spec__0_spec__0___closed__7);
 v___x_2188_ = l_instInhabitedOfMonad___redArg(v___x_2186_, v___x_2187_);
-v___x_2189_ = lean_panic_fn(v___x_2188_, v_msg_2176_);
+v___x_2189_ = lean_panic_fn_borrowed(v___x_2188_, v_msg_2176_);
+lean_dec(v___x_2188_);
 return v___x_2189_;
 }
 }
@@ -8044,7 +8046,7 @@ _start:
 {
 lean_object* v___x_2539_; lean_object* v___x_2540_; 
 v___x_2539_ = lean_box(0);
-v___x_2540_ = lean_panic_fn(v___x_2539_, v_msg_2538_);
+v___x_2540_ = lean_panic_fn_borrowed(v___x_2539_, v_msg_2538_);
 return v___x_2540_;
 }
 }

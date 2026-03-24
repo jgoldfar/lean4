@@ -131,7 +131,7 @@ lean_object* l_Lean_mkApp4(lean_object*, lean_object*, lean_object*, lean_object
 lean_object* l_Lean_mkLambda(lean_object*, uint8_t, lean_object*, lean_object*);
 lean_object* l_Lean_Meta_simpLocalDecl(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, uint8_t, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Meta_instInhabitedMetaM___lam__0___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-lean_object* lean_panic_fn(lean_object*, lean_object*);
+lean_object* lean_panic_fn_borrowed(lean_object*, lean_object*);
 lean_object* l_Lean_Name_mkStr4(lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* lean_register_option(lean_object*, lean_object*);
 lean_object* l_Std_DTreeMap_Internal_Impl_Const_get_x3f___at___00Lean_NameMap_find_x3f_spec__0___redArg(lean_object*, lean_object*);
@@ -8746,7 +8746,6 @@ _start:
 lean_object* v_lctx_2740_; lean_object* v___x_2741_; lean_object* v___x_2742_; lean_object* v___x_2743_; lean_object* v___x_2744_; 
 v_lctx_2740_ = lean_ctor_get(v_a_2738_, 2);
 lean_inc_ref(v_lctx_2740_);
-lean_dec_ref(v_a_2738_);
 v___x_2741_ = lean_local_ctx_num_indices(v_lctx_2740_);
 v___x_2742_ = lean_box(v_useDecide_2737_);
 v___x_2743_ = lean_alloc_closure((void*)(l___private_Lean_Meta_Tactic_SplitIf_0__Lean_Meta_SplitIf_discharge_x3f___boxed), 11, 2);
@@ -8763,6 +8762,7 @@ _start:
 uint8_t v_useDecide_boxed_2748_; lean_object* v_res_2749_; 
 v_useDecide_boxed_2748_ = lean_unbox(v_useDecide_2745_);
 v_res_2749_ = l_Lean_Meta_SplitIf_mkDischarge_x3f___redArg(v_useDecide_boxed_2748_, v_a_2746_);
+lean_dec_ref(v_a_2746_);
 return v_res_2749_;
 }
 }
@@ -8770,7 +8770,6 @@ LEAN_EXPORT lean_object* l_Lean_Meta_SplitIf_mkDischarge_x3f(uint8_t v_useDecide
 _start:
 {
 lean_object* v___x_2756_; 
-lean_inc_ref(v_a_2751_);
 v___x_2756_ = l_Lean_Meta_SplitIf_mkDischarge_x3f___redArg(v_useDecide_2750_, v_a_2751_);
 return v___x_2756_;
 }
@@ -9498,7 +9497,7 @@ _start:
 {
 lean_object* v___f_2998_; lean_object* v___x_1955__overap_2999_; lean_object* v___x_3000_; 
 v___f_2998_ = ((lean_object*)(l_panic___at___00Lean_Meta_simpIfTarget_spec__0___closed__0));
-v___x_1955__overap_2999_ = lean_panic_fn(v___f_2998_, v_msg_2992_);
+v___x_1955__overap_2999_ = lean_panic_fn_borrowed(v___f_2998_, v_msg_2992_);
 lean_inc(v___y_2996_);
 lean_inc_ref(v___y_2995_);
 lean_inc(v___y_2994_);

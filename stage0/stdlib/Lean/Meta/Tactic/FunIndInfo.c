@@ -41,7 +41,7 @@ lean_object* lean_mk_empty_array_with_capacity(lean_object*);
 lean_object* lean_string_length(lean_object*);
 uint8_t lean_nat_dec_eq(lean_object*, lean_object*);
 lean_object* l_Lean_Core_instInhabitedCoreM___lam__0___boxed(lean_object*, lean_object*, lean_object*);
-lean_object* lean_panic_fn(lean_object*, lean_object*);
+lean_object* lean_panic_fn_borrowed(lean_object*, lean_object*);
 lean_object* l_Lean_Name_reprPrec(lean_object*, lean_object*);
 lean_object* lean_array_get_size(lean_object*);
 lean_object* lean_array_to_list(lean_object*);
@@ -2779,7 +2779,7 @@ _start:
 {
 lean_object* v___f_933_; lean_object* v___x_432__overap_934_; lean_object* v___x_935_; 
 v___f_933_ = ((lean_object*)(l_panic___at___00Lean_Meta_setFunIndInfo_spec__0___closed__0));
-v___x_432__overap_934_ = lean_panic_fn(v___f_933_, v_msg_929_);
+v___x_432__overap_934_ = lean_panic_fn_borrowed(v___f_933_, v_msg_929_);
 lean_inc(v___y_931_);
 lean_inc_ref(v___y_930_);
 v___x_935_ = lean_apply_3(v___x_432__overap_934_, v___y_930_, v___y_931_, lean_box(0));

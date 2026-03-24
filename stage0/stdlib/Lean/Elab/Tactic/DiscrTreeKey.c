@@ -1179,9 +1179,8 @@ lean_inc(v_a_290_);
 lean_dec_ref(v___x_289_);
 v_macroStack_291_ = lean_ctor_get(v___y_281_, 1);
 lean_inc(v_macroStack_291_);
-lean_dec_ref(v___y_281_);
-lean_inc(v_macroStack_291_);
 v___x_292_ = l_Lean_Elab_getBetterRef(v_ref_288_, v_macroStack_291_);
+lean_inc(v_macroStack_291_);
 v___x_293_ = l_Lean_Elab_addMacroStack___at___00Lean_throwError___at___00Lean_throwErrorAt___at___00Lean_throwUnknownIdentifierAt___at___00Lean_throwUnknownConstantAt___at___00Lean_throwUnknownConstant___at___00Lean_getConstInfo___at___00__private_Lean_Elab_Tactic_DiscrTreeKey_0__Lean_Elab_Tactic_DiscrTreeKey_getType_spec__0_spec__0_spec__1_spec__2_spec__4_spec__6_spec__8___redArg(v_a_290_, v_macroStack_291_, v___y_285_);
 v_a_294_ = lean_ctor_get(v___x_293_, 0);
 v_isSharedCheck_302_ = !lean_is_exclusive(v___x_293_);
@@ -1237,6 +1236,7 @@ lean_dec_ref(v___y_308_);
 lean_dec(v___y_307_);
 lean_dec_ref(v___y_306_);
 lean_dec(v___y_305_);
+lean_dec_ref(v___y_304_);
 return v_res_311_;
 }
 }
@@ -1291,7 +1291,6 @@ lean_ctor_set(v___x_338_, 12, v_cancelTk_x3f_334_);
 lean_ctor_set(v___x_338_, 13, v_inheritedTraceOptions_336_);
 lean_ctor_set_uint8(v___x_338_, sizeof(void*)*14, v_diag_333_);
 lean_ctor_set_uint8(v___x_338_, sizeof(void*)*14 + 1, v_suppressElabErrors_335_);
-lean_inc_ref(v___y_314_);
 v___x_339_ = l_Lean_throwError___at___00Lean_throwErrorAt___at___00Lean_throwUnknownIdentifierAt___at___00Lean_throwUnknownConstantAt___at___00Lean_throwUnknownConstant___at___00Lean_getConstInfo___at___00__private_Lean_Elab_Tactic_DiscrTreeKey_0__Lean_Elab_Tactic_DiscrTreeKey_getType_spec__0_spec__0_spec__1_spec__2_spec__4_spec__6___redArg(v_msg_313_, v___y_314_, v___y_315_, v___y_316_, v___y_317_, v___x_338_, v___y_319_);
 lean_dec_ref(v___x_338_);
 return v___x_339_;
@@ -2259,7 +2258,6 @@ LEAN_EXPORT lean_object* l_Lean_throwError___at___00Lean_throwErrorAt___at___00L
 _start:
 {
 lean_object* v___x_776_; 
-lean_inc_ref(v___y_769_);
 v___x_776_ = l_Lean_throwError___at___00Lean_throwErrorAt___at___00Lean_throwUnknownIdentifierAt___at___00Lean_throwUnknownConstantAt___at___00Lean_throwUnknownConstant___at___00Lean_getConstInfo___at___00__private_Lean_Elab_Tactic_DiscrTreeKey_0__Lean_Elab_Tactic_DiscrTreeKey_getType_spec__0_spec__0_spec__1_spec__2_spec__4_spec__6___redArg(v_msg_768_, v___y_769_, v___y_770_, v___y_771_, v___y_772_, v___y_773_, v___y_774_);
 return v___x_776_;
 }

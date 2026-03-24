@@ -28,7 +28,7 @@ lean_object* l_Std_Format_pretty(lean_object*, lean_object*, lean_object*, lean_
 lean_object* lean_string_append(lean_object*, lean_object*);
 lean_object* lean_mk_empty_array_with_capacity(lean_object*);
 lean_object* l_mkPanicMessageWithDecl(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-lean_object* lean_panic_fn(lean_object*, lean_object*);
+lean_object* lean_panic_fn_borrowed(lean_object*, lean_object*);
 extern uint32_t l_Lean_idBeginEscape;
 lean_object* lean_string_push(lean_object*, uint32_t);
 extern uint32_t l_Lean_idEndEscape;
@@ -1618,7 +1618,7 @@ _start:
 {
 lean_object* v___x_591_; lean_object* v___x_592_; 
 v___x_591_ = ((lean_object*)(l___private_Lake_CLI_Init_0__Lake_escapeIdent___closed__0));
-v___x_592_ = lean_panic_fn(v___x_591_, v_msg_590_);
+v___x_592_ = lean_panic_fn_borrowed(v___x_591_, v_msg_590_);
 return v___x_592_;
 }
 }

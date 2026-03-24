@@ -27,7 +27,7 @@ uint64_t lean_uint64_of_nat(lean_object*);
 uint64_t l_Lean_Literal_hash(lean_object*);
 lean_object* lean_expr_instantiate1(lean_object*, lean_object*);
 lean_object* l_mkPanicMessageWithDecl(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-lean_object* lean_panic_fn(lean_object*, lean_object*);
+lean_object* lean_panic_fn_borrowed(lean_object*, lean_object*);
 lean_object* lean_nat_add(lean_object*, lean_object*);
 lean_object* l_Repr_addAppParen(lean_object*, lean_object*);
 lean_object* l_Lean_Name_reprPrec(lean_object*, lean_object*);
@@ -1318,7 +1318,7 @@ _start:
 {
 lean_object* v___x_407_; lean_object* v___x_408_; 
 v___x_407_ = l_Lean_instInhabitedHeadIndex_default;
-v___x_408_ = lean_panic_fn(v___x_407_, v_msg_406_);
+v___x_408_ = lean_panic_fn_borrowed(v___x_407_, v_msg_406_);
 return v___x_408_;
 }
 }

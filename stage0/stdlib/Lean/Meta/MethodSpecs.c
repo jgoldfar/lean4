@@ -31,7 +31,7 @@ lean_object* l_ReaderT_instApplicativeOfMonad___redArg___lam__4(lean_object*, le
 lean_object* l_Lean_Meta_instMonadMetaM___lam__0___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Meta_instMonadMetaM___lam__1___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_instInhabitedOfMonad___redArg(lean_object*, lean_object*);
-lean_object* lean_panic_fn(lean_object*, lean_object*);
+lean_object* lean_panic_fn_borrowed(lean_object*, lean_object*);
 lean_object* l_Lean_Meta_isClass_x3f(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* lean_array_get_size(lean_object*);
 lean_object* l___private_Lean_Meta_Basic_0__Lean_Meta_forallTelescopeReducingImp(lean_object*, lean_object*, lean_object*, uint8_t, uint8_t, lean_object*, lean_object*, lean_object*, lean_object*);
@@ -4057,7 +4057,8 @@ v_reusejp_1057_:
 lean_object* v___x_1059_; lean_object* v___x_1060_; lean_object* v___x_17446__overap_1061_; lean_object* v___x_1062_; 
 v___x_1059_ = lean_box(0);
 v___x_1060_ = l_instInhabitedOfMonad___redArg(v___x_1058_, v___x_1059_);
-v___x_17446__overap_1061_ = lean_panic_fn(v___x_1060_, v_msg_1004_);
+v___x_17446__overap_1061_ = lean_panic_fn_borrowed(v___x_1060_, v_msg_1004_);
+lean_dec(v___x_1060_);
 lean_inc(v___y_1008_);
 lean_inc_ref(v___y_1007_);
 lean_inc(v___y_1006_);
@@ -8410,7 +8411,6 @@ lean_dec_ref(v_env_2662_);
 lean_inc(v_instName_2652_);
 v___x_2673_ = lean_alloc_closure((void*)(l___private_Lean_Meta_MethodSpecs_0__Lean_genSpecs_doRealize___boxed), 6, 1);
 lean_closure_set(v___x_2673_, 0, v_instName_2652_);
-lean_inc_ref(v_a_2655_);
 v___x_2674_ = l_Lean_Meta_realizeConst(v_instName_2652_, v___x_2672_, v___x_2673_, v_a_2653_, v_a_2654_, v_a_2655_, v_a_2656_);
 return v___x_2674_;
 }
@@ -8701,14 +8701,12 @@ lean_dec_ref(v___x_2771_);
 lean_inc(v_instName_2754_);
 v___x_2773_ = l___private_Lean_Meta_MethodSpecs_0__Lean_mkSpecTheoremName(v_env_2766_, v_instName_2754_, v___x_2755_, v___x_2772_);
 lean_dec_ref(v_env_2766_);
-lean_inc_ref(v___x_2756_);
 v___x_2774_ = l_Lean_Environment_containsOnBranch(v___x_2756_, v___x_2773_);
 if (v___x_2774_ == 0)
 {
 lean_object* v___x_2776_; 
 lean_dec(v___x_2773_);
 lean_dec(v___x_2770_);
-lean_dec_ref(v___x_2756_);
 lean_dec(v_instName_2754_);
 lean_dec_ref(v_op_2753_);
 if (v_isShared_2765_ == 0)
@@ -8770,6 +8768,7 @@ uint8_t v___x_1804__boxed_2792_; lean_object* v_res_2793_;
 v___x_1804__boxed_2792_ = lean_unbox(v___x_2787_);
 v_res_2793_ = l___private_Init_While_0__Lean_Loop_forIn_loop___at___00Lean_getMethodSpecTheorems_spec__0___redArg(v_op_2785_, v_instName_2786_, v___x_1804__boxed_2792_, v___x_2788_, v_b_2789_, v___y_2790_);
 lean_dec(v___y_2790_);
+lean_dec_ref(v___x_2788_);
 return v_res_2793_;
 }
 }
@@ -8830,6 +8829,7 @@ lean_inc_ref(v_env_2823_);
 lean_dec(v___x_2822_);
 v___x_2824_ = ((lean_object*)(l_Lean_getMethodSpecTheorems___closed__1));
 v___x_2825_ = l___private_Init_While_0__Lean_Loop_forIn_loop___at___00Lean_getMethodSpecTheorems_spec__0___redArg(v_op_2800_, v_instName_2799_, v_privateSpecs_2817_, v_env_2823_, v___x_2824_, v_a_2804_);
+lean_dec_ref(v_env_2823_);
 if (lean_obj_tag(v___x_2825_) == 0)
 {
 lean_object* v_a_2826_; lean_object* v___x_2828_; uint8_t v_isShared_2829_; uint8_t v_isSharedCheck_2837_; 
@@ -9025,6 +9025,7 @@ lean_dec(v___y_2884_);
 lean_dec_ref(v___y_2883_);
 lean_dec(v___y_2882_);
 lean_dec_ref(v___y_2881_);
+lean_dec_ref(v___x_2879_);
 return v_res_2887_;
 }
 }

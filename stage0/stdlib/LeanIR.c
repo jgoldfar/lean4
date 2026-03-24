@@ -102,7 +102,7 @@ lean_object* l_IO_println___at___00Lean_Environment_displayStats_spec__1(lean_ob
 lean_object* l_mkPanicMessageWithDecl(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 extern lean_object* l_instInhabitedError;
 lean_object* l_instInhabitedEIO___aux__1___boxed(lean_object*, lean_object*, lean_object*, lean_object*);
-lean_object* lean_panic_fn(lean_object*, lean_object*);
+lean_object* lean_panic_fn_borrowed(lean_object*, lean_object*);
 lean_object* l_Lean_ModuleSetup_load(lean_object*);
 lean_object* l_Lean_LeanOptions_toOptions(lean_object*);
 lean_object* l_Lean_getBuildDir();
@@ -1103,6 +1103,7 @@ v_asyncMode_242_ = lean_ctor_get(v_toEnvExtension_240_, 2);
 v___x_243_ = l_Lean_instInhabitedPersistentEnvExtensionState___redArg(v_inst_236_);
 lean_inc_ref(v_env_238_);
 v___x_244_ = l___private_Lean_Environment_0__Lean_EnvExtension_getStateUnsafe___redArg(v___x_243_, v_toEnvExtension_240_, v_env_238_, v_asyncMode_242_, v___x_235_);
+lean_dec_ref(v___x_243_);
 v_importedEntries_245_ = lean_ctor_get(v___x_244_, 0);
 v_isSharedCheck_273_ = !lean_is_exclusive(v___x_244_);
 if (v_isSharedCheck_273_ == 0)
@@ -1284,7 +1285,7 @@ _start:
 {
 lean_object* v___x_303_; lean_object* v___x_18535__overap_304_; lean_object* v___x_305_; 
 v___x_303_ = lean_obj_once(&l_panic___at___00main_spec__1___closed__0, &l_panic___at___00main_spec__1___closed__0_once, _init_l_panic___at___00main_spec__1___closed__0);
-v___x_18535__overap_304_ = lean_panic_fn(v___x_303_, v_msg_301_);
+v___x_18535__overap_304_ = lean_panic_fn_borrowed(v___x_303_, v_msg_301_);
 v___x_305_ = lean_apply_1(v___x_18535__overap_304_, lean_box(0));
 return v___x_305_;
 }
@@ -6011,7 +6012,6 @@ v___x_1773_ = lean_usize_dec_lt(v_i_1763_, v_sz_1762_);
 if (v___x_1773_ == 0)
 {
 lean_object* v___x_1774_; 
-lean_dec_ref(v___y_1765_);
 v___x_1774_ = lean_alloc_ctor(0, 1, 0);
 lean_ctor_set(v___x_1774_, 0, v_b_1764_);
 return v___x_1774_;
@@ -6112,7 +6112,6 @@ lean_dec(v_snd_1782_);
 lean_dec(v_fst_1781_);
 if (v_suppressElabErrors_1793_ == 0)
 {
-lean_inc_ref(v___y_1765_);
 v___y_1804_ = v___y_1765_;
 v___y_1805_ = v___y_1766_;
 goto v___jp_1803_;
@@ -6138,7 +6137,6 @@ goto v___jp_1768_;
 }
 else
 {
-lean_inc_ref(v___y_1765_);
 v___y_1804_ = v___y_1765_;
 v___y_1805_ = v___y_1766_;
 goto v___jp_1803_;
@@ -6179,10 +6177,7 @@ v_resetjp_1815_:
 {
 lean_object* v_currNamespace_1818_; lean_object* v_openDecls_1819_; lean_object* v_env_1820_; lean_object* v_nextMacroScope_1821_; lean_object* v_ngen_1822_; lean_object* v_auxDeclNGen_1823_; lean_object* v_traceState_1824_; lean_object* v_cache_1825_; lean_object* v_messages_1826_; lean_object* v_infoState_1827_; lean_object* v_snapshotTasks_1828_; lean_object* v___x_1830_; uint8_t v_isShared_1831_; uint8_t v_isSharedCheck_1844_; 
 v_currNamespace_1818_ = lean_ctor_get(v___y_1804_, 6);
-lean_inc(v_currNamespace_1818_);
 v_openDecls_1819_ = lean_ctor_get(v___y_1804_, 7);
-lean_inc(v_openDecls_1819_);
-lean_dec_ref(v___y_1804_);
 v_env_1820_ = lean_ctor_get(v___x_1806_, 0);
 v_nextMacroScope_1821_ = lean_ctor_get(v___x_1806_, 1);
 v_ngen_1822_ = lean_ctor_get(v___x_1806_, 2);
@@ -6218,6 +6213,8 @@ goto v_resetjp_1829_;
 v_resetjp_1829_:
 {
 lean_object* v___x_1833_; 
+lean_inc(v_openDecls_1819_);
+lean_inc(v_currNamespace_1818_);
 if (v_isShared_1780_ == 0)
 {
 lean_ctor_set(v___x_1779_, 1, v_openDecls_1819_);
@@ -6325,6 +6322,7 @@ v_i_boxed_1864_ = lean_unbox_usize(v_i_1857_);
 lean_dec(v_i_1857_);
 v_res_1865_ = l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00Lean_addTraceAsMessages___at___00main_spec__8_spec__15(v___x_34092__boxed_1862_, v_as_1855_, v_sz_boxed_1863_, v_i_boxed_1864_, v_b_1858_, v___y_1859_, v___y_1860_);
 lean_dec(v___y_1860_);
+lean_dec_ref(v___y_1859_);
 lean_dec_ref(v_as_1855_);
 return v_res_1865_;
 }
@@ -6691,7 +6689,6 @@ lean_object* v___x_1955_; size_t v_sz_1956_; size_t v___x_1957_; lean_object* v_
 v___x_1955_ = lean_box(0);
 v_sz_1956_ = lean_array_size(v___y_1954_);
 v___x_1957_ = ((size_t)0ULL);
-lean_inc_ref(v___y_1937_);
 v___x_1958_ = l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00Lean_addTraceAsMessages___at___00main_spec__8_spec__15(v___x_1948_, v___y_1954_, v_sz_1956_, v___x_1957_, v___x_1955_, v___y_1937_, v___y_1938_);
 lean_dec_ref(v___y_1954_);
 if (lean_obj_tag(v___x_1958_) == 0)
@@ -7792,7 +7789,6 @@ else
 {
 lean_object* v_a_2329_; lean_object* v___x_2330_; 
 v_a_2329_ = lean_array_uget_borrowed(v_as_2320_, v_i_2322_);
-lean_inc_ref(v___y_2324_);
 lean_inc(v_a_2329_);
 v___x_2330_ = l_Lean_Compiler_LCNF_resumeCompilation(v_a_2329_, v___y_2324_, v___y_2325_);
 if (lean_obj_tag(v___x_2330_) == 0)

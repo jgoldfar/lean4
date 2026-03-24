@@ -16,7 +16,7 @@ extern "C" {
 lean_object* l_Lean_PersistentHashMap_mkEmptyEntriesArray(lean_object*, lean_object*);
 lean_object* l_Lean_stringToMessageData(lean_object*);
 lean_object* l_Lean_Meta_instInhabitedMetaM___lam__0___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-lean_object* lean_panic_fn(lean_object*, lean_object*);
+lean_object* lean_panic_fn_borrowed(lean_object*, lean_object*);
 lean_object* l_Lean_Meta_getUnfoldEqnFor_x3f(lean_object*, uint8_t, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Meta_getSimpCongrTheorems___redArg(lean_object*);
 extern lean_object* l_Lean_Meta_Simp_neutralConfig;
@@ -2020,7 +2020,7 @@ _start:
 {
 lean_object* v___f_675_; lean_object* v___x_975__overap_676_; lean_object* v___x_677_; 
 v___f_675_ = ((lean_object*)(l_panic___at___00Lean_Meta_unfoldLocalDecl_spec__0___closed__0));
-v___x_975__overap_676_ = lean_panic_fn(v___f_675_, v_msg_669_);
+v___x_975__overap_676_ = lean_panic_fn_borrowed(v___f_675_, v_msg_669_);
 lean_inc(v___y_673_);
 lean_inc_ref(v___y_672_);
 lean_inc(v___y_671_);

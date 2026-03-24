@@ -2304,7 +2304,6 @@ v___x_807_ = lean_nat_sub(v___x_754_, v_a_756_);
 v___x_808_ = lean_unsigned_to_nat(1u);
 v___x_809_ = lean_nat_sub(v___x_807_, v___x_808_);
 lean_dec(v___x_807_);
-lean_inc(v_fst_794_);
 v___x_810_ = l_Lean_LocalContext_getAt_x3f(v_fst_794_, v___x_809_);
 lean_dec(v___x_809_);
 if (lean_obj_tag(v___x_810_) == 0)

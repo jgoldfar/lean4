@@ -87,7 +87,7 @@ lean_object* l_Lean_Meta_instMonadMetaM___lam__0___boxed(lean_object*, lean_obje
 lean_object* l_Lean_Meta_instMonadMetaM___lam__1___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 extern lean_object* l_Lean_Meta_Match_instInhabitedAltParamInfo_default;
 lean_object* l_instInhabitedOfMonad___redArg(lean_object*, lean_object*);
-lean_object* lean_panic_fn(lean_object*, lean_object*);
+lean_object* lean_panic_fn_borrowed(lean_object*, lean_object*);
 uint8_t lean_usize_dec_lt(size_t, size_t);
 lean_object* lean_array_uget_borrowed(lean_object*, size_t);
 lean_object* l_Lean_Environment_find_x3f(lean_object*, lean_object*, uint8_t);
@@ -3891,7 +3891,8 @@ v_reusejp_1694_:
 lean_object* v___x_1696_; lean_object* v___x_1697_; lean_object* v___x_2921__overap_1698_; lean_object* v___x_1699_; 
 v___x_1696_ = l_Lean_Meta_Match_instInhabitedAltParamInfo_default;
 v___x_1697_ = l_instInhabitedOfMonad___redArg(v___x_1695_, v___x_1696_);
-v___x_2921__overap_1698_ = lean_panic_fn(v___x_1697_, v_msg_1642_);
+v___x_2921__overap_1698_ = lean_panic_fn_borrowed(v___x_1697_, v_msg_1642_);
+lean_dec(v___x_1697_);
 lean_inc(v___y_1646_);
 lean_inc_ref(v___y_1645_);
 lean_inc(v___y_1644_);

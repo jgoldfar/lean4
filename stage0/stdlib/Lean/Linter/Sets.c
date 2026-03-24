@@ -908,7 +908,6 @@ v___x_405_ = l_Lean_Syntax_isOfKind(v_x_366_, v___x_404_);
 if (v___x_405_ == 0)
 {
 lean_object* v___x_406_; 
-lean_dec_ref(v_a_367_);
 lean_dec(v_x_366_);
 v___x_406_ = l_Lean_Elab_throwUnsupportedSyntax___at___00Lean_Linter___aux__Lean__Linter__Sets______elabRules__Lean__Linter__command__Register__linter__set___x3a_x3d____1_spec__0___redArg();
 return v___x_406_;
@@ -1261,7 +1260,6 @@ lean_dec(v_a_509_);
 lean_dec(v___y_505_);
 lean_dec(v___y_504_);
 lean_dec(v_name_410_);
-lean_dec_ref(v_a_367_);
 v_a_518_ = lean_ctor_get(v___x_510_, 0);
 v_isSharedCheck_525_ = !lean_is_exclusive(v___x_510_);
 if (v_isSharedCheck_525_ == 0)
@@ -1307,7 +1305,6 @@ lean_object* v_a_526_; lean_object* v___x_528_; uint8_t v_isShared_529_; uint8_t
 lean_dec(v___y_505_);
 lean_dec(v___y_504_);
 lean_dec(v_name_410_);
-lean_dec_ref(v_a_367_);
 v_a_526_ = lean_ctor_get(v___x_508_, 0);
 v_isSharedCheck_533_ = !lean_is_exclusive(v___x_508_);
 if (v_isSharedCheck_533_ == 0)
@@ -1432,7 +1429,6 @@ lean_inc(v___x_392_);
 v___x_393_ = lean_alloc_closure((void*)(l_Lean_Elab_Command_elabCommand___boxed), 4, 1);
 lean_closure_set(v___x_393_, 0, v___x_392_);
 v___x_394_ = l_Lean_Elab_Command_withMacroExpansion___redArg(v_a_388_, v___x_392_, v___x_393_, v_a_367_, v_a_368_);
-lean_dec_ref(v_a_367_);
 return v___x_394_;
 }
 else
@@ -1448,7 +1444,6 @@ lean_dec(v___y_375_);
 lean_dec(v___y_373_);
 lean_dec(v___y_372_);
 lean_dec(v___y_371_);
-lean_dec_ref(v_a_367_);
 v_a_395_ = lean_ctor_get(v___x_387_, 0);
 v_isSharedCheck_402_ = !lean_is_exclusive(v___x_387_);
 if (v_isSharedCheck_402_ == 0)
@@ -1496,6 +1491,7 @@ _start:
 lean_object* v_res_564_; 
 v_res_564_ = l_Lean_Linter___aux__Lean__Linter__Sets______elabRules__Lean__Linter__command__Register__linter__set___x3a_x3d____1(v_x_560_, v_a_561_, v_a_562_);
 lean_dec(v_a_562_);
+lean_dec_ref(v_a_561_);
 return v_res_564_;
 }
 }

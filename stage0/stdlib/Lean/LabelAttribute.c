@@ -854,8 +854,6 @@ _start:
 {
 lean_object* v_currNamespace_163_; lean_object* v___x_164_; lean_object* v_env_165_; lean_object* v_nextMacroScope_166_; lean_object* v_ngen_167_; lean_object* v_auxDeclNGen_168_; lean_object* v_traceState_169_; lean_object* v_messages_170_; lean_object* v_infoState_171_; lean_object* v_snapshotTasks_172_; lean_object* v___x_174_; uint8_t v_isShared_175_; uint8_t v_isSharedCheck_184_; 
 v_currNamespace_163_ = lean_ctor_get(v___y_160_, 6);
-lean_inc(v_currNamespace_163_);
-lean_dec_ref(v___y_160_);
 v___x_164_ = lean_st_ref_take(v___y_161_);
 v_env_165_ = lean_ctor_get(v___x_164_, 0);
 v_nextMacroScope_166_ = lean_ctor_get(v___x_164_, 1);
@@ -893,6 +891,7 @@ goto v_resetjp_173_;
 v_resetjp_173_:
 {
 lean_object* v___x_176_; lean_object* v___x_177_; lean_object* v___x_179_; 
+lean_inc(v_currNamespace_163_);
 v___x_176_ = l_Lean_ScopedEnvExtension_addCore___redArg(v_env_165_, v_ext_157_, v_b_158_, v_kind_159_, v_currNamespace_163_);
 v___x_177_ = lean_obj_once(&l_Lean_ScopedEnvExtension_add___at___00Lean_mkLabelAttr_spec__0___redArg___closed__2, &l_Lean_ScopedEnvExtension_add___at___00Lean_mkLabelAttr_spec__0___redArg___closed__2_once, _init_l_Lean_ScopedEnvExtension_add___at___00Lean_mkLabelAttr_spec__0___redArg___closed__2);
 if (v_isShared_175_ == 0)
@@ -937,6 +936,7 @@ uint8_t v_kind_boxed_192_; lean_object* v_res_193_;
 v_kind_boxed_192_ = lean_unbox(v_kind_188_);
 v_res_193_ = l_Lean_ScopedEnvExtension_add___at___00Lean_mkLabelAttr_spec__0___redArg(v_ext_186_, v_b_187_, v_kind_boxed_192_, v___y_189_, v___y_190_);
 lean_dec(v___y_190_);
+lean_dec_ref(v___y_189_);
 return v_res_193_;
 }
 }
@@ -944,7 +944,6 @@ LEAN_EXPORT lean_object* l_Lean_ScopedEnvExtension_add___at___00Lean_mkLabelAttr
 _start:
 {
 lean_object* v___x_203_; 
-lean_inc_ref(v___y_200_);
 v___x_203_ = l_Lean_ScopedEnvExtension_add___at___00Lean_mkLabelAttr_spec__0___redArg(v_ext_197_, v_b_198_, v_kind_199_, v___y_200_, v___y_201_);
 return v___x_203_;
 }
@@ -964,7 +963,6 @@ LEAN_EXPORT lean_object* l_Lean_mkLabelAttr___lam__0(lean_object* v_ext_215_, le
 _start:
 {
 lean_object* v___x_222_; 
-lean_inc_ref(v___y_219_);
 v___x_222_ = l_Lean_ScopedEnvExtension_add___at___00Lean_mkLabelAttr_spec__0___redArg(v_ext_215_, v_declName_216_, v_kind_218_, v___y_219_, v___y_220_);
 return v___x_222_;
 }
@@ -1190,6 +1188,7 @@ lean_object* v_res_312_;
 v_res_312_ = l_Lean_mkLabelAttr___lam__2(v_ext_306_, v___x_307_, v_declName_308_, v___y_309_, v___y_310_);
 lean_dec(v___y_310_);
 lean_dec_ref(v___y_309_);
+lean_dec_ref(v___x_307_);
 return v_res_312_;
 }
 }

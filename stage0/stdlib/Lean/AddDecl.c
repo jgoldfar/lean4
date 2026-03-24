@@ -4735,7 +4735,6 @@ return v___x_1681_;
 }
 else
 {
-lean_inc_ref(v___y_1666_);
 v___y_1670_ = v___y_1666_;
 v___y_1671_ = v___y_1667_;
 goto v___jp_1669_;
@@ -4747,7 +4746,6 @@ v_options_1672_ = lean_ctor_get(v___y_1670_, 2);
 lean_inc_ref(v_options_1672_);
 v___x_1673_ = l_Lean_Kernel_Exception_toMessageData(v_ex_1665_, v_options_1672_);
 v___x_1674_ = l_Lean_throwError___at___00Lean_throwKernelException___at___00Lean_ofExceptKernelException___at___00__private_Lean_AddDecl_0__Lean_addDecl_addAsAxiom_spec__0_spec__0_spec__2___redArg(v___x_1673_, v___y_1670_, v___y_1671_);
-lean_dec_ref(v___y_1670_);
 return v___x_1674_;
 }
 }
@@ -8630,6 +8628,7 @@ v_env_3041_ = lean_ctor_get(v___x_3040_, 0);
 lean_inc_ref(v_env_3041_);
 lean_dec(v___x_3040_);
 v___x_3042_ = l_Lean_Environment_containsOnBranch(v_env_3041_, v_fst_2932_);
+lean_dec_ref(v_env_3041_);
 if (v___x_3042_ == 0)
 {
 lean_del_object(v___x_2934_);
@@ -9907,6 +9906,7 @@ v_env_3448_ = lean_ctor_get(v___x_3447_, 0);
 lean_inc_ref(v_env_3448_);
 lean_dec(v___x_3447_);
 v___x_3449_ = l_Lean_Environment_containsOnBranch(v_env_3448_, v_fst_3337_);
+lean_dec_ref(v_env_3448_);
 if (v___x_3449_ == 0)
 {
 lean_del_object(v___x_3339_);
@@ -11334,6 +11334,7 @@ v_env_3853_ = lean_ctor_get(v___x_3852_, 0);
 lean_inc_ref(v_env_3853_);
 lean_dec(v___x_3852_);
 v___x_3854_ = l_Lean_Environment_containsOnBranch(v_env_3853_, v_fst_3846_);
+lean_dec_ref(v_env_3853_);
 if (v___x_3854_ == 0)
 {
 v___y_3796_ = v_fst_3846_;
@@ -12278,6 +12279,7 @@ v_env_4537_ = lean_ctor_get(v___x_4536_, 0);
 lean_inc_ref(v_env_4537_);
 lean_dec(v___x_4536_);
 v___x_4538_ = l_Lean_Environment_containsOnBranch(v_env_4537_, v_fst_4530_);
+lean_dec_ref(v_env_4537_);
 if (v___x_4538_ == 0)
 {
 v___y_4501_ = v_snd_4532_;

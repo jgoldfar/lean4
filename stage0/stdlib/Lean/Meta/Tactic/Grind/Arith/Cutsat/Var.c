@@ -1875,6 +1875,7 @@ else
 {
 lean_object* v___x_522_; 
 v___x_522_ = l_Lean_PersistentArray_get_x21___redArg(v___x_519_, v_elimEqs_517_, v_a_460_);
+lean_dec_ref(v_elimEqs_517_);
 v___y_497_ = v___x_522_;
 goto v___jp_496_;
 }

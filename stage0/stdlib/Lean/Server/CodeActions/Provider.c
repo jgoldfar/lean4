@@ -35,7 +35,7 @@ lean_object* l_mkPanicMessageWithDecl(lean_object*, lean_object*, lean_object*, 
 extern lean_object* l_Lean_Server_instInhabitedRequestError_default;
 lean_object* l_instInhabitedEIO___aux__1___boxed(lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_instInhabitedForall___redArg___lam__0___boxed(lean_object*, lean_object*);
-lean_object* lean_panic_fn(lean_object*, lean_object*);
+lean_object* lean_panic_fn_borrowed(lean_object*, lean_object*);
 lean_object* l_Lean_Syntax_getKind(lean_object*);
 lean_object* l_Std_DTreeMap_Internal_Impl_Const_get_x3f___at___00Lean_NameMap_find_x3f_spec__0___redArg(lean_object*, lean_object*);
 lean_object* lean_nat_add(lean_object*, lean_object*);
@@ -3691,7 +3691,8 @@ lean_object* v___x_1127_; lean_object* v___f_1128_; lean_object* v___x_4027__ove
 v___x_1127_ = lean_obj_once(&l_panic___at___00Lean_CodeAction_cmdCodeActionProvider_spec__0___closed__0, &l_panic___at___00Lean_CodeAction_cmdCodeActionProvider_spec__0___closed__0_once, _init_l_panic___at___00Lean_CodeAction_cmdCodeActionProvider_spec__0___closed__0);
 v___f_1128_ = lean_alloc_closure((void*)(l_instInhabitedForall___redArg___lam__0___boxed), 2, 1);
 lean_closure_set(v___f_1128_, 0, v___x_1127_);
-v___x_4027__overap_1129_ = lean_panic_fn(v___f_1128_, v_msg_1124_);
+v___x_4027__overap_1129_ = lean_panic_fn_borrowed(v___f_1128_, v_msg_1124_);
+lean_dec_ref(v___f_1128_);
 lean_inc_ref(v___y_1125_);
 v___x_1130_ = lean_apply_2(v___x_4027__overap_1129_, v___y_1125_, lean_box(0));
 return v___x_1130_;

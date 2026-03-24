@@ -44,7 +44,7 @@ lean_object* l_Lean_Name_getPrefix(lean_object*);
 lean_object* l_Lake_Name_eraseHead(lean_object*);
 lean_object* lean_array_to_list(lean_object*);
 lean_object* l_mkPanicMessageWithDecl(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-lean_object* lean_panic_fn(lean_object*, lean_object*);
+lean_object* lean_panic_fn_borrowed(lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l_Lake_BuildKey_ctorIdx(lean_object*);
 LEAN_EXPORT lean_object* l_Lake_BuildKey_ctorIdx___boxed(lean_object*);
 LEAN_EXPORT lean_object* l_Lake_BuildKey_ctorElim___redArg(lean_object*, lean_object*);
@@ -1775,7 +1775,8 @@ lean_object* v___x_541_; lean_object* v___x_542_; lean_object* v___x_543_;
 v___x_541_ = ((lean_object*)(l_panic___at___00Lake_PartialBuildKey_parse_spec__2___closed__0));
 v___x_542_ = lean_alloc_ctor(0, 1, 0);
 lean_ctor_set(v___x_542_, 0, v___x_541_);
-v___x_543_ = lean_panic_fn(v___x_542_, v_msg_540_);
+v___x_543_ = lean_panic_fn_borrowed(v___x_542_, v_msg_540_);
+lean_dec_ref(v___x_542_);
 return v___x_543_;
 }
 }

@@ -60,7 +60,7 @@ lean_object* l_Lean_Elab_Info_tailPos_x3f(lean_object*);
 lean_object* l_Lean_Elab_InfoTree_smallestInfo_x3f(lean_object*, lean_object*);
 lean_object* l_mkPanicMessageWithDecl(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 extern lean_object* l_Lean_instInhabitedExpr;
-lean_object* lean_panic_fn(lean_object*, lean_object*);
+lean_object* lean_panic_fn_borrowed(lean_object*, lean_object*);
 lean_object* l_Lean_Expr_getAppFn(lean_object*);
 uint8_t l_Lean_isStructure(lean_object*, lean_object*);
 extern lean_object* l_Lean_LocalContext_empty;
@@ -563,7 +563,8 @@ lean_ctor_set(v___x_106_, 0, v___x_105_);
 lean_ctor_set(v___x_106_, 1, v___f_103_);
 v___x_107_ = lean_box(0);
 v___x_108_ = l_instInhabitedOfMonad___redArg(v___x_106_, v___x_107_);
-v___x_109_ = lean_panic_fn(v___x_108_, v_msg_96_);
+v___x_109_ = lean_panic_fn_borrowed(v___x_108_, v_msg_96_);
+lean_dec(v___x_108_);
 return v___x_109_;
 }
 }
@@ -981,7 +982,7 @@ _start:
 {
 lean_object* v___x_244_; lean_object* v___x_245_; 
 v___x_244_ = lean_unsigned_to_nat(0u);
-v___x_245_ = lean_panic_fn(v___x_244_, v_msg_243_);
+v___x_245_ = lean_panic_fn_borrowed(v___x_244_, v_msg_243_);
 return v___x_245_;
 }
 }
@@ -2878,7 +2879,7 @@ _start:
 {
 lean_object* v___x_831_; lean_object* v___x_832_; 
 v___x_831_ = l_Lean_instInhabitedExpr;
-v___x_832_ = lean_panic_fn(v___x_831_, v_msg_830_);
+v___x_832_ = lean_panic_fn_borrowed(v___x_831_, v_msg_830_);
 return v___x_832_;
 }
 }

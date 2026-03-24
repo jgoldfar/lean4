@@ -23,7 +23,7 @@ uint8_t lean_string_dec_eq(lean_object*, lean_object*);
 lean_object* l_Repr_addAppParen(lean_object*, lean_object*);
 uint8_t lean_nat_dec_le(lean_object*, lean_object*);
 lean_object* lean_nat_to_int(lean_object*);
-lean_object* lean_panic_fn(lean_object*, lean_object*);
+lean_object* lean_panic_fn_borrowed(lean_object*, lean_object*);
 lean_object* l_String_quote(lean_object*);
 lean_object* lean_string_append(lean_object*, lean_object*);
 lean_object* l_mkPanicMessageWithDecl(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
@@ -4633,7 +4633,8 @@ _start:
 uint8_t v___x_1590_; lean_object* v___x_1591_; lean_object* v___x_1592_; uint8_t v___x_1593_; 
 v___x_1590_ = 0;
 v___x_1591_ = lean_box(v___x_1590_);
-v___x_1592_ = lean_panic_fn(v___x_1591_, v_msg_1589_);
+v___x_1592_ = lean_panic_fn_borrowed(v___x_1591_, v_msg_1589_);
+lean_dec(v___x_1591_);
 v___x_1593_ = lean_unbox(v___x_1592_);
 lean_dec(v___x_1592_);
 return v___x_1593_;

@@ -18169,15 +18169,10 @@ v_resetjp_5328_:
 {
 lean_object* v_quotContext_5331_; lean_object* v_currMacroScope_5332_; lean_object* v_ref_5333_; uint8_t v___x_5334_; lean_object* v___x_5335_; lean_object* v___x_5336_; lean_object* v___x_5337_; lean_object* v___x_5338_; lean_object* v___x_5339_; lean_object* v___x_5340_; lean_object* v___x_5341_; lean_object* v___x_5342_; lean_object* v___x_5343_; lean_object* v___x_5344_; lean_object* v___x_5345_; lean_object* v___x_5346_; lean_object* v___x_5347_; lean_object* v___x_5348_; lean_object* v___x_5349_; lean_object* v___x_5350_; lean_object* v___x_5351_; lean_object* v___x_5352_; lean_object* v___x_5353_; lean_object* v___x_5354_; lean_object* v___x_5356_; 
 v_quotContext_5331_ = lean_ctor_get(v_a_5319_, 1);
-lean_inc(v_quotContext_5331_);
 v_currMacroScope_5332_ = lean_ctor_get(v_a_5319_, 2);
-lean_inc(v_currMacroScope_5332_);
 v_ref_5333_ = lean_ctor_get(v_a_5319_, 5);
-lean_inc(v_ref_5333_);
-lean_dec_ref(v_a_5319_);
 v___x_5334_ = 0;
 v___x_5335_ = l_Lean_SourceInfo_fromRef(v_ref_5333_, v___x_5334_);
-lean_dec(v_ref_5333_);
 v___x_5336_ = ((lean_object*)(l_Lean_TSyntax_expandInterpolatedStr___closed__2));
 v___x_5337_ = ((lean_object*)(l_Lean_TSyntax_expandInterpolatedStr___closed__4));
 v___x_5338_ = ((lean_object*)(l_Lean_TSyntax_expandInterpolatedStr___closed__5));
@@ -18188,6 +18183,8 @@ lean_ctor_set(v___x_5339_, 1, v___x_5338_);
 v___x_5340_ = ((lean_object*)(l_Lean_TSyntax_expandInterpolatedStr___closed__7));
 v___x_5341_ = lean_obj_once(&l_Lean_TSyntax_expandInterpolatedStr___closed__8, &l_Lean_TSyntax_expandInterpolatedStr___closed__8_once, _init_l_Lean_TSyntax_expandInterpolatedStr___closed__8);
 v___x_5342_ = lean_box(0);
+lean_inc(v_currMacroScope_5332_);
+lean_inc(v_quotContext_5331_);
 v___x_5343_ = l_Lean_addMacroScope(v_quotContext_5331_, v___x_5342_, v_currMacroScope_5332_);
 v___x_5344_ = ((lean_object*)(l_Lean_TSyntax_expandInterpolatedStr___closed__16));
 lean_inc(v___x_5335_);
@@ -18238,7 +18235,6 @@ return v___x_5356_;
 else
 {
 lean_object* v_a_5359_; lean_object* v_a_5360_; lean_object* v___x_5362_; uint8_t v_isShared_5363_; uint8_t v_isSharedCheck_5367_; 
-lean_dec_ref(v_a_5319_);
 lean_dec(v_type_5316_);
 v_a_5359_ = lean_ctor_get(v___x_5325_, 0);
 v_a_5360_ = lean_ctor_get(v___x_5325_, 1);
@@ -18288,6 +18284,7 @@ _start:
 {
 lean_object* v_res_5374_; 
 v_res_5374_ = l_Lean_TSyntax_expandInterpolatedStr(v_interpStr_5368_, v_type_5369_, v_ofInterpFn_5370_, v_ofLitFn_5371_, v_a_5372_, v_a_5373_);
+lean_dec_ref(v_a_5372_);
 lean_dec(v_interpStr_5368_);
 return v_res_5374_;
 }

@@ -31,7 +31,7 @@ lean_object* l_List_foldl___at___00Array_appendList_spec__0___redArg(lean_object
 lean_object* l_List_lengthTR___redArg(lean_object*);
 lean_object* lean_nat_add(lean_object*, lean_object*);
 lean_object* l_mkPanicMessageWithDecl(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-lean_object* lean_panic_fn(lean_object*, lean_object*);
+lean_object* lean_panic_fn_borrowed(lean_object*, lean_object*);
 lean_object* l_Lean_Expr_bindingDomain_x21(lean_object*);
 lean_object* l_Lean_Expr_getAppFn(lean_object*);
 lean_object* l_Lean_Expr_constName_x21(lean_object*);
@@ -2837,7 +2837,7 @@ _start:
 {
 lean_object* v___x_742_; lean_object* v___x_743_; 
 v___x_742_ = l_Lean_instInhabitedDefinitionVal_default;
-v___x_743_ = lean_panic_fn(v___x_742_, v_msg_741_);
+v___x_743_ = lean_panic_fn_borrowed(v___x_742_, v_msg_741_);
 return v___x_743_;
 }
 }
@@ -5271,7 +5271,7 @@ _start:
 {
 lean_object* v___x_1557_; lean_object* v___x_1558_; 
 v___x_1557_ = l_Lean_instInhabitedExpr;
-v___x_1558_ = lean_panic_fn(v___x_1557_, v_msg_1556_);
+v___x_1558_ = lean_panic_fn_borrowed(v___x_1557_, v_msg_1556_);
 return v___x_1558_;
 }
 }
@@ -5551,7 +5551,7 @@ _start:
 {
 lean_object* v___x_1641_; lean_object* v___x_1642_; 
 v___x_1641_ = l_Lean_instInhabitedInductiveVal_default;
-v___x_1642_ = lean_panic_fn(v___x_1641_, v_msg_1640_);
+v___x_1642_ = lean_panic_fn_borrowed(v___x_1641_, v_msg_1640_);
 return v___x_1642_;
 }
 }

@@ -5359,6 +5359,7 @@ v___x_1860_ = l_Lean_instInhabitedExpr;
 v___x_1861_ = l_instInhabitedOfMonad___redArg(v___x_1858_, v___x_1860_);
 v___x_3965__overap_1862_ = lean_array_get_borrowed(v___x_1861_, v_assumptions_1794_, v_i_1859_);
 lean_dec(v_i_1859_);
+lean_dec(v___x_1861_);
 v___x_1863_ = lean_box(v_a_1799_);
 lean_inc(v___x_3965__overap_1862_);
 lean_inc(v_a_1804_);

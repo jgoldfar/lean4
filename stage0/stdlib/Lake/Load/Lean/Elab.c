@@ -62,7 +62,7 @@ lean_object* l_Lean_Name_toString(lean_object*, uint8_t);
 uint8_t lean_string_dec_lt(lean_object*, lean_object*);
 lean_object* lean_nat_mul(lean_object*, lean_object*);
 lean_object* l_mkPanicMessageWithDecl(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-lean_object* lean_panic_fn(lean_object*, lean_object*);
+lean_object* lean_panic_fn_borrowed(lean_object*, lean_object*);
 lean_object* lean_mk_empty_array_with_capacity(lean_object*);
 lean_object* lean_array_to_list(lean_object*);
 lean_object* l_List_foldl___at___00Array_appendList_spec__0___redArg(lean_object*, lean_object*);
@@ -3949,7 +3949,7 @@ _start:
 {
 lean_object* v___x_1181_; lean_object* v___x_1182_; 
 v___x_1181_ = lean_box(1);
-v___x_1182_ = lean_panic_fn(v___x_1181_, v_msg_1180_);
+v___x_1182_ = lean_panic_fn_borrowed(v___x_1181_, v_msg_1180_);
 return v___x_1182_;
 }
 }

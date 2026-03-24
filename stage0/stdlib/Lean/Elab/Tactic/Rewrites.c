@@ -837,7 +837,6 @@ LEAN_EXPORT lean_object* l_Lean_Elab_Rewrites_evalExact___lam__1(lean_object* v_
 _start:
 {
 lean_object* v___x_348_; 
-lean_inc_ref(v___y_343_);
 lean_inc(v_f_338_);
 v___x_348_ = l_Lean_FVarId_findDecl_x3f___redArg(v_f_338_, v___y_343_);
 if (lean_obj_tag(v___x_348_) == 0)

@@ -50,7 +50,7 @@ lean_object* lean_array_push(lean_object*, lean_object*);
 uint8_t lean_string_dec_lt(lean_object*, lean_object*);
 uint8_t lean_string_dec_eq(lean_object*, lean_object*);
 lean_object* l_mkPanicMessageWithDecl(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-lean_object* lean_panic_fn(lean_object*, lean_object*);
+lean_object* lean_panic_fn_borrowed(lean_object*, lean_object*);
 lean_object* l_Std_Internal_Parsec_String_Parser_run___redArg(lean_object*, lean_object*);
 lean_object* lean_string_append(lean_object*, lean_object*);
 static const lean_string_object l_Lean_Json_Parser_hexChar___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 22, .m_capacity = 22, .m_length = 21, .m_data = "invalid hex character"};
@@ -4782,7 +4782,7 @@ _start:
 {
 lean_object* v___x_1221_; lean_object* v___x_1222_; 
 v___x_1221_ = lean_box(1);
-v___x_1222_ = lean_panic_fn(v___x_1221_, v_msg_1220_);
+v___x_1222_ = lean_panic_fn_borrowed(v___x_1221_, v_msg_1220_);
 return v___x_1222_;
 }
 }

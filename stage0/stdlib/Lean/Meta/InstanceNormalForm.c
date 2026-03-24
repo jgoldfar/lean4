@@ -1577,6 +1577,7 @@ v___x_463_ = 0;
 v___x_464_ = lean_box(0);
 v___x_468_ = lean_box(v___x_463_);
 v___x_469_ = lean_array_get_borrowed(v___x_468_, v_fst_448_, v_i_453_);
+lean_dec(v___x_468_);
 v___x_470_ = lean_unbox(v___x_469_);
 v___x_471_ = l_Lean_BinderInfo_isInstImplicit(v___x_470_);
 if (v___x_471_ == 0)
@@ -3544,7 +3545,6 @@ return v___x_1288_;
 v___jp_1260_:
 {
 lean_object* v___x_1261_; 
-lean_inc_ref(v___y_1257_);
 v___x_1261_ = l_Lean_enableRealizationsForConst(v_a_1250_, v___y_1257_, v___y_1258_);
 if (lean_obj_tag(v___x_1261_) == 0)
 {
@@ -7331,7 +7331,6 @@ return v___x_2169_;
 v___jp_2034_:
 {
 lean_object* v___x_2039_; 
-lean_inc_ref(v___y_2037_);
 v___x_2039_ = l_Lean_enableRealizationsForConst(v___y_2035_, v___y_2037_, v___y_2038_);
 if (lean_obj_tag(v___x_2039_) == 0)
 {
@@ -9525,7 +9524,6 @@ return v___x_2729_;
 v___jp_2595_:
 {
 lean_object* v___x_2600_; 
-lean_inc_ref(v___y_2598_);
 v___x_2600_ = l_Lean_enableRealizationsForConst(v___y_2597_, v___y_2598_, v___y_2599_);
 if (lean_obj_tag(v___x_2600_) == 0)
 {
@@ -12145,7 +12143,6 @@ return v___x_3328_;
 v___jp_3192_:
 {
 lean_object* v___x_3197_; 
-lean_inc_ref(v___y_3195_);
 v___x_3197_ = l_Lean_enableRealizationsForConst(v___y_3194_, v___y_3195_, v___y_3196_);
 if (lean_obj_tag(v___x_3197_) == 0)
 {

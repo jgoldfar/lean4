@@ -2421,6 +2421,7 @@ v___x_706_ = 0;
 v___x_707_ = lean_obj_once(&l_Std_Time_Weekday_ofNat_x21___closed__3, &l_Std_Time_Weekday_ofNat_x21___closed__3_once, _init_l_Std_Time_Weekday_ofNat_x21___closed__3);
 v___x_708_ = lean_box(v___x_706_);
 v___x_709_ = l_panic___redArg(v___x_708_, v___x_707_);
+lean_dec(v___x_708_);
 v___x_710_ = lean_unbox(v___x_709_);
 lean_dec(v___x_709_);
 return v___x_710_;

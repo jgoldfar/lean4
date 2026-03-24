@@ -3106,7 +3106,6 @@ goto v___jp_925_;
 else
 {
 lean_object* v___x_957_; 
-lean_inc_ref(v_vars_919_);
 v___x_957_ = l_Lean_PersistentArray_get_x21___redArg(v___x_954_, v_vars_919_, v_x_920_);
 lean_dec(v_x_920_);
 v___y_926_ = v___x_957_;

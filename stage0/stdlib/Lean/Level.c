@@ -56,7 +56,7 @@ lean_object* lean_array_fget_borrowed(lean_object*, lean_object*);
 uint8_t l_Lean_Name_lt(lean_object*, lean_object*);
 lean_object* l_Array_qpartition___redArg(lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_mkPanicMessageWithDecl(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-lean_object* lean_panic_fn(lean_object*, lean_object*);
+lean_object* lean_panic_fn_borrowed(lean_object*, lean_object*);
 lean_object* lean_array_push(lean_object*, lean_object*);
 size_t lean_ptr_addr(lean_object*);
 uint8_t lean_usize_dec_eq(size_t, size_t);
@@ -2738,7 +2738,7 @@ _start:
 {
 lean_object* v___x_792_; lean_object* v___x_793_; 
 v___x_792_ = lean_box(0);
-v___x_793_ = lean_panic_fn(v___x_792_, v_msg_791_);
+v___x_793_ = lean_panic_fn_borrowed(v___x_792_, v_msg_791_);
 return v___x_793_;
 }
 }
@@ -4491,7 +4491,7 @@ _start:
 {
 lean_object* v___x_1222_; lean_object* v___x_1223_; 
 v___x_1222_ = lean_box(0);
-v___x_1223_ = lean_panic_fn(v___x_1222_, v_msg_1221_);
+v___x_1223_ = lean_panic_fn_borrowed(v___x_1222_, v_msg_1221_);
 return v___x_1223_;
 }
 }

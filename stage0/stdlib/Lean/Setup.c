@@ -45,7 +45,7 @@ lean_object* l_Lean_Name_fromJson_x3f(lean_object*);
 lean_object* l_Lean_Name_mkStr2(lean_object*, lean_object*);
 lean_object* l_Lean_Json_getBool_x3f(lean_object*);
 lean_object* lean_mk_empty_array_with_capacity(lean_object*);
-lean_object* lean_panic_fn(lean_object*, lean_object*);
+lean_object* lean_panic_fn_borrowed(lean_object*, lean_object*);
 lean_object* lean_array_get_size(lean_object*);
 uint8_t lean_nat_dec_lt(lean_object*, lean_object*);
 lean_object* lean_array_fget_borrowed(lean_object*, lean_object*);
@@ -6800,7 +6800,7 @@ _start:
 {
 lean_object* v___x_1987_; lean_object* v___x_1988_; 
 v___x_1987_ = lean_box(1);
-v___x_1988_ = lean_panic_fn(v___x_1987_, v_msg_1986_);
+v___x_1988_ = lean_panic_fn_borrowed(v___x_1987_, v_msg_1986_);
 return v___x_1988_;
 }
 }

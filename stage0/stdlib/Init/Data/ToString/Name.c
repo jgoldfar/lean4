@@ -31,7 +31,7 @@ uint8_t l_Lean_isSubScriptAlnum(uint32_t);
 uint8_t lean_uint32_dec_le(uint32_t, uint32_t);
 lean_object* l_mkPanicMessageWithDecl(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 extern lean_object* l_String_instInhabitedSlice;
-lean_object* lean_panic_fn(lean_object*, lean_object*);
+lean_object* lean_panic_fn_borrowed(lean_object*, lean_object*);
 lean_object* l_Substring_Raw_nextn(lean_object*, lean_object*, lean_object*);
 uint8_t lean_string_is_valid_pos(lean_object*, lean_object*);
 uint8_t lean_nat_dec_le(lean_object*, lean_object*);
@@ -650,6 +650,7 @@ v___jp_133_:
 lean_object* v___x_137_; lean_object* v___x_138_; lean_object* v_startInclusive_139_; lean_object* v_endExclusive_140_; 
 v___x_137_ = lean_obj_once(&l___private_Init_Data_ToString_Name_0__Lean_Name_needsNoEscape___redArg___closed__3, &l___private_Init_Data_ToString_Name_0__Lean_Name_needsNoEscape___redArg___closed__3_once, _init_l___private_Init_Data_ToString_Name_0__Lean_Name_needsNoEscape___redArg___closed__3);
 v___x_138_ = l_panic___redArg(v___y_136_, v___x_137_);
+lean_dec_ref(v___y_136_);
 v_startInclusive_139_ = lean_ctor_get(v___x_138_, 1);
 lean_inc(v_startInclusive_139_);
 v_endExclusive_140_ = lean_ctor_get(v___x_138_, 2);
@@ -964,6 +965,7 @@ v___jp_217_:
 lean_object* v___x_221_; lean_object* v___x_222_; lean_object* v_startInclusive_223_; lean_object* v_endExclusive_224_; 
 v___x_221_ = lean_obj_once(&l___private_Init_Data_ToString_Name_0__Lean_Name_needsNoEscape___redArg___closed__3, &l___private_Init_Data_ToString_Name_0__Lean_Name_needsNoEscape___redArg___closed__3_once, _init_l___private_Init_Data_ToString_Name_0__Lean_Name_needsNoEscape___redArg___closed__3);
 v___x_222_ = l_panic___redArg(v___y_220_, v___x_221_);
+lean_dec_ref(v___y_220_);
 v_startInclusive_223_ = lean_ctor_get(v___x_222_, 1);
 lean_inc(v_startInclusive_223_);
 v_endExclusive_224_ = lean_ctor_get(v___x_222_, 2);
@@ -1450,6 +1452,7 @@ v___jp_351_:
 lean_object* v___x_355_; lean_object* v___x_356_; lean_object* v_startInclusive_357_; lean_object* v_endExclusive_358_; 
 v___x_355_ = lean_obj_once(&l___private_Init_Data_ToString_Name_0__Lean_Name_needsNoEscape___redArg___closed__3, &l___private_Init_Data_ToString_Name_0__Lean_Name_needsNoEscape___redArg___closed__3_once, _init_l___private_Init_Data_ToString_Name_0__Lean_Name_needsNoEscape___redArg___closed__3);
 v___x_356_ = l_panic___redArg(v___y_352_, v___x_355_);
+lean_dec_ref(v___y_352_);
 v_startInclusive_357_ = lean_ctor_get(v___x_356_, 1);
 lean_inc(v_startInclusive_357_);
 v_endExclusive_358_ = lean_ctor_get(v___x_356_, 2);
@@ -1673,7 +1676,7 @@ _start:
 {
 lean_object* v___x_420_; lean_object* v___x_421_; 
 v___x_420_ = l_String_instInhabitedSlice;
-v___x_421_ = lean_panic_fn(v___x_420_, v_msg_419_);
+v___x_421_ = lean_panic_fn_borrowed(v___x_420_, v_msg_419_);
 return v___x_421_;
 }
 }

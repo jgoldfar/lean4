@@ -920,7 +920,6 @@ lean_ctor_set_uint8(v___x_279_, sizeof(void*)*3, v___x_278_);
 v___x_280_ = lean_unsigned_to_nat(1u);
 v___x_281_ = lean_mk_empty_array_with_capacity(v___x_280_);
 v___x_282_ = lean_array_push(v___x_281_, v___x_279_);
-lean_inc_ref(v___y_235_);
 v___x_283_ = l_Lean_MessageData_hint(v___x_274_, v___x_282_, v___x_276_, v___x_276_, v___x_248_, v___y_235_, v___y_236_);
 lean_dec_ref(v___x_282_);
 if (lean_obj_tag(v___x_283_) == 0)

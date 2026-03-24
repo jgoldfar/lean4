@@ -33,7 +33,7 @@ lean_object* l_Char_utf8Size(uint32_t);
 lean_object* lean_nat_add(lean_object*, lean_object*);
 uint8_t lean_nat_dec_eq(lean_object*, lean_object*);
 lean_object* l_mkPanicMessageWithDecl(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-lean_object* lean_panic_fn(lean_object*, lean_object*);
+lean_object* lean_panic_fn_borrowed(lean_object*, lean_object*);
 lean_object* l_Lean_Syntax_getArg(lean_object*, lean_object*);
 lean_object* l_Lean_Syntax_getOptional_x3f(lean_object*);
 uint8_t l_Lean_Syntax_isMissing(lean_object*);
@@ -313,7 +313,7 @@ _start:
 {
 lean_object* v___x_27_; lean_object* v___x_28_; 
 v___x_27_ = lean_unsigned_to_nat(0u);
-v___x_28_ = lean_panic_fn(v___x_27_, v_msg_26_);
+v___x_28_ = lean_panic_fn_borrowed(v___x_27_, v_msg_26_);
 return v___x_28_;
 }
 }
@@ -1010,7 +1010,7 @@ _start:
 {
 lean_object* v___x_247_; lean_object* v___x_248_; 
 v___x_247_ = lean_box(0);
-v___x_248_ = lean_panic_fn(v___x_247_, v_msg_246_);
+v___x_248_ = lean_panic_fn_borrowed(v___x_247_, v_msg_246_);
 return v___x_248_;
 }
 }

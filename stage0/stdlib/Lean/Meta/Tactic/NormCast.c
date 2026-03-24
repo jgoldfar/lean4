@@ -69,7 +69,7 @@ uint64_t l___private_Lean_Meta_Basic_0__Lean_Meta_Config_toKey(lean_object*);
 lean_object* lean_st_mk_ref(lean_object*);
 uint8_t l_Lean_Syntax_isOfKind(lean_object*, lean_object*);
 lean_object* l_Lean_Meta_instInhabitedMetaM___lam__0___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-lean_object* lean_panic_fn(lean_object*, lean_object*);
+lean_object* lean_panic_fn_borrowed(lean_object*, lean_object*);
 lean_object* l_Lean_Syntax_getArg(lean_object*, lean_object*);
 uint8_t l_Lean_Syntax_isNone(lean_object*);
 uint8_t l_Lean_Syntax_matchesNull(lean_object*, lean_object*);
@@ -4721,7 +4721,7 @@ _start:
 {
 lean_object* v___f_1583_; lean_object* v___x_1278__overap_1584_; lean_object* v___x_1585_; 
 v___f_1583_ = ((lean_object*)(l_panic___at___00__private_Lean_Meta_Tactic_NormCast_0__Lean_Meta_NormCast_initFn_00___x40_Lean_Meta_Tactic_NormCast_1115639401____hygCtx___hyg_2__spec__0___closed__0));
-v___x_1278__overap_1584_ = lean_panic_fn(v___f_1583_, v_msg_1577_);
+v___x_1278__overap_1584_ = lean_panic_fn_borrowed(v___f_1583_, v_msg_1577_);
 lean_inc(v___y_1581_);
 lean_inc_ref(v___y_1580_);
 lean_inc(v___y_1579_);

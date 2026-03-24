@@ -53,7 +53,7 @@ lean_object* l_ReaderT_instApplicativeOfMonad___redArg___lam__4(lean_object*, le
 lean_object* l_Lean_Meta_instMonadMetaM___lam__0___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Meta_instMonadMetaM___lam__1___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_instInhabitedOfMonad___redArg(lean_object*, lean_object*);
-lean_object* lean_panic_fn(lean_object*, lean_object*);
+lean_object* lean_panic_fn_borrowed(lean_object*, lean_object*);
 extern lean_object* l_Lean_casesOnSuffix;
 uint8_t lean_string_dec_eq(lean_object*, lean_object*);
 extern lean_object* l_Lean_recOnSuffix;
@@ -1185,7 +1185,8 @@ v_reusejp_277_:
 lean_object* v___x_279_; lean_object* v___x_280_; lean_object* v___x_3473__overap_281_; lean_object* v___x_282_; 
 v___x_279_ = lean_box(0);
 v___x_280_ = l_instInhabitedOfMonad___redArg(v___x_278_, v___x_279_);
-v___x_3473__overap_281_ = lean_panic_fn(v___x_280_, v_msg_224_);
+v___x_3473__overap_281_ = lean_panic_fn_borrowed(v___x_280_, v_msg_224_);
+lean_dec(v___x_280_);
 lean_inc(v___y_228_);
 lean_inc_ref(v___y_227_);
 lean_inc(v___y_226_);
@@ -2870,7 +2871,6 @@ v___jp_841_:
 {
 lean_object* v___x_843_; lean_object* v___x_844_; 
 v___x_843_ = l_Lean_Expr_fvarId_x21(v___x_840_);
-lean_inc_ref(v___y_827_);
 v___x_844_ = l_Lean_FVarId_getDecl___redArg(v___x_843_, v___y_827_, v___y_829_, v___y_830_);
 if (lean_obj_tag(v___x_844_) == 0)
 {

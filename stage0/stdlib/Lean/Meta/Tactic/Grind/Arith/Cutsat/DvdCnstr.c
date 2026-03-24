@@ -2366,6 +2366,7 @@ else
 {
 lean_object* v___x_747_; 
 v___x_747_ = l_Lean_PersistentArray_get_x21___redArg(v___x_744_, v_dvds_742_, v___y_725_);
+lean_dec_ref(v_dvds_742_);
 v___y_619_ = v___y_722_;
 v___y_620_ = v___y_724_;
 v___y_621_ = v___y_738_;

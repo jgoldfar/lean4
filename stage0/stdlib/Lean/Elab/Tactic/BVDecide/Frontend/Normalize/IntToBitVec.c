@@ -1673,7 +1673,6 @@ LEAN_EXPORT lean_object* l___private_Lean_Elab_Tactic_BVDecide_Frontend_Normaliz
 _start:
 {
 lean_object* v___x_385_; 
-lean_inc_ref(v___y_380_);
 v___x_385_ = l_Lean_Meta_getPropHyps(v___y_380_, v___y_381_, v___y_382_, v___y_383_);
 if (lean_obj_tag(v___x_385_) == 0)
 {
@@ -1686,7 +1685,6 @@ v___x_388_ = ((lean_object*)(l___private_Init_Data_Array_Basic_0__Array_forIn_x2
 v_sz_389_ = lean_array_size(v_a_386_);
 v___x_390_ = ((size_t)0ULL);
 v___x_391_ = l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00__private_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_IntToBitVec_0__Lean_Elab_Tactic_BVDecide_Frontend_Normalize_intToBitVecPass_findNumBitsEq_spec__1(v_a_386_, v_sz_389_, v___x_390_, v___x_388_, v___y_380_, v___y_381_, v___y_382_, v___y_383_);
-lean_dec_ref(v___y_380_);
 lean_dec(v_a_386_);
 if (lean_obj_tag(v___x_391_) == 0)
 {
@@ -1807,7 +1805,6 @@ return v___x_410_;
 else
 {
 lean_object* v_a_413_; lean_object* v___x_415_; uint8_t v_isShared_416_; uint8_t v_isSharedCheck_420_; 
-lean_dec_ref(v___y_380_);
 v_a_413_ = lean_ctor_get(v___x_385_, 0);
 v_isSharedCheck_420_ = !lean_is_exclusive(v___x_385_);
 if (v_isSharedCheck_420_ == 0)
@@ -1856,6 +1853,7 @@ v_res_426_ = l___private_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_IntToBitVe
 lean_dec(v___y_424_);
 lean_dec_ref(v___y_423_);
 lean_dec(v___y_422_);
+lean_dec_ref(v___y_421_);
 return v_res_426_;
 }
 }
@@ -3274,6 +3272,7 @@ v___x_989_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_989_, 0, v___x_984_);
 lean_ctor_set(v___x_989_, 1, v___x_988_);
 v___x_990_ = lean_array_get_borrowed(v___x_989_, v_declInfos_919_, v___x_979_);
+lean_dec_ref(v___x_989_);
 v_snd_991_ = lean_ctor_get(v___x_990_, 1);
 v_fst_992_ = lean_ctor_get(v___x_990_, 0);
 lean_inc(v_fst_992_);
@@ -8643,7 +8642,6 @@ LEAN_EXPORT lean_object* l___private_Lean_Elab_Tactic_BVDecide_Frontend_Normaliz
 _start:
 {
 lean_object* v___x_3185_; 
-lean_inc_ref(v___y_3180_);
 v___x_3185_ = l_Lean_Meta_getPropHyps(v___y_3180_, v___y_3181_, v___y_3182_, v___y_3183_);
 if (lean_obj_tag(v___x_3185_) == 0)
 {

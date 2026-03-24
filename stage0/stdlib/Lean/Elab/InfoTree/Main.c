@@ -57,7 +57,7 @@ lean_object* lean_expr_dbg_to_string(lean_object*);
 lean_object* lean_string_append(lean_object*, lean_object*);
 lean_object* lean_string_push(lean_object*, uint32_t);
 lean_object* l_mkPanicMessageWithDecl(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-lean_object* lean_panic_fn(lean_object*, lean_object*);
+lean_object* lean_panic_fn_borrowed(lean_object*, lean_object*);
 uint8_t lean_nat_dec_lt(lean_object*, lean_object*);
 uint8_t lean_nat_dec_le(lean_object*, lean_object*);
 size_t lean_usize_of_nat(lean_object*);
@@ -1104,7 +1104,7 @@ _start:
 {
 lean_object* v___x_131_; lean_object* v___x_132_; 
 v___x_131_ = lean_box(0);
-v___x_132_ = lean_panic_fn(v___x_131_, v_msg_130_);
+v___x_132_ = lean_panic_fn_borrowed(v___x_131_, v_msg_130_);
 return v___x_132_;
 }
 }
@@ -12912,6 +12912,7 @@ v___x_4213_ = lean_box(0);
 v___x_4214_ = l_instInhabitedOfMonad___redArg(v_inst_4209_, v___x_4213_);
 v___x_4215_ = lean_obj_once(&l_Lean_Elab_assignInfoHoleId___redArg___lam__1___closed__2, &l_Lean_Elab_assignInfoHoleId___redArg___lam__1___closed__2_once, _init_l_Lean_Elab_assignInfoHoleId___redArg___lam__1___closed__2);
 v___x_4216_ = l_panic___redArg(v___x_4214_, v___x_4215_);
+lean_dec(v___x_4214_);
 return v___x_4216_;
 }
 }
@@ -13068,6 +13069,7 @@ v___x_4287_ = lean_unsigned_to_nat(1u);
 v___x_4288_ = lean_nat_sub(v_size_4278_, v___x_4287_);
 v___x_4289_ = l_Lean_PersistentArray_get_x21___redArg(v___x_4286_, v_trees_4271_, v___x_4288_);
 lean_dec(v___x_4288_);
+lean_dec_ref(v_trees_4271_);
 v___x_4290_ = l_Lean_PersistentHashMap_insert___redArg(v___x_4284_, v___x_4285_, v_assignment_4273_, v_mvarId_4269_, v___x_4289_);
 if (v_isShared_4277_ == 0)
 {

@@ -643,7 +643,6 @@ return v___x_128_;
 else
 {
 lean_object* v___x_130_; lean_object* v___x_131_; lean_object* v___x_133_; 
-lean_inc_ref(v_vars_118_);
 v___x_130_ = l_Lean_PersistentArray_get_x21___redArg(v___x_117_, v_vars_118_, v_x_119_);
 lean_dec(v_x_119_);
 v___x_131_ = lean_alloc_ctor(0, 2, 0);
@@ -741,6 +740,7 @@ else
 lean_object* v___x_162_; 
 v___x_162_ = l_Lean_PersistentArray_get_x21___redArg(v___x_117_, v_vars_149_, v_x_136_);
 lean_dec(v_x_136_);
+lean_dec_ref(v_vars_149_);
 v___y_151_ = v___x_162_;
 goto v___jp_150_;
 }

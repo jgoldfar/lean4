@@ -44,7 +44,7 @@ uint8_t lean_nat_dec_le(lean_object*, lean_object*);
 uint8_t l_Lean_Compiler_LCNF_instDecidableEqPhase(uint8_t, uint8_t);
 lean_object* l_mkPanicMessageWithDecl(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Core_instInhabitedCoreM___lam__0___boxed(lean_object*, lean_object*, lean_object*);
-lean_object* lean_panic_fn(lean_object*, lean_object*);
+lean_object* lean_panic_fn_borrowed(lean_object*, lean_object*);
 lean_object* l_Array_findIdx_x3f_loop___redArg(lean_object*, lean_object*, lean_object*);
 uint8_t lean_nat_dec_lt(lean_object*, lean_object*);
 lean_object* lean_array_fget(lean_object*, lean_object*);
@@ -524,7 +524,6 @@ goto v___jp_36_;
 else
 {
 lean_object* v___x_55_; 
-lean_dec(v_inst_26_);
 v___x_55_ = lean_apply_1(v_x_29_, lean_box(0));
 return v___x_55_;
 }
@@ -537,6 +536,7 @@ uint8_t v_pp_boxed_60_; uint8_t v_ip_boxed_61_; lean_object* v_res_62_;
 v_pp_boxed_60_ = lean_unbox(v_pp_57_);
 v_ip_boxed_61_ = lean_unbox(v_ip_58_);
 v_res_62_ = l_Lean_Compiler_LCNF_Phase_withPurityCheck___redArg(v_inst_56_, v_pp_boxed_60_, v_ip_boxed_61_, v_x_59_);
+lean_dec(v_inst_56_);
 return v_res_62_;
 }
 }
@@ -555,6 +555,7 @@ uint8_t v_pp_boxed_74_; uint8_t v_ip_boxed_75_; lean_object* v_res_76_;
 v_pp_boxed_74_ = lean_unbox(v_pp_71_);
 v_ip_boxed_75_ = lean_unbox(v_ip_72_);
 v_res_76_ = l_Lean_Compiler_LCNF_Phase_withPurityCheck(v_00_u03b1_69_, v_inst_70_, v_pp_boxed_74_, v_ip_boxed_75_, v_x_73_);
+lean_dec(v_inst_70_);
 return v_res_76_;
 }
 }
@@ -2140,7 +2141,7 @@ _start:
 {
 lean_object* v___f_717_; lean_object* v___x_1677__overap_718_; lean_object* v___x_719_; 
 v___f_717_ = ((lean_object*)(l_panic___at___00Lean_Compiler_LCNF_PassInstaller_withEachOccurrence_spec__0___closed__0));
-v___x_1677__overap_718_ = lean_panic_fn(v___f_717_, v_msg_713_);
+v___x_1677__overap_718_ = lean_panic_fn_borrowed(v___f_717_, v_msg_713_);
 lean_inc(v___y_715_);
 lean_inc_ref(v___y_714_);
 v___x_719_ = lean_apply_3(v___x_1677__overap_718_, v___y_714_, v___y_715_, lean_box(0));

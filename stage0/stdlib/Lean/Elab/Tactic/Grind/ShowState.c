@@ -6410,7 +6410,6 @@ lean_inc(v_a_2589_);
 lean_dec_ref(v___x_2588_);
 v___x_2590_ = lean_alloc_closure((void*)(l_Lean_Meta_Grind_getLocalTheoremAnchors___boxed), 11, 1);
 lean_closure_set(v___x_2590_, 0, v_a_2589_);
-lean_inc_ref(v___y_2579_);
 v___x_2591_ = l_Lean_Elab_Tactic_Grind_liftGrindM___redArg(v___x_2590_, v___y_2579_, v___y_2580_, v___y_2583_, v___y_2584_, v___y_2585_, v___y_2586_);
 if (lean_obj_tag(v___x_2591_) == 0)
 {
@@ -6430,13 +6429,11 @@ lean_ctor_set(v___x_2599_, 0, v___x_2597_);
 lean_ctor_set(v___x_2599_, 1, v___x_2598_);
 lean_ctor_set(v___x_2599_, 2, v___x_2596_);
 v___x_2600_ = l_Lean_logInfo___at___00__private_Lean_Elab_Tactic_Grind_ShowState_0__Lean_Elab_Tactic_Grind_evalShowAsserted_spec__0(v___x_2599_, v___y_2579_, v___y_2580_, v___y_2581_, v___y_2582_, v___y_2583_, v___y_2584_, v___y_2585_, v___y_2586_);
-lean_dec_ref(v___y_2579_);
 return v___x_2600_;
 }
 else
 {
 lean_object* v_a_2601_; lean_object* v___x_2603_; uint8_t v_isShared_2604_; uint8_t v_isSharedCheck_2608_; 
-lean_dec_ref(v___y_2579_);
 v_a_2601_ = lean_ctor_get(v___x_2591_, 0);
 v_isSharedCheck_2608_ = !lean_is_exclusive(v___x_2591_);
 if (v_isSharedCheck_2608_ == 0)
@@ -6479,7 +6476,6 @@ return v___x_2606_;
 else
 {
 lean_object* v_a_2609_; lean_object* v___x_2611_; uint8_t v_isShared_2612_; uint8_t v_isSharedCheck_2616_; 
-lean_dec_ref(v___y_2579_);
 v_a_2609_ = lean_ctor_get(v___x_2588_, 0);
 v_isSharedCheck_2616_ = !lean_is_exclusive(v___x_2588_);
 if (v_isSharedCheck_2616_ == 0)
@@ -6532,6 +6528,7 @@ lean_dec_ref(v___y_2621_);
 lean_dec(v___y_2620_);
 lean_dec_ref(v___y_2619_);
 lean_dec(v___y_2618_);
+lean_dec_ref(v___y_2617_);
 return v_res_2626_;
 }
 }

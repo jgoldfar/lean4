@@ -56,7 +56,7 @@ uint8_t lean_usize_dec_eq(size_t, size_t);
 extern lean_object* l_instInhabitedError;
 lean_object* l_instInhabitedEIO___aux__1___boxed(lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_instInhabitedForall___redArg___lam__0___boxed(lean_object*, lean_object*);
-lean_object* lean_panic_fn(lean_object*, lean_object*);
+lean_object* lean_panic_fn_borrowed(lean_object*, lean_object*);
 lean_object* l_Lean_Json_getObjValD(lean_object*, lean_object*);
 lean_object* l_Lean_Lsp_instFromJsonRange_fromJson(lean_object*);
 lean_object* l_Lean_Lsp_instToJsonCallHierarchyPrepareParams_toJson(lean_object*);
@@ -586,7 +586,6 @@ _start:
 lean_object* v_stdin_7_; lean_object* v___x_8_; lean_object* v___x_9_; 
 v_stdin_7_ = lean_ctor_get(v_a_5_, 0);
 lean_inc(v_stdin_7_);
-lean_dec_ref(v_a_5_);
 v___x_8_ = lean_stream_of_handle(v_stdin_7_);
 v___x_9_ = lean_alloc_ctor(0, 1, 0);
 lean_ctor_set(v___x_9_, 0, v___x_8_);
@@ -598,6 +597,7 @@ _start:
 {
 lean_object* v_res_12_; 
 v_res_12_ = l_Lean_Lsp_Ipc_stdin(v_a_10_);
+lean_dec_ref(v_a_10_);
 return v_res_12_;
 }
 }
@@ -607,7 +607,6 @@ _start:
 lean_object* v_stdout_15_; lean_object* v___x_16_; lean_object* v___x_17_; 
 v_stdout_15_ = lean_ctor_get(v_a_13_, 1);
 lean_inc(v_stdout_15_);
-lean_dec_ref(v_a_13_);
 v___x_16_ = lean_stream_of_handle(v_stdout_15_);
 v___x_17_ = lean_alloc_ctor(0, 1, 0);
 lean_ctor_set(v___x_17_, 0, v___x_16_);
@@ -619,6 +618,7 @@ _start:
 {
 lean_object* v_res_20_; 
 v_res_20_ = l_Lean_Lsp_Ipc_stdout(v_a_18_);
+lean_dec_ref(v_a_18_);
 return v_res_20_;
 }
 }
@@ -626,7 +626,6 @@ LEAN_EXPORT lean_object* l_Lean_Lsp_Ipc_writeRequest___redArg(lean_object* v_ins
 _start:
 {
 lean_object* v___x_25_; lean_object* v_a_26_; lean_object* v___x_27_; 
-lean_inc_ref(v_a_23_);
 v___x_25_ = l_Lean_Lsp_Ipc_stdin(v_a_23_);
 v_a_26_ = lean_ctor_get(v___x_25_, 0);
 lean_inc(v_a_26_);
@@ -665,7 +664,6 @@ LEAN_EXPORT lean_object* l_Lean_Lsp_Ipc_writeNotification___redArg(lean_object* 
 _start:
 {
 lean_object* v___x_49_; lean_object* v_a_50_; lean_object* v___x_51_; 
-lean_inc_ref(v_a_47_);
 v___x_49_ = l_Lean_Lsp_Ipc_stdin(v_a_47_);
 v_a_50_ = lean_ctor_get(v___x_49_, 0);
 lean_inc(v_a_50_);
@@ -719,7 +717,8 @@ lean_object* v___x_74_; lean_object* v___f_75_; lean_object* v___x_2948__overap_
 v___x_74_ = lean_obj_once(&l_panic___at___00Lean_Lsp_Ipc_shutdown_spec__2___closed__0, &l_panic___at___00Lean_Lsp_Ipc_shutdown_spec__2___closed__0_once, _init_l_panic___at___00Lean_Lsp_Ipc_shutdown_spec__2___closed__0);
 v___f_75_ = lean_alloc_closure((void*)(l_instInhabitedForall___redArg___lam__0___boxed), 2, 1);
 lean_closure_set(v___f_75_, 0, v___x_74_);
-v___x_2948__overap_76_ = lean_panic_fn(v___f_75_, v_msg_71_);
+v___x_2948__overap_76_ = lean_panic_fn_borrowed(v___f_75_, v_msg_71_);
+lean_dec_ref(v___f_75_);
 lean_inc_ref(v___y_72_);
 v___x_77_ = lean_apply_2(v___x_2948__overap_76_, v___y_72_, lean_box(0));
 return v___x_77_;
@@ -1337,12 +1336,10 @@ LEAN_EXPORT lean_object* l_Lean_Lsp_Ipc_shutdown(lean_object* v_requestNo_242_, 
 _start:
 {
 lean_object* v___x_245_; lean_object* v_a_246_; lean_object* v___x_247_; lean_object* v_a_248_; lean_object* v___x_250_; uint8_t v_isShared_251_; uint8_t v_isSharedCheck_270_; 
-lean_inc_ref(v_a_243_);
 v___x_245_ = l_Lean_Lsp_Ipc_stdout(v_a_243_);
 v_a_246_ = lean_ctor_get(v___x_245_, 0);
 lean_inc(v_a_246_);
 lean_dec_ref(v___x_245_);
-lean_inc_ref(v_a_243_);
 v___x_247_ = l_Lean_Lsp_Ipc_stdin(v_a_243_);
 v_a_248_ = lean_ctor_get(v___x_247_, 0);
 v_isSharedCheck_270_ = !lean_is_exclusive(v___x_247_);
@@ -1498,7 +1495,6 @@ LEAN_EXPORT lean_object* l_Lean_Lsp_Ipc_readMessage(lean_object* v_a_293_){
 _start:
 {
 lean_object* v___x_295_; lean_object* v_a_296_; lean_object* v___x_297_; 
-lean_inc_ref(v_a_293_);
 v___x_295_ = l_Lean_Lsp_Ipc_stdout(v_a_293_);
 v_a_296_ = lean_ctor_get(v___x_295_, 0);
 lean_inc(v_a_296_);
@@ -1520,7 +1516,6 @@ LEAN_EXPORT lean_object* l_Lean_Lsp_Ipc_readRequestAs___redArg(lean_object* v_ex
 _start:
 {
 lean_object* v___x_305_; lean_object* v_a_306_; lean_object* v___x_307_; 
-lean_inc_ref(v_a_303_);
 v___x_305_ = l_Lean_Lsp_Ipc_stdout(v_a_303_);
 v_a_306_ = lean_ctor_get(v___x_305_, 0);
 lean_inc(v_a_306_);
@@ -2003,7 +1998,6 @@ LEAN_EXPORT lean_object* l_Lean_Lsp_Ipc_readResponseAs___redArg(lean_object* v_e
 _start:
 {
 lean_object* v___x_442_; 
-lean_inc_ref(v_a_440_);
 v___x_442_ = l_Lean_Lsp_Ipc_stdout(v_a_440_);
 if (lean_obj_tag(v___x_442_) == 0)
 {
@@ -3379,7 +3373,6 @@ LEAN_EXPORT lean_object* l_Lean_Lsp_Ipc_writeRequest___at___00Lean_Lsp_Ipc_colle
 _start:
 {
 lean_object* v___x_775_; lean_object* v_a_776_; lean_object* v___x_777_; 
-lean_inc_ref(v_a_773_);
 v___x_775_ = l_Lean_Lsp_Ipc_stdin(v_a_773_);
 v_a_776_ = lean_ctor_get(v___x_775_, 0);
 lean_inc(v_a_776_);
@@ -3600,7 +3593,6 @@ LEAN_EXPORT lean_object* l_Lean_Lsp_Ipc_writeRequest___at___00Lean_Lsp_Ipc_waitF
 _start:
 {
 lean_object* v___x_843_; lean_object* v_a_844_; lean_object* v___x_845_; 
-lean_inc_ref(v_a_841_);
 v___x_843_ = l_Lean_Lsp_Ipc_stdin(v_a_841_);
 v_a_844_ = lean_ctor_get(v___x_843_, 0);
 lean_inc(v_a_844_);
@@ -6933,7 +6925,6 @@ LEAN_EXPORT lean_object* l_Lean_Lsp_Ipc_readResponseAs___at___00__private_Lean_D
 _start:
 {
 lean_object* v___x_1738_; 
-lean_inc_ref(v_a_1736_);
 v___x_1738_ = l_Lean_Lsp_Ipc_stdout(v_a_1736_);
 if (lean_obj_tag(v___x_1738_) == 0)
 {
@@ -7756,7 +7747,6 @@ LEAN_EXPORT lean_object* l_Lean_Lsp_Ipc_writeRequest___at___00__private_Lean_Dat
 _start:
 {
 lean_object* v___x_1931_; lean_object* v_a_1932_; lean_object* v___x_1933_; 
-lean_inc_ref(v_a_1929_);
 v___x_1931_ = l_Lean_Lsp_Ipc_stdin(v_a_1929_);
 v_a_1932_ = lean_ctor_get(v___x_1931_, 0);
 lean_inc(v_a_1932_);
@@ -8559,7 +8549,6 @@ LEAN_EXPORT lean_object* l_Lean_Lsp_Ipc_readResponseAs___at___00Lean_Lsp_Ipc_exp
 _start:
 {
 lean_object* v___x_2172_; 
-lean_inc_ref(v_a_2170_);
 v___x_2172_ = l_Lean_Lsp_Ipc_stdout(v_a_2170_);
 if (lean_obj_tag(v___x_2172_) == 0)
 {
@@ -9521,7 +9510,6 @@ LEAN_EXPORT lean_object* l_Lean_Lsp_Ipc_writeRequest___at___00Lean_Lsp_Ipc_expan
 _start:
 {
 lean_object* v___x_2410_; lean_object* v_a_2411_; lean_object* v___x_2412_; 
-lean_inc_ref(v_a_2408_);
 v___x_2410_ = l_Lean_Lsp_Ipc_stdin(v_a_2408_);
 v_a_2411_ = lean_ctor_get(v___x_2410_, 0);
 lean_inc(v_a_2411_);
@@ -10087,7 +10075,6 @@ LEAN_EXPORT lean_object* l_Lean_Lsp_Ipc_readResponseAs___at___00__private_Lean_D
 _start:
 {
 lean_object* v___x_2564_; 
-lean_inc_ref(v_a_2562_);
 v___x_2564_ = l_Lean_Lsp_Ipc_stdout(v_a_2562_);
 if (lean_obj_tag(v___x_2564_) == 0)
 {
@@ -10910,7 +10897,6 @@ LEAN_EXPORT lean_object* l_Lean_Lsp_Ipc_writeRequest___at___00__private_Lean_Dat
 _start:
 {
 lean_object* v___x_2757_; lean_object* v_a_2758_; lean_object* v___x_2759_; 
-lean_inc_ref(v_a_2755_);
 v___x_2757_ = l_Lean_Lsp_Ipc_stdin(v_a_2755_);
 v_a_2758_ = lean_ctor_get(v___x_2757_, 0);
 lean_inc(v_a_2758_);
@@ -12582,7 +12568,6 @@ LEAN_EXPORT lean_object* l_Lean_Lsp_Ipc_readResponseAs___at___00__private_Lean_D
 _start:
 {
 lean_object* v___x_3246_; 
-lean_inc_ref(v_a_3244_);
 v___x_3246_ = l_Lean_Lsp_Ipc_stdout(v_a_3244_);
 if (lean_obj_tag(v___x_3246_) == 0)
 {
@@ -13415,7 +13400,6 @@ LEAN_EXPORT lean_object* l_Lean_Lsp_Ipc_writeRequest___at___00__private_Lean_Dat
 _start:
 {
 lean_object* v___x_3441_; lean_object* v_a_3442_; lean_object* v___x_3443_; 
-lean_inc_ref(v_a_3439_);
 v___x_3441_ = l_Lean_Lsp_Ipc_stdin(v_a_3439_);
 v_a_3442_ = lean_ctor_get(v___x_3441_, 0);
 lean_inc(v_a_3442_);
@@ -14050,7 +14034,6 @@ LEAN_EXPORT lean_object* l_Lean_Lsp_Ipc_writeRequest___at___00Lean_Lsp_Ipc_expan
 _start:
 {
 lean_object* v___x_3618_; lean_object* v_a_3619_; lean_object* v___x_3620_; 
-lean_inc_ref(v_a_3616_);
 v___x_3618_ = l_Lean_Lsp_Ipc_stdin(v_a_3616_);
 v_a_3619_ = lean_ctor_get(v___x_3618_, 0);
 lean_inc(v_a_3619_);
@@ -14173,7 +14156,6 @@ LEAN_EXPORT lean_object* l_Lean_Lsp_Ipc_readResponseAs___at___00Lean_Lsp_Ipc_exp
 _start:
 {
 lean_object* v___x_3650_; 
-lean_inc_ref(v_a_3648_);
 v___x_3650_ = l_Lean_Lsp_Ipc_stdout(v_a_3648_);
 if (lean_obj_tag(v___x_3650_) == 0)
 {
@@ -15408,7 +15390,6 @@ LEAN_EXPORT lean_object* l_Lean_Lsp_Ipc_writeRequest___at___00__private_Lean_Dat
 _start:
 {
 lean_object* v___x_3939_; lean_object* v_a_3940_; lean_object* v___x_3941_; 
-lean_inc_ref(v_a_3937_);
 v___x_3939_ = l_Lean_Lsp_Ipc_stdin(v_a_3937_);
 v_a_3940_ = lean_ctor_get(v___x_3939_, 0);
 lean_inc(v_a_3940_);

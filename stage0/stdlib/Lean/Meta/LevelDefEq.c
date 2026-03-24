@@ -46,7 +46,7 @@ lean_object* l_Lean_Level_mvarId_x21(lean_object*);
 uint8_t l_Lean_Level_isMax(lean_object*);
 lean_object* l_mkPanicMessageWithDecl(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Meta_instInhabitedMetaM___lam__0___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-lean_object* lean_panic_fn(lean_object*, lean_object*);
+lean_object* lean_panic_fn_borrowed(lean_object*, lean_object*);
 lean_object* l_Lean_Meta_mkFreshLevelMVar(lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_mkLevelMax_x27(lean_object*, lean_object*);
 uint8_t l_Lean_Level_occurs(lean_object*, lean_object*);
@@ -483,7 +483,7 @@ _start:
 {
 lean_object* v___f_47_; lean_object* v___x_214__overap_48_; lean_object* v___x_49_; 
 v___f_47_ = ((lean_object*)(l_panic___at___00__private_Lean_Meta_LevelDefEq_0__Lean_Meta_solveSelfMax_spec__0___closed__0));
-v___x_214__overap_48_ = lean_panic_fn(v___f_47_, v_msg_41_);
+v___x_214__overap_48_ = lean_panic_fn_borrowed(v___f_47_, v_msg_41_);
 lean_inc(v___y_45_);
 lean_inc_ref(v___y_44_);
 lean_inc(v___y_43_);
@@ -4226,7 +4226,8 @@ uint8_t v___x_1198_; lean_object* v___x_1199_; lean_object* v___x_1200_; lean_ob
 v___x_1198_ = 0;
 v___x_1199_ = lean_box(v___x_1198_);
 v___x_1200_ = l_instInhabitedOfMonad___redArg(v___x_1197_, v___x_1199_);
-v___x_11635__overap_1201_ = lean_panic_fn(v___x_1200_, v_msg_1143_);
+v___x_11635__overap_1201_ = lean_panic_fn_borrowed(v___x_1200_, v_msg_1143_);
+lean_dec(v___x_1200_);
 lean_inc(v___y_1147_);
 lean_inc_ref(v___y_1146_);
 lean_inc(v___y_1145_);

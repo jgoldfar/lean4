@@ -80,7 +80,7 @@ lean_object* lean_string_length(lean_object*);
 lean_object* l_Std_Http_URI_Parser_parseRequestTarget(lean_object*, lean_object*);
 lean_object* l_Std_Internal_Parsec_ByteArray_Parser_run___redArg(lean_object*, lean_object*);
 lean_object* l_mkPanicMessageWithDecl(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-lean_object* lean_panic_fn(lean_object*, lean_object*);
+lean_object* lean_panic_fn_borrowed(lean_object*, lean_object*);
 lean_object* l_Std_Http_Header_Name_ofString_x21(lean_object*);
 lean_object* l_Std_Http_Header_Value_ofString_x21(lean_object*);
 lean_object* l_Std_Http_Extensions_compareName___boxed(lean_object*, lean_object*);
@@ -3566,7 +3566,7 @@ _start:
 {
 lean_object* v___x_1064_; lean_object* v___x_1065_; 
 v___x_1064_ = l_Std_Http_instInhabitedRequestTarget_default;
-v___x_1065_ = lean_panic_fn(v___x_1064_, v_msg_1063_);
+v___x_1065_ = lean_panic_fn_borrowed(v___x_1064_, v_msg_1063_);
 return v___x_1065_;
 }
 }

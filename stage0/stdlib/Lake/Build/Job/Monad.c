@@ -40,7 +40,7 @@ lean_object* lean_string_append(lean_object*, lean_object*);
 lean_object* lean_array_push(lean_object*, lean_object*);
 uint8_t lean_string_validate_utf8(lean_object*);
 lean_object* l_mkPanicMessageWithDecl(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-lean_object* lean_panic_fn(lean_object*, lean_object*);
+lean_object* lean_panic_fn_borrowed(lean_object*, lean_object*);
 lean_object* lean_string_from_utf8_unchecked(lean_object*);
 size_t lean_usize_sub(size_t, size_t);
 lean_object* lean_array_uget(lean_object*, size_t);
@@ -3733,7 +3733,7 @@ _start:
 {
 lean_object* v___x_1347_; lean_object* v___x_1348_; 
 v___x_1347_ = ((lean_object*)(l_panic___at___00Lake_Job_sync_spec__0___closed__0));
-v___x_1348_ = lean_panic_fn(v___x_1347_, v_msg_1346_);
+v___x_1348_ = lean_panic_fn_borrowed(v___x_1347_, v_msg_1346_);
 return v___x_1348_;
 }
 }

@@ -11898,7 +11898,6 @@ LEAN_EXPORT lean_object* l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_bvAcNorm
 _start:
 {
 lean_object* v___x_3931_; 
-lean_inc_ref(v___y_3926_);
 v___x_3931_ = l_Lean_Meta_getPropHyps(v___y_3926_, v___y_3927_, v___y_3928_, v___y_3929_);
 if (lean_obj_tag(v___x_3931_) == 0)
 {
@@ -12162,7 +12161,6 @@ v___x_4029_ = lean_usize_dec_lt(v_i_4021_, v_sz_4020_);
 if (v___x_4029_ == 0)
 {
 lean_object* v___x_4030_; 
-lean_dec_ref(v___y_4023_);
 v___x_4030_ = lean_alloc_ctor(0, 1, 0);
 lean_ctor_set(v___x_4030_, 0, v_b_4022_);
 return v___x_4030_;
@@ -12211,7 +12209,6 @@ goto _start;
 else
 {
 lean_object* v_a_4041_; lean_object* v___x_4043_; uint8_t v_isShared_4044_; uint8_t v_isSharedCheck_4048_; 
-lean_dec_ref(v___y_4023_);
 lean_dec(v_b_4022_);
 v_a_4041_ = lean_ctor_get(v___x_4033_, 0);
 v_isSharedCheck_4048_ = !lean_is_exclusive(v___x_4033_);
@@ -12267,6 +12264,7 @@ lean_dec(v___y_4057_);
 lean_dec_ref(v___y_4056_);
 lean_dec(v___y_4055_);
 lean_dec_ref(v___y_4054_);
+lean_dec_ref(v___y_4053_);
 lean_dec_ref(v_as_4049_);
 return v_res_4061_;
 }
@@ -12275,7 +12273,6 @@ LEAN_EXPORT lean_object* l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_bvAcNorm
 _start:
 {
 lean_object* v___x_4077_; 
-lean_inc_ref(v___y_4072_);
 v___x_4077_ = l_Lean_Meta_getPropHyps(v___y_4072_, v___y_4073_, v___y_4074_, v___y_4075_);
 if (lean_obj_tag(v___x_4077_) == 0)
 {
@@ -12332,7 +12329,6 @@ v___jp_4080_:
 size_t v_sz_4082_; size_t v___x_4083_; lean_object* v___x_4084_; 
 v_sz_4082_ = lean_array_size(v_a_4081_);
 v___x_4083_ = ((size_t)0ULL);
-lean_inc_ref(v___y_4070_);
 v___x_4084_ = l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00Lean_Elab_Tactic_BVDecide_Frontend_Normalize_bvAcNormalizePass_spec__2___redArg(v_a_4081_, v_sz_4082_, v___x_4083_, v_goal_4069_, v___y_4070_, v___y_4072_, v___y_4073_, v___y_4074_, v___y_4075_);
 lean_dec_ref(v_a_4081_);
 if (lean_obj_tag(v___x_4084_) == 0)
@@ -12643,7 +12639,6 @@ LEAN_EXPORT lean_object* l___private_Init_Data_Array_Basic_0__Array_forIn_x27Uns
 _start:
 {
 lean_object* v___x_4203_; 
-lean_inc_ref(v___y_4196_);
 v___x_4203_ = l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00Lean_Elab_Tactic_BVDecide_Frontend_Normalize_bvAcNormalizePass_spec__2___redArg(v_as_4192_, v_sz_4193_, v_i_4194_, v_b_4195_, v___y_4196_, v___y_4198_, v___y_4199_, v___y_4200_, v___y_4201_);
 return v___x_4203_;
 }

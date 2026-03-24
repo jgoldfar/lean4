@@ -17,7 +17,7 @@ uint8_t lean_uint32_dec_le(uint32_t, uint32_t);
 uint8_t lean_uint32_dec_eq(uint32_t, uint32_t);
 lean_object* l_mkPanicMessageWithDecl(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 extern lean_object* l_String_instInhabitedSlice;
-lean_object* lean_panic_fn(lean_object*, lean_object*);
+lean_object* lean_panic_fn_borrowed(lean_object*, lean_object*);
 lean_object* lean_nat_sub(lean_object*, lean_object*);
 uint8_t lean_nat_dec_eq(lean_object*, lean_object*);
 lean_object* lean_nat_add(lean_object*, lean_object*);
@@ -9421,7 +9421,6 @@ if (v___y_2835_ == 0)
 {
 lean_object* v_tk_2836_; lean_object* v___x_2837_; lean_object* v___x_2838_; 
 lean_inc(v_pos_2826_);
-lean_inc_ref(v_tokens_2827_);
 v_tk_2836_ = l_Lean_Data_Trie_matchPrefix___redArg(v_inputString_2828_, v_tokens_2827_, v_pos_2826_, v_endPos_2829_);
 v___x_2837_ = lean_box(0);
 v___x_2838_ = l___private_Lean_Parser_Basic_0__Lean_Parser_identFnAux_parse(v_pos_2826_, v_tk_2836_, v___x_2833_, v___x_2837_, v_c_2823_, v_s_2824_);
@@ -10523,7 +10522,7 @@ _start:
 {
 lean_object* v___x_3198_; lean_object* v___x_3199_; 
 v___x_3198_ = l_String_instInhabitedSlice;
-v___x_3199_ = lean_panic_fn(v___x_3198_, v_msg_3197_);
+v___x_3199_ = lean_panic_fn_borrowed(v___x_3198_, v_msg_3197_);
 return v___x_3199_;
 }
 }

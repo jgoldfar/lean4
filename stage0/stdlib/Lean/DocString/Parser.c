@@ -45,7 +45,7 @@ lean_object* lean_string_mk(lean_object*);
 lean_object* l_Nat_reprFast(lean_object*);
 lean_object* l_Lean_SourceInfo_getPos_x3f(lean_object*, uint8_t);
 lean_object* l_mkPanicMessageWithDecl(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-lean_object* lean_panic_fn(lean_object*, lean_object*);
+lean_object* lean_panic_fn_borrowed(lean_object*, lean_object*);
 lean_object* lean_nat_add(lean_object*, lean_object*);
 lean_object* lean_nat_sub(lean_object*, lean_object*);
 lean_object* l_Lean_Parser_SyntaxStack_get_x21(lean_object*, lean_object*);
@@ -15522,7 +15522,7 @@ _start:
 {
 lean_object* v___x_5585_; lean_object* v___x_5586_; 
 v___x_5585_ = lean_unsigned_to_nat(0u);
-v___x_5586_ = lean_panic_fn(v___x_5585_, v_msg_5584_);
+v___x_5586_ = lean_panic_fn_borrowed(v___x_5585_, v_msg_5584_);
 return v___x_5586_;
 }
 }

@@ -85,7 +85,7 @@ lean_object* l_System_FilePath_withExtension(lean_object*, lean_object*);
 uint8_t l_System_FilePath_pathExists(lean_object*);
 lean_object* l_System_FilePath_parent(lean_object*);
 lean_object* l_mkPanicMessageWithDecl(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-lean_object* lean_panic_fn(lean_object*, lean_object*);
+lean_object* lean_panic_fn_borrowed(lean_object*, lean_object*);
 lean_object* l_Lean_Elab_Tactic_BVDecide_External_satQuery(lean_object*, lean_object*, lean_object*, lean_object*, uint8_t, uint8_t, lean_object*, lean_object*);
 lean_object* lean_io_prim_handle_put_str(lean_object*, lean_object*);
 lean_object* lean_io_prim_handle_flush(lean_object*);
@@ -534,7 +534,7 @@ _start:
 {
 lean_object* v___x_14_; lean_object* v___x_15_; 
 v___x_14_ = ((lean_object*)(l_panic___at___00__private_Lean_Elab_Tactic_BVDecide_Frontend_LRAT_0__Lean_Elab_Tactic_BVDecide_Frontend_TacticContext_new_determineSolver_spec__1___closed__0));
-v___x_15_ = lean_panic_fn(v___x_14_, v_msg_13_);
+v___x_15_ = lean_panic_fn_borrowed(v___x_14_, v_msg_13_);
 return v___x_15_;
 }
 }

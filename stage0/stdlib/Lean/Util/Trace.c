@@ -5971,12 +5971,8 @@ if (v___x_2618_ == 0)
 {
 lean_object* v_quotContext_2619_; lean_object* v_currMacroScope_2620_; lean_object* v_ref_2621_; lean_object* v___x_2622_; lean_object* v___x_2623_; lean_object* v___x_2624_; lean_object* v___x_2625_; lean_object* v___x_2626_; lean_object* v___x_2627_; lean_object* v___x_2628_; lean_object* v___x_2629_; lean_object* v___x_2630_; lean_object* v___x_2631_; lean_object* v___x_2632_; lean_object* v___x_2633_; lean_object* v___x_2634_; lean_object* v___x_2635_; lean_object* v___x_2636_; lean_object* v___x_2637_; lean_object* v___x_2638_; lean_object* v___x_2639_; lean_object* v___x_2640_; lean_object* v___x_2641_; lean_object* v___x_2642_; lean_object* v___x_2643_; lean_object* v___x_2644_; lean_object* v___x_2645_; lean_object* v___x_2646_; 
 v_quotContext_2619_ = lean_ctor_get(v_a_2471_, 1);
-lean_inc(v_quotContext_2619_);
 v_currMacroScope_2620_ = lean_ctor_get(v_a_2471_, 2);
-lean_inc(v_currMacroScope_2620_);
 v_ref_2621_ = lean_ctor_get(v_a_2471_, 5);
-lean_inc(v_ref_2621_);
-lean_dec_ref(v_a_2471_);
 v___x_2622_ = l_Lean_SourceInfo_fromRef(v_ref_2621_, v___x_2618_);
 v___x_2623_ = ((lean_object*)(l___private_Lean_Util_Trace_0__Lean_expandTraceMacro___closed__49));
 v___x_2624_ = ((lean_object*)(l___private_Lean_Util_Trace_0__Lean_expandTraceMacro___closed__50));
@@ -6028,6 +6024,8 @@ v___x_2645_ = lean_alloc_ctor(2, 2, 0);
 lean_ctor_set(v___x_2645_, 0, v___x_2622_);
 lean_ctor_set(v___x_2645_, 1, v___x_2644_);
 v___x_2646_ = l_Lean_Syntax_node5(v___x_2622_, v___x_2623_, v___x_2634_, v_s_2470_, v___x_2636_, v___x_2643_, v___x_2645_);
+lean_inc(v_currMacroScope_2620_);
+lean_inc(v_quotContext_2619_);
 v_msg_2568_ = v___x_2646_;
 v_quotContext_2569_ = v_quotContext_2619_;
 v_currMacroScope_2570_ = v_currMacroScope_2620_;
@@ -6039,12 +6037,8 @@ else
 {
 lean_object* v_quotContext_2647_; lean_object* v_currMacroScope_2648_; lean_object* v_ref_2649_; uint8_t v___x_2650_; lean_object* v___x_2651_; lean_object* v___x_2652_; lean_object* v___x_2653_; lean_object* v___x_2654_; lean_object* v___x_2655_; 
 v_quotContext_2647_ = lean_ctor_get(v_a_2471_, 1);
-lean_inc(v_quotContext_2647_);
 v_currMacroScope_2648_ = lean_ctor_get(v_a_2471_, 2);
-lean_inc(v_currMacroScope_2648_);
 v_ref_2649_ = lean_ctor_get(v_a_2471_, 5);
-lean_inc(v_ref_2649_);
-lean_dec_ref(v_a_2471_);
 v___x_2650_ = 0;
 v___x_2651_ = l_Lean_SourceInfo_fromRef(v_ref_2649_, v___x_2650_);
 v___x_2652_ = ((lean_object*)(l___private_Lean_Util_Trace_0__Lean_expandTraceMacro___closed__64));
@@ -6054,6 +6048,8 @@ v___x_2654_ = lean_alloc_ctor(2, 2, 0);
 lean_ctor_set(v___x_2654_, 0, v___x_2651_);
 lean_ctor_set(v___x_2654_, 1, v___x_2653_);
 v___x_2655_ = l_Lean_Syntax_node2(v___x_2651_, v___x_2652_, v___x_2654_, v_s_2470_);
+lean_inc(v_currMacroScope_2648_);
+lean_inc(v_quotContext_2647_);
 v_msg_2568_ = v___x_2655_;
 v_quotContext_2569_ = v_quotContext_2647_;
 v_currMacroScope_2570_ = v_currMacroScope_2648_;
@@ -6248,7 +6244,6 @@ v___jp_2567_:
 uint8_t v___x_2573_; lean_object* v___x_2574_; lean_object* v___x_2575_; lean_object* v___x_2576_; lean_object* v___x_2577_; lean_object* v___x_2578_; lean_object* v___x_2579_; lean_object* v___x_2580_; lean_object* v___x_2581_; lean_object* v___x_2582_; lean_object* v___x_2583_; lean_object* v___x_2584_; lean_object* v___x_2585_; lean_object* v___x_2586_; lean_object* v___x_2587_; lean_object* v___x_2588_; lean_object* v___x_2589_; lean_object* v___x_2590_; lean_object* v___x_2591_; lean_object* v___x_2592_; lean_object* v___x_2593_; lean_object* v___x_2594_; lean_object* v___x_2595_; lean_object* v___x_2596_; lean_object* v___x_2597_; lean_object* v___x_2598_; lean_object* v___x_2599_; lean_object* v___x_2600_; lean_object* v___x_2601_; lean_object* v___x_2602_; 
 v___x_2573_ = 0;
 v___x_2574_ = l_Lean_SourceInfo_fromRef(v_ref_2571_, v___x_2573_);
-lean_dec(v_ref_2571_);
 v___x_2575_ = ((lean_object*)(l_Lean_MonadTrace_getInheritedTraceOptions___autoParam___closed__0));
 v___x_2576_ = ((lean_object*)(l_Lean_MonadTrace_getInheritedTraceOptions___autoParam___closed__1));
 v___x_2577_ = ((lean_object*)(l_Lean_registerTraceClass___auto__1___closed__0));
@@ -6384,6 +6379,7 @@ _start:
 {
 lean_object* v_res_2660_; 
 v_res_2660_ = l___private_Lean_Util_Trace_0__Lean_expandTraceMacro(v_id_2656_, v_s_2657_, v_a_2658_, v_a_2659_);
+lean_dec_ref(v_a_2658_);
 lean_dec(v_id_2656_);
 return v_res_2660_;
 }
@@ -6413,7 +6409,6 @@ v___x_2723_ = l_Lean_Syntax_getArg(v_x_2715_, v___x_2722_);
 v___x_2724_ = lean_unsigned_to_nat(3u);
 v___x_2725_ = l_Lean_Syntax_getArg(v_x_2715_, v___x_2724_);
 lean_dec(v_x_2715_);
-lean_inc_ref(v_a_2716_);
 v___x_2726_ = l___private_Lean_Util_Trace_0__Lean_expandTraceMacro(v___x_2723_, v___x_2725_, v_a_2716_, v_a_2717_);
 lean_dec(v___x_2723_);
 v_a_2727_ = lean_ctor_get(v___x_2726_, 0);

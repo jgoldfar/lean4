@@ -5089,7 +5089,6 @@ v_a_1536_ = lean_ctor_get(v___x_1535_, 0);
 lean_inc(v_a_1536_);
 lean_dec_ref(v___x_1535_);
 v___x_1537_ = 1;
-lean_inc_ref(v___y_1530_);
 v___x_1538_ = l_Lean_Meta_zetaReduce(v_a_1536_, v___x_1537_, v___x_1537_, v___x_1537_, v___y_1530_, v___y_1531_, v___y_1532_, v___y_1533_);
 if (lean_obj_tag(v___x_1538_) == 0)
 {
@@ -5098,13 +5097,11 @@ v_a_1539_ = lean_ctor_get(v___x_1538_, 0);
 lean_inc(v_a_1539_);
 lean_dec_ref(v___x_1538_);
 v___x_1540_ = l_Lean_Elab_Tactic_Conv_changeLhs(v_a_1539_, v___y_1526_, v___y_1527_, v___y_1528_, v___y_1529_, v___y_1530_, v___y_1531_, v___y_1532_, v___y_1533_);
-lean_dec_ref(v___y_1530_);
 return v___x_1540_;
 }
 else
 {
 lean_object* v_a_1541_; lean_object* v___x_1543_; uint8_t v_isShared_1544_; uint8_t v_isSharedCheck_1548_; 
-lean_dec_ref(v___y_1530_);
 v_a_1541_ = lean_ctor_get(v___x_1538_, 0);
 v_isSharedCheck_1548_ = !lean_is_exclusive(v___x_1538_);
 if (v_isSharedCheck_1548_ == 0)
@@ -5147,7 +5144,6 @@ return v___x_1546_;
 else
 {
 lean_object* v_a_1549_; lean_object* v___x_1551_; uint8_t v_isShared_1552_; uint8_t v_isSharedCheck_1556_; 
-lean_dec_ref(v___y_1530_);
 v_a_1549_ = lean_ctor_get(v___x_1535_, 0);
 v_isSharedCheck_1556_ = !lean_is_exclusive(v___x_1535_);
 if (v_isSharedCheck_1556_ == 0)
@@ -5196,6 +5192,7 @@ v_res_1566_ = l_Lean_Elab_Tactic_Conv_evalZeta___redArg___lam__0(v___y_1557_, v_
 lean_dec(v___y_1564_);
 lean_dec_ref(v___y_1563_);
 lean_dec(v___y_1562_);
+lean_dec_ref(v___y_1561_);
 lean_dec(v___y_1560_);
 lean_dec_ref(v___y_1559_);
 lean_dec(v___y_1558_);
@@ -5632,7 +5629,6 @@ LEAN_EXPORT lean_object* l_Lean_Elab_Tactic_Conv_evalClear___lam__0(lean_object*
 _start:
 {
 lean_object* v___x_1771_; 
-lean_inc_ref(v___y_1766_);
 v___x_1771_ = l_Lean_Meta_sortFVarIds___redArg(v_a_1761_, v___y_1766_);
 return v___x_1771_;
 }

@@ -23,7 +23,7 @@ lean_object* lean_nat_mul(lean_object*, lean_object*);
 uint8_t lean_nat_dec_lt(lean_object*, lean_object*);
 lean_object* lean_nat_add(lean_object*, lean_object*);
 lean_object* l_mkPanicMessageWithDecl(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-lean_object* lean_panic_fn(lean_object*, lean_object*);
+lean_object* lean_panic_fn_borrowed(lean_object*, lean_object*);
 lean_object* l_System_FilePath_normalize(lean_object*);
 lean_object* l_Lake_Dependency_materialize(lean_object*, uint8_t, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Std_DTreeMap_Internal_Impl_insert___at___00Lean_NameMap_insert_spec__0___redArg(lean_object*, lean_object*, lean_object*);
@@ -12878,7 +12878,7 @@ _start:
 {
 lean_object* v___x_3738_; lean_object* v___x_3739_; 
 v___x_3738_ = lean_box(1);
-v___x_3739_ = lean_panic_fn(v___x_3738_, v_msg_3737_);
+v___x_3739_ = lean_panic_fn_borrowed(v___x_3738_, v_msg_3737_);
 return v___x_3739_;
 }
 }

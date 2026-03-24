@@ -86,7 +86,7 @@ lean_object* l_StateT_map(lean_object*, lean_object*, lean_object*, lean_object*
 lean_object* l_StateT_pure(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_StateT_bind(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_instInhabitedOfMonad___redArg(lean_object*, lean_object*);
-lean_object* lean_panic_fn(lean_object*, lean_object*);
+lean_object* lean_panic_fn_borrowed(lean_object*, lean_object*);
 lean_object* l_Lean_Elab_Info_updateContext_x3f(lean_object*, lean_object*);
 lean_object* l_Lean_PersistentArray_toList___redArg(lean_object*);
 lean_object* l_List_reverse___redArg(lean_object*);
@@ -10360,7 +10360,8 @@ lean_ctor_set(v___x_2557_, 0, v___x_2555_);
 lean_ctor_set(v___x_2557_, 1, v___x_2556_);
 v___x_2558_ = lean_box(0);
 v___x_2559_ = l_instInhabitedOfMonad___redArg(v___x_2557_, v___x_2558_);
-v___x_3178__overap_2560_ = lean_panic_fn(v___x_2559_, v_msg_2536_);
+v___x_3178__overap_2560_ = lean_panic_fn_borrowed(v___x_2559_, v_msg_2536_);
+lean_dec(v___x_2559_);
 v___x_2561_ = lean_apply_1(v___x_3178__overap_2560_, v___y_2537_);
 return v___x_2561_;
 }
@@ -12548,7 +12549,8 @@ lean_ctor_set(v___x_3390_, 0, v___x_3388_);
 lean_ctor_set(v___x_3390_, 1, v___x_3389_);
 v___x_3391_ = lean_box(0);
 v___x_3392_ = l_instInhabitedOfMonad___redArg(v___x_3390_, v___x_3391_);
-v___x_3773__overap_3393_ = lean_panic_fn(v___x_3392_, v_msg_3369_);
+v___x_3773__overap_3393_ = lean_panic_fn_borrowed(v___x_3392_, v_msg_3369_);
+lean_dec(v___x_3392_);
 v___x_3394_ = lean_apply_1(v___x_3773__overap_3393_, v___y_3370_);
 return v___x_3394_;
 }
@@ -25351,7 +25353,7 @@ _start:
 {
 lean_object* v___x_7014_; lean_object* v___x_7015_; 
 v___x_7014_ = ((lean_object*)(l_Lean_Server_instInhabitedModuleImport_default));
-v___x_7015_ = lean_panic_fn(v___x_7014_, v_msg_7013_);
+v___x_7015_ = lean_panic_fn_borrowed(v___x_7014_, v_msg_7013_);
 return v___x_7015_;
 }
 }

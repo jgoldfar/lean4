@@ -2151,7 +2151,6 @@ if (v_enableLog_618_ == 0)
 {
 lean_object* v___x_636_; 
 lean_dec_ref(v_env_634_);
-lean_dec_ref(v___y_625_);
 v___x_636_ = lean_alloc_ctor(0, 1, 0);
 lean_ctor_set(v___x_636_, 0, v_res_635_);
 return v___x_636_;
@@ -2164,7 +2163,6 @@ lean_dec_ref(v_env_634_);
 if (v_isExporting_637_ == 0)
 {
 lean_object* v___x_638_; 
-lean_dec_ref(v___y_625_);
 v___x_638_ = lean_alloc_ctor(0, 1, 0);
 lean_ctor_set(v___x_638_, 0, v_res_635_);
 return v___x_638_;
@@ -2185,7 +2183,6 @@ v_fst_642_ = lean_ctor_get(v_val_641_, 0);
 lean_inc(v_fst_642_);
 lean_dec(v_val_641_);
 v___x_643_ = l_Lean_checkPrivateInPublic___at___00Lean_resolveGlobalName___at___00__private_Lean_ResolveName_0__Lean_resolveGlobalConstCore___at___00Lean_resolveGlobalConst___at___00Lean_Elab_Tactic_evalSimpTrace_spec__1_spec__1_spec__2_spec__5(v_fst_642_, v___y_619_, v___y_620_, v___y_621_, v___y_622_, v___y_623_, v___y_624_, v___y_625_, v___y_626_);
-lean_dec_ref(v___y_625_);
 if (lean_obj_tag(v___x_643_) == 0)
 {
 lean_object* v___x_645_; uint8_t v_isShared_646_; uint8_t v_isSharedCheck_650_; 
@@ -2276,7 +2273,6 @@ else
 {
 lean_object* v___x_660_; 
 lean_dec(v___x_640_);
-lean_dec_ref(v___y_625_);
 v___x_660_ = lean_alloc_ctor(0, 1, 0);
 lean_ctor_set(v___x_660_, 0, v_res_635_);
 return v___x_660_;
@@ -2292,6 +2288,7 @@ uint8_t v_enableLog_boxed_672_; lean_object* v_res_673_;
 v_enableLog_boxed_672_ = lean_unbox(v_enableLog_662_);
 v_res_673_ = l_Lean_resolveGlobalName___at___00__private_Lean_ResolveName_0__Lean_resolveGlobalConstCore___at___00Lean_resolveGlobalConst___at___00Lean_Elab_Tactic_evalSimpTrace_spec__1_spec__1_spec__2(v_id_661_, v_enableLog_boxed_672_, v___y_663_, v___y_664_, v___y_665_, v___y_666_, v___y_667_, v___y_668_, v___y_669_, v___y_670_);
 lean_dec(v___y_670_);
+lean_dec_ref(v___y_669_);
 lean_dec(v___y_668_);
 lean_dec_ref(v___y_667_);
 lean_dec(v___y_666_);
@@ -3168,7 +3165,6 @@ _start:
 {
 uint8_t v___x_1025_; lean_object* v___x_1026_; 
 v___x_1025_ = 1;
-lean_inc_ref(v___y_1022_);
 lean_inc(v_n_1015_);
 v___x_1026_ = l_Lean_resolveGlobalName___at___00__private_Lean_ResolveName_0__Lean_resolveGlobalConstCore___at___00Lean_resolveGlobalConst___at___00Lean_Elab_Tactic_evalSimpTrace_spec__1_spec__1_spec__2(v_n_1015_, v___x_1025_, v___y_1016_, v___y_1017_, v___y_1018_, v___y_1019_, v___y_1020_, v___y_1021_, v___y_1022_, v___y_1023_);
 if (lean_obj_tag(v___x_1026_) == 0)

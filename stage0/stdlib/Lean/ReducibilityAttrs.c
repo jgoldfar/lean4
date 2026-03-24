@@ -6240,8 +6240,6 @@ v_resetjp_1984_:
 lean_object* v___x_1987_; lean_object* v_currNamespace_1988_; lean_object* v_env_1989_; lean_object* v_nextMacroScope_1990_; lean_object* v_ngen_1991_; lean_object* v_auxDeclNGen_1992_; lean_object* v_traceState_1993_; lean_object* v_messages_1994_; lean_object* v_infoState_1995_; lean_object* v_snapshotTasks_1996_; lean_object* v___x_1998_; uint8_t v_isShared_1999_; uint8_t v_isSharedCheck_2010_; 
 v___x_1987_ = lean_st_ref_take(v_a_1980_);
 v_currNamespace_1988_ = lean_ctor_get(v_a_1979_, 6);
-lean_inc(v_currNamespace_1988_);
-lean_dec_ref(v_a_1979_);
 v_env_1989_ = lean_ctor_get(v___x_1987_, 0);
 v_nextMacroScope_1990_ = lean_ctor_get(v___x_1987_, 1);
 v_ngen_1991_ = lean_ctor_get(v___x_1987_, 2);
@@ -6278,6 +6276,7 @@ goto v_resetjp_1997_;
 v_resetjp_1997_:
 {
 lean_object* v___x_2000_; lean_object* v___x_2001_; lean_object* v___x_2003_; 
+lean_inc(v_currNamespace_1988_);
 v___x_2000_ = l___private_Lean_ReducibilityAttrs_0__Lean_setReducibilityStatusCore(v_env_1989_, v_declName_1976_, v_status_1975_, v_attrKind_1978_, v_currNamespace_1988_);
 v___x_2001_ = lean_obj_once(&l_Lean_withExporting___at___00Lean_withoutExporting___at___00__private_Lean_ReducibilityAttrs_0__Lean_validate_spec__3_spec__5___redArg___closed__2, &l_Lean_withExporting___at___00Lean_withoutExporting___at___00__private_Lean_ReducibilityAttrs_0__Lean_validate_spec__3_spec__5___redArg___closed__2_once, _init_l_Lean_withExporting___at___00Lean_withoutExporting___at___00__private_Lean_ReducibilityAttrs_0__Lean_validate_spec__3_spec__5___redArg___closed__2);
 if (v_isShared_1999_ == 0)
@@ -6332,14 +6331,12 @@ return v___x_2007_;
 }
 else
 {
-lean_dec_ref(v_a_1979_);
 lean_dec(v_declName_1976_);
 return v___x_1983_;
 }
 }
 else
 {
-lean_dec_ref(v_a_1979_);
 lean_dec(v_declName_1976_);
 return v___x_1982_;
 }
@@ -6353,6 +6350,7 @@ v_status_boxed_2021_ = lean_unbox(v_status_2014_);
 v_attrKind_boxed_2022_ = lean_unbox(v_attrKind_2017_);
 v_res_2023_ = l___private_Lean_ReducibilityAttrs_0__Lean_addAttr(v_status_boxed_2021_, v_declName_2015_, v_stx_2016_, v_attrKind_boxed_2022_, v_a_2018_, v_a_2019_);
 lean_dec(v_a_2019_);
+lean_dec_ref(v_a_2018_);
 return v_res_2023_;
 }
 }

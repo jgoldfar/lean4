@@ -127,7 +127,7 @@ lean_object* l_Lean_MessageData_ofName(lean_object*);
 lean_object* l_Lean_MessageData_ofExpr(lean_object*);
 lean_object* l_Lean_MessageData_ofList(lean_object*);
 lean_object* l_Lean_throwError___redArg(lean_object*, lean_object*, lean_object*);
-lean_object* lean_panic_fn(lean_object*, lean_object*);
+lean_object* lean_panic_fn_borrowed(lean_object*, lean_object*);
 lean_object* l_Lean_Environment_getModuleIdxFor_x3f(lean_object*, lean_object*);
 lean_object* l_Lean_TSyntax_getId(lean_object*);
 lean_object* l_Lean_Name_toStringWithToken___at___00Lean_Name_toString_spec__0(lean_object*, uint8_t);
@@ -3986,7 +3986,6 @@ LEAN_EXPORT uint8_t l___private_Lean_ResolveName_0__Lean_ResolveName_containsDec
 _start:
 {
 uint8_t v___y_1225_; uint8_t v___x_1228_; 
-lean_inc_ref(v_env_1222_);
 v___x_1228_ = l_Lean_Environment_containsOnBranch(v_env_1222_, v_declName_1223_);
 if (v___x_1228_ == 0)
 {
@@ -5057,7 +5056,7 @@ _start:
 {
 lean_object* v___x_1565_; lean_object* v___x_1566_; 
 v___x_1565_ = lean_box(0);
-v___x_1566_ = lean_panic_fn(v___x_1565_, v_msg_1564_);
+v___x_1566_ = lean_panic_fn_borrowed(v___x_1565_, v_msg_1564_);
 return v___x_1566_;
 }
 }
@@ -6970,6 +6969,7 @@ v___x_2554_ = lean_box(0);
 v___x_2555_ = l_instInhabitedOfMonad___redArg(v_inst_2550_, v___x_2554_);
 v___x_2556_ = lean_obj_once(&l_Lean_ensureNonAmbiguous___redArg___closed__1, &l_Lean_ensureNonAmbiguous___redArg___closed__1_once, _init_l_Lean_ensureNonAmbiguous___redArg___closed__1);
 v___x_2557_ = l_panic___redArg(v___x_2555_, v___x_2556_);
+lean_dec(v___x_2555_);
 return v___x_2557_;
 }
 else

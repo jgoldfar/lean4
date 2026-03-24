@@ -5539,6 +5539,7 @@ else
 {
 lean_object* v___x_1735_; 
 v___x_1735_ = l_Lean_PersistentArray_get_x21___redArg(v___x_1732_, v_lowers_1730_, v_v_1698_);
+lean_dec_ref(v_lowers_1730_);
 v___y_1702_ = v___x_1735_;
 goto v___jp_1701_;
 }
@@ -5564,6 +5565,7 @@ else
 {
 lean_object* v___x_1741_; 
 v___x_1741_ = l_Lean_PersistentArray_get_x21___redArg(v___x_1738_, v_uppers_1736_, v_v_1698_);
+lean_dec_ref(v_uppers_1736_);
 v___y_1702_ = v___x_1741_;
 goto v___jp_1701_;
 }
@@ -8551,6 +8553,7 @@ else
 {
 lean_object* v___x_2724_; 
 v___x_2724_ = l_Lean_PersistentArray_get_x21___redArg(v___x_2721_, v_diseqs_2719_, v_x_2678_);
+lean_dec_ref(v_diseqs_2719_);
 v___y_2694_ = v___x_2724_;
 goto v___jp_2693_;
 }

@@ -530,6 +530,7 @@ lean_object* v_res_54_;
 v_res_54_ = l_Lean_Meta_Simp_Arith_Int_simpEq_x3f___lam__0(v___x_51_, v_snd_52_, v_x_53_);
 lean_dec(v_x_53_);
 lean_dec_ref(v_snd_52_);
+lean_dec_ref(v___x_51_);
 return v_res_54_;
 }
 }

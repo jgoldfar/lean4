@@ -4567,6 +4567,7 @@ v___x_1746_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_1746_, 0, v___x_1741_);
 lean_ctor_set(v___x_1746_, 1, v___x_1745_);
 v___x_1747_ = lean_array_get_borrowed(v___x_1746_, v_declInfos_1627_, v___x_1736_);
+lean_dec_ref(v___x_1746_);
 v_snd_1748_ = lean_ctor_get(v___x_1747_, 1);
 v_fst_1749_ = lean_ctor_get(v___x_1747_, 0);
 lean_inc(v_fst_1749_);

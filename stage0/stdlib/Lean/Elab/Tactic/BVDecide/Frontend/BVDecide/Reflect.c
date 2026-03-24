@@ -74,7 +74,7 @@ lean_object* l_ReaderT_instApplicativeOfMonad___redArg___lam__4(lean_object*, le
 lean_object* l_Lean_Meta_instMonadMetaM___lam__0___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Meta_instMonadMetaM___lam__1___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_instInhabitedOfMonad___redArg(lean_object*, lean_object*);
-lean_object* lean_panic_fn(lean_object*, lean_object*);
+lean_object* lean_panic_fn_borrowed(lean_object*, lean_object*);
 lean_object* l_mkPanicMessageWithDecl(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Expr_eqv___boxed(lean_object*, lean_object*);
 lean_object* l_Lean_Expr_hash___boxed(lean_object*);
@@ -4492,7 +4492,8 @@ lean_object* v___x_1583_; lean_object* v___x_1584_; lean_object* v___x_1585_; le
 v___x_1583_ = l_StateRefT_x27_instMonad___redArg(v___x_1582_);
 v___x_1584_ = lean_box(0);
 v___x_1585_ = l_instInhabitedOfMonad___redArg(v___x_1583_, v___x_1584_);
-v___x_4147__overap_1586_ = lean_panic_fn(v___x_1585_, v_msg_1527_);
+v___x_4147__overap_1586_ = lean_panic_fn_borrowed(v___x_1585_, v_msg_1527_);
+lean_dec(v___x_1585_);
 lean_inc(v___y_1532_);
 lean_inc_ref(v___y_1531_);
 lean_inc(v___y_1530_);
