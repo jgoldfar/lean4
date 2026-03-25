@@ -1,6 +1,6 @@
 // Lean compiler output
 // Module: Lean.Elab.Deriving.Basic
-// Imports: public import Lean.Elab.App public import Lean.Elab.DeclNameGen import Lean.Compiler.NoncomputableAttr import Lean.Meta.InstanceNormalForm
+// Imports: public import Lean.Elab.App public import Lean.Elab.DeclNameGen import Lean.Compiler.NoncomputableAttr import Lean.Meta.WrapInstance
 #include <lean/lean.h>
 #if defined(__clang__)
 #pragma clang diagnostic ignored "-Wunused-parameter"
@@ -133,7 +133,7 @@ lean_object* l_Lean_MessageData_ofSyntax(lean_object*);
 lean_object* l_Lean_indentD(lean_object*);
 lean_object* l_Lean_Meta_Closure_mkValueTypeClosure(lean_object*, lean_object*, uint8_t, lean_object*, lean_object*, lean_object*, lean_object*);
 extern lean_object* l_Lean_Meta_backward_inferInstanceAs_wrap;
-lean_object* l_Lean_Meta_normalizeInstance(lean_object*, lean_object*, uint8_t, uint8_t, uint8_t, lean_object*, lean_object*, lean_object*, lean_object*);
+lean_object* l_Lean_Meta_wrapInstance(lean_object*, lean_object*, uint8_t, uint8_t, uint8_t, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l___private_Lean_Meta_Basic_0__Lean_Meta_withNewMCtxDepthImp(lean_object*, uint8_t, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 uint8_t lean_name_eq(lean_object*, lean_object*);
 lean_object* l_Lean_Elab_Command_NameGen_mkBaseNameWithSuffix(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
@@ -12479,7 +12479,7 @@ LEAN_EXPORT lean_object* l_Lean_Elab_Term_processDefDeriving___lam__0(lean_objec
 _start:
 {
 lean_object* v___x_3750_; 
-v___x_3750_ = l_Lean_Meta_normalizeInstance(v_instVal_3738_, v_instType_3739_, v___x_3740_, v___x_3741_, v___y_3742_, v___y_3745_, v___y_3746_, v___y_3747_, v___y_3748_);
+v___x_3750_ = l_Lean_Meta_wrapInstance(v_instVal_3738_, v_instType_3739_, v___x_3740_, v___x_3741_, v___y_3742_, v___y_3745_, v___y_3746_, v___y_3747_, v___y_3748_);
 return v___x_3750_;
 }
 }
@@ -27447,7 +27447,7 @@ return v_res_9170_;
 lean_object* runtime_initialize_Lean_Elab_App(uint8_t builtin);
 lean_object* runtime_initialize_Lean_Elab_DeclNameGen(uint8_t builtin);
 lean_object* runtime_initialize_Lean_Compiler_NoncomputableAttr(uint8_t builtin);
-lean_object* runtime_initialize_Lean_Meta_InstanceNormalForm(uint8_t builtin);
+lean_object* runtime_initialize_Lean_Meta_WrapInstance(uint8_t builtin);
 static bool _G_runtime_initialized = false;
 LEAN_EXPORT lean_object* runtime_initialize_Lean_Elab_Deriving_Basic(uint8_t builtin) {
 lean_object * res;
@@ -27462,7 +27462,7 @@ lean_dec_ref(res);
 res = runtime_initialize_Lean_Compiler_NoncomputableAttr(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-res = runtime_initialize_Lean_Meta_InstanceNormalForm(builtin);
+res = runtime_initialize_Lean_Meta_WrapInstance(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 res = l_Lean_Elab_initFn_00___x40_Lean_Elab_Deriving_Basic_393575330____hygCtx___hyg_2_();
@@ -27491,7 +27491,7 @@ return lean_io_result_mk_ok(lean_box(0));
 lean_object* initialize_Lean_Elab_App(uint8_t builtin);
 lean_object* initialize_Lean_Elab_DeclNameGen(uint8_t builtin);
 lean_object* initialize_Lean_Compiler_NoncomputableAttr(uint8_t builtin);
-lean_object* initialize_Lean_Meta_InstanceNormalForm(uint8_t builtin);
+lean_object* initialize_Lean_Meta_WrapInstance(uint8_t builtin);
 static bool _G_initialized = false;
 LEAN_EXPORT lean_object* initialize_Lean_Elab_Deriving_Basic(uint8_t builtin) {
 lean_object * res;
@@ -27506,7 +27506,7 @@ lean_dec_ref(res);
 res = initialize_Lean_Compiler_NoncomputableAttr(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-res = initialize_Lean_Meta_InstanceNormalForm(builtin);
+res = initialize_Lean_Meta_WrapInstance(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 res = runtime_initialize_Lean_Elab_Deriving_Basic(builtin);

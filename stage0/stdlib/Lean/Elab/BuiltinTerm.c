@@ -1,6 +1,6 @@
 // Lean compiler output
 // Module: Lean.Elab.BuiltinTerm
-// Imports: public import Lean.Meta.Diagnostics public import Lean.Meta.InstanceNormalForm public import Lean.Elab.Open public import Lean.Elab.SetOption public import Lean.Elab.Eval import Lean.Compiler.NoncomputableAttr
+// Imports: public import Lean.Meta.Diagnostics public import Lean.Meta.WrapInstance public import Lean.Elab.Open public import Lean.Elab.SetOption public import Lean.Elab.Eval import Lean.Compiler.NoncomputableAttr
 #include <lean/lean.h>
 #if defined(__clang__)
 #pragma clang diagnostic ignored "-Wunused-parameter"
@@ -124,7 +124,7 @@ lean_object* l_Lean_LocalDecl_fvarId(lean_object*);
 uint8_t l_Lean_Expr_hasFVar(lean_object*);
 uint8_t l_Lean_Expr_hasMVar(lean_object*);
 lean_object* l___private_Lean_MetavarContext_0__Lean_DependsOn_dep_visit(lean_object*, lean_object*, lean_object*, lean_object*);
-lean_object* l_Lean_Meta_normalizeInstance(lean_object*, lean_object*, uint8_t, uint8_t, uint8_t, lean_object*, lean_object*, lean_object*, lean_object*);
+lean_object* l_Lean_Meta_wrapInstance(lean_object*, lean_object*, uint8_t, uint8_t, uint8_t, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Meta_mkFreshExprMVar(lean_object*, uint8_t, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Expr_mvarId_x21(lean_object*);
 lean_object* l_Lean_Elab_Term_registerMVarErrorHoleInfo___redArg(lean_object*, lean_object*, lean_object*);
@@ -15950,7 +15950,7 @@ LEAN_EXPORT lean_object* l_Lean_Elab_Term_elabInferInstanceAs___lam__0(lean_obje
 _start:
 {
 lean_object* v___x_6281_; 
-v___x_6281_ = l_Lean_Meta_normalizeInstance(v_a_6269_, v_val_6270_, v___x_6271_, v___y_6272_, v___y_6273_, v___y_6276_, v___y_6277_, v___y_6278_, v___y_6279_);
+v___x_6281_ = l_Lean_Meta_wrapInstance(v_a_6269_, v_val_6270_, v___x_6271_, v___y_6272_, v___y_6273_, v___y_6276_, v___y_6277_, v___y_6278_, v___y_6279_);
 return v___x_6281_;
 }
 }
@@ -30754,7 +30754,7 @@ return v_res_12085_;
 }
 }
 lean_object* runtime_initialize_Lean_Meta_Diagnostics(uint8_t builtin);
-lean_object* runtime_initialize_Lean_Meta_InstanceNormalForm(uint8_t builtin);
+lean_object* runtime_initialize_Lean_Meta_WrapInstance(uint8_t builtin);
 lean_object* runtime_initialize_Lean_Elab_Open(uint8_t builtin);
 lean_object* runtime_initialize_Lean_Elab_SetOption(uint8_t builtin);
 lean_object* runtime_initialize_Lean_Elab_Eval(uint8_t builtin);
@@ -30767,7 +30767,7 @@ _G_runtime_initialized = true;
 res = runtime_initialize_Lean_Meta_Diagnostics(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-res = runtime_initialize_Lean_Meta_InstanceNormalForm(builtin);
+res = runtime_initialize_Lean_Meta_WrapInstance(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 res = runtime_initialize_Lean_Elab_Open(builtin);
@@ -30996,7 +30996,7 @@ _G_meta_initialized = true;
 return lean_io_result_mk_ok(lean_box(0));
 }
 lean_object* initialize_Lean_Meta_Diagnostics(uint8_t builtin);
-lean_object* initialize_Lean_Meta_InstanceNormalForm(uint8_t builtin);
+lean_object* initialize_Lean_Meta_WrapInstance(uint8_t builtin);
 lean_object* initialize_Lean_Elab_Open(uint8_t builtin);
 lean_object* initialize_Lean_Elab_SetOption(uint8_t builtin);
 lean_object* initialize_Lean_Elab_Eval(uint8_t builtin);
@@ -31009,7 +31009,7 @@ _G_initialized = true;
 res = initialize_Lean_Meta_Diagnostics(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-res = initialize_Lean_Meta_InstanceNormalForm(builtin);
+res = initialize_Lean_Meta_WrapInstance(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 res = initialize_Lean_Elab_Open(builtin);
