@@ -2059,6 +2059,7 @@ v___jp_464_:
 uint8_t v___x_468_; 
 lean_inc(v___y_467_);
 lean_inc(v_x_447_);
+lean_inc_ref(v___y_465_);
 v___x_468_ = l_List_elem___redArg(v___y_465_, v_x_447_, v___y_467_);
 if (v___x_468_ == 0)
 {

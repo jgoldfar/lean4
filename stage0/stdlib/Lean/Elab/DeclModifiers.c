@@ -2202,6 +2202,7 @@ v___jp_580_:
 {
 lean_object* v___x_582_; lean_object* v___x_583_; uint8_t v___x_584_; lean_object* v___x_585_; lean_object* v___x_586_; 
 v___x_582_ = ((lean_object*)(l_Lean_Elab_instReprComputeKind_repr___closed__1));
+lean_inc(v___y_581_);
 v___x_583_ = lean_alloc_ctor(4, 2, 0);
 lean_ctor_set(v___x_583_, 0, v___y_581_);
 lean_ctor_set(v___x_583_, 1, v___x_582_);
@@ -2216,6 +2217,7 @@ v___jp_587_:
 {
 lean_object* v___x_589_; lean_object* v___x_590_; uint8_t v___x_591_; lean_object* v___x_592_; lean_object* v___x_593_; 
 v___x_589_ = ((lean_object*)(l_Lean_Elab_instReprComputeKind_repr___closed__3));
+lean_inc(v___y_588_);
 v___x_590_ = lean_alloc_ctor(4, 2, 0);
 lean_ctor_set(v___x_590_, 0, v___y_588_);
 lean_ctor_set(v___x_590_, 1, v___x_589_);
@@ -2230,6 +2232,7 @@ v___jp_594_:
 {
 lean_object* v___x_596_; lean_object* v___x_597_; uint8_t v___x_598_; lean_object* v___x_599_; lean_object* v___x_600_; 
 v___x_596_ = ((lean_object*)(l_Lean_Elab_instReprComputeKind_repr___closed__5));
+lean_inc(v___y_595_);
 v___x_597_ = lean_alloc_ctor(4, 2, 0);
 lean_ctor_set(v___x_597_, 0, v___y_595_);
 lean_ctor_set(v___x_597_, 1, v___x_596_);
@@ -2931,6 +2934,7 @@ goto v___jp_831_;
 v___jp_831_:
 {
 lean_object* v___x_833_; uint8_t v___x_834_; lean_object* v___x_835_; lean_object* v___x_836_; lean_object* v___x_837_; lean_object* v___x_838_; uint8_t v___x_839_; lean_object* v___x_840_; lean_object* v___x_841_; lean_object* v___x_842_; lean_object* v___x_843_; lean_object* v___x_844_; lean_object* v___x_845_; lean_object* v___x_846_; lean_object* v___x_847_; lean_object* v___x_848_; lean_object* v___x_849_; lean_object* v___x_850_; lean_object* v___x_851_; uint8_t v___x_852_; lean_object* v___x_853_; 
+lean_inc_ref(v___y_832_);
 v___x_833_ = lean_alloc_ctor(3, 1, 0);
 lean_ctor_set(v___x_833_, 0, v___y_832_);
 v___x_834_ = 1;
@@ -3119,6 +3123,7 @@ goto v___jp_1015_;
 v___jp_1015_:
 {
 lean_object* v___x_1018_; 
+lean_inc_ref(v___y_1016_);
 if (v_isShared_1000_ == 0)
 {
 lean_ctor_set_tag(v___x_999_, 3);

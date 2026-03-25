@@ -13899,6 +13899,7 @@ lean_object* v___x_4576_; lean_object* v___x_4577_; lean_object* v___x_4578_; le
 v___x_4576_ = lean_box(0);
 v___x_4577_ = l_List_mapTR_loop___at___00Lean_Elab_Tactic_BVDecide_Frontend_Normalize_typeAnalysisPass_spec__1(v___y_4575_, v___x_4576_);
 v___x_4578_ = l_Lean_MessageData_ofList(v___x_4577_);
+lean_inc_ref(v___y_4569_);
 v___x_4579_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_4579_, 0, v___y_4569_);
 lean_ctor_set(v___x_4579_, 1, v___x_4578_);
@@ -14017,6 +14018,7 @@ lean_object* v___x_4621_; lean_object* v___x_4622_; lean_object* v___x_4623_; le
 v___x_4621_ = lean_box(0);
 v___x_4622_ = l_List_mapTR_loop___at___00Lean_Elab_Tactic_BVDecide_Frontend_Normalize_typeAnalysisPass_spec__1(v___y_4620_, v___x_4621_);
 v___x_4623_ = l_Lean_MessageData_ofList(v___x_4622_);
+lean_inc_ref(v___y_4614_);
 v___x_4624_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_4624_, 0, v___y_4614_);
 lean_ctor_set(v___x_4624_, 1, v___x_4623_);

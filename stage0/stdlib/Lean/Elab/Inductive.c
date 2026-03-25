@@ -5274,6 +5274,7 @@ lean_ctor_set(v___x_1512_, 1, v_openDecls_1499_);
 v___x_1513_ = lean_alloc_ctor(4, 2, 0);
 lean_ctor_set(v___x_1513_, 0, v___x_1512_);
 lean_ctor_set(v___x_1513_, 1, v___y_1489_);
+lean_inc_ref(v___y_1490_);
 lean_inc_ref(v___y_1491_);
 v___x_1514_ = lean_alloc_ctor(0, 5, 3);
 lean_ctor_set(v___x_1514_, 0, v___y_1491_);
@@ -6337,6 +6338,7 @@ goto v___jp_2003_;
 v___jp_2003_:
 {
 lean_object* v___x_2005_; lean_object* v___x_2006_; lean_object* v___x_2007_; lean_object* v___x_2008_; 
+lean_inc_ref(v___y_2004_);
 v___x_2005_ = l_Lean_stringToMessageData(v___y_2004_);
 v___x_2006_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_2006_, 0, v___x_2002_);
@@ -6386,6 +6388,7 @@ return v___x_1986_;
 v___jp_1987_:
 {
 lean_object* v___x_1990_; lean_object* v___x_1991_; lean_object* v___x_1992_; lean_object* v___x_1993_; lean_object* v___x_1994_; lean_object* v___x_1995_; uint8_t v___x_1996_; 
+lean_inc_ref(v___y_1989_);
 v___x_1990_ = l_Lean_stringToMessageData(v___y_1989_);
 v___x_1991_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_1991_, 0, v___y_1988_);

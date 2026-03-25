@@ -8976,6 +8976,7 @@ v___jp_2105_:
 {
 uint8_t v___x_2108_; lean_object* v___x_2109_; lean_object* v___x_2110_; lean_object* v___x_2111_; lean_object* v___x_2112_; 
 v___x_2108_ = 3;
+lean_inc_ref(v___y_2106_);
 v___x_2109_ = lean_alloc_ctor(0, 1, 1);
 lean_ctor_set(v___x_2109_, 0, v___y_2106_);
 lean_ctor_set_uint8(v___x_2109_, sizeof(void*)*1, v___x_2108_);

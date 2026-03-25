@@ -10811,25 +10811,24 @@ uint8_t v___x_3406_;
 v___x_3406_ = lean_usize_dec_lt(v_i_3404_, v_sz_3403_);
 if (v___x_3406_ == 0)
 {
+lean_inc_ref(v_b_3405_);
 return v_b_3405_;
 }
 else
 {
 lean_object* v_a_3407_; lean_object* v_fst_3408_; lean_object* v___x_3409_; uint8_t v___x_3410_; 
-lean_dec_ref(v_b_3405_);
 v_a_3407_ = lean_array_uget_borrowed(v_as_3402_, v_i_3404_);
 v_fst_3408_ = lean_ctor_get(v_a_3407_, 0);
 v___x_3409_ = lean_box(0);
 v___x_3410_ = l_instDecidableEqRat_decEq(v_fst_3408_, v_v_3401_);
 if (v___x_3410_ == 0)
 {
-lean_object* v___x_3411_; size_t v___x_3412_; size_t v___x_3413_; 
+lean_object* v___x_3411_; size_t v___x_3412_; size_t v___x_3413_; lean_object* v___x_3414_; 
 v___x_3411_ = ((lean_object*)(l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00Lean_Meta_Grind_Arith_Linear_findDiseq_x3f_spec__0___closed__0));
 v___x_3412_ = ((size_t)1ULL);
 v___x_3413_ = lean_usize_add(v_i_3404_, v___x_3412_);
-v_i_3404_ = v___x_3413_;
-v_b_3405_ = v___x_3411_;
-goto _start;
+v___x_3414_ = l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00Lean_Meta_Grind_Arith_Linear_findDiseq_x3f_spec__0(v_v_3401_, v_as_3402_, v_sz_3403_, v___x_3413_, v___x_3411_);
+return v___x_3414_;
 }
 else
 {
@@ -10856,6 +10855,7 @@ lean_dec(v_sz_3420_);
 v_i_boxed_3424_ = lean_unbox_usize(v_i_3421_);
 lean_dec(v_i_3421_);
 v_res_3425_ = l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00Lean_Meta_Grind_Arith_Linear_findDiseq_x3f_spec__0(v_v_3418_, v_as_3419_, v_sz_boxed_3423_, v_i_boxed_3424_, v_b_3422_);
+lean_dec_ref(v_b_3422_);
 lean_dec_ref(v_as_3419_);
 lean_dec_ref(v_v_3418_);
 return v_res_3425_;
@@ -15927,6 +15927,7 @@ lean_object* v___x_5267_; lean_object* v___x_5268_; lean_object* v___x_5270_;
 v___x_5267_ = lean_alloc_ctor(3, 1, 0);
 lean_ctor_set(v___x_5267_, 0, v___y_5261_);
 v___x_5268_ = l_Lean_MessageData_ofFormat(v___x_5267_);
+lean_inc_ref(v___y_5258_);
 if (v_isShared_5266_ == 0)
 {
 lean_ctor_set_tag(v___x_5265_, 7);
@@ -16385,6 +16386,7 @@ v_reusejp_5107_:
 lean_object* v___x_5109_; lean_object* v___x_5111_; 
 v___x_5109_ = l_Lean_MessageData_ofFormat(v___x_5108_);
 lean_inc_ref(v___x_5109_);
+lean_inc_ref(v___y_5104_);
 if (v_isShared_5102_ == 0)
 {
 lean_ctor_set_tag(v___x_5101_, 7);
@@ -16449,6 +16451,7 @@ v___x_5133_ = lean_alloc_ctor(3, 1, 0);
 lean_ctor_set(v___x_5133_, 0, v___y_5132_);
 v___x_5134_ = l_Lean_MessageData_ofFormat(v___x_5133_);
 lean_inc_ref(v___x_5134_);
+lean_inc_ref(v___y_5130_);
 v___x_5135_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_5135_, 0, v___y_5130_);
 lean_ctor_set(v___x_5135_, 1, v___x_5134_);

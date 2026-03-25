@@ -1710,7 +1710,6 @@ v___jp_107_:
 {
 lean_object* v___x_110_; lean_object* v___x_111_; lean_object* v___x_112_; lean_object* v___x_113_; lean_object* v___x_114_; 
 v___x_110_ = lean_string_append(v___y_108_, v___y_109_);
-lean_dec_ref(v___y_109_);
 v___x_111_ = ((lean_object*)(l_Lean_Compiler_LCNF_Purity_withAssertPurity___redArg___closed__2));
 v___x_112_ = lean_string_append(v___x_110_, v___x_111_);
 v___x_113_ = l_mkPanicMessageWithDecl(v___x_103_, v___x_104_, v___x_105_, v___x_106_, v___x_112_);
@@ -1722,7 +1721,6 @@ v___jp_116_:
 {
 lean_object* v___x_118_; lean_object* v___x_119_; lean_object* v___x_120_; 
 v___x_118_ = lean_string_append(v___x_115_, v___y_117_);
-lean_dec_ref(v___y_117_);
 v___x_119_ = ((lean_object*)(l_Lean_Compiler_LCNF_Purity_withAssertPurity___redArg___closed__4));
 v___x_120_ = lean_string_append(v___x_118_, v___x_119_);
 if (v_is_99_ == 0)
@@ -1794,7 +1792,6 @@ v___jp_143_:
 {
 lean_object* v___x_146_; lean_object* v___x_147_; lean_object* v___x_148_; lean_object* v___x_149_; lean_object* v___x_150_; 
 v___x_146_ = lean_string_append(v___y_144_, v___y_145_);
-lean_dec_ref(v___y_145_);
 v___x_147_ = ((lean_object*)(l_Lean_Compiler_LCNF_Purity_withAssertPurity___redArg___closed__2));
 v___x_148_ = lean_string_append(v___x_146_, v___x_147_);
 v___x_149_ = l_mkPanicMessageWithDecl(v___x_139_, v___x_140_, v___x_141_, v___x_142_, v___x_148_);
@@ -1806,7 +1803,6 @@ v___jp_152_:
 {
 lean_object* v___x_154_; lean_object* v___x_155_; lean_object* v___x_156_; 
 v___x_154_ = lean_string_append(v___x_151_, v___y_153_);
-lean_dec_ref(v___y_153_);
 v___x_155_ = ((lean_object*)(l_Lean_Compiler_LCNF_Purity_withAssertPurity___redArg___closed__4));
 v___x_156_ = lean_string_append(v___x_154_, v___x_155_);
 if (v_is_135_ == 0)
@@ -8491,6 +8487,7 @@ v___x_2649_ = lean_unsigned_to_nat(3u);
 v___x_2650_ = lean_mk_empty_array_with_capacity(v___x_2649_);
 v___x_2651_ = lean_array_push(v___x_2650_, v___x_2645_);
 v___x_2652_ = lean_array_push(v___x_2651_, v___x_2646_);
+lean_inc_ref(v___y_2648_);
 v___x_2653_ = lean_array_push(v___x_2652_, v___y_2648_);
 v_sz_2654_ = lean_array_size(v_args_2641_);
 v___x_2655_ = ((size_t)0ULL);
@@ -21445,7 +21442,6 @@ v___jp_6793_:
 {
 lean_object* v___x_6796_; lean_object* v___x_6797_; lean_object* v___x_6798_; lean_object* v___x_6799_; lean_object* v___x_6800_; 
 v___x_6796_ = lean_string_append(v___y_6794_, v___y_6795_);
-lean_dec_ref(v___y_6795_);
 v___x_6797_ = ((lean_object*)(l_Lean_Compiler_LCNF_Purity_withAssertPurity___redArg___closed__2));
 v___x_6798_ = lean_string_append(v___x_6796_, v___x_6797_);
 v___x_6799_ = l_mkPanicMessageWithDecl(v___x_6789_, v___x_6790_, v___x_6791_, v___x_6792_, v___x_6798_);
@@ -21457,7 +21453,6 @@ v___jp_6802_:
 {
 lean_object* v___x_6804_; lean_object* v___x_6805_; lean_object* v___x_6806_; 
 v___x_6804_ = lean_string_append(v___x_6801_, v___y_6803_);
-lean_dec_ref(v___y_6803_);
 v___x_6805_ = ((lean_object*)(l_Lean_Compiler_LCNF_Decl_castPurity_x21___closed__2));
 v___x_6806_ = lean_string_append(v___x_6804_, v___x_6805_);
 if (v_pu2_6787_ == 0)

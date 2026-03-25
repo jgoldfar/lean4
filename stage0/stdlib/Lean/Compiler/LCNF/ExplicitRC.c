@@ -11818,7 +11818,6 @@ v___jp_4295_:
 {
 if (v___y_4299_ == 0)
 {
-lean_dec_ref(v___y_4298_);
 lean_inc_ref(v_value_4062_);
 v___y_4266_ = v___y_4296_;
 v___y_4267_ = v___y_4297_;
@@ -11835,6 +11834,7 @@ else
 {
 lean_object* v___x_4300_; lean_object* v___x_4301_; lean_object* v___x_4302_; 
 v___x_4300_ = ((lean_object*)(l___private_Lean_Compiler_LCNF_ExplicitRC_0__Lean_Compiler_LCNF_LetDecl_explicitRc___closed__3));
+lean_inc_ref(v___y_4298_);
 v___x_4301_ = l_Lean_Name_mkStr2(v___y_4298_, v___x_4300_);
 lean_inc_ref(v_args_4238_);
 v___x_4302_ = lean_alloc_ctor(9, 2, 0);
@@ -11883,6 +11883,7 @@ else
 {
 lean_object* v___x_4312_; lean_object* v___x_4313_; lean_object* v___x_4314_; 
 v___x_4312_ = ((lean_object*)(l___private_Lean_Compiler_LCNF_ExplicitRC_0__Lean_Compiler_LCNF_LetDecl_explicitRc___closed__4));
+lean_inc_ref(v___y_4307_);
 v___x_4313_ = l_Lean_Name_mkStr2(v___y_4307_, v___x_4312_);
 lean_inc_ref(v_args_4238_);
 v___x_4314_ = lean_alloc_ctor(9, 2, 0);
@@ -11933,6 +11934,7 @@ else
 {
 lean_object* v___x_4325_; lean_object* v___x_4326_; lean_object* v___x_4327_; 
 v___x_4325_ = ((lean_object*)(l___private_Lean_Compiler_LCNF_ExplicitRC_0__Lean_Compiler_LCNF_LetDecl_explicitRc___closed__5));
+lean_inc_ref(v___y_4320_);
 v___x_4326_ = l_Lean_Name_mkStr2(v___y_4320_, v___x_4325_);
 lean_inc_ref(v_args_4238_);
 v___x_4327_ = lean_alloc_ctor(9, 2, 0);

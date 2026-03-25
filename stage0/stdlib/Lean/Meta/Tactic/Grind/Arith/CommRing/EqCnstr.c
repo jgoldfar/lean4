@@ -38597,6 +38597,7 @@ return v___x_11565_;
 v___jp_11534_:
 {
 lean_object* v___x_11538_; 
+lean_inc_ref(v_a_11535_);
 if (v_isShared_11532_ == 0)
 {
 lean_ctor_set(v___x_11531_, 1, v_a_11535_);
@@ -39431,6 +39432,7 @@ return v___x_11798_;
 v___jp_11767_:
 {
 lean_object* v___x_11771_; 
+lean_inc_ref(v_a_11768_);
 if (v_isShared_11765_ == 0)
 {
 lean_ctor_set(v___x_11764_, 1, v_a_11768_);

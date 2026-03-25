@@ -1386,10 +1386,12 @@ v___x_502_ = lean_array_to_list(v_hyps_493_);
 v___x_503_ = lean_box(0);
 v___x_504_ = l_List_mapTR_loop___at___00__private_Lean_Elab_Tactic_Split_0__Lean_Elab_Tactic_evalSplit_throwMultipleLocationsAt_spec__0(v___x_502_, v___x_503_);
 v___x_505_ = l_Lean_MessageData_andList(v___x_504_);
+lean_inc_ref(v___y_501_);
 v_hypsStr_506_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v_hypsStr_506_, 0, v___y_501_);
 lean_ctor_set(v_hypsStr_506_, 1, v___x_505_);
 v___x_507_ = lean_obj_once(&l___private_Lean_Elab_Tactic_Split_0__Lean_Elab_Tactic_evalSplit_throwMultipleLocationsAt___redArg___closed__1, &l___private_Lean_Elab_Tactic_Split_0__Lean_Elab_Tactic_evalSplit_throwMultipleLocationsAt___redArg___closed__1_once, _init_l___private_Lean_Elab_Tactic_Split_0__Lean_Elab_Tactic_evalSplit_throwMultipleLocationsAt___redArg___closed__1);
+lean_inc_ref(v___y_500_);
 v___x_508_ = lean_alloc_ctor(3, 1, 0);
 lean_ctor_set(v___x_508_, 0, v___y_500_);
 v___x_509_ = l_Lean_MessageData_ofFormat(v___x_508_);
@@ -1579,6 +1581,7 @@ v___jp_613_:
 {
 lean_object* v___x_615_; lean_object* v___x_616_; lean_object* v___x_617_; lean_object* v___x_618_; lean_object* v___x_619_; lean_object* v___x_620_; lean_object* v___x_621_; 
 v___x_615_ = lean_obj_once(&l___private_Lean_Elab_Tactic_Split_0__Lean_Elab_Tactic_evalSplit_mkCasesHint___lam__0___closed__1, &l___private_Lean_Elab_Tactic_Split_0__Lean_Elab_Tactic_evalSplit_mkCasesHint___lam__0___closed__1_once, _init_l___private_Lean_Elab_Tactic_Split_0__Lean_Elab_Tactic_evalSplit_mkCasesHint___lam__0___closed__1);
+lean_inc_ref(v_val_614_);
 v___x_616_ = l_Lean_stringToMessageData(v_val_614_);
 v___x_617_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_617_, 0, v___x_615_);

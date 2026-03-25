@@ -17995,6 +17995,7 @@ goto v___jp_6658_;
 v___jp_6649_:
 {
 lean_object* v_fixpointInductThm_6652_; lean_object* v___f_6653_; lean_object* v___x_6654_; lean_object* v___x_6655_; lean_object* v___f_6656_; lean_object* v___x_6657_; 
+lean_inc(v___y_6651_);
 lean_inc(v_name_6637_);
 v_fixpointInductThm_6652_ = l_Lean_Name_append(v_name_6637_, v___y_6651_);
 lean_inc(v___y_6650_);
@@ -18023,6 +18024,7 @@ return v___x_6657_;
 v___jp_6658_:
 {
 lean_object* v_inductName_6660_; 
+lean_inc(v___y_6659_);
 lean_inc(v_name_6637_);
 v_inductName_6660_ = l_Lean_Name_append(v_name_6637_, v___y_6659_);
 if (v_isConclusionMutual_6638_ == 0)

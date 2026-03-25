@@ -1911,7 +1911,6 @@ v___jp_525_:
 lean_object* v_localTimeType_527_; 
 v_localTimeType_527_ = lean_ctor_get(v_val_526_, 1);
 lean_inc_ref(v_localTimeType_527_);
-lean_dec_ref(v_val_526_);
 v___y_508_ = v_localTimeType_527_;
 goto v___jp_507_;
 }
@@ -2428,7 +2427,6 @@ v___jp_695_:
 lean_object* v_localTimeType_697_; 
 v_localTimeType_697_ = lean_ctor_get(v_val_696_, 1);
 lean_inc_ref(v_localTimeType_697_);
-lean_dec_ref(v_val_696_);
 v___y_681_ = v_localTimeType_697_;
 goto v___jp_680_;
 }
@@ -2692,7 +2690,6 @@ v___jp_796_:
 lean_object* v_localTimeType_798_; 
 v_localTimeType_798_ = lean_ctor_get(v_val_797_, 1);
 lean_inc_ref(v_localTimeType_798_);
-lean_dec_ref(v_val_797_);
 v___y_782_ = v_localTimeType_798_;
 goto v___jp_781_;
 }

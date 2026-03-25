@@ -9834,6 +9834,7 @@ lean_ctor_set(v___x_1336_, 1, v___x_1335_);
 v___x_1337_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_1337_, 0, v_a_1327_);
 lean_ctor_set(v___x_1337_, 1, v___x_1336_);
+lean_inc_ref(v___y_1322_);
 v___x_1338_ = l___private_Lean_Util_Trace_0__Lean_withTraceNode_postCallback___at___00Lean_Elab_Tactic_NormCast_splittingProcedure_spec__0(v___y_1320_, v___y_1324_, v___y_1322_, v___y_1321_, v___y_1323_, v___y_1319_, v___y_1325_, v___x_1337_, v_a_1287_, v_a_1288_, v_a_1289_, v_a_1290_);
 return v___x_1338_;
 }
@@ -9973,6 +9974,7 @@ lean_ctor_set(v___x_1412_, 1, v___x_1411_);
 v___x_1413_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_1413_, 0, v_a_1406_);
 lean_ctor_set(v___x_1413_, 1, v___x_1412_);
+lean_inc_ref(v___y_1402_);
 v___x_1414_ = l___private_Lean_Util_Trace_0__Lean_withTraceNode_postCallback___at___00Lean_Elab_Tactic_NormCast_splittingProcedure_spec__0(v___y_1400_, v___y_1404_, v___y_1402_, v___y_1401_, v___y_1403_, v___y_1399_, v___y_1405_, v___x_1413_, v_a_1287_, v_a_1288_, v_a_1289_, v_a_1290_);
 return v___x_1414_;
 }
@@ -13675,6 +13677,7 @@ goto v___jp_3597_;
 v___jp_3597_:
 {
 lean_object* v___x_3599_; lean_object* v___x_3600_; lean_object* v___x_3601_; lean_object* v___x_3602_; 
+lean_inc_ref(v___y_3598_);
 v___x_3599_ = l_Lean_stringToMessageData(v___y_3598_);
 v___x_3600_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_3600_, 0, v___x_3596_);
@@ -13724,6 +13727,7 @@ return v___x_3580_;
 v___jp_3581_:
 {
 lean_object* v___x_3584_; lean_object* v___x_3585_; lean_object* v___x_3586_; lean_object* v___x_3587_; lean_object* v___x_3588_; lean_object* v___x_3589_; uint8_t v___x_3590_; 
+lean_inc_ref(v___y_3583_);
 v___x_3584_ = l_Lean_stringToMessageData(v___y_3583_);
 v___x_3585_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_3585_, 0, v___y_3582_);

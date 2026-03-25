@@ -2236,6 +2236,7 @@ goto v___jp_409_;
 v___jp_409_:
 {
 lean_object* v___x_411_; lean_object* v___x_412_; lean_object* v___x_413_; lean_object* v___x_414_; 
+lean_inc_ref(v___y_410_);
 v___x_411_ = l_Lean_stringToMessageData(v___y_410_);
 v___x_412_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_412_, 0, v___x_408_);
@@ -2284,6 +2285,7 @@ return v___x_392_;
 v___jp_393_:
 {
 lean_object* v___x_396_; lean_object* v___x_397_; lean_object* v___x_398_; lean_object* v___x_399_; lean_object* v___x_400_; lean_object* v___x_401_; uint8_t v___x_402_; 
+lean_inc_ref(v___y_395_);
 v___x_396_ = l_Lean_stringToMessageData(v___y_395_);
 v___x_397_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_397_, 0, v___y_394_);
@@ -10118,6 +10120,7 @@ lean_dec_ref(v___x_3394_);
 if (v___x_3395_ == 0)
 {
 lean_dec_ref(v_tk_3274_);
+lean_inc_ref(v___y_3380_);
 v___y_3368_ = v___y_3382_;
 v___y_3369_ = v_stack_3389_;
 v___y_3370_ = v___y_3381_;
@@ -10131,7 +10134,6 @@ goto v___jp_3367_;
 }
 else
 {
-lean_dec_ref(v___y_3380_);
 v___y_3368_ = v___y_3382_;
 v___y_3369_ = v_stack_3389_;
 v___y_3370_ = v___y_3381_;
@@ -10379,6 +10381,7 @@ lean_dec_ref(v___x_3476_);
 if (v___x_3477_ == 0)
 {
 lean_dec_ref(v_tk_3274_);
+lean_inc_ref(v___y_3455_);
 v___y_3443_ = v_mustBeGrouped_3470_;
 v___y_3444_ = v___y_3459_;
 v___y_3445_ = v___y_3457_;
@@ -10392,7 +10395,6 @@ goto v___jp_3442_;
 }
 else
 {
-lean_dec_ref(v___y_3455_);
 v___y_3443_ = v_mustBeGrouped_3470_;
 v___y_3444_ = v___y_3459_;
 v___y_3445_ = v___y_3457_;
@@ -10464,6 +10466,7 @@ if (v___x_3513_ == 0)
 {
 lean_dec_ref(v_leadWord_3504_);
 lean_dec_ref(v_tk_3274_);
+lean_inc_ref(v___y_3494_);
 v___y_3482_ = v_mustBeGrouped_3506_;
 v___y_3483_ = v_isUngrouped_3505_;
 v___y_3484_ = v___y_3498_;
@@ -10478,7 +10481,6 @@ goto v___jp_3481_;
 else
 {
 lean_object* v___x_3514_; 
-lean_dec_ref(v___y_3494_);
 v___x_3514_ = lean_string_append(v_tk_3274_, v_leadWord_3504_);
 lean_dec_ref(v_leadWord_3504_);
 v___y_3482_ = v_mustBeGrouped_3506_;
@@ -14748,7 +14750,6 @@ if (v___x_5391_ == 0)
 {
 if (v___x_5351_ == 0)
 {
-lean_dec(v___y_5389_);
 goto v___jp_5367_;
 }
 else
@@ -14787,6 +14788,7 @@ v___x_5399_ = lean_alloc_ctor(0, 3, 0);
 lean_ctor_set(v___x_5399_, 0, v___x_5366_);
 lean_ctor_set(v___x_5399_, 1, v___x_5398_);
 lean_ctor_set(v___x_5399_, 2, v___y_5389_);
+lean_inc(v___y_5389_);
 v___x_5400_ = l_String_Slice_Pos_revSkipWhile___at___00Lean_PrettyPrinter_Formatter_pushToken_spec__6(v___x_5399_, v___y_5389_);
 lean_dec_ref(v___x_5399_);
 v___x_5401_ = lean_string_utf8_extract(v___x_5366_, v___x_5398_, v___x_5400_);
@@ -14828,7 +14830,6 @@ return v___x_5409_;
 }
 else
 {
-lean_dec(v___y_5389_);
 goto v___jp_5367_;
 }
 }
@@ -15065,7 +15066,6 @@ if (v___x_5465_ == 0)
 {
 if (v___x_5461_ == 0)
 {
-lean_dec(v___y_5463_);
 lean_del_object(v___x_5437_);
 goto v___jp_5439_;
 }
@@ -15124,6 +15124,7 @@ v___x_5476_ = lean_alloc_ctor(0, 3, 0);
 lean_ctor_set(v___x_5476_, 0, v___x_5430_);
 lean_ctor_set(v___x_5476_, 1, v___x_5475_);
 lean_ctor_set(v___x_5476_, 2, v___y_5463_);
+lean_inc(v___y_5463_);
 v___x_5477_ = l_String_Slice_Pos_revSkipWhile___at___00Lean_PrettyPrinter_Formatter_pushToken_spec__6(v___x_5476_, v___y_5463_);
 lean_dec_ref(v___x_5476_);
 v___x_5478_ = lean_string_utf8_extract(v___x_5430_, v___x_5475_, v___x_5477_);
@@ -15201,7 +15202,6 @@ return v___x_5488_;
 }
 else
 {
-lean_dec(v___y_5463_);
 lean_del_object(v___x_5437_);
 goto v___jp_5439_;
 }
@@ -16855,7 +16855,6 @@ if (v___y_5864_ == 0)
 if (lean_obj_tag(v___y_5860_) == 0)
 {
 lean_dec_ref(v___y_5860_);
-lean_dec(v___y_5859_);
 return v___y_5861_;
 }
 else
@@ -16866,7 +16865,6 @@ lean_inc(v_id_5865_);
 lean_dec_ref(v___y_5860_);
 v___x_5866_ = l_Lean_instBEqInternalExceptionId_beq(v___y_5859_, v_id_5865_);
 lean_dec(v_id_5865_);
-lean_dec(v___y_5859_);
 if (v___x_5866_ == 0)
 {
 return v___y_5861_;
@@ -16884,7 +16882,6 @@ return v___x_5868_;
 else
 {
 lean_dec_ref(v___y_5860_);
-lean_dec(v___y_5859_);
 return v___y_5861_;
 }
 }
@@ -16918,7 +16915,6 @@ goto v___jp_5858_;
 }
 v___jp_5877_:
 {
-lean_dec(v___y_5878_);
 return v___y_5881_;
 }
 v___jp_5886_:

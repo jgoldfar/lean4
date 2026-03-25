@@ -4771,6 +4771,7 @@ v___jp_1597_:
 {
 lean_object* v___x_1599_; lean_object* v___x_1600_; lean_object* v___x_1601_; lean_object* v___x_1602_; lean_object* v___x_1603_; lean_object* v___x_1604_; 
 v___x_1599_ = lean_obj_once(&l_Lean_Elab_Do_elabDoLetOrReassign___lam__1___closed__1, &l_Lean_Elab_Do_elabDoLetOrReassign___lam__1___closed__1_once, _init_l_Lean_Elab_Do_elabDoLetOrReassign___lam__1___closed__1);
+lean_inc_ref(v___y_1598_);
 v___x_1600_ = l_Lean_stringToMessageData(v___y_1598_);
 lean_inc_ref(v___x_1600_);
 v___x_1601_ = lean_alloc_ctor(7, 2, 0);
@@ -6993,6 +6994,7 @@ goto v___jp_2554_;
 v___jp_2554_:
 {
 lean_object* v___x_2556_; lean_object* v___x_2557_; lean_object* v___x_2558_; lean_object* v___x_2559_; 
+lean_inc_ref(v___y_2555_);
 v___x_2556_ = l_Lean_stringToMessageData(v___y_2555_);
 v___x_2557_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_2557_, 0, v___x_2553_);
@@ -7042,6 +7044,7 @@ return v___x_2537_;
 v___jp_2538_:
 {
 lean_object* v___x_2541_; lean_object* v___x_2542_; lean_object* v___x_2543_; lean_object* v___x_2544_; lean_object* v___x_2545_; lean_object* v___x_2546_; uint8_t v___x_2547_; 
+lean_inc_ref(v___y_2540_);
 v___x_2541_ = l_Lean_stringToMessageData(v___y_2540_);
 v___x_2542_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_2542_, 0, v___y_2539_);
@@ -12531,8 +12534,10 @@ goto v___jp_4609_;
 v___jp_4609_:
 {
 lean_object* v___x_4625_; lean_object* v___x_4626_; lean_object* v___x_4627_; lean_object* v___x_4628_; lean_object* v___x_4629_; lean_object* v___x_4630_; lean_object* v___x_4631_; lean_object* v___x_4632_; lean_object* v___x_4633_; lean_object* v___x_4634_; lean_object* v___x_4635_; lean_object* v___x_4636_; lean_object* v___x_4637_; 
+lean_inc_ref(v___y_4616_);
 v___x_4625_ = l_Array_append___redArg(v___y_4616_, v___y_4624_);
 lean_dec_ref(v___y_4624_);
+lean_inc(v___y_4613_);
 lean_inc(v___y_4618_);
 v___x_4626_ = lean_alloc_ctor(1, 3, 0);
 lean_ctor_set(v___x_4626_, 0, v___y_4618_);
@@ -12543,6 +12548,7 @@ lean_inc(v___y_4618_);
 v___x_4628_ = lean_alloc_ctor(2, 2, 0);
 lean_ctor_set(v___x_4628_, 0, v___y_4618_);
 lean_ctor_set(v___x_4628_, 1, v___x_4627_);
+lean_inc(v___y_4617_);
 v___x_4629_ = l_Lean_Syntax_node5(v___y_4618_, v___y_4617_, v___y_4621_, v___y_4614_, v___x_4626_, v___x_4628_, v___y_4615_);
 v___x_4630_ = ((lean_object*)(l___private_Lean_Elab_BuiltinDo_Let_0__Lean_Elab_Do_pushTypeIntoReassignment___closed__4));
 v___x_4631_ = lean_unsigned_to_nat(1u);

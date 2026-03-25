@@ -8664,12 +8664,12 @@ lean_dec_ref(v_accept_2622_);
 lean_dec(v_stack_2621_);
 lean_dec_ref(v_visit_2620_);
 lean_dec(v_stx_2619_);
+lean_inc_ref(v_b_2624_);
 return v_b_2624_;
 }
 else
 {
 lean_object* v___x_2631_; lean_object* v___x_2632_; lean_object* v___x_2633_; lean_object* v___x_2634_; uint8_t v___x_2635_; 
-lean_dec_ref(v_b_2624_);
 v___x_2631_ = lean_box(0);
 v___x_2632_ = ((lean_object*)(l___private_Lean_Syntax_0__Lean_Syntax_findStack_x3f_go___closed__0));
 v___x_2633_ = l_Lean_Syntax_getArg(v_stx_2619_, v_a_2623_);
@@ -8789,6 +8789,7 @@ _start:
 {
 lean_object* v_res_2665_; 
 v_res_2665_ = l_WellFounded_opaqueFix_u2083___at___00__private_Lean_Syntax_0__Lean_Syntax_findStack_x3f_go_spec__0___redArg(v_upperBound_2658_, v_stx_2659_, v_visit_2660_, v_stack_2661_, v_accept_2662_, v_a_2663_, v_b_2664_);
+lean_dec_ref(v_b_2664_);
 lean_dec(v_upperBound_2658_);
 return v_res_2665_;
 }
@@ -8806,6 +8807,7 @@ _start:
 {
 lean_object* v_res_2687_; 
 v_res_2687_ = l_WellFounded_opaqueFix_u2083___at___00__private_Lean_Syntax_0__Lean_Syntax_findStack_x3f_go_spec__0(v_upperBound_2677_, v_stx_2678_, v_visit_2679_, v_stack_2680_, v_accept_2681_, v_inst_2682_, v_R_2683_, v_a_2684_, v_b_2685_, v_c_2686_);
+lean_dec_ref(v_b_2685_);
 lean_dec(v_upperBound_2677_);
 return v_res_2687_;
 }

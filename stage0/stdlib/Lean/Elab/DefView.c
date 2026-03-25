@@ -2934,6 +2934,7 @@ goto v___jp_905_;
 v___jp_905_:
 {
 lean_object* v___x_907_; lean_object* v___x_908_; lean_object* v___x_909_; lean_object* v___x_910_; 
+lean_inc_ref(v___y_906_);
 v___x_907_ = l_Lean_stringToMessageData(v___y_906_);
 v___x_908_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_908_, 0, v___x_904_);
@@ -2982,6 +2983,7 @@ return v___x_888_;
 v___jp_889_:
 {
 lean_object* v___x_892_; lean_object* v___x_893_; lean_object* v___x_894_; lean_object* v___x_895_; lean_object* v___x_896_; lean_object* v___x_897_; uint8_t v___x_898_; 
+lean_inc_ref(v___y_891_);
 v___x_892_ = l_Lean_stringToMessageData(v___y_891_);
 v___x_893_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_893_, 0, v___y_890_);
@@ -5555,6 +5557,8 @@ v___jp_1493_:
 lean_object* v___x_1502_; lean_object* v___x_1503_; lean_object* v___x_1504_; lean_object* v___x_1505_; lean_object* v___x_1506_; uint8_t v___x_1507_; lean_object* v___x_1508_; lean_object* v___x_1509_; lean_object* v___x_1510_; lean_object* v___x_1511_; lean_object* v___x_1512_; lean_object* v___x_1513_; lean_object* v___x_1514_; 
 v___x_1502_ = ((lean_object*)(l_Lean_Elab_Command_mkDefViewOfInstance___closed__0));
 v___x_1503_ = ((lean_object*)(l_Lean_Elab_Command_mkDefViewOfInstance___closed__1));
+lean_inc_ref(v___y_1495_);
+lean_inc_ref(v___y_1501_);
 v___x_1504_ = l_Lean_Name_mkStr4(v___y_1501_, v___y_1495_, v___x_1502_, v___x_1503_);
 v___x_1505_ = lean_unsigned_to_nat(1u);
 v___x_1506_ = l_Lean_Syntax_getArg(v_stx_1464_, v___x_1505_);

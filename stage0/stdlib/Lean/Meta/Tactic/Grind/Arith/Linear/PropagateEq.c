@@ -12785,6 +12785,7 @@ v___jp_3828_:
 size_t v___x_3830_; size_t v___x_3831_; 
 v___x_3830_ = ((size_t)1ULL);
 v___x_3831_ = lean_usize_add(v_i_3814_, v___x_3830_);
+lean_inc_ref(v_a_3829_);
 v_i_3814_ = v___x_3831_;
 v_b_3815_ = v_a_3829_;
 goto _start;

@@ -3741,6 +3741,7 @@ return v___x_831_;
 v___jp_832_:
 {
 lean_object* v___x_843_; lean_object* v___x_844_; lean_object* v___x_845_; lean_object* v___x_846_; 
+lean_inc_ref(v___y_842_);
 v___x_843_ = lean_alloc_ctor(3, 1, 0);
 lean_ctor_set(v___x_843_, 0, v___y_842_);
 v___x_844_ = l_Lean_MessageData_ofFormat(v___x_843_);
@@ -5250,6 +5251,7 @@ v___jp_1523_:
 size_t v___x_1525_; size_t v___x_1526_; 
 v___x_1525_ = ((size_t)1ULL);
 v___x_1526_ = lean_usize_add(v_i_1521_, v___x_1525_);
+lean_inc_ref(v_a_1524_);
 v_i_1521_ = v___x_1526_;
 v_b_1522_ = v_a_1524_;
 goto _start;

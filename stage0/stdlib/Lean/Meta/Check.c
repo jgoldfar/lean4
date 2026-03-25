@@ -6355,6 +6355,7 @@ v___jp_1944_:
 {
 lean_object* v___x_1946_; lean_object* v___x_1947_; lean_object* v___x_1949_; 
 v___x_1946_ = lean_obj_once(&l_Lean_Meta_throwLetTypeMismatchMessage___redArg___closed__5, &l_Lean_Meta_throwLetTypeMismatchMessage___redArg___closed__5_once, _init_l_Lean_Meta_throwLetTypeMismatchMessage___redArg___closed__5);
+lean_inc_ref(v___y_1945_);
 v___x_1947_ = l_Lean_stringToMessageData(v___y_1945_);
 if (v_isShared_1943_ == 0)
 {

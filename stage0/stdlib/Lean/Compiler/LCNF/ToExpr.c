@@ -1772,6 +1772,8 @@ goto v_resetjp_688_;
 v_resetjp_688_:
 {
 lean_object* v_value_691_; lean_object* v___x_692_; lean_object* v___x_693_; uint8_t v___x_694_; lean_object* v___x_695_; lean_object* v___x_697_; 
+lean_inc_ref(v___y_681_);
+lean_inc_ref(v___y_680_);
 v_value_691_ = l_Lean_mkApp4(v___x_676_, v___x_677_, v___x_678_, v___y_680_, v___y_681_);
 v___x_692_ = ((lean_object*)(l_Lean_Compiler_LCNF_Code_toExprM___closed__10));
 v___x_693_ = lean_obj_once(&l_Lean_Compiler_LCNF_Code_toExprM___closed__13, &l_Lean_Compiler_LCNF_Code_toExprM___closed__13_once, _init_l_Lean_Compiler_LCNF_Code_toExprM___closed__13);
@@ -1878,6 +1880,8 @@ goto v___jp_734_;
 v___jp_723_:
 {
 lean_object* v___x_726_; lean_object* v___x_727_; lean_object* v___x_728_; uint8_t v___x_729_; lean_object* v___x_730_; lean_object* v___x_732_; 
+lean_inc_ref(v___y_725_);
+lean_inc_ref(v___y_724_);
 v___x_726_ = l_Lean_mkApp4(v___x_720_, v___x_721_, v___x_722_, v___y_724_, v___y_725_);
 v___x_727_ = ((lean_object*)(l_Lean_Compiler_LCNF_Code_toExprM___closed__10));
 v___x_728_ = lean_obj_once(&l_Lean_Compiler_LCNF_Code_toExprM___closed__13, &l_Lean_Compiler_LCNF_Code_toExprM___closed__13_once, _init_l_Lean_Compiler_LCNF_Code_toExprM___closed__13);

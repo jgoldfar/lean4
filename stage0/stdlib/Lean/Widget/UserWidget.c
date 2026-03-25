@@ -3260,6 +3260,7 @@ lean_ctor_set(v___x_775_, 1, v_openDecls_762_);
 v___x_776_ = lean_alloc_ctor(4, 2, 0);
 lean_ctor_set(v___x_776_, 0, v___x_775_);
 lean_ctor_set(v___x_776_, 1, v___y_753_);
+lean_inc_ref(v___y_752_);
 lean_inc_ref(v___y_751_);
 v___x_777_ = lean_alloc_ctor(0, 5, 3);
 lean_ctor_set(v___x_777_, 0, v___y_751_);
@@ -3741,6 +3742,7 @@ goto v___jp_958_;
 v___jp_958_:
 {
 lean_object* v___x_960_; lean_object* v___x_961_; lean_object* v___x_962_; lean_object* v___x_963_; lean_object* v___x_964_; lean_object* v___x_965_; 
+lean_inc_ref(v___y_959_);
 v___x_960_ = lean_alloc_ctor(3, 1, 0);
 lean_ctor_set(v___x_960_, 0, v___y_959_);
 v___x_961_ = l_Lean_MessageData_ofFormat(v___x_960_);
@@ -4981,6 +4983,7 @@ v___jp_1391_:
 {
 lean_object* v___x_1393_; lean_object* v___x_1394_; uint8_t v___x_1395_; lean_object* v___x_1396_; lean_object* v_impl_1397_; lean_object* v___x_1398_; 
 v___x_1393_ = ((lean_object*)(l_Lean_Widget_initFn___lam__3___closed__2_00___x40_Lean_Widget_UserWidget_3570059497____hygCtx___hyg_2_));
+lean_inc_ref(v___y_1392_);
 v___x_1394_ = lean_string_append(v___y_1392_, v___x_1393_);
 v___x_1395_ = 1;
 v___x_1396_ = lean_alloc_ctor(0, 3, 1);

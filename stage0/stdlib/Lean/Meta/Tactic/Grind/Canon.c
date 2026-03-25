@@ -10820,6 +10820,7 @@ goto v___jp_3565_;
 v___jp_3565_:
 {
 lean_object* v___x_3567_; lean_object* v___x_3569_; 
+lean_inc(v___y_3566_);
 v___x_3567_ = l_Lean_MessageData_ofFormat(v___y_3566_);
 if (v_isShared_3553_ == 0)
 {

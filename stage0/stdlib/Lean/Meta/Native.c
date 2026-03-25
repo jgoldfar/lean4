@@ -1584,7 +1584,6 @@ v___jp_502_:
 {
 lean_object* v___x_520_; lean_object* v___x_521_; lean_object* v___x_522_; 
 v___x_520_ = l_Lean_Option_get___at___00Lean_Meta_nativeEqTrue_spec__4(v___y_504_, v___y_503_);
-lean_dec_ref(v___y_503_);
 v___x_521_ = lean_alloc_ctor(0, 14, 2);
 lean_ctor_set(v___x_521_, 0, v_fileName_506_);
 lean_ctor_set(v___x_521_, 1, v_fileMap_507_);

@@ -760,6 +760,7 @@ goto v_reusejp_118_;
 v_reusejp_118_:
 {
 lean_object* v___x_120_; 
+lean_inc(v___y_110_);
 v___x_120_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_120_, 0, v___y_110_);
 lean_ctor_set(v___x_120_, 1, v___x_119_);
@@ -1216,6 +1217,7 @@ return v___x_297_;
 v___jp_235_:
 {
 lean_object* v___x_240_; lean_object* v___x_241_; lean_object* v___x_242_; lean_object* v___x_243_; lean_object* v___x_244_; 
+lean_inc_ref(v___y_237_);
 v___x_240_ = lean_string_append(v___y_237_, v___y_236_);
 lean_dec_ref(v___y_236_);
 v___x_241_ = ((lean_object*)(l_Lean_JsonNumber_toString___closed__0));
@@ -1281,6 +1283,7 @@ lean_object* v___x_268_;
 lean_dec(v___y_254_);
 lean_dec(v___y_252_);
 lean_dec(v___y_251_);
+lean_inc_ref(v___y_250_);
 v___x_268_ = lean_string_append(v___y_250_, v___y_249_);
 lean_dec_ref(v___y_249_);
 return v___x_268_;

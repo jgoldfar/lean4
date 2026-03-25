@@ -11030,6 +11030,7 @@ goto v___jp_3573_;
 v___jp_3573_:
 {
 lean_object* v___x_3575_; lean_object* v___x_3576_; lean_object* v___x_3577_; lean_object* v___x_3578_; lean_object* v___x_3579_; lean_object* v___x_3580_; lean_object* v___x_3581_; lean_object* v___x_3582_; 
+lean_inc_ref(v___y_3574_);
 v___x_3575_ = lean_alloc_ctor(3, 1, 0);
 lean_ctor_set(v___x_3575_, 0, v___y_3574_);
 v___x_3576_ = l_Lean_MessageData_ofFormat(v___x_3575_);

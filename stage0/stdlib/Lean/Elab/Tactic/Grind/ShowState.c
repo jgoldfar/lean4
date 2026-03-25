@@ -1368,6 +1368,7 @@ lean_ctor_set(v___x_371_, 1, v_openDecls_358_);
 v___x_372_ = lean_alloc_ctor(4, 2, 0);
 lean_ctor_set(v___x_372_, 0, v___x_371_);
 lean_ctor_set(v___x_372_, 1, v___y_352_);
+lean_inc_ref(v___y_349_);
 lean_inc_ref(v___y_350_);
 v___x_373_ = lean_alloc_ctor(0, 5, 3);
 lean_ctor_set(v___x_373_, 0, v___y_350_);
@@ -2480,6 +2481,7 @@ v___jp_886_:
 {
 lean_object* v___x_888_; lean_object* v___x_889_; lean_object* v___x_890_; lean_object* v___x_891_; lean_object* v___x_892_; lean_object* v___x_894_; 
 v___x_888_ = ((lean_object*)(l___private_Lean_Elab_Tactic_Grind_ShowState_0__Lean_Elab_Tactic_Grind_ppProps_x3f___redArg___closed__2));
+lean_inc_ref(v___y_887_);
 v___x_889_ = lean_string_append(v___y_887_, v___x_888_);
 v___x_890_ = ((lean_object*)(l___private_Lean_Elab_Tactic_Grind_ShowState_0__Lean_Elab_Tactic_Grind_ppAsserted_x3f___redArg___closed__4));
 v___x_891_ = l_Lean_Meta_Grind_ppExprArray(v___x_885_, v___x_889_, v_a_878_, v___x_890_, v_collapsed_867_);
@@ -2698,7 +2700,6 @@ v___jp_1010_:
 {
 lean_object* v___x_1012_; lean_object* v___x_1013_; lean_object* v___x_1014_; lean_object* v___x_1015_; lean_object* v___x_1016_; lean_object* v___x_1017_; 
 v___x_1012_ = lean_string_append(v___x_1009_, v___y_1011_);
-lean_dec_ref(v___y_1011_);
 v___x_1013_ = ((lean_object*)(l___private_Lean_Elab_Tactic_Grind_ShowState_0__Lean_Elab_Tactic_Grind_ppProps_x3f___redArg___closed__2));
 v___x_1014_ = lean_string_append(v___x_1012_, v___x_1013_);
 v___x_1015_ = lean_alloc_ctor(3, 1, 0);

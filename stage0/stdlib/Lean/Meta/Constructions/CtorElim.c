@@ -8390,6 +8390,7 @@ goto v___jp_3086_;
 v___jp_3086_:
 {
 lean_object* v___x_3088_; lean_object* v___x_3089_; lean_object* v___x_3090_; lean_object* v___x_3091_; lean_object* v___x_3092_; lean_object* v___x_3093_; 
+lean_inc_ref(v___y_3087_);
 v___x_3088_ = lean_alloc_ctor(3, 1, 0);
 lean_ctor_set(v___x_3088_, 0, v___y_3087_);
 v___x_3089_ = l_Lean_MessageData_ofFormat(v___x_3088_);

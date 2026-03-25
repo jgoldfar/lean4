@@ -3051,6 +3051,7 @@ v___jp_342_:
 lean_object* v___x_344_; lean_object* v___x_345_; lean_object* v___x_346_; lean_object* v___x_347_; 
 v___x_344_ = lean_box(0);
 v___x_345_ = ((lean_object*)(l_Lean_Compiler_LCNF_Simp_ConstantFold_mkBoolLit___redArg___closed__0));
+lean_inc(v___y_343_);
 v___x_346_ = lean_alloc_ctor(3, 3, 0);
 lean_ctor_set(v___x_346_, 0, v___y_343_);
 lean_ctor_set(v___x_346_, 1, v___x_344_);

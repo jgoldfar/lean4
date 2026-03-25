@@ -29585,6 +29585,7 @@ v___jp_10012_:
 size_t v___x_10014_; size_t v___x_10015_; 
 v___x_10014_ = ((size_t)1ULL);
 v___x_10015_ = lean_usize_add(v_i_10005_, v___x_10014_);
+lean_inc_ref(v_a_10013_);
 v_i_10005_ = v___x_10015_;
 v_b_10006_ = v_a_10013_;
 goto _start;

@@ -1861,6 +1861,7 @@ v___jp_238_:
 size_t v___x_240_; size_t v___x_241_; 
 v___x_240_ = ((size_t)1ULL);
 v___x_241_ = lean_usize_add(v_i_229_, v___x_240_);
+lean_inc_ref(v_a_239_);
 v_i_229_ = v___x_241_;
 v_b_230_ = v_a_239_;
 goto _start;
@@ -4416,7 +4417,6 @@ v___jp_1256_:
 {
 lean_object* v___x_1276_; lean_object* v___x_1277_; lean_object* v___x_1278_; 
 v___x_1276_ = l_Lean_Option_get___at___00__private_Lean_Elab_BuiltinEvalCommand_0__Lean_Elab_Command_addAndCompileExprForEval_spec__0(v___y_1260_, v___y_1257_);
-lean_dec_ref(v___y_1257_);
 v___x_1277_ = lean_alloc_ctor(0, 14, 2);
 lean_ctor_set(v___x_1277_, 0, v_fileName_1262_);
 lean_ctor_set(v___x_1277_, 1, v_fileMap_1263_);
@@ -4847,7 +4847,6 @@ lean_ctor_set_uint8(v___x_1392_, sizeof(void*)*14 + 1, v_suppressElabErrors_1387
 v___x_1393_ = l_Lean_Compiler_compiler_postponeCompile;
 v___x_1394_ = l_Lean_Option_set___at___00__private_Lean_Elab_BuiltinEvalCommand_0__Lean_Elab_Command_addAndCompileExprForEval_spec__1(v___y_1372_, v___x_1393_, v___x_1216_);
 v___x_1395_ = l_Lean_Option_get___at___00Lean_Elab_addMacroStack___at___00Lean_throwError___at___00__private_Lean_Elab_BuiltinEvalCommand_0__Lean_Elab_Command_elabTermForEval_spec__2_spec__3_spec__6(v___x_1394_, v___y_1370_);
-lean_dec_ref(v___y_1370_);
 v___x_1396_ = l_Lean_Kernel_isDiagnosticsEnabled(v_env_1391_);
 lean_dec_ref(v_env_1391_);
 if (v___x_1396_ == 0)
@@ -21855,6 +21854,7 @@ lean_ctor_set(v___x_6764_, 1, v_openDecls_6749_);
 v___x_6765_ = lean_alloc_ctor(4, 2, 0);
 lean_ctor_set(v___x_6765_, 0, v___x_6764_);
 lean_ctor_set(v___x_6765_, 1, v___y_6737_);
+lean_inc_ref(v___y_6735_);
 lean_inc_ref(v___y_6734_);
 v___x_6766_ = lean_alloc_ctor(0, 5, 3);
 lean_ctor_set(v___x_6766_, 0, v___y_6734_);
@@ -21922,7 +21922,6 @@ else
 lean_object* v_a_6778_; lean_object* v___x_6780_; uint8_t v_isShared_6781_; uint8_t v_isSharedCheck_6785_; 
 lean_dec(v_a_6741_);
 lean_dec_ref(v___y_6737_);
-lean_dec_ref(v___y_6735_);
 lean_dec_ref(v___y_6733_);
 lean_dec(v___y_6732_);
 v_a_6778_ = lean_ctor_get(v___x_6742_, 0);
@@ -21968,7 +21967,6 @@ else
 {
 lean_object* v_a_6786_; lean_object* v___x_6788_; uint8_t v_isShared_6789_; uint8_t v_isSharedCheck_6793_; 
 lean_dec_ref(v___y_6737_);
-lean_dec_ref(v___y_6735_);
 lean_dec_ref(v___y_6733_);
 lean_dec(v___y_6732_);
 v_a_6786_ = lean_ctor_get(v___x_6740_, 0);

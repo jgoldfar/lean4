@@ -1773,6 +1773,7 @@ goto v___jp_482_;
 v___jp_482_:
 {
 lean_object* v___x_484_; lean_object* v___x_485_; lean_object* v___x_486_; lean_object* v___x_487_; lean_object* v___x_488_; lean_object* v___x_489_; 
+lean_inc_ref(v___y_483_);
 v___x_484_ = lean_alloc_ctor(3, 1, 0);
 lean_ctor_set(v___x_484_, 0, v___y_483_);
 v___x_485_ = l_Lean_MessageData_ofFormat(v___x_484_);

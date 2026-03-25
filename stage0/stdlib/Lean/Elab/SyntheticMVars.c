@@ -4791,6 +4791,7 @@ lean_ctor_set(v___x_1189_, 1, v_openDecls_1176_);
 v___x_1190_ = lean_alloc_ctor(4, 2, 0);
 lean_ctor_set(v___x_1190_, 0, v___x_1189_);
 lean_ctor_set(v___x_1190_, 1, v___y_1167_);
+lean_inc_ref(v___y_1170_);
 lean_inc_ref(v___y_1169_);
 v___x_1191_ = lean_alloc_ctor(0, 5, 3);
 lean_ctor_set(v___x_1191_, 0, v___y_1169_);
@@ -21028,6 +21029,7 @@ v___jp_6254_:
 {
 lean_object* v___x_6256_; lean_object* v___x_6257_; uint8_t v___x_6258_; lean_object* v___x_6259_; lean_object* v___x_6260_; 
 v___x_6256_ = ((lean_object*)(l_Lean_Elab_Term_instReprPostponeBehavior_repr___closed__1));
+lean_inc(v___y_6255_);
 v___x_6257_ = lean_alloc_ctor(4, 2, 0);
 lean_ctor_set(v___x_6257_, 0, v___y_6255_);
 lean_ctor_set(v___x_6257_, 1, v___x_6256_);
@@ -21042,6 +21044,7 @@ v___jp_6261_:
 {
 lean_object* v___x_6263_; lean_object* v___x_6264_; uint8_t v___x_6265_; lean_object* v___x_6266_; lean_object* v___x_6267_; 
 v___x_6263_ = ((lean_object*)(l_Lean_Elab_Term_instReprPostponeBehavior_repr___closed__3));
+lean_inc(v___y_6262_);
 v___x_6264_ = lean_alloc_ctor(4, 2, 0);
 lean_ctor_set(v___x_6264_, 0, v___y_6262_);
 lean_ctor_set(v___x_6264_, 1, v___x_6263_);
@@ -21056,6 +21059,7 @@ v___jp_6268_:
 {
 lean_object* v___x_6270_; lean_object* v___x_6271_; uint8_t v___x_6272_; lean_object* v___x_6273_; lean_object* v___x_6274_; 
 v___x_6270_ = ((lean_object*)(l_Lean_Elab_Term_instReprPostponeBehavior_repr___closed__5));
+lean_inc(v___y_6269_);
 v___x_6271_ = lean_alloc_ctor(4, 2, 0);
 lean_ctor_set(v___x_6271_, 0, v___y_6269_);
 lean_ctor_set(v___x_6271_, 1, v___x_6270_);
@@ -27693,6 +27697,7 @@ goto v___jp_8639_;
 v___jp_8631_:
 {
 lean_object* v___x_8634_; lean_object* v___x_8635_; lean_object* v___x_8636_; 
+lean_inc_ref(v___y_8633_);
 v___x_8634_ = lean_alloc_ctor(3, 1, 0);
 lean_ctor_set(v___x_8634_, 0, v___y_8633_);
 v___x_8635_ = l_Lean_MessageData_ofFormat(v___x_8634_);
@@ -27704,6 +27709,7 @@ return v___x_8636_;
 v___jp_8639_:
 {
 lean_object* v___x_8641_; lean_object* v___x_8642_; lean_object* v___x_8643_; lean_object* v___x_8644_; lean_object* v___x_8645_; 
+lean_inc_ref(v___y_8640_);
 v___x_8641_ = lean_alloc_ctor(3, 1, 0);
 lean_ctor_set(v___x_8641_, 0, v___y_8640_);
 v___x_8642_ = l_Lean_MessageData_ofFormat(v___x_8641_);
@@ -29095,6 +29101,7 @@ goto _start;
 v___jp_9048_:
 {
 lean_object* v___x_9055_; 
+lean_inc_ref(v___y_9054_);
 v___x_9055_ = l_Lean_addTrace___at___00__private_Lean_Elab_SyntheticMVars_0__Lean_Elab_Term_synthesizeUsingDefaultPrio_synthesizeUsingDefaultInstance_spec__8___redArg(v___x_9047_, v___y_9054_, v___y_9051_, v___y_9052_, v___y_9050_, v___y_9049_);
 if (lean_obj_tag(v___x_9055_) == 0)
 {

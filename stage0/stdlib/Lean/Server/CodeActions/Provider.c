@@ -1078,12 +1078,12 @@ if (v___x_296_ == 0)
 {
 lean_dec(v_a_289_);
 lean_dec_ref(v_range_288_);
+lean_inc_ref(v_b_290_);
 return v_b_290_;
 }
 else
 {
 lean_object* v___x_297_; lean_object* v___x_298_; lean_object* v___x_299_; lean_object* v___x_300_; lean_object* v___x_301_; uint8_t v___x_302_; lean_object* v___x_303_; 
-lean_dec_ref(v_b_290_);
 v___x_297_ = lean_box(0);
 v___x_298_ = ((lean_object*)(l_WellFounded_opaqueFix_u2083___at___00__private_Lean_Server_CodeActions_Provider_0__Lean_CodeAction_findTactic_x3f_go_spec__2___redArg___closed__0));
 v___x_299_ = lean_unsigned_to_nat(2u);
@@ -1215,6 +1215,7 @@ _start:
 {
 lean_object* v_res_328_; 
 v_res_328_ = l_WellFounded_opaqueFix_u2083___at___00__private_Lean_Server_CodeActions_Provider_0__Lean_CodeAction_findTactic_x3f_go_spec__2___redArg(v_upperBound_323_, v___x_324_, v_range_325_, v_a_326_, v_b_327_);
+lean_dec_ref(v_b_327_);
 lean_dec(v___x_324_);
 lean_dec(v_upperBound_323_);
 return v_res_328_;
@@ -2230,6 +2231,7 @@ _start:
 {
 lean_object* v_res_661_; 
 v_res_661_ = l_WellFounded_opaqueFix_u2083___at___00__private_Lean_Server_CodeActions_Provider_0__Lean_CodeAction_findTactic_x3f_go_spec__2(v_upperBound_653_, v___x_654_, v_range_655_, v_inst_656_, v_R_657_, v_a_658_, v_b_659_, v_c_660_);
+lean_dec_ref(v_b_659_);
 lean_dec(v___x_654_);
 lean_dec(v_upperBound_653_);
 return v_res_661_;

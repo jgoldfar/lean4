@@ -5003,6 +5003,7 @@ goto v___jp_1732_;
 v___jp_1732_:
 {
 lean_object* v___x_1734_; lean_object* v___x_1735_; lean_object* v___x_1736_; lean_object* v___x_1737_; 
+lean_inc_ref(v___y_1733_);
 v___x_1734_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_1734_, 0, v___x_1731_);
 lean_ctor_set(v___x_1734_, 1, v___y_1733_);

@@ -2395,6 +2395,7 @@ lean_ctor_set(v___x_699_, 1, v_openDecls_684_);
 v___x_700_ = lean_alloc_ctor(4, 2, 0);
 lean_ctor_set(v___x_700_, 0, v___x_699_);
 lean_ctor_set(v___x_700_, 1, v___y_672_);
+lean_inc_ref(v___y_668_);
 lean_inc_ref(v___y_673_);
 v___x_701_ = lean_alloc_ctor(0, 5, 3);
 lean_ctor_set(v___x_701_, 0, v___y_673_);
@@ -2463,7 +2464,6 @@ lean_object* v_a_713_; lean_object* v___x_715_; uint8_t v_isShared_716_; uint8_t
 lean_dec(v_a_676_);
 lean_dec_ref(v___y_672_);
 lean_dec_ref(v___y_671_);
-lean_dec_ref(v___y_668_);
 lean_dec(v___y_667_);
 v_a_713_ = lean_ctor_get(v___x_677_, 0);
 v_isSharedCheck_720_ = !lean_is_exclusive(v___x_677_);
@@ -2509,7 +2509,6 @@ else
 lean_object* v_a_721_; lean_object* v___x_723_; uint8_t v_isShared_724_; uint8_t v_isSharedCheck_728_; 
 lean_dec_ref(v___y_672_);
 lean_dec_ref(v___y_671_);
-lean_dec_ref(v___y_668_);
 lean_dec(v___y_667_);
 v_a_721_ = lean_ctor_get(v___x_675_, 0);
 v_isSharedCheck_728_ = !lean_is_exclusive(v___x_675_);
@@ -5658,6 +5657,7 @@ v___x_1850_ = lean_obj_once(&l___private_Init_Data_Array_Basic_0__Array_forIn_x2
 v___x_1851_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_1851_, 0, v___x_1849_);
 lean_ctor_set(v___x_1851_, 1, v___x_1850_);
+lean_inc_ref(v___y_1845_);
 v___x_1852_ = l_Lean_stringToMessageData(v___y_1845_);
 v___x_1853_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_1853_, 0, v___x_1851_);
@@ -5677,6 +5677,7 @@ lean_ctor_set(v___x_1859_, 0, v___x_1857_);
 lean_ctor_set(v___x_1859_, 1, v___x_1858_);
 v___x_1860_ = lean_array_push(v_fst_1830_, v___x_1859_);
 v___x_1861_ = lean_box(v___y_1843_);
+lean_inc_ref(v___y_1844_);
 if (v_isShared_1837_ == 0)
 {
 lean_ctor_set(v___x_1836_, 1, v___x_1861_);
@@ -5737,10 +5738,10 @@ else
 if (v___x_1873_ == 0)
 {
 lean_object* v___x_1874_; lean_object* v___x_1875_; lean_object* v___x_1876_; 
-lean_dec_ref(v___y_1871_);
 lean_del_object(v___x_1836_);
 lean_del_object(v___x_1832_);
 v___x_1874_ = lean_box(v___y_1872_);
+lean_inc_ref(v___y_1870_);
 v___x_1875_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_1875_, 0, v___y_1870_);
 lean_ctor_set(v___x_1875_, 1, v___x_1874_);

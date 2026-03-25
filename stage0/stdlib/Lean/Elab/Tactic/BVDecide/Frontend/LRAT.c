@@ -1837,6 +1837,7 @@ goto v___jp_557_;
 v___jp_557_:
 {
 lean_object* v___x_559_; lean_object* v_nil_560_; lean_object* v_cons_561_; lean_object* v___x_562_; lean_object* v___x_563_; lean_object* v___x_564_; lean_object* v_type_565_; lean_object* v_nil_566_; lean_object* v_cons_567_; lean_object* v___x_568_; lean_object* v___x_569_; lean_object* v___x_570_; lean_object* v___x_571_; 
+lean_inc_ref(v___y_558_);
 v___x_559_ = l_Lean_mkApp4(v___x_555_, v_alpha_508_, v_00_u03b2Type_554_, v___x_556_, v___y_558_);
 v_nil_560_ = lean_obj_once(&l_Lean_Elab_Tactic_BVDecide_Frontend_instToExprIntAction___lam__0___closed__26, &l_Lean_Elab_Tactic_BVDecide_Frontend_instToExprIntAction___lam__0___closed__26_once, _init_l_Lean_Elab_Tactic_BVDecide_Frontend_instToExprIntAction___lam__0___closed__26);
 v_cons_561_ = lean_obj_once(&l_Lean_Elab_Tactic_BVDecide_Frontend_instToExprIntAction___lam__0___closed__30, &l_Lean_Elab_Tactic_BVDecide_Frontend_instToExprIntAction___lam__0___closed__30_once, _init_l_Lean_Elab_Tactic_BVDecide_Frontend_instToExprIntAction___lam__0___closed__30);

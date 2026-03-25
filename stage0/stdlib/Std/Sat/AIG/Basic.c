@@ -1121,6 +1121,7 @@ v___x_240_ = lean_apply_2(v_inst_221_, v_idx_235_, v___x_239_);
 v___x_241_ = lean_alloc_ctor(5, 2, 0);
 lean_ctor_set(v___x_241_, 0, v___x_238_);
 lean_ctor_set(v___x_241_, 1, v___x_240_);
+lean_inc(v___y_237_);
 v___x_242_ = lean_alloc_ctor(4, 2, 0);
 lean_ctor_set(v___x_242_, 0, v___y_237_);
 lean_ctor_set(v___x_242_, 1, v___x_241_);
@@ -1206,6 +1207,7 @@ v___x_263_ = l_Std_Sat_AIG_instReprFanin_repr___redArg(v_r_251_);
 v___x_264_ = lean_alloc_ctor(5, 2, 0);
 lean_ctor_set(v___x_264_, 0, v___x_262_);
 lean_ctor_set(v___x_264_, 1, v___x_263_);
+lean_inc(v___y_256_);
 v___x_265_ = lean_alloc_ctor(4, 2, 0);
 lean_ctor_set(v___x_265_, 0, v___y_256_);
 lean_ctor_set(v___x_265_, 1, v___x_264_);
@@ -1224,6 +1226,7 @@ v___jp_224_:
 {
 lean_object* v___x_226_; lean_object* v___x_227_; uint8_t v___x_228_; lean_object* v___x_229_; lean_object* v___x_230_; 
 v___x_226_ = ((lean_object*)(l_Std_Sat_AIG_instReprDecl_repr___redArg___closed__1));
+lean_inc(v___y_225_);
 v___x_227_ = lean_alloc_ctor(4, 2, 0);
 lean_ctor_set(v___x_227_, 0, v___y_225_);
 lean_ctor_set(v___x_227_, 1, v___x_226_);

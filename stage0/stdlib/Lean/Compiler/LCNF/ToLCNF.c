@@ -22619,6 +22619,7 @@ v_resetjp_6640_:
 lean_object* v___x_6643_; lean_object* v___x_6644_; lean_object* v___x_6646_; 
 v___x_6643_ = lean_array_get_size(v_altNumParams_6590_);
 v___x_6644_ = l_Array_toSubarray___redArg(v_altNumParams_6590_, v___x_6626_, v___x_6643_);
+lean_inc_ref(v___y_6630_);
 if (v_isShared_6642_ == 0)
 {
 lean_ctor_set(v___x_6641_, 1, v___x_6644_);

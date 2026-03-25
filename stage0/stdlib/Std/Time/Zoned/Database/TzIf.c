@@ -1346,6 +1346,7 @@ goto v___jp_462_;
 v___jp_442_:
 {
 lean_object* v___x_448_; 
+lean_inc(v___y_445_);
 if (v_isShared_441_ == 0)
 {
 lean_ctor_set_tag(v___x_440_, 4);

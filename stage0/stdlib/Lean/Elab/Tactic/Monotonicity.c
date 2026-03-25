@@ -5546,6 +5546,7 @@ v___x_2007_ = lean_array_push(v___x_2006_, v___x_1998_);
 v___x_2008_ = lean_array_push(v___x_2007_, v___x_1999_);
 v___x_2009_ = lean_array_push(v___x_2008_, v___x_2000_);
 v___x_2010_ = lean_array_push(v___x_2009_, v___y_1989_);
+lean_inc(v___y_1993_);
 v___x_2011_ = l_Lean_Meta_mkAppOptM(v___y_1993_, v___x_2010_, v___y_1991_, v___y_1984_, v___y_1985_, v___y_1990_);
 if (lean_obj_tag(v___x_2011_) == 0)
 {
@@ -9062,6 +9063,7 @@ v___jp_3021_:
 size_t v___x_3023_; size_t v___x_3024_; 
 v___x_3023_ = ((size_t)1ULL);
 v___x_3024_ = lean_usize_add(v_i_3014_, v___x_3023_);
+lean_inc_ref(v_a_3022_);
 v_i_3014_ = v___x_3024_;
 v_b_3015_ = v_a_3022_;
 goto _start;
@@ -9961,8 +9963,6 @@ v___x_3331_ = l_Lean_Expr_isBVar(v___y_3321_);
 if (v___x_3331_ == 0)
 {
 lean_object* v___x_3332_; 
-lean_dec_ref(v___y_3326_);
-lean_dec_ref(v___y_3322_);
 lean_inc_ref(v___y_3321_);
 v___x_3332_ = l_Lean_Meta_Monotonicity_solveMonoCall(v___y_3325_, v___y_3324_, v___y_3321_, v___y_3327_, v___y_3328_, v___y_3329_, v___y_3330_);
 if (lean_obj_tag(v___x_3332_) == 0)
@@ -10313,6 +10313,8 @@ lean_dec_ref(v___y_3319_);
 lean_dec_ref(v_failK_3149_);
 lean_dec(v_cls_3147_);
 v___x_3395_ = ((lean_object*)(l_Lean_Meta_Monotonicity_solveMonoCall___closed__1));
+lean_inc_ref(v___y_3322_);
+lean_inc_ref(v___y_3326_);
 v___x_3396_ = l_Lean_Name_mkStr3(v___y_3326_, v___y_3322_, v___x_3395_);
 v___x_3397_ = l___private_Lean_Elab_Tactic_Monotonicity_0__Lean_Meta_Monotonicity_applyConst(v_goal_3148_, v___x_3396_, v___y_3327_, v___y_3328_, v___y_3329_, v___y_3330_);
 lean_dec(v___y_3330_);
@@ -10325,10 +10327,8 @@ return v___x_3397_;
 v___jp_3398_:
 {
 lean_object* v___x_3413_; lean_object* v___x_3414_; lean_object* v___x_3415_; lean_object* v___x_3416_; lean_object* v___x_3417_; lean_object* v___x_3418_; lean_object* v_a_3419_; lean_object* v___x_3421_; uint8_t v_isShared_3422_; uint8_t v_isSharedCheck_3426_; 
-lean_dec_ref(v___y_3408_);
 lean_dec_ref(v___y_3407_);
 lean_dec_ref(v___y_3406_);
-lean_dec_ref(v___y_3405_);
 lean_dec_ref(v___y_3404_);
 lean_dec_ref(v___y_3403_);
 lean_dec_ref(v___y_3400_);
@@ -10780,8 +10780,6 @@ if (lean_obj_tag(v___y_3558_) == 8)
 {
 lean_object* v_declName_3561_; lean_object* v_type_3562_; lean_object* v_value_3563_; lean_object* v_body_3564_; uint8_t v_nondep_3565_; uint8_t v___x_3566_; 
 lean_dec_ref(v___y_3557_);
-lean_dec_ref(v___y_3556_);
-lean_dec_ref(v___y_3555_);
 lean_dec_ref(v___y_3549_);
 lean_dec_ref(v___y_3547_);
 lean_dec_ref(v_failK_3149_);
@@ -10990,8 +10988,6 @@ if (lean_obj_tag(v_tail_3597_) == 0)
 lean_object* v_head_3598_; lean_object* v___x_3600_; uint8_t v_isShared_3601_; uint8_t v_isSharedCheck_3624_; 
 lean_dec(v___x_3594_);
 lean_dec_ref(v___y_3557_);
-lean_dec_ref(v___y_3556_);
-lean_dec_ref(v___y_3555_);
 lean_dec_ref(v___y_3554_);
 lean_dec_ref(v___y_3549_);
 lean_dec_ref(v___y_3548_);
@@ -11179,8 +11175,6 @@ else
 lean_dec(v___x_3594_);
 lean_dec_ref(v___y_3558_);
 lean_dec_ref(v___y_3557_);
-lean_dec_ref(v___y_3556_);
-lean_dec_ref(v___y_3555_);
 lean_dec_ref(v___y_3554_);
 lean_dec_ref(v___y_3553_);
 lean_dec(v___y_3550_);
@@ -11197,8 +11191,6 @@ return v___x_3595_;
 else
 {
 lean_dec_ref(v___y_3557_);
-lean_dec_ref(v___y_3556_);
-lean_dec_ref(v___y_3555_);
 lean_dec_ref(v___y_3551_);
 lean_dec_ref(v___y_3549_);
 lean_dec_ref(v___y_3547_);
@@ -11283,6 +11275,8 @@ lean_dec_ref(v___y_3547_);
 lean_dec_ref(v_failK_3149_);
 lean_dec(v_cls_3147_);
 v___x_3640_ = ((lean_object*)(l_Lean_Meta_Monotonicity_solveMonoStep___lam__2___closed__18));
+lean_inc_ref(v___y_3555_);
+lean_inc_ref(v___y_3556_);
 v___x_3641_ = l_Lean_Name_mkStr3(v___y_3556_, v___y_3555_, v___x_3640_);
 v___x_3642_ = l___private_Lean_Elab_Tactic_Monotonicity_0__Lean_Meta_Monotonicity_applyConst(v_goal_3148_, v___x_3641_, v___y_3546_, v___y_3550_, v___y_3553_, v___y_3545_);
 lean_dec(v___y_3545_);

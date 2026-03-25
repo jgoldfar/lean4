@@ -4558,12 +4558,12 @@ uint8_t v___x_1585_;
 v___x_1585_ = lean_usize_dec_lt(v_i_1583_, v_sz_1582_);
 if (v___x_1585_ == 0)
 {
+lean_inc_ref(v_b_1584_);
 return v_b_1584_;
 }
 else
 {
 lean_object* v___x_1586_; lean_object* v_a_1587_; lean_object* v___x_1588_; uint8_t v___x_1589_; 
-lean_dec_ref(v_b_1584_);
 v___x_1586_ = lean_box(0);
 v_a_1587_ = lean_array_uget_borrowed(v_as_1581_, v_i_1583_);
 v___x_1588_ = l_Lean_IR_Decl_name(v_a_1587_);
@@ -4571,13 +4571,12 @@ v___x_1589_ = lean_name_eq(v___x_1588_, v_n_1580_);
 lean_dec(v___x_1588_);
 if (v___x_1589_ == 0)
 {
-lean_object* v___x_1590_; size_t v___x_1591_; size_t v___x_1592_; 
+lean_object* v___x_1590_; size_t v___x_1591_; size_t v___x_1592_; lean_object* v___x_1593_; 
 v___x_1590_ = ((lean_object*)(l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00Lean_IR_findEnvDecl_x27_spec__0___closed__0));
 v___x_1591_ = ((size_t)1ULL);
 v___x_1592_ = lean_usize_add(v_i_1583_, v___x_1591_);
-v_i_1583_ = v___x_1592_;
-v_b_1584_ = v___x_1590_;
-goto _start;
+v___x_1593_ = l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00Lean_IR_findEnvDecl_x27_spec__0(v_n_1580_, v_as_1581_, v_sz_1582_, v___x_1592_, v___x_1590_);
+return v___x_1593_;
 }
 else
 {
@@ -4604,6 +4603,7 @@ lean_dec(v_sz_1599_);
 v_i_boxed_1603_ = lean_unbox_usize(v_i_1600_);
 lean_dec(v_i_1600_);
 v_res_1604_ = l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00Lean_IR_findEnvDecl_x27_spec__0(v_n_1597_, v_as_1598_, v_sz_boxed_1602_, v_i_boxed_1603_, v_b_1601_);
+lean_dec_ref(v_b_1601_);
 lean_dec_ref(v_as_1598_);
 lean_dec(v_n_1597_);
 return v_res_1604_;

@@ -630,6 +630,7 @@ goto v___jp_191_;
 v___jp_122_:
 {
 lean_object* v___x_128_; lean_object* v___x_129_; lean_object* v___x_130_; lean_object* v___x_131_; uint8_t v___x_132_; 
+lean_inc_ref(v___y_124_);
 v___x_128_ = l_String_Slice_Pattern_CharPred_instForwardPatternForallCharBool(v___y_124_);
 lean_inc(v___y_123_);
 v___x_129_ = l_String_Slice_Pos_skipWhile___redArg(v___y_125_, v___y_123_, v___x_128_);
@@ -650,7 +651,6 @@ v___jp_133_:
 lean_object* v___x_137_; lean_object* v___x_138_; lean_object* v_startInclusive_139_; lean_object* v_endExclusive_140_; 
 v___x_137_ = lean_obj_once(&l___private_Init_Data_ToString_Name_0__Lean_Name_needsNoEscape___redArg___closed__3, &l___private_Init_Data_ToString_Name_0__Lean_Name_needsNoEscape___redArg___closed__3_once, _init_l___private_Init_Data_ToString_Name_0__Lean_Name_needsNoEscape___redArg___closed__3);
 v___x_138_ = l_panic___redArg(v___y_136_, v___x_137_);
-lean_dec_ref(v___y_136_);
 v_startInclusive_139_ = lean_ctor_get(v___x_138_, 1);
 lean_inc(v_startInclusive_139_);
 v_endExclusive_140_ = lean_ctor_get(v___x_138_, 2);
@@ -945,6 +945,7 @@ goto v___jp_275_;
 v___jp_206_:
 {
 lean_object* v___x_212_; lean_object* v___x_213_; lean_object* v___x_214_; lean_object* v___x_215_; uint8_t v___x_216_; 
+lean_inc_ref(v___y_208_);
 v___x_212_ = l_String_Slice_Pattern_CharPred_instForwardPatternForallCharBool(v___y_208_);
 lean_inc(v___y_207_);
 v___x_213_ = l_String_Slice_Pos_skipWhile___redArg(v___y_209_, v___y_207_, v___x_212_);
@@ -965,7 +966,6 @@ v___jp_217_:
 lean_object* v___x_221_; lean_object* v___x_222_; lean_object* v_startInclusive_223_; lean_object* v_endExclusive_224_; 
 v___x_221_ = lean_obj_once(&l___private_Init_Data_ToString_Name_0__Lean_Name_needsNoEscape___redArg___closed__3, &l___private_Init_Data_ToString_Name_0__Lean_Name_needsNoEscape___redArg___closed__3_once, _init_l___private_Init_Data_ToString_Name_0__Lean_Name_needsNoEscape___redArg___closed__3);
 v___x_222_ = l_panic___redArg(v___y_220_, v___x_221_);
-lean_dec_ref(v___y_220_);
 v_startInclusive_223_ = lean_ctor_get(v___x_222_, 1);
 lean_inc(v_startInclusive_223_);
 v_endExclusive_224_ = lean_ctor_get(v___x_222_, 2);
@@ -1422,6 +1422,7 @@ return v___x_338_;
 v___jp_339_:
 {
 lean_object* v___x_345_; lean_object* v___x_346_; lean_object* v___x_347_; lean_object* v___x_348_; uint8_t v___x_349_; 
+lean_inc_ref(v___y_340_);
 v___x_345_ = l_String_Slice_Pattern_CharPred_instForwardPatternForallCharBool(v___y_340_);
 lean_inc(v___y_341_);
 v___x_346_ = l_String_Slice_Pos_skipWhile___redArg(v___y_342_, v___y_341_, v___x_345_);
@@ -1452,7 +1453,6 @@ v___jp_351_:
 lean_object* v___x_355_; lean_object* v___x_356_; lean_object* v_startInclusive_357_; lean_object* v_endExclusive_358_; 
 v___x_355_ = lean_obj_once(&l___private_Init_Data_ToString_Name_0__Lean_Name_needsNoEscape___redArg___closed__3, &l___private_Init_Data_ToString_Name_0__Lean_Name_needsNoEscape___redArg___closed__3_once, _init_l___private_Init_Data_ToString_Name_0__Lean_Name_needsNoEscape___redArg___closed__3);
 v___x_356_ = l_panic___redArg(v___y_352_, v___x_355_);
-lean_dec_ref(v___y_352_);
 v_startInclusive_357_ = lean_ctor_get(v___x_356_, 1);
 lean_inc(v_startInclusive_357_);
 v_endExclusive_358_ = lean_ctor_get(v___x_356_, 2);

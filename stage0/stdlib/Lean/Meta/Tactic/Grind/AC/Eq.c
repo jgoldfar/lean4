@@ -17189,6 +17189,7 @@ goto v___jp_5819_;
 v___jp_5819_:
 {
 lean_object* v___x_5822_; 
+lean_inc_ref(v___y_5820_);
 if (v_isShared_5742_ == 0)
 {
 lean_ctor_set_tag(v___x_5741_, 3);
@@ -30975,9 +30976,11 @@ return v___x_9827_;
 v___jp_9830_:
 {
 lean_object* v___x_9847_; lean_object* v___x_9848_; lean_object* v___x_9849_; lean_object* v___x_9850_; lean_object* v___x_9851_; lean_object* v___x_9852_; lean_object* v___x_9853_; lean_object* v___x_9854_; lean_object* v___x_9855_; lean_object* v___x_9856_; lean_object* v___x_9857_; lean_object* v___x_9858_; 
+lean_inc_ref(v___y_9846_);
 v___x_9847_ = lean_alloc_ctor(3, 1, 0);
 lean_ctor_set(v___x_9847_, 0, v___y_9846_);
 v___x_9848_ = l_Lean_MessageData_ofFormat(v___x_9847_);
+lean_inc_ref(v___y_9833_);
 v___x_9849_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_9849_, 0, v___y_9833_);
 lean_ctor_set(v___x_9849_, 1, v___x_9848_);

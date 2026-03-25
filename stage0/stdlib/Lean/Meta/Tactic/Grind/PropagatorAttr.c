@@ -2870,6 +2870,7 @@ lean_ctor_set(v___x_819_, 1, v_openDecls_806_);
 v___x_820_ = lean_alloc_ctor(4, 2, 0);
 lean_ctor_set(v___x_820_, 0, v___x_819_);
 lean_ctor_set(v___x_820_, 1, v___y_801_);
+lean_inc_ref(v___y_795_);
 lean_inc_ref(v___y_796_);
 v___x_821_ = lean_alloc_ctor(0, 5, 3);
 lean_ctor_set(v___x_821_, 0, v___y_796_);
@@ -4995,6 +4996,7 @@ v___x_1583_ = lean_obj_once(&l___private_Lean_Meta_Tactic_Grind_PropagatorAttr_0
 v___x_1584_ = lean_st_mk_ref(v___x_1583_);
 v___x_1585_ = lean_unsigned_to_nat(2u);
 v___x_1586_ = l_Lean_Syntax_getArg(v_stx_1570_, v___x_1585_);
+lean_inc(v___y_1581_);
 v___f_1587_ = lean_alloc_closure((void*)(l___private_Lean_Meta_Tactic_Grind_PropagatorAttr_0__Lean_Meta_Grind_addBuiltin___lam__0___boxed), 9, 4);
 lean_closure_set(v___f_1587_, 0, v___x_1586_);
 lean_closure_set(v___f_1587_, 1, v___y_1581_);

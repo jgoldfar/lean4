@@ -11361,7 +11361,6 @@ v___x_3415_ = lean_unbox(v_a_3414_);
 lean_dec(v_a_3414_);
 if (v___x_3415_ == 0)
 {
-lean_dec_ref(v___y_3411_);
 lean_dec_ref(v_e_3398_);
 goto v___jp_3407_;
 }
@@ -11369,6 +11368,7 @@ else
 {
 lean_object* v___x_3416_; lean_object* v___x_3417_; lean_object* v___x_3418_; lean_object* v___x_3419_; lean_object* v___x_3420_; lean_object* v___x_3421_; lean_object* v___x_3422_; lean_object* v___x_3423_; 
 v___x_3416_ = lean_obj_once(&l_Lean_Meta_Simp_simprocCore___closed__2, &l_Lean_Meta_Simp_simprocCore___closed__2_once, _init_l_Lean_Meta_Simp_simprocCore___closed__2);
+lean_inc_ref(v___y_3411_);
 v___x_3417_ = l_Lean_stringToMessageData(v___y_3411_);
 v___x_3418_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_3418_, 0, v___x_3416_);
@@ -12838,7 +12838,6 @@ v___x_3817_ = lean_unbox(v_a_3816_);
 lean_dec(v_a_3816_);
 if (v___x_3817_ == 0)
 {
-lean_dec_ref(v___y_3813_);
 lean_dec_ref(v_e_3800_);
 goto v___jp_3809_;
 }
@@ -12846,6 +12845,7 @@ else
 {
 lean_object* v___x_3818_; lean_object* v___x_3819_; lean_object* v___x_3820_; lean_object* v___x_3821_; lean_object* v___x_3822_; lean_object* v___x_3823_; lean_object* v___x_3824_; lean_object* v___x_3825_; 
 v___x_3818_ = lean_obj_once(&l_Lean_Meta_Simp_simprocCore___closed__2, &l_Lean_Meta_Simp_simprocCore___closed__2_once, _init_l_Lean_Meta_Simp_simprocCore___closed__2);
+lean_inc_ref(v___y_3813_);
 v___x_3819_ = l_Lean_stringToMessageData(v___y_3813_);
 v___x_3820_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_3820_, 0, v___x_3818_);
@@ -16176,6 +16176,7 @@ lean_dec_ref(v___x_4975_);
 v___x_4977_ = lean_unsigned_to_nat(3u);
 v___x_4978_ = lean_mk_empty_array_with_capacity(v___x_4977_);
 v___x_4979_ = lean_array_push(v___x_4978_, v___x_4970_);
+lean_inc_ref(v___y_4972_);
 v___x_4980_ = lean_array_push(v___x_4979_, v___y_4972_);
 v___x_4981_ = lean_array_push(v___x_4980_, v_procExpr_4962_);
 v___x_4982_ = l_Lean_mkAppN(v___x_4969_, v___x_4981_);
@@ -16186,7 +16187,6 @@ return v___x_4983_;
 else
 {
 lean_object* v_a_4984_; lean_object* v___x_4986_; uint8_t v_isShared_4987_; uint8_t v_isSharedCheck_4991_; 
-lean_dec_ref(v___y_4972_);
 lean_dec_ref(v___x_4970_);
 lean_dec_ref(v___x_4969_);
 lean_dec_ref(v_procExpr_4962_);

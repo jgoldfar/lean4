@@ -2359,6 +2359,7 @@ v___jp_481_:
 size_t v___x_483_; size_t v___x_484_; 
 v___x_483_ = ((size_t)1ULL);
 v___x_484_ = lean_usize_add(v_i_474_, v___x_483_);
+lean_inc_ref(v_a_482_);
 v_i_474_ = v___x_484_;
 v_b_475_ = v_a_482_;
 goto _start;
@@ -4783,9 +4784,6 @@ if (v___y_1460_ == 0)
 {
 lean_object* v___x_1462_; 
 lean_dec_ref(v___y_1457_);
-lean_dec_ref(v___y_1454_);
-lean_dec_ref(v___y_1451_);
-lean_dec_ref(v___y_1450_);
 if (v_isShared_1445_ == 0)
 {
 lean_ctor_set(v___x_1444_, 0, v___y_1453_);
@@ -4927,9 +4925,6 @@ if (v___x_1485_ == 0)
 lean_object* v___x_1487_; 
 lean_dec(v_snd_1478_);
 lean_dec(v_fst_1477_);
-lean_dec_ref(v___y_1454_);
-lean_dec_ref(v___y_1451_);
-lean_dec_ref(v___y_1450_);
 if (v_isShared_1481_ == 0)
 {
 lean_ctor_set(v___x_1480_, 1, v_snd_1442_);
@@ -5014,6 +5009,9 @@ if (v___x_1500_ == 0)
 {
 lean_object* v___x_1501_; lean_object* v___x_1502_; uint8_t v___x_1503_; 
 v___x_1501_ = ((lean_object*)(l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00__private_Lean_Elab_Tactic_Do_VCGen_SuggestInvariant_0__Lean_Elab_Tactic_Do_collectInvariantHints_spec__1___closed__4));
+lean_inc_ref(v___y_1451_);
+lean_inc_ref(v___y_1454_);
+lean_inc_ref(v___y_1450_);
 v___x_1502_ = l_Lean_Name_mkStr4(v___y_1450_, v___y_1454_, v___y_1451_, v___x_1501_);
 v___x_1503_ = l_Lean_Expr_isAppOfArity(v_fst_1477_, v___x_1502_, v___x_1499_);
 lean_dec(v___x_1502_);
@@ -5156,9 +5154,6 @@ else
 {
 lean_object* v___x_1524_; lean_object* v___x_1526_; 
 lean_dec(v_fst_1477_);
-lean_dec_ref(v___y_1454_);
-lean_dec_ref(v___y_1451_);
-lean_dec_ref(v___y_1450_);
 v___x_1524_ = lean_box(1);
 if (v_isShared_1494_ == 0)
 {
@@ -5227,9 +5222,6 @@ else
 {
 lean_object* v___x_1535_; 
 lean_dec(v_fst_1477_);
-lean_dec_ref(v___y_1454_);
-lean_dec_ref(v___y_1451_);
-lean_dec_ref(v___y_1450_);
 if (v_isShared_1494_ == 0)
 {
 lean_ctor_set(v___x_1493_, 1, v___x_1448_);
@@ -5300,11 +5292,8 @@ goto v___jp_1426_;
 else
 {
 lean_object* v_a_1549_; lean_object* v___x_1551_; uint8_t v_isShared_1552_; uint8_t v_isSharedCheck_1556_; 
-lean_dec_ref(v___y_1454_);
 lean_dec(v___y_1453_);
 lean_dec(v___y_1452_);
-lean_dec_ref(v___y_1451_);
-lean_dec_ref(v___y_1450_);
 lean_dec(v_snd_1442_);
 lean_dec_ref(v_letMuts_1416_);
 lean_dec_ref(v_xs_1415_);

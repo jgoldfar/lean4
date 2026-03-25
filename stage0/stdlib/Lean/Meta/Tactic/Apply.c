@@ -1079,6 +1079,7 @@ v_a_255_ = lean_ctor_get(v___x_254_, 0);
 lean_inc(v_a_255_);
 lean_dec_ref(v___x_254_);
 v___x_256_ = lean_obj_once(&l___private_Lean_Meta_Tactic_Apply_0__Lean_Meta_throwApplyError___redArg___lam__0___closed__3, &l___private_Lean_Meta_Tactic_Apply_0__Lean_Meta_throwApplyError___redArg___lam__0___closed__3_once, _init_l___private_Lean_Meta_Tactic_Apply_0__Lean_Meta_throwApplyError___redArg___lam__0___closed__3);
+lean_inc_ref(v___y_253_);
 v___x_257_ = l_Lean_stringToMessageData(v___y_253_);
 v___x_258_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_258_, 0, v___x_256_);
@@ -1110,7 +1111,6 @@ goto v___jp_234_;
 }
 else
 {
-lean_dec_ref(v___y_253_);
 lean_del_object(v___x_232_);
 lean_dec(v_snd_230_);
 lean_dec(v_fst_229_);
@@ -1250,6 +1250,7 @@ return v___x_319_;
 v___jp_320_:
 {
 lean_object* v___x_324_; lean_object* v___x_325_; lean_object* v___x_326_; lean_object* v___x_327_; lean_object* v___x_328_; lean_object* v___x_329_; 
+lean_inc_ref(v___y_322_);
 v___x_324_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_324_, 0, v___y_322_);
 lean_ctor_set(v___x_324_, 1, v___y_323_);

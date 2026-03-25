@@ -2237,6 +2237,7 @@ v___jp_588_:
 size_t v___x_590_; size_t v___x_591_; 
 v___x_590_ = ((size_t)1ULL);
 v___x_591_ = lean_usize_add(v_i_572_, v___x_590_);
+lean_inc_ref(v_a_589_);
 v_i_572_ = v___x_591_;
 v_b_573_ = v_a_589_;
 goto _start;

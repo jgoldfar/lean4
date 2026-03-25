@@ -4222,6 +4222,7 @@ v___jp_836_:
 {
 size_t v_sz_840_; lean_object* v___x_841_; 
 v_sz_840_ = lean_array_size(v___y_839_);
+lean_inc_ref(v___y_837_);
 v___x_841_ = l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00Lean_Elab_Tactic_BVDecide_Frontend_reconstructCounterExample_spec__8(v_atomsAssignment_835_, v___y_839_, v_sz_840_, v___y_838_, v___y_837_);
 lean_dec_ref(v___y_839_);
 return v___x_841_;
@@ -8472,6 +8473,7 @@ return v___x_2347_;
 v___jp_2348_:
 {
 lean_object* v___x_2350_; lean_object* v___x_2351_; 
+lean_inc_ref(v___y_2349_);
 v___x_2350_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_2350_, 0, v_arg_2331_);
 lean_ctor_set(v___x_2350_, 1, v___y_2349_);
@@ -13248,6 +13250,7 @@ v_prf_4201_ = lean_ctor_get(v_a_4200_, 0);
 lean_inc_ref(v_prf_4201_);
 lean_dec_ref(v_a_4200_);
 v___x_4202_ = ((lean_object*)(l_Lean_Elab_Tactic_BVDecide_Frontend_LratCert_toReflectionProof___closed__14));
+lean_inc_ref(v___y_4181_);
 v___x_4203_ = l_Lean_Name_mkStr5(v___x_4115_, v___x_4111_, v___x_4116_, v___y_4181_, v___x_4202_);
 v___x_4204_ = l_Lean_mkConst(v___x_4203_, v___x_4117_);
 v___x_4205_ = l_Lean_mkApp3(v___x_4204_, v___y_4184_, v___y_4185_, v_prf_4201_);
@@ -13263,7 +13266,6 @@ else
 lean_object* v___x_4206_; lean_object* v___x_4207_; lean_object* v___x_4208_; lean_object* v___x_4209_; lean_object* v_a_4210_; 
 lean_dec_ref(v___y_4185_);
 lean_dec_ref(v___y_4184_);
-lean_dec_ref(v___y_4181_);
 v___x_4206_ = lean_obj_once(&l_Lean_Elab_Tactic_BVDecide_Frontend_LratCert_toReflectionProof___closed__16, &l_Lean_Elab_Tactic_BVDecide_Frontend_LratCert_toReflectionProof___closed__16_once, _init_l_Lean_Elab_Tactic_BVDecide_Frontend_LratCert_toReflectionProof___closed__16);
 v___x_4207_ = l_Lean_indentExpr(v___y_4186_);
 v___x_4208_ = lean_alloc_ctor(7, 2, 0);
@@ -13287,7 +13289,6 @@ lean_object* v_a_4211_;
 lean_dec_ref(v___y_4186_);
 lean_dec_ref(v___y_4185_);
 lean_dec_ref(v___y_4184_);
-lean_dec_ref(v___y_4181_);
 v_a_4211_ = lean_ctor_get(v___x_4199_, 0);
 lean_inc(v_a_4211_);
 lean_dec_ref(v___x_4199_);
@@ -13341,6 +13342,7 @@ v_prf_4219_ = lean_ctor_get(v_a_4218_, 0);
 lean_inc_ref(v_prf_4219_);
 lean_dec_ref(v_a_4218_);
 v___x_4220_ = ((lean_object*)(l_Lean_Elab_Tactic_BVDecide_Frontend_LratCert_toReflectionProof___closed__14));
+lean_inc_ref(v___y_4181_);
 v___x_4221_ = l_Lean_Name_mkStr5(v___x_4115_, v___x_4111_, v___x_4116_, v___y_4181_, v___x_4220_);
 v___x_4222_ = l_Lean_mkConst(v___x_4221_, v___x_4117_);
 v___x_4223_ = l_Lean_mkApp3(v___x_4222_, v___y_4184_, v___y_4185_, v_prf_4219_);
@@ -13356,7 +13358,6 @@ else
 lean_object* v___x_4224_; lean_object* v___x_4225_; lean_object* v___x_4226_; lean_object* v___x_4227_; lean_object* v_a_4228_; 
 lean_dec_ref(v___y_4185_);
 lean_dec_ref(v___y_4184_);
-lean_dec_ref(v___y_4181_);
 v___x_4224_ = lean_obj_once(&l_Lean_Elab_Tactic_BVDecide_Frontend_LratCert_toReflectionProof___closed__16, &l_Lean_Elab_Tactic_BVDecide_Frontend_LratCert_toReflectionProof___closed__16_once, _init_l_Lean_Elab_Tactic_BVDecide_Frontend_LratCert_toReflectionProof___closed__16);
 v___x_4225_ = l_Lean_indentExpr(v___y_4186_);
 v___x_4226_ = lean_alloc_ctor(7, 2, 0);
@@ -13380,7 +13381,6 @@ lean_object* v_a_4229_;
 lean_dec_ref(v___y_4186_);
 lean_dec_ref(v___y_4185_);
 lean_dec_ref(v___y_4184_);
-lean_dec_ref(v___y_4181_);
 v_a_4229_ = lean_ctor_get(v___x_4217_, 0);
 lean_inc(v_a_4229_);
 lean_dec_ref(v___x_4217_);

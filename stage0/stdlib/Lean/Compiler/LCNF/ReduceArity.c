@@ -5318,6 +5318,7 @@ goto v___jp_1944_;
 v___jp_1737_:
 {
 lean_object* v___x_1753_; 
+lean_inc_ref(v___y_1748_);
 v___x_1753_ = l_Lean_Compiler_LCNF_DeclValue_mapCodeM___at___00Lean_Compiler_LCNF_Decl_reduceArity_spec__2___redArg(v___y_1748_, v_value_1717_, v___y_1747_, v___y_1739_, v___y_1749_, v___y_1750_, v___y_1751_);
 lean_dec_ref(v___y_1747_);
 if (lean_obj_tag(v___x_1753_) == 0)

@@ -2038,6 +2038,7 @@ lean_ctor_set(v___x_482_, 1, v_openDecls_469_);
 v___x_483_ = lean_alloc_ctor(4, 2, 0);
 lean_ctor_set(v___x_483_, 0, v___x_482_);
 lean_ctor_set(v___x_483_, 1, v___y_459_);
+lean_inc_ref(v___y_464_);
 lean_inc_ref(v___y_458_);
 v___x_484_ = lean_alloc_ctor(0, 5, 3);
 lean_ctor_set(v___x_484_, 0, v___y_458_);
@@ -4682,7 +4683,9 @@ goto v___jp_1476_;
 v___jp_1491_:
 {
 lean_object* v___x_1495_; lean_object* v___x_1496_; lean_object* v___x_1497_; lean_object* v___x_1498_; lean_object* v___x_1499_; lean_object* v___x_1500_; lean_object* v___x_1501_; 
+lean_inc_ref(v___y_1494_);
 v___x_1495_ = l_Lean_stringToMessageData(v___y_1494_);
+lean_inc_ref(v___y_1492_);
 v___x_1496_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_1496_, 0, v___y_1492_);
 lean_ctor_set(v___x_1496_, 1, v___x_1495_);
@@ -5464,6 +5467,7 @@ lean_ctor_set(v___x_1746_, 1, v_openDecls_1733_);
 v___x_1747_ = lean_alloc_ctor(4, 2, 0);
 lean_ctor_set(v___x_1747_, 0, v___x_1746_);
 lean_ctor_set(v___x_1747_, 1, v___y_1728_);
+lean_inc_ref(v___y_1724_);
 lean_inc_ref(v___y_1722_);
 v___x_1748_ = lean_alloc_ctor(0, 5, 3);
 lean_ctor_set(v___x_1748_, 0, v___y_1722_);
@@ -8014,6 +8018,7 @@ goto v___jp_2956_;
 v___jp_2956_:
 {
 lean_object* v___x_2958_; lean_object* v___x_2959_; uint8_t v___x_2960_; 
+lean_inc_ref(v___y_2957_);
 v___x_2958_ = lean_alloc_ctor(3, 1, 0);
 lean_ctor_set(v___x_2958_, 0, v___y_2957_);
 v___x_2959_ = l_Lean_MessageData_ofFormat(v___x_2958_);
@@ -8641,11 +8646,13 @@ v___jp_3136_:
 lean_object* v___x_3145_; lean_object* v___x_3146_; lean_object* v___x_3147_; lean_object* v___x_3148_; lean_object* v___x_3149_; lean_object* v___x_3150_; lean_object* v___x_3151_; lean_object* v___x_3152_; 
 v___x_3145_ = l_Array_append___redArg(v___y_3142_, v___y_3144_);
 lean_dec_ref(v___y_3144_);
+lean_inc(v___y_3138_);
 lean_inc(v___y_3137_);
 v___x_3146_ = lean_alloc_ctor(1, 3, 0);
 lean_ctor_set(v___x_3146_, 0, v___y_3137_);
 lean_ctor_set(v___x_3146_, 1, v___y_3138_);
 lean_ctor_set(v___x_3146_, 2, v___x_3145_);
+lean_inc(v___y_3141_);
 v___x_3147_ = l_Lean_Syntax_node4(v___y_3137_, v___y_3141_, v___y_3143_, v___y_3140_, v___y_3139_, v___x_3146_);
 v___x_3148_ = lean_box(0);
 v___x_3149_ = l_List_mapTR_loop___at___00Lean_Meta_Tactic_TryThis_addRewriteSuggestion_spec__1(v_rules_3107_, v___x_3148_);

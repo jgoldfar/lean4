@@ -12257,6 +12257,7 @@ lean_inc(v_snd_3824_);
 lean_dec(v_a_3822_);
 lean_inc(v_fst_3823_);
 lean_inc(v_fst_3819_);
+lean_inc_ref(v___y_3814_);
 v___x_3825_ = l_Lean_mkApp6(v___y_3814_, v_arg_3812_, v_arg_3809_, v_fst_3819_, v_fst_3823_, v_snd_3820_, v_snd_3824_);
 if (v_eqTrue_3762_ == 0)
 {
@@ -12284,7 +12285,6 @@ lean_object* v_a_3828_; lean_object* v___x_3830_; uint8_t v_isShared_3831_; uint
 lean_dec(v_snd_3820_);
 lean_dec(v_fst_3819_);
 lean_dec(v_a_3816_);
-lean_dec_ref(v___y_3814_);
 lean_dec_ref(v_arg_3812_);
 lean_dec_ref(v_arg_3809_);
 lean_dec_ref(v_e_3761_);
@@ -12331,7 +12331,6 @@ else
 {
 lean_object* v_a_3836_; lean_object* v___x_3838_; uint8_t v_isShared_3839_; uint8_t v_isSharedCheck_3843_; 
 lean_dec(v_a_3816_);
-lean_dec_ref(v___y_3814_);
 lean_dec_ref(v_arg_3812_);
 lean_dec_ref(v_arg_3809_);
 lean_dec_ref(v_e_3761_);
@@ -12377,7 +12376,6 @@ return v___x_3841_;
 else
 {
 lean_object* v_a_3844_; lean_object* v___x_3846_; uint8_t v_isShared_3847_; uint8_t v_isSharedCheck_3851_; 
-lean_dec_ref(v___y_3814_);
 lean_dec_ref(v_arg_3812_);
 lean_dec_ref(v_arg_3809_);
 lean_dec_ref(v_e_3761_);

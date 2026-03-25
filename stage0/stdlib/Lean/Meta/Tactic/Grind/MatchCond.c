@@ -7410,6 +7410,7 @@ v___jp_2138_:
 size_t v___x_2140_; size_t v___x_2141_; 
 v___x_2140_ = ((size_t)1ULL);
 v___x_2141_ = lean_usize_add(v_i_2125_, v___x_2140_);
+lean_inc_ref(v_a_2139_);
 v_i_2125_ = v___x_2141_;
 v_b_2126_ = v_a_2139_;
 goto _start;

@@ -332,7 +332,6 @@ v___x_22_ = l_Int_Linear_Poly_getConst(v___y_20_);
 v___x_23_ = lean_int_emod(v___x_22_, v___y_21_);
 lean_dec(v___x_22_);
 v___x_24_ = lean_int_dec_eq(v___x_23_, v___y_18_);
-lean_dec(v___y_18_);
 lean_dec(v___x_23_);
 if (v___x_24_ == 0)
 {

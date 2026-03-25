@@ -4531,7 +4531,6 @@ goto v___jp_1299_;
 else
 {
 lean_object* v___x_1325_; 
-lean_dec_ref(v_compFieldVars_1277_);
 v___x_1325_ = ((lean_object*)(l_List_mapM_loop___at___00Lean_Elab_ComputedFields_mkImplType_spec__1___lam__0___closed__2));
 v___y_1300_ = v___x_1325_;
 goto v___jp_1299_;
@@ -4540,7 +4539,6 @@ v___jp_1299_:
 {
 lean_object* v___x_1301_; lean_object* v___x_1302_; uint8_t v___x_1303_; uint8_t v___x_1304_; lean_object* v___x_1305_; 
 v___x_1301_ = l_Array_append___redArg(v_params_1276_, v___y_1300_);
-lean_dec_ref(v___y_1300_);
 v___x_1302_ = l_Array_append___redArg(v___x_1301_, v_fields_1278_);
 v___x_1303_ = 0;
 v___x_1304_ = 1;
@@ -4640,7 +4638,6 @@ else
 {
 lean_object* v_a_1326_; lean_object* v___x_1328_; uint8_t v_isShared_1329_; uint8_t v_isSharedCheck_1333_; 
 lean_dec_ref(v_retTy_1279_);
-lean_dec_ref(v_compFieldVars_1277_);
 lean_dec_ref(v_params_1276_);
 lean_dec(v_lparams_1275_);
 lean_dec(v_name_1274_);
@@ -4696,6 +4693,7 @@ lean_dec(v___y_1343_);
 lean_dec_ref(v___y_1342_);
 lean_dec_ref(v___y_1341_);
 lean_dec_ref(v_fields_1339_);
+lean_dec_ref(v_compFieldVars_1338_);
 return v_res_1347_;
 }
 }
@@ -13204,6 +13202,7 @@ lean_ctor_set(v___x_4499_, 1, v_openDecls_4486_);
 v___x_4500_ = lean_alloc_ctor(4, 2, 0);
 lean_ctor_set(v___x_4500_, 0, v___x_4499_);
 lean_ctor_set(v___x_4500_, 1, v___y_4475_);
+lean_inc_ref(v___y_4479_);
 lean_inc_ref(v___y_4478_);
 v___x_4501_ = lean_alloc_ctor(0, 5, 3);
 lean_ctor_set(v___x_4501_, 0, v___y_4478_);

@@ -3762,6 +3762,7 @@ v___x_538_ = lean_obj_once(&l_Lean_MVarId_rewrite___lam__1___closed__3, &l_Lean_
 v___x_539_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_539_, 0, v___x_537_);
 lean_ctor_set(v___x_539_, 1, v___x_538_);
+lean_inc_ref(v___y_533_);
 v___x_540_ = l_Lean_stringToMessageData(v___y_533_);
 v___x_541_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_541_, 0, v___x_539_);

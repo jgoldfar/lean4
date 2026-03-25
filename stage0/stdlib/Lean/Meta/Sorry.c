@@ -328,6 +328,7 @@ goto v___jp_86_;
 v___jp_80_:
 {
 lean_object* v___x_83_; lean_object* v___x_84_; 
+lean_inc_ref(v___y_82_);
 v___x_83_ = l_Lean_mkAppB(v___y_81_, v_type_73_, v___y_82_);
 v___x_84_ = lean_alloc_ctor(0, 1, 0);
 lean_ctor_set(v___x_84_, 0, v___x_83_);

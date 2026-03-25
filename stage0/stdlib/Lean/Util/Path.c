@@ -2234,7 +2234,6 @@ v___jp_677_:
 {
 lean_object* v___x_680_; 
 v___x_680_ = lean_string_append(v___y_679_, v___y_678_);
-lean_dec_ref(v___y_678_);
 v_rootDir_659_ = v___x_680_;
 goto v___jp_658_;
 }

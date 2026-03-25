@@ -3529,6 +3529,7 @@ v___jp_972_:
 size_t v___x_974_; size_t v___x_975_; 
 v___x_974_ = ((size_t)1ULL);
 v___x_975_ = lean_usize_add(v_i_964_, v___x_974_);
+lean_inc_ref(v_a_973_);
 v_i_964_ = v___x_975_;
 v_b_965_ = v_a_973_;
 goto _start;

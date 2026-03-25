@@ -656,6 +656,7 @@ lean_ctor_set(v___x_184_, 1, v_openDecls_169_);
 v___x_185_ = lean_alloc_ctor(4, 2, 0);
 lean_ctor_set(v___x_185_, 0, v___x_184_);
 lean_ctor_set(v___x_185_, 1, v___y_152_);
+lean_inc_ref(v___y_154_);
 lean_inc_ref(v___y_157_);
 v___x_186_ = lean_alloc_ctor(0, 5, 3);
 lean_ctor_set(v___x_186_, 0, v___y_157_);
@@ -723,7 +724,6 @@ else
 lean_object* v_a_198_; lean_object* v___x_200_; uint8_t v_isShared_201_; uint8_t v_isSharedCheck_205_; 
 lean_dec(v_a_161_);
 lean_dec(v___y_156_);
-lean_dec_ref(v___y_154_);
 lean_dec_ref(v___y_153_);
 lean_dec_ref(v___y_152_);
 v_a_198_ = lean_ctor_get(v___x_162_, 0);
@@ -769,7 +769,6 @@ else
 {
 lean_object* v_a_206_; lean_object* v___x_208_; uint8_t v_isShared_209_; uint8_t v_isSharedCheck_213_; 
 lean_dec(v___y_156_);
-lean_dec_ref(v___y_154_);
 lean_dec_ref(v___y_153_);
 lean_dec_ref(v___y_152_);
 v_a_206_ = lean_ctor_get(v___x_160_, 0);

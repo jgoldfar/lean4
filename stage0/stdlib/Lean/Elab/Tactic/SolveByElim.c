@@ -1457,6 +1457,7 @@ goto v___jp_461_;
 v___jp_461_:
 {
 lean_object* v___x_463_; lean_object* v___x_464_; lean_object* v___x_465_; lean_object* v___x_466_; 
+lean_inc_ref(v___y_462_);
 v___x_463_ = l_Lean_stringToMessageData(v___y_462_);
 v___x_464_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_464_, 0, v___x_460_);
@@ -1506,6 +1507,7 @@ return v___x_444_;
 v___jp_445_:
 {
 lean_object* v___x_448_; lean_object* v___x_449_; lean_object* v___x_450_; lean_object* v___x_451_; lean_object* v___x_452_; lean_object* v___x_453_; uint8_t v___x_454_; 
+lean_inc_ref(v___y_447_);
 v___x_448_ = l_Lean_stringToMessageData(v___y_447_);
 v___x_449_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_449_, 0, v___y_446_);

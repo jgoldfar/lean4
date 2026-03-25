@@ -1284,6 +1284,7 @@ return v___x_325_;
 v___jp_328_:
 {
 lean_object* v___x_344_; 
+lean_inc_ref(v___y_342_);
 if (v_isShared_254_ == 0)
 {
 lean_ctor_set_tag(v___x_253_, 3);
@@ -1303,6 +1304,7 @@ v_reusejp_343_:
 {
 lean_object* v___x_345_; lean_object* v___x_346_; lean_object* v___x_347_; 
 v___x_345_ = l_Lean_MessageData_ofFormat(v___x_344_);
+lean_inc_ref(v___y_340_);
 v___x_346_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_346_, 0, v___y_340_);
 lean_ctor_set(v___x_346_, 1, v___x_345_);

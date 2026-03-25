@@ -15643,6 +15643,7 @@ v___jp_4780_:
 {
 lean_object* v___x_4782_; lean_object* v___x_4783_; uint8_t v___x_4784_; lean_object* v___x_4785_; lean_object* v___x_4786_; 
 v___x_4782_ = ((lean_object*)(l_Lean_Parser_instReprLeadingIdentBehavior_repr___closed__1));
+lean_inc(v___y_4781_);
 v___x_4783_ = lean_alloc_ctor(4, 2, 0);
 lean_ctor_set(v___x_4783_, 0, v___y_4781_);
 lean_ctor_set(v___x_4783_, 1, v___x_4782_);
@@ -15657,6 +15658,7 @@ v___jp_4787_:
 {
 lean_object* v___x_4789_; lean_object* v___x_4790_; uint8_t v___x_4791_; lean_object* v___x_4792_; lean_object* v___x_4793_; 
 v___x_4789_ = ((lean_object*)(l_Lean_Parser_instReprLeadingIdentBehavior_repr___closed__3));
+lean_inc(v___y_4788_);
 v___x_4790_ = lean_alloc_ctor(4, 2, 0);
 lean_ctor_set(v___x_4790_, 0, v___y_4788_);
 lean_ctor_set(v___x_4790_, 1, v___x_4789_);
@@ -15671,6 +15673,7 @@ v___jp_4794_:
 {
 lean_object* v___x_4796_; lean_object* v___x_4797_; uint8_t v___x_4798_; lean_object* v___x_4799_; lean_object* v___x_4800_; 
 v___x_4796_ = ((lean_object*)(l_Lean_Parser_instReprLeadingIdentBehavior_repr___closed__5));
+lean_inc(v___y_4795_);
 v___x_4797_ = lean_alloc_ctor(4, 2, 0);
 lean_ctor_set(v___x_4797_, 0, v___y_4795_);
 lean_ctor_set(v___x_4797_, 1, v___x_4796_);

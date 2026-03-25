@@ -3491,6 +3491,7 @@ lean_ctor_set(v___x_1065_, 1, v_openDecls_1052_);
 v___x_1066_ = lean_alloc_ctor(4, 2, 0);
 lean_ctor_set(v___x_1066_, 0, v___x_1065_);
 lean_ctor_set(v___x_1066_, 1, v___y_1045_);
+lean_inc_ref(v___y_1044_);
 lean_inc_ref(v___y_1047_);
 v___x_1067_ = lean_alloc_ctor(0, 5, 3);
 lean_ctor_set(v___x_1067_, 0, v___y_1047_);

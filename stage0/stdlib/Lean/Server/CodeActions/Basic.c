@@ -2148,6 +2148,7 @@ goto v___jp_534_;
 v___jp_534_:
 {
 lean_object* v___x_536_; lean_object* v___x_537_; lean_object* v___x_538_; lean_object* v___x_539_; lean_object* v___x_540_; lean_object* v___x_541_; 
+lean_inc_ref(v___y_535_);
 v___x_536_ = lean_alloc_ctor(3, 1, 0);
 lean_ctor_set(v___x_536_, 0, v___y_535_);
 v___x_537_ = l_Lean_MessageData_ofFormat(v___x_536_);
@@ -3082,6 +3083,7 @@ v___jp_961_:
 {
 lean_object* v___x_963_; lean_object* v___x_964_; uint8_t v___x_965_; lean_object* v___x_966_; lean_object* v___x_967_; lean_object* v___x_968_; 
 v___x_963_ = ((lean_object*)(l___private_Lean_Server_CodeActions_Basic_0__Lean_Server_initFn___lam__2___closed__25_00___x40_Lean_Server_CodeActions_Basic_1656927832____hygCtx___hyg_2_));
+lean_inc_ref(v___y_962_);
 v___x_964_ = lean_string_append(v___y_962_, v___x_963_);
 v___x_965_ = 1;
 v___x_966_ = lean_alloc_ctor(0, 3, 1);

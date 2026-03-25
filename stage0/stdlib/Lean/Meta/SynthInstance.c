@@ -30297,6 +30297,7 @@ goto v_resetjp_9620_;
 v___jp_9582_:
 {
 lean_object* v___x_9590_; lean_object* v___x_9591_; lean_object* v___x_9592_; lean_object* v___x_9593_; 
+lean_inc_ref(v___y_9587_);
 v___x_9590_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_9590_, 0, v___y_9587_);
 lean_ctor_set(v___x_9590_, 1, v___y_9589_);
@@ -30918,6 +30919,7 @@ return v___x_9648_;
 v___jp_9652_:
 {
 lean_object* v___x_9661_; lean_object* v___x_9662_; 
+lean_inc_ref(v___y_9653_);
 v___x_9661_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_9661_, 0, v___y_9653_);
 lean_ctor_set(v___x_9661_, 1, v___y_9660_);
@@ -31591,6 +31593,7 @@ lean_ctor_set(v___x_9945_, 1, v___x_9944_);
 v___x_9946_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_9946_, 0, v_a_9936_);
 lean_ctor_set(v___x_9946_, 1, v___x_9945_);
+lean_inc_ref(v___y_9930_);
 v___x_9947_ = l___private_Lean_Util_Trace_0__Lean_withTraceNode_postCallback___at___00Lean_Meta_synthInstanceCore_x3f_spec__2(v___y_9935_, v___y_9934_, v___y_9930_, v___y_9932_, v___y_9931_, v___y_9929_, v___f_9927_, v___x_9946_, v_a_9922_, v_a_9923_, v_a_9924_, v_a_9925_);
 return v___x_9947_;
 }
@@ -31608,6 +31611,7 @@ lean_ctor_set(v___x_9962_, 1, v___x_9961_);
 v___x_9963_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_9963_, 0, v_a_9956_);
 lean_ctor_set(v___x_9963_, 1, v___x_9962_);
+lean_inc_ref(v___y_9950_);
 v___x_9964_ = l___private_Lean_Util_Trace_0__Lean_withTraceNode_postCallback___at___00Lean_Meta_synthInstanceCore_x3f_spec__2(v___y_9955_, v___y_9954_, v___y_9950_, v___y_9952_, v___y_9951_, v___y_9949_, v___f_9927_, v___x_9963_, v_a_9922_, v_a_9923_, v_a_9924_, v_a_9925_);
 return v___x_9964_;
 }
@@ -34021,7 +34025,6 @@ if (v___y_10733_ == 0)
 if (lean_obj_tag(v___y_10729_) == 0)
 {
 lean_dec_ref(v___y_10729_);
-lean_dec(v___y_10728_);
 lean_del_object(v___x_10658_);
 v___y_10680_ = v___y_10726_;
 v___y_10681_ = v___y_10727_;
@@ -34038,7 +34041,6 @@ lean_inc(v_id_10734_);
 lean_dec_ref(v___y_10729_);
 v___x_10735_ = l_Lean_instBEqInternalExceptionId_beq(v___y_10728_, v_id_10734_);
 lean_dec(v_id_10734_);
-lean_dec(v___y_10728_);
 if (v___x_10735_ == 0)
 {
 lean_del_object(v___x_10658_);
@@ -34080,7 +34082,6 @@ return v___x_10738_;
 else
 {
 lean_dec_ref(v___y_10729_);
-lean_dec(v___y_10728_);
 lean_del_object(v___x_10658_);
 v___y_10680_ = v___y_10726_;
 v___y_10681_ = v___y_10727_;

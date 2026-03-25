@@ -7610,6 +7610,7 @@ return v___x_2089_;
 v___jp_2080_:
 {
 lean_object* v___x_2082_; lean_object* v___x_2083_; lean_object* v___x_2084_; 
+lean_inc_ref(v___y_2081_);
 v___x_2082_ = lean_alloc_ctor(3, 1, 0);
 lean_ctor_set(v___x_2082_, 0, v___y_2081_);
 v___x_2083_ = lean_alloc_closure((void*)(l_Lean_PrettyPrinter_Delaborator_omission___boxed), 8, 1);

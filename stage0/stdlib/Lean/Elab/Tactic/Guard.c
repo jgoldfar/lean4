@@ -3384,6 +3384,7 @@ goto v___jp_1141_;
 v___jp_1141_:
 {
 lean_object* v___f_1153_; lean_object* v___x_1154_; 
+lean_inc_ref(v_getTgt_1144_);
 v___f_1153_ = lean_alloc_closure((void*)(l_Lean_Elab_Tactic_GuardExpr_evalGuardTarget___lam__0___boxed), 12, 3);
 lean_closure_set(v___f_1153_, 0, v_getTgt_1144_);
 lean_closure_set(v___f_1153_, 1, v_r_1143_);

@@ -13450,6 +13450,7 @@ v_a_3891_ = lean_ctor_get(v___x_3890_, 0);
 lean_inc(v_a_3891_);
 lean_dec_ref(v___x_3890_);
 v___x_3892_ = ((lean_object*)(l___private_Init_Data_Array_Basic_0__Array_mapMUnsafe_map___at___00Lean_Compiler_LCNF_decToMono_spec__20___closed__0));
+lean_inc(v___y_3889_);
 if (v_isShared_3885_ == 0)
 {
 lean_ctor_set(v___x_3884_, 2, v_a_3891_);
@@ -13477,7 +13478,6 @@ goto v___jp_3874_;
 else
 {
 lean_object* v_a_3896_; lean_object* v___x_3898_; uint8_t v_isShared_3899_; uint8_t v_isSharedCheck_3903_; 
-lean_dec(v___y_3889_);
 lean_del_object(v___x_3884_);
 lean_dec_ref(v_bs_x27_3873_);
 v_a_3896_ = lean_ctor_get(v___x_3890_, 0);

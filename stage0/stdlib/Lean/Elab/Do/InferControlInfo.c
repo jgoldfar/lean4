@@ -1209,6 +1209,7 @@ goto v___jp_154_;
 v___jp_122_:
 {
 lean_object* v___x_125_; lean_object* v___x_126_; lean_object* v___x_127_; lean_object* v___x_128_; lean_object* v___x_129_; lean_object* v___x_130_; lean_object* v___x_131_; lean_object* v___x_132_; lean_object* v___x_133_; lean_object* v___x_134_; lean_object* v___x_135_; lean_object* v___x_136_; lean_object* v___x_137_; lean_object* v___x_138_; lean_object* v___x_139_; lean_object* v___x_140_; lean_object* v___x_141_; lean_object* v___x_142_; 
+lean_inc_ref(v___y_124_);
 v___x_125_ = lean_alloc_ctor(3, 1, 0);
 lean_ctor_set(v___x_125_, 0, v___y_124_);
 v___x_126_ = l_Lean_MessageData_ofFormat(v___x_125_);
@@ -1244,6 +1245,7 @@ return v___x_142_;
 v___jp_143_:
 {
 lean_object* v___x_146_; lean_object* v___x_147_; lean_object* v___x_148_; lean_object* v___x_149_; lean_object* v___x_150_; 
+lean_inc_ref(v___y_145_);
 v___x_146_ = lean_alloc_ctor(3, 1, 0);
 lean_ctor_set(v___x_146_, 0, v___y_145_);
 v___x_147_ = l_Lean_MessageData_ofFormat(v___x_146_);
@@ -1274,6 +1276,7 @@ goto v___jp_122_;
 v___jp_154_:
 {
 lean_object* v___x_156_; lean_object* v___x_157_; lean_object* v___x_158_; lean_object* v___x_159_; lean_object* v___x_160_; 
+lean_inc_ref(v___y_155_);
 v___x_156_ = lean_alloc_ctor(3, 1, 0);
 lean_ctor_set(v___x_156_, 0, v___y_155_);
 v___x_157_ = l_Lean_MessageData_ofFormat(v___x_156_);
@@ -3058,6 +3061,7 @@ goto v___jp_908_;
 v___jp_908_:
 {
 lean_object* v___x_910_; lean_object* v___x_911_; lean_object* v___x_912_; lean_object* v___x_913_; 
+lean_inc_ref(v___y_909_);
 v___x_910_ = l_Lean_stringToMessageData(v___y_909_);
 v___x_911_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_911_, 0, v___x_907_);
@@ -3107,6 +3111,7 @@ return v___x_891_;
 v___jp_892_:
 {
 lean_object* v___x_895_; lean_object* v___x_896_; lean_object* v___x_897_; lean_object* v___x_898_; lean_object* v___x_899_; lean_object* v___x_900_; uint8_t v___x_901_; 
+lean_inc_ref(v___y_894_);
 v___x_895_ = l_Lean_stringToMessageData(v___y_894_);
 v___x_896_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_896_, 0, v___y_893_);

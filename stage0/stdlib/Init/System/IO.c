@@ -7527,6 +7527,7 @@ v___jp_2235_:
 {
 lean_object* v___x_2237_; lean_object* v___x_2238_; uint8_t v___x_2239_; lean_object* v___x_2240_; lean_object* v___x_2241_; 
 v___x_2237_ = ((lean_object*)(l_IO_instReprTaskState_repr___closed__1));
+lean_inc(v___y_2236_);
 v___x_2238_ = lean_alloc_ctor(4, 2, 0);
 lean_ctor_set(v___x_2238_, 0, v___y_2236_);
 lean_ctor_set(v___x_2238_, 1, v___x_2237_);
@@ -7541,6 +7542,7 @@ v___jp_2242_:
 {
 lean_object* v___x_2244_; lean_object* v___x_2245_; uint8_t v___x_2246_; lean_object* v___x_2247_; lean_object* v___x_2248_; 
 v___x_2244_ = ((lean_object*)(l_IO_instReprTaskState_repr___closed__3));
+lean_inc(v___y_2243_);
 v___x_2245_ = lean_alloc_ctor(4, 2, 0);
 lean_ctor_set(v___x_2245_, 0, v___y_2243_);
 lean_ctor_set(v___x_2245_, 1, v___x_2244_);
@@ -7555,6 +7557,7 @@ v___jp_2249_:
 {
 lean_object* v___x_2251_; lean_object* v___x_2252_; uint8_t v___x_2253_; lean_object* v___x_2254_; lean_object* v___x_2255_; 
 v___x_2251_ = ((lean_object*)(l_IO_instReprTaskState_repr___closed__5));
+lean_inc(v___y_2250_);
 v___x_2252_ = lean_alloc_ctor(4, 2, 0);
 lean_ctor_set(v___x_2252_, 0, v___y_2250_);
 lean_ctor_set(v___x_2252_, 1, v___x_2251_);
@@ -10496,6 +10499,7 @@ v___jp_3375_:
 {
 lean_object* v___x_3377_; lean_object* v___x_3378_; uint8_t v___x_3379_; lean_object* v___x_3380_; lean_object* v___x_3381_; 
 v___x_3377_ = ((lean_object*)(l_IO_FS_instReprFileType_repr___closed__1));
+lean_inc(v___y_3376_);
 v___x_3378_ = lean_alloc_ctor(4, 2, 0);
 lean_ctor_set(v___x_3378_, 0, v___y_3376_);
 lean_ctor_set(v___x_3378_, 1, v___x_3377_);
@@ -10510,6 +10514,7 @@ v___jp_3382_:
 {
 lean_object* v___x_3384_; lean_object* v___x_3385_; uint8_t v___x_3386_; lean_object* v___x_3387_; lean_object* v___x_3388_; 
 v___x_3384_ = ((lean_object*)(l_IO_FS_instReprFileType_repr___closed__3));
+lean_inc(v___y_3383_);
 v___x_3385_ = lean_alloc_ctor(4, 2, 0);
 lean_ctor_set(v___x_3385_, 0, v___y_3383_);
 lean_ctor_set(v___x_3385_, 1, v___x_3384_);
@@ -10524,6 +10529,7 @@ v___jp_3389_:
 {
 lean_object* v___x_3391_; lean_object* v___x_3392_; uint8_t v___x_3393_; lean_object* v___x_3394_; lean_object* v___x_3395_; 
 v___x_3391_ = ((lean_object*)(l_IO_FS_instReprFileType_repr___closed__5));
+lean_inc(v___y_3390_);
 v___x_3392_ = lean_alloc_ctor(4, 2, 0);
 lean_ctor_set(v___x_3392_, 0, v___y_3390_);
 lean_ctor_set(v___x_3392_, 1, v___x_3391_);
@@ -10538,6 +10544,7 @@ v___jp_3396_:
 {
 lean_object* v___x_3398_; lean_object* v___x_3399_; uint8_t v___x_3400_; lean_object* v___x_3401_; lean_object* v___x_3402_; 
 v___x_3398_ = ((lean_object*)(l_IO_FS_instReprFileType_repr___closed__7));
+lean_inc(v___y_3397_);
 v___x_3399_ = lean_alloc_ctor(4, 2, 0);
 lean_ctor_set(v___x_3399_, 0, v___y_3397_);
 lean_ctor_set(v___x_3399_, 1, v___x_3398_);

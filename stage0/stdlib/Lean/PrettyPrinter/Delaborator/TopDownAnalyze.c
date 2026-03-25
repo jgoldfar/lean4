@@ -22929,6 +22929,7 @@ goto v___jp_7957_;
 v___jp_7957_:
 {
 lean_object* v___x_7959_; lean_object* v___x_7960_; lean_object* v___x_7961_; lean_object* v___x_7962_; 
+lean_inc_ref(v___y_7958_);
 v___x_7959_ = lean_alloc_ctor(3, 1, 0);
 lean_ctor_set(v___x_7959_, 0, v___y_7958_);
 v___x_7960_ = l_Lean_MessageData_ofFormat(v___x_7959_);
@@ -22957,6 +22958,7 @@ goto v___jp_7945_;
 v___jp_7945_:
 {
 lean_object* v___x_7949_; 
+lean_inc_ref(v___y_7947_);
 if (v_isShared_7941_ == 0)
 {
 lean_ctor_set_tag(v___x_7940_, 3);

@@ -4511,6 +4511,7 @@ lean_ctor_set(v___x_1342_, 1, v_openDecls_1329_);
 v___x_1343_ = lean_alloc_ctor(4, 2, 0);
 lean_ctor_set(v___x_1343_, 0, v___x_1342_);
 lean_ctor_set(v___x_1343_, 1, v___y_1323_);
+lean_inc_ref(v___y_1321_);
 lean_inc_ref(v___y_1322_);
 v___x_1344_ = lean_alloc_ctor(0, 5, 3);
 lean_ctor_set(v___x_1344_, 0, v___y_1322_);
@@ -5294,6 +5295,7 @@ return v___x_1611_;
 v___jp_1612_:
 {
 lean_object* v___x_1615_; 
+lean_inc_ref(v___y_1614_);
 lean_inc(v___y_1607_);
 lean_inc_ref(v___y_1606_);
 lean_inc(v___y_1605_);
@@ -5453,6 +5455,7 @@ return v___x_1641_;
 v___jp_1644_:
 {
 lean_object* v___x_1647_; 
+lean_inc_ref(v___y_1646_);
 lean_inc(v___y_1607_);
 lean_inc_ref(v___y_1606_);
 lean_inc(v___y_1605_);
@@ -6065,6 +6068,7 @@ goto v___jp_1806_;
 v___jp_1806_:
 {
 lean_object* v___x_1808_; 
+lean_inc_ref(v___y_1807_);
 lean_inc(v___y_1804_);
 lean_inc_ref(v___y_1803_);
 lean_inc(v___y_1802_);
@@ -6693,6 +6697,7 @@ lean_ctor_set(v___x_2000_, 1, v_openDecls_1987_);
 v___x_2001_ = lean_alloc_ctor(4, 2, 0);
 lean_ctor_set(v___x_2001_, 0, v___x_2000_);
 lean_ctor_set(v___x_2001_, 1, v___y_1977_);
+lean_inc_ref(v___y_1976_);
 lean_inc_ref(v___y_1980_);
 v___x_2002_ = lean_alloc_ctor(0, 5, 3);
 lean_ctor_set(v___x_2002_, 0, v___y_1980_);

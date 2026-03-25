@@ -1643,6 +1643,7 @@ goto v___jp_550_;
 v___jp_550_:
 {
 lean_object* v___x_552_; lean_object* v___x_553_; lean_object* v___x_554_; lean_object* v___x_555_; 
+lean_inc_ref(v___y_551_);
 v___x_552_ = l_Lean_stringToMessageData(v___y_551_);
 v___x_553_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_553_, 0, v___x_549_);
@@ -1692,6 +1693,7 @@ return v___x_533_;
 v___jp_534_:
 {
 lean_object* v___x_537_; lean_object* v___x_538_; lean_object* v___x_539_; lean_object* v___x_540_; lean_object* v___x_541_; lean_object* v___x_542_; uint8_t v___x_543_; 
+lean_inc_ref(v___y_536_);
 v___x_537_ = l_Lean_stringToMessageData(v___y_536_);
 v___x_538_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_538_, 0, v___y_535_);
@@ -4278,6 +4280,7 @@ lean_dec_ref(v___x_1545_);
 v___x_1547_ = lean_unsigned_to_nat(3u);
 v___x_1548_ = lean_mk_empty_array_with_capacity(v___x_1547_);
 v___x_1549_ = lean_array_push(v___x_1548_, v___y_1537_);
+lean_inc_ref(v___y_1542_);
 v___x_1550_ = lean_array_push(v___x_1549_, v___y_1542_);
 v___x_1551_ = lean_array_push(v___x_1550_, v___y_1540_);
 v___x_1552_ = l_Lean_mkAppN(v___y_1538_, v___x_1551_);
@@ -4288,7 +4291,6 @@ return v___x_1553_;
 else
 {
 lean_object* v_a_1554_; lean_object* v___x_1556_; uint8_t v_isShared_1557_; uint8_t v_isSharedCheck_1561_; 
-lean_dec_ref(v___y_1542_);
 lean_dec_ref(v___y_1540_);
 lean_dec_ref(v___y_1538_);
 lean_dec_ref(v___y_1537_);

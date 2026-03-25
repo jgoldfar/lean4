@@ -1755,7 +1755,6 @@ lean_dec_ref(v___x_635_);
 v___x_637_ = ((lean_object*)(l___private_Lake_Build_Run_0__Lake_Monitor_reportJob___closed__1));
 v___x_638_ = lean_string_append(v___x_636_, v___x_637_);
 v___x_639_ = lean_string_append(v___x_638_, v___y_616_);
-lean_dec_ref(v___y_616_);
 v___x_640_ = ((lean_object*)(l___private_Lake_Build_Run_0__Lake_Monitor_reportJob___closed__2));
 v___x_641_ = lean_string_append(v___x_639_, v___x_640_);
 v___x_642_ = lean_string_append(v___x_641_, v___y_622_);

@@ -5646,7 +5646,7 @@ goto v_resetjp_1817_;
 v___jp_1804_:
 {
 lean_object* v___x_1808_; lean_object* v___x_1809_; uint8_t v___x_1810_; lean_object* v___x_1811_; lean_object* v___x_1812_; lean_object* v___x_1813_; lean_object* v___x_1814_; lean_object* v___x_1815_; 
-lean_inc_ref(v___y_1806_);
+lean_inc_ref_n(v___y_1806_, 2);
 v___x_1808_ = lean_alloc_ctor(0, 4, 0);
 lean_ctor_set(v___x_1808_, 0, v___y_1807_);
 lean_ctor_set(v___x_1808_, 1, v___y_1805_);

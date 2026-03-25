@@ -20924,12 +20924,12 @@ if (v___x_5996_ == 0)
 {
 lean_dec(v_a_5994_);
 lean_dec_ref(v_declNames_5992_);
+lean_inc_ref(v_b_5995_);
 return v_b_5995_;
 }
 else
 {
 lean_object* v___x_5997_; lean_object* v___f_5998_; lean_object* v___x_5999_; lean_object* v___x_6000_; lean_object* v___x_6001_; 
-lean_dec_ref(v_b_5995_);
 v___x_5997_ = lean_box(v___y_5993_);
 lean_inc_ref(v_declNames_5992_);
 v___f_5998_ = lean_alloc_closure((void*)(l_WellFounded_opaqueFix_u2083___at___00__private_Lean_Elab_PreDefinition_Eqns_0__Lean_Elab_Eqns_findMatchToSplit_x3f_spec__2___redArg___lam__0___boxed), 3, 2);
@@ -20941,14 +20941,13 @@ v___x_6001_ = lean_find_expr(v___f_5998_, v___x_6000_);
 lean_dec_ref(v___f_5998_);
 if (lean_obj_tag(v___x_6001_) == 0)
 {
-lean_object* v___x_6002_; lean_object* v___x_6003_; lean_object* v___x_6004_; 
+lean_object* v___x_6002_; lean_object* v___x_6003_; lean_object* v___x_6004_; lean_object* v___x_6005_; 
 v___x_6002_ = ((lean_object*)(l_WellFounded_opaqueFix_u2083___at___00__private_Lean_Elab_PreDefinition_Eqns_0__Lean_Elab_Eqns_findMatchToSplit_x3f_spec__2___redArg___closed__0));
 v___x_6003_ = lean_unsigned_to_nat(1u);
 v___x_6004_ = lean_nat_add(v_a_5994_, v___x_6003_);
 lean_dec(v_a_5994_);
-v_a_5994_ = v___x_6004_;
-v_b_5995_ = v___x_6002_;
-goto _start;
+v___x_6005_ = l_WellFounded_opaqueFix_u2083___at___00__private_Lean_Elab_PreDefinition_Eqns_0__Lean_Elab_Eqns_findMatchToSplit_x3f_spec__2___redArg(v_upperBound_5990_, v_args_5991_, v_declNames_5992_, v___y_5993_, v___x_6004_, v___x_6002_);
+return v___x_6005_;
 }
 else
 {
@@ -20968,6 +20967,7 @@ _start:
 uint8_t v___y_3345__boxed_6013_; lean_object* v_res_6014_; 
 v___y_3345__boxed_6013_ = lean_unbox(v___y_6010_);
 v_res_6014_ = l_WellFounded_opaqueFix_u2083___at___00__private_Lean_Elab_PreDefinition_Eqns_0__Lean_Elab_Eqns_findMatchToSplit_x3f_spec__2___redArg(v_upperBound_6007_, v_args_6008_, v_declNames_6009_, v___y_3345__boxed_6013_, v_a_6011_, v_b_6012_);
+lean_dec_ref(v_b_6012_);
 lean_dec_ref(v_args_6008_);
 lean_dec(v_upperBound_6007_);
 return v_res_6014_;
@@ -21224,6 +21224,7 @@ _start:
 uint8_t v___y_3492__boxed_6127_; lean_object* v_res_6128_; 
 v___y_3492__boxed_6127_ = lean_unbox(v___y_6121_);
 v_res_6128_ = l_WellFounded_opaqueFix_u2083___at___00__private_Lean_Elab_PreDefinition_Eqns_0__Lean_Elab_Eqns_findMatchToSplit_x3f_spec__2(v_upperBound_6118_, v_args_6119_, v_declNames_6120_, v___y_3492__boxed_6127_, v_inst_6122_, v_R_6123_, v_a_6124_, v_b_6125_, v_c_6126_);
+lean_dec_ref(v_b_6125_);
 lean_dec_ref(v_args_6119_);
 lean_dec(v_upperBound_6118_);
 return v_res_6128_;

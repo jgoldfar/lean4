@@ -3206,7 +3206,6 @@ v___jp_720_:
 {
 if (lean_obj_tag(v___y_721_) == 0)
 {
-lean_dec(v___y_722_);
 v___y_708_ = v___y_723_;
 goto v___jp_707_;
 }
@@ -3222,6 +3221,7 @@ v___x_727_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_727_, 0, v___x_726_);
 lean_ctor_set(v___x_727_, 1, v___x_725_);
 v___x_728_ = ((lean_object*)(l___private_Lake_CLI_Translate_Toml_0__Lake_instInsertFieldOfEncodeFieldOfBEqOfConfigField___redArg___lam__0___closed__0));
+lean_inc(v___y_722_);
 v___x_729_ = l_Lake_Toml_RBDict_insert___redArg(v___x_728_, v___y_722_, v___x_727_, v___y_723_);
 v___y_708_ = v___x_729_;
 goto v___jp_707_;

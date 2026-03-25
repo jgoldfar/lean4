@@ -16957,6 +16957,7 @@ goto v___jp_5472_;
 v___jp_5472_:
 {
 lean_object* v___x_5474_; lean_object* v___x_5475_; lean_object* v___x_5476_; lean_object* v___x_5477_; 
+lean_inc_ref(v___y_5473_);
 v___x_5474_ = lean_alloc_ctor(3, 1, 0);
 lean_ctor_set(v___x_5474_, 0, v___y_5473_);
 v___x_5475_ = l_Lean_MessageData_ofFormat(v___x_5474_);
@@ -20472,6 +20473,7 @@ goto v___jp_6323_;
 v___jp_6323_:
 {
 lean_object* v___x_6325_; lean_object* v___x_6326_; lean_object* v___x_6327_; lean_object* v___x_6328_; 
+lean_inc_ref(v___y_6324_);
 v___x_6325_ = lean_alloc_ctor(3, 1, 0);
 lean_ctor_set(v___x_6325_, 0, v___y_6324_);
 v___x_6326_ = l_Lean_MessageData_ofFormat(v___x_6325_);

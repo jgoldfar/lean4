@@ -8935,6 +8935,7 @@ lean_ctor_set(v___x_2923_, 1, v___x_2922_);
 v___x_2924_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_2924_, 0, v_a_2917_);
 lean_ctor_set(v___x_2924_, 1, v___x_2923_);
+lean_inc_ref(v___y_2915_);
 v___x_2925_ = l___private_Lean_Util_Trace_0__Lean_withTraceNode_postCallback___at___00Lean_Meta_SolveByElim_applyTactics_spec__4(v___y_2910_, v___y_2916_, v___y_2915_, v___y_2911_, v___y_2914_, v___y_2913_, v___f_2908_, v___x_2924_, v_a_2900_, v_a_2901_, v_a_2902_, v_a_2903_);
 return v___x_2925_;
 }
@@ -8970,6 +8971,7 @@ lean_ctor_set(v___x_2953_, 1, v___x_2952_);
 v___x_2954_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_2954_, 0, v_a_2944_);
 lean_ctor_set(v___x_2954_, 1, v___x_2953_);
+lean_inc_ref(v___y_2942_);
 v___x_2955_ = l___private_Lean_Util_Trace_0__Lean_withTraceNode_postCallback___at___00Lean_Meta_SolveByElim_applyTactics_spec__4(v___y_2937_, v___y_2943_, v___y_2942_, v___y_2938_, v___y_2941_, v___y_2940_, v___f_2908_, v___x_2954_, v_a_2900_, v_a_2901_, v_a_2902_, v_a_2903_);
 return v___x_2955_;
 }
