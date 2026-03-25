@@ -468,10 +468,7 @@ def elabMVCGen : Tactic := fun stx => withMainContext do
   let invariants ←
     if ctx.config.leave then runOnVCs (← `(tactic| try mleave)) "Try again with -leave." invariants else pure invariants
   trace[Elab.Tactic.Do.vcgen] "before elabInvariants {← (invariants ++ vcs).mapM fun m => m.getTag}"
-  -- TODO: This is a vestige from removing the witnesses section (stx[3]) introduced in #12882.
-  -- After stage0 update, nargs will be constantly 5 again, as it used to.
-  let nargs := stx.getNumArgs
-  elabInvariants stx[nargs-2] invariants (suggestInvariant vcs)
+  elabInvariants stx[3] invariants (suggestInvariant vcs)
   let invariants ← invariants.filterM (not <$> ·.isAssigned)
   trace[Elab.Tactic.Do.vcgen] "before trying trivial VCs {← (invariants ++ vcs).mapM fun m => m.getTag}"
   let vcs ← do
@@ -482,7 +479,7 @@ def elabMVCGen : Tactic := fun stx => withMainContext do
   -- so we don't do it. Presumably some weird delayed assignment thing is going on.
   -- let vcs ← if ctx.config.elimLets then liftMetaM <| vcs.mapM elimLets else pure vcs
   trace[Elab.Tactic.Do.vcgen] "before elabVCs {← (invariants ++ vcs).mapM fun m => m.getTag}"
-  let vcs ← elabVCs stx[nargs-1] vcs
+  let vcs ← elabVCs stx[4] vcs
   trace[Elab.Tactic.Do.vcgen] "before replacing main goal {← (invariants ++ vcs).mapM fun m => m.getTag}"
   replaceMainGoal (invariants ++ vcs).toList
   -- trace[Elab.Tactic.Do.vcgen] "replaced main goal, new: {← getGoals}"
@@ -491,7 +488,7 @@ def elabMVCGen : Tactic := fun stx => withMainContext do
 def elabMVCGenHint : Tactic := fun stx => withMainContext do
   let stx' : TSyntax ``mvcgen := TSyntax.mk <| stx
     |>.setKind ``Lean.Parser.Tactic.mvcgen
-    |>.modifyArgs (·.set! 0 (mkAtom "mvcgen") |>.push mkNullNode |>.push (mkNullNode #[← `(invariantAlts| invariants?)]) |>.push mkNullNode)
+    |>.modifyArgs (·.set! 0 (mkAtom "mvcgen") |>.push (mkNullNode #[← `(invariantAlts| invariants?)]) |>.push mkNullNode)
   -- logInfo m!"{stx}\n{toString stx}\n{repr stx}"
   -- logInfo m!"{stx'}\n{toString stx'}\n{repr stx'}"
   Lean.Meta.Tactic.TryThis.addSuggestion stx stx'
