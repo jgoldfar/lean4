@@ -2404,6 +2404,7 @@ v___jp_719_:
 {
 lean_object* v___x_721_; lean_object* v___x_722_; 
 v___x_721_ = lean_unsigned_to_nat(1u);
+lean_inc(v___y_720_);
 v___x_722_ = lean_alloc_ctor(0, 3, 0);
 lean_ctor_set(v___x_722_, 0, v___x_718_);
 lean_ctor_set(v___x_722_, 1, v___y_720_);

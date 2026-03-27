@@ -79,7 +79,7 @@ lean_object* l_Lean_Meta_SavedState_restore___redArg(lean_object*, lean_object*,
 uint8_t l_Lean_Exception_isInterrupt(lean_object*);
 uint8_t l_Lean_Exception_isRuntime(lean_object*);
 lean_object* lean_infer_type(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-lean_object* lean_array_get(lean_object*, lean_object*, lean_object*);
+lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_LocalContext_setKind(lean_object*, lean_object*, uint8_t);
 uint8_t l_Lean_instDecidableEqLocalDeclKind(uint8_t, uint8_t);
 uint8_t lean_nat_dec_eq(lean_object*, lean_object*);
@@ -3014,7 +3014,8 @@ v___jp_930_:
 {
 lean_object* v___x_931_; lean_object* v___x_932_; lean_object* v___x_933_; 
 v___x_931_ = lean_box(0);
-v___x_932_ = lean_array_get(v___x_931_, v_fst_918_, v_a_920_);
+v___x_932_ = lean_array_get_borrowed(v___x_931_, v_fst_918_, v_a_920_);
+lean_inc(v___x_932_);
 v___x_933_ = l_Lean_LocalContext_setKind(v_b_921_, v___x_932_, v_kind_929_);
 v_a_923_ = v___x_933_;
 goto v___jp_922_;

@@ -3213,6 +3213,7 @@ v___jp_1103_:
 uint8_t v___x_1111_; lean_object* v___x_1112_; lean_object* v___x_1113_; 
 v___x_1111_ = 0;
 lean_inc_ref(v___y_1110_);
+lean_inc(v___y_1107_);
 lean_inc_ref(v___y_1108_);
 lean_inc_ref(v___y_1106_);
 v___x_1112_ = lean_alloc_ctor(0, 5, 2);

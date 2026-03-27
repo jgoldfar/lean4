@@ -43,7 +43,7 @@ lean_object* l_Lean_Lsp_instFromJsonMarkupContent_fromJson(lean_object*);
 lean_object* l_Lean_Lsp_instFromJsonRange_fromJson(lean_object*);
 lean_object* lean_array_get_size(lean_object*);
 uint8_t lean_nat_dec_lt(lean_object*, lean_object*);
-lean_object* lean_array_get(lean_object*, lean_object*, lean_object*);
+lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
 uint8_t lean_uint32_dec_eq(uint32_t, uint32_t);
 lean_object* lean_string_utf8_byte_size(lean_object*);
 lean_object* lean_string_utf8_extract(lean_object*, lean_object*, lean_object*);
@@ -100,7 +100,6 @@ lean_object* l_Lean_Json_opt___redArg(lean_object*, lean_object*, lean_object*);
 lean_object* l_Array_toJson(lean_object*, lean_object*, lean_object*);
 lean_object* l_id___boxed(lean_object*, lean_object*);
 lean_object* l___private_Init_Data_List_Impl_0__List_flatMapTR_go(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
 lean_object* l_Float_toJson(double);
 lean_object* l_Array_toJson___redArg(lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l_Lean_Json_getObjValAs_x3f___at___00Lean_Lsp_instFromJsonCompletionOptions_fromJson_spec__1(lean_object*, lean_object*);
@@ -13035,7 +13034,8 @@ if (v___x_2919_ == 0)
 lean_object* v___x_2920_; lean_object* v___x_2921_; lean_object* v___x_2922_; lean_object* v___x_2923_; 
 v___x_2920_ = lean_box(0);
 v___x_2921_ = lean_unsigned_to_nat(0u);
-v___x_2922_ = lean_array_get(v___x_2920_, v_elems_2916_, v___x_2921_);
+v___x_2922_ = lean_array_get_borrowed(v___x_2920_, v_elems_2916_, v___x_2921_);
+lean_inc(v___x_2922_);
 v___x_2923_ = l_Lean_Json_getStr_x3f(v___x_2922_);
 if (lean_obj_tag(v___x_2923_) == 0)
 {
@@ -13085,7 +13085,8 @@ v_a_2932_ = lean_ctor_get(v___x_2923_, 0);
 lean_inc(v_a_2932_);
 lean_dec_ref(v___x_2923_);
 v___x_2933_ = lean_unsigned_to_nat(1u);
-v___x_2934_ = lean_array_get(v___x_2920_, v_elems_2916_, v___x_2933_);
+v___x_2934_ = lean_array_get_borrowed(v___x_2920_, v_elems_2916_, v___x_2933_);
+lean_inc(v___x_2934_);
 v___x_2935_ = l_Lean_Json_getNat_x3f(v___x_2934_);
 if (lean_obj_tag(v___x_2935_) == 0)
 {
@@ -13136,7 +13137,8 @@ v_a_2944_ = lean_ctor_get(v___x_2935_, 0);
 lean_inc(v_a_2944_);
 lean_dec_ref(v___x_2935_);
 v___x_2945_ = lean_unsigned_to_nat(2u);
-v___x_2946_ = lean_array_get(v___x_2920_, v_elems_2916_, v___x_2945_);
+v___x_2946_ = lean_array_get_borrowed(v___x_2920_, v_elems_2916_, v___x_2945_);
+lean_inc(v___x_2946_);
 v___x_2947_ = l_Lean_Json_getNat_x3f(v___x_2946_);
 if (lean_obj_tag(v___x_2947_) == 0)
 {

@@ -6735,6 +6735,7 @@ if (v___x_2057_ == 0)
 {
 lean_object* v___x_2058_; 
 lean_dec_ref(v_acc_2049_);
+lean_inc(v_err_2056_);
 v___x_2058_ = lean_alloc_ctor(1, 2, 0);
 lean_ctor_set(v___x_2058_, 0, v_pos_2054_);
 lean_ctor_set(v___x_2058_, 1, v_err_2056_);
@@ -6743,7 +6744,6 @@ return v___x_2058_;
 else
 {
 lean_object* v___x_2059_; 
-lean_dec(v_err_2056_);
 v___x_2059_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_2059_, 0, v_pos_2054_);
 lean_ctor_set(v___x_2059_, 1, v_acc_2049_);

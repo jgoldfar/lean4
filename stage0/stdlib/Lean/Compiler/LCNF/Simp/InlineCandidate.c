@@ -37,7 +37,7 @@ lean_object* l_Lean_Compiler_LCNF_Decl_instantiateTypeLevelParams___redArg(lean_
 lean_object* l_Lean_Compiler_LCNF_Decl_isCasesOnParam_x3f___redArg(lean_object*);
 lean_object* lean_array_get_size(lean_object*);
 uint8_t lean_nat_dec_lt(lean_object*, lean_object*);
-lean_object* lean_array_get(lean_object*, lean_object*, lean_object*);
+lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Compiler_LCNF_Arg_isConstructorApp___redArg(lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Compiler_LCNF_Decl_getArity___redArg(lean_object*);
 lean_object* l_Lean_Compiler_LCNF_inBasePhase___redArg(lean_object*);
@@ -2398,10 +2398,9 @@ else
 lean_object* v___x_525_; lean_object* v___x_526_; lean_object* v___x_527_; 
 lean_del_object(v___x_517_);
 v___x_525_ = lean_box(0);
-v___x_526_ = lean_array_get(v___x_525_, v___y_513_, v_val_515_);
+v___x_526_ = lean_array_get_borrowed(v___x_525_, v___y_513_, v_val_515_);
 lean_dec(v_val_515_);
 v___x_527_ = l_Lean_Compiler_LCNF_Arg_isConstructorApp___redArg(v___x_526_, v___y_509_, v___y_506_);
-lean_dec(v___x_526_);
 if (lean_obj_tag(v___x_527_) == 0)
 {
 lean_object* v_a_528_; lean_object* v___x_530_; uint8_t v_isShared_531_; uint8_t v_isSharedCheck_537_; 

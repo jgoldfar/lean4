@@ -1422,6 +1422,7 @@ goto v_reusejp_461_;
 v_reusejp_461_:
 {
 lean_object* v___x_463_; 
+lean_inc(v___y_460_);
 v___x_463_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_463_, 0, v___x_462_);
 lean_ctor_set(v___x_463_, 1, v___y_460_);

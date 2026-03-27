@@ -2541,7 +2541,6 @@ lean_dec(v___x_618_);
 if (v___x_619_ == 0)
 {
 uint32_t v___x_620_; uint32_t v___x_621_; uint8_t v___x_622_; 
-lean_dec(v_b_615_);
 v___x_620_ = lean_string_utf8_get_fast(v_arg_613_, v_a_614_);
 v___x_621_ = 61;
 v___x_622_ = lean_uint32_dec_eq(v___x_620_, v___x_621_);
@@ -2566,6 +2565,7 @@ return v___x_626_;
 else
 {
 lean_dec(v_a_614_);
+lean_inc(v_b_615_);
 return v_b_615_;
 }
 }
@@ -2575,6 +2575,7 @@ _start:
 {
 lean_object* v_res_631_; 
 v_res_631_ = l_WellFounded_opaqueFix_u2083___at___00__private_Lean_Shell_0__Lean_setConfigOption_spec__1___redArg(v___x_627_, v_arg_628_, v_a_629_, v_b_630_);
+lean_dec(v_b_630_);
 lean_dec_ref(v_arg_628_);
 lean_dec_ref(v___x_627_);
 return v_res_631_;
@@ -2770,6 +2771,7 @@ _start:
 {
 lean_object* v_res_695_; 
 v_res_695_ = l_WellFounded_opaqueFix_u2083___at___00__private_Lean_Shell_0__Lean_setConfigOption_spec__1(v___x_688_, v_arg_689_, v_inst_690_, v_R_691_, v_a_692_, v_b_693_, v_c_694_);
+lean_dec(v_b_693_);
 lean_dec_ref(v_arg_689_);
 lean_dec_ref(v___x_688_);
 return v_res_695_;
@@ -9033,7 +9035,6 @@ lean_dec(v___x_2641_);
 if (v___x_2642_ == 0)
 {
 lean_object* v___x_2643_; uint32_t v___x_2644_; uint32_t v___x_2645_; uint8_t v___x_2646_; 
-lean_dec(v_b_2637_);
 v___x_2643_ = lean_nat_add(v_startInclusive_2639_, v_a_2636_);
 v___x_2644_ = lean_string_utf8_get_fast(v_str_2638_, v___x_2643_);
 v___x_2645_ = 10;
@@ -9062,6 +9063,7 @@ return v___x_2651_;
 else
 {
 lean_dec(v_a_2636_);
+lean_inc(v_b_2637_);
 return v_b_2637_;
 }
 }
@@ -9071,6 +9073,7 @@ _start:
 {
 lean_object* v_res_2655_; 
 v_res_2655_ = l_WellFounded_opaqueFix_u2083___at___00__private_Lean_Shell_0__Lean_shellMain_spec__3___redArg(v_val_2652_, v_a_2653_, v_b_2654_);
+lean_dec(v_b_2654_);
 lean_dec_ref(v_val_2652_);
 return v_res_2655_;
 }
@@ -11657,6 +11660,7 @@ _start:
 {
 lean_object* v_res_3248_; 
 v_res_3248_ = l_WellFounded_opaqueFix_u2083___at___00__private_Lean_Shell_0__Lean_shellMain_spec__3(v_val_3242_, v_inst_3243_, v_R_3244_, v_a_3245_, v_b_3246_, v_c_3247_);
+lean_dec(v_b_3246_);
 lean_dec_ref(v_val_3242_);
 return v_res_3248_;
 }

@@ -11947,7 +11947,8 @@ else
 {
 lean_object* v___x_4129_; lean_object* v___x_4130_; lean_object* v___x_4131_; 
 v___x_4129_ = lean_unsigned_to_nat(0u);
-v___x_4130_ = lean_array_get(v___x_4125_, v_args_4124_, v___x_4129_);
+v___x_4130_ = lean_array_get_borrowed(v___x_4125_, v_args_4124_, v___x_4129_);
+lean_inc(v___x_4130_);
 v___x_4131_ = lean_alloc_ctor(1, 1, 0);
 lean_ctor_set(v___x_4131_, 0, v___x_4130_);
 return v___x_4131_;
@@ -12131,9 +12132,8 @@ else
 {
 lean_object* v___x_4179_; lean_object* v___x_4180_; lean_object* v___x_4181_; 
 v___x_4179_ = lean_box(0);
-v___x_4180_ = lean_array_get(v___x_4179_, v_args_4174_, v_i_4175_);
+v___x_4180_ = lean_array_get_borrowed(v___x_4179_, v_args_4174_, v_i_4175_);
 v___x_4181_ = l_Lean_Syntax_getHeadInfo_x3f(v___x_4180_);
-lean_dec(v___x_4180_);
 if (lean_obj_tag(v___x_4181_) == 0)
 {
 lean_object* v___x_4182_; lean_object* v___x_4183_; 
@@ -12412,10 +12412,9 @@ v___x_4245_ = lean_nat_sub(v___x_4241_, v_i_4240_);
 v___x_4246_ = lean_unsigned_to_nat(1u);
 v___x_4247_ = lean_nat_sub(v___x_4245_, v___x_4246_);
 lean_dec(v___x_4245_);
-v___x_4248_ = lean_array_get(v___x_4244_, v_args_4239_, v___x_4247_);
+v___x_4248_ = lean_array_get_borrowed(v___x_4244_, v_args_4239_, v___x_4247_);
 lean_dec(v___x_4247_);
 v___x_4249_ = l_Lean_Syntax_getTailPos_x3f(v___x_4248_, v_canonicalOnly_4238_);
-lean_dec(v___x_4248_);
 if (lean_obj_tag(v___x_4249_) == 0)
 {
 lean_object* v___x_4250_; 

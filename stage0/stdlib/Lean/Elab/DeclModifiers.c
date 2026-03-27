@@ -3162,6 +3162,7 @@ goto v___jp_991_;
 v___jp_947_:
 {
 lean_object* v___x_950_; lean_object* v___x_951_; lean_object* v___x_952_; lean_object* v___x_953_; lean_object* v_components_954_; lean_object* v___x_955_; lean_object* v___x_956_; lean_object* v___x_957_; lean_object* v___x_958_; lean_object* v___x_959_; lean_object* v___x_960_; lean_object* v___x_961_; lean_object* v___x_962_; uint8_t v___x_963_; lean_object* v___x_964_; 
+lean_inc(v___y_949_);
 v___x_950_ = l_List_appendTR___redArg(v___y_948_, v___y_949_);
 v___x_951_ = lean_array_to_list(v_attrs_946_);
 v___x_952_ = lean_box(0);
@@ -3190,6 +3191,7 @@ return v___x_964_;
 v___jp_965_:
 {
 lean_object* v___x_968_; 
+lean_inc(v___y_967_);
 v___x_968_ = l_List_appendTR___redArg(v___y_966_, v___y_967_);
 if (v_isUnsafe_945_ == 0)
 {
@@ -3211,6 +3213,7 @@ goto v___jp_947_;
 v___jp_971_:
 {
 lean_object* v___x_974_; 
+lean_inc(v___y_973_);
 v___x_974_ = l_List_appendTR___redArg(v___y_972_, v___y_973_);
 switch(v_recKind_944_)
 {
@@ -3243,6 +3246,7 @@ goto v___jp_965_;
 v___jp_978_:
 {
 lean_object* v___x_981_; 
+lean_inc(v___y_980_);
 v___x_981_ = l_List_appendTR___redArg(v___y_979_, v___y_980_);
 switch(v_computeKind_943_)
 {
@@ -3275,6 +3279,7 @@ goto v___jp_971_;
 v___jp_985_:
 {
 lean_object* v___x_988_; 
+lean_inc(v___y_987_);
 v___x_988_ = l_List_appendTR___redArg(v___y_986_, v___y_987_);
 if (v_isProtected_942_ == 0)
 {

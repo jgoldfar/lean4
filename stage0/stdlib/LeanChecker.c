@@ -455,6 +455,7 @@ v___x_80_ = lean_st_mk_ref(v___x_79_);
 v_imports_81_ = lean_ctor_get(v___y_76_, 0);
 lean_inc_ref(v_imports_81_);
 lean_dec_ref(v___y_76_);
+lean_inc(v___y_75_);
 v___x_82_ = l_Lean_importModulesCore(v_imports_81_, v___y_74_, v___y_75_, v___y_78_, v___x_80_);
 if (lean_obj_tag(v___x_82_) == 0)
 {

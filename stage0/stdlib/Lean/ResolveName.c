@@ -3968,7 +3968,6 @@ LEAN_EXPORT uint8_t l___private_Lean_ResolveName_0__Lean_ResolveName_containsDec
 _start:
 {
 uint8_t v___y_1225_; uint8_t v___x_1228_; 
-lean_inc_ref(v_env_1222_);
 v___x_1228_ = l_Lean_Environment_containsOnBranch(v_env_1222_, v_declName_1223_);
 if (v___x_1228_ == 0)
 {

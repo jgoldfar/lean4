@@ -4220,7 +4220,7 @@ lean_ctor_set(v___x_1458_, 1, v___x_1457_);
 v___x_1459_ = ((lean_object*)(l_Lake_DSL_elabConfig___closed__4));
 v___x_1460_ = l_Lean_Name_mkStr4(v___y_1441_, v___y_1440_, v___y_1444_, v___x_1459_);
 v___x_1461_ = ((lean_object*)(l_Lake_DSL_expandAttrs___closed__5));
-lean_inc(v___y_1439_);
+lean_inc_n(v___y_1439_, 2);
 v___x_1462_ = lean_alloc_ctor(1, 3, 0);
 lean_ctor_set(v___x_1462_, 0, v___y_1439_);
 lean_ctor_set(v___x_1462_, 1, v___x_1451_);

@@ -11686,6 +11686,7 @@ goto v___jp_3915_;
 v___jp_3945_:
 {
 lean_object* v___x_3959_; lean_object* v___x_3960_; 
+lean_inc(v___y_3948_);
 v___x_3959_ = lean_alloc_ctor(0, 4, 1);
 lean_ctor_set(v___x_3959_, 0, v___y_3950_);
 lean_ctor_set(v___x_3959_, 1, v___y_3946_);
@@ -19254,7 +19255,8 @@ lean_closure_set(v___f_6823_, 4, v_preDefs_6807_);
 lean_closure_set(v___f_6823_, 5, v_a_6810_);
 lean_closure_set(v___f_6823_, 6, v___x_6822_);
 v___x_6824_ = lean_unsigned_to_nat(0u);
-v___x_6825_ = lean_array_get(v___x_6824_, v_a_6809_, v_a_6810_);
+v___x_6825_ = lean_array_get_borrowed(v___x_6824_, v_a_6809_, v_a_6810_);
+lean_inc(v___x_6825_);
 v___x_6826_ = lean_alloc_ctor(1, 1, 0);
 lean_ctor_set(v___x_6826_, 0, v___x_6825_);
 v___x_6827_ = 0;

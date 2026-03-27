@@ -360,6 +360,7 @@ v___x_204_ = lean_obj_once(&l___private_Lake_DSL_Script_0__Lake_DSL_expandScript
 v___x_205_ = ((lean_object*)(l___private_Lake_DSL_Script_0__Lake_DSL_expandScriptDecl___closed__18));
 v___x_206_ = l_Lean_addMacroScope(v___y_150_, v___x_205_, v___y_154_);
 v___x_207_ = ((lean_object*)(l___private_Lake_DSL_Script_0__Lake_DSL_expandScriptDecl___closed__20));
+lean_inc(v___y_164_);
 v___x_208_ = lean_alloc_ctor(1, 2, 0);
 lean_ctor_set(v___x_208_, 0, v___x_207_);
 lean_ctor_set(v___x_208_, 1, v___y_164_);

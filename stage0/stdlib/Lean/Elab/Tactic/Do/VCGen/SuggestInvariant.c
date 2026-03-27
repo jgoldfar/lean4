@@ -4441,7 +4441,6 @@ return v___x_1340_;
 }
 else
 {
-lean_dec_ref(v___x_1335_);
 return v___x_1336_;
 }
 }
@@ -4453,6 +4452,7 @@ uint8_t v___x_10779__boxed_1345_; uint8_t v_res_1346_; lean_object* v_r_1347_;
 v___x_10779__boxed_1345_ = lean_unbox(v___x_1343_);
 v_res_1346_ = l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00__private_Lean_Elab_Tactic_Do_VCGen_SuggestInvariant_0__Lean_Elab_Tactic_Do_collectInvariantHints_spec__1___lam__0(v_letMutsTuple_1341_, v___x_1342_, v___x_10779__boxed_1345_, v_fvarId_1344_);
 lean_dec(v_fvarId_1344_);
+lean_dec_ref(v___x_1342_);
 lean_dec_ref(v_letMutsTuple_1341_);
 v_r_1347_ = lean_box(v_res_1346_);
 return v_r_1347_;

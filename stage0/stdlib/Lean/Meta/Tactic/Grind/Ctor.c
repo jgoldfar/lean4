@@ -3465,6 +3465,7 @@ lean_inc_ref(v_env_1126_);
 lean_dec(v___x_1125_);
 v___x_1127_ = l_Lean_Meta_mkHInjectiveTheoremNameFor(v_declName_976_);
 v___x_1128_ = l_Lean_Environment_containsOnBranch(v_env_1126_, v___x_1127_);
+lean_dec_ref(v_env_1126_);
 if (v___x_1128_ == 0)
 {
 lean_object* v___x_1129_; 

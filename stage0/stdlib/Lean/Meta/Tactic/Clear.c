@@ -3122,7 +3122,7 @@ if (lean_obj_tag(v___x_990_) == 0)
 lean_object* v_lctx_991_; lean_object* v___y_993_; lean_object* v___y_994_; lean_object* v___y_995_; lean_object* v___y_996_; lean_object* v___y_997_; lean_object* v___y_998_; lean_object* v___y_999_; lean_object* v___y_1015_; lean_object* v___y_1016_; lean_object* v___y_1017_; lean_object* v___y_1018_; uint8_t v___x_1075_; 
 lean_dec_ref(v___x_990_);
 v_lctx_991_ = lean_ctor_get(v___y_954_, 2);
-lean_inc_ref_n(v_lctx_991_, 2);
+lean_inc_ref(v_lctx_991_);
 v___x_1075_ = l_Lean_LocalContext_contains(v_lctx_991_, v_fvarId_952_);
 if (v___x_1075_ == 0)
 {

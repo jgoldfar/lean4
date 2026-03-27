@@ -8029,6 +8029,7 @@ v___jp_2248_:
 {
 lean_object* v___x_2255_; lean_object* v___x_2256_; lean_object* v___x_2257_; lean_object* v___x_2258_; 
 v___x_2255_ = lean_box(0);
+lean_inc(v___y_2251_);
 v___x_2256_ = lean_alloc_ctor(0, 8, 0);
 lean_ctor_set(v___x_2256_, 0, v___y_2252_);
 lean_ctor_set(v___x_2256_, 1, v___y_2253_);

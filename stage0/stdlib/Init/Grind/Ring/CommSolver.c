@@ -5281,7 +5281,7 @@ lean_inc(v___y_1612_);
 v___x_1615_ = lean_alloc_ctor(5, 2, 0);
 lean_ctor_set(v___x_1615_, 0, v___y_1612_);
 lean_ctor_set(v___x_1615_, 1, v___y_1614_);
-lean_inc(v___y_1613_);
+lean_inc_n(v___y_1613_, 2);
 v___x_1616_ = lean_alloc_ctor(5, 2, 0);
 lean_ctor_set(v___x_1616_, 0, v___x_1615_);
 lean_ctor_set(v___x_1616_, 1, v___y_1613_);

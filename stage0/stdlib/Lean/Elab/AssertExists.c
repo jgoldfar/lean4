@@ -659,8 +659,8 @@ lean_object* v___x_51_; lean_object* v___x_52_; lean_object* v___x_53_; lean_obj
 lean_del_object(v___x_36_);
 lean_dec(v_snd_34_);
 v___x_51_ = lean_box(0);
-v___x_52_ = lean_array_get(v___x_51_, v_modNames_22_, v_i_25_);
-lean_inc(v___x_52_);
+v___x_52_ = lean_array_get_borrowed(v___x_51_, v_modNames_22_, v_i_25_);
+lean_inc_n(v___x_52_, 2);
 v___x_53_ = lean_array_push(v_fst_33_, v___x_52_);
 v___x_54_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_54_, 0, v___x_53_);

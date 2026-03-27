@@ -23,7 +23,7 @@ lean_object* lean_nat_add(lean_object*, lean_object*);
 lean_object* l_Lean_FileMap_toPosition(lean_object*, lean_object*);
 lean_object* lean_array_get_size(lean_object*);
 uint8_t lean_nat_dec_lt(lean_object*, lean_object*);
-lean_object* lean_array_get(lean_object*, lean_object*, lean_object*);
+lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
 lean_object* lean_array_fget_borrowed(lean_object*, lean_object*);
 lean_object* lean_string_utf8_next(lean_object*, lean_object*);
 uint32_t lean_string_utf8_get(lean_object*, lean_object*);
@@ -399,8 +399,9 @@ if (v___x_143_ == 0)
 lean_object* v___x_144_; lean_object* v___x_145_; lean_object* v___x_146_; 
 v___x_144_ = lean_unsigned_to_nat(1u);
 v___x_145_ = lean_nat_sub(v___x_140_, v___x_144_);
-v___x_146_ = lean_array_get(v___x_142_, v_positions_139_, v___x_145_);
+v___x_146_ = lean_array_get_borrowed(v___x_142_, v_positions_139_, v___x_145_);
 lean_dec(v___x_145_);
+lean_inc(v___x_146_);
 return v___x_146_;
 }
 else

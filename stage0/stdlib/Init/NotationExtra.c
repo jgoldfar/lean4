@@ -2870,7 +2870,7 @@ v___x_973_ = ((lean_object*)(l_Lean___aux__Init__NotationExtra______macroRules__
 lean_inc(v___y_946_);
 lean_inc(v___y_950_);
 v___x_974_ = l_Lean_addMacroScope(v___y_950_, v___x_973_, v___y_946_);
-lean_inc(v___y_952_);
+lean_inc_n(v___y_952_, 2);
 v___x_975_ = lean_alloc_ctor(3, 4, 0);
 lean_ctor_set(v___x_975_, 0, v___y_949_);
 lean_ctor_set(v___x_975_, 1, v___x_972_);
@@ -3083,7 +3083,7 @@ v___x_1105_ = ((lean_object*)(l_Lean___aux__Init__NotationExtra______macroRules_
 lean_inc(v___y_1080_);
 lean_inc(v___y_1083_);
 v___x_1106_ = l_Lean_addMacroScope(v___y_1083_, v___x_1105_, v___y_1080_);
-lean_inc(v___y_1085_);
+lean_inc_n(v___y_1085_, 2);
 v___x_1107_ = lean_alloc_ctor(3, 4, 0);
 lean_ctor_set(v___x_1107_, 0, v___y_1089_);
 lean_ctor_set(v___x_1107_, 1, v___x_1104_);
@@ -3296,7 +3296,7 @@ v___x_1237_ = ((lean_object*)(l_Lean___aux__Init__NotationExtra______macroRules_
 lean_inc(v___y_1212_);
 lean_inc(v___y_1216_);
 v___x_1238_ = l_Lean_addMacroScope(v___y_1216_, v___x_1237_, v___y_1212_);
-lean_inc(v___y_1217_);
+lean_inc_n(v___y_1217_, 2);
 v___x_1239_ = lean_alloc_ctor(3, 4, 0);
 lean_ctor_set(v___x_1239_, 0, v___y_1214_);
 lean_ctor_set(v___x_1239_, 1, v___x_1236_);
@@ -3507,6 +3507,7 @@ v___x_1366_ = l_Lean_Name_mkStr4(v___x_868_, v___y_1341_, v___x_1364_, v___x_136
 v___x_1367_ = lean_obj_once(&l_Lean___aux__Init__NotationExtra______macroRules__Lean__command____Unif__hint________Where___x7c___x2d_u22a2______1___closed__15, &l_Lean___aux__Init__NotationExtra______macroRules__Lean__command____Unif__hint________Where___x7c___x2d_u22a2______1___closed__15_once, _init_l_Lean___aux__Init__NotationExtra______macroRules__Lean__command____Unif__hint________Where___x7c___x2d_u22a2______1___closed__15);
 v___x_1368_ = ((lean_object*)(l_Lean___aux__Init__NotationExtra______macroRules__Lean__command____Unif__hint________Where___x7c___x2d_u22a2______1___closed__16));
 v___x_1369_ = l_Lean_addMacroScope(v___y_1349_, v___x_1368_, v___y_1345_);
+lean_inc(v___y_1350_);
 v___x_1370_ = lean_alloc_ctor(3, 4, 0);
 lean_ctor_set(v___x_1370_, 0, v___y_1340_);
 lean_ctor_set(v___x_1370_, 1, v___x_1367_);

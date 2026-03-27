@@ -522,8 +522,13 @@ v___jp_144_:
 {
 lean_object* v___x_159_; lean_object* v___x_160_; lean_object* v___x_161_; 
 v___x_159_ = lean_obj_once(&l_Lake_Toml_loadToml___closed__20, &l_Lake_Toml_loadToml___closed__20_once, _init_l_Lake_Toml_loadToml___closed__20);
+lean_inc(v_cancelTk_x3f_155_);
 lean_inc(v_currMacroScope_154_);
+lean_inc(v_quotContext_153_);
 lean_inc(v_maxHeartbeats_152_);
+lean_inc(v_openDecls_150_);
+lean_inc(v_currNamespace_149_);
+lean_inc(v_ref_148_);
 v___x_160_ = lean_alloc_ctor(0, 14, 2);
 lean_ctor_set(v___x_160_, 0, v_fileName_145_);
 lean_ctor_set(v___x_160_, 1, v_fileMap_146_);

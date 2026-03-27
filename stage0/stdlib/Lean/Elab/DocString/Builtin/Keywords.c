@@ -113,7 +113,7 @@ size_t lean_usize_shift_left(size_t, size_t);
 size_t lean_usize_sub(size_t, size_t);
 size_t lean_usize_land(size_t, size_t);
 lean_object* lean_usize_to_nat(size_t);
-lean_object* lean_array_get(lean_object*, lean_object*, lean_object*);
+lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
 size_t lean_usize_shift_right(size_t, size_t);
 uint64_t lean_uint64_of_nat(lean_object*);
 extern lean_object* l_Lean_Doc_instImpl_00___x40_Lean_Elab_DocString_Builtin_Postponed_1858815893____hygCtx___hyg_8_;
@@ -177,6 +177,7 @@ lean_object* l_Lean_FileMap_ofString(lean_object*);
 lean_object* l_Lean_Parser_SyntaxStack_size(lean_object*);
 lean_object* l_Lean_Parser_SyntaxStack_extract(lean_object*, lean_object*, lean_object*);
 lean_object* l_List_appendTR___redArg(lean_object*, lean_object*);
+lean_object* lean_array_get(lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Environment_findConstVal_x3f(lean_object*, lean_object*, uint8_t);
 lean_object* l_Lean_Environment_setExporting(lean_object*, uint8_t);
 uint8_t l_Lean_Environment_contains(lean_object*, lean_object*, uint8_t);
@@ -18222,34 +18223,26 @@ if (lean_obj_tag(v_x_5763_) == 0)
 {
 lean_object* v_es_5766_; lean_object* v___x_5767_; size_t v___x_5768_; size_t v___x_5769_; size_t v___x_5770_; lean_object* v_j_5771_; lean_object* v___x_5772_; 
 v_es_5766_ = lean_ctor_get(v_x_5763_, 0);
-lean_inc_ref(v_es_5766_);
-lean_dec_ref(v_x_5763_);
 v___x_5767_ = lean_box(2);
 v___x_5768_ = ((size_t)5ULL);
 v___x_5769_ = lean_usize_once(&l_Lean_PersistentHashMap_findAux___at___00Lean_PersistentHashMap_find_x3f___at___00__private_Lean_Elab_DocString_Builtin_Keywords_0__Lean_Doc_withAtom_spec__0_spec__0___redArg___closed__1, &l_Lean_PersistentHashMap_findAux___at___00Lean_PersistentHashMap_find_x3f___at___00__private_Lean_Elab_DocString_Builtin_Keywords_0__Lean_Doc_withAtom_spec__0_spec__0___redArg___closed__1_once, _init_l_Lean_PersistentHashMap_findAux___at___00Lean_PersistentHashMap_find_x3f___at___00__private_Lean_Elab_DocString_Builtin_Keywords_0__Lean_Doc_withAtom_spec__0_spec__0___redArg___closed__1);
 v___x_5770_ = lean_usize_land(v_x_5764_, v___x_5769_);
 v_j_5771_ = lean_usize_to_nat(v___x_5770_);
-v___x_5772_ = lean_array_get(v___x_5767_, v_es_5766_, v_j_5771_);
+v___x_5772_ = lean_array_get_borrowed(v___x_5767_, v_es_5766_, v_j_5771_);
 lean_dec(v_j_5771_);
-lean_dec_ref(v_es_5766_);
 switch(lean_obj_tag(v___x_5772_))
 {
 case 0:
 {
 lean_object* v_key_5773_; uint8_t v___x_5774_; 
 v_key_5773_ = lean_ctor_get(v___x_5772_, 0);
-lean_inc(v_key_5773_);
-lean_dec_ref(v___x_5772_);
 v___x_5774_ = lean_name_eq(v_x_5765_, v_key_5773_);
-lean_dec(v_key_5773_);
 return v___x_5774_;
 }
 case 1:
 {
 lean_object* v_node_5775_; size_t v___x_5776_; 
 v_node_5775_ = lean_ctor_get(v___x_5772_, 0);
-lean_inc(v_node_5775_);
-lean_dec_ref(v___x_5772_);
 v___x_5776_ = lean_usize_shift_right(v_x_5764_, v___x_5768_);
 v_x_5763_ = v_node_5775_;
 v_x_5764_ = v___x_5776_;
@@ -18267,11 +18260,8 @@ else
 {
 lean_object* v_ks_5779_; lean_object* v___x_5780_; uint8_t v___x_5781_; 
 v_ks_5779_ = lean_ctor_get(v_x_5763_, 0);
-lean_inc_ref(v_ks_5779_);
-lean_dec_ref(v_x_5763_);
 v___x_5780_ = lean_unsigned_to_nat(0u);
 v___x_5781_ = l_Lean_PersistentHashMap_containsAtAux___at___00Lean_PersistentHashMap_containsAux___at___00Lean_PersistentHashMap_contains___at___00__private_Lean_Elab_DocString_Builtin_Keywords_0__Lean_Doc_kwImpl_spec__2_spec__2_spec__3___redArg(v_ks_5779_, v___x_5780_, v_x_5765_);
-lean_dec_ref(v_ks_5779_);
 return v___x_5781_;
 }
 }
@@ -18284,6 +18274,7 @@ v_x_14412__boxed_5785_ = lean_unbox_usize(v_x_5783_);
 lean_dec(v_x_5783_);
 v_res_5786_ = l_Lean_PersistentHashMap_containsAux___at___00Lean_PersistentHashMap_contains___at___00__private_Lean_Elab_DocString_Builtin_Keywords_0__Lean_Doc_kwImpl_spec__2_spec__2___redArg(v_x_5782_, v_x_14412__boxed_5785_, v_x_5784_);
 lean_dec(v_x_5784_);
+lean_dec_ref(v_x_5782_);
 v_r_5787_ = lean_box(v_res_5786_);
 return v_r_5787_;
 }
@@ -18321,6 +18312,7 @@ _start:
 uint8_t v_res_5798_; lean_object* v_r_5799_; 
 v_res_5798_ = l_Lean_PersistentHashMap_contains___at___00__private_Lean_Elab_DocString_Builtin_Keywords_0__Lean_Doc_kwImpl_spec__2___redArg(v_x_5796_, v_x_5797_);
 lean_dec(v_x_5797_);
+lean_dec_ref(v_x_5796_);
 v_r_5799_ = lean_box(v_res_5798_);
 return v_r_5799_;
 }
@@ -18372,6 +18364,7 @@ v_kinds_5827_ = lean_ctor_get(v_snd_5822_, 1);
 lean_inc_ref(v_kinds_5827_);
 lean_dec(v_snd_5822_);
 v___x_5828_ = l_Lean_PersistentHashMap_contains___at___00__private_Lean_Elab_DocString_Builtin_Keywords_0__Lean_Doc_kwImpl_spec__2___redArg(v_kinds_5827_, v_of_x27_5800_);
+lean_dec_ref(v_kinds_5827_);
 if (v___x_5828_ == 0)
 {
 lean_del_object(v___x_5824_);
@@ -21433,6 +21426,7 @@ _start:
 uint8_t v_res_6856_; lean_object* v_r_6857_; 
 v_res_6856_ = l_Lean_PersistentHashMap_contains___at___00__private_Lean_Elab_DocString_Builtin_Keywords_0__Lean_Doc_kwImpl_spec__2(v_00_u03b2_6853_, v_x_6854_, v_x_6855_);
 lean_dec(v_x_6855_);
+lean_dec_ref(v_x_6854_);
 v_r_6857_ = lean_box(v_res_6856_);
 return v_r_6857_;
 }
@@ -21493,6 +21487,7 @@ v_x_16264__boxed_6893_ = lean_unbox_usize(v_x_6891_);
 lean_dec(v_x_6891_);
 v_res_6894_ = l_Lean_PersistentHashMap_containsAux___at___00Lean_PersistentHashMap_contains___at___00__private_Lean_Elab_DocString_Builtin_Keywords_0__Lean_Doc_kwImpl_spec__2_spec__2(v_00_u03b2_6889_, v_x_6890_, v_x_16264__boxed_6893_, v_x_6892_);
 lean_dec(v_x_6892_);
+lean_dec_ref(v_x_6890_);
 v_r_6895_ = lean_box(v_res_6894_);
 return v_r_6895_;
 }
@@ -24021,6 +24016,7 @@ v_kinds_8034_ = lean_ctor_get(v___x_8033_, 1);
 lean_inc_ref(v_kinds_8034_);
 lean_dec(v___x_8033_);
 v___x_8035_ = l_Lean_PersistentHashMap_contains___at___00__private_Lean_Elab_DocString_Builtin_Keywords_0__Lean_Doc_kwImpl_spec__2___redArg(v_kinds_8034_, v_a_8022_);
+lean_dec_ref(v_kinds_8034_);
 if (v___x_8035_ == 0)
 {
 lean_object* v___x_8036_; lean_object* v___x_8037_; lean_object* v___x_8038_; lean_object* v___x_8039_; lean_object* v___x_8040_; lean_object* v___x_8041_; 
@@ -28349,6 +28345,7 @@ v_kinds_9714_ = lean_ctor_get(v___x_9713_, 1);
 lean_inc_ref(v_kinds_9714_);
 lean_dec(v___x_9713_);
 v___x_9715_ = l_Lean_PersistentHashMap_contains___at___00__private_Lean_Elab_DocString_Builtin_Keywords_0__Lean_Doc_kwImpl_spec__2___redArg(v_kinds_9714_, v_a_9704_);
+lean_dec_ref(v_kinds_9714_);
 if (v___x_9715_ == 0)
 {
 lean_object* v___x_9716_; lean_object* v___x_9717_; lean_object* v___x_9718_; lean_object* v___x_9719_; lean_object* v___x_9720_; lean_object* v___x_9721_; 

@@ -2221,6 +2221,7 @@ goto v___jp_491_;
 v___jp_491_:
 {
 lean_object* v___x_493_; lean_object* v___x_494_; lean_object* v_kind_495_; lean_object* v___f_496_; lean_object* v___x_497_; lean_object* v___x_498_; lean_object* v___x_499_; lean_object* v___x_500_; lean_object* v___x_501_; lean_object* v___f_502_; lean_object* v___x_503_; 
+lean_inc(v___y_492_);
 v___x_493_ = l_Lean_Name_append(v_kind_479_, v___y_492_);
 v___x_494_ = ((lean_object*)(l_Lean_Parser_mkAntiquot_formatter___closed__3));
 v_kind_495_ = l_Lean_Name_append(v___x_493_, v___x_494_);
@@ -2757,6 +2758,7 @@ goto v___jp_846_;
 v___jp_846_:
 {
 lean_object* v___x_848_; lean_object* v___x_849_; lean_object* v_kind_850_; lean_object* v___x_851_; lean_object* v___f_852_; lean_object* v___x_853_; lean_object* v___x_854_; lean_object* v___y_855_; lean_object* v___x_856_; lean_object* v___x_857_; lean_object* v___x_858_; lean_object* v___x_859_; lean_object* v___x_860_; lean_object* v___f_861_; lean_object* v___x_862_; 
+lean_inc(v___y_847_);
 v___x_848_ = l_Lean_Name_append(v_kind_837_, v___y_847_);
 v___x_849_ = ((lean_object*)(l_Lean_Parser_mkAntiquot_formatter___closed__3));
 v_kind_850_ = l_Lean_Name_append(v___x_848_, v___x_849_);
@@ -8255,7 +8257,7 @@ lean_inc(v___y_4102_);
 v___x_4134_ = lean_alloc_ctor(1, 2, 0);
 lean_ctor_set(v___x_4134_, 0, v___x_4133_);
 lean_ctor_set(v___x_4134_, 1, v___y_4102_);
-lean_inc(v___y_4108_);
+lean_inc_n(v___y_4108_, 2);
 v___x_4135_ = lean_alloc_ctor(1, 2, 0);
 lean_ctor_set(v___x_4135_, 0, v___x_4134_);
 lean_ctor_set(v___x_4135_, 1, v___y_4108_);

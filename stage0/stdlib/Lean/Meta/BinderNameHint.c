@@ -79,6 +79,7 @@ lean_object* l_Lean_Expr_appArg_x21(lean_object*);
 lean_object* l_Lean_Expr_appFn_x21(lean_object*);
 lean_object* l_Lean_Expr_headBeta(lean_object*);
 lean_object* lean_array_set(lean_object*, lean_object*, lean_object*);
+lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Core_mkFreshUserName(lean_object*, lean_object*, lean_object*);
 uint8_t l_Lean_Expr_isConstOf(lean_object*, lean_object*);
 lean_object* lean_find_expr(lean_object*, lean_object*);
@@ -419,7 +420,8 @@ v___x_105_ = lean_nat_sub(v___x_100_, v_bidx_95_);
 v___x_106_ = lean_unsigned_to_nat(1u);
 v___x_107_ = lean_nat_sub(v___x_105_, v___x_106_);
 lean_dec(v___x_105_);
-v_name_108_ = lean_array_get(v___x_104_, v_xs_96_, v___x_107_);
+v_name_108_ = lean_array_get_borrowed(v___x_104_, v_xs_96_, v___x_107_);
+lean_inc(v_name_108_);
 v___x_109_ = l_Lean_Core_mkFreshUserName(v_name_108_, v_a_97_, v_a_98_);
 if (lean_obj_tag(v___x_109_) == 0)
 {
@@ -1968,8 +1970,9 @@ v___x_604_ = lean_nat_sub(v___x_599_, v_deBruijnIndex_586_);
 v___x_605_ = lean_unsigned_to_nat(1u);
 v___x_606_ = lean_nat_sub(v___x_604_, v___x_605_);
 lean_dec(v___x_604_);
-v___x_607_ = lean_array_get(v___x_603_, v_snd_581_, v___x_606_);
+v___x_607_ = lean_array_get_borrowed(v___x_603_, v_snd_581_, v___x_606_);
 lean_dec(v___x_606_);
+lean_inc(v___x_607_);
 v___x_608_ = l_Lean_Core_mkFreshUserName(v___x_607_, v_a_413_, v_a_414_);
 if (lean_obj_tag(v___x_608_) == 0)
 {

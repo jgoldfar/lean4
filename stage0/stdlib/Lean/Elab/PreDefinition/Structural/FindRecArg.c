@@ -59,6 +59,7 @@ uint8_t l_Lean_Expr_isFVar(lean_object*);
 lean_object* l___private_Lean_Meta_Basic_0__Lean_Meta_lambdaTelescopeImp(lean_object*, lean_object*, uint8_t, uint8_t, uint8_t, uint8_t, lean_object*, lean_object*, uint8_t, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Array_findIdx_x3f_loop___redArg(lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Elab_Structural_IndGroupInst_toMessageData(lean_object*);
+lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_MessageData_ofName(lean_object*);
 lean_object* lean_mk_empty_array_with_capacity(lean_object*);
 lean_object* lean_nat_mul(lean_object*, lean_object*);
@@ -72,7 +73,6 @@ lean_object* l_Lean_Meta_SavedState_restore___redArg(lean_object*, lean_object*,
 uint8_t l_Lean_Exception_isInterrupt(lean_object*);
 uint8_t l_Lean_Exception_isRuntime(lean_object*);
 lean_object* lean_array_fget(lean_object*, lean_object*);
-lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_FVarId_getUserName___redArg(lean_object*, lean_object*, lean_object*, lean_object*);
 uint8_t l_Lean_Name_hasMacroScopes(lean_object*);
 lean_object* l_Lean_MessageData_ofExpr(lean_object*);
@@ -10940,8 +10940,9 @@ v___x_3574_ = lean_obj_once(&l___private_Init_Data_Array_Basic_0__Array_forIn_x2
 v___x_3575_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_3575_, 0, v___x_3573_);
 lean_ctor_set(v___x_3575_, 1, v___x_3574_);
-v___x_3576_ = lean_array_get(v___x_3569_, v_fnNames_3530_, v_val_3568_);
+v___x_3576_ = lean_array_get_borrowed(v___x_3569_, v_fnNames_3530_, v_val_3568_);
 lean_dec(v_val_3568_);
+lean_inc(v___x_3576_);
 v___x_3577_ = l_Lean_MessageData_ofName(v___x_3576_);
 v___x_3578_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_3578_, 0, v___x_3575_);
@@ -11324,8 +11325,9 @@ v___x_3689_ = lean_obj_once(&l___private_Init_Data_Array_Basic_0__Array_forIn_x2
 v___x_3690_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_3690_, 0, v___x_3688_);
 lean_ctor_set(v___x_3690_, 1, v___x_3689_);
-v___x_3691_ = lean_array_get(v___x_3684_, v_fnNames_3645_, v_val_3683_);
+v___x_3691_ = lean_array_get_borrowed(v___x_3684_, v_fnNames_3645_, v_val_3683_);
 lean_dec(v_val_3683_);
+lean_inc(v___x_3691_);
 v___x_3692_ = l_Lean_MessageData_ofName(v___x_3691_);
 v___x_3693_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_3693_, 0, v___x_3690_);

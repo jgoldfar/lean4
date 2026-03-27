@@ -39,7 +39,7 @@ lean_object* lean_array_uset(lean_object*, size_t, lean_object*);
 lean_object* l_Lean_TSyntax_getId(lean_object*);
 uint8_t l_Lean_Syntax_hasIdent(lean_object*, lean_object*);
 lean_object* lean_nat_sub(lean_object*, lean_object*);
-lean_object* lean_array_get(lean_object*, lean_object*, lean_object*);
+lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
 uint8_t l_Lean_Syntax_isOfKind(lean_object*, lean_object*);
 lean_object* lean_array_pop(lean_object*);
 lean_object* l_Array_mkArray0(lean_object*);
@@ -2658,8 +2658,9 @@ v___x_1084_ = ((lean_object*)(l___private_Init_While_0__Lean_Loop_forIn_loop___a
 v___x_1085_ = lean_box(0);
 v___x_1086_ = lean_unsigned_to_nat(1u);
 v___x_1087_ = lean_nat_sub(v___x_1081_, v___x_1086_);
-v___x_1088_ = lean_array_get(v___x_1085_, v_b_1079_, v___x_1087_);
+v___x_1088_ = lean_array_get_borrowed(v___x_1085_, v_b_1079_, v___x_1087_);
 lean_dec(v___x_1087_);
+lean_inc(v___x_1088_);
 v___x_1089_ = l_Lean_Syntax_isOfKind(v___x_1088_, v___x_1084_);
 if (v___x_1089_ == 0)
 {

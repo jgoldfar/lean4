@@ -5020,6 +5020,8 @@ lean_object* v___x_1603_; lean_object* v___x_1604_; lean_object* v___x_1605_; le
 v___x_1603_ = l_Lean_maxRecDepth;
 v___x_1604_ = l_Lean_Option_get___at___00__private_Lean_Language_Lean_0__Lean_Language_Lean_process_parseCmd_spec__0(v_opts_1550_, v___x_1603_);
 lean_inc(v_currMacroScope_1598_);
+lean_inc(v_openDecls_1594_);
+lean_inc(v_ref_1592_);
 v___x_1605_ = lean_alloc_ctor(0, 14, 2);
 lean_ctor_set(v___x_1605_, 0, v_fileName_1589_);
 lean_ctor_set(v___x_1605_, 1, v_fileMap_1590_);

@@ -1629,7 +1629,7 @@ lean_ctor_set(v___x_327_, 1, v___x_326_);
 v___x_328_ = ((lean_object*)(l_Lake_DSL_elabConfig___at___00__private_Lake_DSL_Package_0__Lake_DSL_elabPackageCommand_spec__1___closed__7));
 v___x_329_ = l_Lean_Name_mkStr4(v___y_311_, v___y_314_, v___y_313_, v___x_328_);
 v___x_330_ = ((lean_object*)(l_Lake_DSL_elabConfig___at___00__private_Lake_DSL_Package_0__Lake_DSL_elabPackageCommand_spec__1___closed__8));
-lean_inc(v___y_312_);
+lean_inc_n(v___y_312_, 2);
 v___x_331_ = lean_alloc_ctor(1, 3, 0);
 lean_ctor_set(v___x_331_, 0, v___y_312_);
 lean_ctor_set(v___x_331_, 1, v___x_320_);
@@ -2175,6 +2175,7 @@ v___x_751_ = ((lean_object*)(l___private_Lake_DSL_Package_0__Lake_DSL_elabPackag
 v___x_752_ = l_Lean_addMacroScope(v___y_713_, v___x_751_, v___y_697_);
 v___x_753_ = ((lean_object*)(l___private_Lake_DSL_Package_0__Lake_DSL_elabPackageCommand___closed__23));
 v___x_754_ = ((lean_object*)(l___private_Lake_DSL_Package_0__Lake_DSL_elabPackageCommand___closed__24));
+lean_inc(v___y_702_);
 v___x_755_ = lean_alloc_ctor(1, 2, 0);
 lean_ctor_set(v___x_755_, 0, v___x_754_);
 lean_ctor_set(v___x_755_, 1, v___y_702_);
@@ -2691,7 +2692,6 @@ else
 lean_object* v_a_910_; lean_object* v___x_912_; uint8_t v_isShared_913_; uint8_t v_isSharedCheck_917_; 
 lean_dec(v_a_903_);
 lean_dec(v___x_901_);
-lean_dec(v___y_849_);
 lean_dec(v___y_848_);
 lean_dec(v___y_845_);
 lean_dec(v___y_843_);
@@ -2747,7 +2747,6 @@ else
 {
 lean_object* v_a_918_; lean_object* v___x_920_; uint8_t v_isShared_921_; uint8_t v_isSharedCheck_925_; 
 lean_dec(v___x_901_);
-lean_dec(v___y_849_);
 lean_dec(v___y_848_);
 lean_dec(v___y_845_);
 lean_dec(v___y_843_);
@@ -2932,7 +2931,6 @@ lean_dec(v___x_946_);
 lean_dec(v_a_942_);
 lean_dec(v___y_941_);
 lean_dec(v___y_940_);
-lean_dec(v___y_939_);
 lean_dec(v___y_938_);
 lean_dec(v___y_936_);
 lean_dec(v___y_935_);
@@ -2992,7 +2990,6 @@ lean_dec(v___x_946_);
 lean_dec(v_a_942_);
 lean_dec(v___y_941_);
 lean_dec(v___y_940_);
-lean_dec(v___y_939_);
 lean_dec(v___y_938_);
 lean_dec(v___y_936_);
 lean_dec(v___y_935_);
@@ -3138,7 +3135,6 @@ lean_object* v_a_1027_; lean_object* v___x_1029_; uint8_t v_isShared_1030_; uint
 lean_dec(v_a_1020_);
 lean_dec(v___x_1013_);
 lean_dec(v___y_1003_);
-lean_dec(v___y_1002_);
 lean_dec(v___y_999_);
 lean_dec(v___y_998_);
 lean_dec_ref(v___y_995_);
@@ -3190,7 +3186,6 @@ else
 lean_object* v_a_1035_; lean_object* v___x_1037_; uint8_t v_isShared_1038_; uint8_t v_isSharedCheck_1042_; 
 lean_dec(v___x_1013_);
 lean_dec(v___y_1003_);
-lean_dec(v___y_1002_);
 lean_dec(v___y_999_);
 lean_dec(v___y_998_);
 lean_dec_ref(v___y_995_);
@@ -3241,7 +3236,6 @@ else
 {
 lean_dec(v___x_1013_);
 lean_dec(v___y_1003_);
-lean_dec(v___y_1002_);
 lean_dec(v___y_999_);
 lean_dec(v___y_998_);
 lean_dec_ref(v___y_995_);
@@ -4101,7 +4095,7 @@ v___x_1424_ = ((lean_object*)(l___private_Lake_DSL_Package_0__Lake_DSL_expandPos
 lean_inc_n(v___y_1394_, 3);
 lean_inc_n(v___y_1389_, 3);
 v___x_1425_ = l_Lean_addMacroScope(v___y_1389_, v___x_1424_, v___y_1394_);
-lean_inc_n(v___y_1383_, 3);
+lean_inc_n(v___y_1383_, 4);
 v___x_1426_ = lean_alloc_ctor(3, 4, 0);
 lean_ctor_set(v___x_1426_, 0, v___y_1390_);
 lean_ctor_set(v___x_1426_, 1, v___x_1423_);

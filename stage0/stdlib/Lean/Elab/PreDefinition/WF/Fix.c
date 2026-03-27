@@ -1478,7 +1478,6 @@ _start:
 {
 lean_object* v_lctx_251_; uint8_t v___x_252_; lean_object* v___x_253_; lean_object* v___x_254_; 
 v_lctx_251_ = lean_ctor_get(v_a_249_, 2);
-lean_inc_ref(v_lctx_251_);
 v___x_252_ = l_Lean_LocalContext_contains(v_lctx_251_, v_lctxid_248_);
 v___x_253_ = lean_box(v___x_252_);
 v___x_254_ = lean_alloc_ctor(0, 1, 0);

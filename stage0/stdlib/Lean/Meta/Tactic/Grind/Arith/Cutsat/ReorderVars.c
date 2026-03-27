@@ -42,7 +42,6 @@ lean_object* l_Array_qpartition___redArg(lean_object*, lean_object*, lean_object
 lean_object* lean_nat_sub(lean_object*, lean_object*);
 lean_object* lean_array_fget_borrowed(lean_object*, lean_object*);
 lean_object* lean_array_set(lean_object*, lean_object*, lean_object*);
-lean_object* lean_array_get(lean_object*, lean_object*, lean_object*);
 extern lean_object* l_Lean_instInhabitedExpr;
 lean_object* l_Lean_PersistentArray_push___redArg(lean_object*, lean_object*);
 lean_object* l_Id_instMonad___lam__6(lean_object*, lean_object*, lean_object*, lean_object*);
@@ -3999,9 +3998,10 @@ v_resetjp_1364_:
 {
 lean_object* v___x_1367_; lean_object* v___x_1368_; lean_object* v___x_1369_; lean_object* v___x_1371_; 
 v___x_1367_ = lean_unsigned_to_nat(0u);
-v___x_1368_ = lean_array_get(v___x_1367_, v_old2new_1360_, v_v_1362_);
+v___x_1368_ = lean_array_get_borrowed(v___x_1367_, v_old2new_1360_, v_v_1362_);
 lean_dec(v_v_1362_);
 v___x_1369_ = l_Int_Linear_Poly_reorder(v_p_1363_, v_old2new_1360_);
+lean_inc(v___x_1368_);
 if (v_isShared_1366_ == 0)
 {
 lean_ctor_set(v___x_1365_, 2, v___x_1369_);
@@ -5364,7 +5364,8 @@ _start:
 {
 lean_object* v___x_1928_; lean_object* v___x_1929_; 
 v___x_1928_ = lean_unsigned_to_nat(0u);
-v___x_1929_ = lean_array_get(v___x_1928_, v___x_1926_, v_x_1927_);
+v___x_1929_ = lean_array_get_borrowed(v___x_1928_, v___x_1926_, v_x_1927_);
+lean_inc(v___x_1929_);
 return v___x_1929_;
 }
 }
@@ -6772,8 +6773,9 @@ v_resetjp_2377_:
 {
 lean_object* v___x_2380_; lean_object* v___x_2381_; lean_object* v___x_2383_; 
 v___x_2380_ = lean_unsigned_to_nat(0u);
-v___x_2381_ = lean_array_get(v___x_2380_, v___x_2371_, v_head_2375_);
+v___x_2381_ = lean_array_get_borrowed(v___x_2380_, v___x_2371_, v_head_2375_);
 lean_dec(v_head_2375_);
+lean_inc(v___x_2381_);
 if (v_isShared_2379_ == 0)
 {
 lean_ctor_set(v___x_2378_, 1, v_a_2373_);

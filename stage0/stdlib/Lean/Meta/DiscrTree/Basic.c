@@ -1462,6 +1462,7 @@ goto v___jp_384_;
 v___jp_384_:
 {
 lean_object* v___x_386_; lean_object* v___x_387_; lean_object* v___x_388_; lean_object* v___x_389_; lean_object* v___x_390_; lean_object* v___x_391_; lean_object* v___x_392_; lean_object* v___x_393_; lean_object* v___x_394_; lean_object* v___x_395_; lean_object* v___x_396_; lean_object* v___x_397_; uint8_t v___x_398_; lean_object* v___x_399_; lean_object* v___x_400_; lean_object* v___x_401_; lean_object* v___x_403_; 
+lean_inc(v___y_385_);
 v___x_386_ = lean_alloc_ctor(5, 2, 0);
 lean_ctor_set(v___x_386_, 0, v_snd_379_);
 lean_ctor_set(v___x_386_, 1, v___y_385_);

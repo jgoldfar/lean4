@@ -1810,7 +1810,6 @@ v___jp_376_:
 {
 lean_object* v___x_378_; 
 v___x_378_ = l_WellFounded_opaqueFix_u2083___at___00__private_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_TypeAnalysis_0__Lean_Elab_Tactic_BVDecide_Frontend_Normalize_isSupportedMatch_trySimpleEnum_spec__1___redArg___lam__0(v_snd_372_, v___y_377_, v___y_331_, v___y_332_, v___y_333_, v___y_334_);
-lean_dec(v___y_377_);
 v___y_342_ = v___x_378_;
 goto v___jp_341_;
 }
@@ -3817,7 +3816,6 @@ v___jp_1074_:
 {
 lean_object* v___x_1076_; 
 v___x_1076_ = l_WellFounded_opaqueFix_u2083___at___00__private_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_TypeAnalysis_0__Lean_Elab_Tactic_BVDecide_Frontend_Normalize_isSupportedMatch_trySimpleEnum_spec__1___redArg___lam__0(v_snd_1070_, v___y_1075_, v___y_1029_, v___y_1030_, v___y_1031_, v___y_1032_);
-lean_dec(v___y_1075_);
 v___y_1040_ = v___x_1076_;
 goto v___jp_1039_;
 }

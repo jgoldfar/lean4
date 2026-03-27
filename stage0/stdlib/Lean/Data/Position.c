@@ -37,11 +37,11 @@ lean_object* lean_nat_sub(lean_object*, lean_object*);
 lean_object* lean_array_get(lean_object*, lean_object*, lean_object*);
 lean_object* lean_nat_add(lean_object*, lean_object*);
 lean_object* lean_nat_shiftr(lean_object*, lean_object*);
+lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
 uint8_t l_String_instDecidableLtRaw___aux__1(lean_object*, lean_object*);
 uint8_t lean_nat_dec_le(lean_object*, lean_object*);
 lean_object* lean_string_utf8_next(lean_object*, lean_object*);
 uint8_t lean_string_utf8_at_end(lean_object*, lean_object*);
-lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
 uint8_t lean_nat_dec_le(lean_object*, lean_object*);
 uint32_t lean_string_utf8_get(lean_object*, lean_object*);
 uint8_t lean_uint32_dec_eq(uint32_t, uint32_t);
@@ -1298,13 +1298,12 @@ lean_object* v___x_407_; lean_object* v_m_408_; lean_object* v_posM_409_; uint8_
 v___x_407_ = lean_nat_add(v_b_401_, v_e_402_);
 v_m_408_ = lean_nat_shiftr(v___x_407_, v___x_404_);
 lean_dec(v___x_407_);
-v_posM_409_ = lean_array_get(v___x_403_, v_ps_400_, v_m_408_);
+v_posM_409_ = lean_array_get_borrowed(v___x_403_, v_ps_400_, v_m_408_);
 v___x_410_ = lean_nat_dec_eq(v_pos_398_, v_posM_409_);
 if (v___x_410_ == 0)
 {
 uint8_t v___x_411_; 
 v___x_411_ = l_String_instDecidableLtRaw___aux__1(v_posM_409_, v_pos_398_);
-lean_dec(v_posM_409_);
 if (v___x_411_ == 0)
 {
 lean_dec(v_e_402_);
@@ -1321,7 +1320,6 @@ goto _start;
 else
 {
 lean_object* v___x_414_; lean_object* v___x_415_; 
-lean_dec(v_posM_409_);
 lean_dec(v_e_402_);
 lean_dec(v_b_401_);
 v___x_414_ = l_Lean_FileMap_getLine(v_fmap_397_, v_m_408_);
@@ -1336,9 +1334,10 @@ else
 {
 lean_object* v_posB_416_; lean_object* v___x_417_; lean_object* v___x_418_; lean_object* v___x_419_; 
 lean_dec(v_e_402_);
-v_posB_416_ = lean_array_get(v___x_403_, v_ps_400_, v_b_401_);
+v_posB_416_ = lean_array_get_borrowed(v___x_403_, v_ps_400_, v_b_401_);
 v___x_417_ = l_Lean_FileMap_getLine(v_fmap_397_, v_b_401_);
 lean_dec(v_b_401_);
+lean_inc(v_posB_416_);
 v___x_418_ = l___private_Lean_Data_Position_0__Lean_FileMap_toPosition_toColumn(v_pos_398_, v_str_399_, v_posB_416_, v___x_403_);
 v___x_419_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_419_, 0, v___x_417_);
@@ -1506,7 +1505,7 @@ if (v___x_481_ == 0)
 {
 lean_object* v___x_482_; lean_object* v___x_483_; 
 v___x_482_ = lean_nat_sub(v___x_478_, v___x_476_);
-v___x_483_ = lean_array_get(v___x_480_, v_positions_468_, v___x_482_);
+v___x_483_ = lean_array_get_borrowed(v___x_480_, v_positions_468_, v___x_482_);
 lean_dec(v___x_482_);
 v___y_470_ = v___x_483_;
 goto v___jp_469_;

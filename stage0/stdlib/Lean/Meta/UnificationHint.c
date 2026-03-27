@@ -66,6 +66,7 @@ uint64_t l___private_Lean_Meta_Basic_0__Lean_Meta_Config_toKey(lean_object*);
 lean_object* l_Lean_Meta_DiscrTree_mkPath(lean_object*, uint8_t, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Meta_isExprDefEq(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Meta_DiscrTree_empty(lean_object*);
+lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
 uint64_t l_Lean_Meta_DiscrTree_Key_hash(lean_object*);
 size_t lean_uint64_to_usize(uint64_t);
 lean_object* l_Lean_PersistentHashMap_mkCollisionNode___redArg(lean_object*, lean_object*, lean_object*, lean_object*);
@@ -1910,7 +1911,7 @@ if (v___x_454_ == 0)
 {
 lean_object* v___x_455_; lean_object* v_k_456_; lean_object* v___x_457_; 
 v___x_455_ = lean_box(0);
-v_k_456_ = lean_array_get(v___x_455_, v_keys_450_, v___x_453_);
+v_k_456_ = lean_array_get_borrowed(v___x_455_, v_keys_450_, v___x_453_);
 lean_inc_ref(v_d_449_);
 v___x_457_ = l_Lean_PersistentHashMap_find_x3f___at___00Lean_Meta_DiscrTree_insertKeyValue___at___00Lean_Meta_UnificationHints_add_spec__0_spec__0___redArg(v_d_449_, v_k_456_);
 if (lean_obj_tag(v___x_457_) == 0)
@@ -1918,6 +1919,7 @@ if (lean_obj_tag(v___x_457_) == 0)
 lean_object* v___x_458_; lean_object* v_c_459_; lean_object* v___x_460_; 
 v___x_458_ = lean_unsigned_to_nat(1u);
 v_c_459_ = l___private_Lean_Meta_DiscrTree_Basic_0__Lean_Meta_DiscrTree_createNodes(lean_box(0), v_keys_450_, v_v_451_, v___x_458_);
+lean_inc(v_k_456_);
 v___x_460_ = l_Lean_PersistentHashMap_insert___at___00Lean_Meta_DiscrTree_insertKeyValue___at___00Lean_Meta_UnificationHints_add_spec__0_spec__1___redArg(v_d_449_, v_k_456_, v_c_459_);
 return v___x_460_;
 }
@@ -1929,6 +1931,7 @@ lean_inc(v_val_461_);
 lean_dec_ref(v___x_457_);
 v___x_462_ = lean_unsigned_to_nat(1u);
 v_c_463_ = l___private_Lean_Meta_DiscrTree_Basic_0__Lean_Meta_DiscrTree_insertAux___at___00Lean_Meta_DiscrTree_insertKeyValue___at___00Lean_Meta_UnificationHints_add_spec__0_spec__2(v_keys_450_, v_v_451_, v___x_462_, v_val_461_);
+lean_inc(v_k_456_);
 v___x_464_ = l_Lean_PersistentHashMap_insert___at___00Lean_Meta_DiscrTree_insertKeyValue___at___00Lean_Meta_UnificationHints_add_spec__0_spec__1___redArg(v_d_449_, v_k_456_, v_c_463_);
 return v___x_464_;
 }

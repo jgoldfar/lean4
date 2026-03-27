@@ -44,7 +44,7 @@ size_t lean_usize_add(size_t, size_t);
 lean_object* l_Array_append___redArg(lean_object*, lean_object*);
 lean_object* l_Lean_Syntax_node2(lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* lean_mk_empty_array_with_capacity(lean_object*);
-lean_object* lean_array_get(lean_object*, lean_object*, lean_object*);
+lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
 lean_object* lean_array_get_size(lean_object*);
 uint64_t lean_uint64_mix_hash(uint64_t, uint64_t);
 uint64_t lean_uint64_shift_right(uint64_t, uint64_t);
@@ -4464,10 +4464,9 @@ lean_object* v___x_1210_; lean_object* v___x_1211_; lean_object* v___x_1212_; le
 v___x_1210_ = lean_box(0);
 v___x_1211_ = lean_unsigned_to_nat(1u);
 v___x_1212_ = lean_nat_sub(v_firstNonExplicit_1207_, v___x_1211_);
-v___x_1213_ = lean_array_get(v___x_1210_, v_lvls_1206_, v___x_1212_);
+v___x_1213_ = lean_array_get_borrowed(v___x_1210_, v_lvls_1206_, v___x_1212_);
 lean_dec(v___x_1212_);
 v_max_1214_ = l_Lean_Level_getOffset(v___x_1213_);
-lean_dec(v___x_1213_);
 v___x_1215_ = l___private_Lean_Level_0__Lean_Level_isExplicitSubsumedAux(v_lvls_1206_, v_max_1214_, v_firstNonExplicit_1207_);
 lean_dec(v_max_1214_);
 return v___x_1215_;
@@ -4636,10 +4635,9 @@ v___jp_1263_:
 {
 lean_object* v___x_1266_; lean_object* v_lvl_u2081_1267_; lean_object* v_prev_1268_; lean_object* v_prevK_1269_; lean_object* v___x_1270_; lean_object* v___x_1271_; 
 v___x_1266_ = lean_box(0);
-v_lvl_u2081_1267_ = lean_array_get(v___x_1266_, v___y_1264_, v___y_1265_);
+v_lvl_u2081_1267_ = lean_array_get_borrowed(v___x_1266_, v___y_1264_, v___y_1265_);
 v_prev_1268_ = l_Lean_Level_getLevelOffset(v_lvl_u2081_1267_);
 v_prevK_1269_ = l_Lean_Level_getOffset(v_lvl_u2081_1267_);
-lean_dec(v_lvl_u2081_1267_);
 v___x_1270_ = lean_nat_add(v___y_1265_, v___x_1262_);
 lean_dec(v___y_1265_);
 v___x_1271_ = l___private_Lean_Level_0__Lean_Level_mkMaxAux(v___y_1264_, v_k_1254_, v___x_1270_, v_prev_1268_, v_prevK_1269_, v___x_1266_);

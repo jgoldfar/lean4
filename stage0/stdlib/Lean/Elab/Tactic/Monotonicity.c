@@ -81,6 +81,7 @@ uint8_t l_Lean_Expr_isConstOf(lean_object*, lean_object*);
 lean_object* l_Lean_Meta_DiscrTree_mkPath(lean_object*, uint8_t, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* lean_array_get_size(lean_object*);
 uint8_t lean_nat_dec_eq(lean_object*, lean_object*);
+lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
 uint64_t l_Lean_Meta_DiscrTree_Key_hash(lean_object*);
 size_t lean_uint64_to_usize(uint64_t);
 size_t lean_usize_shift_left(size_t, size_t);
@@ -120,7 +121,6 @@ lean_object* l_Lean_Meta_Match_MatcherInfo_getFirstDiscrPos(lean_object*);
 lean_object* l_Lean_Expr_sort___override(lean_object*);
 lean_object* lean_mk_array(lean_object*, lean_object*);
 lean_object* l___private_Lean_Expr_0__Lean_Expr_getAppArgsAux(lean_object*, lean_object*, lean_object*);
-lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
 uint8_t l_Lean_Expr_hasLooseBVars(lean_object*);
 lean_object* l_Lean_Meta_Split_splitMatch(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 uint64_t l_Lean_instHashableMVarId_hash(lean_object*);
@@ -2186,7 +2186,7 @@ if (v___x_477_ == 0)
 {
 lean_object* v___x_478_; lean_object* v_k_479_; lean_object* v___x_480_; 
 v___x_478_ = lean_box(0);
-v_k_479_ = lean_array_get(v___x_478_, v_keys_473_, v___x_476_);
+v_k_479_ = lean_array_get_borrowed(v___x_478_, v_keys_473_, v___x_476_);
 lean_inc_ref(v_d_472_);
 v___x_480_ = l_Lean_PersistentHashMap_find_x3f___at___00Lean_Meta_DiscrTree_insertKeyValue___at___00Lean_Meta_Monotonicity_initFn_00___x40_Lean_Elab_Tactic_Monotonicity_4195581025____hygCtx___hyg_2__spec__0_spec__0___redArg(v_d_472_, v_k_479_);
 if (lean_obj_tag(v___x_480_) == 0)
@@ -2194,6 +2194,7 @@ if (lean_obj_tag(v___x_480_) == 0)
 lean_object* v___x_481_; lean_object* v_c_482_; lean_object* v___x_483_; 
 v___x_481_ = lean_unsigned_to_nat(1u);
 v_c_482_ = l___private_Lean_Meta_DiscrTree_Basic_0__Lean_Meta_DiscrTree_createNodes(lean_box(0), v_keys_473_, v_v_474_, v___x_481_);
+lean_inc(v_k_479_);
 v___x_483_ = l_Lean_PersistentHashMap_insert___at___00Lean_Meta_DiscrTree_insertKeyValue___at___00Lean_Meta_Monotonicity_initFn_00___x40_Lean_Elab_Tactic_Monotonicity_4195581025____hygCtx___hyg_2__spec__0_spec__1___redArg(v_d_472_, v_k_479_, v_c_482_);
 return v___x_483_;
 }
@@ -2205,6 +2206,7 @@ lean_inc(v_val_484_);
 lean_dec_ref(v___x_480_);
 v___x_485_ = lean_unsigned_to_nat(1u);
 v_c_486_ = l___private_Lean_Meta_DiscrTree_Basic_0__Lean_Meta_DiscrTree_insertAux___at___00Lean_Meta_DiscrTree_insertKeyValue___at___00Lean_Meta_Monotonicity_initFn_00___x40_Lean_Elab_Tactic_Monotonicity_4195581025____hygCtx___hyg_2__spec__0_spec__2(v_keys_473_, v_v_474_, v___x_485_, v_val_484_);
+lean_inc(v_k_479_);
 v___x_487_ = l_Lean_PersistentHashMap_insert___at___00Lean_Meta_DiscrTree_insertKeyValue___at___00Lean_Meta_Monotonicity_initFn_00___x40_Lean_Elab_Tactic_Monotonicity_4195581025____hygCtx___hyg_2__spec__0_spec__1___redArg(v_d_472_, v_k_479_, v_c_486_);
 return v___x_487_;
 }

@@ -22722,6 +22722,7 @@ goto v_reusejp_6665_;
 v_reusejp_6665_:
 {
 lean_object* v___x_6667_; lean_object* v___x_6668_; 
+lean_inc(v___y_6629_);
 v___x_6667_ = lean_alloc_ctor(0, 1, 1);
 lean_ctor_set(v___x_6667_, 0, v___y_6629_);
 lean_ctor_set_uint8(v___x_6667_, sizeof(void*)*1, v_ignoreNoncomputable_6664_);
@@ -22735,7 +22736,6 @@ else
 {
 lean_object* v_a_6670_; lean_object* v___x_6672_; uint8_t v_isShared_6673_; uint8_t v_isSharedCheck_6677_; 
 lean_dec(v_a_6659_);
-lean_dec(v___y_6629_);
 lean_del_object(v___x_6623_);
 lean_dec(v_arity_6589_);
 lean_dec_ref(v_args_6588_);
@@ -22784,7 +22784,6 @@ else
 lean_object* v_a_6679_; lean_object* v___x_6681_; uint8_t v_isShared_6682_; uint8_t v_isSharedCheck_6686_; 
 lean_dec_ref(v___x_6657_);
 lean_del_object(v___x_6654_);
-lean_dec(v___y_6629_);
 lean_del_object(v___x_6623_);
 lean_dec(v_arity_6589_);
 lean_dec_ref(v_args_6588_);
@@ -22832,7 +22831,6 @@ else
 {
 lean_object* v_a_6689_; lean_object* v___x_6691_; uint8_t v_isShared_6692_; uint8_t v_isSharedCheck_6696_; 
 lean_dec(v_discrFVarId_6631_);
-lean_dec(v___y_6629_);
 lean_del_object(v___x_6623_);
 lean_dec(v_arity_6589_);
 lean_dec_ref(v_args_6588_);

@@ -16975,6 +16975,7 @@ return v___x_5250_;
 v___jp_5251_:
 {
 lean_object* v___x_5253_; lean_object* v___x_5254_; lean_object* v_kind_5255_; lean_object* v___x_5256_; lean_object* v___x_5257_; lean_object* v___x_5258_; lean_object* v___x_5259_; lean_object* v___x_5260_; lean_object* v___x_5261_; lean_object* v___x_5262_; uint8_t v___x_5263_; lean_object* v___x_5264_; lean_object* v___x_5265_; lean_object* v___x_5266_; lean_object* v_nameP_5267_; 
+lean_inc(v___y_5252_);
 v___x_5253_ = l_Lean_Name_append(v_kind_5234_, v___y_5252_);
 v___x_5254_ = ((lean_object*)(l_Lean_Parser_mkAntiquot___closed__8));
 v_kind_5255_ = l_Lean_Name_append(v___x_5253_, v___x_5254_);

@@ -57120,6 +57120,7 @@ goto v___jp_19742_;
 v___jp_19729_:
 {
 lean_object* v___x_19733_; lean_object* v___x_19734_; size_t v___x_19735_; size_t v___x_19736_; lean_object* v___x_19737_; 
+lean_inc(v___y_19730_);
 v___x_19733_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_19733_, 0, v___y_19730_);
 lean_ctor_set(v___x_19733_, 1, v___y_19732_);

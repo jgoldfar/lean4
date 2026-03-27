@@ -16,7 +16,7 @@ extern "C" {
 size_t lean_usize_add(size_t, size_t);
 uint8_t lean_usize_dec_eq(size_t, size_t);
 lean_object* lean_array_uget_borrowed(lean_object*, size_t);
-lean_object* lean_array_get(lean_object*, lean_object*, lean_object*);
+lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
 uint8_t lean_nat_dec_eq(lean_object*, lean_object*);
 lean_object* lean_array_push(lean_object*, lean_object*);
 lean_object* lean_array_get_size(lean_object*);
@@ -27,6 +27,7 @@ uint8_t lean_nat_dec_le(lean_object*, lean_object*);
 size_t lean_usize_of_nat(lean_object*);
 lean_object* lean_array_fget(lean_object*, lean_object*);
 lean_object* lean_array_fset(lean_object*, lean_object*, lean_object*);
+lean_object* lean_array_get(lean_object*, lean_object*, lean_object*);
 uint8_t l_Std_Tactic_BVDecide_LRAT_Internal_Assignment_hasAssignment(uint8_t, uint8_t);
 uint8_t l_Std_Tactic_BVDecide_LRAT_Internal_instBEqAssignment_beq(uint8_t, uint8_t);
 uint8_t l_Std_Tactic_BVDecide_LRAT_Internal_Assignment_addAssignment(uint8_t, uint8_t);
@@ -872,7 +873,7 @@ v_resetjp_230_:
 {
 lean_object* v___x_239_; lean_object* v___x_240_; 
 v___x_239_ = lean_box(0);
-v___x_240_ = lean_array_get(v___x_239_, v_clauses_226_, v_id_225_);
+v___x_240_ = lean_array_get_borrowed(v___x_239_, v_clauses_226_, v_id_225_);
 if (lean_obj_tag(v___x_240_) == 0)
 {
 lean_object* v___x_241_; 
@@ -888,8 +889,6 @@ else
 {
 lean_object* v_val_242_; 
 v_val_242_ = lean_ctor_get(v___x_240_, 0);
-lean_inc(v_val_242_);
-lean_dec_ref(v___x_240_);
 if (lean_obj_tag(v_val_242_) == 1)
 {
 lean_object* v_tail_243_; 
@@ -899,13 +898,10 @@ if (lean_obj_tag(v_tail_243_) == 0)
 lean_object* v_head_244_; lean_object* v_fst_245_; lean_object* v_snd_246_; lean_object* v___x_247_; lean_object* v___x_248_; uint8_t v___x_249_; 
 lean_del_object(v___x_231_);
 v_head_244_ = lean_ctor_get(v_val_242_, 0);
-lean_inc(v_head_244_);
-lean_dec_ref(v_val_242_);
 v_fst_245_ = lean_ctor_get(v_head_244_, 0);
 lean_inc(v_fst_245_);
 v_snd_246_ = lean_ctor_get(v_head_244_, 1);
 lean_inc(v_snd_246_);
-lean_dec(v_head_244_);
 v___x_247_ = lean_array_set(v_clauses_226_, v_id_225_, v___x_239_);
 v___x_248_ = lean_array_get_size(v_assignments_229_);
 v___x_249_ = lean_nat_dec_lt(v_fst_245_, v___x_248_);
@@ -945,13 +941,11 @@ return v___x_259_;
 }
 else
 {
-lean_dec_ref(v_val_242_);
 goto v___jp_233_;
 }
 }
 else
 {
-lean_dec(v_val_242_);
 goto v___jp_233_;
 }
 }
@@ -3085,7 +3079,7 @@ if (v___x_916_ == 0)
 lean_object* v___x_917_; lean_object* v___x_918_; lean_object* v___x_919_; 
 v___x_917_ = lean_box(0);
 v___x_918_ = lean_array_uget_borrowed(v_as_907_, v_i_908_);
-v___x_919_ = lean_array_get(v___x_917_, v_clauses_904_, v___x_918_);
+v___x_919_ = lean_array_get_borrowed(v___x_917_, v_clauses_904_, v___x_918_);
 if (lean_obj_tag(v___x_919_) == 0)
 {
 v___y_912_ = v_b_910_;
@@ -3095,10 +3089,7 @@ else
 {
 lean_object* v_val_920_; uint8_t v___x_921_; 
 v_val_920_ = lean_ctor_get(v___x_919_, 0);
-lean_inc(v_val_920_);
-lean_dec_ref(v___x_919_);
 v___x_921_ = l_List_elem___at___00Std_Tactic_BVDecide_LRAT_Internal_DefaultFormula_getRatClauseIndices_spec__0___redArg(v___y_906_, v_val_920_);
-lean_dec(v_val_920_);
 if (v___x_921_ == 0)
 {
 v___y_912_ = v_b_910_;
@@ -3680,7 +3671,7 @@ v_resetjp_1123_:
 {
 lean_object* v___x_1126_; lean_object* v___x_1127_; 
 v___x_1126_ = lean_box(0);
-v___x_1127_ = lean_array_get(v___x_1126_, v_clauses_1114_, v_fst_1121_);
+v___x_1127_ = lean_array_get_borrowed(v___x_1126_, v_clauses_1114_, v_fst_1121_);
 lean_dec(v_fst_1121_);
 if (lean_obj_tag(v___x_1127_) == 0)
 {
@@ -3734,11 +3725,9 @@ else
 lean_object* v_val_1136_; lean_object* v___x_1137_; lean_object* v___x_1138_; lean_object* v___x_1139_; lean_object* v_negC_1140_; lean_object* v___x_1142_; 
 lean_del_object(v___x_1124_);
 v_val_1136_ = lean_ctor_get(v___x_1127_, 0);
-lean_inc_n(v_val_1136_, 2);
-lean_dec_ref(v___x_1127_);
 v___x_1137_ = ((lean_object*)(l_Std_Tactic_BVDecide_LRAT_Internal_DefaultFormula_ofArray___closed__0));
+lean_inc(v_val_1136_);
 v___x_1138_ = l___private_Init_Data_List_Impl_0__List_eraseTR_go___at___00Std_Tactic_BVDecide_LRAT_Internal_DefaultFormula_performRatCheck_spec__0___redArg(v_val_1136_, v_negPivot_1112_, v_val_1136_, v___x_1137_);
-lean_dec(v_val_1136_);
 v___x_1139_ = lean_box(0);
 v_negC_1140_ = l_List_mapTR_loop___at___00Std_Tactic_BVDecide_LRAT_Internal_DefaultFormula_performRupAdd_spec__0(v___x_1138_, v___x_1139_);
 if (v_isShared_1120_ == 0)

@@ -206,6 +206,7 @@ lean_object* l_Lean_Elab_Command_withFreshMacroScope___redArg(lean_object*, lean
 lean_object* l_Lean_ScopedEnvExtension_setDelimitsLocal___redArg(lean_object*, lean_object*);
 lean_object* l_Lean_Name_mkStr5(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Array_findIdx_x3f_loop___redArg(lean_object*, lean_object*, lean_object*);
+lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
 lean_object* lean_mk_empty_array_with_capacity(lean_object*);
 lean_object* l_Lean_Meta_Context_config(lean_object*);
 uint64_t l_Lean_Meta_Context_configKey(lean_object*);
@@ -3197,6 +3198,7 @@ lean_ctor_set(v___x_273_, 1, v_openDecls_272_);
 v___x_274_ = lean_alloc_ctor(4, 2, 0);
 lean_ctor_set(v___x_274_, 0, v___x_273_);
 lean_ctor_set(v___x_274_, 1, v___y_262_);
+lean_inc(v___y_264_);
 lean_inc_ref(v_fileName_254_);
 v___x_275_ = lean_alloc_ctor(0, 5, 3);
 lean_ctor_set(v___x_275_, 0, v_fileName_254_);
@@ -34104,8 +34106,9 @@ lean_inc(v_val_11264_);
 lean_dec_ref(v___x_11263_);
 v_varUIds_11265_ = lean_ctor_get(v_a_11245_, 6);
 v___x_11266_ = lean_box(0);
-v___x_11267_ = lean_array_get(v___x_11266_, v_varUIds_11265_, v_val_11264_);
+v___x_11267_ = lean_array_get_borrowed(v___x_11266_, v_varUIds_11265_, v_val_11264_);
 lean_dec(v_val_11264_);
+lean_inc(v___x_11267_);
 v___x_11268_ = lean_array_push(v_b_11249_, v___x_11267_);
 v_a_11254_ = v___x_11268_;
 goto v___jp_11253_;
@@ -37353,6 +37356,7 @@ goto v___jp_12498_;
 v___jp_12465_:
 {
 lean_object* v_platforms_12471_; lean_object* v___x_12472_; lean_object* v___x_12473_; lean_object* v___x_12474_; lean_object* v___x_12475_; lean_object* v___x_12476_; lean_object* v___x_12477_; lean_object* v___x_12478_; lean_object* v___x_12479_; 
+lean_inc(v___y_12470_);
 v_platforms_12471_ = l_List_appendTR___redArg(v___y_12468_, v___y_12470_);
 v___x_12472_ = lean_obj_once(&l_Lean_Elab_Command_elabVersion___redArg___closed__6, &l_Lean_Elab_Command_elabVersion___redArg___closed__6_once, _init_l_Lean_Elab_Command_elabVersion___redArg___closed__6);
 lean_inc_ref(v___y_12469_);
@@ -37373,6 +37377,8 @@ return v___x_12479_;
 v___jp_12480_:
 {
 lean_object* v___x_12486_; uint8_t v___x_12487_; 
+lean_inc(v___y_12485_);
+lean_inc(v___y_12484_);
 v___x_12486_ = l_List_appendTR___redArg(v___y_12484_, v___y_12485_);
 v___x_12487_ = l_System_Platform_isEmscripten;
 if (v___x_12487_ == 0)

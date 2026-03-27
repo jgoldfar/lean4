@@ -7875,7 +7875,7 @@ if (v___x_2965_ == 0)
 lean_object* v___x_2966_; lean_object* v___x_2967_; lean_object* v___x_2968_; 
 v___x_2966_ = lean_box(0);
 v___x_2967_ = lean_array_uget_borrowed(v_as_2956_, v_i_2957_);
-v___x_2968_ = lean_array_get(v___x_2966_, v_eqs_2955_, v___x_2967_);
+v___x_2968_ = lean_array_get_borrowed(v___x_2966_, v_eqs_2955_, v___x_2967_);
 if (lean_obj_tag(v___x_2968_) == 0)
 {
 v___y_2961_ = v_b_2959_;
@@ -7886,7 +7886,6 @@ else
 lean_object* v_val_2969_; lean_object* v___x_2970_; 
 v_val_2969_ = lean_ctor_get(v___x_2968_, 0);
 lean_inc(v_val_2969_);
-lean_dec_ref(v___x_2968_);
 v___x_2970_ = lean_array_push(v_b_2959_, v_val_2969_);
 v___y_2961_ = v___x_2970_;
 goto v___jp_2960_;
@@ -12801,6 +12800,7 @@ v_suffix_4951_ = lean_string_append(v___x_4949_, v___x_4950_);
 lean_dec_ref(v___x_4950_);
 v_thmName_4952_ = l_Lean_Name_str___override(v_declName_4916_, v_suffix_4951_);
 v___x_4953_ = l_Lean_Environment_containsOnBranch(v_env_4947_, v_thmName_4952_);
+lean_dec_ref(v_env_4947_);
 if (v___x_4953_ == 0)
 {
 lean_object* v___x_4954_; 
@@ -13274,6 +13274,7 @@ v___x_5102_ = lean_obj_once(&l_Lean_Meta_mkHCongrWithArityForConst_x3f___closed_
 v___x_5103_ = ((lean_object*)(l_Lean_Meta_congrSimpSuffix___closed__0));
 v_thmName_5104_ = l_Lean_Name_str___override(v_declName_5072_, v___x_5103_);
 v___x_5141_ = l_Lean_Environment_containsOnBranch(v_env_5101_, v_thmName_5104_);
+lean_dec_ref(v_env_5101_);
 if (v___x_5141_ == 0)
 {
 lean_object* v___x_5142_; 

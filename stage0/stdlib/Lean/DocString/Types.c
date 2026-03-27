@@ -5582,6 +5582,7 @@ goto v_reusejp_1629_;
 v_reusejp_1629_:
 {
 lean_object* v___x_1631_; lean_object* v___x_1632_; lean_object* v___x_1633_; lean_object* v___x_1634_; uint8_t v___x_1635_; lean_object* v___x_1636_; lean_object* v___x_1637_; 
+lean_inc(v___y_1625_);
 v___x_1631_ = lean_alloc_ctor(5, 2, 0);
 lean_ctor_set(v___x_1631_, 0, v___x_1630_);
 lean_ctor_set(v___x_1631_, 1, v___y_1625_);

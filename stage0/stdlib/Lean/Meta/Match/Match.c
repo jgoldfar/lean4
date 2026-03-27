@@ -3685,13 +3685,12 @@ else
 {
 lean_object* v___x_862_; lean_object* v___x_863_; 
 v___x_862_ = lean_box(0);
-v___x_863_ = lean_array_get(v___x_862_, v_discrInfos_850_, v_i_852_);
+v___x_863_ = lean_array_get_borrowed(v___x_862_, v_discrInfos_850_, v_i_852_);
 if (lean_obj_tag(v___x_863_) == 1)
 {
 lean_object* v_val_864_; lean_object* v___x_865_; lean_object* v___x_866_; lean_object* v___x_867_; lean_object* v___x_868_; 
 v_val_864_ = lean_ctor_get(v___x_863_, 0);
 lean_inc(v_val_864_);
-lean_dec_ref(v___x_863_);
 v___x_865_ = l_Lean_instInhabitedExpr;
 v___x_866_ = lean_array_get_borrowed(v___x_865_, v_lhs_848_, v_i_852_);
 v___x_867_ = lean_array_get_borrowed(v___x_865_, v_rhs_849_, v_i_852_);
@@ -3766,7 +3765,6 @@ return v___x_877_;
 else
 {
 lean_object* v___x_880_; lean_object* v___x_881_; 
-lean_dec(v___x_863_);
 v___x_880_ = lean_unsigned_to_nat(1u);
 v___x_881_ = lean_nat_add(v_i_852_, v___x_880_);
 lean_dec(v_i_852_);

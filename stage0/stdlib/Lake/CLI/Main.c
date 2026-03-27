@@ -3433,7 +3433,6 @@ lean_dec(v___x_682_);
 if (v___x_683_ == 0)
 {
 uint32_t v___x_684_; uint32_t v___x_685_; uint8_t v___x_686_; 
-lean_dec(v_b_679_);
 v___x_684_ = lean_string_utf8_get_fast(v_kvPair_677_, v_a_678_);
 v___x_685_ = 61;
 v___x_686_ = lean_uint32_dec_eq(v___x_684_, v___x_685_);
@@ -3458,6 +3457,7 @@ return v___x_690_;
 else
 {
 lean_dec(v_a_678_);
+lean_inc(v_b_679_);
 return v_b_679_;
 }
 }
@@ -3467,6 +3467,7 @@ _start:
 {
 lean_object* v_res_695_; 
 v_res_695_ = l_WellFounded_opaqueFix_u2083___at___00__private_Lake_CLI_Main_0__Lake_setConfigOpt_spec__0___redArg(v___x_691_, v_kvPair_692_, v_a_693_, v_b_694_);
+lean_dec(v_b_694_);
 lean_dec_ref(v_kvPair_692_);
 lean_dec_ref(v___x_691_);
 return v_res_695_;
@@ -3690,6 +3691,7 @@ _start:
 {
 lean_object* v_res_786_; 
 v_res_786_ = l_WellFounded_opaqueFix_u2083___at___00__private_Lake_CLI_Main_0__Lake_setConfigOpt_spec__0(v___x_779_, v_kvPair_780_, v_inst_781_, v_R_782_, v_a_783_, v_b_784_, v_c_785_);
+lean_dec(v_b_784_);
 lean_dec_ref(v_kvPair_780_);
 lean_dec_ref(v___x_779_);
 return v_res_786_;
@@ -16485,7 +16487,6 @@ lean_dec(v___x_4617_);
 if (v___x_4618_ == 0)
 {
 uint32_t v___x_4619_; uint32_t v___x_4620_; uint8_t v___x_4621_; 
-lean_dec(v_b_4614_);
 v___x_4619_ = lean_string_utf8_get_fast(v___x_4612_, v_a_4613_);
 v___x_4620_ = 32;
 v___x_4621_ = lean_uint32_dec_eq(v___x_4619_, v___x_4620_);
@@ -16510,6 +16511,7 @@ return v___x_4625_;
 else
 {
 lean_dec(v_a_4613_);
+lean_inc(v_b_4614_);
 return v_b_4614_;
 }
 }
@@ -16519,6 +16521,7 @@ _start:
 {
 lean_object* v_res_4630_; 
 v_res_4630_ = l_WellFounded_opaqueFix_u2083___at___00__private_Lake_CLI_Main_0__Lake_lakeOption_spec__0___redArg(v___x_4626_, v___x_4627_, v_a_4628_, v_b_4629_);
+lean_dec(v_b_4629_);
 lean_dec_ref(v___x_4627_);
 lean_dec_ref(v___x_4626_);
 return v_res_4630_;
@@ -16817,6 +16820,7 @@ _start:
 {
 lean_object* v_res_4742_; 
 v_res_4742_ = l_WellFounded_opaqueFix_u2083___at___00__private_Lake_CLI_Main_0__Lake_lakeOption_spec__0(v___x_4735_, v___x_4736_, v_inst_4737_, v_R_4738_, v_a_4739_, v_b_4740_, v_c_4741_);
+lean_dec(v_b_4740_);
 lean_dec_ref(v___x_4736_);
 lean_dec_ref(v___x_4735_);
 return v_res_4742_;

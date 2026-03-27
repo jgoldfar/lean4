@@ -20002,10 +20002,12 @@ v___x_7306_ = lean_mk_array(v___x_7304_, v___x_7305_);
 v___x_7307_ = lean_mk_array(v___x_7303_, v___x_7306_);
 v___x_7308_ = lean_st_mk_ref(v___x_7307_);
 v___x_7309_ = lean_box(0);
-v_callerName_7310_ = lean_array_get(v___x_7309_, v_funNames_7293_, v_caller_7298_);
-v_decrTactic_x3f_7311_ = lean_array_get(v___x_7305_, v_decrTactics_7294_, v_caller_7298_);
+v_callerName_7310_ = lean_array_get_borrowed(v___x_7309_, v_funNames_7293_, v_caller_7298_);
+v_decrTactic_x3f_7311_ = lean_array_get_borrowed(v___x_7305_, v_decrTactics_7294_, v_caller_7298_);
 lean_inc(v_calleeMeasures_7302_);
 lean_inc(v_callerMeasures_7301_);
+lean_inc(v_decrTactic_x3f_7311_);
+lean_inc(v_callerName_7310_);
 v___x_7312_ = lean_alloc_ctor(0, 6, 0);
 lean_ctor_set(v___x_7312_, 0, v_callerName_7310_);
 lean_ctor_set(v___x_7312_, 1, v_decrTactic_x3f_7311_);
@@ -20793,9 +20795,8 @@ uint8_t v___x_7575_; lean_object* v___x_7576_; lean_object* v___x_7577_; lean_ob
 v___x_7575_ = 1;
 v___x_7576_ = lean_array_uget_borrowed(v_as_7571_, v_i_7572_);
 v___x_7577_ = lean_unsigned_to_nat(0u);
-v___x_7578_ = lean_array_get(v___x_7577_, v_a_7570_, v___x_7577_);
+v___x_7578_ = lean_array_get_borrowed(v___x_7577_, v_a_7570_, v___x_7577_);
 v___x_7579_ = lean_nat_dec_eq(v___x_7576_, v___x_7578_);
-lean_dec(v___x_7578_);
 if (v___x_7579_ == 0)
 {
 return v___x_7575_;
@@ -21943,10 +21944,9 @@ goto v___jp_8086_;
 else
 {
 lean_object* v___x_8100_; lean_object* v___x_8101_; lean_object* v___x_8102_; lean_object* v___x_8103_; lean_object* v___x_8104_; lean_object* v___x_8105_; 
-v___x_8100_ = lean_array_get(v___x_8094_, v___y_8083_, v_a_8084_);
+v___x_8100_ = lean_array_get_borrowed(v___x_8094_, v___y_8083_, v_a_8084_);
 v___x_8101_ = lean_string_length(v___x_8095_);
 v___x_8102_ = lean_nat_sub(v___x_8100_, v___x_8101_);
-lean_dec(v___x_8100_);
 v___x_8103_ = l_WellFounded_opaqueFix_u2083___at___00Lean_Elab_WF_GuessLex_formatTable_spec__0___redArg(v___x_8102_, v___x_8094_, v_b_8085_);
 lean_dec(v___x_8102_);
 v___x_8104_ = lean_box(0);
@@ -22067,11 +22067,10 @@ else
 {
 lean_object* v___x_8152_; lean_object* v___x_8153_; lean_object* v___x_8154_; lean_object* v___x_8155_; uint8_t v___x_8156_; 
 v___x_8152_ = lean_unsigned_to_nat(0u);
-v___x_8153_ = lean_array_get(v___x_8152_, v_b_8145_, v_a_8144_);
+v___x_8153_ = lean_array_get_borrowed(v___x_8152_, v_b_8145_, v_a_8144_);
 v___x_8154_ = lean_array_fget_borrowed(v___x_8143_, v_a_8144_);
 v___x_8155_ = lean_string_length(v___x_8154_);
 v___x_8156_ = lean_nat_dec_lt(v___x_8153_, v___x_8155_);
-lean_dec(v___x_8153_);
 if (v___x_8156_ == 0)
 {
 v_a_8147_ = v_b_8145_;
@@ -24060,7 +24059,8 @@ v___x_8988_ = lean_box(0);
 v___x_8989_ = lean_obj_once(&l_Lean_Elab_WF_GuessLex_formatTable___closed__0, &l_Lean_Elab_WF_GuessLex_formatTable___closed__0_once, _init_l_Lean_Elab_WF_GuessLex_formatTable___closed__0);
 v___x_8990_ = lean_nat_dec_eq(v_caller_8984_, v_callee_8985_);
 v___x_8991_ = ((lean_object*)(l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00Lean_Elab_WF_GuessLex_explainMutualFailure_spec__3___closed__1));
-v___x_8992_ = lean_array_get(v___x_8988_, v_declNames_8968_, v_caller_8984_);
+v___x_8992_ = lean_array_get_borrowed(v___x_8988_, v_declNames_8968_, v_caller_8984_);
+lean_inc(v___x_8992_);
 v___x_8993_ = l_Lean_Name_toString(v___x_8992_, v___x_8980_);
 v___x_8994_ = lean_alloc_ctor(3, 1, 0);
 lean_ctor_set(v___x_8994_, 0, v___x_8993_);
@@ -24071,7 +24071,8 @@ v___x_8996_ = ((lean_object*)(l___private_Init_Data_Array_Basic_0__Array_forIn_x
 v___x_8997_ = lean_alloc_ctor(5, 2, 0);
 lean_ctor_set(v___x_8997_, 0, v___x_8995_);
 lean_ctor_set(v___x_8997_, 1, v___x_8996_);
-v___x_8998_ = lean_array_get(v___x_8988_, v_declNames_8968_, v_callee_8985_);
+v___x_8998_ = lean_array_get_borrowed(v___x_8988_, v_declNames_8968_, v_callee_8985_);
+lean_inc(v___x_8998_);
 v___x_8999_ = l_Lean_Name_toString(v___x_8998_, v___x_8980_);
 v___x_9000_ = lean_alloc_ctor(3, 1, 0);
 lean_ctor_set(v___x_9000_, 0, v___x_8999_);

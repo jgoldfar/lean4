@@ -1955,7 +1955,6 @@ lean_dec(v___x_450_);
 if (v___x_451_ == 0)
 {
 lean_object* v___x_452_; uint32_t v___x_453_; uint32_t v___x_454_; uint8_t v___x_455_; 
-lean_dec(v_b_447_);
 v___x_452_ = lean_nat_add(v___x_444_, v_a_446_);
 v___x_453_ = lean_string_utf8_get_fast(v_contents_445_, v___x_452_);
 v___x_454_ = 10;
@@ -1984,6 +1983,7 @@ return v___x_460_;
 else
 {
 lean_dec(v_a_446_);
+lean_inc(v_b_447_);
 return v_b_447_;
 }
 }
@@ -1993,6 +1993,7 @@ _start:
 {
 lean_object* v_res_466_; 
 v_res_466_ = l_WellFounded_opaqueFix_u2083___at___00__private_Lake_Config_Cache_0__Lake_CacheMap_parse_loop___at___00__private_Lake_Config_Cache_0__Lake_CacheMap_parse_loop_spec__1_spec__1___redArg(v___x_461_, v___x_462_, v_contents_463_, v_a_464_, v_b_465_);
+lean_dec(v_b_465_);
 lean_dec_ref(v_contents_463_);
 lean_dec(v___x_462_);
 lean_dec_ref(v___x_461_);
@@ -2139,7 +2140,6 @@ lean_dec(v___x_519_);
 if (v___x_520_ == 0)
 {
 lean_object* v___x_521_; uint32_t v___x_522_; uint32_t v___x_523_; uint8_t v___x_524_; 
-lean_dec(v_b_516_);
 v___x_521_ = lean_nat_add(v___x_513_, v_a_515_);
 v___x_522_ = lean_string_utf8_get_fast(v_contents_514_, v___x_521_);
 v___x_523_ = 10;
@@ -2168,6 +2168,7 @@ return v___x_529_;
 else
 {
 lean_dec(v_a_515_);
+lean_inc(v_b_516_);
 return v_b_516_;
 }
 }
@@ -2177,6 +2178,7 @@ _start:
 {
 lean_object* v_res_535_; 
 v_res_535_ = l_WellFounded_opaqueFix_u2083___at___00__private_Lake_Config_Cache_0__Lake_CacheMap_parse_loop_spec__2___redArg(v___x_530_, v___x_531_, v_contents_532_, v_a_533_, v_b_534_);
+lean_dec(v_b_534_);
 lean_dec_ref(v_contents_532_);
 lean_dec(v___x_531_);
 lean_dec_ref(v___x_530_);
@@ -2322,6 +2324,7 @@ _start:
 {
 lean_object* v_res_598_; 
 v_res_598_ = l_WellFounded_opaqueFix_u2083___at___00__private_Lake_Config_Cache_0__Lake_CacheMap_parse_loop_spec__2(v___x_590_, v___x_591_, v_contents_592_, v_inst_593_, v_R_594_, v_a_595_, v_b_596_, v_c_597_);
+lean_dec(v_b_596_);
 lean_dec_ref(v_contents_592_);
 lean_dec(v___x_591_);
 lean_dec_ref(v___x_590_);
@@ -2341,6 +2344,7 @@ _start:
 {
 lean_object* v_res_616_; 
 v_res_616_ = l_WellFounded_opaqueFix_u2083___at___00__private_Lake_Config_Cache_0__Lake_CacheMap_parse_loop___at___00__private_Lake_Config_Cache_0__Lake_CacheMap_parse_loop_spec__1_spec__1(v___x_608_, v___x_609_, v_contents_610_, v_inst_611_, v_R_612_, v_a_613_, v_b_614_, v_c_615_);
+lean_dec(v_b_614_);
 lean_dec_ref(v_contents_610_);
 lean_dec(v___x_609_);
 lean_dec_ref(v___x_608_);
@@ -2400,7 +2404,6 @@ lean_dec(v___x_645_);
 if (v___x_646_ == 0)
 {
 uint32_t v___x_647_; uint32_t v___x_648_; uint8_t v___x_649_; 
-lean_dec(v_b_642_);
 v___x_647_ = lean_string_utf8_get_fast(v_contents_640_, v_a_641_);
 v___x_648_ = 10;
 v___x_649_ = lean_uint32_dec_eq(v___x_647_, v___x_648_);
@@ -2425,6 +2428,7 @@ return v___x_653_;
 else
 {
 lean_dec(v_a_641_);
+lean_inc(v_b_642_);
 return v_b_642_;
 }
 }
@@ -2434,6 +2438,7 @@ _start:
 {
 lean_object* v_res_658_; 
 v_res_658_ = l_WellFounded_opaqueFix_u2083___at___00Lake_CacheMap_parse_spec__1___redArg(v___x_654_, v_contents_655_, v_a_656_, v_b_657_);
+lean_dec(v_b_657_);
 lean_dec_ref(v_contents_655_);
 lean_dec_ref(v___x_654_);
 return v_res_658_;
@@ -2792,6 +2797,7 @@ _start:
 {
 lean_object* v_res_762_; 
 v_res_762_ = l_WellFounded_opaqueFix_u2083___at___00Lake_CacheMap_parse_spec__1(v___x_755_, v_contents_756_, v_inst_757_, v_R_758_, v_a_759_, v_b_760_, v_c_761_);
+lean_dec(v_b_760_);
 lean_dec_ref(v_contents_756_);
 lean_dec_ref(v___x_755_);
 return v_res_762_;

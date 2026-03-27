@@ -7588,7 +7588,7 @@ if (v___x_2668_ == 0)
 {
 lean_object* v___x_2669_; lean_object* v___x_2670_; lean_object* v___x_2671_; lean_object* v___x_2672_; lean_object* v___x_2673_; lean_object* v___x_2674_; lean_object* v___x_2675_; lean_object* v___x_2676_; 
 v___x_2669_ = lean_box(0);
-v___x_2670_ = lean_array_get(v___x_2669_, v_all_2658_, v___x_2659_);
+v___x_2670_ = lean_array_get_borrowed(v___x_2669_, v_all_2658_, v___x_2659_);
 v___x_2671_ = ((lean_object*)(l___private_Lean_Meta_Constructions_BRecOn_0__Lean_mkBRecOnFromRec___lam__0___closed__0));
 v___x_2672_ = lean_nat_sub(v_x_2661_, v___x_2667_);
 v___x_2673_ = lean_nat_add(v___x_2672_, v___x_2660_);
@@ -7596,6 +7596,7 @@ lean_dec(v___x_2672_);
 v___x_2674_ = l_Nat_reprFast(v___x_2673_);
 v___x_2675_ = lean_string_append(v___x_2671_, v___x_2674_);
 lean_dec_ref(v___x_2674_);
+lean_inc(v___x_2670_);
 v___x_2676_ = l_Lean_Name_str___override(v___x_2670_, v___x_2675_);
 v___y_2663_ = v___x_2676_;
 goto v___jp_2662_;

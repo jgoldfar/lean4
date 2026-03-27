@@ -48,7 +48,6 @@ lean_object* l_Lean_Elab_Deriving_mkContext(lean_object*, lean_object*, lean_obj
 lean_object* lean_array_get_size(lean_object*);
 uint8_t lean_nat_dec_lt(lean_object*, lean_object*);
 extern lean_object* l_Lean_instInhabitedInductiveVal_default;
-lean_object* lean_array_get(lean_object*, lean_object*, lean_object*);
 lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Elab_Deriving_mkHeader(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Name_mkStr7(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
@@ -117,6 +116,7 @@ lean_object* l_List_get_x21Internal___redArg(lean_object*, lean_object*, lean_ob
 lean_object* l_Lean_Expr_fvarId_x21(lean_object*);
 uint8_t l_Lean_Expr_containsFVar(lean_object*, lean_object*);
 lean_object* lean_mk_empty_array_with_capacity(lean_object*);
+lean_object* lean_array_get(lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_mkCIdent(lean_object*);
 lean_object* l_Array_mkArray3___redArg(lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Elab_Deriving_mkInstanceCmds(lean_object*, lean_object*, lean_object*, uint8_t, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
@@ -2574,8 +2574,9 @@ v_resetjp_921_:
 {
 lean_object* v___x_924_; lean_object* v___x_925_; lean_object* v___x_927_; 
 v___x_924_ = lean_box(0);
-v___x_925_ = lean_array_get(v___x_924_, v_auxFunNames_889_, v_val_920_);
+v___x_925_ = lean_array_get_borrowed(v___x_924_, v_auxFunNames_889_, v_val_920_);
 lean_dec(v_val_920_);
+lean_inc(v___x_925_);
 if (v_isShared_923_ == 0)
 {
 lean_ctor_set(v___x_922_, 0, v___x_925_);
@@ -6307,8 +6308,9 @@ v_resetjp_2450_:
 {
 lean_object* v___x_2453_; lean_object* v___x_2454_; lean_object* v___x_2456_; 
 v___x_2453_ = lean_box(0);
-v___x_2454_ = lean_array_get(v___x_2453_, v_auxFunNames_2418_, v_val_2449_);
+v___x_2454_ = lean_array_get_borrowed(v___x_2453_, v_auxFunNames_2418_, v_val_2449_);
 lean_dec(v_val_2449_);
+lean_inc(v___x_2454_);
 if (v_isShared_2452_ == 0)
 {
 lean_ctor_set(v___x_2451_, 0, v___x_2454_);
@@ -8467,9 +8469,10 @@ lean_object* v_typeInfos_3397_; lean_object* v___x_3398_; lean_object* v___x_339
 v_typeInfos_3397_ = lean_ctor_get(v_ctx_3385_, 1);
 v___x_3398_ = lean_box(0);
 v___x_3399_ = l_Lean_instInhabitedInductiveVal_default;
-v___x_3400_ = lean_array_get(v___x_3398_, v___x_3384_, v_a_3386_);
+v___x_3400_ = lean_array_get_borrowed(v___x_3398_, v___x_3384_, v_a_3386_);
 v___x_3401_ = lean_array_get_borrowed(v___x_3399_, v_typeInfos_3397_, v_a_3386_);
 lean_inc(v___x_3401_);
+lean_inc(v___x_3400_);
 lean_inc_ref(v_ctx_3385_);
 v___x_3402_ = l___private_Lean_Elab_Deriving_DecEq_0__Lean_Elab_Deriving_DecEq_mkAuxFunction(v_ctx_3385_, v___x_3400_, v___x_3401_, v___y_3388_, v___y_3389_, v___y_3390_, v___y_3391_, v___y_3392_, v___y_3393_);
 if (lean_obj_tag(v___x_3402_) == 0)

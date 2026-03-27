@@ -868,7 +868,6 @@ goto v___jp_272_;
 else
 {
 uint8_t v___x_276_; 
-lean_inc(v_stx_246_);
 v___x_276_ = l_Lean_Syntax_hasMissing(v_stx_246_);
 v___y_273_ = v___x_276_;
 goto v___jp_272_;

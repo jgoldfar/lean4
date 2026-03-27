@@ -35,7 +35,7 @@ lean_object* l_Lean_Syntax_getId(lean_object*);
 lean_object* lean_erase_macro_scopes(lean_object*);
 uint8_t lean_nat_dec_eq(lean_object*, lean_object*);
 lean_object* lean_nat_sub(lean_object*, lean_object*);
-lean_object* lean_array_get(lean_object*, lean_object*, lean_object*);
+lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
 uint8_t l_Lean_Syntax_isOfKind(lean_object*, lean_object*);
 lean_object* lean_array_pop(lean_object*);
 lean_object* l_Lean_MessageData_ofSyntax(lean_object*);
@@ -868,9 +868,10 @@ lean_object* v___x_376_; lean_object* v___x_377_; lean_object* v___x_378_; lean_
 v___x_376_ = lean_box(0);
 v___x_377_ = lean_unsigned_to_nat(1u);
 v___x_378_ = lean_nat_sub(v___x_373_, v___x_377_);
-v___x_379_ = lean_array_get(v___x_376_, v_args_330_, v___x_378_);
+v___x_379_ = lean_array_get_borrowed(v___x_376_, v_args_330_, v___x_378_);
 lean_dec(v___x_378_);
 v___x_380_ = ((lean_object*)(l___private_Init_Data_Array_Basic_0__Array_foldlMUnsafe_fold___at___00Lean_Elab_Term_expandArgs_spec__0___closed__6));
+lean_inc(v___x_379_);
 v___x_381_ = l_Lean_Syntax_isOfKind(v___x_379_, v___x_380_);
 if (v___x_381_ == 0)
 {

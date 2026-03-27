@@ -8695,8 +8695,13 @@ v___jp_2086_:
 {
 lean_object* v___x_2101_; lean_object* v___x_2102_; lean_object* v___x_2103_; 
 v___x_2101_ = lean_obj_once(&l___private_Lean_Elab_Idbg_0__Lean_Idbg_idbgCompileAndEval___redArg___closed__20, &l___private_Lean_Elab_Idbg_0__Lean_Idbg_idbgCompileAndEval___redArg___closed__20_once, _init_l___private_Lean_Elab_Idbg_0__Lean_Idbg_idbgCompileAndEval___redArg___closed__20);
+lean_inc(v_cancelTk_x3f_2097_);
 lean_inc(v_currMacroScope_2096_);
+lean_inc(v_quotContext_2095_);
 lean_inc(v_maxHeartbeats_2094_);
+lean_inc(v_openDecls_2092_);
+lean_inc(v_currNamespace_2091_);
+lean_inc(v_ref_2090_);
 lean_inc_ref(v_fileMap_2088_);
 lean_inc_ref(v_fileName_2087_);
 v___x_2102_ = lean_alloc_ctor(0, 14, 2);
@@ -9232,7 +9237,6 @@ switch(lean_obj_tag(v_a_2238_))
 case 0:
 {
 lean_object* v_pos_2241_; lean_object* v___x_2242_; 
-lean_dec(v_b_2239_);
 v_pos_2241_ = lean_ctor_get(v_a_2238_, 0);
 lean_inc(v_pos_2241_);
 lean_dec_ref(v_a_2238_);
@@ -9243,7 +9247,6 @@ return v___x_2242_;
 case 1:
 {
 lean_object* v_pos_2243_; lean_object* v___x_2245_; uint8_t v_isShared_2246_; uint8_t v_isSharedCheck_2252_; 
-lean_dec(v_b_2239_);
 v_pos_2243_ = lean_ctor_get(v_a_2238_, 0);
 v_isSharedCheck_2252_ = !lean_is_exclusive(v_a_2238_);
 if (v_isSharedCheck_2252_ == 0)
@@ -9337,12 +9340,12 @@ v___x_2267_ = l_String_instDecidableLtRaw___aux__1(v_basePos_2263_, v___x_2237_)
 lean_dec(v_basePos_2263_);
 if (v___x_2267_ == 0)
 {
+lean_inc(v_b_2239_);
 return v_b_2239_;
 }
 else
 {
 lean_object* v___x_2268_; 
-lean_dec(v_b_2239_);
 v___x_2268_ = lean_box(3);
 v_a_2238_ = v___x_2268_;
 v_b_2239_ = v___x_2240_;
@@ -9362,7 +9365,6 @@ if (v___x_2273_ == 0)
 {
 lean_object* v___x_2274_; uint8_t v___x_2275_; 
 lean_dec(v___x_2264_);
-lean_dec(v_b_2239_);
 v___x_2274_ = lean_unsigned_to_nat(0u);
 v___x_2275_ = lean_nat_dec_eq(v_needlePos_2256_, v___x_2274_);
 if (v___x_2275_ == 0)
@@ -9509,7 +9511,6 @@ lean_object* v___x_2304_; lean_object* v___x_2305_; lean_object* v___x_2306_;
 lean_del_object(v___x_2258_);
 lean_dec_ref(v_table_2254_);
 lean_dec_ref(v_needle_2253_);
-lean_dec(v_b_2239_);
 v___x_2304_ = lean_nat_sub(v_nextStackPos_2297_, v_nextNeedlePos_2298_);
 lean_dec(v_nextNeedlePos_2298_);
 lean_dec(v_nextStackPos_2297_);
@@ -9525,6 +9526,7 @@ return v___x_2306_;
 }
 default: 
 {
+lean_inc(v_b_2239_);
 return v_b_2239_;
 }
 }
@@ -9535,6 +9537,7 @@ _start:
 {
 lean_object* v_res_2313_; 
 v_res_2313_ = l_WellFounded_opaqueFix_u2083___at___00__private_Lean_Elab_Idbg_0__Lean_Idbg_idbgClientLoopImpl_spec__0___redArg(v___x_2308_, v___x_2309_, v___x_2310_, v_a_2311_, v_b_2312_);
+lean_dec(v_b_2312_);
 lean_dec(v___x_2310_);
 lean_dec_ref(v___x_2309_);
 lean_dec_ref(v___x_2308_);
@@ -10485,6 +10488,7 @@ _start:
 {
 lean_object* v_res_2576_; 
 v_res_2576_ = l_WellFounded_opaqueFix_u2083___at___00__private_Lean_Elab_Idbg_0__Lean_Idbg_idbgClientLoopImpl_spec__0(v___x_2568_, v___x_2569_, v___x_2570_, v_inst_2571_, v_R_2572_, v_a_2573_, v_b_2574_, v_c_2575_);
+lean_dec(v_b_2574_);
 lean_dec(v___x_2570_);
 lean_dec_ref(v___x_2569_);
 lean_dec_ref(v___x_2568_);

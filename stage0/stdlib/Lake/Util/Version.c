@@ -4156,7 +4156,6 @@ lean_dec(v___x_1186_);
 if (v___x_1187_ == 0)
 {
 uint32_t v___x_1188_; uint32_t v___x_1189_; uint8_t v___x_1190_; 
-lean_dec(v_b_1183_);
 v___x_1188_ = lean_string_utf8_get_fast(v_ver_1181_, v_a_1182_);
 v___x_1189_ = 58;
 v___x_1190_ = lean_uint32_dec_eq(v___x_1188_, v___x_1189_);
@@ -4181,6 +4180,7 @@ return v___x_1194_;
 else
 {
 lean_dec(v_a_1182_);
+lean_inc(v_b_1183_);
 return v_b_1183_;
 }
 }
@@ -4190,6 +4190,7 @@ _start:
 {
 lean_object* v_res_1199_; 
 v_res_1199_ = l_WellFounded_opaqueFix_u2083___at___00Lake_ToolchainVer_ofString_spec__3___redArg(v___x_1195_, v_ver_1196_, v_a_1197_, v_b_1198_);
+lean_dec(v_b_1198_);
 lean_dec_ref(v_ver_1196_);
 lean_dec_ref(v___x_1195_);
 return v_res_1199_;
@@ -4796,6 +4797,7 @@ _start:
 {
 lean_object* v_res_1357_; 
 v_res_1357_ = l_WellFounded_opaqueFix_u2083___at___00Lake_ToolchainVer_ofString_spec__3(v___x_1350_, v_ver_1351_, v_inst_1352_, v_R_1353_, v_a_1354_, v_b_1355_, v_c_1356_);
+lean_dec(v_b_1355_);
 lean_dec_ref(v_ver_1351_);
 lean_dec_ref(v___x_1350_);
 return v_res_1357_;

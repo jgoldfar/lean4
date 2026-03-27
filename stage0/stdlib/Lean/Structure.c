@@ -6666,7 +6666,8 @@ _start:
 {
 lean_object* v___x_2270_; lean_object* v___x_2271_; 
 v___x_2270_ = lean_box(0);
-v___x_2271_ = lean_array_get(v___x_2270_, v_x_2269_, v___x_2268_);
+v___x_2271_ = lean_array_get_borrowed(v___x_2270_, v_x_2269_, v___x_2268_);
+lean_inc(v___x_2271_);
 return v___x_2271_;
 }
 }

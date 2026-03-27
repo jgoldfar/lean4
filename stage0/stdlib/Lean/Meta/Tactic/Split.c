@@ -17848,7 +17848,8 @@ v_resetjp_6092_:
 lean_object* v_eqnNames_6095_; lean_object* v___x_6096_; lean_object* v___x_6097_; lean_object* v___x_6098_; 
 v_eqnNames_6095_ = lean_ctor_get(v_a_6075_, 0);
 v___x_6096_ = lean_box(0);
-v___x_6097_ = lean_array_get(v___x_6096_, v_eqnNames_6095_, v_fst_6090_);
+v___x_6097_ = lean_array_get_borrowed(v___x_6096_, v_eqnNames_6095_, v_fst_6090_);
+lean_inc(v___x_6097_);
 lean_inc(v___x_6076_);
 v___x_6098_ = l___private_Lean_Meta_Tactic_Split_0__Lean_Meta_Split_simpMatchTargetCore(v_head_6085_, v___x_6076_, v___x_6097_, v___y_6079_, v___y_6080_, v___y_6081_, v___y_6082_);
 if (lean_obj_tag(v___x_6098_) == 0)

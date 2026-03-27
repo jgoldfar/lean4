@@ -678,6 +678,7 @@ v___jp_169_:
 {
 lean_object* v___x_171_; lean_object* v___x_172_; 
 v___x_171_ = lean_unsigned_to_nat(1u);
+lean_inc(v___y_170_);
 v___x_172_ = lean_alloc_ctor(0, 3, 0);
 lean_ctor_set(v___x_172_, 0, v___x_168_);
 lean_ctor_set(v___x_172_, 1, v___y_170_);
@@ -1343,6 +1344,7 @@ v___jp_369_:
 {
 lean_object* v___x_371_; lean_object* v___x_372_; 
 v___x_371_ = lean_unsigned_to_nat(1u);
+lean_inc(v___y_370_);
 v___x_372_ = lean_alloc_ctor(0, 3, 0);
 lean_ctor_set(v___x_372_, 0, v___x_368_);
 lean_ctor_set(v___x_372_, 1, v___y_370_);

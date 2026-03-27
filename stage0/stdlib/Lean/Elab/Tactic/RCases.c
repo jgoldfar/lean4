@@ -60,7 +60,7 @@ lean_object* l_Array_toSubarray___redArg(lean_object*, lean_object*, lean_object
 lean_object* l_Subarray_copy___redArg(lean_object*);
 lean_object* l_Lean_MVarId_generalize(lean_object*, lean_object*, uint8_t, lean_object*, lean_object*, lean_object*, lean_object*);
 size_t lean_array_size(lean_object*);
-lean_object* lean_array_get(lean_object*, lean_object*, lean_object*);
+lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_mkFVar(lean_object*);
 uint8_t l_Lean_Expr_isFVar(lean_object*);
 size_t lean_usize_of_nat(lean_object*);
@@ -117,6 +117,7 @@ lean_object* l_Lean_Expr_getAppNumArgs(lean_object*);
 lean_object* l_Lean_Expr_sort___override(lean_object*);
 lean_object* lean_nat_sub(lean_object*, lean_object*);
 lean_object* l___private_Lean_Expr_0__Lean_Expr_getAppArgsAux(lean_object*, lean_object*, lean_object*);
+lean_object* lean_array_get(lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Expr_mvarId_x21(lean_object*);
 lean_object* l_Lean_Elab_Tactic_ElimApp_setMotiveArg(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 uint8_t lean_nat_dec_eq(lean_object*, lean_object*);
@@ -15347,7 +15348,8 @@ v___jp_4761_:
 {
 lean_object* v___x_4762_; lean_object* v___x_4763_; lean_object* v___x_4764_; lean_object* v___x_4765_; lean_object* v___x_4766_; lean_object* v___x_4767_; lean_object* v___x_4769_; 
 v___x_4762_ = lean_box(0);
-v___x_4763_ = lean_array_get(v___x_4762_, v_fst_4743_, v_snd_4757_);
+v___x_4763_ = lean_array_get_borrowed(v___x_4762_, v_fst_4743_, v_snd_4757_);
+lean_inc(v___x_4763_);
 v___x_4764_ = l_Lean_mkFVar(v___x_4763_);
 v___x_4765_ = lean_array_push(v_fst_4756_, v___x_4764_);
 v___x_4766_ = lean_unsigned_to_nat(1u);

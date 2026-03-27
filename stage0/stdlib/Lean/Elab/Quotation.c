@@ -101,6 +101,7 @@ lean_object* l_Array_eraseIdxIfInBounds___redArg(lean_object*, lean_object*);
 lean_object* lean_array_get(lean_object*, lean_object*, lean_object*);
 lean_object* lean_array_fget(lean_object*, lean_object*);
 lean_object* l_Lean_Syntax_node4(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
+lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
 lean_object* l_Array_toSubarray___redArg(lean_object*, lean_object*, lean_object*);
 size_t lean_usize_of_nat(lean_object*);
 uint8_t lean_usize_dec_eq(size_t, size_t);
@@ -8141,7 +8142,7 @@ v___x_2824_ = lean_box(0);
 v___x_2825_ = lean_array_get_size(v___y_2816_);
 v___x_2826_ = lean_unsigned_to_nat(1u);
 v___x_2827_ = lean_nat_sub(v___x_2825_, v___x_2826_);
-v___x_2828_ = lean_array_get(v___x_2824_, v___y_2816_, v___x_2827_);
+v___x_2828_ = lean_array_get_borrowed(v___x_2824_, v___y_2816_, v___x_2827_);
 v___x_2829_ = lean_unsigned_to_nat(0u);
 lean_inc_ref(v___y_2816_);
 v___x_2830_ = l_Array_toSubarray___redArg(v___y_2816_, v___x_2829_, v___x_2827_);
@@ -8161,6 +8162,7 @@ lean_dec(v_stop_2833_);
 v___x_2836_ = lean_nat_dec_lt(v_start_2832_, v___x_2834_);
 if (v___x_2836_ == 0)
 {
+lean_inc(v___x_2828_);
 lean_dec(v_start_2832_);
 lean_dec_ref(v_array_2831_);
 v___y_2723_ = v___y_2812_;
@@ -8184,6 +8186,7 @@ size_t v___x_2837_; size_t v___x_2838_; lean_object* v___x_2839_;
 v___x_2837_ = lean_usize_of_nat(v___x_2834_);
 v___x_2838_ = lean_usize_of_nat(v_start_2832_);
 lean_dec(v_start_2832_);
+lean_inc(v___x_2828_);
 v___x_2839_ = l___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00__private_Lean_Elab_Quotation_0__Lean_Elab_Term_Quotation_quoteSyntax_spec__4___redArg(v___y_2813_, v_array_2831_, v___x_2837_, v___x_2838_, v___x_2828_, v___y_2822_);
 lean_dec_ref(v_array_2831_);
 v___y_2789_ = v___y_2812_;
@@ -8208,6 +8211,7 @@ uint8_t v___x_2840_;
 v___x_2840_ = lean_nat_dec_lt(v_start_2832_, v_stop_2833_);
 if (v___x_2840_ == 0)
 {
+lean_inc(v___x_2828_);
 lean_dec(v_stop_2833_);
 lean_dec(v_start_2832_);
 lean_dec_ref(v_array_2831_);
@@ -8233,6 +8237,7 @@ v___x_2841_ = lean_usize_of_nat(v_stop_2833_);
 lean_dec(v_stop_2833_);
 v___x_2842_ = lean_usize_of_nat(v_start_2832_);
 lean_dec(v_start_2832_);
+lean_inc(v___x_2828_);
 v___x_2843_ = l___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00__private_Lean_Elab_Quotation_0__Lean_Elab_Term_Quotation_quoteSyntax_spec__4___redArg(v___y_2813_, v_array_2831_, v___x_2841_, v___x_2842_, v___x_2828_, v___y_2822_);
 lean_dec_ref(v_array_2831_);
 v___y_2789_ = v___y_2812_;

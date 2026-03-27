@@ -4682,7 +4682,6 @@ goto v___jp_1012_;
 }
 v___jp_1065_:
 {
-lean_dec(v_res_1067_);
 v___y_1013_ = v_pos_1066_;
 goto v___jp_1012_;
 }
@@ -4696,7 +4695,6 @@ goto v___jp_1065_;
 }
 else
 {
-lean_dec(v___y_1070_);
 v_pos_1042_ = v___y_1069_;
 goto v___jp_1041_;
 }

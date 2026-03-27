@@ -23422,7 +23422,6 @@ goto v___jp_7171_;
 else
 {
 uint8_t v___x_7175_; 
-lean_inc(v_stx_7145_);
 v___x_7175_ = l_Lean_Syntax_hasMissing(v_stx_7145_);
 v___y_7172_ = v___x_7175_;
 goto v___jp_7171_;

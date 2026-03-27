@@ -430,7 +430,6 @@ lean_dec(v___x_86_);
 if (v___x_87_ == 0)
 {
 lean_object* v___x_88_; uint32_t v___x_89_; uint32_t v___x_90_; uint8_t v___x_91_; 
-lean_dec(v_b_83_);
 v___x_88_ = lean_nat_add(v___x_80_, v_a_82_);
 v___x_89_ = lean_string_utf8_get_fast(v_s_81_, v___x_88_);
 v___x_90_ = 10;
@@ -459,6 +458,7 @@ return v___x_96_;
 else
 {
 lean_dec(v_a_82_);
+lean_inc(v_b_83_);
 return v_b_83_;
 }
 }
@@ -468,6 +468,7 @@ _start:
 {
 lean_object* v_res_102_; 
 v_res_102_ = l_WellFounded_opaqueFix_u2083___at___00__private_Lean_Elab_StructInstHint_0__Lean_Elab_Term_StructInst_mkMissingFieldsHint_findLineEnd_spec__0___redArg(v___x_97_, v___x_98_, v_s_99_, v_a_100_, v_b_101_);
+lean_dec(v_b_101_);
 lean_dec_ref(v_s_99_);
 lean_dec(v___x_98_);
 lean_dec_ref(v___x_97_);
@@ -540,6 +541,7 @@ _start:
 {
 lean_object* v_res_136_; 
 v_res_136_ = l_WellFounded_opaqueFix_u2083___at___00__private_Lean_Elab_StructInstHint_0__Lean_Elab_Term_StructInst_mkMissingFieldsHint_findLineEnd_spec__0(v___x_128_, v___x_129_, v_s_130_, v_inst_131_, v_R_132_, v_a_133_, v_b_134_, v_c_135_);
+lean_dec(v_b_134_);
 lean_dec_ref(v_s_130_);
 lean_dec(v___x_129_);
 lean_dec_ref(v___x_128_);

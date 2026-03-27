@@ -854,7 +854,6 @@ if (v___x_58_ == 0)
 lean_object* v___x_59_; lean_object* v_casesTypes_60_; uint8_t v___x_61_; 
 v___x_59_ = lean_array_uget_borrowed(v_as_55_, v_i_56_);
 v_casesTypes_60_ = lean_ctor_get(v___x_59_, 0);
-lean_inc_ref(v_casesTypes_60_);
 v___x_61_ = l_Lean_Meta_Grind_CasesTypes_contains(v_casesTypes_60_, v_declName_54_);
 if (v___x_61_ == 0)
 {
@@ -1293,7 +1292,6 @@ v_ematch_196_ = lean_ctor_get(v___x_195_, 3);
 lean_inc(v_declName_190_);
 v___x_197_ = lean_alloc_ctor(0, 1, 0);
 lean_ctor_set(v___x_197_, 0, v_declName_190_);
-lean_inc_ref(v_ematch_196_);
 v___x_198_ = l_Lean_Meta_Grind_Theorems_contains___redArg(v_ematch_196_, v___x_197_);
 lean_dec_ref(v___x_197_);
 if (v___x_198_ == 0)
@@ -1387,7 +1385,6 @@ v_inj_230_ = lean_ctor_get(v___x_229_, 4);
 lean_inc(v_declName_224_);
 v___x_231_ = lean_alloc_ctor(0, 1, 0);
 lean_ctor_set(v___x_231_, 0, v_declName_224_);
-lean_inc_ref(v_inj_230_);
 v___x_232_ = l_Lean_Meta_Grind_Theorems_contains___redArg(v_inj_230_, v___x_231_);
 lean_dec_ref(v___x_231_);
 if (v___x_232_ == 0)
