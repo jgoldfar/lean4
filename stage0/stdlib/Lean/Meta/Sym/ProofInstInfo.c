@@ -38,7 +38,7 @@ lean_object* l_Lean_PersistentHashMap_getCollisionNodeSize___redArg(lean_object*
 lean_object* l_Lean_Meta_Sym_unfoldReducible(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Core_betaReduce(lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Meta_zetaReduce(lean_object*, uint8_t, uint8_t, uint8_t, lean_object*, lean_object*, lean_object*, lean_object*);
-lean_object* l_Lean_Meta_Sym_etaReduceAll(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
+lean_object* l_Lean_Meta_Sym_etaReduceAll(lean_object*, lean_object*, lean_object*);
 lean_object* l___private_Lean_Meta_Basic_0__Lean_Meta_forallTelescopeReducingImp(lean_object*, lean_object*, lean_object*, uint8_t, uint8_t, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* lean_st_ref_get(lean_object*);
 lean_object* l_Lean_Environment_find_x3f(lean_object*, lean_object*, uint8_t);
@@ -231,7 +231,7 @@ lean_object* v_a_13_; lean_object* v___x_14_;
 v_a_13_ = lean_ctor_get(v___x_12_, 0);
 lean_inc(v_a_13_);
 lean_dec_ref(v___x_12_);
-v___x_14_ = l_Lean_Meta_Sym_etaReduceAll(v_a_13_, v_a_2_, v_a_3_, v_a_4_, v_a_5_);
+v___x_14_ = l_Lean_Meta_Sym_etaReduceAll(v_a_13_, v_a_4_, v_a_5_);
 return v___x_14_;
 }
 else
@@ -332,8 +332,8 @@ v___jp_42_:
 {
 lean_object* v___x_46_; lean_object* v___x_47_; lean_object* v___x_48_; lean_object* v___x_50_; 
 v___x_46_ = lean_alloc_ctor(0, 0, 2);
-lean_ctor_set_uint8(v___x_46_, 0, v___y_44_);
-lean_ctor_set_uint8(v___x_46_, 1, v___y_43_);
+lean_ctor_set_uint8(v___x_46_, 0, v___y_43_);
+lean_ctor_set_uint8(v___x_46_, 1, v___y_44_);
 v___x_47_ = lean_array_push(v_fst_37_, v___x_46_);
 v___x_48_ = lean_box(v_found_45_);
 if (v_isShared_41_ == 0)
@@ -382,8 +382,8 @@ v___x_60_ = lean_unbox(v_a_58_);
 lean_dec(v_a_58_);
 v___x_61_ = lean_unbox(v_snd_38_);
 lean_dec(v_snd_38_);
-v___y_43_ = v___y_56_;
-v___y_44_ = v___x_60_;
+v___y_43_ = v___x_60_;
+v___y_44_ = v___y_56_;
 v_found_45_ = v___x_61_;
 goto v___jp_42_;
 }
@@ -393,8 +393,8 @@ uint8_t v___x_62_;
 lean_dec(v_snd_38_);
 v___x_62_ = lean_unbox(v_a_58_);
 lean_dec(v_a_58_);
-v___y_43_ = v___y_56_;
-v___y_44_ = v___x_62_;
+v___y_43_ = v___x_62_;
+v___y_44_ = v___y_56_;
 v_found_45_ = v___x_32_;
 goto v___jp_42_;
 }
@@ -408,8 +408,8 @@ lean_inc(v_a_63_);
 lean_dec_ref(v___x_57_);
 v___x_64_ = lean_unbox(v_a_63_);
 lean_dec(v_a_63_);
-v___y_43_ = v___y_56_;
-v___y_44_ = v___x_64_;
+v___y_43_ = v___x_64_;
+v___y_44_ = v___y_56_;
 v_found_45_ = v___x_32_;
 goto v___jp_42_;
 }

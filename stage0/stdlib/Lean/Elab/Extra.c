@@ -13228,8 +13228,8 @@ goto v___jp_4484_;
 }
 else
 {
-lean_dec_ref(v_fn_4480_);
 lean_dec_ref(v_fn_4481_);
+lean_dec_ref(v_fn_4480_);
 lean_del_object(v___x_4474_);
 lean_del_object(v___x_4469_);
 lean_del_object(v___x_4465_);

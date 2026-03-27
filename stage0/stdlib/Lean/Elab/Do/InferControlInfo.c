@@ -4813,7 +4813,7 @@ return v_res_1487_;
 LEAN_EXPORT lean_object* l_Lean_Elab_Do_InferControlInfo_ofLetOrReassign(lean_object* v_reassigned_1490_, lean_object* v_rhs_x3f_1491_, lean_object* v_otherwise_x3f_1492_, lean_object* v_body_x3f_1493_, lean_object* v_a_1494_, lean_object* v_a_1495_, lean_object* v_a_1496_, lean_object* v_a_1497_, lean_object* v_a_1498_, lean_object* v_a_1499_){
 _start:
 {
-uint8_t v___y_1502_; lean_object* v___y_1503_; uint8_t v___y_1504_; uint8_t v___y_1505_; lean_object* v___y_1506_; lean_object* v___y_1510_; lean_object* v___y_1511_; lean_object* v_body_1512_; lean_object* v___y_1532_; lean_object* v_otherwise_1533_; lean_object* v___y_1534_; lean_object* v___y_1535_; lean_object* v___y_1536_; lean_object* v___y_1537_; lean_object* v___y_1538_; lean_object* v___y_1539_; lean_object* v_rhs_1545_; lean_object* v___y_1546_; lean_object* v___y_1547_; lean_object* v___y_1548_; lean_object* v___y_1549_; lean_object* v___y_1550_; lean_object* v___y_1551_; 
+lean_object* v___y_1502_; uint8_t v___y_1503_; uint8_t v___y_1504_; uint8_t v___y_1505_; lean_object* v___y_1506_; lean_object* v___y_1510_; lean_object* v___y_1511_; lean_object* v_body_1512_; lean_object* v___y_1532_; lean_object* v_otherwise_1533_; lean_object* v___y_1534_; lean_object* v___y_1535_; lean_object* v___y_1536_; lean_object* v___y_1537_; lean_object* v___y_1538_; lean_object* v___y_1539_; lean_object* v_rhs_1545_; lean_object* v___y_1546_; lean_object* v___y_1547_; lean_object* v___y_1548_; lean_object* v___y_1549_; lean_object* v___y_1550_; lean_object* v___y_1551_; 
 if (lean_obj_tag(v_rhs_x3f_1491_) == 0)
 {
 lean_object* v___x_1556_; 
@@ -4861,11 +4861,11 @@ v___jp_1501_:
 {
 lean_object* v___x_1507_; lean_object* v___x_1508_; 
 v___x_1507_ = lean_alloc_ctor(0, 2, 3);
-lean_ctor_set(v___x_1507_, 0, v___y_1503_);
+lean_ctor_set(v___x_1507_, 0, v___y_1502_);
 lean_ctor_set(v___x_1507_, 1, v___y_1506_);
 lean_ctor_set_uint8(v___x_1507_, sizeof(void*)*2, v___y_1504_);
-lean_ctor_set_uint8(v___x_1507_, sizeof(void*)*2 + 1, v___y_1505_);
-lean_ctor_set_uint8(v___x_1507_, sizeof(void*)*2 + 2, v___y_1502_);
+lean_ctor_set_uint8(v___x_1507_, sizeof(void*)*2 + 1, v___y_1503_);
+lean_ctor_set_uint8(v___x_1507_, sizeof(void*)*2 + 2, v___y_1505_);
 v___x_1508_ = lean_alloc_ctor(0, 1, 0);
 lean_ctor_set(v___x_1508_, 0, v___x_1507_);
 return v___x_1508_;
@@ -4892,10 +4892,10 @@ v___x_1525_ = lean_nat_dec_lt(v___x_1523_, v___x_1524_);
 if (v___x_1525_ == 0)
 {
 lean_dec_ref(v___x_1522_);
-v___y_1502_ = v_returnsEarly_1517_;
-v___y_1503_ = v_numRegularExits_1518_;
+v___y_1502_ = v_numRegularExits_1518_;
+v___y_1503_ = v_continues_1516_;
 v___y_1504_ = v_breaks_1515_;
-v___y_1505_ = v_continues_1516_;
+v___y_1505_ = v_returnsEarly_1517_;
 v___y_1506_ = v_reassigns_1519_;
 goto v___jp_1501_;
 }
@@ -4908,10 +4908,10 @@ if (v___x_1526_ == 0)
 if (v___x_1525_ == 0)
 {
 lean_dec_ref(v___x_1522_);
-v___y_1502_ = v_returnsEarly_1517_;
-v___y_1503_ = v_numRegularExits_1518_;
+v___y_1502_ = v_numRegularExits_1518_;
+v___y_1503_ = v_continues_1516_;
 v___y_1504_ = v_breaks_1515_;
-v___y_1505_ = v_continues_1516_;
+v___y_1505_ = v_returnsEarly_1517_;
 v___y_1506_ = v_reassigns_1519_;
 goto v___jp_1501_;
 }
@@ -4921,10 +4921,10 @@ size_t v___x_1527_; lean_object* v___x_1528_;
 v___x_1527_ = lean_usize_of_nat(v___x_1524_);
 v___x_1528_ = l___private_Init_Data_Array_Basic_0__Array_foldlMUnsafe_fold___at___00Lean_Elab_Do_InferControlInfo_ofLetOrReassign_spec__21(v___x_1522_, v___x_1521_, v___x_1527_, v_reassigns_1519_);
 lean_dec_ref(v___x_1522_);
-v___y_1502_ = v_returnsEarly_1517_;
-v___y_1503_ = v_numRegularExits_1518_;
+v___y_1502_ = v_numRegularExits_1518_;
+v___y_1503_ = v_continues_1516_;
 v___y_1504_ = v_breaks_1515_;
-v___y_1505_ = v_continues_1516_;
+v___y_1505_ = v_returnsEarly_1517_;
 v___y_1506_ = v___x_1528_;
 goto v___jp_1501_;
 }
@@ -4935,10 +4935,10 @@ size_t v___x_1529_; lean_object* v___x_1530_;
 v___x_1529_ = lean_usize_of_nat(v___x_1524_);
 v___x_1530_ = l___private_Init_Data_Array_Basic_0__Array_foldlMUnsafe_fold___at___00Lean_Elab_Do_InferControlInfo_ofLetOrReassign_spec__21(v___x_1522_, v___x_1521_, v___x_1529_, v_reassigns_1519_);
 lean_dec_ref(v___x_1522_);
-v___y_1502_ = v_returnsEarly_1517_;
-v___y_1503_ = v_numRegularExits_1518_;
+v___y_1502_ = v_numRegularExits_1518_;
+v___y_1503_ = v_continues_1516_;
 v___y_1504_ = v_breaks_1515_;
-v___y_1505_ = v_continues_1516_;
+v___y_1505_ = v_returnsEarly_1517_;
 v___y_1506_ = v___x_1530_;
 goto v___jp_1501_;
 }

@@ -6239,8 +6239,8 @@ if (lean_obj_tag(v___x_2284_) == 0)
 {
 lean_dec_ref(v___x_2284_);
 v___y_2105_ = v___x_2273_;
-v___y_2106_ = v___x_2266_;
-v___y_2107_ = v___x_2267_;
+v___y_2106_ = v___x_2267_;
+v___y_2107_ = v___x_2266_;
 v___y_2108_ = v___y_2225_;
 v___y_2109_ = v___y_2226_;
 v___y_2110_ = v___y_2227_;
@@ -6262,8 +6262,8 @@ else
 lean_dec_ref(v___x_2268_);
 lean_del_object(v___x_2220_);
 v___y_2105_ = v___x_2273_;
-v___y_2106_ = v___x_2266_;
-v___y_2107_ = v___x_2267_;
+v___y_2106_ = v___x_2267_;
+v___y_2107_ = v___x_2266_;
 v___y_2108_ = v___y_2225_;
 v___y_2109_ = v___y_2226_;
 v___y_2110_ = v___y_2227_;
@@ -6536,7 +6536,7 @@ v___x_2114_ = l_Lean_Expr_isAppOfArity(v___y_2105_, v___x_2112_, v___x_2113_);
 if (v___x_2114_ == 0)
 {
 lean_object* v___x_2115_; lean_object* v___x_2116_; 
-v___x_2115_ = l_Lean_Expr_app___override(v___y_2106_, v___y_2107_);
+v___x_2115_ = l_Lean_Expr_app___override(v___y_2107_, v___y_2106_);
 lean_inc(v_goal_2095_);
 v___x_2116_ = l_Lean_MVarId_setType___redArg(v_goal_2095_, v___x_2115_, v___y_2109_);
 if (lean_obj_tag(v___x_2116_) == 0)
@@ -6955,7 +6955,7 @@ return v___x_2116_;
 else
 {
 lean_object* v___x_2208_; lean_object* v___x_2209_; lean_object* v___x_2210_; lean_object* v___x_2211_; lean_object* v___x_2212_; lean_object* v___x_2213_; lean_object* v___x_2214_; 
-lean_dec_ref(v___y_2106_);
+lean_dec_ref(v___y_2107_);
 v___x_2208_ = l_Lean_Expr_appFn_x21(v___y_2105_);
 v___x_2209_ = l_Lean_Expr_constLevels_x21(v___x_2208_);
 lean_dec_ref(v___x_2208_);
@@ -6963,7 +6963,7 @@ v___x_2210_ = l_Lean_Expr_appArg_x21(v___y_2105_);
 lean_dec_ref(v___y_2105_);
 v___x_2211_ = ((lean_object*)(l_Lean_MVarId_applyRfl___lam__1___closed__10));
 v___x_2212_ = l_Lean_mkConst(v___x_2211_, v___x_2209_);
-v___x_2213_ = l_Lean_mkAppB(v___x_2212_, v___x_2210_, v___y_2107_);
+v___x_2213_ = l_Lean_mkAppB(v___x_2212_, v___x_2210_, v___y_2106_);
 v___x_2214_ = l_Lean_MVarId_assign___at___00Lean_MVarId_applyRfl_spec__2___redArg(v_goal_2095_, v___x_2213_, v___y_2109_);
 return v___x_2214_;
 }
@@ -7602,8 +7602,8 @@ goto v___jp_2528_;
 }
 else
 {
-lean_dec_ref(v_a_2527_);
 lean_dec(v_tail_2535_);
+lean_dec_ref(v_a_2527_);
 lean_dec_ref(v___x_2524_);
 lean_dec(v_a_2515_);
 v___y_2529_ = v___y_2516_;
