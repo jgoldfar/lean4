@@ -363,8 +363,11 @@ def elabInvariants (stx : Syntax) (invariants : Array MVarId) (suggestInvariant 
     let mut dotOrCase := LBool.undef -- .true => dot
     for h : n in 0...alts.size do
       let alt := alts[n]
-      match alt with
-      | `(goalDotAlt| · $rhs) =>
+      -- Dispatch on structure rather than kind name so that renaming
+      -- goalDotAlt/goalCaseAlt does not require a stage0 update.
+      -- goalDotAlt  has 2 children: cdotTk, (colGe term)
+      -- goalCaseAlt has 4 children: "| ", caseArg, " => ", (colGe term)
+      if alt.raw.getNumArgs == 2 then
         if dotOrCase matches .false then
           logErrorAt alt m!"Alternation between labelled and bulleted invariants is not supported."
           break
@@ -372,13 +375,20 @@ def elabInvariants (stx : Syntax) (invariants : Array MVarId) (suggestInvariant 
         let some mv := invariants[n]? | do
           logErrorAt alt m!"More invariants have been defined ({alts.size}) than there were unassigned invariants goals `inv<n>` ({invariants.size})."
           continue
+        let rhs : Term := ⟨alt.raw[1]⟩
         withRef rhs do
         discard <| evalTacticAt (← `(tactic| exact $rhs)) mv
-      | `(goalCaseAlt| | $tag $args* => $rhs) =>
+      else
         if dotOrCase matches .true then
           logErrorAt alt m!"Alternation between labelled and bulleted invariants is not supported."
           break
         dotOrCase := .false
+        -- goalCaseAlt children: "| ", caseArg, " => ", (colGe term)
+        let caseArgStx : TSyntax ``caseArg := ⟨alt.raw[1]⟩
+        let rhs : Term := ⟨alt.raw[3]⟩
+        -- caseArg := binderIdent (ppSpace binderIdent)*
+        let args := caseArgStx.raw[1].getArgs.map (⟨·⟩ : _ → TSyntax ``binderIdent)
+        let tag : TSyntax ``binderIdent := ⟨caseArgStx.raw[0]⟩
         let n? : Option Nat := do
             let `(binderIdent| $tag:ident) := tag | some n -- fall back to ordinal
             let .str .anonymous s := tag.getId | none
@@ -391,7 +401,6 @@ def elabInvariants (stx : Syntax) (invariants : Array MVarId) (suggestInvariant 
           continue
         withRef rhs do
         discard <| evalTacticAt (← `(tactic| rename_i $args*; exact $rhs)) mv
-      | _ => logErrorAt alt m!"Expected `goalDotAlt`, got {alt}"
 
     if let `(invariantsKW| invariants) := invariantsKW then
       if alts.size < invariants.size then
