@@ -674,55 +674,23 @@ open Sym Sym.Internal
 meta def mkAppNS [Monad m] [Internal.MonadShareCommon m] (f : Expr) (args : Array Expr) : m Expr :=
   mkAppRangeS f 0 args.size args
 
-meta def simp (e : Expr) (methods : Sym.Simp.Methods) : VCGenM Sym.Simp.Result := do
-  let simpState := (← get).simpState
-  let (result, simpState') ← Sym.Simp.SimpM.run (Sym.Simp.simp e) methods {} simpState
-  modify fun s => { s with simpState := simpState' }
-  return result
-
-/--
-Simplify leading non-dependent forall domains in `target` using `Sym.Simp`.
-Returns `(newTarget, proof?)` where `proof : target = newTarget`, or `none` if no change.
-Skips dependent foralls (where the body references the binder).
--/
-meta partial def simpForallDomains (target : Expr) (methods : Sym.Simp.Methods) : VCGenM (Expr × Option Expr) := do
-  if !target.isForall then return (target, none)
-  -- Skip dependent foralls
-  if target.bindingBody!.hasLooseBVar 0 then return (target, none)
-  let domain := target.bindingDomain!
-  let body := target.bindingBody!
-  -- Simplify domain
-  let (domain', domainProof?) ← match ← simp domain methods with
-    | .rfl .. => pure (domain, none)
-    | .step d' p .. => pure (d', some p)
-  -- Recurse on body (for remaining forall domains)
-  let (body', bodyProof?) ← simpForallDomains body methods
-  match domainProof?, bodyProof? with
-  | none, none => return (target, none)
-  | _, _ =>
-    let newTarget := mkForall target.bindingName! target.bindingInfo! domain' body'
-    -- Build proof using implies_congr: (A → B) = (A' → B')
-    let dp ← match domainProof? with | some p => pure p | none => Meta.mkEqRefl domain
-    let bp ← match bodyProof? with | some p => pure p | none => Meta.mkEqRefl body
-    let proof ← mkImpCongr dp bp
-    return (newTarget, some proof)
-
-meta def simpTargetForallDomains (mvarId : MVarId) : VCGenM MVarId := do
+meta def simpTargetTelescope (mvarId : MVarId) : VCGenM MVarId := do
   let some methods := (← read).hypSimpMethods | return mvarId
   let target ← mvarId.getType
-  let (newTarget, proof?) ← simpForallDomains target methods
-  let mvarId ← match proof? with
-    | none => pure mvarId
-    | some proof =>
-      mvarId.replaceTargetEq newTarget proof
+  let simpState := (← get).simpState
+  let methods := { methods with pre := Sym.Simp.simpTelescope }
+  let (result, simpState') ← Sym.Simp.SimpM.run (Sym.Simp.simp target) methods {} simpState
+  modify fun s => { s with simpState := simpState' }
+  let mvarId ← match result with
+    | .rfl .. => pure mvarId
+    | .step newTarget proof .. => mvarId.replaceTargetEq newTarget proof
 
 /--
-Simplify leading forall domains in the target, then introduce all binders via `Sym.intros`.
-For each non-dependent forall `∀ (_ : A), B`, simplifies `A` using the given `Sym.Simp.Methods`
-and uses `implies_congr` to update the target before introduction.
+Simplify the forall telescope of the target using `Sym.Simp.simpTelescope`,
+then introduce all binders via `Sym.intros`.
 -/
 meta def introsSimp (mvarId : MVarId) : VCGenM IntrosResult := do
-  let mvarId ← simpTargetForallDomains mvarId
+  let mvarId ← simpTargetTelescope mvarId
   Sym.intros mvarId
 
 /-- Internalize pending hypotheses into the E-graph for sharing before forking to multiple subgoals.
