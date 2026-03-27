@@ -1980,62 +1980,62 @@ static const lean_string_object l_Lean_Parser_Tactic___aux__Std__Tactic__Do__Syn
 static const lean_object* l_Lean_Parser_Tactic___aux__Std__Tactic__Do__Syntax______macroRules__Lean__Parser__Tactic__tacticMvcgen__trivial__1___closed__4 = (const lean_object*)&l_Lean_Parser_Tactic___aux__Std__Tactic__Do__Syntax______macroRules__Lean__Parser__Tactic__tacticMvcgen__trivial__1___closed__4_value;
 LEAN_EXPORT lean_object* l_Lean_Parser_Tactic___aux__Std__Tactic__Do__Syntax______macroRules__Lean__Parser__Tactic__tacticMvcgen__trivial__1(lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l_Lean_Parser_Tactic___aux__Std__Tactic__Do__Syntax______macroRules__Lean__Parser__Tactic__tacticMvcgen__trivial__1___boxed(lean_object*, lean_object*, lean_object*);
-static const lean_string_object l_Lean_Parser_Tactic_goalDotAlt___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 11, .m_capacity = 11, .m_length = 10, .m_data = "goalDotAlt"};
-static const lean_object* l_Lean_Parser_Tactic_goalDotAlt___closed__0 = (const lean_object*)&l_Lean_Parser_Tactic_goalDotAlt___closed__0_value;
-static const lean_ctor_object l_Lean_Parser_Tactic_goalDotAlt___closed__1_value_aux_0 = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)(((size_t)(0) << 1) | 1)),((lean_object*)&l_Lean_Parser_Attr_spec___closed__0_value),LEAN_SCALAR_PTR_LITERAL(70, 193, 83, 126, 233, 67, 208, 165)}};
-static const lean_ctor_object l_Lean_Parser_Tactic_goalDotAlt___closed__1_value_aux_1 = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&l_Lean_Parser_Tactic_goalDotAlt___closed__1_value_aux_0),((lean_object*)&l_Lean_Parser_Attr_spec___closed__1_value),LEAN_SCALAR_PTR_LITERAL(103, 136, 125, 166, 167, 98, 71, 111)}};
-static const lean_ctor_object l_Lean_Parser_Tactic_goalDotAlt___closed__1_value_aux_2 = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&l_Lean_Parser_Tactic_goalDotAlt___closed__1_value_aux_1),((lean_object*)&l_Lean_Parser_Tactic_massumption___closed__0_value),LEAN_SCALAR_PTR_LITERAL(166, 58, 35, 182, 187, 130, 147, 254)}};
-static const lean_ctor_object l_Lean_Parser_Tactic_goalDotAlt___closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&l_Lean_Parser_Tactic_goalDotAlt___closed__1_value_aux_2),((lean_object*)&l_Lean_Parser_Tactic_goalDotAlt___closed__0_value),LEAN_SCALAR_PTR_LITERAL(190, 220, 8, 112, 127, 35, 156, 230)}};
-static const lean_object* l_Lean_Parser_Tactic_goalDotAlt___closed__1 = (const lean_object*)&l_Lean_Parser_Tactic_goalDotAlt___closed__1_value;
-static const lean_string_object l_Lean_Parser_Tactic_goalDotAlt___closed__2_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 9, .m_capacity = 9, .m_length = 8, .m_data = "ppDedent"};
-static const lean_object* l_Lean_Parser_Tactic_goalDotAlt___closed__2 = (const lean_object*)&l_Lean_Parser_Tactic_goalDotAlt___closed__2_value;
-static const lean_ctor_object l_Lean_Parser_Tactic_goalDotAlt___closed__3_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)(((size_t)(0) << 1) | 1)),((lean_object*)&l_Lean_Parser_Tactic_goalDotAlt___closed__2_value),LEAN_SCALAR_PTR_LITERAL(242, 37, 230, 124, 106, 100, 159, 37)}};
-static const lean_object* l_Lean_Parser_Tactic_goalDotAlt___closed__3 = (const lean_object*)&l_Lean_Parser_Tactic_goalDotAlt___closed__3_value;
-static const lean_string_object l_Lean_Parser_Tactic_goalDotAlt___closed__4_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 7, .m_capacity = 7, .m_length = 6, .m_data = "ppLine"};
-static const lean_object* l_Lean_Parser_Tactic_goalDotAlt___closed__4 = (const lean_object*)&l_Lean_Parser_Tactic_goalDotAlt___closed__4_value;
-static const lean_ctor_object l_Lean_Parser_Tactic_goalDotAlt___closed__5_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)(((size_t)(0) << 1) | 1)),((lean_object*)&l_Lean_Parser_Tactic_goalDotAlt___closed__4_value),LEAN_SCALAR_PTR_LITERAL(117, 61, 38, 245, 158, 59, 171, 58)}};
-static const lean_object* l_Lean_Parser_Tactic_goalDotAlt___closed__5 = (const lean_object*)&l_Lean_Parser_Tactic_goalDotAlt___closed__5_value;
-static const lean_ctor_object l_Lean_Parser_Tactic_goalDotAlt___closed__6_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*1 + 0, .m_other = 1, .m_tag = 0}, .m_objs = {((lean_object*)&l_Lean_Parser_Tactic_goalDotAlt___closed__5_value)}};
-static const lean_object* l_Lean_Parser_Tactic_goalDotAlt___closed__6 = (const lean_object*)&l_Lean_Parser_Tactic_goalDotAlt___closed__6_value;
-static const lean_ctor_object l_Lean_Parser_Tactic_goalDotAlt___closed__7_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&l_Lean_Parser_Tactic_goalDotAlt___closed__3_value),((lean_object*)&l_Lean_Parser_Tactic_goalDotAlt___closed__6_value)}};
-static const lean_object* l_Lean_Parser_Tactic_goalDotAlt___closed__7 = (const lean_object*)&l_Lean_Parser_Tactic_goalDotAlt___closed__7_value;
-static lean_once_cell_t l_Lean_Parser_Tactic_goalDotAlt___closed__8_once = LEAN_ONCE_CELL_INITIALIZER;
-static lean_object* l_Lean_Parser_Tactic_goalDotAlt___closed__8;
-static const lean_string_object l_Lean_Parser_Tactic_goalDotAlt___closed__9_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 6, .m_capacity = 6, .m_length = 5, .m_data = "colGe"};
-static const lean_object* l_Lean_Parser_Tactic_goalDotAlt___closed__9 = (const lean_object*)&l_Lean_Parser_Tactic_goalDotAlt___closed__9_value;
-static const lean_ctor_object l_Lean_Parser_Tactic_goalDotAlt___closed__10_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)(((size_t)(0) << 1) | 1)),((lean_object*)&l_Lean_Parser_Tactic_goalDotAlt___closed__9_value),LEAN_SCALAR_PTR_LITERAL(119, 36, 80, 74, 173, 106, 150, 68)}};
-static const lean_object* l_Lean_Parser_Tactic_goalDotAlt___closed__10 = (const lean_object*)&l_Lean_Parser_Tactic_goalDotAlt___closed__10_value;
-static const lean_ctor_object l_Lean_Parser_Tactic_goalDotAlt___closed__11_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*1 + 0, .m_other = 1, .m_tag = 0}, .m_objs = {((lean_object*)&l_Lean_Parser_Tactic_goalDotAlt___closed__10_value)}};
-static const lean_object* l_Lean_Parser_Tactic_goalDotAlt___closed__11 = (const lean_object*)&l_Lean_Parser_Tactic_goalDotAlt___closed__11_value;
-static const lean_ctor_object l_Lean_Parser_Tactic_goalDotAlt___closed__12_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*3 + 0, .m_other = 3, .m_tag = 2}, .m_objs = {((lean_object*)&l_Lean_Parser_Attr_spec___closed__6_value),((lean_object*)&l_Lean_Parser_Tactic_goalDotAlt___closed__11_value),((lean_object*)&l_Lean_Parser_Tactic_mexact___closed__6_value)}};
-static const lean_object* l_Lean_Parser_Tactic_goalDotAlt___closed__12 = (const lean_object*)&l_Lean_Parser_Tactic_goalDotAlt___closed__12_value;
-static lean_once_cell_t l_Lean_Parser_Tactic_goalDotAlt___closed__13_once = LEAN_ONCE_CELL_INITIALIZER;
-static lean_object* l_Lean_Parser_Tactic_goalDotAlt___closed__13;
-static lean_once_cell_t l_Lean_Parser_Tactic_goalDotAlt___closed__14_once = LEAN_ONCE_CELL_INITIALIZER;
-static lean_object* l_Lean_Parser_Tactic_goalDotAlt___closed__14;
-LEAN_EXPORT lean_object* l_Lean_Parser_Tactic_goalDotAlt;
-static const lean_string_object l_Lean_Parser_Tactic_goalCaseAlt___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 12, .m_capacity = 12, .m_length = 11, .m_data = "goalCaseAlt"};
-static const lean_object* l_Lean_Parser_Tactic_goalCaseAlt___closed__0 = (const lean_object*)&l_Lean_Parser_Tactic_goalCaseAlt___closed__0_value;
-static const lean_ctor_object l_Lean_Parser_Tactic_goalCaseAlt___closed__1_value_aux_0 = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)(((size_t)(0) << 1) | 1)),((lean_object*)&l_Lean_Parser_Attr_spec___closed__0_value),LEAN_SCALAR_PTR_LITERAL(70, 193, 83, 126, 233, 67, 208, 165)}};
-static const lean_ctor_object l_Lean_Parser_Tactic_goalCaseAlt___closed__1_value_aux_1 = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&l_Lean_Parser_Tactic_goalCaseAlt___closed__1_value_aux_0),((lean_object*)&l_Lean_Parser_Attr_spec___closed__1_value),LEAN_SCALAR_PTR_LITERAL(103, 136, 125, 166, 167, 98, 71, 111)}};
-static const lean_ctor_object l_Lean_Parser_Tactic_goalCaseAlt___closed__1_value_aux_2 = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&l_Lean_Parser_Tactic_goalCaseAlt___closed__1_value_aux_1),((lean_object*)&l_Lean_Parser_Tactic_massumption___closed__0_value),LEAN_SCALAR_PTR_LITERAL(166, 58, 35, 182, 187, 130, 147, 254)}};
-static const lean_ctor_object l_Lean_Parser_Tactic_goalCaseAlt___closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&l_Lean_Parser_Tactic_goalCaseAlt___closed__1_value_aux_2),((lean_object*)&l_Lean_Parser_Tactic_goalCaseAlt___closed__0_value),LEAN_SCALAR_PTR_LITERAL(199, 236, 193, 45, 129, 214, 121, 208)}};
-static const lean_object* l_Lean_Parser_Tactic_goalCaseAlt___closed__1 = (const lean_object*)&l_Lean_Parser_Tactic_goalCaseAlt___closed__1_value;
-static const lean_string_object l_Lean_Parser_Tactic_goalCaseAlt___closed__2_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 3, .m_capacity = 3, .m_length = 2, .m_data = "| "};
-static const lean_object* l_Lean_Parser_Tactic_goalCaseAlt___closed__2 = (const lean_object*)&l_Lean_Parser_Tactic_goalCaseAlt___closed__2_value;
-static const lean_ctor_object l_Lean_Parser_Tactic_goalCaseAlt___closed__3_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*1 + 0, .m_other = 1, .m_tag = 5}, .m_objs = {((lean_object*)&l_Lean_Parser_Tactic_goalCaseAlt___closed__2_value)}};
-static const lean_object* l_Lean_Parser_Tactic_goalCaseAlt___closed__3 = (const lean_object*)&l_Lean_Parser_Tactic_goalCaseAlt___closed__3_value;
-static const lean_ctor_object l_Lean_Parser_Tactic_goalCaseAlt___closed__4_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*3 + 0, .m_other = 3, .m_tag = 2}, .m_objs = {((lean_object*)&l_Lean_Parser_Attr_spec___closed__6_value),((lean_object*)&l_Lean_Parser_Tactic_goalDotAlt___closed__7_value),((lean_object*)&l_Lean_Parser_Tactic_goalCaseAlt___closed__3_value)}};
-static const lean_object* l_Lean_Parser_Tactic_goalCaseAlt___closed__4 = (const lean_object*)&l_Lean_Parser_Tactic_goalCaseAlt___closed__4_value;
-static lean_once_cell_t l_Lean_Parser_Tactic_goalCaseAlt___closed__5_once = LEAN_ONCE_CELL_INITIALIZER;
-static lean_object* l_Lean_Parser_Tactic_goalCaseAlt___closed__5;
-static lean_once_cell_t l_Lean_Parser_Tactic_goalCaseAlt___closed__6_once = LEAN_ONCE_CELL_INITIALIZER;
-static lean_object* l_Lean_Parser_Tactic_goalCaseAlt___closed__6;
-static lean_once_cell_t l_Lean_Parser_Tactic_goalCaseAlt___closed__7_once = LEAN_ONCE_CELL_INITIALIZER;
-static lean_object* l_Lean_Parser_Tactic_goalCaseAlt___closed__7;
-static lean_once_cell_t l_Lean_Parser_Tactic_goalCaseAlt___closed__8_once = LEAN_ONCE_CELL_INITIALIZER;
-static lean_object* l_Lean_Parser_Tactic_goalCaseAlt___closed__8;
-LEAN_EXPORT lean_object* l_Lean_Parser_Tactic_goalCaseAlt;
+static const lean_string_object l_Lean_Parser_Tactic_invariantDotAlt___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 16, .m_capacity = 16, .m_length = 15, .m_data = "invariantDotAlt"};
+static const lean_object* l_Lean_Parser_Tactic_invariantDotAlt___closed__0 = (const lean_object*)&l_Lean_Parser_Tactic_invariantDotAlt___closed__0_value;
+static const lean_ctor_object l_Lean_Parser_Tactic_invariantDotAlt___closed__1_value_aux_0 = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)(((size_t)(0) << 1) | 1)),((lean_object*)&l_Lean_Parser_Attr_spec___closed__0_value),LEAN_SCALAR_PTR_LITERAL(70, 193, 83, 126, 233, 67, 208, 165)}};
+static const lean_ctor_object l_Lean_Parser_Tactic_invariantDotAlt___closed__1_value_aux_1 = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&l_Lean_Parser_Tactic_invariantDotAlt___closed__1_value_aux_0),((lean_object*)&l_Lean_Parser_Attr_spec___closed__1_value),LEAN_SCALAR_PTR_LITERAL(103, 136, 125, 166, 167, 98, 71, 111)}};
+static const lean_ctor_object l_Lean_Parser_Tactic_invariantDotAlt___closed__1_value_aux_2 = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&l_Lean_Parser_Tactic_invariantDotAlt___closed__1_value_aux_1),((lean_object*)&l_Lean_Parser_Tactic_massumption___closed__0_value),LEAN_SCALAR_PTR_LITERAL(166, 58, 35, 182, 187, 130, 147, 254)}};
+static const lean_ctor_object l_Lean_Parser_Tactic_invariantDotAlt___closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&l_Lean_Parser_Tactic_invariantDotAlt___closed__1_value_aux_2),((lean_object*)&l_Lean_Parser_Tactic_invariantDotAlt___closed__0_value),LEAN_SCALAR_PTR_LITERAL(174, 218, 225, 197, 89, 244, 133, 64)}};
+static const lean_object* l_Lean_Parser_Tactic_invariantDotAlt___closed__1 = (const lean_object*)&l_Lean_Parser_Tactic_invariantDotAlt___closed__1_value;
+static const lean_string_object l_Lean_Parser_Tactic_invariantDotAlt___closed__2_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 9, .m_capacity = 9, .m_length = 8, .m_data = "ppDedent"};
+static const lean_object* l_Lean_Parser_Tactic_invariantDotAlt___closed__2 = (const lean_object*)&l_Lean_Parser_Tactic_invariantDotAlt___closed__2_value;
+static const lean_ctor_object l_Lean_Parser_Tactic_invariantDotAlt___closed__3_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)(((size_t)(0) << 1) | 1)),((lean_object*)&l_Lean_Parser_Tactic_invariantDotAlt___closed__2_value),LEAN_SCALAR_PTR_LITERAL(242, 37, 230, 124, 106, 100, 159, 37)}};
+static const lean_object* l_Lean_Parser_Tactic_invariantDotAlt___closed__3 = (const lean_object*)&l_Lean_Parser_Tactic_invariantDotAlt___closed__3_value;
+static const lean_string_object l_Lean_Parser_Tactic_invariantDotAlt___closed__4_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 7, .m_capacity = 7, .m_length = 6, .m_data = "ppLine"};
+static const lean_object* l_Lean_Parser_Tactic_invariantDotAlt___closed__4 = (const lean_object*)&l_Lean_Parser_Tactic_invariantDotAlt___closed__4_value;
+static const lean_ctor_object l_Lean_Parser_Tactic_invariantDotAlt___closed__5_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)(((size_t)(0) << 1) | 1)),((lean_object*)&l_Lean_Parser_Tactic_invariantDotAlt___closed__4_value),LEAN_SCALAR_PTR_LITERAL(117, 61, 38, 245, 158, 59, 171, 58)}};
+static const lean_object* l_Lean_Parser_Tactic_invariantDotAlt___closed__5 = (const lean_object*)&l_Lean_Parser_Tactic_invariantDotAlt___closed__5_value;
+static const lean_ctor_object l_Lean_Parser_Tactic_invariantDotAlt___closed__6_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*1 + 0, .m_other = 1, .m_tag = 0}, .m_objs = {((lean_object*)&l_Lean_Parser_Tactic_invariantDotAlt___closed__5_value)}};
+static const lean_object* l_Lean_Parser_Tactic_invariantDotAlt___closed__6 = (const lean_object*)&l_Lean_Parser_Tactic_invariantDotAlt___closed__6_value;
+static const lean_ctor_object l_Lean_Parser_Tactic_invariantDotAlt___closed__7_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&l_Lean_Parser_Tactic_invariantDotAlt___closed__3_value),((lean_object*)&l_Lean_Parser_Tactic_invariantDotAlt___closed__6_value)}};
+static const lean_object* l_Lean_Parser_Tactic_invariantDotAlt___closed__7 = (const lean_object*)&l_Lean_Parser_Tactic_invariantDotAlt___closed__7_value;
+static lean_once_cell_t l_Lean_Parser_Tactic_invariantDotAlt___closed__8_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* l_Lean_Parser_Tactic_invariantDotAlt___closed__8;
+static const lean_string_object l_Lean_Parser_Tactic_invariantDotAlt___closed__9_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 6, .m_capacity = 6, .m_length = 5, .m_data = "colGe"};
+static const lean_object* l_Lean_Parser_Tactic_invariantDotAlt___closed__9 = (const lean_object*)&l_Lean_Parser_Tactic_invariantDotAlt___closed__9_value;
+static const lean_ctor_object l_Lean_Parser_Tactic_invariantDotAlt___closed__10_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)(((size_t)(0) << 1) | 1)),((lean_object*)&l_Lean_Parser_Tactic_invariantDotAlt___closed__9_value),LEAN_SCALAR_PTR_LITERAL(119, 36, 80, 74, 173, 106, 150, 68)}};
+static const lean_object* l_Lean_Parser_Tactic_invariantDotAlt___closed__10 = (const lean_object*)&l_Lean_Parser_Tactic_invariantDotAlt___closed__10_value;
+static const lean_ctor_object l_Lean_Parser_Tactic_invariantDotAlt___closed__11_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*1 + 0, .m_other = 1, .m_tag = 0}, .m_objs = {((lean_object*)&l_Lean_Parser_Tactic_invariantDotAlt___closed__10_value)}};
+static const lean_object* l_Lean_Parser_Tactic_invariantDotAlt___closed__11 = (const lean_object*)&l_Lean_Parser_Tactic_invariantDotAlt___closed__11_value;
+static const lean_ctor_object l_Lean_Parser_Tactic_invariantDotAlt___closed__12_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*3 + 0, .m_other = 3, .m_tag = 2}, .m_objs = {((lean_object*)&l_Lean_Parser_Attr_spec___closed__6_value),((lean_object*)&l_Lean_Parser_Tactic_invariantDotAlt___closed__11_value),((lean_object*)&l_Lean_Parser_Tactic_mexact___closed__6_value)}};
+static const lean_object* l_Lean_Parser_Tactic_invariantDotAlt___closed__12 = (const lean_object*)&l_Lean_Parser_Tactic_invariantDotAlt___closed__12_value;
+static lean_once_cell_t l_Lean_Parser_Tactic_invariantDotAlt___closed__13_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* l_Lean_Parser_Tactic_invariantDotAlt___closed__13;
+static lean_once_cell_t l_Lean_Parser_Tactic_invariantDotAlt___closed__14_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* l_Lean_Parser_Tactic_invariantDotAlt___closed__14;
+LEAN_EXPORT lean_object* l_Lean_Parser_Tactic_invariantDotAlt;
+static const lean_string_object l_Lean_Parser_Tactic_invariantCaseAlt___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 17, .m_capacity = 17, .m_length = 16, .m_data = "invariantCaseAlt"};
+static const lean_object* l_Lean_Parser_Tactic_invariantCaseAlt___closed__0 = (const lean_object*)&l_Lean_Parser_Tactic_invariantCaseAlt___closed__0_value;
+static const lean_ctor_object l_Lean_Parser_Tactic_invariantCaseAlt___closed__1_value_aux_0 = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)(((size_t)(0) << 1) | 1)),((lean_object*)&l_Lean_Parser_Attr_spec___closed__0_value),LEAN_SCALAR_PTR_LITERAL(70, 193, 83, 126, 233, 67, 208, 165)}};
+static const lean_ctor_object l_Lean_Parser_Tactic_invariantCaseAlt___closed__1_value_aux_1 = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&l_Lean_Parser_Tactic_invariantCaseAlt___closed__1_value_aux_0),((lean_object*)&l_Lean_Parser_Attr_spec___closed__1_value),LEAN_SCALAR_PTR_LITERAL(103, 136, 125, 166, 167, 98, 71, 111)}};
+static const lean_ctor_object l_Lean_Parser_Tactic_invariantCaseAlt___closed__1_value_aux_2 = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&l_Lean_Parser_Tactic_invariantCaseAlt___closed__1_value_aux_1),((lean_object*)&l_Lean_Parser_Tactic_massumption___closed__0_value),LEAN_SCALAR_PTR_LITERAL(166, 58, 35, 182, 187, 130, 147, 254)}};
+static const lean_ctor_object l_Lean_Parser_Tactic_invariantCaseAlt___closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&l_Lean_Parser_Tactic_invariantCaseAlt___closed__1_value_aux_2),((lean_object*)&l_Lean_Parser_Tactic_invariantCaseAlt___closed__0_value),LEAN_SCALAR_PTR_LITERAL(163, 146, 32, 128, 83, 151, 179, 6)}};
+static const lean_object* l_Lean_Parser_Tactic_invariantCaseAlt___closed__1 = (const lean_object*)&l_Lean_Parser_Tactic_invariantCaseAlt___closed__1_value;
+static const lean_string_object l_Lean_Parser_Tactic_invariantCaseAlt___closed__2_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 3, .m_capacity = 3, .m_length = 2, .m_data = "| "};
+static const lean_object* l_Lean_Parser_Tactic_invariantCaseAlt___closed__2 = (const lean_object*)&l_Lean_Parser_Tactic_invariantCaseAlt___closed__2_value;
+static const lean_ctor_object l_Lean_Parser_Tactic_invariantCaseAlt___closed__3_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*1 + 0, .m_other = 1, .m_tag = 5}, .m_objs = {((lean_object*)&l_Lean_Parser_Tactic_invariantCaseAlt___closed__2_value)}};
+static const lean_object* l_Lean_Parser_Tactic_invariantCaseAlt___closed__3 = (const lean_object*)&l_Lean_Parser_Tactic_invariantCaseAlt___closed__3_value;
+static const lean_ctor_object l_Lean_Parser_Tactic_invariantCaseAlt___closed__4_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*3 + 0, .m_other = 3, .m_tag = 2}, .m_objs = {((lean_object*)&l_Lean_Parser_Attr_spec___closed__6_value),((lean_object*)&l_Lean_Parser_Tactic_invariantDotAlt___closed__7_value),((lean_object*)&l_Lean_Parser_Tactic_invariantCaseAlt___closed__3_value)}};
+static const lean_object* l_Lean_Parser_Tactic_invariantCaseAlt___closed__4 = (const lean_object*)&l_Lean_Parser_Tactic_invariantCaseAlt___closed__4_value;
+static lean_once_cell_t l_Lean_Parser_Tactic_invariantCaseAlt___closed__5_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* l_Lean_Parser_Tactic_invariantCaseAlt___closed__5;
+static lean_once_cell_t l_Lean_Parser_Tactic_invariantCaseAlt___closed__6_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* l_Lean_Parser_Tactic_invariantCaseAlt___closed__6;
+static lean_once_cell_t l_Lean_Parser_Tactic_invariantCaseAlt___closed__7_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* l_Lean_Parser_Tactic_invariantCaseAlt___closed__7;
+static lean_once_cell_t l_Lean_Parser_Tactic_invariantCaseAlt___closed__8_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* l_Lean_Parser_Tactic_invariantCaseAlt___closed__8;
+LEAN_EXPORT lean_object* l_Lean_Parser_Tactic_invariantCaseAlt;
 static const lean_string_object l_Lean_Parser_Tactic_invariantsKW___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 13, .m_capacity = 13, .m_length = 12, .m_data = "invariantsKW"};
 static const lean_object* l_Lean_Parser_Tactic_invariantsKW___closed__0 = (const lean_object*)&l_Lean_Parser_Tactic_invariantsKW___closed__0_value;
 static const lean_ctor_object l_Lean_Parser_Tactic_invariantsKW___closed__1_value_aux_0 = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)(((size_t)(0) << 1) | 1)),((lean_object*)&l_Lean_Parser_Attr_spec___closed__0_value),LEAN_SCALAR_PTR_LITERAL(70, 193, 83, 126, 233, 67, 208, 165)}};
@@ -8707,12 +8707,12 @@ lean_dec_ref(v_a_3903_);
 return v_res_3905_;
 }
 }
-static lean_object* _init_l_Lean_Parser_Tactic_goalDotAlt___closed__8(void){
+static lean_object* _init_l_Lean_Parser_Tactic_invariantDotAlt___closed__8(void){
 _start:
 {
 lean_object* v___x_3923_; lean_object* v___x_3924_; lean_object* v___x_3925_; lean_object* v___x_3926_; 
 v___x_3923_ = l_Lean_cdotTk;
-v___x_3924_ = ((lean_object*)(l_Lean_Parser_Tactic_goalDotAlt___closed__7));
+v___x_3924_ = ((lean_object*)(l_Lean_Parser_Tactic_invariantDotAlt___closed__7));
 v___x_3925_ = ((lean_object*)(l_Lean_Parser_Attr_spec___closed__6));
 v___x_3926_ = lean_alloc_ctor(2, 3, 0);
 lean_ctor_set(v___x_3926_, 0, v___x_3925_);
@@ -8721,12 +8721,12 @@ lean_ctor_set(v___x_3926_, 2, v___x_3923_);
 return v___x_3926_;
 }
 }
-static lean_object* _init_l_Lean_Parser_Tactic_goalDotAlt___closed__13(void){
+static lean_object* _init_l_Lean_Parser_Tactic_invariantDotAlt___closed__13(void){
 _start:
 {
 lean_object* v___x_3936_; lean_object* v___x_3937_; lean_object* v___x_3938_; lean_object* v___x_3939_; 
-v___x_3936_ = ((lean_object*)(l_Lean_Parser_Tactic_goalDotAlt___closed__12));
-v___x_3937_ = lean_obj_once(&l_Lean_Parser_Tactic_goalDotAlt___closed__8, &l_Lean_Parser_Tactic_goalDotAlt___closed__8_once, _init_l_Lean_Parser_Tactic_goalDotAlt___closed__8);
+v___x_3936_ = ((lean_object*)(l_Lean_Parser_Tactic_invariantDotAlt___closed__12));
+v___x_3937_ = lean_obj_once(&l_Lean_Parser_Tactic_invariantDotAlt___closed__8, &l_Lean_Parser_Tactic_invariantDotAlt___closed__8_once, _init_l_Lean_Parser_Tactic_invariantDotAlt___closed__8);
 v___x_3938_ = ((lean_object*)(l_Lean_Parser_Attr_spec___closed__6));
 v___x_3939_ = lean_alloc_ctor(2, 3, 0);
 lean_ctor_set(v___x_3939_, 0, v___x_3938_);
@@ -8735,13 +8735,13 @@ lean_ctor_set(v___x_3939_, 2, v___x_3936_);
 return v___x_3939_;
 }
 }
-static lean_object* _init_l_Lean_Parser_Tactic_goalDotAlt___closed__14(void){
+static lean_object* _init_l_Lean_Parser_Tactic_invariantDotAlt___closed__14(void){
 _start:
 {
 lean_object* v___x_3940_; lean_object* v___x_3941_; lean_object* v___x_3942_; lean_object* v___x_3943_; 
-v___x_3940_ = lean_obj_once(&l_Lean_Parser_Tactic_goalDotAlt___closed__13, &l_Lean_Parser_Tactic_goalDotAlt___closed__13_once, _init_l_Lean_Parser_Tactic_goalDotAlt___closed__13);
-v___x_3941_ = ((lean_object*)(l_Lean_Parser_Tactic_goalDotAlt___closed__1));
-v___x_3942_ = ((lean_object*)(l_Lean_Parser_Tactic_goalDotAlt___closed__0));
+v___x_3940_ = lean_obj_once(&l_Lean_Parser_Tactic_invariantDotAlt___closed__13, &l_Lean_Parser_Tactic_invariantDotAlt___closed__13_once, _init_l_Lean_Parser_Tactic_invariantDotAlt___closed__13);
+v___x_3941_ = ((lean_object*)(l_Lean_Parser_Tactic_invariantDotAlt___closed__1));
+v___x_3942_ = ((lean_object*)(l_Lean_Parser_Tactic_invariantDotAlt___closed__0));
 v___x_3943_ = lean_alloc_ctor(9, 3, 0);
 lean_ctor_set(v___x_3943_, 0, v___x_3942_);
 lean_ctor_set(v___x_3943_, 1, v___x_3941_);
@@ -8749,20 +8749,20 @@ lean_ctor_set(v___x_3943_, 2, v___x_3940_);
 return v___x_3943_;
 }
 }
-static lean_object* _init_l_Lean_Parser_Tactic_goalDotAlt(void){
+static lean_object* _init_l_Lean_Parser_Tactic_invariantDotAlt(void){
 _start:
 {
 lean_object* v___x_3944_; 
-v___x_3944_ = lean_obj_once(&l_Lean_Parser_Tactic_goalDotAlt___closed__14, &l_Lean_Parser_Tactic_goalDotAlt___closed__14_once, _init_l_Lean_Parser_Tactic_goalDotAlt___closed__14);
+v___x_3944_ = lean_obj_once(&l_Lean_Parser_Tactic_invariantDotAlt___closed__14, &l_Lean_Parser_Tactic_invariantDotAlt___closed__14_once, _init_l_Lean_Parser_Tactic_invariantDotAlt___closed__14);
 return v___x_3944_;
 }
 }
-static lean_object* _init_l_Lean_Parser_Tactic_goalCaseAlt___closed__5(void){
+static lean_object* _init_l_Lean_Parser_Tactic_invariantCaseAlt___closed__5(void){
 _start:
 {
 lean_object* v___x_3958_; lean_object* v___x_3959_; lean_object* v___x_3960_; lean_object* v___x_3961_; 
 v___x_3958_ = l_Lean_Parser_Tactic_caseArg;
-v___x_3959_ = ((lean_object*)(l_Lean_Parser_Tactic_goalCaseAlt___closed__4));
+v___x_3959_ = ((lean_object*)(l_Lean_Parser_Tactic_invariantCaseAlt___closed__4));
 v___x_3960_ = ((lean_object*)(l_Lean_Parser_Attr_spec___closed__6));
 v___x_3961_ = lean_alloc_ctor(2, 3, 0);
 lean_ctor_set(v___x_3961_, 0, v___x_3960_);
@@ -8771,12 +8771,12 @@ lean_ctor_set(v___x_3961_, 2, v___x_3958_);
 return v___x_3961_;
 }
 }
-static lean_object* _init_l_Lean_Parser_Tactic_goalCaseAlt___closed__6(void){
+static lean_object* _init_l_Lean_Parser_Tactic_invariantCaseAlt___closed__6(void){
 _start:
 {
 lean_object* v___x_3962_; lean_object* v___x_3963_; lean_object* v___x_3964_; lean_object* v___x_3965_; 
 v___x_3962_ = ((lean_object*)(l_Lean_Parser_Tactic_mdup___closed__5));
-v___x_3963_ = lean_obj_once(&l_Lean_Parser_Tactic_goalCaseAlt___closed__5, &l_Lean_Parser_Tactic_goalCaseAlt___closed__5_once, _init_l_Lean_Parser_Tactic_goalCaseAlt___closed__5);
+v___x_3963_ = lean_obj_once(&l_Lean_Parser_Tactic_invariantCaseAlt___closed__5, &l_Lean_Parser_Tactic_invariantCaseAlt___closed__5_once, _init_l_Lean_Parser_Tactic_invariantCaseAlt___closed__5);
 v___x_3964_ = ((lean_object*)(l_Lean_Parser_Attr_spec___closed__6));
 v___x_3965_ = lean_alloc_ctor(2, 3, 0);
 lean_ctor_set(v___x_3965_, 0, v___x_3964_);
@@ -8785,12 +8785,12 @@ lean_ctor_set(v___x_3965_, 2, v___x_3962_);
 return v___x_3965_;
 }
 }
-static lean_object* _init_l_Lean_Parser_Tactic_goalCaseAlt___closed__7(void){
+static lean_object* _init_l_Lean_Parser_Tactic_invariantCaseAlt___closed__7(void){
 _start:
 {
 lean_object* v___x_3966_; lean_object* v___x_3967_; lean_object* v___x_3968_; lean_object* v___x_3969_; 
-v___x_3966_ = ((lean_object*)(l_Lean_Parser_Tactic_goalDotAlt___closed__12));
-v___x_3967_ = lean_obj_once(&l_Lean_Parser_Tactic_goalCaseAlt___closed__6, &l_Lean_Parser_Tactic_goalCaseAlt___closed__6_once, _init_l_Lean_Parser_Tactic_goalCaseAlt___closed__6);
+v___x_3966_ = ((lean_object*)(l_Lean_Parser_Tactic_invariantDotAlt___closed__12));
+v___x_3967_ = lean_obj_once(&l_Lean_Parser_Tactic_invariantCaseAlt___closed__6, &l_Lean_Parser_Tactic_invariantCaseAlt___closed__6_once, _init_l_Lean_Parser_Tactic_invariantCaseAlt___closed__6);
 v___x_3968_ = ((lean_object*)(l_Lean_Parser_Attr_spec___closed__6));
 v___x_3969_ = lean_alloc_ctor(2, 3, 0);
 lean_ctor_set(v___x_3969_, 0, v___x_3968_);
@@ -8799,13 +8799,13 @@ lean_ctor_set(v___x_3969_, 2, v___x_3966_);
 return v___x_3969_;
 }
 }
-static lean_object* _init_l_Lean_Parser_Tactic_goalCaseAlt___closed__8(void){
+static lean_object* _init_l_Lean_Parser_Tactic_invariantCaseAlt___closed__8(void){
 _start:
 {
 lean_object* v___x_3970_; lean_object* v___x_3971_; lean_object* v___x_3972_; lean_object* v___x_3973_; 
-v___x_3970_ = lean_obj_once(&l_Lean_Parser_Tactic_goalCaseAlt___closed__7, &l_Lean_Parser_Tactic_goalCaseAlt___closed__7_once, _init_l_Lean_Parser_Tactic_goalCaseAlt___closed__7);
-v___x_3971_ = ((lean_object*)(l_Lean_Parser_Tactic_goalCaseAlt___closed__1));
-v___x_3972_ = ((lean_object*)(l_Lean_Parser_Tactic_goalCaseAlt___closed__0));
+v___x_3970_ = lean_obj_once(&l_Lean_Parser_Tactic_invariantCaseAlt___closed__7, &l_Lean_Parser_Tactic_invariantCaseAlt___closed__7_once, _init_l_Lean_Parser_Tactic_invariantCaseAlt___closed__7);
+v___x_3971_ = ((lean_object*)(l_Lean_Parser_Tactic_invariantCaseAlt___closed__1));
+v___x_3972_ = ((lean_object*)(l_Lean_Parser_Tactic_invariantCaseAlt___closed__0));
 v___x_3973_ = lean_alloc_ctor(9, 3, 0);
 lean_ctor_set(v___x_3973_, 0, v___x_3972_);
 lean_ctor_set(v___x_3973_, 1, v___x_3971_);
@@ -8813,11 +8813,11 @@ lean_ctor_set(v___x_3973_, 2, v___x_3970_);
 return v___x_3973_;
 }
 }
-static lean_object* _init_l_Lean_Parser_Tactic_goalCaseAlt(void){
+static lean_object* _init_l_Lean_Parser_Tactic_invariantCaseAlt(void){
 _start:
 {
 lean_object* v___x_3974_; 
-v___x_3974_ = lean_obj_once(&l_Lean_Parser_Tactic_goalCaseAlt___closed__8, &l_Lean_Parser_Tactic_goalCaseAlt___closed__8_once, _init_l_Lean_Parser_Tactic_goalCaseAlt___closed__8);
+v___x_3974_ = lean_obj_once(&l_Lean_Parser_Tactic_invariantCaseAlt___closed__8, &l_Lean_Parser_Tactic_invariantCaseAlt___closed__8_once, _init_l_Lean_Parser_Tactic_invariantCaseAlt___closed__8);
 return v___x_3974_;
 }
 }
@@ -8825,8 +8825,8 @@ static lean_object* _init_l_Lean_Parser_Tactic_invariantAlts___closed__4(void){
 _start:
 {
 lean_object* v___x_4025_; lean_object* v___x_4026_; lean_object* v___x_4027_; lean_object* v___x_4028_; 
-v___x_4025_ = l_Lean_Parser_Tactic_goalCaseAlt;
-v___x_4026_ = l_Lean_Parser_Tactic_goalDotAlt;
+v___x_4025_ = l_Lean_Parser_Tactic_invariantCaseAlt;
+v___x_4026_ = l_Lean_Parser_Tactic_invariantDotAlt;
 v___x_4027_ = ((lean_object*)(l_Lean_Parser_Tactic_invariantsKW___closed__3));
 v___x_4028_ = lean_alloc_ctor(2, 3, 0);
 lean_ctor_set(v___x_4028_, 0, v___x_4027_);
@@ -8840,7 +8840,7 @@ _start:
 {
 lean_object* v___x_4029_; lean_object* v___x_4030_; lean_object* v___x_4031_; lean_object* v___x_4032_; 
 v___x_4029_ = lean_obj_once(&l_Lean_Parser_Tactic_invariantAlts___closed__4, &l_Lean_Parser_Tactic_invariantAlts___closed__4_once, _init_l_Lean_Parser_Tactic_invariantAlts___closed__4);
-v___x_4030_ = ((lean_object*)(l_Lean_Parser_Tactic_goalDotAlt___closed__11));
+v___x_4030_ = ((lean_object*)(l_Lean_Parser_Tactic_invariantDotAlt___closed__11));
 v___x_4031_ = ((lean_object*)(l_Lean_Parser_Attr_spec___closed__6));
 v___x_4032_ = lean_alloc_ctor(2, 3, 0);
 lean_ctor_set(v___x_4032_, 0, v___x_4031_);
@@ -8930,7 +8930,7 @@ _start:
 {
 lean_object* v___x_4059_; lean_object* v___x_4060_; lean_object* v___x_4061_; lean_object* v___x_4062_; 
 v___x_4059_ = lean_obj_once(&l_Lean_Parser_Tactic_vcAlt___closed__2, &l_Lean_Parser_Tactic_vcAlt___closed__2_once, _init_l_Lean_Parser_Tactic_vcAlt___closed__2);
-v___x_4060_ = ((lean_object*)(l_Lean_Parser_Tactic_goalCaseAlt___closed__3));
+v___x_4060_ = ((lean_object*)(l_Lean_Parser_Tactic_invariantCaseAlt___closed__3));
 v___x_4061_ = ((lean_object*)(l_Lean_Parser_Attr_spec___closed__6));
 v___x_4062_ = lean_alloc_ctor(2, 3, 0);
 lean_ctor_set(v___x_4062_, 0, v___x_4061_);
@@ -8994,7 +8994,7 @@ _start:
 {
 lean_object* v___x_4106_; lean_object* v___x_4107_; lean_object* v___x_4108_; lean_object* v___x_4109_; 
 v___x_4106_ = l_Lean_Parser_Tactic_vcAlt;
-v___x_4107_ = ((lean_object*)(l_Lean_Parser_Tactic_goalDotAlt___closed__11));
+v___x_4107_ = ((lean_object*)(l_Lean_Parser_Tactic_invariantDotAlt___closed__11));
 v___x_4108_ = ((lean_object*)(l_Lean_Parser_Attr_spec___closed__6));
 v___x_4109_ = lean_alloc_ctor(2, 3, 0);
 lean_ctor_set(v___x_4109_, 0, v___x_4108_);
@@ -9365,10 +9365,10 @@ l_Lean_Parser_Tactic_mintroPat_u2200__ = _init_l_Lean_Parser_Tactic_mintroPat_u2
 lean_mark_persistent(l_Lean_Parser_Tactic_mintroPat_u2200__);
 l_Lean_Parser_Category_mrevertPat = _init_l_Lean_Parser_Category_mrevertPat();
 lean_mark_persistent(l_Lean_Parser_Category_mrevertPat);
-l_Lean_Parser_Tactic_goalDotAlt = _init_l_Lean_Parser_Tactic_goalDotAlt();
-lean_mark_persistent(l_Lean_Parser_Tactic_goalDotAlt);
-l_Lean_Parser_Tactic_goalCaseAlt = _init_l_Lean_Parser_Tactic_goalCaseAlt();
-lean_mark_persistent(l_Lean_Parser_Tactic_goalCaseAlt);
+l_Lean_Parser_Tactic_invariantDotAlt = _init_l_Lean_Parser_Tactic_invariantDotAlt();
+lean_mark_persistent(l_Lean_Parser_Tactic_invariantDotAlt);
+l_Lean_Parser_Tactic_invariantCaseAlt = _init_l_Lean_Parser_Tactic_invariantCaseAlt();
+lean_mark_persistent(l_Lean_Parser_Tactic_invariantCaseAlt);
 l_Lean_Parser_Tactic_invariantAlts = _init_l_Lean_Parser_Tactic_invariantAlts();
 lean_mark_persistent(l_Lean_Parser_Tactic_invariantAlts);
 l_Lean_Parser_Tactic_vcAlt = _init_l_Lean_Parser_Tactic_vcAlt();
