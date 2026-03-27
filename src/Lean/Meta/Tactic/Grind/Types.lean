@@ -718,8 +718,6 @@ structure CanonArgKey where
 /-- Canonicalizer state. See `Canon.lean` for additional details. -/
 structure Canon.State where
   argMap     : PHashMap (Expr × Nat) (List (Expr × Expr)) := {}
-  canon      : PHashMap Expr Expr := {}
-  proofCanon : PHashMap Expr Expr := {}
   canonArg   : PHashMap CanonArgKey Expr := {}
   deriving Inhabited
 
