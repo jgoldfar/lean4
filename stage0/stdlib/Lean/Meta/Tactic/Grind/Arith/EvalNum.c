@@ -2009,9 +2009,8 @@ else
 lean_object* v_val_541_; lean_object* v___x_542_; 
 lean_del_object(v___x_535_);
 v_val_541_ = lean_ctor_get(v_a_533_, 0);
-lean_inc(v_val_541_);
+lean_inc_n(v_val_541_, 2);
 lean_dec_ref(v_a_533_);
-lean_inc(v_val_541_);
 v___x_542_ = l_Lean_Meta_Grind_Arith_checkExp___redArg(v_val_541_, v_a_196_, v_a_198_, v_a_199_, v_a_200_, v_a_201_, v_a_202_, v_a_203_);
 if (lean_obj_tag(v___x_542_) == 0)
 {
@@ -4315,9 +4314,8 @@ else
 lean_object* v_val_922_; lean_object* v___x_923_; 
 lean_dec_ref(v___x_920_);
 v_val_922_ = lean_ctor_get(v_a_921_, 0);
-lean_inc(v_val_922_);
+lean_inc_n(v_val_922_, 2);
 lean_dec_ref(v_a_921_);
-lean_inc(v_val_922_);
 v___x_923_ = l_Lean_Meta_Grind_Arith_checkExp___redArg(v_val_922_, v_a_650_, v_a_652_, v_a_653_, v_a_654_, v_a_655_, v_a_656_, v_a_657_);
 if (lean_obj_tag(v___x_923_) == 0)
 {

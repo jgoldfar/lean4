@@ -3772,7 +3772,7 @@ LEAN_EXPORT lean_object* l___private_Lean_Compiler_LCNF_ExpandResetReuse_0__Lean
 _start:
 {
 lean_object* v___x_1185_; lean_object* v___x_1186_; lean_object* v___x_1187_; lean_object* v___x_1188_; lean_object* v___x_1189_; lean_object* v___x_1190_; lean_object* v_code_1191_; lean_object* v___x_1192_; 
-lean_inc(v_resetTokenId_1174_);
+lean_inc_n(v_resetTokenId_1174_, 2);
 v___x_1185_ = lean_alloc_ctor(1, 1, 0);
 lean_ctor_set(v___x_1185_, 0, v_resetTokenId_1174_);
 v___x_1186_ = lean_unsigned_to_nat(0u);
@@ -3783,7 +3783,6 @@ v___x_1190_ = lean_array_push(v___x_1189_, v___x_1185_);
 v_code_1191_ = lean_alloc_ctor(3, 2, 0);
 lean_ctor_set(v_code_1191_, 0, v_contJpId_1178_);
 lean_ctor_set(v_code_1191_, 1, v___x_1190_);
-lean_inc(v_resetTokenId_1174_);
 v___x_1192_ = l_WellFounded_opaqueFix_u2083___at___00__private_Lean_Compiler_LCNF_ExpandResetReuse_0__Lean_Compiler_LCNF_processResetCont_mkFastPath_spec__0___redArg(v___x_1187_, v_args_1177_, v_origAllocId_1179_, v_resetTokenId_1174_, v___x_1186_, v_code_1191_, v_a_1181_);
 if (lean_obj_tag(v___x_1192_) == 0)
 {
@@ -3914,10 +3913,9 @@ v_a_1266_ = lean_ctor_get(v___x_1265_, 0);
 lean_inc(v_a_1266_);
 lean_dec_ref(v___x_1265_);
 v_fvarId_1267_ = lean_ctor_get(v_a_1266_, 0);
-lean_inc(v_fvarId_1267_);
+lean_inc_n(v_fvarId_1267_, 2);
 v___x_1268_ = lean_alloc_ctor(1, 1, 0);
 lean_ctor_set(v___x_1268_, 0, v_fvarId_1267_);
-lean_inc(v_fvarId_1267_);
 v___x_1269_ = l___private_Lean_Compiler_LCNF_ExpandResetReuse_0__Lean_Compiler_LCNF_remapSets___redArg(v_fvarId_1267_, v_selfSets_1253_);
 v_a_1270_ = lean_ctor_get(v___x_1269_, 0);
 v_isSharedCheck_1283_ = !lean_is_exclusive(v___x_1269_);
@@ -7689,10 +7687,9 @@ lean_dec_ref(v_code_2180_);
 v_params_2209_ = lean_ctor_get(v_decl_2207_, 2);
 lean_inc_ref(v_params_2209_);
 v_type_2210_ = lean_ctor_get(v_decl_2207_, 3);
-lean_inc_ref(v_type_2210_);
+lean_inc_ref_n(v_type_2210_, 2);
 v_value_2211_ = lean_ctor_get(v_decl_2207_, 4);
 v___x_2212_ = ((lean_object*)(l___private_Lean_Compiler_LCNF_ExpandResetReuse_0__Lean_Compiler_LCNF_eraseProjIncFor___closed__0));
-lean_inc_ref(v_type_2210_);
 lean_inc_ref(v_value_2211_);
 v___x_2213_ = l___private_Lean_Compiler_LCNF_ExpandResetReuse_0__Lean_Compiler_LCNF_Code_expandResetReuse(v_value_2211_, v___x_2212_, v_type_2210_, v_a_2183_, v_a_2184_, v_a_2185_, v_a_2186_);
 if (lean_obj_tag(v___x_2213_) == 0)

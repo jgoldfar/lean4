@@ -2069,10 +2069,9 @@ goto v_resetjp_614_;
 v_resetjp_614_:
 {
 lean_object* v___x_617_; lean_object* v___x_618_; lean_object* v___x_619_; lean_object* v___x_621_; 
-lean_inc(v_a_604_);
+lean_inc_n(v_a_604_, 2);
 lean_inc_ref(v_e_603_);
 v___x_617_ = l_Lean_PersistentHashMap_insert___at___00Lean_Meta_Grind_Arith_Linear_setTermStructId_spec__0___redArg(v_exprToStructId_608_, v_e_603_, v_a_604_);
-lean_inc(v_a_604_);
 v___x_618_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_618_, 0, v_e_603_);
 lean_ctor_set(v___x_618_, 1, v_a_604_);

@@ -5304,9 +5304,8 @@ else
 {
 lean_object* v_val_1474_; lean_object* v_keys_x27_1475_; lean_object* v_vals_x27_1476_; lean_object* v___x_1478_; 
 v_val_1474_ = lean_ctor_get(v___x_1470_, 0);
-lean_inc(v_val_1474_);
+lean_inc_n(v_val_1474_, 2);
 lean_dec_ref(v___x_1470_);
-lean_inc(v_val_1474_);
 v_keys_x27_1475_ = l_Array_eraseIdx___redArg(v_ks_1465_, v_val_1474_);
 v_vals_x27_1476_ = l_Array_eraseIdx___redArg(v_vs_1466_, v_val_1474_);
 if (v_isShared_1469_ == 0)
@@ -7771,11 +7770,10 @@ else
 lean_object* v_k_2279_; lean_object* v___x_2280_; lean_object* v___x_2281_; lean_object* v_c_2282_; lean_object* v___x_2284_; 
 v_k_2279_ = lean_array_fget_borrowed(v_keys_2264_, v_x_2266_);
 v___x_2280_ = ((lean_object*)(l___private_Lean_Meta_DiscrTree_Basic_0__Lean_Meta_DiscrTree_insertAux___at___00Lean_Meta_DiscrTree_insertKeyValue___at___00Lean_Meta_Simp_Simprocs_addCore_spec__0_spec__2___closed__1));
-lean_inc(v_k_2279_);
+lean_inc_n(v_k_2279_, 2);
 v___x_2281_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_2281_, 0, v_k_2279_);
 lean_ctor_set(v___x_2281_, 1, v___x_2280_);
-lean_inc(v_k_2279_);
 v_c_2282_ = l_Array_binInsertM___at___00__private_Lean_Meta_DiscrTree_Basic_0__Lean_Meta_DiscrTree_insertAux___at___00Lean_Meta_DiscrTree_insertKeyValue___at___00Lean_Meta_Simp_Simprocs_addCore_spec__0_spec__2_spec__6(v_x_2266_, v_keys_2264_, v_v_2265_, v_k_2279_, v_children_2269_, v___x_2281_);
 lean_dec_ref(v___x_2281_);
 if (v_isShared_2272_ == 0)
@@ -15000,13 +14998,12 @@ lean_object* v___x_4461_; uint8_t v___x_4462_; lean_object* v___x_4463_; lean_ob
 v___x_4461_ = lean_alloc_ctor(1, 0, 1);
 v___x_4462_ = lean_unbox(v_defValue_4456_);
 lean_ctor_set_uint8(v___x_4461_, 0, v___x_4462_);
-lean_inc(v_name_4452_);
+lean_inc_n(v_name_4452_, 2);
 v___x_4463_ = lean_alloc_ctor(0, 4, 0);
 lean_ctor_set(v___x_4463_, 0, v_name_4452_);
 lean_ctor_set(v___x_4463_, 1, v_ref_4454_);
 lean_ctor_set(v___x_4463_, 2, v___x_4461_);
 lean_ctor_set(v___x_4463_, 3, v_descr_4457_);
-lean_inc(v_name_4452_);
 v___x_4464_ = lean_register_option(v_name_4452_, v___x_4463_);
 if (lean_obj_tag(v___x_4464_) == 0)
 {
@@ -15956,9 +15953,8 @@ if (lean_obj_tag(v___x_4873_) == 0)
 {
 lean_object* v_a_4874_; lean_object* v___x_4875_; 
 v_a_4874_ = lean_ctor_get(v___x_4873_, 0);
-lean_inc(v_a_4874_);
+lean_inc_n(v_a_4874_, 2);
 lean_dec_ref(v___x_4873_);
-lean_inc(v_a_4874_);
 lean_inc(v_attrName_4868_);
 v___x_4875_ = l_Lean_Meta_Simp_mkSimprocAttr(v_attrName_4868_, v_attrDescr_4869_, v_a_4874_, v_name_4871_);
 if (lean_obj_tag(v___x_4875_) == 0)

@@ -174,13 +174,12 @@ lean_object* v___x_10_; uint8_t v___x_11_; lean_object* v___x_12_; lean_object* 
 v___x_10_ = lean_alloc_ctor(1, 0, 1);
 v___x_11_ = lean_unbox(v_defValue_5_);
 lean_ctor_set_uint8(v___x_10_, 0, v___x_11_);
-lean_inc(v_name_1_);
+lean_inc_n(v_name_1_, 2);
 v___x_12_ = lean_alloc_ctor(0, 4, 0);
 lean_ctor_set(v___x_12_, 0, v_name_1_);
 lean_ctor_set(v___x_12_, 1, v_ref_3_);
 lean_ctor_set(v___x_12_, 2, v___x_10_);
 lean_ctor_set(v___x_12_, 3, v_descr_6_);
-lean_inc(v_name_1_);
 v___x_13_ = lean_register_option(v_name_1_, v___x_12_);
 if (lean_obj_tag(v___x_13_) == 0)
 {
@@ -837,10 +836,9 @@ goto v_resetjp_226_;
 v_resetjp_226_:
 {
 lean_object* v___x_229_; lean_object* v___x_230_; lean_object* v___x_231_; lean_object* v___x_232_; 
-lean_inc_ref(v_fileMap_221_);
+lean_inc_ref_n(v_fileMap_221_, 2);
 v___x_229_ = l_Lean_FileMap_toPosition(v_fileMap_221_, v___y_216_);
 lean_dec(v___y_216_);
-lean_inc_ref(v_fileMap_221_);
 v___x_230_ = l_Lean_FileMap_toPosition(v_fileMap_221_, v___y_219_);
 lean_dec(v___y_219_);
 v___x_231_ = lean_alloc_ctor(1, 1, 0);

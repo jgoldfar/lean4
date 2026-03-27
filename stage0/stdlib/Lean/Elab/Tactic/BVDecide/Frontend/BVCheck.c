@@ -610,9 +610,8 @@ v_a_117_ = lean_ctor_get(v___x_116_, 0);
 lean_inc(v_a_117_);
 lean_dec_ref(v___x_116_);
 v_macroStack_118_ = lean_ctor_get(v___y_108_, 1);
-lean_inc(v_macroStack_118_);
+lean_inc_n(v_macroStack_118_, 2);
 v___x_119_ = l_Lean_Elab_getBetterRef(v_ref_115_, v_macroStack_118_);
-lean_inc(v_macroStack_118_);
 v___x_120_ = l_Lean_Elab_addMacroStack___at___00Lean_throwError___at___00Lean_Elab_Tactic_BVDecide_Frontend_BVCheck_getSrcDir_spec__0_spec__1___redArg(v_a_117_, v_macroStack_118_, v___y_112_);
 v_a_121_ = lean_ctor_get(v___x_120_, 0);
 v_isSharedCheck_129_ = !lean_is_exclusive(v___x_120_);
@@ -3196,10 +3195,9 @@ goto v_resetjp_1015_;
 v_resetjp_1015_:
 {
 lean_object* v___x_1018_; lean_object* v___x_1019_; lean_object* v___x_1020_; lean_object* v___x_1021_; 
-lean_inc_ref(v___y_1007_);
+lean_inc_ref_n(v___y_1007_, 2);
 v___x_1018_ = l_Lean_FileMap_toPosition(v___y_1007_, v___y_1010_);
 lean_dec(v___y_1010_);
-lean_inc_ref(v___y_1007_);
 v___x_1019_ = l_Lean_FileMap_toPosition(v___y_1007_, v___y_1011_);
 lean_dec(v___y_1011_);
 v___x_1020_ = lean_alloc_ctor(1, 1, 0);
@@ -3847,11 +3845,10 @@ if (lean_obj_tag(v___x_1272_) == 0)
 {
 lean_object* v_a_1273_; lean_object* v___x_1274_; lean_object* v___x_1275_; 
 v_a_1273_ = lean_ctor_get(v___x_1272_, 0);
-lean_inc(v_a_1273_);
+lean_inc_n(v_a_1273_, 2);
 lean_dec_ref(v___x_1272_);
 v___x_1274_ = l_Lean_TSyntax_getString(v_path_1268_);
 lean_dec(v_path_1268_);
-lean_inc(v_a_1273_);
 v___x_1275_ = l_Lean_Elab_Tactic_BVDecide_Frontend_BVCheck_mkContext(v___x_1274_, v_a_1273_, v_a_1249_, v_a_1250_, v_a_1251_, v_a_1252_, v_a_1253_, v_a_1254_);
 if (lean_obj_tag(v___x_1275_) == 0)
 {

@@ -2541,9 +2541,8 @@ if (lean_obj_tag(v___x_929_) == 1)
 {
 lean_object* v_val_930_; lean_object* v___x_931_; 
 v_val_930_ = lean_ctor_get(v___x_929_, 0);
-lean_inc(v_val_930_);
+lean_inc_n(v_val_930_, 2);
 lean_dec_ref(v___x_929_);
-lean_inc(v_val_930_);
 lean_inc_ref(v_e_746_);
 v___x_931_ = l___private_Lean_Meta_Tactic_Grind_Canon_0__Lean_Meta_Grind_Canon_canonElemCore_checkDefEq(v_e_746_, v_val_930_, v_a_748_, v_a_749_, v_a_750_, v_a_751_, v_a_752_, v_a_753_, v_a_754_, v_a_755_, v_a_756_, v_a_757_);
 if (lean_obj_tag(v___x_931_) == 0)

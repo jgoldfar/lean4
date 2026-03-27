@@ -265,14 +265,13 @@ case 0:
 {
 lean_object* v_declName_7_; lean_object* v___x_8_; lean_object* v_env_9_; uint8_t v___x_10_; uint8_t v___x_11_; 
 v_declName_7_ = lean_ctor_get(v_thmId_4_, 0);
-lean_inc(v_declName_7_);
+lean_inc_n(v_declName_7_, 2);
 lean_dec_ref(v_thmId_4_);
 v___x_8_ = lean_st_ref_get(v_a_5_);
 v_env_9_ = lean_ctor_get(v___x_8_, 0);
 lean_inc_ref(v_env_9_);
 lean_dec(v___x_8_);
 v___x_10_ = 1;
-lean_inc(v_declName_7_);
 v___x_11_ = l_Lean_Environment_contains(v_env_9_, v_declName_7_, v___x_10_);
 if (v___x_11_ == 0)
 {
@@ -3954,7 +3953,7 @@ _start:
 {
 lean_object* v_usedThmCounter_1230_; lean_object* v_triedThmCounter_1231_; lean_object* v_congrThmCounter_1232_; lean_object* v_thmsWithBadKeys_1233_; lean_object* v___x_1234_; lean_object* v___x_1235_; 
 v_usedThmCounter_1230_ = lean_ctor_get(v_diag_1224_, 0);
-lean_inc_ref(v_usedThmCounter_1230_);
+lean_inc_ref_n(v_usedThmCounter_1230_, 2);
 v_triedThmCounter_1231_ = lean_ctor_get(v_diag_1224_, 1);
 lean_inc_ref(v_triedThmCounter_1231_);
 v_congrThmCounter_1232_ = lean_ctor_get(v_diag_1224_, 2);
@@ -3963,7 +3962,6 @@ v_thmsWithBadKeys_1233_ = lean_ctor_get(v_diag_1224_, 3);
 lean_inc_ref(v_thmsWithBadKeys_1233_);
 lean_dec_ref(v_diag_1224_);
 v___x_1234_ = lean_box(0);
-lean_inc_ref(v_usedThmCounter_1230_);
 v___x_1235_ = l_Lean_Meta_Simp_mkSimpDiagSummary(v_usedThmCounter_1230_, v___x_1234_, v_a_1225_, v_a_1226_, v_a_1227_, v_a_1228_);
 if (lean_obj_tag(v___x_1235_) == 0)
 {
@@ -4710,10 +4708,9 @@ goto v_resetjp_1456_;
 v_resetjp_1456_:
 {
 lean_object* v___x_1459_; lean_object* v___x_1460_; lean_object* v___x_1461_; lean_object* v___x_1462_; 
-lean_inc_ref(v___y_1448_);
+lean_inc_ref_n(v___y_1448_, 2);
 v___x_1459_ = l_Lean_FileMap_toPosition(v___y_1448_, v___y_1450_);
 lean_dec(v___y_1450_);
-lean_inc_ref(v___y_1448_);
 v___x_1460_ = l_Lean_FileMap_toPosition(v___y_1448_, v___y_1452_);
 lean_dec(v___y_1452_);
 v___x_1461_ = lean_alloc_ctor(1, 1, 0);

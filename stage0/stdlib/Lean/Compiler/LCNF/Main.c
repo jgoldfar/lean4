@@ -2602,10 +2602,9 @@ if (v_a_685_ == 0)
 lean_object* v___x_686_; lean_object* v_env_687_; uint8_t v___x_688_; 
 v___x_686_ = lean_st_ref_get(v_a_644_);
 v_env_687_ = lean_ctor_get(v___x_686_, 0);
-lean_inc_ref(v_env_687_);
+lean_inc_ref_n(v_env_687_, 2);
 lean_dec(v___x_686_);
 lean_inc(v_declName_642_);
-lean_inc_ref(v_env_687_);
 v___x_688_ = l_Lean_isExtern(v_env_687_, v_declName_642_);
 if (v___x_688_ == 0)
 {
@@ -10324,11 +10323,10 @@ if (lean_obj_tag(v___y_2933_) == 0)
 {
 lean_object* v_a_2934_; uint8_t v___x_2935_; lean_object* v___x_2936_; lean_object* v___x_2937_; lean_object* v___x_2938_; 
 v_a_2934_ = lean_ctor_get(v___y_2933_, 0);
-lean_inc(v_a_2934_);
+lean_inc_n(v_a_2934_, 2);
 lean_dec_ref(v___y_2933_);
 v___x_2935_ = l_Lean_Compiler_LCNF_Phase_toPurity(v_phaseOut_2900_);
 v___x_2936_ = lean_box(v___x_2935_);
-lean_inc(v_a_2934_);
 v___x_2937_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_2937_, 0, v___x_2936_);
 lean_ctor_set(v___x_2937_, 1, v_a_2934_);
@@ -10386,11 +10384,10 @@ if (lean_obj_tag(v___y_2948_) == 0)
 {
 lean_object* v_a_2949_; uint8_t v___x_2950_; lean_object* v___x_2951_; lean_object* v___x_2952_; lean_object* v___x_2953_; 
 v_a_2949_ = lean_ctor_get(v___y_2948_, 0);
-lean_inc(v_a_2949_);
+lean_inc_n(v_a_2949_, 2);
 lean_dec_ref(v___y_2948_);
 v___x_2950_ = l_Lean_Compiler_LCNF_Phase_toPurity(v_phaseOut_2900_);
 v___x_2951_ = lean_box(v___x_2950_);
-lean_inc(v_a_2949_);
 v___x_2952_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_2952_, 0, v___x_2951_);
 lean_ctor_set(v___x_2952_, 1, v_a_2949_);

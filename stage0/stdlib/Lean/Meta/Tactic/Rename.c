@@ -888,9 +888,8 @@ if (lean_obj_tag(v___x_270_) == 0)
 {
 lean_object* v_a_271_; lean_object* v___x_272_; lean_object* v___x_274_; uint8_t v_isShared_275_; uint8_t v_isSharedCheck_280_; 
 v_a_271_ = lean_ctor_get(v___x_270_, 0);
-lean_inc(v_a_271_);
+lean_inc_n(v_a_271_, 2);
 lean_dec_ref(v___x_270_);
-lean_inc(v_a_271_);
 v___x_272_ = l_Lean_MVarId_assign___at___00Lean_MVarId_rename_spec__0___redArg(v_mvarId_250_, v_a_271_, v___y_255_);
 v_isSharedCheck_280_ = !lean_is_exclusive(v___x_272_);
 if (v_isSharedCheck_280_ == 0)

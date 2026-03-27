@@ -4453,10 +4453,9 @@ v_toSeqLeft_1374_ = lean_ctor_get(v_toApplicative_1371_, 3);
 v_toSeqRight_1375_ = lean_ctor_get(v_toApplicative_1371_, 4);
 v___f_1376_ = ((lean_object*)(l_Lean_IR_Checker_withParams___closed__2));
 v___f_1377_ = ((lean_object*)(l_Lean_IR_Checker_withParams___closed__3));
-lean_inc_ref(v_toFunctor_1372_);
+lean_inc_ref_n(v_toFunctor_1372_, 2);
 v___f_1378_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__0), 6, 1);
 lean_closure_set(v___f_1378_, 0, v_toFunctor_1372_);
-lean_inc_ref(v_toFunctor_1372_);
 v___f_1379_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__1), 6, 1);
 lean_closure_set(v___f_1379_, 0, v_toFunctor_1372_);
 v___x_1380_ = lean_alloc_ctor(0, 2, 0);
@@ -4731,14 +4730,12 @@ lean_object* v_x_1480_; lean_object* v_ty_1481_; lean_object* v_e_1482_; lean_ob
 v_x_1480_ = lean_ctor_get(v_fnBody_1465_, 0);
 lean_inc(v_x_1480_);
 v_ty_1481_ = lean_ctor_get(v_fnBody_1465_, 1);
-lean_inc(v_ty_1481_);
+lean_inc_n(v_ty_1481_, 2);
 v_e_1482_ = lean_ctor_get(v_fnBody_1465_, 2);
-lean_inc_ref(v_e_1482_);
+lean_inc_ref_n(v_e_1482_, 2);
 v_b_1483_ = lean_ctor_get(v_fnBody_1465_, 3);
 lean_inc(v_b_1483_);
 lean_dec_ref(v_fnBody_1465_);
-lean_inc_ref(v_e_1482_);
-lean_inc(v_ty_1481_);
 v___x_1484_ = l_Lean_IR_Checker_checkExpr(v_ty_1481_, v_e_1482_, v_a_1466_, v_a_1467_, v_a_1468_, v_a_1469_);
 if (lean_obj_tag(v___x_1484_) == 0)
 {
@@ -4790,7 +4787,7 @@ case 1:
 {
 lean_object* v_j_1492_; lean_object* v_xs_1493_; lean_object* v_v_1494_; lean_object* v_b_1495_; lean_object* v___x_1496_; 
 v_j_1492_ = lean_ctor_get(v_fnBody_1465_, 0);
-lean_inc(v_j_1492_);
+lean_inc_n(v_j_1492_, 2);
 v_xs_1493_ = lean_ctor_get(v_fnBody_1465_, 1);
 lean_inc_ref(v_xs_1493_);
 v_v_1494_ = lean_ctor_get(v_fnBody_1465_, 2);
@@ -4798,7 +4795,6 @@ lean_inc(v_v_1494_);
 v_b_1495_ = lean_ctor_get(v_fnBody_1465_, 3);
 lean_inc(v_b_1495_);
 lean_dec_ref(v_fnBody_1465_);
-lean_inc(v_j_1492_);
 v___x_1496_ = l_Lean_IR_Checker_markIndex(v_j_1492_, v_a_1466_, v_a_1467_, v_a_1468_, v_a_1469_);
 if (lean_obj_tag(v___x_1496_) == 0)
 {

@@ -1131,10 +1131,9 @@ lean_object* v___x_205_; lean_object* v___x_206_; lean_object* v___x_207_; lean_
 v___x_205_ = l_Lean_eagerReflBoolTrue;
 lean_inc_ref(v___y_202_);
 v___x_206_ = l_Lean_mkApp5(v___y_202_, v___y_201_, v___y_200_, v___y_203_, v___y_204_, v___x_205_);
-lean_inc_ref(v___y_199_);
+lean_inc_ref_n(v___y_199_, 2);
 v___x_207_ = l_Lean_mkPropEq(v___x_197_, v___y_199_);
 v___x_208_ = l_Lean_Meta_mkExpectedPropHint(v___x_206_, v___x_207_);
-lean_inc_ref(v___y_199_);
 if (v_isShared_184_ == 0)
 {
 lean_ctor_set(v___x_183_, 1, v___x_208_);

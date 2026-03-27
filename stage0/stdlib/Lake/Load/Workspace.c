@@ -301,11 +301,10 @@ v_resetjp_69_:
 {
 lean_object* v_fst_72_; lean_object* v_snd_73_; lean_object* v___x_74_; lean_object* v___x_75_; lean_object* v___x_76_; lean_object* v___x_77_; lean_object* v___x_78_; 
 v_fst_72_ = lean_ctor_get(v_a_67_, 0);
-lean_inc(v_fst_72_);
+lean_inc_n(v_fst_72_, 2);
 v_snd_73_ = lean_ctor_get(v_a_67_, 1);
 lean_inc(v_snd_73_);
 lean_dec(v_a_67_);
-lean_inc(v_fst_72_);
 v___x_74_ = l_Lake_computeLakeCache(v_fst_72_, v_lakeEnv_37_);
 v___x_75_ = ((lean_object*)(l_Lake_loadWorkspaceRoot___closed__1));
 v___x_76_ = lean_box(1);

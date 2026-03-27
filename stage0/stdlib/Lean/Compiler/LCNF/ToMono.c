@@ -2392,10 +2392,9 @@ lean_object* v_toConstantVal_660_; lean_object* v_numParams_661_; lean_object* v
 v_toConstantVal_660_ = lean_ctor_get(v_ctorInfo_652_, 0);
 lean_inc_ref(v_toConstantVal_660_);
 v_numParams_661_ = lean_ctor_get(v_ctorInfo_652_, 3);
-lean_inc(v_numParams_661_);
+lean_inc_n(v_numParams_661_, 2);
 lean_dec_ref(v_ctorInfo_652_);
 v___x_662_ = lean_box(0);
-lean_inc(v_numParams_661_);
 v_argsNewParams_663_ = lean_mk_array(v_numParams_661_, v___x_662_);
 v___x_701_ = lean_unsigned_to_nat(0u);
 v___x_702_ = lean_array_get_size(v_args_653_);
@@ -12349,10 +12348,9 @@ v_resetjp_3719_:
 lean_object* v___x_3722_; lean_object* v_env_3723_; lean_object* v___x_3750_; 
 v___x_3722_ = lean_st_ref_get(v_a_3458_);
 v_env_3723_ = lean_ctor_get(v___x_3722_, 0);
-lean_inc_ref(v_env_3723_);
+lean_inc_ref_n(v_env_3723_, 2);
 lean_dec(v___x_3722_);
 lean_inc(v_typeName_3680_);
-lean_inc_ref(v_env_3723_);
 v___x_3750_ = l_Lean_Environment_find_x3f(v_env_3723_, v_typeName_3680_, v___x_3709_);
 if (lean_obj_tag(v___x_3750_) == 1)
 {

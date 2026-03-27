@@ -2191,10 +2191,9 @@ goto v___jp_744_;
 v___jp_744_:
 {
 lean_object* v___x_746_; lean_object* v___x_747_; 
-lean_inc_ref(v_f_695_);
+lean_inc_ref_n(v_f_695_, 2);
 v___x_746_ = l_Lean_mkAppN(v_f_695_, v_args_694_);
 lean_inc(v_a_719_);
-lean_inc_ref(v_f_695_);
 v___x_747_ = l_Lean_Meta_Grind_hasSameType(v_f_695_, v_a_719_, v___y_706_, v___y_707_, v___y_708_, v___y_709_);
 if (lean_obj_tag(v___x_747_) == 0)
 {

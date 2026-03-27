@@ -5656,11 +5656,10 @@ lean_dec_ref(v___x_1728_);
 v_fst_1730_ = lean_ctor_get(v_a_1729_, 0);
 lean_inc(v_fst_1730_);
 v_snd_1731_ = lean_ctor_get(v_a_1729_, 1);
-lean_inc(v_snd_1731_);
+lean_inc_n(v_snd_1731_, 2);
 lean_dec(v_a_1729_);
 lean_inc(v___y_1726_);
 lean_inc_ref(v___y_1725_);
-lean_inc(v_snd_1731_);
 v_r_1732_ = lean_apply_5(v_f_1724_, v_fst_1730_, v_snd_1731_, v___y_1725_, v___y_1726_, lean_box(0));
 if (lean_obj_tag(v_r_1732_) == 0)
 {

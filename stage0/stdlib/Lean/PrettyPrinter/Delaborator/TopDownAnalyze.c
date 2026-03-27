@@ -1313,13 +1313,12 @@ lean_object* v___x_10_; uint8_t v___x_11_; lean_object* v___x_12_; lean_object* 
 v___x_10_ = lean_alloc_ctor(1, 0, 1);
 v___x_11_ = lean_unbox(v_defValue_5_);
 lean_ctor_set_uint8(v___x_10_, 0, v___x_11_);
-lean_inc(v_name_1_);
+lean_inc_n(v_name_1_, 2);
 v___x_12_ = lean_alloc_ctor(0, 4, 0);
 lean_ctor_set(v___x_12_, 0, v_name_1_);
 lean_ctor_set(v___x_12_, 1, v_ref_3_);
 lean_ctor_set(v___x_12_, 2, v___x_10_);
 lean_ctor_set(v___x_12_, 3, v_descr_6_);
-lean_inc(v_name_1_);
 v___x_13_ = lean_register_option(v_name_1_, v___x_12_);
 if (lean_obj_tag(v___x_13_) == 0)
 {
@@ -11295,11 +11294,10 @@ v_a_3671_ = lean_ctor_get(v___x_3670_, 0);
 lean_inc(v_a_3671_);
 lean_dec_ref(v___x_3670_);
 v_fst_3672_ = lean_ctor_get(v_a_3671_, 0);
-lean_inc(v_fst_3672_);
+lean_inc_n(v_fst_3672_, 2);
 v_snd_3673_ = lean_ctor_get(v_a_3671_, 1);
 lean_inc(v_snd_3673_);
 lean_dec(v_a_3671_);
-lean_inc(v_fst_3672_);
 v___f_3674_ = lean_alloc_closure((void*)(l_Lean_PrettyPrinter_Delaborator_SubExpr_withBindingBody_x27___at___00Lean_PrettyPrinter_Delaborator_SubExpr_withBindingBody___at___00__private_Lean_PrettyPrinter_Delaborator_TopDownAnalyze_0__Lean_PrettyPrinter_Delaborator_TopDownAnalyze_analyzeAppStagedCore_applyFunBinderHeuristic_core_spec__1_spec__1___redArg___lam__0___boxed), 13, 3);
 lean_closure_set(v___f_3674_, 0, v_v_3659_);
 lean_closure_set(v___f_3674_, 1, v_fst_3672_);
@@ -16647,9 +16645,8 @@ _start:
 lean_object* v___x_5861_; lean_object* v_a_5862_; lean_object* v___f_5863_; uint8_t v___x_5864_; lean_object* v___x_5865_; uint8_t v___x_5866_; lean_object* v___x_5867_; 
 v___x_5861_ = l_Lean_PrettyPrinter_Delaborator_SubExpr_getExpr___at___00__private_Lean_PrettyPrinter_Delaborator_TopDownAnalyze_0__Lean_PrettyPrinter_Delaborator_TopDownAnalyze_analyze_maybeAddBlockImplicit_spec__0___redArg(v___y_5854_);
 v_a_5862_ = lean_ctor_get(v___x_5861_, 0);
-lean_inc(v_a_5862_);
+lean_inc_n(v_a_5862_, 2);
 lean_dec_ref(v___x_5861_);
-lean_inc(v_a_5862_);
 v___f_5863_ = lean_alloc_closure((void*)(l_Lean_PrettyPrinter_Delaborator_SubExpr_withBindingBody_x27___at___00Lean_PrettyPrinter_Delaborator_SubExpr_withBindingBody___at___00__private_Lean_PrettyPrinter_Delaborator_TopDownAnalyze_0__Lean_PrettyPrinter_Delaborator_TopDownAnalyze_analyze_analyzeLam_spec__14_spec__17___redArg___lam__0___boxed), 11, 3);
 lean_closure_set(v___f_5863_, 0, v_v_5852_);
 lean_closure_set(v___f_5863_, 1, v_a_5862_);
@@ -20085,8 +20082,8 @@ v___x_7027_ = 0;
 v___x_7028_ = lean_array_get_borrowed(v___x_7022_, v_mvars_7016_, v_i_7004_);
 v___x_7029_ = lean_box(v___x_7026_);
 lean_inc(v_i_7004_);
-lean_inc(v___x_7023_);
-lean_inc(v___x_7028_);
+lean_inc_n(v___x_7023_, 2);
+lean_inc_n(v___x_7028_, 2);
 v___f_7030_ = lean_alloc_closure((void*)(l___private_Lean_PrettyPrinter_Delaborator_TopDownAnalyze_0__Lean_PrettyPrinter_Delaborator_TopDownAnalyze_analyzeAppStagedCore_analyzeArg___lam__0___boxed), 14, 4);
 lean_closure_set(v___f_7030_, 0, v___x_7028_);
 lean_closure_set(v___f_7030_, 1, v___x_7023_);
@@ -20103,8 +20100,6 @@ v___x_7036_ = lean_box(v___x_7026_);
 lean_inc_ref(v_bottomUps_7019_);
 lean_inc_ref(v_higherOrders_7020_);
 lean_inc_ref(v_funBinders_7021_);
-lean_inc(v___x_7023_);
-lean_inc(v___x_7028_);
 v___f_7037_ = lean_alloc_closure((void*)(l___private_Lean_PrettyPrinter_Delaborator_TopDownAnalyze_0__Lean_PrettyPrinter_Delaborator_TopDownAnalyze_analyzeAppStagedCore_analyzeArg___lam__1___boxed), 20, 11);
 lean_closure_set(v___f_7037_, 0, v_i_7004_);
 lean_closure_set(v___f_7037_, 1, v___f_7030_);
@@ -21014,11 +21009,10 @@ if (lean_obj_tag(v___x_7320_) == 0)
 {
 lean_object* v_a_7321_; lean_object* v___x_7322_; uint8_t v___x_7323_; lean_object* v___x_7324_; 
 v_a_7321_ = lean_ctor_get(v___x_7320_, 0);
-lean_inc(v_a_7321_);
+lean_inc_n(v_a_7321_, 2);
 lean_dec_ref(v___x_7320_);
 v___x_7322_ = lean_array_get_size(v_args_7310_);
 v___x_7323_ = 0;
-lean_inc(v_a_7321_);
 v___x_7324_ = l_Lean_Meta_forallMetaBoundedTelescope(v_a_7321_, v___x_7322_, v___x_7323_, v_a_7313_, v_a_7314_, v_a_7315_, v_a_7316_);
 if (lean_obj_tag(v___x_7324_) == 0)
 {

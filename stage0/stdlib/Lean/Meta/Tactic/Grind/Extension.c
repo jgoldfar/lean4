@@ -6693,9 +6693,8 @@ else
 {
 lean_object* v_val_2076_; lean_object* v_keys_x27_2077_; lean_object* v_vals_x27_2078_; lean_object* v___x_2080_; 
 v_val_2076_ = lean_ctor_get(v___x_2072_, 0);
-lean_inc(v_val_2076_);
+lean_inc_n(v_val_2076_, 2);
 lean_dec_ref(v___x_2072_);
-lean_inc(v_val_2076_);
 v_keys_x27_2077_ = l_Array_eraseIdx___redArg(v_ks_2067_, v_val_2076_);
 v_vals_x27_2078_ = l_Array_eraseIdx___redArg(v_vs_2068_, v_val_2076_);
 if (v_isShared_2071_ == 0)

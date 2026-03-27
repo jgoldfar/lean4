@@ -5464,13 +5464,12 @@ else
 lean_object* v_a_1592_; uint8_t v___x_1593_; lean_object* v___x_1594_; lean_object* v___x_1595_; lean_object* v___x_1596_; lean_object* v___x_1597_; lean_object* v___x_1598_; 
 v_a_1592_ = lean_array_uget_borrowed(v_as_1581_, v_i_1583_);
 v___x_1593_ = 0;
-lean_inc(v_a_1592_);
+lean_inc_n(v_a_1592_, 2);
 v___x_1594_ = lean_alloc_ctor(0, 1, 2);
 lean_ctor_set(v___x_1594_, 0, v_a_1592_);
 lean_ctor_set_uint8(v___x_1594_, sizeof(void*)*1, v___x_1590_);
 lean_ctor_set_uint8(v___x_1594_, sizeof(void*)*1 + 1, v___x_1593_);
 v___x_1595_ = lean_box(0);
-lean_inc(v_a_1592_);
 v___x_1596_ = l_Lean_mkConst(v_a_1592_, v___x_1595_);
 v___x_1597_ = l_Lean_Meta_simpGlobalConfig;
 v___x_1598_ = l_Lean_Meta_SimpTheoremsArray_addTheorem(v_b_1584_, v___x_1594_, v___x_1596_, v___x_1597_, v___y_1585_, v___y_1586_, v___y_1587_, v___y_1588_);

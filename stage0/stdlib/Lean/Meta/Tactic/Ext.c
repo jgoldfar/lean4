@@ -1527,9 +1527,8 @@ else
 {
 lean_object* v_val_389_; lean_object* v_keys_x27_390_; lean_object* v_vals_x27_391_; lean_object* v___x_393_; 
 v_val_389_ = lean_ctor_get(v___x_385_, 0);
-lean_inc(v_val_389_);
+lean_inc_n(v_val_389_, 2);
 lean_dec_ref(v___x_385_);
-lean_inc(v_val_389_);
 v_keys_x27_390_ = l_Array_eraseIdx___redArg(v_ks_380_, v_val_389_);
 v_vals_x27_391_ = l_Array_eraseIdx___redArg(v_vs_381_, v_val_389_);
 if (v_isShared_384_ == 0)
@@ -1985,11 +1984,10 @@ else
 lean_object* v_k_549_; lean_object* v___x_550_; lean_object* v___x_551_; lean_object* v_c_552_; lean_object* v___x_554_; 
 v_k_549_ = lean_array_fget_borrowed(v_keys_534_, v_x_536_);
 v___x_550_ = ((lean_object*)(l___private_Lean_Meta_DiscrTree_Basic_0__Lean_Meta_DiscrTree_insertAux___at___00Lean_Meta_DiscrTree_insertKeyValue___at___00Lean_Meta_Ext_initFn_00___x40_Lean_Meta_Tactic_Ext_3056382534____hygCtx___hyg_2__spec__0_spec__2___closed__1));
-lean_inc(v_k_549_);
+lean_inc_n(v_k_549_, 2);
 v___x_551_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_551_, 0, v_k_549_);
 lean_ctor_set(v___x_551_, 1, v___x_550_);
-lean_inc(v_k_549_);
 v_c_552_ = l_Array_binInsertM___at___00__private_Lean_Meta_DiscrTree_Basic_0__Lean_Meta_DiscrTree_insertAux___at___00Lean_Meta_DiscrTree_insertKeyValue___at___00Lean_Meta_Ext_initFn_00___x40_Lean_Meta_Tactic_Ext_3056382534____hygCtx___hyg_2__spec__0_spec__2_spec__6(v_x_536_, v_keys_534_, v_v_535_, v_k_549_, v_children_539_, v___x_551_);
 lean_dec_ref(v___x_551_);
 if (v_isShared_542_ == 0)
@@ -4916,14 +4914,12 @@ v_toBind_1766_ = lean_ctor_get(v_inst_1761_, 1);
 lean_inc(v_toBind_1766_);
 v_toPure_1767_ = lean_ctor_get(v_toApplicative_1765_, 1);
 lean_inc(v_toPure_1767_);
-lean_inc(v_declName_1764_);
-lean_inc_ref(v_d_1763_);
+lean_inc_n(v_declName_1764_, 2);
+lean_inc_ref_n(v_d_1763_, 2);
 v___f_1768_ = lean_alloc_closure((void*)(l_Lean_Meta_Ext_ExtTheorems_erase___redArg___lam__0), 4, 3);
 lean_closure_set(v___f_1768_, 0, v_d_1763_);
 lean_closure_set(v___f_1768_, 1, v_declName_1764_);
 lean_closure_set(v___f_1768_, 2, v_toPure_1767_);
-lean_inc(v_declName_1764_);
-lean_inc_ref(v_d_1763_);
 v___x_1769_ = l_Lean_Meta_Ext_ExtTheorems_contains(v_d_1763_, v_declName_1764_);
 if (v___x_1769_ == 0)
 {

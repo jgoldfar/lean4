@@ -344,14 +344,13 @@ if (lean_obj_tag(v___x_176_) == 0)
 {
 lean_object* v_a_177_; lean_object* v___x_178_; lean_object* v___x_179_; lean_object* v___x_180_; lean_object* v_charType_181_; lean_object* v___x_182_; 
 v_a_177_ = lean_ctor_get(v___x_176_, 0);
-lean_inc(v_a_177_);
+lean_inc_n(v_a_177_, 2);
 lean_dec_ref(v___x_176_);
 v___x_178_ = ((lean_object*)(l_Lean_Meta_Grind_Arith_getIsCharInst_x3f___lam__0___closed__3));
 v___x_179_ = lean_alloc_ctor(1, 2, 0);
 lean_ctor_set(v___x_179_, 0, v_u_161_);
 lean_ctor_set(v___x_179_, 1, v___x_162_);
 v___x_180_ = l_Lean_mkConst(v___x_178_, v___x_179_);
-lean_inc(v_a_177_);
 v_charType_181_ = l_Lean_mkApp3(v___x_180_, v_type_163_, v_semiringInst_164_, v_a_177_);
 v___x_182_ = l_Lean_Meta_Grind_synthInstanceMeta_x3f(v_charType_181_, v___y_171_, v___y_172_, v___y_173_, v___y_174_);
 if (lean_obj_tag(v___x_182_) == 0)

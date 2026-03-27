@@ -2340,9 +2340,8 @@ if (lean_obj_tag(v_tail_822_) == 0)
 {
 lean_object* v_head_823_; lean_object* v___x_824_; lean_object* v___x_825_; 
 v_head_823_ = lean_ctor_get(v_ctors_821_, 0);
-lean_inc(v_head_823_);
+lean_inc_n(v_head_823_, 2);
 v___x_824_ = lean_box(0);
-lean_inc(v_head_823_);
 v___x_825_ = l_Lean_Compiler_LCNF_getOtherDeclBaseType(v_head_823_, v___x_824_, v_a_801_, v_a_802_);
 if (lean_obj_tag(v___x_825_) == 0)
 {
@@ -3808,9 +3807,8 @@ if (lean_obj_tag(v___x_1249_) == 0)
 {
 lean_object* v_a_1250_; lean_object* v___x_1251_; lean_object* v___x_1253_; uint8_t v_isShared_1254_; uint8_t v_isSharedCheck_1258_; 
 v_a_1250_ = lean_ctor_get(v___x_1249_, 0);
-lean_inc(v_a_1250_);
+lean_inc_n(v_a_1250_, 2);
 lean_dec_ref(v___x_1249_);
-lean_inc(v_a_1250_);
 v___x_1251_ = l_Lean_Compiler_LCNF_CacheExtension_insert___at___00Lean_Compiler_LCNF_Irrelevant_hasTrivialStructure_x3f_spec__1___redArg(v_cacheExt_1238_, v_declName_1240_, v_a_1250_, v_a_1242_);
 v_isSharedCheck_1258_ = !lean_is_exclusive(v___x_1251_);
 if (v_isSharedCheck_1258_ == 0)

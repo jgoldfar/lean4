@@ -1331,10 +1331,9 @@ v_toSeqLeft_310_ = lean_ctor_get(v_toApplicative_307_, 3);
 v_toSeqRight_311_ = lean_ctor_get(v_toApplicative_307_, 4);
 v___f_312_ = ((lean_object*)(l_Lean_Meta_PProdN_genMk___redArg___closed__2));
 v___f_313_ = ((lean_object*)(l_Lean_Meta_PProdN_genMk___redArg___closed__3));
-lean_inc_ref(v_toFunctor_308_);
+lean_inc_ref_n(v_toFunctor_308_, 2);
 v___f_314_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__0), 6, 1);
 lean_closure_set(v___f_314_, 0, v_toFunctor_308_);
-lean_inc_ref(v_toFunctor_308_);
 v___f_315_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__1), 6, 1);
 lean_closure_set(v___f_315_, 0, v_toFunctor_308_);
 v___x_316_ = lean_alloc_ctor(0, 2, 0);
@@ -4680,9 +4679,8 @@ if (lean_obj_tag(v___x_1586_) == 0)
 {
 lean_object* v_a_1587_; lean_object* v___f_1588_; lean_object* v___x_1589_; 
 v_a_1587_ = lean_ctor_get(v___x_1586_, 0);
-lean_inc(v_a_1587_);
+lean_inc_n(v_a_1587_, 2);
 lean_dec_ref(v___x_1586_);
-lean_inc(v_a_1587_);
 lean_inc(v_a_1572_);
 v___f_1588_ = lean_alloc_closure((void*)(l___private_Lean_Meta_Transform_0__Lean_Core_transform_visit___at___00Lean_Core_transform___at___00Lean_Meta_PProdN_reduceProjs_spec__0_spec__0___lam__2___boxed), 4, 3);
 lean_closure_set(v___f_1588_, 0, v_a_1572_);

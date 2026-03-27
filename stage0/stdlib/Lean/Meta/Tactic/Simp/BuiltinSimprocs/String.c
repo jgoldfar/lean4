@@ -4109,9 +4109,8 @@ if (lean_obj_tag(v_a_1478_) == 1)
 lean_object* v_val_1482_; lean_object* v___f_1483_; uint8_t v___x_1484_; lean_object* v___x_1485_; 
 lean_del_object(v___x_1480_);
 v_val_1482_ = lean_ctor_get(v_a_1478_, 0);
-lean_inc(v_val_1482_);
+lean_inc_n(v_val_1482_, 2);
 lean_dec_ref(v_a_1478_);
-lean_inc(v_val_1482_);
 lean_inc(v_val_1475_);
 v___f_1483_ = lean_alloc_closure((void*)(l_String_reduceEq___lam__0___boxed), 10, 2);
 lean_closure_set(v___f_1483_, 0, v_val_1475_);
@@ -4334,9 +4333,8 @@ if (lean_obj_tag(v_a_1572_) == 1)
 lean_object* v_val_1576_; lean_object* v___f_1577_; uint8_t v___x_1578_; 
 lean_del_object(v___x_1574_);
 v_val_1576_ = lean_ctor_get(v_a_1572_, 0);
-lean_inc(v_val_1576_);
+lean_inc_n(v_val_1576_, 2);
 lean_dec_ref(v_a_1572_);
-lean_inc(v_val_1576_);
 lean_inc(v_val_1569_);
 v___f_1577_ = lean_alloc_closure((void*)(l_String_reduceEq___lam__0___boxed), 10, 2);
 lean_closure_set(v___f_1577_, 0, v_val_1569_);

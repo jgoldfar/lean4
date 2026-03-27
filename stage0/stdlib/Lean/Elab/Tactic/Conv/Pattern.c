@@ -4680,7 +4680,7 @@ else
 {
 lean_object* v_val_1673_; lean_object* v___x_1674_; lean_object* v___x_1675_; uint8_t v___x_1676_; 
 v_val_1673_ = lean_ctor_get(v_occs_1630_, 0);
-lean_inc(v_val_1673_);
+lean_inc_n(v_val_1673_, 2);
 lean_dec_ref(v_occs_1630_);
 v___x_1674_ = ((lean_object*)(l_Lean_Elab_Tactic_Conv_evalPattern___lam__6___closed__23));
 lean_inc_ref(v___x_1300_);
@@ -4688,7 +4688,6 @@ lean_inc_ref(v___x_1299_);
 lean_inc_ref(v___x_1298_);
 lean_inc_ref(v___x_1297_);
 v___x_1675_ = l_Lean_Name_mkStr5(v___x_1297_, v___x_1298_, v___x_1299_, v___x_1300_, v___x_1674_);
-lean_inc(v_val_1673_);
 v___x_1676_ = l_Lean_Syntax_isOfKind(v_val_1673_, v___x_1675_);
 lean_dec(v___x_1675_);
 if (v___x_1676_ == 0)

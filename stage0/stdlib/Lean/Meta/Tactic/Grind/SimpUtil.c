@@ -3243,9 +3243,8 @@ v___x_1043_ = lean_obj_once(&l_Lean_Meta_Grind_pushNot___redArg___closed__51, &l
 lean_inc_ref(v_arg_880_);
 v___x_1044_ = l_Lean_Expr_app___override(v_arg_880_, v___x_1043_);
 v___x_1045_ = l_Lean_mkNot(v___x_1044_);
-lean_inc_ref(v_arg_884_);
+lean_inc_ref_n(v_arg_884_, 2);
 v___x_1046_ = l_Lean_mkForall(v___x_1041_, v___x_1042_, v_arg_884_, v___x_1045_);
-lean_inc_ref(v_arg_884_);
 v___x_1047_ = l_Lean_Meta_getLevel(v_arg_884_, v_a_777_, v_a_778_, v_a_779_, v_a_780_);
 if (lean_obj_tag(v___x_1047_) == 0)
 {
@@ -3502,13 +3501,11 @@ v___jp_798_:
 {
 lean_object* v___x_807_; lean_object* v___x_808_; lean_object* v___x_809_; lean_object* v___x_810_; 
 lean_inc_ref(v___y_802_);
-lean_inc_ref(v___y_805_);
+lean_inc_ref_n(v___y_805_, 3);
 lean_inc(v___y_799_);
 v___x_807_ = l_Lean_mkLambda(v___y_799_, v___y_800_, v___y_805_, v___y_802_);
 v___x_808_ = l_Lean_mkNot(v___y_802_);
-lean_inc_ref(v___y_805_);
 v___x_809_ = l_Lean_mkLambda(v___y_799_, v___y_800_, v___y_805_, v___x_808_);
-lean_inc_ref(v___y_805_);
 v___x_810_ = l_Lean_Meta_getLevel(v___y_805_, v___y_804_, v___y_806_, v___y_803_, v___y_801_);
 if (lean_obj_tag(v___x_810_) == 0)
 {

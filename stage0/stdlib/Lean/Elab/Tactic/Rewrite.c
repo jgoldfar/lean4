@@ -3336,11 +3336,10 @@ else
 {
 lean_object* v_head_1017_; lean_object* v_tail_1018_; lean_object* v___f_1019_; lean_object* v___x_1020_; 
 v_head_1017_ = lean_ctor_get(v_as_1009_, 0);
-lean_inc(v_head_1017_);
+lean_inc_n(v_head_1017_, 2);
 v_tail_1018_ = lean_ctor_get(v_as_1009_, 1);
 lean_inc(v_tail_1018_);
 lean_dec_ref(v_as_1009_);
-lean_inc(v_head_1017_);
 v___f_1019_ = lean_alloc_closure((void*)(l_List_forM___at___00Lean_Elab_Tactic_finishElabRewrite_spec__2___lam__0___boxed), 6, 1);
 lean_closure_set(v___f_1019_, 0, v_head_1017_);
 v___x_1020_ = l_Lean_MVarId_withContext___at___00Lean_Elab_Tactic_finishElabRewrite_spec__1___redArg(v_head_1017_, v___f_1019_, v___y_1010_, v___y_1011_, v___y_1012_, v___y_1013_);
@@ -5839,9 +5838,8 @@ if (lean_obj_tag(v___x_1912_) == 0)
 lean_object* v_a_1913_; lean_object* v___x_1914_; 
 lean_dec(v_a_1911_);
 v_a_1913_ = lean_ctor_get(v___x_1912_, 0);
-lean_inc(v_a_1913_);
+lean_inc_n(v_a_1913_, 2);
 lean_dec_ref(v___x_1912_);
-lean_inc(v_a_1913_);
 v___x_1914_ = l_Lean_Meta_getEqnsFor_x3f(v_a_1913_, v___y_1902_, v___y_1903_, v___y_1904_, v___y_1905_);
 if (lean_obj_tag(v___x_1914_) == 0)
 {
@@ -6386,19 +6384,17 @@ v___f_2054_ = lean_alloc_closure((void*)(l_WellFounded_opaqueFix_u2083___at___00
 lean_closure_set(v___f_2054_, 0, v_a_2053_);
 v___x_2055_ = l_Lean_Syntax_getArg(v___x_2048_, v___x_2044_);
 v___x_2056_ = lean_box(v___y_2051_);
-lean_inc(v___x_2055_);
-lean_inc_ref(v_x_2028_);
+lean_inc_n(v___x_2055_, 2);
+lean_inc_ref_n(v_x_2028_, 2);
 v___f_2057_ = lean_alloc_closure((void*)(l_WellFounded_opaqueFix_u2083___at___00Lean_Elab_Tactic_withRWRulesSeq_spec__1___redArg___lam__2___boxed), 14, 4);
 lean_closure_set(v___f_2057_, 0, v_x_2028_);
 lean_closure_set(v___f_2057_, 1, v___x_2056_);
 lean_closure_set(v___f_2057_, 2, v___x_2044_);
 lean_closure_set(v___f_2057_, 3, v___x_2055_);
 v___x_2058_ = ((lean_object*)(l_WellFounded_opaqueFix_u2083___at___00Lean_Elab_Tactic_withRWRulesSeq_spec__1___redArg___closed__1));
-lean_inc(v___x_2055_);
 v___x_2059_ = l_Lean_Syntax_isOfKind(v___x_2055_, v___x_2058_);
 v___x_2060_ = lean_box(v___x_2059_);
 v___x_2061_ = lean_box(v___y_2051_);
-lean_inc_ref(v_x_2028_);
 v___f_2062_ = lean_alloc_closure((void*)(l_WellFounded_opaqueFix_u2083___at___00Lean_Elab_Tactic_withRWRulesSeq_spec__1___redArg___lam__3___boxed), 17, 8);
 lean_closure_set(v___f_2062_, 0, v___x_2048_);
 lean_closure_set(v___f_2062_, 1, v___x_2060_);
@@ -8265,9 +8261,8 @@ v_a_2818_ = lean_ctor_get(v___x_2817_, 0);
 lean_inc(v_a_2818_);
 lean_dec_ref(v___x_2817_);
 v_macroStack_2819_ = lean_ctor_get(v___y_2809_, 1);
-lean_inc(v_macroStack_2819_);
+lean_inc_n(v_macroStack_2819_, 2);
 v___x_2820_ = l_Lean_Elab_getBetterRef(v_ref_2816_, v_macroStack_2819_);
-lean_inc(v_macroStack_2819_);
 v___x_2821_ = l_Lean_Elab_addMacroStack___at___00Lean_throwError___at___00Lean_Elab_Tactic_elabRewriteConfig_spec__1_spec__4___redArg(v_a_2818_, v_macroStack_2819_, v___y_2813_);
 v_a_2822_ = lean_ctor_get(v___x_2821_, 0);
 v_isSharedCheck_2830_ = !lean_is_exclusive(v___x_2821_);

@@ -1771,13 +1771,12 @@ if (lean_obj_tag(v___x_527_) == 0)
 {
 lean_object* v_a_528_; lean_object* v___x_529_; 
 v_a_528_ = lean_ctor_get(v___x_527_, 0);
-lean_inc(v_a_528_);
+lean_inc_n(v_a_528_, 2);
 lean_dec_ref(v___x_527_);
 lean_inc(v___y_526_);
 lean_inc_ref(v___y_525_);
 lean_inc(v___y_524_);
 lean_inc_ref(v___y_523_);
-lean_inc(v_a_528_);
 v___x_529_ = lean_apply_6(v_checkType_268_, v_a_528_, v___y_523_, v___y_524_, v___y_525_, v___y_526_, lean_box(0));
 if (lean_obj_tag(v___x_529_) == 0)
 {
@@ -1821,16 +1820,14 @@ v_resetjp_539_:
 {
 lean_object* v___x_542_; lean_object* v___x_543_; lean_object* v___x_544_; lean_object* v___x_545_; lean_object* v___x_546_; lean_object* v___x_548_; 
 v___x_542_ = lean_array_to_list(v___y_520_);
-lean_inc(v___y_521_);
+lean_inc_n(v___y_521_, 3);
 v___x_543_ = lean_alloc_ctor(0, 3, 0);
 lean_ctor_set(v___x_543_, 0, v___y_521_);
 lean_ctor_set(v___x_543_, 1, v___x_542_);
 lean_ctor_set(v___x_543_, 2, v_a_528_);
-lean_inc(v___y_521_);
 v___x_544_ = lean_alloc_ctor(1, 2, 0);
 lean_ctor_set(v___x_544_, 0, v___y_521_);
 lean_ctor_set(v___x_544_, 1, v___y_522_);
-lean_inc(v___y_521_);
 v___x_545_ = l_Lean_markMeta(v_env_531_, v___y_521_);
 v___x_546_ = lean_obj_once(&l_Lean_Meta_evalExprCore___redArg___lam__0___closed__2, &l_Lean_Meta_evalExprCore___redArg___lam__0___closed__2_once, _init_l_Lean_Meta_evalExprCore___redArg___lam__0___closed__2);
 if (v_isShared_541_ == 0)
@@ -2175,13 +2172,12 @@ if (lean_obj_tag(v___x_619_) == 0)
 {
 lean_object* v_a_620_; lean_object* v_env_621_; lean_object* v___x_622_; lean_object* v___x_623_; lean_object* v_params_624_; lean_object* v___x_625_; lean_object* v___x_626_; uint8_t v___x_627_; 
 v_a_620_ = lean_ctor_get(v___x_619_, 0);
-lean_inc(v_a_620_);
+lean_inc_n(v_a_620_, 2);
 lean_dec_ref(v___x_619_);
 v_env_621_ = lean_ctor_get(v___x_615_, 0);
 lean_inc_ref(v_env_621_);
 lean_dec(v___x_615_);
 v___x_622_ = lean_obj_once(&l_Lean_Meta_evalExprCore___redArg___lam__0___closed__10, &l_Lean_Meta_evalExprCore___redArg___lam__0___closed__10_once, _init_l_Lean_Meta_evalExprCore___redArg___lam__0___closed__10);
-lean_inc(v_a_620_);
 v___x_623_ = l_Lean_collectLevelParams(v___x_622_, v_a_620_);
 v_params_624_ = lean_ctor_get(v___x_623_, 2);
 lean_inc_ref(v_params_624_);
@@ -2454,7 +2450,7 @@ v___jp_684_:
 lean_object* v___x_685_; lean_object* v_env_686_; lean_object* v_nextMacroScope_687_; lean_object* v_ngen_688_; lean_object* v_auxDeclNGen_689_; lean_object* v_traceState_690_; lean_object* v_messages_691_; lean_object* v_infoState_692_; lean_object* v_snapshotTasks_693_; lean_object* v___x_694_; 
 v___x_685_ = lean_st_ref_take(v___y_274_);
 v_env_686_ = lean_ctor_get(v___x_685_, 0);
-lean_inc_ref(v_env_686_);
+lean_inc_ref_n(v_env_686_, 2);
 v_nextMacroScope_687_ = lean_ctor_get(v___x_685_, 1);
 lean_inc(v_nextMacroScope_687_);
 v_ngen_688_ = lean_ctor_get(v___x_685_, 2);
@@ -2470,7 +2466,6 @@ lean_inc_ref(v_infoState_692_);
 v_snapshotTasks_693_ = lean_ctor_get(v___x_685_, 8);
 lean_inc_ref(v_snapshotTasks_693_);
 lean_dec(v___x_685_);
-lean_inc_ref(v_env_686_);
 v___x_694_ = l_Lean_Environment_importEnv_x3f(v_env_686_);
 if (lean_obj_tag(v___x_694_) == 0)
 {

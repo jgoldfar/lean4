@@ -2451,9 +2451,8 @@ if (lean_obj_tag(v___x_818_) == 0)
 {
 lean_object* v_a_819_; lean_object* v___f_820_; lean_object* v___x_821_; uint8_t v___x_822_; lean_object* v___x_823_; lean_object* v___x_824_; 
 v_a_819_ = lean_ctor_get(v___x_818_, 0);
-lean_inc(v_a_819_);
+lean_inc_n(v_a_819_, 2);
 lean_dec_ref(v___x_818_);
-lean_inc(v_a_819_);
 v___f_820_ = lean_alloc_closure((void*)(l_Lean_MVarId_rewrite___lam__0___boxed), 8, 2);
 lean_closure_set(v___f_820_, 0, v___y_806_);
 lean_closure_set(v___f_820_, 1, v_a_819_);

@@ -3753,11 +3753,10 @@ _start:
 {
 uint8_t v___x_1472_; lean_object* v___x_1473_; lean_object* v___x_1474_; lean_object* v___x_1475_; lean_object* v___x_1476_; lean_object* v___x_1477_; lean_object* v___x_1478_; 
 v___x_1472_ = 1;
-lean_inc(v_kind_1469_);
+lean_inc_n(v_kind_1469_, 2);
 lean_inc_ref(v_name_1468_);
 v___x_1473_ = l_Lean_Parser_mkAntiquot(v_name_1468_, v_kind_1469_, v_anonymous_1471_, v___x_1472_);
 v___x_1474_ = lean_box(v_anonymous_1471_);
-lean_inc(v_kind_1469_);
 v___x_1475_ = lean_alloc_closure((void*)(l___private_Lake_Toml_ParserUtil_0__Lake_Toml_recNodeWithAntiquot_go___boxed), 5, 4);
 lean_closure_set(v___x_1475_, 0, v_name_1468_);
 lean_closure_set(v___x_1475_, 1, v_kind_1469_);

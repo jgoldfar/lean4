@@ -1765,13 +1765,12 @@ v_resetjp_351_:
 {
 lean_object* v_name_354_; lean_object* v_outParams_355_; lean_object* v_outLevelParams_356_; lean_object* v___x_357_; lean_object* v___x_358_; lean_object* v___x_360_; 
 v_name_354_ = lean_ctor_get(v_entry_348_, 0);
-lean_inc(v_name_354_);
+lean_inc_n(v_name_354_, 2);
 v_outParams_355_ = lean_ctor_get(v_entry_348_, 1);
 lean_inc_ref(v_outParams_355_);
 v_outLevelParams_356_ = lean_ctor_get(v_entry_348_, 2);
 lean_inc_ref(v_outLevelParams_356_);
 lean_dec_ref(v_entry_348_);
-lean_inc(v_name_354_);
 v___x_357_ = l_Lean_SMap_insert___at___00Lean_ClassState_addEntry_spec__0___redArg(v_outParamMap_349_, v_name_354_, v_outParams_355_);
 v___x_358_ = l_Lean_SMap_insert___at___00Lean_ClassState_addEntry_spec__0___redArg(v_outLevelParamMap_350_, v_name_354_, v_outLevelParams_356_);
 if (v_isShared_353_ == 0)
@@ -3483,12 +3482,11 @@ if (lean_obj_tag(v_type_1018_) == 7)
 {
 lean_object* v_binderType_1019_; lean_object* v_body_1020_; uint8_t v_binderInfo_1021_; uint8_t v___x_1033_; 
 v_binderType_1019_ = lean_ctor_get(v_type_1018_, 1);
-lean_inc_ref(v_binderType_1019_);
+lean_inc_ref_n(v_binderType_1019_, 2);
 v_body_1020_ = lean_ctor_get(v_type_1018_, 2);
 lean_inc_ref(v_body_1020_);
 v_binderInfo_1021_ = lean_ctor_get_uint8(v_type_1018_, sizeof(void*)*3 + 8);
 lean_dec_ref(v_type_1018_);
-lean_inc_ref(v_binderType_1019_);
 v___x_1033_ = lean_is_out_param(v_binderType_1019_);
 if (v___x_1033_ == 0)
 {
@@ -3622,12 +3620,11 @@ if (lean_obj_tag(v_typeAux_1070_) == 7)
 {
 lean_object* v_binderType_1091_; lean_object* v_body_1092_; uint8_t v_binderInfo_1093_; lean_object* v_dNew_1111_; uint8_t v___x_1133_; 
 v_binderType_1091_ = lean_ctor_get(v_typeAux_1070_, 1);
-lean_inc_ref(v_binderType_1091_);
+lean_inc_ref_n(v_binderType_1091_, 2);
 v_body_1092_ = lean_ctor_get(v_typeAux_1070_, 2);
 lean_inc_ref(v_body_1092_);
 v_binderInfo_1093_ = lean_ctor_get_uint8(v_typeAux_1070_, sizeof(void*)*3 + 8);
 lean_dec_ref(v_typeAux_1070_);
-lean_inc_ref(v_binderType_1091_);
 v___x_1133_ = lean_is_out_param(v_binderType_1091_);
 if (v___x_1133_ == 0)
 {
@@ -6392,10 +6389,9 @@ v___jp_2077_:
 lean_object* v___x_2078_; lean_object* v_env_2079_; uint8_t v___x_2080_; 
 v___x_2078_ = lean_st_ref_get(v___y_1994_);
 v_env_2079_ = lean_ctor_get(v___x_2078_, 0);
-lean_inc_ref(v_env_2079_);
+lean_inc_ref_n(v_env_2079_, 2);
 lean_dec(v___x_2078_);
 lean_inc(v_decl_1990_);
-lean_inc_ref(v_env_2079_);
 v___x_2080_ = lean_is_class(v_env_2079_, v_decl_1990_);
 if (v___x_2080_ == 0)
 {

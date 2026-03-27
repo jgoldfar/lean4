@@ -2595,9 +2595,8 @@ goto v_resetjp_892_;
 v_resetjp_892_:
 {
 lean_object* v___x_895_; lean_object* v___x_896_; lean_object* v___x_898_; 
-lean_inc(v___x_879_);
+lean_inc_n(v___x_879_, 2);
 v___x_895_ = lean_array_push(v_fst_877_, v___x_879_);
-lean_inc(v___x_879_);
 v___x_896_ = lean_array_push(v_snd_878_, v___x_879_);
 if (v_isShared_894_ == 0)
 {
@@ -5565,17 +5564,15 @@ _start:
 {
 lean_object* v___y_2006_; lean_object* v_out_2009_; uint8_t v_outLv_2010_; uint8_t v_useAnsi_2011_; lean_object* v_toMonitorResult_2012_; lean_object* v_out_2013_; lean_object* v___x_2014_; uint8_t v_noBuild_2015_; uint8_t v_verbosity_2016_; lean_object* v_outputsFile_x3f_2017_; 
 v_out_2009_ = lean_ctor_get(v_mctx_2002_, 1);
-lean_inc_ref(v_out_2009_);
+lean_inc_ref_n(v_out_2009_, 2);
 v_outLv_2010_ = lean_ctor_get_uint8(v_mctx_2002_, sizeof(void*)*3);
 v_useAnsi_2011_ = lean_ctor_get_uint8(v_mctx_2002_, sizeof(void*)*3 + 4);
 lean_dec_ref(v_mctx_2002_);
 v_toMonitorResult_2012_ = lean_ctor_get(v_result_2003_, 0);
-lean_inc_ref(v_toMonitorResult_2012_);
+lean_inc_ref_n(v_toMonitorResult_2012_, 2);
 v_out_2013_ = lean_ctor_get(v_result_2003_, 1);
 lean_inc_ref(v_out_2013_);
 lean_dec_ref(v_result_2003_);
-lean_inc_ref(v_toMonitorResult_2012_);
-lean_inc_ref(v_out_2009_);
 v___x_2014_ = l___private_Lake_Build_Run_0__Lake_reportResult(v_cfg_2000_, v_out_2009_, v_toMonitorResult_2012_);
 v_noBuild_2015_ = lean_ctor_get_uint8(v_cfg_2000_, sizeof(void*)*2 + 2);
 v_verbosity_2016_ = lean_ctor_get_uint8(v_cfg_2000_, sizeof(void*)*2 + 3);

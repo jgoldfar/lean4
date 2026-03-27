@@ -1713,11 +1713,10 @@ else
 lean_object* v_k_386_; lean_object* v___x_387_; lean_object* v___x_388_; lean_object* v_c_389_; lean_object* v___x_391_; 
 v_k_386_ = lean_array_fget_borrowed(v_keys_371_, v_x_373_);
 v___x_387_ = ((lean_object*)(l___private_Lean_Meta_DiscrTree_Basic_0__Lean_Meta_DiscrTree_insertAux___at___00Lean_Meta_DiscrTree_insertKeyValue___at___00Lean_Meta_Sym_insertPattern___at___00Lean_Meta_Sym_Simp_Theorems_insert_spec__0_spec__0_spec__3___closed__1));
-lean_inc(v_k_386_);
+lean_inc_n(v_k_386_, 2);
 v___x_388_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_388_, 0, v_k_386_);
 lean_ctor_set(v___x_388_, 1, v___x_387_);
-lean_inc(v_k_386_);
 v_c_389_ = l_Array_binInsertM___at___00__private_Lean_Meta_DiscrTree_Basic_0__Lean_Meta_DiscrTree_insertAux___at___00Lean_Meta_DiscrTree_insertKeyValue___at___00Lean_Meta_Sym_insertPattern___at___00Lean_Meta_Sym_Simp_Theorems_insert_spec__0_spec__0_spec__3_spec__7(v_x_373_, v_keys_371_, v_v_372_, v_k_386_, v_children_376_, v___x_388_);
 lean_dec_ref(v___x_388_);
 if (v_isShared_379_ == 0)
@@ -3900,11 +3899,10 @@ lean_dec_ref(v___x_1264_);
 v_fst_1266_ = lean_ctor_get(v_a_1265_, 0);
 lean_inc(v_fst_1266_);
 v_snd_1267_ = lean_ctor_get(v_a_1265_, 1);
-lean_inc(v_snd_1267_);
+lean_inc_n(v_snd_1267_, 2);
 lean_dec(v_a_1265_);
 v___x_1268_ = ((lean_object*)(l_Lean_Meta_Sym_Simp_mkTheoremFromDecl___closed__0));
 v___x_1269_ = ((lean_object*)(l_Lean_Meta_Sym_Simp_mkTheoremFromDecl___closed__1));
-lean_inc(v_snd_1267_);
 v___x_1270_ = l___private_Lean_Meta_Sym_Pattern_0__Lean_Meta_Sym_mkPatternFromTypeWithKey_go(lean_box(0), v_fst_1266_, v_snd_1267_, v___x_1268_, v_snd_1267_, v___x_1269_, v_a_1259_, v_a_1260_, v_a_1261_, v_a_1262_);
 if (lean_obj_tag(v___x_1270_) == 0)
 {
@@ -4137,11 +4135,10 @@ lean_dec_ref(v___x_1331_);
 v_fst_1333_ = lean_ctor_get(v_a_1332_, 0);
 lean_inc(v_fst_1333_);
 v_snd_1334_ = lean_ctor_get(v_a_1332_, 1);
-lean_inc(v_snd_1334_);
+lean_inc_n(v_snd_1334_, 2);
 lean_dec(v_a_1332_);
 v___x_1335_ = ((lean_object*)(l_Lean_Meta_Sym_Simp_mkTheoremFromDecl___closed__0));
 v___x_1336_ = ((lean_object*)(l_Lean_Meta_Sym_Simp_mkTheoremFromDecl___closed__1));
-lean_inc(v_snd_1334_);
 v___x_1337_ = l___private_Lean_Meta_Sym_Pattern_0__Lean_Meta_Sym_mkPatternFromTypeWithKey_go(lean_box(0), v_fst_1333_, v_snd_1334_, v___x_1335_, v_snd_1334_, v___x_1336_, v_a_1325_, v_a_1326_, v_a_1327_, v_a_1328_);
 if (lean_obj_tag(v___x_1337_) == 0)
 {

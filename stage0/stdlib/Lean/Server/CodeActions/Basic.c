@@ -2892,12 +2892,11 @@ lean_object* v___x_839_; lean_object* v___x_840_; lean_object* v___x_841_; lean_
 lean_dec(v___x_832_);
 lean_dec(v___x_819_);
 v___x_839_ = lean_box(0);
-lean_inc(v_decl_823_);
+lean_inc_n(v_decl_823_, 2);
 v___x_840_ = l_Lean_mkConst(v_decl_823_, v___x_839_);
 v___x_841_ = ((lean_object*)(l___private_Lean_Server_CodeActions_Basic_0__Lean_Server_initFn___lam__1___closed__0_00___x40_Lean_Server_CodeActions_Basic_1656927832____hygCtx___hyg_2_));
 v___x_842_ = l_Lean_Name_mkStr3(v___x_820_, v___x_821_, v___x_841_);
 v___x_843_ = l_Lean_mkConst(v___x_842_, v___x_839_);
-lean_inc(v_decl_823_);
 v___x_844_ = l___private_Lean_ToExpr_0__Lean_Name_toExprAux(v_decl_823_);
 v___x_845_ = l_Lean_mkAppB(v___x_843_, v___x_844_, v___x_840_);
 v___x_846_ = l_Lean_declareBuiltin(v_decl_823_, v___x_845_, v___y_830_, v___y_831_);
@@ -3045,14 +3044,13 @@ LEAN_EXPORT lean_object* l___private_Lean_Server_CodeActions_Basic_0__Lean_Serve
 _start:
 {
 lean_object* v___f_954_; lean_object* v___x_955_; lean_object* v___x_956_; lean_object* v___x_957_; lean_object* v___x_958_; lean_object* v___f_959_; lean_object* v___x_960_; lean_object* v___y_962_; 
-lean_inc(v_name_952_);
+lean_inc_n(v_name_952_, 2);
 v___f_954_ = lean_alloc_closure((void*)(l___private_Lean_Server_CodeActions_Basic_0__Lean_Server_initFn___lam__0_00___x40_Lean_Server_CodeActions_Basic_1656927832____hygCtx___hyg_2____boxed), 5, 1);
 lean_closure_set(v___f_954_, 0, v_name_952_);
 v___x_955_ = lean_box(0);
 v___x_956_ = ((lean_object*)(l_Lean_Server_instFromJsonCodeActionResolveData_fromJson___closed__0));
 v___x_957_ = ((lean_object*)(l_Lean_Server_instFromJsonCodeActionResolveData_fromJson___closed__1));
 v___x_958_ = lean_box(v_builtin_951_);
-lean_inc(v_name_952_);
 v___f_959_ = lean_alloc_closure((void*)(l___private_Lean_Server_CodeActions_Basic_0__Lean_Server_initFn___lam__1_00___x40_Lean_Server_CodeActions_Basic_1656927832____hygCtx___hyg_2____boxed), 11, 5);
 lean_closure_set(v___f_959_, 0, v___x_958_);
 lean_closure_set(v___f_959_, 1, v___x_955_);

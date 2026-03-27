@@ -3883,13 +3883,12 @@ lean_object* v___x_1143_; uint8_t v___x_1144_; lean_object* v___x_1145_; lean_ob
 v___x_1143_ = lean_alloc_ctor(1, 0, 1);
 v___x_1144_ = lean_unbox(v_defValue_1138_);
 lean_ctor_set_uint8(v___x_1143_, 0, v___x_1144_);
-lean_inc(v_name_1134_);
+lean_inc_n(v_name_1134_, 2);
 v___x_1145_ = lean_alloc_ctor(0, 4, 0);
 lean_ctor_set(v___x_1145_, 0, v_name_1134_);
 lean_ctor_set(v___x_1145_, 1, v_ref_1136_);
 lean_ctor_set(v___x_1145_, 2, v___x_1143_);
 lean_ctor_set(v___x_1145_, 3, v_descr_1139_);
-lean_inc(v_name_1134_);
 v___x_1146_ = lean_register_option(v_name_1134_, v___x_1145_);
 if (lean_obj_tag(v___x_1146_) == 0)
 {

@@ -2531,7 +2531,7 @@ v_resetjp_734_:
 {
 lean_object* v_mvarId_737_; lean_object* v_fields_738_; lean_object* v___x_739_; lean_object* v___x_740_; lean_object* v___x_741_; uint8_t v___x_742_; size_t v_sz_743_; lean_object* v___x_744_; lean_object* v___x_745_; lean_object* v___x_746_; lean_object* v___f_747_; lean_object* v___x_748_; 
 v_mvarId_737_ = lean_ctor_get(v_toInductionSubgoal_733_, 0);
-lean_inc(v_mvarId_737_);
+lean_inc_n(v_mvarId_737_, 2);
 v_fields_738_ = lean_ctor_get(v_toInductionSubgoal_733_, 1);
 lean_inc_ref(v_fields_738_);
 v___x_739_ = lean_box(0);
@@ -2542,7 +2542,6 @@ v_sz_743_ = lean_array_size(v_fields_738_);
 v___x_744_ = lean_box_usize(v_sz_743_);
 v___x_745_ = ((lean_object*)(l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00Lean_Meta_ElimEmptyInductive_elim_spec__2___boxed__const__1));
 v___x_746_ = lean_box(v___x_742_);
-lean_inc(v_mvarId_737_);
 v___f_747_ = lean_alloc_closure((void*)(l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00Lean_Meta_ElimEmptyInductive_elim_spec__2___lam__0___boxed), 13, 7);
 lean_closure_set(v___f_747_, 0, v_toInductionSubgoal_733_);
 lean_closure_set(v___f_747_, 1, v_mvarId_737_);
@@ -5492,9 +5491,8 @@ _start:
 lean_object* v___x_1702_; lean_object* v_mctx_1703_; lean_object* v_decl_1704_; lean_object* v_depth_1705_; lean_object* v_depth_1706_; uint8_t v___x_1707_; lean_object* v___x_1708_; lean_object* v___x_1709_; 
 v___x_1702_ = lean_st_ref_get(v___y_1700_);
 v_mctx_1703_ = lean_ctor_get(v___x_1702_, 0);
-lean_inc_ref(v_mctx_1703_);
+lean_inc_ref_n(v_mctx_1703_, 2);
 lean_dec(v___x_1702_);
-lean_inc_ref(v_mctx_1703_);
 v_decl_1704_ = l_Lean_MetavarContext_getDecl(v_mctx_1703_, v_mvarId_1699_);
 v_depth_1705_ = lean_ctor_get(v_decl_1704_, 3);
 lean_inc(v_depth_1705_);

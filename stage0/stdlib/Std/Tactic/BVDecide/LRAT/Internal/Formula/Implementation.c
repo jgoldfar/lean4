@@ -3734,10 +3734,9 @@ else
 lean_object* v_val_1136_; lean_object* v___x_1137_; lean_object* v___x_1138_; lean_object* v___x_1139_; lean_object* v_negC_1140_; lean_object* v___x_1142_; 
 lean_del_object(v___x_1124_);
 v_val_1136_ = lean_ctor_get(v___x_1127_, 0);
-lean_inc(v_val_1136_);
+lean_inc_n(v_val_1136_, 2);
 lean_dec_ref(v___x_1127_);
 v___x_1137_ = ((lean_object*)(l_Std_Tactic_BVDecide_LRAT_Internal_DefaultFormula_ofArray___closed__0));
-lean_inc(v_val_1136_);
 v___x_1138_ = l___private_Init_Data_List_Impl_0__List_eraseTR_go___at___00Std_Tactic_BVDecide_LRAT_Internal_DefaultFormula_performRatCheck_spec__0___redArg(v_val_1136_, v_negPivot_1112_, v_val_1136_, v___x_1137_);
 lean_dec(v_val_1136_);
 v___x_1139_ = lean_box(0);

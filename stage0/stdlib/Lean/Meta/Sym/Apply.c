@@ -2038,7 +2038,7 @@ lean_dec_ref(v___x_713_);
 v_expr_715_ = lean_ctor_get(v_rule_705_, 0);
 lean_inc_ref(v_expr_715_);
 v_pattern_716_ = lean_ctor_get(v_rule_705_, 1);
-lean_inc_ref(v_pattern_716_);
+lean_inc_ref_n(v_pattern_716_, 2);
 v_resultPos_717_ = lean_ctor_get(v_rule_705_, 2);
 lean_inc(v_resultPos_717_);
 lean_dec_ref(v_rule_705_);
@@ -2046,7 +2046,6 @@ v_type_718_ = lean_ctor_get(v_a_714_, 2);
 lean_inc_ref(v_type_718_);
 lean_dec(v_a_714_);
 v___x_719_ = 1;
-lean_inc_ref(v_pattern_716_);
 v___x_720_ = l_Lean_Meta_Sym_Pattern_unify_x3f(v_pattern_716_, v_type_718_, v___x_719_, v___y_706_, v___y_707_, v___y_708_, v___y_709_, v___y_710_, v___y_711_);
 if (lean_obj_tag(v___x_720_) == 0)
 {

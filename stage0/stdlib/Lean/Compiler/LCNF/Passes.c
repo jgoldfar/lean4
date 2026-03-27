@@ -1270,9 +1270,8 @@ if (lean_obj_tag(v___x_341_) == 0)
 {
 lean_object* v_a_342_; lean_object* v___x_343_; 
 v_a_342_ = lean_ctor_get(v___x_341_, 0);
-lean_inc(v_a_342_);
+lean_inc_n(v_a_342_, 2);
 lean_dec_ref(v___x_341_);
-lean_inc(v_a_342_);
 v___x_343_ = l_Lean_Compiler_LCNF_Decl_saveImpure___redArg(v_a_342_, v___y_327_);
 if (lean_obj_tag(v___x_343_) == 0)
 {

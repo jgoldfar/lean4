@@ -2105,10 +2105,9 @@ if (lean_obj_tag(v___x_669_) == 0)
 {
 lean_object* v_a_670_; lean_object* v___x_671_; lean_object* v___f_672_; lean_object* v___x_673_; 
 v_a_670_ = lean_ctor_get(v___x_669_, 0);
-lean_inc(v_a_670_);
+lean_inc_n(v_a_670_, 2);
 lean_dec_ref(v___x_669_);
 v___x_671_ = lean_box(v_ac_641_);
-lean_inc(v_a_670_);
 lean_inc_ref(v_e_608_);
 v___f_672_ = lean_alloc_closure((void*)(l_Lean_Meta_Grind_AC_internalize___lam__0___boxed), 4, 3);
 lean_closure_set(v___f_672_, 0, v_e_608_);

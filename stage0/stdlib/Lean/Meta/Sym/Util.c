@@ -569,9 +569,8 @@ if (lean_obj_tag(v___x_64_) == 4)
 {
 lean_object* v_declName_65_; lean_object* v___x_66_; 
 v_declName_65_ = lean_ctor_get(v___x_64_, 0);
-lean_inc(v_declName_65_);
+lean_inc_n(v_declName_65_, 2);
 lean_dec_ref(v___x_64_);
-lean_inc(v_declName_65_);
 v___x_66_ = l_Lean_isReducible___at___00Lean_Meta_Sym_unfoldReducibleStep_spec__0(v_declName_65_, v_a_59_, v_a_60_, v_a_61_, v_a_62_);
 if (lean_obj_tag(v___x_66_) == 0)
 {
@@ -935,9 +934,8 @@ if (lean_obj_tag(v_e_150_) == 4)
 {
 lean_object* v_declName_151_; uint8_t v___x_152_; 
 v_declName_151_ = lean_ctor_get(v_e_150_, 0);
-lean_inc(v_declName_151_);
+lean_inc_n(v_declName_151_, 2);
 lean_dec_ref(v_e_150_);
-lean_inc(v_declName_151_);
 lean_inc_ref(v_env_149_);
 v___x_152_ = lean_get_reducibility_status(v_env_149_, v_declName_151_);
 if (v___x_152_ == 0)
@@ -3493,9 +3491,8 @@ if (lean_obj_tag(v___x_1092_) == 0)
 {
 lean_object* v_a_1093_; lean_object* v___f_1094_; lean_object* v___x_1095_; 
 v_a_1093_ = lean_ctor_get(v___x_1092_, 0);
-lean_inc(v_a_1093_);
+lean_inc_n(v_a_1093_, 2);
 lean_dec_ref(v___x_1092_);
-lean_inc(v_a_1093_);
 lean_inc(v_a_1075_);
 v___f_1094_ = lean_alloc_closure((void*)(l___private_Lean_Meta_Transform_0__Lean_Meta_transformWithCache_visit___at___00Lean_Meta_transform___at___00Lean_Meta_Sym_unfoldReducible_spec__0_spec__0___lam__2___boxed), 4, 3);
 lean_closure_set(v___f_1094_, 0, v_a_1075_);
@@ -8928,9 +8925,8 @@ if (lean_obj_tag(v___x_2904_) == 0)
 {
 lean_object* v_a_2905_; lean_object* v___x_2906_; lean_object* v___x_2908_; uint8_t v_isShared_2909_; uint8_t v_isSharedCheck_2914_; 
 v_a_2905_ = lean_ctor_get(v___x_2904_, 0);
-lean_inc(v_a_2905_);
+lean_inc_n(v_a_2905_, 2);
 lean_dec_ref(v___x_2904_);
-lean_inc(v_a_2905_);
 v___x_2906_ = l_Lean_MVarId_assign___at___00Lean_Meta_Sym_preprocessMVar_spec__0___redArg(v_mvarId_2884_, v_a_2905_, v_a_2888_);
 v_isSharedCheck_2914_ = !lean_is_exclusive(v___x_2906_);
 if (v_isSharedCheck_2914_ == 0)
@@ -12185,9 +12181,8 @@ if (lean_obj_tag(v___x_3994_) == 0)
 {
 lean_object* v_a_3995_; lean_object* v___f_3996_; lean_object* v___x_3997_; 
 v_a_3995_ = lean_ctor_get(v___x_3994_, 0);
-lean_inc(v_a_3995_);
+lean_inc_n(v_a_3995_, 2);
 lean_dec_ref(v___x_3994_);
-lean_inc(v_a_3995_);
 lean_inc(v_a_3982_);
 v___f_3996_ = lean_alloc_closure((void*)(l___private_Lean_Meta_Transform_0__Lean_Meta_transformWithCache_visit___at___00Lean_Meta_transform___at___00Lean_Meta_Sym_unfoldReducible_spec__0_spec__0___lam__2___boxed), 4, 3);
 lean_closure_set(v___f_3996_, 0, v_a_3982_);

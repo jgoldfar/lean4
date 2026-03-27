@@ -2597,9 +2597,8 @@ if (lean_obj_tag(v___x_728_) == 0)
 {
 lean_object* v_a_729_; lean_object* v___x_730_; lean_object* v___x_731_; lean_object* v___x_733_; uint8_t v_isShared_734_; uint8_t v_isSharedCheck_786_; 
 v_a_729_ = lean_ctor_get(v___x_728_, 0);
-lean_inc(v_a_729_);
+lean_inc_n(v_a_729_, 2);
 lean_dec_ref(v___x_728_);
-lean_inc(v_a_729_);
 v___x_730_ = l_Lean_Expr_app___override(v___y_699_, v_a_729_);
 v___x_731_ = l_Lean_MVarId_assign___at___00Lean_Meta_injectionCore_spec__0___redArg(v_mvarId_667_, v___x_730_, v___y_701_);
 v_isSharedCheck_786_ = !lean_is_exclusive(v___x_731_);
@@ -5685,7 +5684,7 @@ else
 lean_object* v_mvarId_1661_; lean_object* v_newEqs_1662_; lean_object* v_remainingNames_1663_; lean_object* v___x_1664_; lean_object* v___x_1665_; lean_object* v___x_1666_; lean_object* v___x_1667_; lean_object* v___x_1668_; 
 lean_del_object(v___x_1655_);
 v_mvarId_1661_ = lean_ctor_get(v_a_1653_, 0);
-lean_inc(v_mvarId_1661_);
+lean_inc_n(v_mvarId_1661_, 2);
 v_newEqs_1662_ = lean_ctor_get(v_a_1653_, 1);
 lean_inc_ref(v_newEqs_1662_);
 v_remainingNames_1663_ = lean_ctor_get(v_a_1653_, 2);
@@ -5694,7 +5693,6 @@ lean_dec_ref(v_a_1653_);
 v___x_1664_ = lean_array_to_list(v_newEqs_1662_);
 v___x_1665_ = l_List_appendTR___redArg(v___x_1664_, v_tail_1644_);
 v___x_1666_ = l_Lean_FVarIdSet_insert(v_forbidden_1645_, v_head_1642_);
-lean_inc(v_mvarId_1661_);
 v___x_1667_ = lean_alloc_closure((void*)(l___private_Lean_Meta_Tactic_Injection_0__Lean_Meta_injections_go___boxed), 10, 5);
 lean_closure_set(v___x_1667_, 0, v_n_1646_);
 lean_closure_set(v___x_1667_, 1, v___x_1665_);

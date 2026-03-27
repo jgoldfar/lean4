@@ -813,7 +813,7 @@ lean_inc(v_nargs_343_);
 v___x_344_ = lean_mk_array(v_nargs_343_, v_dummy_342_);
 v___x_345_ = lean_nat_sub(v_nargs_343_, v___x_225_);
 lean_dec(v_nargs_343_);
-lean_inc_ref(v_self_249_);
+lean_inc_ref_n(v_self_249_, 2);
 v___x_346_ = l___private_Lean_Expr_0__Lean_Expr_getAppArgsAux(v_self_249_, v___x_344_, v___x_345_);
 v___x_347_ = lean_unsigned_to_nat(0u);
 lean_inc(v_numParams_223_);
@@ -822,7 +822,6 @@ v___x_349_ = ((lean_object*)(l_Lean_Meta_Grind_propagateProjEq___closed__5));
 v___x_350_ = l___private_Init_WFExtrinsicFix_0__WellFounded_opaqueFix_u2082___at___00Lean_Meta_Grind_propagateProjEq_spec__3___redArg(v___x_348_, v___x_349_);
 v___x_351_ = l_Lean_mkAppN(v_projFn_214_, v___x_350_);
 lean_dec_ref(v___x_350_);
-lean_inc_ref(v_self_249_);
 v___x_352_ = l_Lean_Expr_app___override(v___x_351_, v_self_249_);
 v___x_353_ = l_Lean_Meta_Sym_shareCommon___redArg(v___x_352_, v_a_208_);
 if (lean_obj_tag(v___x_353_) == 0)

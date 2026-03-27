@@ -12088,7 +12088,7 @@ lean_dec_ref(v___x_3079_);
 v_kind_3081_ = lean_ctor_get_uint8(v_a_3080_, sizeof(void*)*7);
 lean_dec(v_a_3080_);
 v___x_3082_ = lean_obj_once(&l_Lean_Meta_Match_solveOverlap___closed__1, &l_Lean_Meta_Match_solveOverlap___closed__1_once, _init_l_Lean_Meta_Match_solveOverlap___closed__1);
-lean_inc(v_mvarId_3048_);
+lean_inc_n(v_mvarId_3048_, 2);
 v___x_3083_ = l_Lean_mkMVar(v_mvarId_3048_);
 v___x_3084_ = l_Lean_MessageData_ofExpr(v___x_3083_);
 v___x_3085_ = lean_alloc_ctor(7, 2, 0);
@@ -12108,7 +12108,6 @@ v___x_3092_ = lean_obj_once(&l_Lean_Meta_Match_solveOverlap___closed__5, &l_Lean
 v___x_3093_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_3093_, 0, v___x_3091_);
 lean_ctor_set(v___x_3093_, 1, v___x_3092_);
-lean_inc(v_mvarId_3048_);
 if (v_isShared_3059_ == 0)
 {
 lean_ctor_set_tag(v___x_3058_, 1);

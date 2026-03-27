@@ -6147,10 +6147,9 @@ _start:
 {
 lean_object* v_baseName_2262_; lean_object* v_keyName_2263_; lean_object* v___f_2264_; lean_object* v___x_2265_; lean_object* v___x_2266_; lean_object* v___x_2267_; lean_object* v___f_2268_; lean_object* v___x_2269_; 
 v_baseName_2262_ = lean_ctor_get(v_pkg_2254_, 1);
-lean_inc(v_baseName_2262_);
+lean_inc_n(v_baseName_2262_, 2);
 v_keyName_2263_ = lean_ctor_get(v_pkg_2254_, 2);
 lean_inc(v_optFacet_2251_);
-lean_inc(v_baseName_2262_);
 v___f_2264_ = lean_alloc_closure((void*)(l___private_Lake_Build_Package_0__Lake_Package_mkBuildArchiveFacetConfig___redArg___lam__0___boxed), 11, 3);
 lean_closure_set(v___f_2264_, 0, v_what_2250_);
 lean_closure_set(v___f_2264_, 1, v_baseName_2262_);
@@ -6481,10 +6480,9 @@ _start:
 {
 lean_object* v_baseName_2416_; lean_object* v_keyName_2417_; lean_object* v___f_2418_; lean_object* v___x_2419_; lean_object* v___x_2420_; lean_object* v___x_2421_; lean_object* v___f_2422_; lean_object* v___x_2423_; 
 v_baseName_2416_ = lean_ctor_get(v_pkg_2408_, 1);
-lean_inc(v_baseName_2416_);
+lean_inc_n(v_baseName_2416_, 2);
 v_keyName_2417_ = lean_ctor_get(v_pkg_2408_, 2);
 lean_inc(v___x_2405_);
-lean_inc(v_baseName_2416_);
 v___f_2418_ = lean_alloc_closure((void*)(l_Lake_Package_buildCacheFacetConfig___lam__1___boxed), 10, 2);
 lean_closure_set(v___f_2418_, 0, v_baseName_2416_);
 lean_closure_set(v___f_2418_, 1, v___x_2405_);
@@ -7153,10 +7151,9 @@ _start:
 {
 lean_object* v_baseName_2705_; lean_object* v_keyName_2706_; lean_object* v___f_2707_; lean_object* v___x_2708_; lean_object* v___x_2709_; lean_object* v___x_2710_; lean_object* v___f_2711_; lean_object* v___x_2712_; 
 v_baseName_2705_ = lean_ctor_get(v_pkg_2697_, 1);
-lean_inc(v_baseName_2705_);
+lean_inc_n(v_baseName_2705_, 2);
 v_keyName_2706_ = lean_ctor_get(v_pkg_2697_, 2);
 lean_inc(v___x_2694_);
-lean_inc(v_baseName_2705_);
 v___f_2707_ = lean_alloc_closure((void*)(l_Lake_Package_barrelFacetConfig___lam__1___boxed), 10, 2);
 lean_closure_set(v___f_2707_, 0, v_baseName_2705_);
 lean_closure_set(v___f_2707_, 1, v___x_2694_);
@@ -7804,10 +7801,9 @@ _start:
 {
 lean_object* v_baseName_2972_; lean_object* v_keyName_2973_; lean_object* v___f_2974_; lean_object* v___x_2975_; lean_object* v___x_2976_; lean_object* v___x_2977_; lean_object* v___f_2978_; lean_object* v___x_2979_; 
 v_baseName_2972_ = lean_ctor_get(v_pkg_2964_, 1);
-lean_inc(v_baseName_2972_);
+lean_inc_n(v_baseName_2972_, 2);
 v_keyName_2973_ = lean_ctor_get(v_pkg_2964_, 2);
 lean_inc(v___x_2961_);
-lean_inc(v_baseName_2972_);
 v___f_2974_ = lean_alloc_closure((void*)(l_Lake_Package_gitHubReleaseFacetConfig___lam__1___boxed), 10, 2);
 lean_closure_set(v___f_2974_, 0, v_baseName_2972_);
 lean_closure_set(v___f_2974_, 1, v___x_2961_);

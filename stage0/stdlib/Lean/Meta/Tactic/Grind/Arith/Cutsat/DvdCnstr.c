@@ -2481,10 +2481,9 @@ lean_object* v_a_778_; lean_object* v___f_779_; lean_object* v___f_780_; uint8_t
 v_a_778_ = lean_ctor_get(v___x_777_, 0);
 lean_inc(v_a_778_);
 lean_dec_ref(v___x_777_);
-lean_inc(v_v_775_);
+lean_inc_n(v_v_775_, 2);
 v___f_779_ = lean_alloc_closure((void*)(l_Lean_Meta_Grind_Arith_Cutsat_DvdCnstr_assert___lam__0___boxed), 2, 1);
 lean_closure_set(v___f_779_, 0, v_v_775_);
-lean_inc(v_v_775_);
 lean_inc(v_a_769_);
 v___f_780_ = lean_alloc_closure((void*)(l_Lean_Meta_Grind_Arith_Cutsat_DvdCnstr_assert___lam__1___boxed), 3, 2);
 lean_closure_set(v___f_780_, 0, v_a_769_);

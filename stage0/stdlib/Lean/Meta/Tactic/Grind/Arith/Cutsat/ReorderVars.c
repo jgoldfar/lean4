@@ -9228,14 +9228,12 @@ if (lean_obj_tag(v___x_3323_) == 0)
 {
 lean_object* v_a_3324_; lean_object* v___x_3325_; lean_object* v___f_3326_; lean_object* v___f_3327_; lean_object* v___x_3328_; lean_object* v___x_3329_; lean_object* v___x_3330_; lean_object* v___x_3331_; lean_object* v___x_3332_; lean_object* v___x_3333_; 
 v_a_3324_ = lean_ctor_get(v___x_3323_, 0);
-lean_inc(v_a_3324_);
+lean_inc_n(v_a_3324_, 2);
 lean_dec_ref(v___x_3323_);
 v___x_3325_ = l___private_Lean_Meta_Tactic_Grind_Arith_Cutsat_ReorderVars_0__Lean_Meta_Grind_Arith_Cutsat_mkPermInv(v_a_3324_);
-lean_inc_ref(v___x_3325_);
+lean_inc_ref_n(v___x_3325_, 2);
 v___f_3326_ = lean_alloc_closure((void*)(l_Lean_Meta_Grind_Arith_Cutsat_reorderVars___lam__0___boxed), 2, 1);
 lean_closure_set(v___f_3326_, 0, v___x_3325_);
-lean_inc_ref(v___x_3325_);
-lean_inc(v_a_3324_);
 v___f_3327_ = lean_alloc_closure((void*)(l_Lean_Meta_Grind_Arith_Cutsat_reorderVars___lam__1___boxed), 4, 3);
 lean_closure_set(v___f_3327_, 0, v_a_3324_);
 lean_closure_set(v___f_3327_, 1, v___f_3326_);

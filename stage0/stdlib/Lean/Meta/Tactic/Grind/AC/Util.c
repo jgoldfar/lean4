@@ -3770,9 +3770,8 @@ lean_object* v_size_1400_; lean_object* v___f_1401_; lean_object* v___x_1402_;
 lean_dec(v___x_1395_);
 lean_del_object(v___x_1391_);
 v_size_1400_ = lean_ctor_get(v_vars_1393_, 2);
-lean_inc(v_size_1400_);
+lean_inc_n(v_size_1400_, 2);
 lean_dec_ref(v_vars_1393_);
-lean_inc(v_size_1400_);
 lean_inc_ref(v_e_1375_);
 v___f_1401_ = lean_alloc_closure((void*)(l_Lean_Meta_Grind_AC_mkVar___lam__0), 3, 2);
 lean_closure_set(v___f_1401_, 0, v_e_1375_);
@@ -5381,11 +5380,10 @@ if (lean_obj_tag(v___x_1971_) == 0)
 {
 lean_object* v_a_1972_; lean_object* v___x_1973_; lean_object* v___x_1974_; lean_object* v___x_1975_; lean_object* v___x_1976_; lean_object* v___x_1977_; lean_object* v___x_1978_; 
 v_a_1972_ = lean_ctor_get(v___x_1971_, 0);
-lean_inc(v_a_1972_);
+lean_inc_n(v_a_1972_, 2);
 lean_dec_ref(v___x_1971_);
 v___x_1973_ = ((lean_object*)(l___private_Lean_Meta_Tactic_Grind_AC_Util_0__Lean_Meta_Grind_AC_getOpId_x3f_go___closed__18));
 v___x_1974_ = lean_box(0);
-lean_inc(v_a_1972_);
 v___x_1975_ = lean_alloc_ctor(1, 2, 0);
 lean_ctor_set(v___x_1975_, 0, v_a_1972_);
 lean_ctor_set(v___x_1975_, 1, v___x_1974_);
@@ -5490,11 +5488,10 @@ if (lean_obj_tag(v___x_2001_) == 0)
 {
 lean_object* v_a_2002_; lean_object* v___x_2003_; lean_object* v___x_2004_; lean_object* v___x_2005_; lean_object* v___x_2006_; 
 v_a_2002_ = lean_ctor_get(v___x_2001_, 0);
-lean_inc(v_a_2002_);
+lean_inc_n(v_a_2002_, 2);
 lean_dec_ref(v___x_2001_);
 v___x_2003_ = ((lean_object*)(l___private_Lean_Meta_Tactic_Grind_AC_Util_0__Lean_Meta_Grind_AC_getOpId_x3f_go___closed__24));
 v___x_2004_ = l_Lean_mkConst(v___x_2003_, v___x_1975_);
-lean_inc(v_a_2002_);
 lean_inc_ref(v_op_1748_);
 lean_inc_ref(v_binderType_1934_);
 v___x_2005_ = l_Lean_mkApp3(v___x_2004_, v_binderType_1934_, v_op_1748_, v_a_2002_);
@@ -6718,9 +6715,8 @@ if (lean_obj_tag(v___x_2271_) == 0)
 {
 lean_object* v_a_2272_; lean_object* v___f_2273_; lean_object* v___x_2274_; lean_object* v___x_2275_; 
 v_a_2272_ = lean_ctor_get(v___x_2271_, 0);
-lean_inc(v_a_2272_);
+lean_inc_n(v_a_2272_, 2);
 lean_dec_ref(v___x_2271_);
-lean_inc(v_a_2272_);
 v___f_2273_ = lean_alloc_closure((void*)(l_Lean_Meta_Grind_AC_getOpId_x3f___lam__0), 3, 2);
 lean_closure_set(v___f_2273_, 0, v_op_2248_);
 lean_closure_set(v___f_2273_, 1, v_a_2272_);

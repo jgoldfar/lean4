@@ -3722,13 +3722,12 @@ if (lean_obj_tag(v_arg_1288_) == 1)
 lean_object* v_n_1289_; lean_object* v___x_1290_; lean_object* v_env_1291_; lean_object* v___x_1292_; 
 lean_del_object(v___x_1279_);
 v_n_1289_ = lean_ctor_get(v_arg_1288_, 0);
-lean_inc(v_n_1289_);
+lean_inc_n(v_n_1289_, 2);
 lean_dec_ref(v_arg_1288_);
 v___x_1290_ = lean_st_ref_get(v_a_1272_);
 v_env_1291_ = lean_ctor_get(v___x_1290_, 0);
 lean_inc_ref(v_env_1291_);
 lean_dec(v___x_1290_);
-lean_inc(v_n_1289_);
 v___x_1292_ = l_Lean_Compiler_LCNF_getSimpleGroundExprWithResolvedRefs(v_env_1291_, v_n_1289_);
 if (lean_obj_tag(v___x_1292_) == 1)
 {

@@ -2615,21 +2615,19 @@ else
 {
 lean_object* v_declName_890_; lean_object* v___y_892_; lean_object* v___y_893_; lean_object* v___y_894_; lean_object* v___y_895_; lean_object* v___y_896_; lean_object* v___y_897_; lean_object* v___y_898_; lean_object* v___y_899_; lean_object* v___y_900_; lean_object* v___y_901_; lean_object* v___y_902_; lean_object* v___y_903_; lean_object* v___y_919_; lean_object* v___y_920_; uint8_t v___y_921_; lean_object* v___y_954_; uint8_t v___y_955_; lean_object* v_a_956_; lean_object* v___y_984_; uint8_t v___y_985_; lean_object* v___y_986_; lean_object* v___y_997_; lean_object* v___x_1021_; 
 v_declName_890_ = lean_ctor_get(v_thm_842_, 0);
-lean_inc(v_declName_890_);
+lean_inc_n(v_declName_890_, 2);
 lean_dec_ref(v_thm_842_);
-lean_inc(v_declName_890_);
 v___x_1021_ = l_Lean_Meta_mkConstWithFreshMVarLevels(v_declName_890_, v___y_849_, v___y_850_, v___y_851_, v___y_852_);
 if (lean_obj_tag(v___x_1021_) == 0)
 {
 lean_object* v_a_1022_; lean_object* v___y_1024_; uint8_t v___y_1025_; lean_object* v___y_1026_; lean_object* v___y_1027_; lean_object* v___y_1028_; lean_object* v_a_1099_; lean_object* v___x_1130_; 
 v_a_1022_ = lean_ctor_get(v___x_1021_, 0);
-lean_inc(v_a_1022_);
+lean_inc_n(v_a_1022_, 2);
 lean_dec_ref(v___x_1021_);
 lean_inc(v___y_852_);
 lean_inc_ref(v___y_851_);
 lean_inc(v___y_850_);
 lean_inc_ref(v___y_849_);
-lean_inc(v_a_1022_);
 v___x_1130_ = lean_infer_type(v_a_1022_, v___y_849_, v___y_850_, v___y_851_, v___y_852_);
 if (lean_obj_tag(v___x_1130_) == 0)
 {
@@ -3233,9 +3231,8 @@ lean_dec_ref(v_a_1099_);
 v_fst_1102_ = lean_ctor_get(v_snd_1100_, 0);
 lean_inc(v_fst_1102_);
 v_snd_1103_ = lean_ctor_get(v_snd_1100_, 1);
-lean_inc(v_snd_1103_);
+lean_inc_n(v_snd_1103_, 2);
 lean_dec(v_snd_1100_);
-lean_inc(v_snd_1103_);
 v___x_1104_ = l_Lean_Expr_cleanupAnnotations(v_snd_1103_);
 v___x_1105_ = l_Lean_Expr_isApp(v___x_1104_);
 if (v___x_1105_ == 0)
@@ -3742,13 +3739,12 @@ lean_inc(v_a_960_);
 lean_dec_ref(v___x_959_);
 v___x_961_ = l_Lean_instantiateMVars___at___00Lean_Meta_Grind_instantiateExtTheorem_spec__3___redArg(v_a_960_, v___y_850_);
 v_a_962_ = lean_ctor_get(v___x_961_, 0);
-lean_inc(v_a_962_);
+lean_inc_n(v_a_962_, 2);
 lean_dec_ref(v___x_961_);
 lean_inc(v___y_852_);
 lean_inc_ref(v___y_851_);
 lean_inc(v___y_850_);
 lean_inc_ref(v___y_849_);
-lean_inc(v_a_962_);
 v___x_963_ = lean_infer_type(v_a_962_, v___y_849_, v___y_850_, v___y_851_, v___y_852_);
 if (lean_obj_tag(v___x_963_) == 0)
 {

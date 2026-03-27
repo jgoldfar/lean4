@@ -1665,9 +1665,8 @@ v_resetjp_435_:
 {
 lean_object* v_expr_480_; uint8_t v___x_481_; 
 v_expr_480_ = lean_ctor_get(v_a_434_, 0);
-lean_inc_ref(v_expr_480_);
+lean_inc_ref_n(v_expr_480_, 2);
 lean_dec(v_a_434_);
-lean_inc_ref(v_expr_480_);
 v___x_481_ = l_Lean_Expr_isTrue(v_expr_480_);
 if (v___x_481_ == 0)
 {
@@ -2379,9 +2378,8 @@ v_resetjp_601_:
 {
 lean_object* v_expr_651_; uint8_t v___x_652_; 
 v_expr_651_ = lean_ctor_get(v_a_600_, 0);
-lean_inc_ref(v_expr_651_);
+lean_inc_ref_n(v_expr_651_, 2);
 lean_dec(v_a_600_);
-lean_inc_ref(v_expr_651_);
 v___x_652_ = l_Lean_Expr_isTrue(v_expr_651_);
 if (v___x_652_ == 0)
 {

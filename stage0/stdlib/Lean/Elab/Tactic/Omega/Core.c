@@ -5018,10 +5018,9 @@ lean_inc(v_a_1746_);
 lean_dec_ref(v___x_1745_);
 v___x_1747_ = lean_obj_once(&l_Lean_Elab_Tactic_Omega_Justification_bmodProof___closed__16, &l_Lean_Elab_Tactic_Omega_Justification_bmodProof___closed__16_once, _init_l_Lean_Elab_Tactic_Omega_Justification_bmodProof___closed__16);
 lean_inc_ref(v_i_1735_);
-lean_inc_ref(v_v_1725_);
+lean_inc_ref_n(v_v_1725_, 2);
 v___x_1748_ = l_Lean_mkAppB(v___x_1747_, v_v_1725_, v_i_1735_);
 v___x_1749_ = lean_obj_once(&l_Lean_Elab_Tactic_Omega_Justification_bmodProof___closed__19, &l_Lean_Elab_Tactic_Omega_Justification_bmodProof___closed__19_once, _init_l_Lean_Elab_Tactic_Omega_Justification_bmodProof___closed__19);
-lean_inc_ref(v_v_1725_);
 lean_inc_ref(v_x_1738_);
 lean_inc_ref(v_m_1732_);
 v___x_1750_ = l_Lean_mkApp3(v___x_1749_, v_m_1732_, v_x_1738_, v_v_1725_);
@@ -5138,10 +5137,9 @@ v_toSeqLeft_1810_ = lean_ctor_get(v_toApplicative_1807_, 3);
 v_toSeqRight_1811_ = lean_ctor_get(v_toApplicative_1807_, 4);
 v___f_1812_ = ((lean_object*)(l_Lean_Elab_Tactic_Omega_Justification_proof___redArg___closed__2));
 v___f_1813_ = ((lean_object*)(l_Lean_Elab_Tactic_Omega_Justification_proof___redArg___closed__3));
-lean_inc_ref(v_toFunctor_1808_);
+lean_inc_ref_n(v_toFunctor_1808_, 2);
 v___f_1814_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__0), 6, 1);
 lean_closure_set(v___f_1814_, 0, v_toFunctor_1808_);
-lean_inc_ref(v_toFunctor_1808_);
 v___f_1815_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__1), 6, 1);
 lean_closure_set(v___f_1815_, 0, v_toFunctor_1808_);
 v___x_1816_ = lean_alloc_ctor(0, 2, 0);
@@ -5788,14 +5786,12 @@ v_resetjp_2006_:
 {
 lean_object* v___x_2009_; lean_object* v___x_2010_; lean_object* v___x_2011_; lean_object* v___x_2013_; 
 lean_inc(v_coeffs_2003_);
-lean_inc(v_b_1998_);
+lean_inc_n(v_b_1998_, 2);
 lean_inc(v_coeffs_2000_);
-lean_inc(v_a_1996_);
+lean_inc_n(v_a_1996_, 2);
 v___x_2009_ = l_Lean_Omega_IntList_combo(v_a_1996_, v_coeffs_2000_, v_b_1998_, v_coeffs_2003_);
 lean_inc_ref(v_constraint_2004_);
-lean_inc(v_b_1998_);
 lean_inc_ref(v_constraint_2001_);
-lean_inc(v_a_1996_);
 v___x_2010_ = l_Lean_Omega_Constraint_combo(v_a_1996_, v_constraint_2001_, v_b_1998_, v_constraint_2004_);
 v___x_2011_ = lean_alloc_ctor(3, 8, 0);
 lean_ctor_set(v___x_2011_, 0, v_constraint_2001_);
@@ -6378,9 +6374,8 @@ if (lean_obj_tag(v___x_2291_) == 0)
 {
 lean_object* v_a_2292_; lean_object* v___x_2293_; 
 v_a_2292_ = lean_ctor_get(v___x_2291_, 0);
-lean_inc(v_a_2292_);
+lean_inc_n(v_a_2292_, 2);
 lean_dec_ref(v___x_2291_);
-lean_inc(v_a_2292_);
 v___x_2293_ = l_Lean_Elab_Tactic_Omega_Justification_proof___redArg(v_x_2278_, v_a_2292_, v_assumptions_2280_, v_j_2279_, v_a_2281_, v_a_2282_, v_a_2283_, v_a_2284_, v_a_2285_, v_a_2286_, v_a_2287_, v_a_2288_, v_a_2289_);
 if (lean_obj_tag(v___x_2293_) == 0)
 {
@@ -7639,10 +7634,9 @@ return v_p_2698_;
 else
 {
 lean_object* v_r_2719_; uint8_t v___x_2720_; 
-lean_inc_ref(v_constraint_2712_);
+lean_inc_ref_n(v_constraint_2712_, 2);
 lean_inc_ref(v_constraint_2702_);
 v_r_2719_ = l_Lean_Omega_Constraint_combine(v_constraint_2702_, v_constraint_2712_);
-lean_inc_ref(v_constraint_2712_);
 lean_inc_ref(v_r_2719_);
 v___x_2720_ = l_Lean_Omega_instDecidableEqConstraint_decEq(v_r_2719_, v_constraint_2712_);
 if (v___x_2720_ == 0)
@@ -7656,9 +7650,8 @@ if (v___x_2721_ == 0)
 lean_object* v___x_2722_; lean_object* v___x_2724_; 
 lean_inc_ref(v_justification_2703_);
 lean_inc_ref(v_constraint_2702_);
-lean_inc(v_coeffs_2701_);
+lean_inc_n(v_coeffs_2701_, 2);
 lean_dec_ref(v_x_2699_);
-lean_inc(v_coeffs_2701_);
 v___x_2722_ = lean_alloc_ctor(2, 5, 0);
 lean_ctor_set(v___x_2722_, 0, v_constraint_2702_);
 lean_ctor_set(v___x_2722_, 1, v_constraint_2712_);
@@ -7765,11 +7758,10 @@ if (lean_obj_tag(v_x_2745_) == 0)
 {
 lean_object* v_key_2747_; lean_object* v_tail_2748_; lean_object* v___x_2749_; lean_object* v___x_2750_; lean_object* v___x_2751_; 
 v_key_2747_ = lean_ctor_get(v_x_2746_, 0);
-lean_inc(v_key_2747_);
+lean_inc_n(v_key_2747_, 2);
 v_tail_2748_ = lean_ctor_get(v_x_2746_, 2);
 lean_inc(v_tail_2748_);
 lean_dec_ref(v_x_2746_);
-lean_inc(v_key_2747_);
 v___x_2749_ = l_Lean_Elab_Tactic_Omega_List_minNatAbs(v_key_2747_);
 v___x_2750_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_2750_, 0, v_key_2747_);
@@ -8402,13 +8394,12 @@ goto v_resetjp_2950_;
 v_resetjp_2950_:
 {
 lean_object* v___x_2953_; lean_object* v_sign_2954_; lean_object* v___x_2956_; 
-lean_inc(v___y_2938_);
+lean_inc_n(v___y_2938_, 2);
 v___x_2953_ = l_Lean_Omega_IntList_get(v_c_2936_, v___y_2938_);
 lean_dec(v_c_2936_);
 v_sign_2954_ = l_Int_sign(v___x_2953_);
 lean_dec(v___x_2953_);
 lean_inc(v_sign_2954_);
-lean_inc(v___y_2938_);
 if (v_isShared_2952_ == 0)
 {
 lean_ctor_set(v___x_2951_, 1, v_sign_2954_);
@@ -8918,9 +8909,8 @@ v___jp_3090_:
 {
 lean_object* v___x_3091_; lean_object* v___x_3092_; lean_object* v___x_3093_; lean_object* v___x_3094_; lean_object* v___x_3096_; 
 lean_inc(v_coeffs_3065_);
-lean_inc(v_m_3076_);
+lean_inc_n(v_m_3076_, 2);
 v___x_3091_ = l_Lean_Omega_bmod__coeffs(v_m_3076_, v_fst_3088_, v_coeffs_3065_);
-lean_inc(v_m_3076_);
 v___x_3092_ = l_Int_bmod(v_val_3070_, v_m_3076_);
 v___x_3093_ = l_Lean_Omega_Constraint_exact(v___x_3092_);
 v___x_3094_ = lean_alloc_ctor(4, 5, 0);
@@ -9664,7 +9654,7 @@ v_explanation_x3f_3446_ = lean_ctor_get(v_p_3435_, 6);
 v_prf_3447_ = lean_alloc_closure((void*)(l_Lean_Elab_Tactic_Omega_Problem_addInequality___lam__0___boxed), 11, 1);
 lean_closure_set(v_prf_3447_, 0, v_prf_x3f_3438_);
 v_i_3448_ = lean_array_get_size(v_assumptions_3439_);
-lean_inc(v_coeffs_3437_);
+lean_inc_n(v_coeffs_3437_, 2);
 lean_inc(v_const_3436_);
 v___x_3449_ = lean_alloc_closure((void*)(l_Lean_Elab_Tactic_Omega_Problem_addInequality__proof___boxed), 13, 3);
 lean_closure_set(v___x_3449_, 0, v_const_3436_);
@@ -9695,7 +9685,6 @@ v___x_3454_ = lean_box(0);
 v___x_3455_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_3455_, 0, v___x_3453_);
 lean_ctor_set(v___x_3455_, 1, v___x_3454_);
-lean_inc(v_coeffs_3437_);
 lean_inc_ref(v___x_3455_);
 v___x_3456_ = lean_alloc_ctor(0, 3, 0);
 lean_ctor_set(v___x_3456_, 0, v___x_3455_);
@@ -9726,7 +9715,7 @@ v_explanation_x3f_3472_ = lean_ctor_get(v_p_3461_, 6);
 v_prf_3473_ = lean_alloc_closure((void*)(l_Lean_Elab_Tactic_Omega_Problem_addInequality___lam__0___boxed), 11, 1);
 lean_closure_set(v_prf_3473_, 0, v_prf_x3f_3464_);
 v_i_3474_ = lean_array_get_size(v_assumptions_3465_);
-lean_inc(v_coeffs_3463_);
+lean_inc_n(v_coeffs_3463_, 2);
 lean_inc(v_const_3462_);
 v___x_3475_ = lean_alloc_closure((void*)(l_Lean_Elab_Tactic_Omega_Problem_addEquality__proof___boxed), 13, 3);
 lean_closure_set(v___x_3475_, 0, v_const_3462_);
@@ -9757,7 +9746,6 @@ lean_inc_ref(v___x_3479_);
 v___x_3480_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_3480_, 0, v___x_3479_);
 lean_ctor_set(v___x_3480_, 1, v___x_3479_);
-lean_inc(v_coeffs_3463_);
 lean_inc_ref(v___x_3480_);
 v___x_3481_ = lean_alloc_ctor(0, 3, 0);
 lean_ctor_set(v___x_3481_, 0, v___x_3480_);
@@ -10437,7 +10425,7 @@ lean_dec_ref(v___x_3752_);
 v___x_3754_ = ((lean_object*)(l_String_Slice_replace___at___00__private_Lean_Elab_Tactic_Omega_Core_0__Lean_Elab_Tactic_Omega_Justification_bullet_spec__0___redArg___closed__0));
 v___x_3755_ = lean_string_append(v___x_3753_, v___x_3754_);
 v___x_3756_ = ((lean_object*)(l_Lean_Elab_Tactic_Omega_Problem_instToStringFourierMotzkinData___lam__2___closed__1));
-lean_inc_ref(v___f_3741_);
+lean_inc_ref_n(v___f_3741_, 2);
 v___x_3757_ = l_List_toString___redArg(v___f_3741_, v_irrelevant_3748_);
 v___x_3758_ = lean_string_append(v___x_3756_, v___x_3757_);
 lean_dec_ref(v___x_3757_);
@@ -10445,7 +10433,6 @@ v___x_3759_ = lean_string_append(v___x_3758_, v___x_3754_);
 v___x_3760_ = lean_string_append(v___x_3755_, v___x_3759_);
 lean_dec_ref(v___x_3759_);
 v___x_3761_ = ((lean_object*)(l_Lean_Elab_Tactic_Omega_Problem_instToStringFourierMotzkinData___lam__2___closed__2));
-lean_inc_ref(v___f_3741_);
 v___x_3762_ = l_List_toString___redArg(v___f_3741_, v_lowerBounds_3749_);
 v___x_3763_ = lean_string_append(v___x_3761_, v___x_3762_);
 lean_dec_ref(v___x_3762_);
@@ -11057,13 +11044,12 @@ lean_object* v_constraints_3955_; lean_object* v_numVars_3956_; lean_object* v_b
 v_constraints_3955_ = lean_ctor_get(v_p_3954_, 2);
 lean_inc_ref(v_constraints_3955_);
 v_numVars_3956_ = lean_ctor_get(v_p_3954_, 1);
-lean_inc(v_numVars_3956_);
+lean_inc_n(v_numVars_3956_, 2);
 lean_dec_ref(v_p_3954_);
 v_buckets_3957_ = lean_ctor_get(v_constraints_3955_, 1);
 lean_inc_ref(v_buckets_3957_);
 lean_dec_ref(v_constraints_3955_);
 v___x_3958_ = ((lean_object*)(l_Lean_Elab_Tactic_Omega_Problem_fourierMotzkinData___closed__0));
-lean_inc(v_numVars_3956_);
 v___x_3959_ = l_List_range(v_numVars_3956_);
 v_data_3960_ = l_List_foldl___at___00Lean_Elab_Tactic_Omega_Problem_fourierMotzkinData_spec__2(v___x_3958_, v___x_3959_);
 lean_dec(v___x_3959_);

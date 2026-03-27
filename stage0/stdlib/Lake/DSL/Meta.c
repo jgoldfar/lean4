@@ -885,10 +885,9 @@ v___x_206_ = l_Lean_addMessageContextPartial___at___00Lean_throwError___at___00L
 v_a_207_ = lean_ctor_get(v___x_206_, 0);
 lean_inc(v_a_207_);
 lean_dec_ref(v___x_206_);
-lean_inc(v_macroStack_205_);
+lean_inc_n(v_macroStack_205_, 2);
 v___x_208_ = l_Lean_Elab_getBetterRef(v_a_204_, v_macroStack_205_);
 lean_dec(v_a_204_);
-lean_inc(v_macroStack_205_);
 v___x_209_ = l_Lean_Elab_addMacroStack___at___00Lean_throwError___at___00Lean_throwErrorAt___at___00__private_Lake_DSL_Meta_0__Lake_DSL_elabMetaIf_spec__0_spec__0_spec__2___redArg(v_a_207_, v_macroStack_205_, v___y_201_);
 v_a_210_ = lean_ctor_get(v___x_209_, 0);
 v_isSharedCheck_218_ = !lean_is_exclusive(v___x_209_);
@@ -2435,10 +2434,9 @@ goto v_resetjp_794_;
 v_resetjp_794_:
 {
 lean_object* v___x_797_; lean_object* v___x_798_; lean_object* v___x_799_; lean_object* v___x_800_; 
-lean_inc_ref(v___y_789_);
+lean_inc_ref_n(v___y_789_, 2);
 v___x_797_ = l_Lean_FileMap_toPosition(v___y_789_, v___y_786_);
 lean_dec(v___y_786_);
-lean_inc_ref(v___y_789_);
 v___x_798_ = l_Lean_FileMap_toPosition(v___y_789_, v___y_790_);
 lean_dec(v___y_790_);
 v___x_799_ = lean_alloc_ctor(1, 1, 0);
@@ -2808,9 +2806,8 @@ v_a_933_ = lean_ctor_get(v___x_932_, 0);
 lean_inc(v_a_933_);
 lean_dec_ref(v___x_932_);
 v_macroStack_934_ = lean_ctor_get(v___y_924_, 1);
-lean_inc(v_macroStack_934_);
+lean_inc_n(v_macroStack_934_, 2);
 v___x_935_ = l_Lean_Elab_getBetterRef(v_ref_931_, v_macroStack_934_);
-lean_inc(v_macroStack_934_);
 v___x_936_ = l_Lean_Elab_addMacroStack___at___00Lean_throwError___at___00Lean_throwErrorAt___at___00__private_Lake_DSL_Meta_0__Lake_DSL_elabRunIO_spec__3_spec__7_spec__10___redArg(v_a_933_, v_macroStack_934_, v___y_928_);
 v_a_937_ = lean_ctor_get(v___x_936_, 0);
 v_isSharedCheck_945_ = !lean_is_exclusive(v___x_936_);
@@ -4201,9 +4198,8 @@ lean_object* v___x_1444_; lean_object* v_a_1445_; lean_object* v___x_1446_;
 lean_dec_ref(v___x_1443_);
 v___x_1444_ = l_Lean_instantiateMVars___at___00__private_Lake_DSL_Meta_0__Lake_DSL_elabRunIO_spec__1___redArg(v_a_1442_, v_a_1314_);
 v_a_1445_ = lean_ctor_get(v___x_1444_, 0);
-lean_inc(v_a_1445_);
+lean_inc_n(v_a_1445_, 2);
 lean_dec_ref(v___x_1444_);
-lean_inc(v_a_1445_);
 v___x_1446_ = l_Lean_Meta_getMVars(v_a_1445_, v_a_1313_, v_a_1314_, v___x_1343_, v_a_1316_);
 if (lean_obj_tag(v___x_1446_) == 0)
 {

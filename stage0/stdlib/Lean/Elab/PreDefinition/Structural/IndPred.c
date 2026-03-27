@@ -3243,11 +3243,10 @@ if (lean_obj_tag(v___x_1180_) == 4)
 {
 lean_object* v_declName_1181_; lean_object* v_us_1182_; lean_object* v___x_1183_; lean_object* v_a_1184_; lean_object* v___x_1186_; uint8_t v_isShared_1187_; uint8_t v_isSharedCheck_1338_; 
 v_declName_1181_ = lean_ctor_get(v___x_1180_, 0);
-lean_inc(v_declName_1181_);
+lean_inc_n(v_declName_1181_, 2);
 v_us_1182_ = lean_ctor_get(v___x_1180_, 1);
 lean_inc(v_us_1182_);
 lean_dec_ref(v___x_1180_);
-lean_inc(v_declName_1181_);
 v___x_1183_ = l_Lean_Meta_getMatcherInfo_x3f___at___00Lean_Meta_matchMatcherApp_x3f___at___00__private_Lean_Elab_PreDefinition_Structural_IndPred_0__Lean_Elab_Structural_replaceIndPredRecApps_loop_spec__5_spec__9___redArg(v_declName_1181_, v___y_1172_);
 v_a_1184_ = lean_ctor_get(v___x_1183_, 0);
 v_isSharedCheck_1338_ = !lean_is_exclusive(v___x_1183_);
@@ -3317,14 +3316,13 @@ lean_dec(v___x_1207_);
 v___x_1209_ = lean_nat_add(v_numParams_1201_, v___x_1195_);
 v___x_1210_ = lean_nat_add(v___x_1209_, v_numDiscrs_1202_);
 lean_inc(v___x_1210_);
-lean_inc_ref(v_args_1197_);
+lean_inc_ref_n(v_args_1197_, 2);
 v___x_1211_ = l_Array_toSubarray___redArg(v_args_1197_, v___x_1209_, v___x_1210_);
 v___x_1212_ = l_Subarray_copy___redArg(v___x_1211_);
 v___x_1213_ = l_Lean_Meta_Match_MatcherInfo_numAlts(v_val_1188_);
 v___x_1214_ = lean_nat_add(v___x_1210_, v___x_1213_);
 lean_dec(v___x_1213_);
 lean_inc(v___x_1214_);
-lean_inc_ref(v_args_1197_);
 v___x_1215_ = l_Array_toSubarray___redArg(v_args_1197_, v___x_1210_, v___x_1214_);
 v___x_1216_ = l_Subarray_copy___redArg(v___x_1215_);
 v___x_1217_ = l_Array_toSubarray___redArg(v_args_1197_, v___x_1214_, v___x_1198_);
@@ -3548,20 +3546,18 @@ lean_object* v___x_1265_; lean_object* v_params_1266_; lean_object* v___x_1267_;
 lean_del_object(v___x_1238_);
 v___x_1265_ = lean_unsigned_to_nat(0u);
 lean_inc(v_numParams_1245_);
-lean_inc_ref(v_args_1253_);
+lean_inc_ref_n(v_args_1253_, 3);
 v_params_1266_ = l_Array_toSubarray___redArg(v_args_1253_, v___x_1265_, v_numParams_1245_);
 v___x_1267_ = l_Lean_instInhabitedExpr;
 v_motive_1268_ = lean_array_get(v___x_1267_, v_args_1253_, v_numParams_1245_);
 lean_dec(v_numParams_1245_);
 lean_inc(v___x_1256_);
-lean_inc_ref(v_args_1253_);
 v_discrs_1269_ = l_Array_toSubarray___redArg(v_args_1253_, v___x_1254_, v___x_1256_);
 v___x_1270_ = lean_nat_add(v_numIndices_1246_, v___x_1251_);
 lean_dec(v_numIndices_1246_);
 v___x_1271_ = lean_box(0);
 v_discrInfos_1272_ = lean_mk_array(v___x_1270_, v___x_1271_);
 lean_inc(v___x_1258_);
-lean_inc_ref(v_args_1253_);
 v_alts_1273_ = l_Array_toSubarray___redArg(v_args_1253_, v___x_1256_, v___x_1258_);
 v___x_1323_ = lean_nat_dec_le(v___x_1258_, v___x_1265_);
 if (v___x_1323_ == 0)
@@ -5050,7 +5046,7 @@ lean_inc(v___y_1720_);
 lean_inc(v___y_1719_);
 lean_inc_ref(v_containsRecFn_1591_);
 lean_inc_ref(v_recFnNames_1590_);
-lean_inc_ref(v_params_1589_);
+lean_inc_ref_n(v_params_1589_, 2);
 lean_inc_ref(v_positions_1588_);
 lean_inc_ref(v_recArgInfos_1587_);
 v___f_1729_ = lean_alloc_closure((void*)(l___private_Lean_Elab_PreDefinition_Structural_IndPred_0__Lean_Elab_Structural_replaceIndPredRecApps_loop___lam__3___boxed), 14, 7);
@@ -5063,7 +5059,6 @@ lean_closure_set(v___f_1729_, 5, v___y_1719_);
 lean_closure_set(v___f_1729_, 6, v___y_1720_);
 v___x_1730_ = lean_array_get_size(v_params_1728_);
 lean_inc_ref(v_ctx_1592_);
-lean_inc_ref(v_params_1589_);
 v___x_1731_ = l_Lean_Meta_IndPredBelow_mkBelowMatcher(v_val_1716_, v_params_1589_, v___x_1730_, v_ctx_1592_, v___f_1729_, v___y_1721_, v___y_1722_, v___y_1723_, v___y_1724_);
 if (lean_obj_tag(v___x_1731_) == 0)
 {
@@ -6173,13 +6168,12 @@ if (lean_obj_tag(v___x_2360_) == 0)
 {
 lean_object* v_a_2361_; lean_object* v___x_2362_; 
 v_a_2361_ = lean_ctor_get(v___x_2360_, 0);
-lean_inc(v_a_2361_);
+lean_inc_n(v_a_2361_, 2);
 lean_dec_ref(v___x_2360_);
 lean_inc(v___y_2353_);
 lean_inc_ref(v___y_2352_);
 lean_inc(v___y_2351_);
 lean_inc_ref(v___y_2350_);
-lean_inc(v_a_2361_);
 v___x_2362_ = lean_infer_type(v_a_2361_, v___y_2350_, v___y_2351_, v___y_2352_, v___y_2353_);
 if (lean_obj_tag(v___x_2362_) == 0)
 {

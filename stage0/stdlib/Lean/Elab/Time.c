@@ -662,10 +662,9 @@ goto v_resetjp_169_;
 v_resetjp_169_:
 {
 lean_object* v___x_172_; lean_object* v___x_173_; lean_object* v___x_174_; lean_object* v___x_175_; 
-lean_inc_ref(v_fileMap_164_);
+lean_inc_ref_n(v_fileMap_164_, 2);
 v___x_172_ = l_Lean_FileMap_toPosition(v_fileMap_164_, v___y_160_);
 lean_dec(v___y_160_);
-lean_inc_ref(v_fileMap_164_);
 v___x_173_ = l_Lean_FileMap_toPosition(v_fileMap_164_, v___y_162_);
 lean_dec(v___y_162_);
 v___x_174_ = lean_alloc_ctor(1, 1, 0);

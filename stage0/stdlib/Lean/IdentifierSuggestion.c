@@ -2661,12 +2661,11 @@ if (lean_obj_tag(v___x_722_) == 0)
 {
 lean_object* v_a_723_; lean_object* v___x_724_; lean_object* v___x_725_; lean_object* v___x_726_; lean_object* v___f_727_; lean_object* v___f_728_; lean_object* v___x_729_; lean_object* v___x_730_; lean_object* v___x_731_; 
 v_a_723_ = lean_ctor_get(v___x_722_, 0);
-lean_inc(v_a_723_);
+lean_inc_n(v_a_723_, 2);
 lean_dec_ref(v___x_722_);
 v___x_724_ = ((lean_object*)(l___private_Lean_IdentifierSuggestion_0__Lean_mkExistingToIncorrect___closed__4));
 v___x_725_ = ((lean_object*)(l_Lean_initFn___closed__2_00___x40_Lean_IdentifierSuggestion_3030853032____hygCtx___hyg_2_));
 v___x_726_ = ((lean_object*)(l_Lean_initFn___closed__3_00___x40_Lean_IdentifierSuggestion_3030853032____hygCtx___hyg_2_));
-lean_inc(v_a_723_);
 lean_inc(v_a_721_);
 v___f_727_ = lean_alloc_closure((void*)(l_Lean_initFn___lam__0_00___x40_Lean_IdentifierSuggestion_3030853032____hygCtx___hyg_2____boxed), 11, 5);
 lean_closure_set(v___f_727_, 0, v_a_721_);
@@ -3853,9 +3852,8 @@ v_a_1172_ = lean_ctor_get(v___x_1171_, 0);
 lean_inc(v_a_1172_);
 lean_dec_ref(v___x_1171_);
 v_macroStack_1173_ = lean_ctor_get(v___y_1163_, 1);
-lean_inc(v_macroStack_1173_);
+lean_inc_n(v_macroStack_1173_, 2);
 v___x_1174_ = l_Lean_Elab_getBetterRef(v_ref_1170_, v_macroStack_1173_);
-lean_inc(v_macroStack_1173_);
 v___x_1175_ = l_Lean_Elab_addMacroStack___at___00Lean_throwError___at___00Lean_throwErrorAt___at___00Lean_throwUnknownIdentifierAt___at___00Lean_throwUnknownNameWithSuggestions_spec__1_spec__4_spec__6_spec__9___redArg(v_a_1172_, v_macroStack_1173_, v___y_1167_);
 v_a_1176_ = lean_ctor_get(v___x_1175_, 0);
 v_isSharedCheck_1184_ = !lean_is_exclusive(v___x_1175_);
@@ -5673,9 +5671,8 @@ if (lean_obj_tag(v___x_1938_) == 0)
 {
 lean_object* v_a_1939_; lean_object* v___x_1940_; lean_object* v___x_1941_; lean_object* v_a_1942_; lean_object* v___x_1944_; uint8_t v_isShared_1945_; uint8_t v_isSharedCheck_1997_; 
 v_a_1939_ = lean_ctor_get(v___x_1938_, 0);
-lean_inc(v_a_1939_);
+lean_inc_n(v_a_1939_, 2);
 lean_dec_ref(v___x_1938_);
-lean_inc(v_a_1939_);
 v___x_1940_ = l_Lean_MessageData_ofName(v_a_1939_);
 v___x_1941_ = l_Lean_getSuggestions___at___00Lean_throwUnknownNameWithSuggestions_spec__0___redArg(v_a_1939_, v_a_1927_);
 v_a_1942_ = lean_ctor_get(v___x_1941_, 0);

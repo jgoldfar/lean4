@@ -1322,13 +1322,11 @@ if (lean_obj_tag(v___x_421_) == 0)
 {
 lean_object* v_a_422_; lean_object* v___f_423_; lean_object* v___f_424_; uint8_t v___x_425_; lean_object* v___x_426_; lean_object* v___x_427_; lean_object* v___x_428_; 
 v_a_422_ = lean_ctor_get(v___x_421_, 0);
-lean_inc(v_a_422_);
+lean_inc_n(v_a_422_, 2);
 lean_dec_ref(v___x_421_);
-lean_inc(v_name_406_);
+lean_inc_n(v_name_406_, 2);
 v___f_423_ = lean_alloc_closure((void*)(l_Lake_registerOrderedTagAttribute___lam__6___boxed), 5, 1);
 lean_closure_set(v___f_423_, 0, v_name_406_);
-lean_inc(v_name_406_);
-lean_inc(v_a_422_);
 v___f_424_ = lean_alloc_closure((void*)(l_Lake_registerOrderedTagAttribute___lam__7___boxed), 9, 3);
 lean_closure_set(v___f_424_, 0, v_validate_408_);
 lean_closure_set(v___f_424_, 1, v_a_422_);

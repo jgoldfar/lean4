@@ -6453,10 +6453,9 @@ v_resetjp_1741_:
 {
 lean_object* v_relPkgDir_1744_; lean_object* v___x_1745_; lean_object* v___x_1746_; lean_object* v___x_1748_; 
 v_relPkgDir_1744_ = l_Lake_joinRelative(v_relParentDir_1627_, v_dir_1740_);
-lean_inc_ref(v_relPkgDir_1744_);
+lean_inc_ref_n(v_relPkgDir_1744_, 2);
 v___x_1745_ = l_Lake_joinRelative(v_wsDir_1625_, v_relPkgDir_1744_);
 v___x_1746_ = ((lean_object*)(l_Lake_instInhabitedMaterializedDep_default___closed__0));
-lean_inc_ref(v_relPkgDir_1744_);
 if (v_isShared_1743_ == 0)
 {
 lean_ctor_set(v___x_1742_, 0, v_relPkgDir_1744_);
@@ -6754,7 +6753,7 @@ lean_object* v_url_1807_; lean_object* v_rev_1808_; lean_object* v_subDir_1809_;
 lean_del_object(v___x_1738_);
 lean_dec_ref(v_relParentDir_1627_);
 v_url_1807_ = lean_ctor_get(v_val_1736_, 0);
-lean_inc_ref(v_url_1807_);
+lean_inc_ref_n(v_url_1807_, 2);
 v_rev_1808_ = lean_ctor_get(v_val_1736_, 1);
 lean_inc(v_rev_1808_);
 v_subDir_1809_ = lean_ctor_get(v_val_1736_, 2);
@@ -6763,7 +6762,6 @@ lean_dec_ref(v_val_1736_);
 v___x_1810_ = 0;
 lean_inc(v_name_1664_);
 v_sname_1811_ = l_Lean_Name_toString(v_name_1664_, v___x_1810_);
-lean_inc_ref(v_url_1807_);
 v___x_1816_ = l_Lake_Git_filterUrl_x3f(v_url_1807_);
 if (lean_obj_tag(v___x_1816_) == 0)
 {

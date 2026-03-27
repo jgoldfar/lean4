@@ -2530,13 +2530,12 @@ else
 {
 lean_object* v_e_x27_909_; lean_object* v_proof_910_; uint8_t v_done_911_; uint8_t v_contextDependent_912_; lean_object* v___x_913_; 
 v_e_x27_909_ = lean_ctor_get(v_a_905_, 0);
-lean_inc_ref(v_e_x27_909_);
+lean_inc_ref_n(v_e_x27_909_, 2);
 v_proof_910_ = lean_ctor_get(v_a_905_, 1);
 lean_inc_ref(v_proof_910_);
 v_done_911_ = lean_ctor_get_uint8(v_a_905_, sizeof(void*)*2);
 v_contextDependent_912_ = lean_ctor_get_uint8(v_a_905_, sizeof(void*)*2 + 1);
 lean_dec_ref(v_a_905_);
-lean_inc_ref(v_e_x27_909_);
 lean_inc_ref(v_e_u2081_832_);
 v___x_913_ = l_Lean_Meta_Sym_Simp_mkEqTrans___redArg(v_e_u2081_832_, v_e_u2082_892_, v_h_u2081_893_, v_e_x27_909_, v_proof_910_, v___y_899_, v___y_900_, v___y_901_, v___y_902_, v___y_903_);
 lean_dec(v___y_903_);
@@ -3465,12 +3464,11 @@ if (v_done_1173_ == 0)
 lean_object* v_e_x27_1174_; lean_object* v_proof_1175_; uint8_t v_contextDependent_1176_; lean_object* v___x_1177_; 
 lean_dec_ref(v___x_1163_);
 v_e_x27_1174_ = lean_ctor_get(v_a_1164_, 0);
-lean_inc_ref(v_e_x27_1174_);
+lean_inc_ref_n(v_e_x27_1174_, 2);
 v_proof_1175_ = lean_ctor_get(v_a_1164_, 1);
 lean_inc_ref(v_proof_1175_);
 v_contextDependent_1176_ = lean_ctor_get_uint8(v_a_1164_, sizeof(void*)*2 + 1);
 lean_dec_ref(v_a_1164_);
-lean_inc_ref(v_e_x27_1174_);
 v___x_1177_ = l___private_Lean_Meta_Sym_Simp_Main_0__Lean_Meta_Sym_Simp_simpImpl___lam__0(v___x_1165_, v_e_x27_1174_, v___y_1136_, v___y_1137_, v___y_1138_, v___y_1139_, v___y_1140_, v___y_1141_, v___y_1142_, v___y_1143_, v___y_1144_);
 if (lean_obj_tag(v___x_1177_) == 0)
 {
@@ -3530,13 +3528,12 @@ else
 {
 lean_object* v_e_x27_1182_; lean_object* v_proof_1183_; uint8_t v_done_1184_; uint8_t v_contextDependent_1185_; lean_object* v___x_1186_; 
 v_e_x27_1182_ = lean_ctor_get(v_a_1178_, 0);
-lean_inc_ref(v_e_x27_1182_);
+lean_inc_ref_n(v_e_x27_1182_, 2);
 v_proof_1183_ = lean_ctor_get(v_a_1178_, 1);
 lean_inc_ref(v_proof_1183_);
 v_done_1184_ = lean_ctor_get_uint8(v_a_1178_, sizeof(void*)*2);
 v_contextDependent_1185_ = lean_ctor_get_uint8(v_a_1178_, sizeof(void*)*2 + 1);
 lean_dec_ref(v_a_1178_);
-lean_inc_ref(v_e_x27_1182_);
 lean_inc_ref(v_e_u2081_832_);
 v___x_1186_ = l_Lean_Meta_Sym_Simp_mkEqTrans___redArg(v_e_u2081_832_, v_e_x27_1174_, v_proof_1175_, v_e_x27_1182_, v_proof_1183_, v___y_1140_, v___y_1141_, v___y_1142_, v___y_1143_, v___y_1144_);
 if (lean_obj_tag(v___x_1186_) == 0)

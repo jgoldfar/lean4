@@ -790,10 +790,9 @@ goto v_resetjp_150_;
 v_resetjp_150_:
 {
 lean_object* v___x_153_; lean_object* v___x_154_; lean_object* v___x_155_; lean_object* v___x_156_; 
-lean_inc_ref(v___y_144_);
+lean_inc_ref_n(v___y_144_, 2);
 v___x_153_ = l_Lean_FileMap_toPosition(v___y_144_, v___y_145_);
 lean_dec(v___y_145_);
-lean_inc_ref(v___y_144_);
 v___x_154_ = l_Lean_FileMap_toPosition(v___y_144_, v___y_146_);
 lean_dec(v___y_146_);
 v___x_155_ = lean_alloc_ctor(1, 1, 0);

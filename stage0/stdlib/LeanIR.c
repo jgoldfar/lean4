@@ -634,11 +634,10 @@ LEAN_EXPORT lean_object* l___private_LeanIR_0__mkIRData(lean_object* v_env_77_){
 _start:
 {
 lean_object* v_irEntries_79_; uint8_t v___x_80_; lean_object* v___x_81_; lean_object* v___x_82_; 
-lean_inc_ref(v_env_77_);
+lean_inc_ref_n(v_env_77_, 2);
 v_irEntries_79_ = lean_ir_export_entries(v_env_77_);
 v___x_80_ = 2;
 v___x_81_ = lean_box(0);
-lean_inc_ref(v_env_77_);
 v___x_82_ = l_Lean_mkModuleData(v_env_77_, v___x_80_, v___x_81_);
 if (lean_obj_tag(v___x_82_) == 0)
 {
@@ -863,7 +862,7 @@ else
 {
 lean_object* v___x_167_; lean_object* v___x_168_; lean_object* v___x_169_; lean_object* v___y_171_; lean_object* v_arg_209_; lean_object* v___x_210_; lean_object* v___x_211_; 
 v___x_167_ = lean_unsigned_to_nat(2u);
-lean_inc_ref(v_arg_152_);
+lean_inc_ref_n(v_arg_152_, 2);
 v___x_168_ = lean_alloc_ctor(0, 3, 0);
 lean_ctor_set(v___x_168_, 0, v_arg_152_);
 lean_ctor_set(v___x_168_, 1, v_searcher_165_);
@@ -871,7 +870,6 @@ lean_ctor_set(v___x_168_, 2, v___x_162_);
 v___x_169_ = l_String_Slice_Pos_nextn(v___x_168_, v_searcher_165_, v___x_167_);
 lean_dec_ref(v___x_168_);
 lean_inc(v___x_169_);
-lean_inc_ref(v_arg_152_);
 v_arg_209_ = lean_alloc_ctor(0, 3, 0);
 lean_ctor_set(v_arg_209_, 0, v_arg_152_);
 lean_ctor_set(v_arg_209_, 1, v___x_169_);
@@ -7155,11 +7153,10 @@ goto v_resetjp_2106_;
 v_resetjp_2106_:
 {
 lean_object* v___x_2109_; lean_object* v___x_2110_; lean_object* v___x_2112_; 
-lean_inc(v___x_2101_);
+lean_inc_n(v___x_2101_, 2);
 v___x_2109_ = lean_alloc_ctor(1, 2, 0);
 lean_ctor_set(v___x_2109_, 0, v___x_2101_);
 lean_ctor_set(v___x_2109_, 1, v_fst_2099_);
-lean_inc(v___x_2101_);
 v___x_2110_ = l_Lean_PersistentHashMap_insert___at___00Lean_SMap_insert___at___00Lean_Compiler_CSimp_initFn_00___x40_Lean_Compiler_CSimpAttr_309491121____hygCtx___hyg_2__spec__0_spec__0___redArg(v_snd_2100_, v___x_2102_, v___x_2101_);
 if (v_isShared_2108_ == 0)
 {
@@ -7504,10 +7501,9 @@ goto v_resetjp_2219_;
 v_resetjp_2219_:
 {
 lean_object* v___x_2222_; lean_object* v___x_2223_; lean_object* v___x_2224_; lean_object* v___x_2225_; 
-lean_inc_ref(v___y_2214_);
+lean_inc_ref_n(v___y_2214_, 2);
 v___x_2222_ = l_Lean_FileMap_toPosition(v___y_2214_, v___y_2210_);
 lean_dec(v___y_2210_);
-lean_inc_ref(v___y_2214_);
 v___x_2223_ = l_Lean_FileMap_toPosition(v___y_2214_, v___y_2215_);
 lean_dec(v___y_2215_);
 v___x_2224_ = lean_alloc_ctor(1, 1, 0);
@@ -9678,7 +9674,7 @@ lean_dec(v___y_2820_);
 v___x_2885_ = l_Lean_firstFrontendMacroScope;
 v___x_2886_ = lean_obj_once(&l_main___closed__22, &l_main___closed__22_once, _init_l_main___closed__22);
 v___x_2887_ = ((lean_object*)(l_main___closed__25));
-lean_inc(v___y_2821_);
+lean_inc_n(v___y_2821_, 3);
 v___x_2888_ = lean_alloc_ctor(0, 3, 0);
 lean_ctor_set(v___x_2888_, 0, v___y_2821_);
 lean_ctor_set(v___x_2888_, 1, v___x_2815_);
@@ -9709,7 +9705,6 @@ v___x_2901_ = lean_box(0);
 v___x_2902_ = l_Lean_Core_getMaxHeartbeats(v___x_2512_);
 v___x_2903_ = 0;
 v___x_2904_ = lean_box(0);
-lean_inc_n(v___y_2821_, 2);
 lean_inc_ref(v___x_2512_);
 lean_inc(v_head_2482_);
 v___x_2905_ = lean_alloc_ctor(0, 14, 2);

@@ -3213,9 +3213,8 @@ if (lean_obj_tag(v_a_952_) == 1)
 {
 lean_object* v_val_956_; lean_object* v___x_957_; lean_object* v___x_958_; uint8_t v___x_959_; 
 v_val_956_ = lean_ctor_get(v_a_952_, 0);
-lean_inc(v_val_956_);
+lean_inc_n(v_val_956_, 2);
 lean_dec_ref(v_a_952_);
-lean_inc(v_val_956_);
 v___x_957_ = l_Lean_Grind_Linarith_Expr_norm(v_val_956_);
 v___x_958_ = lean_box(0);
 v___x_959_ = l_Lean_Grind_Linarith_instBEqPoly_beq(v___x_957_, v___x_958_);
@@ -3979,9 +3978,8 @@ if (lean_obj_tag(v_a_1124_) == 1)
 {
 lean_object* v_val_1128_; lean_object* v___x_1129_; lean_object* v___x_1130_; lean_object* v___x_1131_; uint8_t v___x_1132_; 
 v_val_1128_ = lean_ctor_get(v_a_1124_, 0);
-lean_inc(v_val_1128_);
+lean_inc_n(v_val_1128_, 2);
 lean_dec_ref(v_a_1124_);
-lean_inc(v_val_1128_);
 lean_inc(v_val_1120_);
 v___x_1129_ = lean_alloc_ctor(3, 2, 0);
 lean_ctor_set(v___x_1129_, 0, v_val_1120_);
@@ -15676,9 +15674,8 @@ if (lean_obj_tag(v_a_4814_) == 1)
 {
 lean_object* v_val_4818_; lean_object* v___x_4819_; lean_object* v___x_4820_; lean_object* v___x_4821_; uint8_t v___x_4822_; 
 v_val_4818_ = lean_ctor_get(v_a_4814_, 0);
-lean_inc(v_val_4818_);
+lean_inc_n(v_val_4818_, 2);
 lean_dec_ref(v_a_4814_);
-lean_inc(v_val_4818_);
 lean_inc(v_val_4810_);
 v___x_4819_ = lean_alloc_ctor(3, 2, 0);
 lean_ctor_set(v___x_4819_, 0, v_val_4810_);
@@ -16112,9 +16109,8 @@ if (lean_obj_tag(v_a_4926_) == 1)
 {
 lean_object* v_val_4930_; lean_object* v___x_4932_; 
 v_val_4930_ = lean_ctor_get(v_a_4926_, 0);
-lean_inc(v_val_4930_);
+lean_inc_n(v_val_4930_, 2);
 lean_dec_ref(v_a_4926_);
-lean_inc(v_val_4930_);
 lean_inc(v_val_4922_);
 if (v_isShared_4911_ == 0)
 {
@@ -16783,9 +16779,8 @@ if (lean_obj_tag(v_a_5074_) == 1)
 {
 lean_object* v_val_5078_; lean_object* v___x_5080_; 
 v_val_5078_ = lean_ctor_get(v_a_5074_, 0);
-lean_inc(v_val_5078_);
+lean_inc_n(v_val_5078_, 2);
 lean_dec_ref(v_a_5074_);
-lean_inc(v_val_5078_);
 lean_inc(v_val_5070_);
 if (v_isShared_5059_ == 0)
 {
@@ -17843,9 +17838,8 @@ if (lean_obj_tag(v_a_5316_) == 1)
 lean_object* v_val_5320_; lean_object* v___x_5321_; lean_object* v___x_5322_; lean_object* v___x_5323_; lean_object* v___x_5324_; lean_object* v___x_5325_; 
 lean_del_object(v___x_5318_);
 v_val_5320_ = lean_ctor_get(v_a_5316_, 0);
-lean_inc(v_val_5320_);
+lean_inc_n(v_val_5320_, 2);
 lean_dec_ref(v_a_5316_);
-lean_inc(v_val_5320_);
 lean_inc(v_val_5312_);
 v___x_5321_ = lean_alloc_ctor(6, 2, 0);
 lean_ctor_set(v___x_5321_, 0, v_val_5312_);
@@ -17937,9 +17931,8 @@ if (lean_obj_tag(v_a_5337_) == 1)
 lean_object* v_val_5341_; lean_object* v___x_5342_; lean_object* v___x_5343_; lean_object* v___x_5344_; lean_object* v___x_5345_; 
 lean_del_object(v___x_5339_);
 v_val_5341_ = lean_ctor_get(v_a_5337_, 0);
-lean_inc(v_val_5341_);
+lean_inc_n(v_val_5341_, 2);
 lean_dec_ref(v_a_5337_);
-lean_inc(v_val_5341_);
 v___x_5342_ = l_Lean_Grind_Linarith_Expr_norm(v_val_5341_);
 v___x_5343_ = lean_alloc_ctor(1, 2, 0);
 lean_ctor_set(v___x_5343_, 0, v_a_5326_);
@@ -18440,9 +18433,8 @@ if (lean_obj_tag(v_a_5459_) == 1)
 lean_object* v_val_5463_; lean_object* v___x_5464_; lean_object* v___x_5465_; lean_object* v___x_5466_; lean_object* v___x_5467_; lean_object* v___x_5468_; 
 lean_del_object(v___x_5461_);
 v_val_5463_ = lean_ctor_get(v_a_5459_, 0);
-lean_inc(v_val_5463_);
+lean_inc_n(v_val_5463_, 2);
 lean_dec_ref(v_a_5459_);
-lean_inc(v_val_5463_);
 lean_inc(v_val_5455_);
 v___x_5464_ = lean_alloc_ctor(3, 2, 0);
 lean_ctor_set(v___x_5464_, 0, v_val_5455_);
@@ -18872,9 +18864,8 @@ if (lean_obj_tag(v_a_5570_) == 1)
 lean_object* v_val_5574_; lean_object* v___x_5576_; 
 lean_del_object(v___x_5572_);
 v_val_5574_ = lean_ctor_get(v_a_5570_, 0);
-lean_inc(v_val_5574_);
+lean_inc_n(v_val_5574_, 2);
 lean_dec_ref(v_a_5570_);
-lean_inc(v_val_5574_);
 lean_inc(v_val_5566_);
 if (v_isShared_5557_ == 0)
 {

@@ -3366,9 +3366,8 @@ lean_dec(v___x_1073_);
 v___x_1075_ = lean_array_get_size(v_params_1071_);
 v___x_1076_ = lean_unsigned_to_nat(0u);
 v___x_1077_ = ((lean_object*)(l___private_Lean_Compiler_LCNF_SpecInfo_0__Lean_Compiler_LCNF_findAtSorted_x3f___closed__0));
-lean_inc(v_name_1070_);
+lean_inc_n(v_name_1070_, 2);
 v___x_1078_ = l_Lean_Compiler_getSpecializationArgs_x3f(v_env_1074_, v_name_1070_);
-lean_inc(v_name_1070_);
 lean_inc_ref(v_autoSpecialize_1049_);
 v___x_1079_ = l_WellFounded_opaqueFix_u2083___at___00Lean_Compiler_LCNF_computeSpecEntries_spec__1___redArg(v___x_1075_, v_params_1071_, v_autoSpecialize_1049_, v_name_1070_, v___x_1078_, v___x_1076_, v___x_1077_, v___y_1054_, v___y_1055_, v___y_1056_, v___y_1057_);
 if (lean_obj_tag(v___x_1079_) == 0)

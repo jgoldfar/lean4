@@ -1429,16 +1429,14 @@ v_resetjp_470_:
 {
 lean_object* v___x_473_; lean_object* v___x_474_; lean_object* v___x_475_; lean_object* v___x_476_; lean_object* v___x_477_; lean_object* v___x_479_; 
 v___x_473_ = lean_obj_once(&l_Lean_Meta_nativeEqTrue___lam__0___closed__8, &l_Lean_Meta_nativeEqTrue___lam__0___closed__8_once, _init_l_Lean_Meta_nativeEqTrue___lam__0___closed__8);
-lean_inc(v_a_431_);
+lean_inc_n(v_a_431_, 3);
 v___x_474_ = lean_alloc_ctor(0, 3, 0);
 lean_ctor_set(v___x_474_, 0, v_a_431_);
 lean_ctor_set(v___x_474_, 1, v___x_409_);
 lean_ctor_set(v___x_474_, 2, v___x_473_);
-lean_inc(v_a_431_);
 v___x_475_ = lean_alloc_ctor(1, 2, 0);
 lean_ctor_set(v___x_475_, 0, v_a_431_);
 lean_ctor_set(v___x_475_, 1, v___x_410_);
-lean_inc(v_a_431_);
 v___x_476_ = l_Lean_markMeta(v_env_462_, v_a_431_);
 v___x_477_ = lean_obj_once(&l_Lean_Meta_nativeEqTrue___lam__0___closed__11, &l_Lean_Meta_nativeEqTrue___lam__0___closed__11_once, _init_l_Lean_Meta_nativeEqTrue___lam__0___closed__11);
 if (v_isShared_472_ == 0)

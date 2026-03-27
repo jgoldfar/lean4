@@ -3022,9 +3022,8 @@ if (lean_obj_tag(v___x_831_) == 0)
 {
 lean_object* v_a_832_; lean_object* v___f_833_; lean_object* v___x_834_; lean_object* v___x_835_; 
 v_a_832_ = lean_ctor_get(v___x_831_, 0);
-lean_inc(v_a_832_);
+lean_inc_n(v_a_832_, 2);
 lean_dec_ref(v___x_831_);
-lean_inc(v_a_832_);
 v___f_833_ = lean_alloc_closure((void*)(l_Lean_Meta_Grind_Order_getStructId_x3f___lam__0), 3, 2);
 lean_closure_set(v___f_833_, 0, v_type_798_);
 lean_closure_set(v___f_833_, 1, v_a_832_);

@@ -10764,12 +10764,11 @@ if (lean_obj_tag(v___x_3589_) == 1)
 {
 lean_object* v_val_3590_; lean_object* v_toTryThisSuggestion_3591_; lean_object* v_previewSpan_x3f_3592_; uint8_t v_diffGranularity_3593_; lean_object* v___x_3594_; 
 v_val_3590_ = lean_ctor_get(v___x_3589_, 0);
-lean_inc(v_val_3590_);
+lean_inc_n(v_val_3590_, 2);
 lean_dec_ref(v___x_3589_);
 v_toTryThisSuggestion_3591_ = lean_ctor_get(v_a_3344_, 0);
 v_previewSpan_x3f_3592_ = lean_ctor_get(v_a_3344_, 2);
 v_diffGranularity_3593_ = lean_ctor_get_uint8(v_a_3344_, sizeof(void*)*3);
-lean_inc(v_val_3590_);
 lean_inc_ref(v_toTryThisSuggestion_3591_);
 v___x_3594_ = l_Lean_Meta_Tactic_TryThis_Suggestion_processEdit(v_toTryThisSuggestion_3591_, v_val_3590_, v___y_3294_, v___y_3295_);
 if (lean_obj_tag(v___x_3594_) == 0)

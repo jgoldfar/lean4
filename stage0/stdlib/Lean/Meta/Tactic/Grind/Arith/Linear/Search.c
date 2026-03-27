@@ -22285,9 +22285,8 @@ if (lean_obj_tag(v___x_6961_) == 0)
 {
 lean_object* v_a_6962_; lean_object* v___f_6963_; lean_object* v___x_6964_; lean_object* v___x_6965_; 
 v_a_6962_ = lean_ctor_get(v___x_6961_, 0);
-lean_inc(v_a_6962_);
+lean_inc_n(v_a_6962_, 2);
 lean_dec_ref(v___x_6961_);
-lean_inc(v_a_6962_);
 lean_inc(v___y_6950_);
 v___f_6963_ = lean_alloc_closure((void*)(l_Lean_Meta_Grind_Arith_Linear_resolveConflict___lam__0___boxed), 3, 2);
 lean_closure_set(v___f_6963_, 0, v___y_6950_);
@@ -22338,10 +22337,9 @@ lean_object* v_c_6972_; lean_object* v_fvarId_6973_; lean_object* v___x_6974_; l
 v_c_6972_ = lean_ctor_get(v_a_6962_, 0);
 lean_inc_ref(v_c_6972_);
 v_fvarId_6973_ = lean_ctor_get(v_a_6962_, 1);
-lean_inc(v_fvarId_6973_);
+lean_inc_n(v_fvarId_6973_, 2);
 lean_dec(v_a_6962_);
 v___x_6974_ = lean_obj_once(&l_Lean_Meta_Grind_Arith_Linear_resolveConflict___closed__3, &l_Lean_Meta_Grind_Arith_Linear_resolveConflict___closed__3_once, _init_l_Lean_Meta_Grind_Arith_Linear_resolveConflict___closed__3);
-lean_inc(v_fvarId_6973_);
 v___x_6975_ = l_Lean_MessageData_ofName(v_fvarId_6973_);
 v___x_6976_ = lean_alloc_ctor(7, 2, 0);
 lean_ctor_set(v___x_6976_, 0, v___x_6974_);

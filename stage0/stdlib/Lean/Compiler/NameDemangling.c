@@ -3238,9 +3238,8 @@ if (lean_obj_tag(v___x_965_) == 1)
 {
 lean_object* v_val_966_; lean_object* v___x_967_; lean_object* v___x_968_; lean_object* v___x_969_; lean_object* v___x_970_; lean_object* v___x_971_; lean_object* v___x_973_; 
 v_val_966_ = lean_ctor_get(v___x_965_, 0);
-lean_inc(v_val_966_);
+lean_inc_n(v_val_966_, 2);
 lean_dec_ref(v___x_965_);
-lean_inc(v_val_966_);
 v___x_967_ = l_Array_extract___redArg(v___x_961_, v___x_905_, v_val_966_);
 v___x_968_ = l_Array_extract___redArg(v___x_961_, v_val_966_, v___x_963_);
 lean_dec_ref(v___x_961_);
@@ -4872,12 +4871,11 @@ if (v___x_1425_ == 0)
 lean_object* v___x_1426_; lean_object* v_fst_1427_; lean_object* v_snd_1428_; lean_object* v___x_1453_; lean_object* v___x_1454_; 
 v___x_1426_ = l___private_Lean_Compiler_NameDemangling_0__Lean_Name_Demangle_stripColdSuffix(v_symbol_1422_);
 v_fst_1427_ = lean_ctor_get(v___x_1426_, 0);
-lean_inc(v_fst_1427_);
+lean_inc_n(v_fst_1427_, 2);
 v_snd_1428_ = lean_ctor_get(v___x_1426_, 1);
 lean_inc(v_snd_1428_);
 lean_dec_ref(v___x_1426_);
 v___x_1453_ = ((lean_object*)(l_Lean_Name_Demangle_demangleSymbol___closed__5));
-lean_inc(v_fst_1427_);
 v___x_1454_ = l___private_Lean_Compiler_NameDemangling_0__Lean_Name_Demangle_dropPrefix_x3f(v_fst_1427_, v___x_1453_);
 if (lean_obj_tag(v___x_1454_) == 1)
 {

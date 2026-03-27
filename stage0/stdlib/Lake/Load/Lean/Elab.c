@@ -7563,14 +7563,13 @@ lean_inc(v_pkgName_2119_);
 v_pkgDir_2120_ = lean_ctor_get(v_cfg_2102_, 6);
 lean_inc_ref(v_pkgDir_2120_);
 v_configFile_2121_ = lean_ctor_get(v_cfg_2102_, 8);
-lean_inc_ref(v_configFile_2121_);
+lean_inc_ref_n(v_configFile_2121_, 2);
 v_lakeOpts_2122_ = lean_ctor_get(v_cfg_2102_, 10);
 lean_inc(v_lakeOpts_2122_);
 v_leanOpts_2123_ = lean_ctor_get(v_cfg_2102_, 11);
 lean_inc_ref(v_leanOpts_2123_);
 v_reconfigure_2124_ = lean_ctor_get_uint8(v_cfg_2102_, sizeof(void*)*14);
 lean_dec_ref(v_cfg_2102_);
-lean_inc_ref(v_configFile_2121_);
 v___x_2125_ = l_System_FilePath_fileName(v_configFile_2121_);
 if (lean_obj_tag(v___x_2125_) == 0)
 {
@@ -7620,14 +7619,12 @@ v_a_2140_ = lean_ctor_get(v___x_2139_, 0);
 lean_inc(v_a_2140_);
 lean_dec_ref(v___x_2139_);
 v___x_2141_ = ((lean_object*)(l_Lake_importConfigFile___closed__3));
-lean_inc(v_val_2130_);
+lean_inc_n(v_val_2130_, 2);
 v___x_2142_ = l_System_FilePath_withExtension(v_val_2130_, v___x_2141_);
-lean_inc_ref(v_configDir_2137_);
+lean_inc_ref_n(v_configDir_2137_, 2);
 v___x_2143_ = l_Lake_joinRelative(v_configDir_2137_, v___x_2142_);
 v___x_2144_ = ((lean_object*)(l_Lake_importConfigFile___closed__4));
-lean_inc(v_val_2130_);
 v___x_2145_ = l_System_FilePath_withExtension(v_val_2130_, v___x_2144_);
-lean_inc_ref(v_configDir_2137_);
 v___x_2146_ = l_Lake_joinRelative(v_configDir_2137_, v___x_2145_);
 v___x_2286_ = l_System_FilePath_pathExists(v___x_2146_);
 v___x_2287_ = ((lean_object*)(l_Lake_importConfigFile___closed__5));
@@ -8491,9 +8488,8 @@ else
 {
 lean_object* v_a_2316_; lean_object* v___x_2317_; 
 v_a_2316_ = lean_ctor_get(v___x_2311_, 0);
-lean_inc(v_a_2316_);
+lean_inc_n(v_a_2316_, 2);
 lean_dec_ref(v___x_2311_);
-lean_inc(v_a_2316_);
 v___x_2317_ = l___private_Lake_Load_Lean_Elab_0__Lake_instFromJsonConfigTrace_fromJson(v_a_2316_);
 if (lean_obj_tag(v___x_2317_) == 0)
 {

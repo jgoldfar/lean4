@@ -8748,9 +8748,8 @@ lean_object* v_val_2539_; lean_object* v___x_2540_;
 lean_dec(v_declName_2449_);
 lean_dec(v_stx_2447_);
 v_val_2539_ = lean_ctor_get(v_a_2538_, 0);
-lean_inc(v_val_2539_);
+lean_inc_n(v_val_2539_, 2);
 lean_dec_ref(v_a_2538_);
-lean_inc(v_val_2539_);
 lean_inc_ref(v_ext_2448_);
 v___x_2540_ = l___private_Lean_Meta_Tactic_Grind_Attr_0__Lean_Meta_Grind_Extension_addCasesAttr(v_ext_2448_, v_val_2539_, v___x_2453_, v_attrKind_2450_, v___y_2457_, v___y_2458_);
 if (lean_obj_tag(v___x_2540_) == 0)
@@ -11013,7 +11012,7 @@ _start:
 lean_object* v___x_3296_; lean_object* v___x_3297_; lean_object* v___f_3298_; lean_object* v___x_3299_; lean_object* v___x_3300_; lean_object* v___f_3301_; lean_object* v___y_3303_; lean_object* v___y_3304_; lean_object* v___y_3347_; 
 v___x_3296_ = lean_box(1);
 v___x_3297_ = lean_box(v_showInfo_3292_);
-lean_inc(v_attrName_3290_);
+lean_inc_n(v_attrName_3290_, 2);
 lean_inc_ref(v_ext_3293_);
 v___f_3298_ = lean_alloc_closure((void*)(l___private_Lean_Meta_Tactic_Grind_Attr_0__Lean_Meta_Grind_mkGrindAttr___lam__1___boxed), 8, 4);
 lean_closure_set(v___f_3298_, 0, v___x_3296_);
@@ -11022,7 +11021,6 @@ lean_closure_set(v___f_3298_, 2, v___x_3297_);
 lean_closure_set(v___f_3298_, 3, v_attrName_3290_);
 v___x_3299_ = lean_box(v_showInfo_3292_);
 v___x_3300_ = lean_box(v_minIndexable_3291_);
-lean_inc(v_attrName_3290_);
 v___f_3301_ = lean_alloc_closure((void*)(l___private_Lean_Meta_Tactic_Grind_Attr_0__Lean_Meta_Grind_mkGrindAttr___lam__3___boxed), 11, 5);
 lean_closure_set(v___f_3301_, 0, v___x_3296_);
 lean_closure_set(v___f_3301_, 1, v_ext_3293_);
@@ -12771,12 +12769,11 @@ if (lean_obj_tag(v___x_3986_) == 0)
 {
 lean_object* v_a_3987_; uint8_t v___x_3988_; uint8_t v___x_3989_; lean_object* v___x_3990_; 
 v_a_3987_ = lean_ctor_get(v___x_3986_, 0);
-lean_inc(v_a_3987_);
+lean_inc_n(v_a_3987_, 2);
 lean_dec_ref(v___x_3986_);
 v___x_3988_ = 0;
 v___x_3989_ = 1;
 lean_inc(v_ref_3984_);
-lean_inc(v_a_3987_);
 lean_inc(v_attrName_3983_);
 v___x_3990_ = l___private_Lean_Meta_Tactic_Grind_Attr_0__Lean_Meta_Grind_mkGrindAttr(v_attrName_3983_, v___x_3988_, v___x_3989_, v_a_3987_, v_ref_3984_);
 if (lean_obj_tag(v___x_3990_) == 0)

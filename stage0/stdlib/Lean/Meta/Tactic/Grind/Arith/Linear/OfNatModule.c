@@ -2676,9 +2676,8 @@ if (lean_obj_tag(v___x_959_) == 0)
 {
 lean_object* v_a_960_; lean_object* v___x_961_; lean_object* v___x_962_; lean_object* v___f_963_; lean_object* v___x_964_; lean_object* v___x_965_; 
 v_a_960_ = lean_ctor_get(v___x_959_, 0);
-lean_inc(v_a_960_);
+lean_inc_n(v_a_960_, 2);
 lean_dec_ref(v___x_959_);
-lean_inc(v_a_960_);
 v___x_961_ = l_Lean_Expr_app___override(v_rfl__q_956_, v_a_960_);
 v___x_962_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_962_, 0, v_a_960_);
@@ -6422,11 +6421,10 @@ if (lean_obj_tag(v___x_2122_) == 0)
 {
 lean_object* v_a_2123_; lean_object* v___x_2124_; lean_object* v___x_2125_; uint8_t v___x_2126_; 
 v_a_2123_ = lean_ctor_get(v___x_2122_, 0);
-lean_inc(v_a_2123_);
+lean_inc_n(v_a_2123_, 2);
 lean_dec_ref(v___x_2122_);
 lean_inc(v_a_2121_);
 v___x_2124_ = l_Lean_Grind_Linarith_Expr_toPolyN(v_a_2121_);
-lean_inc(v_a_2123_);
 v___x_2125_ = l_Lean_Grind_Linarith_Expr_toPolyN(v_a_2123_);
 v___x_2126_ = l_Lean_Grind_Linarith_instBEqPoly_beq(v___x_2124_, v___x_2125_);
 lean_dec(v___x_2125_);

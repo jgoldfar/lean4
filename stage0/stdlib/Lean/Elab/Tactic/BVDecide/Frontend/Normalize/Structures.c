@@ -1267,9 +1267,9 @@ else
 lean_object* v___x_397_; lean_object* v___x_398_; lean_object* v___x_399_; lean_object* v___x_400_; uint8_t v___x_401_; lean_object* v___x_402_; lean_object* v___x_403_; lean_object* v___x_404_; lean_object* v___x_405_; lean_object* v___x_406_; lean_object* v___x_407_; lean_object* v___x_408_; lean_object* v___x_409_; lean_object* v___x_410_; lean_object* v___x_411_; 
 v___x_397_ = ((lean_object*)(l_WellFounded_opaqueFix_u2083___at___00Lean_Elab_Tactic_BVDecide_Frontend_Normalize_addStructureSimpLemmas_spec__2___redArg___closed__1));
 v___x_398_ = lean_unsigned_to_nat(5u);
-lean_inc(v_a_392_);
-lean_inc(v___x_391_);
-lean_inc(v_a_390_);
+lean_inc_n(v_a_392_, 2);
+lean_inc_n(v___x_391_, 2);
+lean_inc_n(v_a_390_, 2);
 v___x_399_ = l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_mkApplyProjControlDiscrPath(v_a_390_, v___x_391_, v_a_392_, v___x_397_, v___x_398_);
 v___x_400_ = ((lean_object*)(l_WellFounded_opaqueFix_u2083___at___00Lean_Elab_Tactic_BVDecide_Frontend_Normalize_addStructureSimpLemmas_spec__2___redArg___closed__9));
 v___x_401_ = 0;
@@ -1277,9 +1277,6 @@ v___x_402_ = ((lean_object*)(l_WellFounded_opaqueFix_u2083___at___00Lean_Elab_Ta
 v___x_403_ = l_Lean_Meta_Simp_Simprocs_addCore(v_b_393_, v___x_399_, v___x_400_, v___x_401_, v___x_402_);
 v___x_404_ = ((lean_object*)(l_WellFounded_opaqueFix_u2083___at___00Lean_Elab_Tactic_BVDecide_Frontend_Normalize_addStructureSimpLemmas_spec__2___redArg___closed__13));
 v___x_405_ = lean_unsigned_to_nat(4u);
-lean_inc(v_a_392_);
-lean_inc(v___x_391_);
-lean_inc(v_a_390_);
 v___x_406_ = l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_mkApplyProjControlDiscrPath(v_a_390_, v___x_391_, v_a_392_, v___x_404_, v___x_405_);
 v___x_407_ = ((lean_object*)(l_WellFounded_opaqueFix_u2083___at___00Lean_Elab_Tactic_BVDecide_Frontend_Normalize_addStructureSimpLemmas_spec__2___redArg___closed__15));
 v___x_408_ = ((lean_object*)(l_WellFounded_opaqueFix_u2083___at___00Lean_Elab_Tactic_BVDecide_Frontend_Normalize_addStructureSimpLemmas_spec__2___redArg___closed__17));
@@ -1328,11 +1325,10 @@ else
 {
 lean_object* v_key_441_; lean_object* v_tail_442_; lean_object* v___x_443_; 
 v_key_441_ = lean_ctor_get(v_a_430_, 0);
-lean_inc(v_key_441_);
+lean_inc_n(v_key_441_, 2);
 v_tail_442_ = lean_ctor_get(v_a_430_, 2);
 lean_inc(v_tail_442_);
 lean_dec_ref(v_a_430_);
-lean_inc(v_key_441_);
 v___x_443_ = l_Lean_getConstInfoInduct___at___00Lean_Elab_Tactic_BVDecide_Frontend_Normalize_addStructureSimpLemmas_spec__0(v_key_441_, v___y_432_, v___y_433_, v___y_434_, v___y_435_, v___y_436_, v___y_437_);
 if (lean_obj_tag(v___x_443_) == 0)
 {

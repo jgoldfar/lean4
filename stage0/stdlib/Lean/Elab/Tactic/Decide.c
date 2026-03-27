@@ -1238,9 +1238,8 @@ v_a_164_ = lean_ctor_get(v___x_163_, 0);
 lean_inc(v_a_164_);
 lean_dec_ref(v___x_163_);
 v_macroStack_165_ = lean_ctor_get(v___y_155_, 1);
-lean_inc(v_macroStack_165_);
+lean_inc_n(v_macroStack_165_, 2);
 v___x_166_ = l_Lean_Elab_getBetterRef(v_ref_162_, v_macroStack_165_);
-lean_inc(v_macroStack_165_);
 v___x_167_ = l_Lean_Elab_addMacroStack___at___00Lean_throwError___at___00__private_Lean_Elab_Tactic_Decide_0__Lean_Elab_Tactic_preprocessPropToDecide_spec__0_spec__1___redArg(v_a_164_, v_macroStack_165_, v___y_159_);
 v_a_168_ = lean_ctor_get(v___x_167_, 0);
 v_isSharedCheck_176_ = !lean_is_exclusive(v___x_167_);
@@ -4513,13 +4512,12 @@ if (lean_obj_tag(v___x_1333_) == 0)
 {
 lean_object* v_a_1334_; lean_object* v___x_1335_; 
 v_a_1334_ = lean_ctor_get(v___x_1333_, 0);
-lean_inc(v_a_1334_);
+lean_inc_n(v_a_1334_, 2);
 lean_dec_ref(v___x_1333_);
 lean_inc(v___y_1329_);
 lean_inc_ref(v___y_1328_);
 lean_inc(v___y_1327_);
 lean_inc_ref(v___y_1326_);
-lean_inc(v_a_1334_);
 v___x_1335_ = lean_infer_type(v_a_1334_, v___y_1326_, v___y_1327_, v___y_1328_, v___y_1329_);
 if (lean_obj_tag(v___x_1335_) == 0)
 {
@@ -8008,9 +8006,8 @@ if (lean_obj_tag(v___x_2667_) == 0)
 {
 lean_object* v_a_2668_; lean_object* v___x_2669_; 
 v_a_2668_ = lean_ctor_get(v___x_2667_, 0);
-lean_inc(v_a_2668_);
+lean_inc_n(v_a_2668_, 2);
 lean_dec_ref(v___x_2667_);
-lean_inc(v_a_2668_);
 v___x_2669_ = l_Lean_MVarId_getDecl(v_a_2668_, v___y_2659_, v___y_2660_, v___y_2661_, v___y_2662_);
 if (lean_obj_tag(v___x_2669_) == 0)
 {

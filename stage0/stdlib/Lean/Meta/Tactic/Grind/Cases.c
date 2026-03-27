@@ -1060,9 +1060,8 @@ else
 {
 lean_object* v_val_242_; lean_object* v_keys_x27_243_; lean_object* v_vals_x27_244_; lean_object* v___x_246_; 
 v_val_242_ = lean_ctor_get(v___x_238_, 0);
-lean_inc(v_val_242_);
+lean_inc_n(v_val_242_, 2);
 lean_dec_ref(v___x_238_);
-lean_inc(v_val_242_);
 v_keys_x27_243_ = l_Array_eraseIdx___redArg(v_ks_233_, v_val_242_);
 v_vals_x27_244_ = l_Array_eraseIdx___redArg(v_vs_234_, v_val_242_);
 if (v_isShared_237_ == 0)
@@ -3586,9 +3585,8 @@ if (lean_obj_tag(v___x_1113_) == 0)
 {
 lean_object* v_a_1114_; lean_object* v___x_1115_; lean_object* v___x_1116_; lean_object* v___x_1117_; lean_object* v___x_1118_; lean_object* v___x_1120_; 
 v_a_1114_ = lean_ctor_get(v___x_1113_, 0);
-lean_inc(v_a_1114_);
+lean_inc_n(v_a_1114_, 2);
 lean_dec_ref(v___x_1113_);
-lean_inc(v_a_1114_);
 v___x_1115_ = l_Lean_Expr_app___override(v_fst_1086_, v_a_1114_);
 v___x_1116_ = l_Lean_Expr_mvarId_x21(v_a_1114_);
 lean_dec(v_a_1114_);
@@ -5036,9 +5034,8 @@ if (lean_obj_tag(v___x_1605_) == 4)
 {
 lean_object* v_declName_1606_; lean_object* v___x_1607_; 
 v_declName_1606_ = lean_ctor_get(v___x_1605_, 0);
-lean_inc(v_declName_1606_);
+lean_inc_n(v_declName_1606_, 2);
 lean_dec_ref(v___x_1605_);
-lean_inc(v_declName_1606_);
 v___x_1607_ = l_Lean_getConstInfo___at___00Lean_Meta_Grind_cases_spec__0(v_declName_1606_, v___y_1594_, v___y_1595_, v___y_1596_, v___y_1597_);
 if (lean_obj_tag(v___x_1607_) == 0)
 {
@@ -5424,10 +5421,9 @@ lean_dec_ref(v___x_1625_);
 v_fst_1627_ = lean_ctor_get(v_a_1626_, 0);
 lean_inc(v_fst_1627_);
 v_snd_1628_ = lean_ctor_get(v_a_1626_, 1);
-lean_inc(v_snd_1628_);
+lean_inc_n(v_snd_1628_, 2);
 lean_dec(v_a_1626_);
 v___x_1629_ = ((lean_object*)(l_Lean_Meta_Grind_cases___lam__0___closed__0));
-lean_inc(v_snd_1628_);
 v___x_1630_ = lean_alloc_closure((void*)(l_Lean_Meta_Grind_cases___lam__0___boxed), 10, 5);
 lean_closure_set(v___x_1630_, 0, v_a_1612_);
 lean_closure_set(v___x_1630_, 1, v_a_1600_);
@@ -5553,13 +5549,12 @@ v_a_1707_ = lean_ctor_get(v___x_1706_, 0);
 lean_inc(v_a_1707_);
 lean_dec_ref(v___x_1706_);
 v_mvarId_1708_ = lean_ctor_get(v_a_1707_, 0);
-lean_inc(v_mvarId_1708_);
+lean_inc_n(v_mvarId_1708_, 2);
 v_indicesFVarIds_1709_ = lean_ctor_get(v_a_1707_, 1);
 lean_inc_ref(v_indicesFVarIds_1709_);
 v_fvarId_1710_ = lean_ctor_get(v_a_1707_, 2);
 lean_inc(v_fvarId_1710_);
 lean_dec(v_a_1707_);
-lean_inc(v_mvarId_1708_);
 v___x_1711_ = lean_alloc_closure((void*)(l_Lean_Meta_Grind_cases___lam__0___boxed), 10, 5);
 lean_closure_set(v___x_1711_, 0, v_a_1612_);
 lean_closure_set(v___x_1711_, 1, v_a_1600_);

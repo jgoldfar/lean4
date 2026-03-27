@@ -2611,9 +2611,8 @@ if (lean_obj_tag(v___x_562_) == 0)
 {
 lean_object* v_a_563_; lean_object* v___f_564_; lean_object* v___x_565_; 
 v_a_563_ = lean_ctor_get(v___x_562_, 0);
-lean_inc(v_a_563_);
+lean_inc_n(v_a_563_, 2);
 lean_dec_ref(v___x_562_);
-lean_inc(v_a_563_);
 lean_inc(v_a_550_);
 v___f_564_ = lean_alloc_closure((void*)(l___private_Lean_Meta_Transform_0__Lean_Core_transform_visit___at___00Lean_Core_transform___at___00Lean_Meta_elimOptParam_spec__0_spec__0___lam__2___boxed), 4, 3);
 lean_closure_set(v___f_564_, 0, v_a_550_);
@@ -5777,11 +5776,10 @@ else
 {
 lean_object* v_head_1813_; lean_object* v_tail_1814_; lean_object* v___x_1815_; 
 v_head_1813_ = lean_ctor_get(v_as_1805_, 0);
-lean_inc(v_head_1813_);
+lean_inc_n(v_head_1813_, 2);
 v_tail_1814_ = lean_ctor_get(v_as_1805_, 1);
 lean_inc(v_tail_1814_);
 lean_dec_ref(v_as_1805_);
-lean_inc(v_head_1813_);
 v___x_1815_ = l_Lean_MVarId_assumptionCore(v_head_1813_, v___y_1806_, v___y_1807_, v___y_1808_, v___y_1809_);
 if (lean_obj_tag(v___x_1815_) == 0)
 {
@@ -10737,11 +10735,10 @@ v_head_3460_ = lean_ctor_get(v_tail_3456_, 0);
 lean_inc(v_head_3460_);
 lean_dec_ref(v_tail_3456_);
 v_name_3461_ = lean_ctor_get(v_toConstantVal_3458_, 0);
-lean_inc(v_name_3461_);
+lean_inc_n(v_name_3461_, 2);
 v_levelParams_3462_ = lean_ctor_get(v_toConstantVal_3458_, 1);
 lean_inc(v_levelParams_3462_);
 lean_dec_ref(v_toConstantVal_3458_);
-lean_inc(v_name_3461_);
 v___x_3463_ = l_Lean_Meta_mkInjectiveTheoremNameFor(v_name_3461_);
 v___x_3464_ = l_List_mapTR_loop___at___00__private_Lean_Meta_Injective_0__Lean_Meta_mkInjectiveTheoremTypeCore_x3f_spec__0(v_levelParams_3462_, v___x_3423_);
 v___x_3465_ = l_Lean_mkConst(v___x_3463_, v___x_3464_);
@@ -11161,13 +11158,12 @@ goto v_resetjp_3604_;
 v_resetjp_3604_:
 {
 lean_object* v___x_3607_; lean_object* v___x_3608_; lean_object* v___x_3609_; lean_object* v___x_3610_; lean_object* v___x_3612_; 
-lean_inc(v_name_3588_);
+lean_inc_n(v_name_3588_, 2);
 v___x_3607_ = lean_alloc_ctor(0, 3, 0);
 lean_ctor_set(v___x_3607_, 0, v_name_3588_);
 lean_ctor_set(v___x_3607_, 1, v_levelParams_3589_);
 lean_ctor_set(v___x_3607_, 2, v_a_3601_);
 v___x_3608_ = lean_box(0);
-lean_inc(v_name_3588_);
 v___x_3609_ = lean_alloc_ctor(1, 2, 0);
 lean_ctor_set(v___x_3609_, 0, v_name_3588_);
 lean_ctor_set(v___x_3609_, 1, v___x_3608_);
@@ -11308,13 +11304,12 @@ goto v_resetjp_3660_;
 v_resetjp_3660_:
 {
 lean_object* v___x_3663_; lean_object* v___x_3664_; lean_object* v___x_3665_; lean_object* v___x_3666_; lean_object* v___x_3668_; 
-lean_inc(v_name_3645_);
+lean_inc_n(v_name_3645_, 2);
 v___x_3663_ = lean_alloc_ctor(0, 3, 0);
 lean_ctor_set(v___x_3663_, 0, v_name_3645_);
 lean_ctor_set(v___x_3663_, 1, v_levelParams_3646_);
 lean_ctor_set(v___x_3663_, 2, v_a_3657_);
 v___x_3664_ = lean_box(0);
-lean_inc(v_name_3645_);
 v___x_3665_ = lean_alloc_ctor(1, 2, 0);
 lean_ctor_set(v___x_3665_, 0, v_name_3645_);
 lean_ctor_set(v___x_3665_, 1, v___x_3664_);
@@ -12505,13 +12500,12 @@ lean_object* v___x_3972_; uint8_t v___x_3973_; lean_object* v___x_3974_; lean_ob
 v___x_3972_ = lean_alloc_ctor(1, 0, 1);
 v___x_3973_ = lean_unbox(v_defValue_3967_);
 lean_ctor_set_uint8(v___x_3972_, 0, v___x_3973_);
-lean_inc(v_name_3963_);
+lean_inc_n(v_name_3963_, 2);
 v___x_3974_ = lean_alloc_ctor(0, 4, 0);
 lean_ctor_set(v___x_3974_, 0, v_name_3963_);
 lean_ctor_set(v___x_3974_, 1, v_ref_3965_);
 lean_ctor_set(v___x_3974_, 2, v___x_3972_);
 lean_ctor_set(v___x_3974_, 3, v_descr_3968_);
-lean_inc(v_name_3963_);
 v___x_3975_ = lean_register_option(v_name_3963_, v___x_3974_);
 if (lean_obj_tag(v___x_3975_) == 0)
 {
@@ -13928,13 +13922,12 @@ else
 {
 lean_object* v_head_4448_; lean_object* v_tail_4449_; lean_object* v___x_4450_; lean_object* v___x_4451_; lean_object* v___f_4452_; uint8_t v___y_4454_; uint8_t v___x_4457_; 
 v_head_4448_ = lean_ctor_get(v_as_x27_4440_, 0);
-lean_inc(v_head_4448_);
+lean_inc_n(v_head_4448_, 2);
 v_tail_4449_ = lean_ctor_get(v_as_x27_4440_, 1);
 lean_inc(v_tail_4449_);
 lean_dec_ref(v_as_x27_4440_);
 v___x_4450_ = lean_unsigned_to_nat(0u);
 v___x_4451_ = lean_box(0);
-lean_inc(v_head_4448_);
 v___f_4452_ = lean_alloc_closure((void*)(l_List_forIn_x27_loop___at___00Lean_Meta_mkInjectiveTheorems_spec__3___redArg___lam__0___boxed), 8, 3);
 lean_closure_set(v___f_4452_, 0, v_head_4448_);
 lean_closure_set(v___f_4452_, 1, v___x_4450_);
@@ -16513,10 +16506,9 @@ lean_object* v_a_5482_; lean_object* v___x_5483_; uint8_t v___x_5484_; lean_obje
 v_a_5482_ = lean_ctor_get(v___x_5481_, 0);
 lean_inc(v_a_5482_);
 lean_dec_ref(v___x_5481_);
-lean_inc_ref(v_args2_5472_);
+lean_inc_ref_n(v_args2_5472_, 2);
 v___x_5483_ = l_Array_toSubarray___redArg(v_args2_5472_, v___x_5469_, v_numParams_5470_);
 v___x_5484_ = 1;
-lean_inc_ref(v_args2_5472_);
 v___x_5485_ = l___private_Lean_Meta_Injective_0__Lean_Meta_mkEqs(v_args1_5468_, v_args2_5472_, v___x_5484_, v___y_5473_, v___y_5474_, v___y_5475_, v___y_5476_);
 if (lean_obj_tag(v___x_5485_) == 0)
 {
@@ -17270,9 +17262,8 @@ _start:
 lean_object* v___x_5648_; lean_object* v___x_5649_; lean_object* v___f_5650_; lean_object* v___x_5651_; lean_object* v___x_5652_; lean_object* v___x_5653_; 
 v___x_5648_ = lean_unsigned_to_nat(0u);
 lean_inc(v_numParams_5636_);
-lean_inc_ref(v_args1_5641_);
+lean_inc_ref_n(v_args1_5641_, 3);
 v___x_5649_ = l_Array_toSubarray___redArg(v_args1_5641_, v___x_5648_, v_numParams_5636_);
-lean_inc_ref(v_args1_5641_);
 v___f_5650_ = lean_alloc_closure((void*)(l___private_Lean_Meta_Injective_0__Lean_Meta_mkHInjType_x3f___lam__0___boxed), 12, 6);
 lean_closure_set(v___f_5650_, 0, v_name_5637_);
 lean_closure_set(v___f_5650_, 1, v_us_5638_);
@@ -17281,7 +17272,6 @@ lean_closure_set(v___f_5650_, 3, v___x_5648_);
 lean_closure_set(v___f_5650_, 4, v_numParams_5636_);
 lean_closure_set(v___f_5650_, 5, v___x_5649_);
 v___x_5651_ = ((lean_object*)(l___private_Lean_Meta_Injective_0__Lean_Meta_mkEqs___closed__0));
-lean_inc_ref(v_args1_5641_);
 v___x_5652_ = lean_alloc_closure((void*)(l___private_Lean_Meta_Injective_0__Lean_Meta_mkHInjType_x3f_mkArgs2___boxed), 11, 6);
 lean_closure_set(v___x_5652_, 0, v_ctorVal_5639_);
 lean_closure_set(v___x_5652_, 1, v_args1_5641_);
@@ -17323,12 +17313,11 @@ if (lean_obj_tag(v___x_5678_) == 0)
 {
 lean_object* v_a_5679_; lean_object* v___x_5680_; lean_object* v_us_5681_; lean_object* v___f_5682_; uint8_t v___x_5683_; lean_object* v___x_5684_; 
 v_a_5679_ = lean_ctor_get(v___x_5678_, 0);
-lean_inc(v_a_5679_);
+lean_inc_n(v_a_5679_, 2);
 lean_dec_ref(v___x_5678_);
 v___x_5680_ = lean_box(0);
 lean_inc(v_levelParams_5676_);
 v_us_5681_ = l_List_mapTR_loop___at___00__private_Lean_Meta_Injective_0__Lean_Meta_mkInjectiveTheoremTypeCore_x3f_spec__0(v_levelParams_5676_, v___x_5680_);
-lean_inc(v_a_5679_);
 v___f_5682_ = lean_alloc_closure((void*)(l___private_Lean_Meta_Injective_0__Lean_Meta_mkHInjType_x3f___lam__1___boxed), 12, 5);
 lean_closure_set(v___f_5682_, 0, v_numParams_5674_);
 lean_closure_set(v___f_5682_, 1, v_name_5675_);
@@ -18423,9 +18412,8 @@ if (lean_obj_tag(v_a_6016_) == 1)
 lean_object* v_val_6020_; lean_object* v___x_6021_; 
 lean_del_object(v___x_6018_);
 v_val_6020_ = lean_ctor_get(v_a_6016_, 0);
-lean_inc(v_val_6020_);
+lean_inc_n(v_val_6020_, 2);
 lean_dec_ref(v_a_6016_);
-lean_inc(v_val_6020_);
 lean_inc_ref(v_ctorVal_6009_);
 v___x_6021_ = l___private_Lean_Meta_Injective_0__Lean_Meta_mkHInjectiveTheoremValue_x3f(v_ctorVal_6009_, v_val_6020_, v_a_6010_, v_a_6011_, v_a_6012_, v_a_6013_);
 if (lean_obj_tag(v___x_6021_) == 0)
@@ -18860,13 +18848,12 @@ _start:
 lean_object* v___x_6117_; lean_object* v_env_6118_; lean_object* v_toConstantVal_6119_; lean_object* v_value_6120_; lean_object* v_all_6121_; uint8_t v___y_6123_; lean_object* v_type_6131_; uint8_t v___x_6132_; 
 v___x_6117_ = lean_st_ref_get(v___y_6115_);
 v_env_6118_ = lean_ctor_get(v___x_6117_, 0);
-lean_inc_ref(v_env_6118_);
+lean_inc_ref_n(v_env_6118_, 2);
 lean_dec(v___x_6117_);
 v_toConstantVal_6119_ = lean_ctor_get(v_thm_6114_, 0);
 v_value_6120_ = lean_ctor_get(v_thm_6114_, 1);
 v_all_6121_ = lean_ctor_get(v_thm_6114_, 2);
 v_type_6131_ = lean_ctor_get(v_toConstantVal_6119_, 2);
-lean_inc_ref(v_env_6118_);
 v___x_6132_ = l_Lean_Environment_hasUnsafe(v_env_6118_, v_type_6131_);
 if (v___x_6132_ == 0)
 {

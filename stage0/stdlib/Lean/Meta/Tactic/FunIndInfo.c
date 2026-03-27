@@ -2835,10 +2835,9 @@ v_env_963_ = lean_ctor_get(v___x_962_, 0);
 lean_inc_ref(v_env_963_);
 lean_dec(v___x_962_);
 v_funIndName_964_ = lean_ctor_get(v_funIndInfo_958_, 1);
-lean_inc(v_funIndName_964_);
+lean_inc_n(v_funIndName_964_, 2);
 v___x_965_ = ((lean_object*)(l_Lean_Meta_instInhabitedFunIndInfo_default));
 v___x_966_ = l_Lean_Meta_funIndInfoExt;
-lean_inc(v_funIndName_964_);
 v___x_967_ = l_Lean_MapDeclarationExtension_contains___redArg(v___x_965_, v___x_966_, v_env_963_, v_funIndName_964_);
 if (v___x_967_ == 0)
 {

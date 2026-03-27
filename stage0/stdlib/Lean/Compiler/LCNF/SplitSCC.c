@@ -3436,15 +3436,13 @@ LEAN_EXPORT lean_object* l___private_Lean_Util_SCC_0__Lean_SCC_sccAux___at___00L
 _start:
 {
 lean_object* v___x_1087_; lean_object* v_snd_1088_; lean_object* v___x_1089_; lean_object* v___x_1090_; lean_object* v_snd_1091_; lean_object* v___x_1092_; lean_object* v_fst_1093_; lean_object* v_snd_1094_; lean_object* v___x_1096_; uint8_t v_isShared_1097_; uint8_t v_isSharedCheck_1106_; 
-lean_inc(v_a_1085_);
+lean_inc_n(v_a_1085_, 3);
 v___x_1087_ = l___private_Lean_Util_SCC_0__Lean_SCC_push___at___00__private_Lean_Util_SCC_0__Lean_SCC_sccAux___at___00Lean_SCC_scc___at___00Lean_Compiler_LCNF_splitScc_spec__12_spec__18_spec__24(v_a_1085_, v_a_1086_);
 v_snd_1088_ = lean_ctor_get(v___x_1087_, 1);
 lean_inc(v_snd_1088_);
 lean_dec_ref(v___x_1087_);
 lean_inc_ref(v_successorsOf_1084_);
-lean_inc(v_a_1085_);
 v___x_1089_ = lean_apply_1(v_successorsOf_1084_, v_a_1085_);
-lean_inc(v_a_1085_);
 v___x_1090_ = l_List_forM___at___00__private_Lean_Util_SCC_0__Lean_SCC_sccAux___at___00Lean_SCC_scc___at___00Lean_Compiler_LCNF_splitScc_spec__12_spec__18_spec__25(v_successorsOf_1084_, v_a_1085_, v___x_1089_, v_snd_1088_);
 v_snd_1091_ = lean_ctor_get(v___x_1090_, 1);
 lean_inc(v_snd_1091_);
@@ -3724,12 +3722,11 @@ if (v___x_1198_ == 0)
 size_t v_sz_1199_; size_t v___x_1200_; lean_object* v___x_1201_; lean_object* v___x_1202_; lean_object* v_declMap_1203_; lean_object* v___x_1204_; 
 v_sz_1199_ = lean_array_size(v_scc_1190_);
 v___x_1200_ = ((size_t)0ULL);
-lean_inc_ref(v_scc_1190_);
+lean_inc_ref_n(v_scc_1190_, 2);
 v___x_1201_ = l___private_Init_Data_Array_Basic_0__Array_mapMUnsafe_map___at___00Lean_Compiler_LCNF_splitScc_spec__1(v_sz_1199_, v___x_1200_, v_scc_1190_);
 v___x_1202_ = lean_obj_once(&l___private_Lean_Compiler_LCNF_SplitSCC_0__Lean_Compiler_LCNF_SplitScc_findSccCalls___closed__1, &l___private_Lean_Compiler_LCNF_SplitSCC_0__Lean_Compiler_LCNF_SplitScc_findSccCalls___closed__1_once, _init_l___private_Lean_Compiler_LCNF_SplitSCC_0__Lean_Compiler_LCNF_SplitScc_findSccCalls___closed__1);
 v_declMap_1203_ = l_Std_DHashMap_Internal_Raw_u2080_Const_insertMany___at___00Lean_Compiler_LCNF_splitScc_spec__2(v___x_1202_, v___x_1201_);
 lean_dec_ref(v___x_1201_);
-lean_inc_ref(v_scc_1190_);
 v___x_1204_ = l___private_Init_Data_Array_Basic_0__Array_mapMUnsafe_map___at___00Lean_Compiler_LCNF_splitScc_spec__7___redArg(v_pu_1189_, v_declMap_1203_, v_sz_1199_, v___x_1200_, v_scc_1190_);
 if (lean_obj_tag(v___x_1204_) == 0)
 {

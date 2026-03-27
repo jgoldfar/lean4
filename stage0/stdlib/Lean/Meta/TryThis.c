@@ -1272,7 +1272,7 @@ v_resetjp_419_:
 lean_object* v_searcher_422_; lean_object* v___x_423_; lean_object* v___x_424_; lean_object* v_rangeStart_425_; lean_object* v_start_426_; lean_object* v___x_427_; lean_object* v___y_429_; lean_object* v___x_437_; lean_object* v___x_438_; 
 v_searcher_422_ = lean_unsigned_to_nat(0u);
 v___x_423_ = lean_string_utf8_byte_size(v_source_417_);
-lean_inc_ref(v_source_417_);
+lean_inc_ref_n(v_source_417_, 2);
 v___x_424_ = lean_alloc_ctor(0, 3, 0);
 lean_ctor_set(v___x_424_, 0, v_source_417_);
 lean_ctor_set(v___x_424_, 1, v_searcher_422_);
@@ -1280,7 +1280,6 @@ lean_ctor_set(v___x_424_, 2, v___x_423_);
 v_rangeStart_425_ = l_String_Slice_pos_x21(v___x_424_, v_start_418_);
 lean_dec_ref(v___x_424_);
 lean_inc(v_rangeStart_425_);
-lean_inc_ref(v_source_417_);
 v_start_426_ = l___private_Lean_Meta_TryThis_0__Lean_Meta_Tactic_TryThis_getIndentAndColumn_findLineStart(v_source_417_, v_rangeStart_425_);
 v___x_427_ = l_String_slice_x21(v_source_417_, v_start_426_, v_rangeStart_425_);
 lean_dec(v_rangeStart_425_);
@@ -1391,13 +1390,12 @@ lean_object* v___x_468_; lean_object* v___x_469_; lean_object* v___x_470_;
 lean_inc(v_defValue_463_);
 v___x_468_ = lean_alloc_ctor(3, 1, 0);
 lean_ctor_set(v___x_468_, 0, v_defValue_463_);
-lean_inc(v_name_459_);
+lean_inc_n(v_name_459_, 2);
 v___x_469_ = lean_alloc_ctor(0, 4, 0);
 lean_ctor_set(v___x_469_, 0, v_name_459_);
 lean_ctor_set(v___x_469_, 1, v_ref_461_);
 lean_ctor_set(v___x_469_, 2, v___x_468_);
 lean_ctor_set(v___x_469_, 3, v_descr_464_);
-lean_inc(v_name_459_);
 v___x_470_ = lean_register_option(v_name_459_, v___x_469_);
 if (lean_obj_tag(v___x_470_) == 0)
 {

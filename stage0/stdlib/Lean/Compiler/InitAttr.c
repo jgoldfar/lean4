@@ -1526,9 +1526,8 @@ if (lean_obj_tag(v___x_379_) == 0)
 {
 lean_object* v_a_380_; lean_object* v___x_381_; 
 v_a_380_ = lean_ctor_get(v___x_379_, 0);
-lean_inc(v_a_380_);
+lean_inc_n(v_a_380_, 2);
 lean_dec_ref(v___x_379_);
-lean_inc(v_a_380_);
 v___x_381_ = l_Lean_getConstInfo___at___00Lean_registerInitAttrUnsafe_spec__0(v_a_380_, v___y_359_, v___y_360_);
 if (lean_obj_tag(v___x_381_) == 0)
 {
@@ -3240,14 +3239,13 @@ v_resetjp_1086_:
 lean_object* v___x_1089_; lean_object* v___x_1090_; lean_object* v___x_1091_; lean_object* v___x_1092_; uint8_t v___x_1093_; lean_object* v___x_1094_; lean_object* v___x_1095_; lean_object* v___x_1097_; 
 v___x_1089_ = lean_box(0);
 v___x_1090_ = lean_obj_once(&l_Lean_declareBuiltin___lam__0___closed__4, &l_Lean_declareBuiltin___lam__0___closed__4_once, _init_l_Lean_declareBuiltin___lam__0___closed__4);
-lean_inc(v_a_1085_);
+lean_inc_n(v_a_1085_, 2);
 v___x_1091_ = lean_alloc_ctor(0, 3, 0);
 lean_ctor_set(v___x_1091_, 0, v_a_1085_);
 lean_ctor_set(v___x_1091_, 1, v___x_1089_);
 lean_ctor_set(v___x_1091_, 2, v___x_1090_);
 v___x_1092_ = lean_box(0);
 v___x_1093_ = 1;
-lean_inc(v_a_1085_);
 v___x_1094_ = lean_alloc_ctor(1, 2, 0);
 lean_ctor_set(v___x_1094_, 0, v_a_1085_);
 lean_ctor_set(v___x_1094_, 1, v___x_1089_);

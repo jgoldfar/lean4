@@ -1673,11 +1673,10 @@ else
 {
 lean_object* v_val_569_; lean_object* v___x_570_; lean_object* v___x_571_; lean_object* v___x_573_; 
 v_val_569_ = lean_ctor_get(v_additionalInformation_x3f_555_, 0);
-lean_inc(v_val_569_);
+lean_inc_n(v_val_569_, 2);
 lean_dec_ref(v_additionalInformation_x3f_555_);
 v___x_570_ = lean_unsigned_to_nat(0u);
 v___x_571_ = lean_string_utf8_byte_size(v_val_569_);
-lean_inc(v_val_569_);
 if (v_isShared_558_ == 0)
 {
 lean_ctor_set(v___x_557_, 2, v___x_571_);
@@ -1717,11 +1716,10 @@ if (lean_obj_tag(v_tail_578_) == 0)
 {
 lean_object* v_head_579_; lean_object* v___x_580_; lean_object* v___x_581_; lean_object* v___x_582_; lean_object* v___x_583_; lean_object* v___x_584_; lean_object* v___x_585_; lean_object* v___x_586_; lean_object* v___x_587_; lean_object* v___x_588_; lean_object* v___x_589_; 
 v_head_579_ = lean_ctor_get(v___x_577_, 0);
-lean_inc(v_head_579_);
+lean_inc_n(v_head_579_, 2);
 lean_dec_ref(v___x_577_);
 v___x_580_ = ((lean_object*)(l___private_Lean_Parser_Term_Doc_0__Lean_Parser_Term_Doc_getRecommendedSpellingString_bullet___closed__5));
 v___x_581_ = lean_string_utf8_byte_size(v_head_579_);
-lean_inc(v_head_579_);
 v___x_582_ = lean_alloc_ctor(0, 3, 0);
 lean_ctor_set(v___x_582_, 0, v_head_579_);
 lean_ctor_set(v___x_582_, 1, v___x_570_);

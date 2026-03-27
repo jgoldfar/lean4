@@ -2973,20 +2973,18 @@ lean_inc(v_declName_1101_);
 lean_dec_ref(v___x_1100_);
 v___x_1102_ = lean_st_ref_get(v_a_1069_);
 v_env_1103_ = lean_ctor_get(v___x_1102_, 0);
-lean_inc_ref(v_env_1103_);
+lean_inc_ref_n(v_env_1103_, 2);
 lean_dec(v___x_1102_);
 v_varName_1104_ = lean_ctor_get(v_ctx_1062_, 0);
 v_categoryAttr_1105_ = lean_ctor_get(v_ctx_1062_, 1);
 v_combinatorAttr_1106_ = lean_ctor_get(v_ctx_1062_, 2);
-lean_inc_ref(v_env_1103_);
 v___x_1107_ = l_Lean_ParserCompiler_CombinatorAttribute_getDeclFor_x3f(v_combinatorAttr_1106_, v_env_1103_, v_declName_1101_);
 if (lean_obj_tag(v___x_1107_) == 0)
 {
 lean_object* v___x_1108_; lean_object* v___x_1109_; 
 lean_inc(v_varName_1104_);
-lean_inc(v_declName_1101_);
+lean_inc_n(v_declName_1101_, 2);
 v___x_1108_ = l_Lean_Name_append(v_declName_1101_, v_varName_1104_);
-lean_inc(v_declName_1101_);
 v___x_1109_ = l_Lean_getConstInfo___at___00Lean_ParserCompiler_compileParserExpr_spec__3(v_declName_1101_, v_a_1066_, v_a_1067_, v_a_1068_, v_a_1069_);
 if (lean_obj_tag(v___x_1109_) == 0)
 {
@@ -3408,10 +3406,9 @@ return v___x_1214_;
 v___jp_1217_:
 {
 lean_object* v___x_1224_; lean_object* v___x_1225_; 
-lean_inc_ref(v_ctx_1062_);
+lean_inc_ref_n(v_ctx_1062_, 2);
 v___x_1224_ = l_Lean_ParserCompiler_replaceParserTy___redArg(v_ctx_1062_, v___y_1218_);
 lean_dec_ref(v___y_1218_);
-lean_inc_ref(v_ctx_1062_);
 v___x_1225_ = l_Lean_ParserCompiler_compileParserExpr___redArg(v_ctx_1062_, v_builtin_1063_, v_force_1064_, v___x_1224_, v___y_1220_, v___y_1221_, v___y_1222_, v___y_1223_);
 if (lean_obj_tag(v___x_1225_) == 0)
 {
@@ -3448,14 +3445,13 @@ v_env_1233_ = lean_ctor_get(v___x_1232_, 0);
 lean_inc_ref(v_env_1233_);
 lean_dec(v___x_1232_);
 v___x_1234_ = lean_box(0);
-lean_inc(v___x_1108_);
+lean_inc_n(v___x_1108_, 2);
 v___x_1235_ = lean_alloc_ctor(0, 3, 0);
 lean_ctor_set(v___x_1235_, 0, v___x_1108_);
 lean_ctor_set(v___x_1235_, 1, v___x_1234_);
 lean_ctor_set(v___x_1235_, 2, v_a_1228_);
 v___x_1236_ = lean_box(0);
 v___x_1237_ = 1;
-lean_inc(v___x_1108_);
 v___x_1238_ = lean_alloc_ctor(1, 2, 0);
 lean_ctor_set(v___x_1238_, 0, v___x_1108_);
 lean_ctor_set(v___x_1238_, 1, v___x_1234_);

@@ -1035,10 +1035,9 @@ goto v_resetjp_264_;
 v_resetjp_264_:
 {
 lean_object* v___x_267_; lean_object* v___x_268_; lean_object* v___x_269_; lean_object* v___x_270_; 
-lean_inc_ref(v___y_257_);
+lean_inc_ref_n(v___y_257_, 2);
 v___x_267_ = l_Lean_FileMap_toPosition(v___y_257_, v___y_259_);
 lean_dec(v___y_259_);
-lean_inc_ref(v___y_257_);
 v___x_268_ = l_Lean_FileMap_toPosition(v___y_257_, v___y_260_);
 lean_dec(v___y_260_);
 v___x_269_ = lean_alloc_ctor(1, 1, 0);
@@ -2617,10 +2616,9 @@ goto v_resetjp_939_;
 v_resetjp_939_:
 {
 lean_object* v___x_942_; lean_object* v___x_943_; lean_object* v___x_944_; lean_object* v___x_945_; 
-lean_inc_ref(v___y_931_);
+lean_inc_ref_n(v___y_931_, 2);
 v___x_942_ = l_Lean_FileMap_toPosition(v___y_931_, v___y_929_);
 lean_dec(v___y_929_);
-lean_inc_ref(v___y_931_);
 v___x_943_ = l_Lean_FileMap_toPosition(v___y_931_, v___y_935_);
 lean_dec(v___y_935_);
 v___x_944_ = lean_alloc_ctor(1, 1, 0);
@@ -4587,10 +4585,9 @@ goto v_resetjp_1812_;
 v_resetjp_1812_:
 {
 lean_object* v___x_1815_; lean_object* v___x_1816_; lean_object* v___x_1817_; lean_object* v___x_1818_; 
-lean_inc_ref(v___y_1804_);
+lean_inc_ref_n(v___y_1804_, 2);
 v___x_1815_ = l_Lean_FileMap_toPosition(v___y_1804_, v___y_1803_);
 lean_dec(v___y_1803_);
-lean_inc_ref(v___y_1804_);
 v___x_1816_ = l_Lean_FileMap_toPosition(v___y_1804_, v___y_1808_);
 lean_dec(v___y_1808_);
 v___x_1817_ = lean_alloc_ctor(1, 1, 0);

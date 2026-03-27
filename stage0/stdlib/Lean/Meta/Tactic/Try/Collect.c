@@ -4481,9 +4481,8 @@ if (lean_obj_tag(v___x_1485_) == 4)
 lean_object* v_declName_1486_; lean_object* v___x_1487_; 
 lean_del_object(v___x_1483_);
 v_declName_1486_ = lean_ctor_get(v___x_1485_, 0);
-lean_inc(v_declName_1486_);
+lean_inc_n(v_declName_1486_, 2);
 lean_dec_ref(v___x_1485_);
-lean_inc(v_declName_1486_);
 v___x_1487_ = l_Lean_getConstInfo___at___00Lean_Meta_Try_Collector_checkInductive_spec__0(v_declName_1486_, v_a_1472_, v_a_1473_, v_a_1474_, v_a_1475_, v_a_1476_, v_a_1477_);
 if (lean_obj_tag(v___x_1487_) == 0)
 {
@@ -5396,9 +5395,8 @@ if (lean_obj_tag(v_x_1846_) == 4)
 {
 lean_object* v_declName_1884_; lean_object* v___x_1885_; uint8_t v___x_1886_; 
 v_declName_1884_ = lean_ctor_get(v_x_1846_, 0);
-lean_inc(v_declName_1884_);
+lean_inc_n(v_declName_1884_, 2);
 lean_dec_ref(v_x_1846_);
-lean_inc(v_declName_1884_);
 v___x_1885_ = l_Lean_Meta_Try_Collector_saveConst___redArg(v_declName_1884_, v___y_1851_);
 lean_dec_ref(v___x_1885_);
 v___x_1886_ = l_Lean_Expr_hasLooseBVars(v_e_1845_);

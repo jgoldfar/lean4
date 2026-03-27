@@ -1151,7 +1151,7 @@ v_reusejp_330_:
 {
 lean_object* v___x_332_; lean_object* v___x_333_; lean_object* v___x_334_; lean_object* v___x_335_; lean_object* v___x_336_; lean_object* v___x_337_; 
 v___x_332_ = l_Lean_mkConst(v___x_329_, v___x_331_);
-lean_inc_ref(v_00_u03b1_322_);
+lean_inc_ref_n(v_00_u03b1_322_, 2);
 v___x_333_ = l_Lean_mkAppB(v___x_332_, v_00_u03b1_322_, v_a_277_);
 v___x_334_ = ((lean_object*)(l___private_Lean_Meta_Tactic_Grind_PropagateInj_0__Lean_Meta_Grind_getInvFor_x3f___closed__10));
 lean_inc_ref(v_us_316_);
@@ -1159,7 +1159,6 @@ v___x_335_ = l_Lean_mkConst(v___x_334_, v_us_316_);
 lean_inc_ref(v_h_324_);
 lean_inc_ref(v_f_276_);
 lean_inc_ref(v_00_u03b2_323_);
-lean_inc_ref(v_00_u03b1_322_);
 v___x_336_ = l_Lean_mkApp5(v___x_335_, v_00_u03b1_322_, v_00_u03b2_323_, v_f_276_, v_h_324_, v___x_333_);
 v___x_337_ = l_Lean_Meta_Grind_preprocessLight(v___x_336_, v_a_278_, v_a_279_, v_a_280_, v_a_281_, v_a_282_, v_a_283_, v_a_284_, v_a_285_, v_a_286_, v_a_287_);
 if (lean_obj_tag(v___x_337_) == 0)
@@ -2050,8 +2049,7 @@ if (lean_obj_tag(v_e_673_) == 5)
 lean_object* v_fn_685_; lean_object* v_arg_686_; lean_object* v___x_687_; 
 v_fn_685_ = lean_ctor_get(v_e_673_, 0);
 v_arg_686_ = lean_ctor_get(v_e_673_, 1);
-lean_inc_ref(v_arg_686_);
-lean_inc_ref(v_arg_686_);
+lean_inc_ref_n(v_arg_686_, 2);
 lean_inc_ref(v_fn_685_);
 v___x_687_ = l___private_Lean_Meta_Tactic_Grind_PropagateInj_0__Lean_Meta_Grind_getInvFor_x3f(v_fn_685_, v_arg_686_, v_a_674_, v_a_675_, v_a_676_, v_a_677_, v_a_678_, v_a_679_, v_a_680_, v_a_681_, v_a_682_, v_a_683_);
 if (lean_obj_tag(v___x_687_) == 0)

@@ -592,9 +592,8 @@ lean_object* v_fn_71_; lean_object* v_arg_72_; lean_object* v___x_73_;
 v_fn_71_ = lean_ctor_get(v_x_64_, 0);
 lean_inc_ref(v_fn_71_);
 v_arg_72_ = lean_ctor_get(v_x_64_, 1);
-lean_inc_ref(v_arg_72_);
+lean_inc_ref_n(v_arg_72_, 2);
 lean_dec_ref(v_x_64_);
-lean_inc_ref(v_arg_72_);
 v___x_73_ = l___private_Lean_Meta_DiscrTree_Main_0__Lean_Meta_DiscrTree_ignoreArg(v_arg_72_, v_x_63_, v_infos_62_, v_a_66_, v_a_67_, v_a_68_, v_a_69_);
 if (lean_obj_tag(v___x_73_) == 0)
 {
@@ -1573,10 +1572,9 @@ if (lean_obj_tag(v___x_381_) == 0)
 {
 lean_object* v_a_382_; uint8_t v___x_383_; lean_object* v___x_384_; 
 v_a_382_ = lean_ctor_get(v___x_381_, 0);
-lean_inc(v_a_382_);
+lean_inc_n(v_a_382_, 2);
 lean_dec_ref(v___x_381_);
 v___x_383_ = 0;
-lean_inc(v_a_382_);
 v___x_384_ = l_Lean_Meta_unfoldDefinition_x3f(v_a_382_, v___x_383_, v_a_376_, v_a_377_, v_a_378_, v_a_379_);
 if (lean_obj_tag(v___x_384_) == 0)
 {
@@ -1775,10 +1773,9 @@ if (lean_obj_tag(v___x_429_) == 0)
 {
 lean_object* v_a_430_; uint8_t v___x_431_; lean_object* v___x_432_; 
 v_a_430_ = lean_ctor_get(v___x_429_, 0);
-lean_inc(v_a_430_);
+lean_inc_n(v_a_430_, 2);
 lean_dec_ref(v___x_429_);
 v___x_431_ = 0;
-lean_inc(v_a_430_);
 v___x_432_ = l_Lean_Meta_unfoldDefinition_x3f(v_a_430_, v___x_431_, v_a_424_, v_a_425_, v_a_426_, v_a_427_);
 if (lean_obj_tag(v___x_432_) == 0)
 {
@@ -2240,7 +2237,7 @@ case 11:
 lean_object* v_typeName_599_; lean_object* v_idx_600_; lean_object* v_struct_601_; lean_object* v___x_602_; lean_object* v___y_604_; lean_object* v_env_608_; uint8_t v___x_609_; 
 lean_del_object(v___x_526_);
 v_typeName_599_ = lean_ctor_get(v___x_535_, 0);
-lean_inc(v_typeName_599_);
+lean_inc_n(v_typeName_599_, 2);
 v_idx_600_ = lean_ctor_get(v___x_535_, 1);
 lean_inc(v_idx_600_);
 v_struct_601_ = lean_ctor_get(v___x_535_, 2);
@@ -2249,7 +2246,6 @@ v___x_602_ = lean_st_ref_get(v_a_515_);
 v_env_608_ = lean_ctor_get(v___x_602_, 0);
 lean_inc_ref(v_env_608_);
 lean_dec(v___x_602_);
-lean_inc(v_typeName_599_);
 v___x_609_ = lean_is_class(v_env_608_, v_typeName_599_);
 if (v___x_609_ == 0)
 {

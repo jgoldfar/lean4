@@ -1054,9 +1054,8 @@ v_val_172_ = lean_ctor_get(v___x_171_, 0);
 lean_inc(v_val_172_);
 lean_dec_ref(v___x_171_);
 v_eToInt_173_ = lean_ctor_get(v_val_172_, 0);
-lean_inc_ref(v_eToInt_173_);
+lean_inc_ref_n(v_eToInt_173_, 2);
 lean_dec(v_val_172_);
-lean_inc_ref(v_eToInt_173_);
 v___x_174_ = l_Lean_Meta_getIntValue_x3f(v_eToInt_173_, v___y_164_, v___y_165_, v___y_166_, v___y_167_);
 if (lean_obj_tag(v___x_174_) == 0)
 {

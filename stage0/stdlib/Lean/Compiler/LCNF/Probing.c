@@ -426,10 +426,9 @@ v_toSeqLeft_19_ = lean_ctor_get(v_toApplicative_16_, 3);
 v_toSeqRight_20_ = lean_ctor_get(v_toApplicative_16_, 4);
 v___f_21_ = ((lean_object*)(l_Lean_Compiler_LCNF_Probe_map___redArg___closed__2));
 v___f_22_ = ((lean_object*)(l_Lean_Compiler_LCNF_Probe_map___redArg___closed__3));
-lean_inc_ref(v_toFunctor_17_);
+lean_inc_ref_n(v_toFunctor_17_, 2);
 v___f_23_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__0), 6, 1);
 lean_closure_set(v___f_23_, 0, v_toFunctor_17_);
-lean_inc_ref(v_toFunctor_17_);
 v___f_24_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__1), 6, 1);
 lean_closure_set(v___f_24_, 0, v_toFunctor_17_);
 v___x_25_ = lean_alloc_ctor(0, 2, 0);
@@ -603,10 +602,9 @@ v_toSeqLeft_86_ = lean_ctor_get(v_toApplicative_83_, 3);
 v_toSeqRight_87_ = lean_ctor_get(v_toApplicative_83_, 4);
 v___f_88_ = ((lean_object*)(l_Lean_Compiler_LCNF_Probe_map___redArg___closed__2));
 v___f_89_ = ((lean_object*)(l_Lean_Compiler_LCNF_Probe_map___redArg___closed__3));
-lean_inc_ref(v_toFunctor_84_);
+lean_inc_ref_n(v_toFunctor_84_, 2);
 v___f_90_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__0), 6, 1);
 lean_closure_set(v___f_90_, 0, v_toFunctor_84_);
-lean_inc_ref(v_toFunctor_84_);
 v___f_91_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__1), 6, 1);
 lean_closure_set(v___f_91_, 0, v_toFunctor_84_);
 v___x_92_ = lean_alloc_ctor(0, 2, 0);
@@ -919,10 +917,9 @@ v_toSeqLeft_194_ = lean_ctor_get(v_toApplicative_191_, 3);
 v_toSeqRight_195_ = lean_ctor_get(v_toApplicative_191_, 4);
 v___f_196_ = ((lean_object*)(l_Lean_Compiler_LCNF_Probe_map___redArg___closed__2));
 v___f_197_ = ((lean_object*)(l_Lean_Compiler_LCNF_Probe_map___redArg___closed__3));
-lean_inc_ref(v_toFunctor_192_);
+lean_inc_ref_n(v_toFunctor_192_, 2);
 v___f_198_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__0), 6, 1);
 lean_closure_set(v___f_198_, 0, v_toFunctor_192_);
-lean_inc_ref(v_toFunctor_192_);
 v___f_199_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__1), 6, 1);
 lean_closure_set(v___f_199_, 0, v_toFunctor_192_);
 v___x_200_ = lean_alloc_ctor(0, 2, 0);
@@ -1147,10 +1144,9 @@ v_toSeqLeft_272_ = lean_ctor_get(v_toApplicative_269_, 3);
 v_toSeqRight_273_ = lean_ctor_get(v_toApplicative_269_, 4);
 v___f_274_ = ((lean_object*)(l_Lean_Compiler_LCNF_Probe_map___redArg___closed__2));
 v___f_275_ = ((lean_object*)(l_Lean_Compiler_LCNF_Probe_map___redArg___closed__3));
-lean_inc_ref(v_toFunctor_270_);
+lean_inc_ref_n(v_toFunctor_270_, 2);
 v___f_276_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__0), 6, 1);
 lean_closure_set(v___f_276_, 0, v_toFunctor_270_);
-lean_inc_ref(v_toFunctor_270_);
 v___f_277_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__1), 6, 1);
 lean_closure_set(v___f_277_, 0, v_toFunctor_270_);
 v___x_278_ = lean_alloc_ctor(0, 2, 0);
@@ -1866,10 +1862,9 @@ v_toSeqLeft_586_ = lean_ctor_get(v_toApplicative_583_, 3);
 v_toSeqRight_587_ = lean_ctor_get(v_toApplicative_583_, 4);
 v___f_588_ = ((lean_object*)(l_Lean_Compiler_LCNF_Probe_map___redArg___closed__2));
 v___f_589_ = ((lean_object*)(l_Lean_Compiler_LCNF_Probe_map___redArg___closed__3));
-lean_inc_ref(v_toFunctor_584_);
+lean_inc_ref_n(v_toFunctor_584_, 2);
 v___f_590_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__0), 6, 1);
 lean_closure_set(v___f_590_, 0, v_toFunctor_584_);
-lean_inc_ref(v_toFunctor_584_);
 v___f_591_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__1), 6, 1);
 lean_closure_set(v___f_591_, 0, v_toFunctor_584_);
 v___x_592_ = lean_alloc_ctor(0, 2, 0);
@@ -3236,12 +3231,11 @@ case 2:
 {
 lean_object* v_decl_1092_; lean_object* v_k_1093_; lean_object* v___x_1094_; lean_object* v___x_1095_; lean_object* v___x_1096_; lean_object* v_value_1097_; lean_object* v___x_1098_; 
 v_decl_1092_ = lean_ctor_get(v_code_1078_, 0);
-lean_inc_ref(v_decl_1092_);
+lean_inc_ref_n(v_decl_1092_, 2);
 v_k_1093_ = lean_ctor_get(v_code_1078_, 1);
 lean_inc_ref(v_k_1093_);
 lean_dec_ref(v_code_1078_);
 v___x_1094_ = lean_st_ref_take(v_a_1079_);
-lean_inc_ref(v_decl_1092_);
 v___x_1095_ = lean_array_push(v___x_1094_, v_decl_1092_);
 v___x_1096_ = lean_st_ref_set(v_a_1079_, v___x_1095_);
 v_value_1097_ = lean_ctor_get(v_decl_1092_, 4);
@@ -4624,7 +4618,7 @@ case 1:
 {
 lean_object* v_decl_1605_; lean_object* v_k_1606_; lean_object* v___x_1607_; 
 v_decl_1605_ = lean_ctor_get(v_a_1597_, 0);
-lean_inc_ref(v_decl_1605_);
+lean_inc_ref_n(v_decl_1605_, 2);
 v_k_1606_ = lean_ctor_get(v_a_1597_, 1);
 lean_inc_ref(v_k_1606_);
 lean_dec_ref(v_a_1597_);
@@ -4633,7 +4627,6 @@ lean_inc(v_a_1601_);
 lean_inc_ref(v_a_1600_);
 lean_inc(v_a_1599_);
 lean_inc_ref(v_a_1598_);
-lean_inc_ref(v_decl_1605_);
 v___x_1607_ = lean_apply_6(v_f_1596_, v_decl_1605_, v_a_1598_, v_a_1599_, v_a_1600_, v_a_1601_, lean_box(0));
 if (lean_obj_tag(v___x_1607_) == 0)
 {
@@ -5268,7 +5261,7 @@ case 2:
 {
 lean_object* v_decl_1810_; lean_object* v_k_1811_; lean_object* v___x_1812_; 
 v_decl_1810_ = lean_ctor_get(v_a_1795_, 0);
-lean_inc_ref(v_decl_1810_);
+lean_inc_ref_n(v_decl_1810_, 2);
 v_k_1811_ = lean_ctor_get(v_a_1795_, 1);
 lean_inc_ref(v_k_1811_);
 lean_dec_ref(v_a_1795_);
@@ -5277,7 +5270,6 @@ lean_inc(v_a_1799_);
 lean_inc_ref(v_a_1798_);
 lean_inc(v_a_1797_);
 lean_inc_ref(v_a_1796_);
-lean_inc_ref(v_decl_1810_);
 v___x_1812_ = lean_apply_6(v_f_1794_, v_decl_1810_, v_a_1796_, v_a_1797_, v_a_1798_, v_a_1799_, lean_box(0));
 if (lean_obj_tag(v___x_1812_) == 0)
 {
@@ -5863,7 +5855,7 @@ case 1:
 {
 lean_object* v_decl_2006_; lean_object* v_k_2007_; lean_object* v___x_2008_; 
 v_decl_2006_ = lean_ctor_get(v_a_1998_, 0);
-lean_inc_ref(v_decl_2006_);
+lean_inc_ref_n(v_decl_2006_, 2);
 v_k_2007_ = lean_ctor_get(v_a_1998_, 1);
 lean_inc_ref(v_k_2007_);
 lean_dec_ref(v_a_1998_);
@@ -5872,7 +5864,6 @@ lean_inc(v_a_2002_);
 lean_inc_ref(v_a_2001_);
 lean_inc(v_a_2000_);
 lean_inc_ref(v_a_1999_);
-lean_inc_ref(v_decl_2006_);
 v___x_2008_ = lean_apply_6(v_f_1997_, v_decl_2006_, v_a_1999_, v_a_2000_, v_a_2001_, v_a_2002_, lean_box(0));
 if (lean_obj_tag(v___x_2008_) == 0)
 {
@@ -5937,7 +5928,7 @@ case 2:
 {
 lean_object* v_decl_2016_; lean_object* v_k_2017_; lean_object* v___x_2018_; 
 v_decl_2016_ = lean_ctor_get(v_a_1998_, 0);
-lean_inc_ref(v_decl_2016_);
+lean_inc_ref_n(v_decl_2016_, 2);
 v_k_2017_ = lean_ctor_get(v_a_1998_, 1);
 lean_inc_ref(v_k_2017_);
 lean_dec_ref(v_a_1998_);
@@ -5946,7 +5937,6 @@ lean_inc(v_a_2002_);
 lean_inc_ref(v_a_2001_);
 lean_inc(v_a_2000_);
 lean_inc_ref(v_a_1999_);
-lean_inc_ref(v_decl_2016_);
 v___x_2018_ = lean_apply_6(v_f_1997_, v_decl_2016_, v_a_1999_, v_a_2000_, v_a_2001_, v_a_2002_, lean_box(0));
 if (lean_obj_tag(v___x_2018_) == 0)
 {
@@ -6612,14 +6602,13 @@ case 4:
 {
 lean_object* v_cases_2226_; lean_object* v___x_2227_; 
 v_cases_2226_ = lean_ctor_get(v_a_2204_, 0);
-lean_inc_ref(v_cases_2226_);
+lean_inc_ref_n(v_cases_2226_, 2);
 lean_dec_ref(v_a_2204_);
 lean_inc_ref(v_f_2203_);
 lean_inc(v_a_2208_);
 lean_inc_ref(v_a_2207_);
 lean_inc(v_a_2206_);
 lean_inc_ref(v_a_2205_);
-lean_inc_ref(v_cases_2226_);
 v___x_2227_ = lean_apply_6(v_f_2203_, v_cases_2226_, v_a_2205_, v_a_2206_, v_a_2207_, v_a_2208_, lean_box(0));
 if (lean_obj_tag(v___x_2227_) == 0)
 {
@@ -8970,10 +8959,9 @@ v_toSeqLeft_3027_ = lean_ctor_get(v_toApplicative_3024_, 3);
 v_toSeqRight_3028_ = lean_ctor_get(v_toApplicative_3024_, 4);
 v___f_3029_ = ((lean_object*)(l_Lean_Compiler_LCNF_Probe_map___redArg___closed__2));
 v___f_3030_ = ((lean_object*)(l_Lean_Compiler_LCNF_Probe_map___redArg___closed__3));
-lean_inc_ref(v_toFunctor_3025_);
+lean_inc_ref_n(v_toFunctor_3025_, 2);
 v___f_3031_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__0), 6, 1);
 lean_closure_set(v___f_3031_, 0, v_toFunctor_3025_);
-lean_inc_ref(v_toFunctor_3025_);
 v___f_3032_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__1), 6, 1);
 lean_closure_set(v___f_3032_, 0, v_toFunctor_3025_);
 v___x_3033_ = lean_alloc_ctor(0, 2, 0);
@@ -9148,10 +9136,9 @@ v_toSeqLeft_3092_ = lean_ctor_get(v_toApplicative_3089_, 3);
 v_toSeqRight_3093_ = lean_ctor_get(v_toApplicative_3089_, 4);
 v___f_3094_ = ((lean_object*)(l_Lean_Compiler_LCNF_Probe_map___redArg___closed__2));
 v___f_3095_ = ((lean_object*)(l_Lean_Compiler_LCNF_Probe_map___redArg___closed__3));
-lean_inc_ref(v_toFunctor_3090_);
+lean_inc_ref_n(v_toFunctor_3090_, 2);
 v___f_3096_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__0), 6, 1);
 lean_closure_set(v___f_3096_, 0, v_toFunctor_3090_);
-lean_inc_ref(v_toFunctor_3090_);
 v___f_3097_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__1), 6, 1);
 lean_closure_set(v___f_3097_, 0, v_toFunctor_3090_);
 v___x_3098_ = lean_alloc_ctor(0, 2, 0);
@@ -9349,10 +9336,9 @@ v_toSeqLeft_3176_ = lean_ctor_get(v_toApplicative_3173_, 3);
 v_toSeqRight_3177_ = lean_ctor_get(v_toApplicative_3173_, 4);
 v___f_3178_ = ((lean_object*)(l_Lean_Compiler_LCNF_Probe_map___redArg___closed__2));
 v___f_3179_ = ((lean_object*)(l_Lean_Compiler_LCNF_Probe_map___redArg___closed__3));
-lean_inc_ref(v_toFunctor_3174_);
+lean_inc_ref_n(v_toFunctor_3174_, 2);
 v___f_3180_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__0), 6, 1);
 lean_closure_set(v___f_3180_, 0, v_toFunctor_3174_);
-lean_inc_ref(v_toFunctor_3174_);
 v___f_3181_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__1), 6, 1);
 lean_closure_set(v___f_3181_, 0, v_toFunctor_3174_);
 v___x_3182_ = lean_alloc_ctor(0, 2, 0);
@@ -9528,10 +9514,9 @@ v_toSeqLeft_3243_ = lean_ctor_get(v_toApplicative_3240_, 3);
 v_toSeqRight_3244_ = lean_ctor_get(v_toApplicative_3240_, 4);
 v___f_3245_ = ((lean_object*)(l_Lean_Compiler_LCNF_Probe_map___redArg___closed__2));
 v___f_3246_ = ((lean_object*)(l_Lean_Compiler_LCNF_Probe_map___redArg___closed__3));
-lean_inc_ref(v_toFunctor_3241_);
+lean_inc_ref_n(v_toFunctor_3241_, 2);
 v___f_3247_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__0), 6, 1);
 lean_closure_set(v___f_3247_, 0, v_toFunctor_3241_);
-lean_inc_ref(v_toFunctor_3241_);
 v___f_3248_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__1), 6, 1);
 lean_closure_set(v___f_3248_, 0, v_toFunctor_3241_);
 v___x_3249_ = lean_alloc_ctor(0, 2, 0);
@@ -10351,10 +10336,9 @@ v_toSeqLeft_3579_ = lean_ctor_get(v_toApplicative_3576_, 3);
 v_toSeqRight_3580_ = lean_ctor_get(v_toApplicative_3576_, 4);
 v___f_3581_ = ((lean_object*)(l_Lean_Compiler_LCNF_Probe_map___redArg___closed__2));
 v___f_3582_ = ((lean_object*)(l_Lean_Compiler_LCNF_Probe_map___redArg___closed__3));
-lean_inc_ref(v_toFunctor_3577_);
+lean_inc_ref_n(v_toFunctor_3577_, 2);
 v___f_3583_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__0), 6, 1);
 lean_closure_set(v___f_3583_, 0, v_toFunctor_3577_);
-lean_inc_ref(v_toFunctor_3577_);
 v___f_3584_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__1), 6, 1);
 lean_closure_set(v___f_3584_, 0, v_toFunctor_3577_);
 v___x_3585_ = lean_alloc_ctor(0, 2, 0);

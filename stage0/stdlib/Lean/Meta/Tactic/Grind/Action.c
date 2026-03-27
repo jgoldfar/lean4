@@ -1152,8 +1152,7 @@ v___x_437_ = l_Lean_Exception_isInterrupt(v_a_436_);
 if (v___x_437_ == 0)
 {
 uint8_t v___x_438_; 
-lean_inc(v_a_436_);
-lean_inc(v_a_436_);
+lean_inc_n(v_a_436_, 2);
 v___x_438_ = l_Lean_Exception_isMaxHeartbeat(v_a_436_);
 if (v___x_438_ == 0)
 {
@@ -2177,12 +2176,11 @@ v___x_982_ = 0;
 v___x_983_ = l_Lean_SourceInfo_fromRef(v_ref_980_, v___x_982_);
 v___x_984_ = ((lean_object*)(l___private_Lean_Meta_Tactic_Grind_Action_0__Lean_Meta_Grind_Action_mkGrindParen___redArg___closed__1));
 v___x_985_ = ((lean_object*)(l___private_Lean_Meta_Tactic_Grind_Action_0__Lean_Meta_Grind_Action_mkGrindParen___redArg___closed__2));
-lean_inc(v___x_983_);
+lean_inc_n(v___x_983_, 2);
 v___x_986_ = lean_alloc_ctor(2, 2, 0);
 lean_ctor_set(v___x_986_, 0, v___x_983_);
 lean_ctor_set(v___x_986_, 1, v___x_985_);
 v___x_987_ = ((lean_object*)(l___private_Lean_Meta_Tactic_Grind_Action_0__Lean_Meta_Grind_Action_mkGrindParen___redArg___closed__3));
-lean_inc(v___x_983_);
 v___x_988_ = lean_alloc_ctor(2, 2, 0);
 lean_ctor_set(v___x_988_, 0, v___x_983_);
 lean_ctor_set(v___x_988_, 1, v___x_987_);
@@ -5348,10 +5346,9 @@ goto v_resetjp_2087_;
 v_resetjp_2087_:
 {
 lean_object* v___x_2090_; lean_object* v___x_2091_; lean_object* v___x_2092_; lean_object* v___x_2093_; 
-lean_inc_ref(v___y_2082_);
+lean_inc_ref_n(v___y_2082_, 2);
 v___x_2090_ = l_Lean_FileMap_toPosition(v___y_2082_, v___y_2079_);
 lean_dec(v___y_2079_);
-lean_inc_ref(v___y_2082_);
 v___x_2091_ = l_Lean_FileMap_toPosition(v___y_2082_, v___y_2083_);
 lean_dec(v___y_2083_);
 v___x_2092_ = lean_alloc_ctor(1, 1, 0);

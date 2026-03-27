@@ -1437,10 +1437,9 @@ goto v_resetjp_394_;
 v_resetjp_394_:
 {
 lean_object* v___x_397_; lean_object* v___x_398_; lean_object* v___x_399_; lean_object* v___x_400_; 
-lean_inc_ref(v___y_388_);
+lean_inc_ref_n(v___y_388_, 2);
 v___x_397_ = l_Lean_FileMap_toPosition(v___y_388_, v___y_389_);
 lean_dec(v___y_389_);
-lean_inc_ref(v___y_388_);
 v___x_398_ = l_Lean_FileMap_toPosition(v___y_388_, v___y_390_);
 lean_dec(v___y_390_);
 v___x_399_ = lean_alloc_ctor(1, 1, 0);
@@ -7003,9 +7002,8 @@ if (lean_obj_tag(v___x_2924_) == 0)
 lean_object* v_mvarId_2925_; lean_object* v___x_2926_; lean_object* v___f_2927_; lean_object* v___x_2928_; 
 lean_dec_ref(v___x_2924_);
 v_mvarId_2925_ = lean_ctor_get(v_a_2923_, 1);
-lean_inc(v_mvarId_2925_);
+lean_inc_n(v_mvarId_2925_, 2);
 lean_dec(v_a_2923_);
-lean_inc(v_mvarId_2925_);
 v___x_2926_ = l_Lean_mkMVar(v_mvarId_2925_);
 v___f_2927_ = lean_alloc_closure((void*)(l___private_Lean_Elab_Tactic_Grind_ShowState_0__Lean_Elab_Tactic_Grind_evalShowTerm___lam__0___boxed), 10, 1);
 lean_closure_set(v___f_2927_, 0, v___x_2926_);

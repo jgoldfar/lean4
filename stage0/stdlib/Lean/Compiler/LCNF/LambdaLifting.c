@@ -1119,9 +1119,8 @@ if (lean_obj_tag(v___x_349_) == 0)
 {
 lean_object* v_a_350_; lean_object* v___x_351_; 
 v_a_350_ = lean_ctor_get(v___x_349_, 0);
-lean_inc(v_a_350_);
+lean_inc_n(v_a_350_, 2);
 lean_dec_ref(v___x_349_);
-lean_inc(v_a_350_);
 v___x_351_ = l_Lean_Compiler_LCNF_Code_inferType(v___x_348_, v_a_350_, v_a_334_, v_a_335_, v_a_336_, v_a_337_);
 if (lean_obj_tag(v___x_351_) == 0)
 {

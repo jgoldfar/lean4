@@ -1608,11 +1608,10 @@ v_resetjp_227_:
 {
 lean_object* v_n_230_; lean_object* v_value_231_; lean_object* v___x_232_; lean_object* v___x_233_; lean_object* v_r_234_; lean_object* v___x_235_; lean_object* v___x_236_; lean_object* v___x_237_; lean_object* v___x_238_; lean_object* v___x_239_; lean_object* v___x_240_; lean_object* v___x_241_; lean_object* v___x_242_; lean_object* v___x_243_; lean_object* v___x_244_; lean_object* v___x_245_; lean_object* v___x_246_; lean_object* v___x_248_; 
 v_n_230_ = lean_ctor_get(v_val_226_, 0);
-lean_inc(v_n_230_);
+lean_inc_n(v_n_230_, 2);
 v_value_231_ = lean_ctor_get(v_val_226_, 1);
 lean_inc(v_value_231_);
 lean_dec(v_val_226_);
-lean_inc(v_n_230_);
 v___x_232_ = lean_apply_2(v_op_210_, v_n_230_, v_value_231_);
 v___x_233_ = lean_apply_1(v_f_209_, v_n_230_);
 v_r_234_ = l_Lean_mkRawNatLit(v___x_232_);
@@ -1823,11 +1822,10 @@ v_resetjp_301_:
 {
 lean_object* v_n_304_; lean_object* v_value_305_; lean_object* v___x_306_; lean_object* v___x_307_; lean_object* v_r_308_; lean_object* v___x_309_; lean_object* v___x_310_; lean_object* v___x_311_; lean_object* v___x_312_; lean_object* v___x_313_; lean_object* v___x_314_; lean_object* v___x_315_; lean_object* v___x_316_; lean_object* v___x_317_; lean_object* v___x_318_; lean_object* v___x_319_; lean_object* v___x_320_; lean_object* v___x_322_; 
 v_n_304_ = lean_ctor_get(v_val_300_, 0);
-lean_inc(v_n_304_);
+lean_inc_n(v_n_304_, 2);
 v_value_305_ = lean_ctor_get(v_val_300_, 1);
 lean_inc(v_value_305_);
 lean_dec(v_val_300_);
-lean_inc(v_n_304_);
 v___x_306_ = lean_apply_2(v_op_281_, v_n_304_, v_value_305_);
 v___x_307_ = lean_apply_1(v_f_280_, v_n_304_);
 v_r_308_ = l_Lean_mkRawNatLit(v___x_306_);
@@ -2539,12 +2537,11 @@ return v___x_536_;
 else
 {
 lean_object* v___x_538_; lean_object* v_r_539_; lean_object* v___x_540_; lean_object* v___x_541_; lean_object* v___x_542_; lean_object* v___x_543_; lean_object* v___x_544_; lean_object* v___x_545_; lean_object* v___x_546_; lean_object* v___x_547_; lean_object* v___x_548_; lean_object* v___x_549_; lean_object* v___x_550_; lean_object* v___x_551_; lean_object* v___x_553_; 
-lean_inc(v_n_529_);
+lean_inc_n(v_n_529_, 2);
 v___x_538_ = lean_apply_3(v_op_501_, v_n_529_, v_value_530_, v_value_532_);
 v_r_539_ = l_Lean_mkRawNatLit(v___x_538_);
 v___x_540_ = lean_obj_once(&l_Fin_reduceOp___redArg___closed__6, &l_Fin_reduceOp___redArg___closed__6_once, _init_l_Fin_reduceOp___redArg___closed__6);
 v___x_541_ = lean_obj_once(&l_Fin_reduceOp___redArg___closed__9, &l_Fin_reduceOp___redArg___closed__9_once, _init_l_Fin_reduceOp___redArg___closed__9);
-lean_inc(v_n_529_);
 v___x_542_ = l_Lean_mkNatLit(v_n_529_);
 lean_inc_ref(v___x_542_);
 v___x_543_ = l_Lean_Expr_app___override(v___x_541_, v___x_542_);
@@ -2893,12 +2890,11 @@ return v___x_635_;
 else
 {
 lean_object* v___x_637_; lean_object* v_r_638_; lean_object* v___x_639_; lean_object* v___x_640_; lean_object* v___x_641_; lean_object* v___x_642_; lean_object* v___x_643_; lean_object* v___x_644_; lean_object* v___x_645_; lean_object* v___x_646_; lean_object* v___x_647_; lean_object* v___x_648_; lean_object* v___x_649_; lean_object* v___x_650_; lean_object* v___x_652_; 
-lean_inc(v_n_628_);
+lean_inc_n(v_n_628_, 2);
 v___x_637_ = lean_apply_3(v_op_597_, v_n_628_, v_value_629_, v_value_631_);
 v_r_638_ = l_Lean_mkRawNatLit(v___x_637_);
 v___x_639_ = lean_obj_once(&l_Fin_reduceOp___redArg___closed__6, &l_Fin_reduceOp___redArg___closed__6_once, _init_l_Fin_reduceOp___redArg___closed__6);
 v___x_640_ = lean_obj_once(&l_Fin_reduceOp___redArg___closed__9, &l_Fin_reduceOp___redArg___closed__9_once, _init_l_Fin_reduceOp___redArg___closed__9);
-lean_inc(v_n_628_);
 v___x_641_ = l_Lean_mkNatLit(v_n_628_);
 lean_inc_ref(v___x_641_);
 v___x_642_ = l_Lean_Expr_app___override(v___x_640_, v___x_641_);
@@ -4655,7 +4651,7 @@ v_resetjp_1172_:
 {
 lean_object* v_n_1175_; lean_object* v_value_1176_; lean_object* v___x_1177_; lean_object* v___x_1178_; lean_object* v___x_1179_; lean_object* v_r_1180_; lean_object* v___x_1181_; lean_object* v___x_1182_; lean_object* v___x_1183_; lean_object* v___x_1184_; lean_object* v___x_1185_; lean_object* v___x_1186_; lean_object* v___x_1187_; lean_object* v___x_1188_; lean_object* v___x_1189_; lean_object* v___x_1190_; lean_object* v___x_1191_; lean_object* v___x_1193_; 
 v_n_1175_ = lean_ctor_get(v_val_1171_, 0);
-lean_inc(v_n_1175_);
+lean_inc_n(v_n_1175_, 2);
 v_value_1176_ = lean_ctor_get(v_val_1171_, 1);
 lean_inc(v_value_1176_);
 lean_dec(v_val_1171_);
@@ -4667,7 +4663,6 @@ lean_dec(v___x_1178_);
 v_r_1180_ = l_Lean_mkRawNatLit(v___x_1179_);
 v___x_1181_ = lean_obj_once(&l_Fin_reduceOp___redArg___closed__6, &l_Fin_reduceOp___redArg___closed__6_once, _init_l_Fin_reduceOp___redArg___closed__6);
 v___x_1182_ = lean_obj_once(&l_Fin_reduceOp___redArg___closed__9, &l_Fin_reduceOp___redArg___closed__9_once, _init_l_Fin_reduceOp___redArg___closed__9);
-lean_inc(v_n_1175_);
 v___x_1183_ = l_Lean_mkNatLit(v_n_1175_);
 lean_inc_ref(v___x_1183_);
 v___x_1184_ = l_Lean_Expr_app___override(v___x_1182_, v___x_1183_);

@@ -1168,9 +1168,8 @@ lean_object* v_size_352_; lean_object* v___f_353_; lean_object* v___x_354_; lean
 lean_dec(v___x_347_);
 lean_del_object(v___x_343_);
 v_size_352_ = lean_ctor_get(v_vars_345_, 2);
-lean_inc(v_size_352_);
+lean_inc_n(v_size_352_, 2);
 lean_dec_ref(v_vars_345_);
-lean_inc(v_size_352_);
 lean_inc_ref(v_e_326_);
 lean_inc(v_a_328_);
 v___f_353_ = lean_alloc_closure((void*)(l_Lean_Meta_Grind_Arith_Linear_mkVar___lam__0___boxed), 4, 3);

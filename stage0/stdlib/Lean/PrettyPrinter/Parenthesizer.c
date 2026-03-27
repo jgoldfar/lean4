@@ -4783,10 +4783,9 @@ v_env_1298_ = lean_ctor_get(v___x_1297_, 0);
 lean_inc_ref(v_env_1298_);
 lean_dec(v___x_1297_);
 v_declName_1299_ = lean_ctor_get(v_val_1296_, 0);
-lean_inc(v_declName_1299_);
+lean_inc_n(v_declName_1299_, 2);
 lean_dec(v_val_1296_);
 v___x_1300_ = 1;
-lean_inc(v_declName_1299_);
 v___x_1301_ = l_Lean_Environment_contains(v_env_1298_, v_declName_1299_, v___x_1300_);
 if (v___x_1301_ == 0)
 {
@@ -6180,10 +6179,9 @@ v_toSeqRight_1898_ = lean_ctor_get(v_toApplicative_1894_, 4);
 v___f_1899_ = ((lean_object*)(l_Lean_PrettyPrinter_Parenthesizer_instMonadQuotationParenthesizerM___closed__8));
 v___f_1900_ = ((lean_object*)(l_Lean_PrettyPrinter_Parenthesizer_instMonadQuotationParenthesizerM___closed__9));
 v___f_1901_ = ((lean_object*)(l_Lean_PrettyPrinter_Parenthesizer_instMonadQuotationParenthesizerM___closed__10));
-lean_inc_ref(v_toFunctor_1895_);
+lean_inc_ref_n(v_toFunctor_1895_, 2);
 v___f_1902_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__0), 6, 1);
 lean_closure_set(v___f_1902_, 0, v_toFunctor_1895_);
-lean_inc_ref(v_toFunctor_1895_);
 v___f_1903_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__1), 6, 1);
 lean_closure_set(v___f_1903_, 0, v_toFunctor_1895_);
 v___x_1904_ = lean_alloc_ctor(0, 2, 0);
@@ -8748,9 +8746,8 @@ if (lean_obj_tag(v___x_2703_) == 0)
 {
 lean_object* v_a_2704_; lean_object* v___x_2705_; lean_object* v___x_2706_; uint8_t v___x_2707_; 
 v_a_2704_ = lean_ctor_get(v___x_2703_, 0);
-lean_inc(v_a_2704_);
+lean_inc_n(v_a_2704_, 2);
 lean_dec_ref(v___x_2703_);
-lean_inc(v_a_2704_);
 v___x_2705_ = l_Lean_Syntax_getKind(v_a_2704_);
 v___x_2706_ = ((lean_object*)(l_Lean_PrettyPrinter_Parenthesizer_orelse_parenthesizer___closed__1));
 v___x_2707_ = lean_name_eq(v___x_2705_, v___x_2706_);
@@ -9397,13 +9394,12 @@ if (lean_obj_tag(v___x_3030_) == 0)
 {
 lean_object* v_a_3031_; lean_object* v___x_3032_; lean_object* v___x_3033_; lean_object* v___x_3034_; uint8_t v___x_3035_; 
 v_a_3031_ = lean_ctor_get(v___x_3030_, 0);
-lean_inc(v_a_3031_);
+lean_inc_n(v_a_3031_, 2);
 lean_dec_ref(v___x_3030_);
 lean_inc(v_cat_3002_);
 v___x_3032_ = lean_alloc_ctor(0, 1, 1);
 lean_ctor_set(v___x_3032_, 0, v_cat_3002_);
 lean_ctor_set_uint8(v___x_3032_, sizeof(void*)*1, v_forceParens_3029_);
-lean_inc(v_a_3031_);
 v___x_3033_ = l_Lean_Syntax_getKind(v_a_3031_);
 v___x_3034_ = ((lean_object*)(l_Lean_PrettyPrinter_Parenthesizer_orelse_parenthesizer___closed__1));
 v___x_3035_ = lean_name_eq(v___x_3033_, v___x_3034_);
@@ -9413,11 +9409,10 @@ uint8_t v___x_3036_; lean_object* v___x_3037_; lean_object* v___x_3038_; lean_ob
 lean_dec(v_a_3031_);
 lean_dec(v___prec_3003_);
 v___x_3036_ = 1;
-lean_inc(v_cat_3002_);
+lean_inc_n(v_cat_3002_, 2);
 v___x_3037_ = l_Lean_Name_toString(v_cat_3002_, v___x_3036_);
 v___x_3038_ = lean_box(v___x_3036_);
 v___x_3039_ = lean_box(v___x_3036_);
-lean_inc(v_cat_3002_);
 v___x_3040_ = lean_alloc_closure((void*)(l_Lean_PrettyPrinter_Parenthesizer_mkAntiquot_parenthesizer_x27___boxed), 9, 4);
 lean_closure_set(v___x_3040_, 0, v___x_3037_);
 lean_closure_set(v___x_3040_, 1, v_cat_3002_);
@@ -11021,9 +11016,8 @@ _start:
 lean_object* v___x_3856_; lean_object* v_a_3857_; uint8_t v___x_3858_; 
 v___x_3856_ = l_Lean_Syntax_MonadTraverser_getCur___at___00Lean_PrettyPrinter_Parenthesizer_visitArgs_spec__2___redArg(v_a_3852_);
 v_a_3857_ = lean_ctor_get(v___x_3856_, 0);
-lean_inc(v_a_3857_);
+lean_inc_n(v_a_3857_, 2);
 lean_dec_ref(v___x_3856_);
-lean_inc(v_a_3857_);
 lean_inc_ref(v_sym_3851_);
 v___x_3858_ = l_Lean_Syntax_isToken(v_sym_3851_, v_a_3857_);
 if (v___x_3858_ == 0)
@@ -11175,9 +11169,8 @@ _start:
 lean_object* v___x_3933_; lean_object* v_a_3934_; uint8_t v___y_3936_; uint8_t v___x_3960_; 
 v___x_3933_ = l_Lean_Syntax_MonadTraverser_getCur___at___00Lean_PrettyPrinter_Parenthesizer_visitArgs_spec__2___redArg(v_a_3929_);
 v_a_3934_ = lean_ctor_get(v___x_3933_, 0);
-lean_inc(v_a_3934_);
+lean_inc_n(v_a_3934_, 2);
 lean_dec_ref(v___x_3933_);
-lean_inc(v_a_3934_);
 lean_inc_ref(v_sym_3927_);
 v___x_3960_ = l_Lean_Syntax_isToken(v_sym_3927_, v_a_3934_);
 if (v___x_3960_ == 0)

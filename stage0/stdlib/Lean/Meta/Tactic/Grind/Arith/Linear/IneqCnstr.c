@@ -3737,9 +3737,8 @@ if (lean_obj_tag(v_a_1254_) == 1)
 lean_object* v_val_1258_; lean_object* v___x_1259_; lean_object* v___x_1260_; lean_object* v___x_1261_; lean_object* v___x_1262_; 
 lean_del_object(v___x_1256_);
 v_val_1258_ = lean_ctor_get(v_a_1254_, 0);
-lean_inc(v_val_1258_);
+lean_inc_n(v_val_1258_, 2);
 lean_dec_ref(v_a_1254_);
-lean_inc(v_val_1258_);
 v___x_1259_ = l_Lean_Grind_Linarith_Expr_norm(v_val_1258_);
 v___x_1260_ = lean_alloc_ctor(2, 2, 0);
 lean_ctor_set(v___x_1260_, 0, v_a_1249_);
@@ -4020,9 +4019,8 @@ if (lean_obj_tag(v_a_1312_) == 1)
 lean_object* v_val_1316_; lean_object* v___x_1317_; lean_object* v___x_1318_; lean_object* v___x_1319_; lean_object* v___x_1320_; 
 lean_del_object(v___x_1314_);
 v_val_1316_ = lean_ctor_get(v_a_1312_, 0);
-lean_inc(v_val_1316_);
+lean_inc_n(v_val_1316_, 2);
 lean_dec_ref(v_a_1312_);
-lean_inc(v_val_1316_);
 v___x_1317_ = l_Lean_Grind_Linarith_Expr_norm(v_val_1316_);
 v___x_1318_ = lean_alloc_ctor(2, 2, 0);
 lean_ctor_set(v___x_1318_, 0, v_a_1307_);
@@ -4609,9 +4607,8 @@ else
 {
 lean_object* v_val_1460_; lean_object* v___x_1461_; lean_object* v___x_1462_; lean_object* v___x_1463_; lean_object* v___x_1464_; lean_object* v___x_1465_; 
 v_val_1460_ = lean_ctor_get(v_a_1433_, 0);
-lean_inc(v_val_1460_);
+lean_inc_n(v_val_1460_, 2);
 lean_dec_ref(v_a_1433_);
-lean_inc(v_val_1460_);
 lean_inc(v_val_1429_);
 v___x_1461_ = lean_alloc_ctor(3, 2, 0);
 lean_ctor_set(v___x_1461_, 0, v_val_1429_);
@@ -5034,10 +5031,9 @@ if (v_eqTrue_1532_ == 0)
 {
 lean_object* v_val_1574_; lean_object* v___x_1576_; 
 v_val_1574_ = lean_ctor_get(v_a_1570_, 0);
-lean_inc(v_val_1574_);
+lean_inc_n(v_val_1574_, 2);
 lean_dec_ref(v_a_1570_);
 lean_inc(v_val_1566_);
-lean_inc(v_val_1574_);
 if (v_isShared_1555_ == 0)
 {
 lean_ctor_set_tag(v___x_1554_, 3);
@@ -5093,9 +5089,8 @@ else
 {
 lean_object* v_val_1585_; lean_object* v___x_1587_; 
 v_val_1585_ = lean_ctor_get(v_a_1570_, 0);
-lean_inc(v_val_1585_);
+lean_inc_n(v_val_1585_, 2);
 lean_dec_ref(v_a_1570_);
-lean_inc(v_val_1585_);
 lean_inc(v_val_1566_);
 if (v_isShared_1555_ == 0)
 {

@@ -1952,9 +1952,8 @@ if (lean_obj_tag(v___x_580_) == 0)
 {
 lean_object* v_a_581_; lean_object* v___x_582_; 
 v_a_581_ = lean_ctor_get(v___x_580_, 0);
-lean_inc(v_a_581_);
+lean_inc_n(v_a_581_, 2);
 lean_dec_ref(v___x_580_);
-lean_inc(v_a_581_);
 v___x_582_ = l_Lean_Meta_isProp(v_a_581_, v_a_566_, v_a_567_, v_a_568_, v_a_569_);
 if (lean_obj_tag(v___x_582_) == 0)
 {
@@ -7298,10 +7297,9 @@ goto v_resetjp_2030_;
 v_resetjp_2030_:
 {
 lean_object* v___x_2033_; lean_object* v___x_2034_; lean_object* v___x_2035_; lean_object* v___x_2036_; 
-lean_inc_ref(v___y_2020_);
+lean_inc_ref_n(v___y_2020_, 2);
 v___x_2033_ = l_Lean_FileMap_toPosition(v___y_2020_, v___y_2025_);
 lean_dec(v___y_2025_);
-lean_inc_ref(v___y_2020_);
 v___x_2034_ = l_Lean_FileMap_toPosition(v___y_2020_, v___y_2026_);
 lean_dec(v___y_2026_);
 v___x_2035_ = lean_alloc_ctor(1, 1, 0);

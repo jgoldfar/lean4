@@ -17244,9 +17244,8 @@ v_resetjp_4703_:
 {
 lean_object* v___x_4706_; lean_object* v___x_4707_; lean_object* v___x_4708_; double v___x_4709_; double v___x_4710_; lean_object* v___x_4711_; lean_object* v___x_4712_; double v___x_4713_; double v___x_4714_; lean_object* v___x_4715_; lean_object* v___x_4716_; lean_object* v___x_4717_; double v___x_4718_; lean_object* v___x_4719_; lean_object* v___x_4720_; double v___x_4721_; double v___x_4722_; double v___x_4723_; lean_object* v___x_4724_; lean_object* v___x_4725_; lean_object* v___x_4726_; lean_object* v___x_4727_; lean_object* v___x_4728_; double v___x_4729_; double v___x_4730_; lean_object* v___x_4731_; lean_object* v___x_4732_; lean_object* v___x_4733_; lean_object* v___x_4734_; lean_object* v___x_4736_; 
 v___x_4706_ = lean_unsigned_to_nat(0u);
-lean_inc(v_fst_4651_);
+lean_inc_n(v_fst_4651_, 2);
 v___x_4707_ = lean_array_push(v_stack_4698_, v_fst_4651_);
-lean_inc(v_fst_4651_);
 v___x_4708_ = lean_array_push(v___x_4707_, v_fst_4651_);
 v___x_4709_ = lean_float_once(&l_Lean_Firefox_instCoeFloatMilliseconds___lam__0___closed__0, &l_Lean_Firefox_instCoeFloatMilliseconds___lam__0___closed__0_once, _init_l_Lean_Firefox_instCoeFloatMilliseconds___lam__0___closed__0);
 v___x_4710_ = lean_float_mul(v_lastTime_4681_, v___x_4709_);
@@ -19397,11 +19396,10 @@ else
 lean_object* v_a_5523_; lean_object* v___x_5524_; uint64_t v___x_5525_; lean_object* v___x_5526_; size_t v___x_5527_; size_t v___x_5528_; 
 v_a_5523_ = lean_array_uget_borrowed(v_as_5518_, v_i_5520_);
 lean_inc_ref(v_key_5517_);
-lean_inc(v_a_5523_);
+lean_inc_n(v_a_5523_, 2);
 v___x_5524_ = lean_apply_1(v_key_5517_, v_a_5523_);
 v___x_5525_ = lean_unbox_uint64(v___x_5524_);
 lean_dec_ref(v___x_5524_);
-lean_inc(v_a_5523_);
 v___x_5526_ = l_Std_DHashMap_Internal_Raw_u2080_Const_alter___at___00Array_groupByKey___at___00Lean_Firefox_Profile_export_spec__0_spec__0___redArg(v_a_5523_, v_b_5521_, v___x_5525_);
 v___x_5527_ = ((size_t)1ULL);
 v___x_5528_ = lean_usize_add(v_i_5520_, v___x_5527_);

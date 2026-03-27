@@ -1679,8 +1679,7 @@ v_resetjp_381_:
 {
 lean_object* v_size_384_; lean_object* v___x_385_; lean_object* v___x_386_; lean_object* v___x_388_; 
 v_size_384_ = lean_ctor_get(v_exprToVarIndex_378_, 0);
-lean_inc(v_size_384_);
-lean_inc(v_size_384_);
+lean_inc_n(v_size_384_, 2);
 lean_inc_ref(v_e_374_);
 v___x_385_ = l_Std_DHashMap_Internal_Raw_u2080_insert___at___00Lean_Elab_Tactic_BVDecide_Frontend_Normalize_VarStateM_exprToVar_spec__1___redArg(v_exprToVarIndex_378_, v_e_374_, v_size_384_);
 v___x_386_ = lean_array_push(v_varToExpr_379_, v_e_374_);
@@ -10502,11 +10501,10 @@ lean_inc(v_a_3442_);
 lean_dec_ref(v___x_3441_);
 v___x_3443_ = l_Lean_instantiateMVars___at___00Lean_Elab_Tactic_BVDecide_Frontend_Normalize_proveEqualityByAC_spec__0___redArg(v_a_3442_, v_a_3399_);
 v_a_3444_ = lean_ctor_get(v___x_3443_, 0);
-lean_inc(v_a_3444_);
+lean_inc_n(v_a_3444_, 2);
 lean_dec_ref(v___x_3443_);
 v___x_3445_ = lean_obj_once(&l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_bvAcNfTarget___closed__11, &l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_bvAcNfTarget___closed__11_once, _init_l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_bvAcNfTarget___closed__11);
 v___x_3446_ = lean_obj_once(&l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_bvAcNfTarget___closed__12, &l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_bvAcNfTarget___closed__12_once, _init_l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_bvAcNfTarget___closed__12);
-lean_inc(v_a_3444_);
 v___x_3447_ = l_Lean_Meta_Simp_main(v_a_3444_, v_a_3440_, v___x_3445_, v___x_3446_, v_a_3398_, v_a_3399_, v_a_3400_, v_a_3401_);
 if (lean_obj_tag(v___x_3447_) == 0)
 {
@@ -12262,10 +12260,9 @@ if (lean_obj_tag(v___x_4070_) == 0)
 {
 lean_object* v_a_4071_; lean_object* v___f_4072_; lean_object* v___x_4073_; 
 v_a_4071_ = lean_ctor_get(v___x_4070_, 0);
-lean_inc(v_a_4071_);
+lean_inc_n(v_a_4071_, 2);
 lean_dec_ref(v___x_4070_);
 v___f_4072_ = ((lean_object*)(l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_bvAcNormalizePass___lam__1___closed__0));
-lean_inc(v_a_4071_);
 v___x_4073_ = l_Lean_MVarId_withContext___at___00Lean_Elab_Tactic_BVDecide_Frontend_Normalize_bvAcNormalizePass_spec__4___redArg(v_a_4071_, v___f_4072_, v___y_4056_, v___y_4057_, v___y_4058_, v___y_4059_, v___y_4060_, v___y_4061_);
 if (lean_obj_tag(v___x_4073_) == 0)
 {

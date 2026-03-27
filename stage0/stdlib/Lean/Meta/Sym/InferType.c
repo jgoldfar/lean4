@@ -1469,9 +1469,8 @@ if (lean_obj_tag(v___x_513_) == 0)
 {
 lean_object* v_a_514_; lean_object* v___x_515_; 
 v_a_514_ = lean_ctor_get(v___x_513_, 0);
-lean_inc(v_a_514_);
+lean_inc_n(v_a_514_, 2);
 lean_dec_ref(v___x_513_);
-lean_inc(v_a_514_);
 v___x_515_ = l_Lean_Meta_Sym_getLevel___redArg(v_a_514_, v_a_507_, v_a_508_, v_a_509_, v_a_510_, v_a_511_);
 if (lean_obj_tag(v___x_515_) == 0)
 {

@@ -940,9 +940,8 @@ else
 lean_object* v_val_224_; lean_object* v___x_225_; 
 lean_dec(v_inst_188_);
 v_val_224_ = lean_ctor_get(v___x_202_, 0);
-lean_inc(v_val_224_);
+lean_inc_n(v_val_224_, 2);
 lean_dec_ref(v___x_202_);
-lean_inc(v_val_224_);
 lean_inc_ref(v_aliveRefs_191_);
 v___x_225_ = l_Lean_PersistentHashMap_find_x3f___redArg(v___x_198_, v___x_199_, v_aliveRefs_191_, v_val_224_);
 if (lean_obj_tag(v___x_225_) == 1)
@@ -1659,9 +1658,8 @@ else
 {
 lean_object* v_val_442_; lean_object* v_keys_x27_443_; lean_object* v_vals_x27_444_; lean_object* v___x_446_; 
 v_val_442_ = lean_ctor_get(v___x_438_, 0);
-lean_inc(v_val_442_);
+lean_inc_n(v_val_442_, 2);
 lean_dec_ref(v___x_438_);
-lean_inc(v_val_442_);
 v_keys_x27_443_ = l_Array_eraseIdx___redArg(v_ks_433_, v_val_442_);
 v_vals_x27_444_ = l_Array_eraseIdx___redArg(v_vs_434_, v_val_442_);
 if (v_isShared_437_ == 0)
@@ -2287,9 +2285,8 @@ else
 {
 lean_object* v_val_622_; lean_object* v_keys_x27_623_; lean_object* v_vals_x27_624_; lean_object* v___x_626_; 
 v_val_622_ = lean_ctor_get(v___x_618_, 0);
-lean_inc(v_val_622_);
+lean_inc_n(v_val_622_, 2);
 lean_dec_ref(v___x_618_);
-lean_inc(v_val_622_);
 v_keys_x27_623_ = l_Array_eraseIdx___redArg(v_ks_613_, v_val_622_);
 v_vals_x27_624_ = l_Array_eraseIdx___redArg(v_vs_614_, v_val_622_);
 if (v_isShared_617_ == 0)

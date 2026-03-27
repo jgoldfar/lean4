@@ -1145,9 +1145,8 @@ v_a_284_ = lean_ctor_get(v___x_283_, 0);
 lean_inc(v_a_284_);
 lean_dec_ref(v___x_283_);
 v_macroStack_285_ = lean_ctor_get(v___y_275_, 1);
-lean_inc(v_macroStack_285_);
+lean_inc_n(v_macroStack_285_, 2);
 v___x_286_ = l_Lean_Elab_getBetterRef(v_ref_282_, v_macroStack_285_);
-lean_inc(v_macroStack_285_);
 v___x_287_ = l_Lean_Elab_addMacroStack___at___00Lean_throwError___at___00Lean_throwErrorAt___at___00Lean_throwUnknownIdentifierAt___at___00Lean_throwUnknownConstantAt___at___00Lean_throwUnknownConstant___at___00Lean_getConstInfo___at___00__private_Lean_Elab_Tactic_DiscrTreeKey_0__Lean_Elab_Tactic_DiscrTreeKey_getType_spec__0_spec__0_spec__1_spec__2_spec__4_spec__6_spec__8___redArg(v_a_284_, v_macroStack_285_, v___y_279_);
 v_a_288_ = lean_ctor_get(v___x_287_, 0);
 v_isSharedCheck_296_ = !lean_is_exclusive(v___x_287_);
@@ -2606,10 +2605,9 @@ goto v_resetjp_928_;
 v_resetjp_928_:
 {
 lean_object* v___x_931_; lean_object* v___x_932_; lean_object* v___x_933_; lean_object* v___x_934_; 
-lean_inc_ref(v___y_923_);
+lean_inc_ref_n(v___y_923_, 2);
 v___x_931_ = l_Lean_FileMap_toPosition(v___y_923_, v___y_922_);
 lean_dec(v___y_922_);
-lean_inc_ref(v___y_923_);
 v___x_932_ = l_Lean_FileMap_toPosition(v___y_923_, v___y_924_);
 lean_dec(v___y_924_);
 v___x_933_ = lean_alloc_ctor(1, 1, 0);

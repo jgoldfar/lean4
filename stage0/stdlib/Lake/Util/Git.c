@@ -2000,10 +2000,9 @@ if (lean_obj_tag(v___x_734_) == 1)
 {
 lean_object* v_val_735_; lean_object* v___x_736_; lean_object* v___x_737_; lean_object* v___x_738_; lean_object* v___x_739_; lean_object* v___x_740_; 
 v_val_735_ = lean_ctor_get(v___x_734_, 0);
-lean_inc(v_val_735_);
+lean_inc_n(v_val_735_, 2);
 lean_dec_ref(v___x_734_);
 v___x_736_ = lean_string_utf8_byte_size(v_val_735_);
-lean_inc(v_val_735_);
 v___x_737_ = lean_alloc_ctor(0, 3, 0);
 lean_ctor_set(v___x_737_, 0, v_val_735_);
 lean_ctor_set(v___x_737_, 1, v___x_729_);

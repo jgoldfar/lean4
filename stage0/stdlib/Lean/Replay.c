@@ -4891,13 +4891,12 @@ case 2:
 {
 lean_object* v_val_1207_; lean_object* v___x_1208_; lean_object* v_env_1209_; lean_object* v___f_1210_; lean_object* v___x_1214_; lean_object* v___x_1215_; 
 v_val_1207_ = lean_ctor_get(v_val_1139_, 0);
-lean_inc_ref(v_val_1207_);
+lean_inc_ref_n(v_val_1207_, 2);
 v___x_1208_ = lean_st_ref_get(v_a_1126_);
 v_env_1209_ = lean_ctor_get(v___x_1208_, 0);
 lean_inc_ref(v_env_1209_);
 lean_dec(v___x_1208_);
 lean_inc_ref(v___f_1182_);
-lean_inc_ref(v_val_1207_);
 v___f_1210_ = lean_alloc_closure((void*)(l___private_Lean_Replay_0__Lean_Environment_Replay_replayConstant___lam__1___boxed), 6, 2);
 lean_closure_set(v___f_1210_, 0, v_val_1207_);
 lean_closure_set(v___f_1210_, 1, v___f_1182_);
@@ -5187,9 +5186,8 @@ if (lean_obj_tag(v___x_1269_) == 0)
 {
 lean_object* v_a_1270_; lean_object* v___x_1271_; 
 v_a_1270_ = lean_ctor_get(v___x_1269_, 0);
-lean_inc(v_a_1270_);
+lean_inc_n(v_a_1270_, 2);
 lean_dec_ref(v___x_1269_);
-lean_inc(v_a_1270_);
 v___x_1271_ = l_List_forIn_x27_loop___at___00__private_Lean_Replay_0__Lean_Environment_Replay_replayConstant_spec__8___redArg(v_a_1270_, v___x_1267_, v_a_1125_, v_a_1126_);
 if (lean_obj_tag(v___x_1271_) == 0)
 {
@@ -6792,10 +6790,9 @@ v___jp_1713_:
 lean_object* v___x_1715_; lean_object* v_a_1716_; lean_object* v___x_1717_; lean_object* v___x_1718_; lean_object* v___x_1719_; lean_object* v___x_1720_; lean_object* v___x_1721_; 
 v___x_1715_ = l_List_forIn_x27_loop___at___00Lean_Environment_replay_spec__0___redArg(v___y_1714_, v_remaining_1712_);
 v_a_1716_ = lean_ctor_get(v___x_1715_, 0);
-lean_inc(v_a_1716_);
+lean_inc_n(v_a_1716_, 2);
 lean_dec_ref(v___x_1715_);
 v___x_1717_ = lean_elab_environment_to_kernel_env(v_env_1687_);
-lean_inc(v_a_1716_);
 v___x_1718_ = lean_alloc_ctor(0, 5, 0);
 lean_ctor_set(v___x_1718_, 0, v___x_1717_);
 lean_ctor_set(v___x_1718_, 1, v_a_1716_);

@@ -307,13 +307,12 @@ lean_object* v___x_10_; uint8_t v___x_11_; lean_object* v___x_12_; lean_object* 
 v___x_10_ = lean_alloc_ctor(1, 0, 1);
 v___x_11_ = lean_unbox(v_defValue_5_);
 lean_ctor_set_uint8(v___x_10_, 0, v___x_11_);
-lean_inc(v_name_1_);
+lean_inc_n(v_name_1_, 2);
 v___x_12_ = lean_alloc_ctor(0, 4, 0);
 lean_ctor_set(v___x_12_, 0, v_name_1_);
 lean_ctor_set(v___x_12_, 1, v_ref_3_);
 lean_ctor_set(v___x_12_, 2, v___x_10_);
 lean_ctor_set(v___x_12_, 3, v_descr_6_);
-lean_inc(v_name_1_);
 v___x_13_ = lean_register_option(v_name_1_, v___x_12_);
 if (lean_obj_tag(v___x_13_) == 0)
 {
@@ -1824,9 +1823,8 @@ _start:
 {
 lean_object* v_msg_500_; lean_object* v_origin_504_; lean_object* v___x_505_; lean_object* v_a_506_; lean_object* v___x_507_; lean_object* v_usedTheorems_508_; lean_object* v___x_509_; lean_object* v___x_510_; lean_object* v___x_511_; size_t v_sz_512_; size_t v___x_513_; lean_object* v___x_514_; 
 v_origin_504_ = lean_ctor_get(v_thm_490_, 4);
-lean_inc_ref(v_origin_504_);
+lean_inc_ref_n(v_origin_504_, 2);
 lean_dec_ref(v_thm_490_);
-lean_inc_ref(v_origin_504_);
 v___x_505_ = l_Lean_Meta_ppOrigin___at___00Lean_Meta_Simp_mkLoopWarningMsg_spec__0___redArg(v_origin_504_);
 v_a_506_ = lean_ctor_get(v___x_505_, 0);
 lean_inc(v_a_506_);
@@ -2937,10 +2935,9 @@ goto v_resetjp_967_;
 v_resetjp_967_:
 {
 lean_object* v___x_970_; lean_object* v___x_971_; lean_object* v___x_972_; lean_object* v___x_973_; 
-lean_inc_ref(v___y_957_);
+lean_inc_ref_n(v___y_957_, 2);
 v___x_970_ = l_Lean_FileMap_toPosition(v___y_957_, v___y_961_);
 lean_dec(v___y_961_);
-lean_inc_ref(v___y_957_);
 v___x_971_ = l_Lean_FileMap_toPosition(v___y_957_, v___y_963_);
 lean_dec(v___y_963_);
 v___x_972_ = lean_alloc_ctor(1, 1, 0);

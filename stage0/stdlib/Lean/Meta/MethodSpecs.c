@@ -2318,12 +2318,11 @@ if (lean_obj_tag(v___x_571_) == 0)
 {
 lean_object* v_a_572_; uint8_t v___x_573_; uint8_t v___x_574_; lean_object* v___x_575_; 
 v_a_572_ = lean_ctor_get(v___x_571_, 0);
-lean_inc(v_a_572_);
+lean_inc_n(v_a_572_, 2);
 lean_dec_ref(v___x_571_);
 v___x_573_ = 1;
 v___x_574_ = lean_unbox(v_a_521_);
 lean_dec(v_a_521_);
-lean_inc(v_a_572_);
 v___x_575_ = l_Lean_Meta_mkForallFVars(v_xs_468_, v_a_572_, v___x_574_, v___x_505_, v___x_505_, v___x_573_, v___y_550_, v___y_551_, v___y_552_, v___y_553_);
 if (lean_obj_tag(v___x_575_) == 0)
 {
@@ -4387,9 +4386,8 @@ lean_inc(v_name_1175_);
 v_levelParams_1176_ = lean_ctor_get(v_toConstantVal_1173_, 1);
 lean_inc(v_levelParams_1176_);
 v_type_1177_ = lean_ctor_get(v_toConstantVal_1173_, 2);
-lean_inc_ref(v_type_1177_);
+lean_inc_ref_n(v_type_1177_, 2);
 lean_dec_ref(v_toConstantVal_1173_);
-lean_inc_ref(v_type_1177_);
 v___x_1178_ = l_Lean_Meta_isClass_x3f(v_type_1177_, v_a_1166_, v_a_1167_, v_a_1168_, v_a_1169_);
 if (lean_obj_tag(v___x_1178_) == 0)
 {
@@ -5289,13 +5287,12 @@ else
 {
 lean_object* v_head_1557_; lean_object* v_tail_1558_; lean_object* v___x_1559_; lean_object* v___x_1560_; lean_object* v___x_1561_; 
 v_head_1557_ = lean_ctor_get(v_x_1555_, 0);
-lean_inc(v_head_1557_);
+lean_inc_n(v_head_1557_, 2);
 v_tail_1558_ = lean_ctor_get(v_x_1555_, 1);
 lean_inc(v_tail_1558_);
 lean_dec_ref(v_x_1555_);
 v___x_1559_ = ((lean_object*)(l_Lean_instInhabitedMethodSpecsAttrData_default));
 v___x_1560_ = l___private_Lean_Meta_MethodSpecs_0__Lean_methodSpecsAttr;
-lean_inc(v_head_1557_);
 lean_inc_ref(v_env_1552_);
 v___x_1561_ = l_Lean_ParametricAttribute_getParam_x3f___redArg(v___x_1559_, v___x_1560_, v_env_1552_, v_head_1557_);
 if (lean_obj_tag(v___x_1561_) == 0)
@@ -5370,13 +5367,12 @@ lean_object* v_pre_1581_; lean_object* v_str_1582_; lean_object* v___x_1583_; le
 v_pre_1581_ = lean_ctor_get(v_name_1580_, 0);
 v_str_1582_ = lean_ctor_get(v_name_1580_, 1);
 lean_inc_ref(v_str_1582_);
-lean_inc(v_pre_1581_);
+lean_inc_n(v_pre_1581_, 2);
 v___x_1583_ = l_Lean_privateToUserName(v_pre_1581_);
 v___x_1584_ = lean_box(0);
 v___x_1585_ = lean_alloc_ctor(1, 2, 0);
 lean_ctor_set(v___x_1585_, 0, v___x_1583_);
 lean_ctor_set(v___x_1585_, 1, v___x_1584_);
-lean_inc(v_pre_1581_);
 v___x_1586_ = lean_alloc_ctor(1, 2, 0);
 lean_ctor_set(v___x_1586_, 0, v_pre_1581_);
 lean_ctor_set(v___x_1586_, 1, v___x_1585_);
@@ -6292,7 +6288,7 @@ v_a_1907_ = lean_ctor_get(v___x_1906_, 0);
 lean_inc(v_a_1907_);
 lean_dec_ref(v___x_1906_);
 v_expr_1908_ = lean_ctor_get(v_fst_1897_, 0);
-lean_inc_ref(v_expr_1908_);
+lean_inc_ref_n(v_expr_1908_, 2);
 lean_dec(v_fst_1897_);
 v___x_1909_ = lean_box(0);
 lean_inc(v_levelParams_1885_);
@@ -6302,7 +6298,6 @@ v___x_1912_ = lean_obj_once(&l___private_Lean_Meta_MethodSpecs_0__Lean_rewriteTh
 v___x_1913_ = lean_unsigned_to_nat(4u);
 v___x_1914_ = lean_mk_empty_array_with_capacity(v___x_1913_);
 v___x_1915_ = lean_array_push(v___x_1914_, v_type_1886_);
-lean_inc_ref(v_expr_1908_);
 v___x_1916_ = lean_array_push(v___x_1915_, v_expr_1908_);
 v___x_1917_ = lean_array_push(v___x_1916_, v_a_1907_);
 v___x_1918_ = lean_array_push(v___x_1917_, v___x_1911_);
@@ -8407,10 +8402,9 @@ v___x_2668_ = 1;
 v___x_2669_ = l_Lean_Name_toStringWithToken___at___00Lean_Name_toString_spec__0(v_fst_2667_, v___x_2668_);
 v___x_2670_ = ((lean_object*)(l___private_Lean_Meta_MethodSpecs_0__Lean_isSpecThmLikeSuffix___closed__0));
 v___x_2671_ = lean_string_append(v___x_2669_, v___x_2670_);
-lean_inc(v_instName_2652_);
+lean_inc_n(v_instName_2652_, 2);
 v___x_2672_ = l___private_Lean_Meta_MethodSpecs_0__Lean_mkSpecTheoremName(v_env_2662_, v_instName_2652_, v_privateSpecs_2663_, v___x_2671_);
 lean_dec_ref(v_env_2662_);
-lean_inc(v_instName_2652_);
 v___x_2673_ = lean_alloc_closure((void*)(l___private_Lean_Meta_MethodSpecs_0__Lean_genSpecs_doRealize___boxed), 6, 1);
 lean_closure_set(v___x_2673_, 0, v_instName_2652_);
 v___x_2674_ = l_Lean_Meta_realizeConst(v_instName_2652_, v___x_2672_, v___x_2673_, v_a_2653_, v_a_2654_, v_a_2655_, v_a_2656_);
@@ -8478,12 +8472,11 @@ _start:
 lean_object* v___x_2695_; lean_object* v_env_2696_; lean_object* v___x_2697_; lean_object* v___x_2698_; lean_object* v___x_2699_; 
 v___x_2695_ = lean_st_ref_get(v_a_2693_);
 v_env_2696_ = lean_ctor_get(v___x_2695_, 0);
-lean_inc_ref(v_env_2696_);
+lean_inc_ref_n(v_env_2696_, 2);
 lean_dec(v___x_2695_);
 v___x_2697_ = ((lean_object*)(l_Lean_instInhabitedMethodSpecsAttrData_default));
 v___x_2698_ = l___private_Lean_Meta_MethodSpecs_0__Lean_methodSpecsAttr;
 lean_inc(v_instName_2690_);
-lean_inc_ref(v_env_2696_);
 v___x_2699_ = l_Lean_ParametricAttribute_getParam_x3f___redArg(v___x_2697_, v___x_2698_, v_env_2696_, v_instName_2690_);
 if (lean_obj_tag(v___x_2699_) == 1)
 {

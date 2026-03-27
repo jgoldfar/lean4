@@ -1620,11 +1620,10 @@ _start:
 {
 lean_object* v_self_398_; lean_object* v_size_399_; lean_object* v_size_400_; lean_object* v___x_401_; lean_object* v___x_402_; 
 v_self_398_ = lean_ctor_get(v_root_386_, 0);
-lean_inc_ref(v_self_398_);
+lean_inc_ref_n(v_self_398_, 2);
 v_size_399_ = lean_ctor_get(v_root_386_, 6);
 lean_inc(v_size_399_);
 v_size_400_ = lean_unsigned_to_nat(0u);
-lean_inc_ref(v_self_398_);
 v___x_401_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_401_, 0, v_size_400_);
 lean_ctor_set(v___x_401_, 1, v_self_398_);
@@ -5329,12 +5328,11 @@ else
 {
 lean_object* v_head_1833_; lean_object* v_tail_1834_; lean_object* v___x_1835_; lean_object* v___x_1836_; 
 v_head_1833_ = lean_ctor_get(v_as_x27_1819_, 0);
-lean_inc(v_head_1833_);
+lean_inc_n(v_head_1833_, 2);
 v_tail_1834_ = lean_ctor_get(v_as_x27_1819_, 1);
 lean_inc(v_tail_1834_);
 lean_dec_ref(v_as_x27_1819_);
 v___x_1835_ = lean_box(0);
-lean_inc(v_head_1833_);
 v___x_1836_ = l_List_forIn_x27_loop___at___00__private_Lean_Meta_Tactic_Grind_Inv_0__Lean_Meta_Grind_checkProofs_spec__3___redArg(v_head_1833_, v_head_1833_, v___x_1835_, v___y_1821_, v___y_1822_, v___y_1823_, v___y_1824_, v___y_1825_, v___y_1826_, v___y_1827_, v___y_1828_, v___y_1829_, v___y_1830_);
 if (lean_obj_tag(v___x_1836_) == 0)
 {

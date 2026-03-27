@@ -9451,14 +9451,13 @@ lean_object* v_a_3049_; lean_object* v___x_3050_; double v___x_3051_; double v__
 v_a_3049_ = lean_ctor_get(v___x_3048_, 0);
 lean_inc(v_a_3049_);
 lean_dec_ref(v___x_3048_);
-lean_inc(v___x_3042_);
+lean_inc_n(v___x_3042_, 2);
 v___x_3050_ = l_Lean_NameSet_insert(v_fst_3040_, v___x_3042_);
 v___x_3051_ = lean_float_mul(v_fst_3021_, v_depthFactor_3022_);
 v___x_3052_ = lean_unbox_float(v_a_3049_);
 lean_dec(v_a_3049_);
 v___x_3053_ = lean_float_mul(v___x_3051_, v___x_3052_);
 v___x_3054_ = lean_box_float(v___x_3053_);
-lean_inc(v___x_3042_);
 if (v_isShared_3047_ == 0)
 {
 lean_ctor_set(v___x_3046_, 1, v___x_3042_);
@@ -10722,8 +10721,7 @@ lean_inc(v_val_3359_);
 lean_dec_ref(v___x_3357_);
 v_fst_3360_ = lean_ctor_get(v_val_3359_, 0);
 v_snd_3361_ = lean_ctor_get(v_val_3359_, 1);
-lean_inc(v_snd_3361_);
-lean_inc(v_snd_3361_);
+lean_inc_n(v_snd_3361_, 2);
 v___x_3362_ = l_Lean_getConstInfo___at___00__private_Lean_LibrarySuggestions_SineQuaNon_0__Lean_LibrarySuggestions_SineQuaNon_prepareTriggers_spec__0(v_snd_3361_, v___y_3353_, v___y_3354_, v___y_3355_, v___y_3356_);
 if (lean_obj_tag(v___x_3362_) == 0)
 {

@@ -4560,9 +4560,8 @@ v_resetjp_1297_:
 {
 lean_object* v_size_1300_; lean_object* v___f_1301_; lean_object* v___y_1303_; lean_object* v___y_1304_; lean_object* v___y_1305_; lean_object* v___y_1306_; lean_object* v___y_1307_; lean_object* v___y_1308_; lean_object* v___y_1309_; lean_object* v___y_1310_; lean_object* v___y_1311_; lean_object* v___y_1312_; uint8_t v___x_1394_; 
 v_size_1300_ = lean_ctor_get(v_vars_1295_, 2);
-lean_inc(v_size_1300_);
+lean_inc_n(v_size_1300_, 2);
 lean_dec_ref(v_vars_1295_);
-lean_inc(v_size_1300_);
 lean_inc_ref(v_expr_1268_);
 v___f_1301_ = lean_alloc_closure((void*)(l_Lean_Meta_Grind_Arith_Cutsat_mkVarImpl___lam__0), 3, 2);
 lean_closure_set(v___f_1301_, 0, v_expr_1268_);

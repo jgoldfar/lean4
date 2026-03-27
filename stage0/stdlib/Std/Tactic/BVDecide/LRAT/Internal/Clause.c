@@ -2386,26 +2386,20 @@ LEAN_EXPORT lean_object* l_Std_Tactic_BVDecide_LRAT_Internal_DefaultClause_instC
 _start:
 {
 lean_object* v___x_779_; lean_object* v___x_780_; lean_object* v___x_781_; lean_object* v___x_782_; lean_object* v___x_783_; lean_object* v___x_784_; lean_object* v___x_785_; lean_object* v___x_786_; lean_object* v___x_787_; lean_object* v___x_788_; 
-lean_inc(v_n_778_);
+lean_inc_n(v_n_778_, 7);
 v___x_779_ = lean_alloc_closure((void*)(l_Std_Tactic_BVDecide_LRAT_Internal_DefaultClause_toList___boxed), 2, 1);
 lean_closure_set(v___x_779_, 0, v_n_778_);
-lean_inc(v_n_778_);
 v___x_780_ = lean_alloc_closure((void*)(l_Std_Tactic_BVDecide_LRAT_Internal_DefaultClause_ofArray___boxed), 2, 1);
 lean_closure_set(v___x_780_, 0, v_n_778_);
 v___x_781_ = lean_box(0);
-lean_inc(v_n_778_);
 v___x_782_ = lean_alloc_closure((void*)(l_Std_Tactic_BVDecide_LRAT_Internal_DefaultClause_unit___boxed), 2, 1);
 lean_closure_set(v___x_782_, 0, v_n_778_);
-lean_inc(v_n_778_);
 v___x_783_ = lean_alloc_closure((void*)(l_Std_Tactic_BVDecide_LRAT_Internal_DefaultClause_isUnit___boxed), 2, 1);
 lean_closure_set(v___x_783_, 0, v_n_778_);
-lean_inc(v_n_778_);
 v___x_784_ = lean_alloc_closure((void*)(l_Std_Tactic_BVDecide_LRAT_Internal_DefaultClause_negate___boxed), 2, 1);
 lean_closure_set(v___x_784_, 0, v_n_778_);
-lean_inc(v_n_778_);
 v___x_785_ = lean_alloc_closure((void*)(l_Std_Tactic_BVDecide_LRAT_Internal_DefaultClause_delete), 3, 1);
 lean_closure_set(v___x_785_, 0, v_n_778_);
-lean_inc(v_n_778_);
 v___x_786_ = lean_alloc_closure((void*)(l_Std_Tactic_BVDecide_LRAT_Internal_DefaultClause_contains___boxed), 3, 1);
 lean_closure_set(v___x_786_, 0, v_n_778_);
 v___x_787_ = lean_alloc_closure((void*)(l_Std_Tactic_BVDecide_LRAT_Internal_DefaultClause_reduce___boxed), 3, 1);

@@ -4073,10 +4073,9 @@ v___jp_1062_:
 lean_object* v___x_1065_; lean_object* v_env_1066_; uint8_t v___x_1067_; lean_object* v___x_1068_; 
 v___x_1065_ = lean_st_ref_get(v___y_1064_);
 v_env_1066_ = lean_ctor_get(v___x_1065_, 0);
-lean_inc_ref(v_env_1066_);
+lean_inc_ref_n(v_env_1066_, 2);
 lean_dec(v___x_1065_);
 v___x_1067_ = 0;
-lean_inc_ref(v_env_1066_);
 v___x_1068_ = l_Lean_Environment_find_x3f(v_env_1066_, v_name_1055_, v___x_1067_);
 if (lean_obj_tag(v___x_1068_) == 1)
 {
@@ -4571,9 +4570,8 @@ if (lean_obj_tag(v___x_1280_) == 0)
 {
 lean_object* v_a_1281_; lean_object* v___x_1282_; lean_object* v___x_1284_; uint8_t v_isShared_1285_; uint8_t v_isSharedCheck_1289_; 
 v_a_1281_ = lean_ctor_get(v___x_1280_, 0);
-lean_inc(v_a_1281_);
+lean_inc_n(v_a_1281_, 2);
 lean_dec_ref(v___x_1280_);
-lean_inc(v_a_1281_);
 v___x_1282_ = l_Lean_Compiler_LCNF_CacheExtension_insert___at___00Lean_Compiler_LCNF_nameToImpureType_spec__1___redArg(v___x_1274_, v_name_1270_, v_a_1281_, v_a_1272_);
 v_isSharedCheck_1289_ = !lean_is_exclusive(v___x_1282_);
 if (v_isSharedCheck_1289_ == 0)
@@ -7431,13 +7429,12 @@ v_fst_2257_ = lean_ctor_get(v_a_2252_, 0);
 lean_inc(v_fst_2257_);
 lean_dec(v_a_2252_);
 v_fst_2258_ = lean_ctor_get(v_snd_2256_, 0);
-lean_inc(v_fst_2258_);
+lean_inc_n(v_fst_2258_, 2);
 v_snd_2259_ = lean_ctor_get(v_snd_2256_, 1);
 lean_inc(v_snd_2259_);
 lean_dec(v_snd_2256_);
 v_sz_2260_ = lean_array_size(v_fst_2257_);
 v___x_2261_ = ((size_t)0ULL);
-lean_inc(v_fst_2258_);
 v___x_2262_ = l___private_Init_Data_Array_Basic_0__Array_mapMUnsafe_map___at___00__private_Lean_Compiler_LCNF_ToImpureType_0__Lean_Compiler_LCNF_getCtorLayout_fillCache_spec__4(v_sz_2260_, v___x_2261_, v_fst_2257_, v_fst_2258_);
 v_snd_2263_ = lean_ctor_get(v_snd_2259_, 1);
 lean_inc(v_snd_2263_);
@@ -8095,9 +8092,8 @@ if (lean_obj_tag(v___x_2493_) == 0)
 {
 lean_object* v_a_2494_; lean_object* v___x_2495_; lean_object* v___x_2497_; uint8_t v_isShared_2498_; uint8_t v_isSharedCheck_2502_; 
 v_a_2494_ = lean_ctor_get(v___x_2493_, 0);
-lean_inc(v_a_2494_);
+lean_inc_n(v_a_2494_, 2);
 lean_dec_ref(v___x_2493_);
-lean_inc(v_a_2494_);
 v___x_2495_ = l_Lean_Compiler_LCNF_CacheExtension_insert___at___00Lean_Compiler_LCNF_getCtorLayout_spec__1___redArg(v___x_2487_, v_ctorName_2483_, v_a_2494_, v_a_2485_);
 v_isSharedCheck_2502_ = !lean_is_exclusive(v___x_2495_);
 if (v_isSharedCheck_2502_ == 0)

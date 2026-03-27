@@ -780,7 +780,7 @@ lean_inc_ref(v___x_209_);
 lean_inc_ref(v_value_222_);
 lean_inc_ref(v_type_221_);
 lean_inc(v_levelParams_219_);
-lean_inc(v_declName_220_);
+lean_inc_n(v_declName_220_, 2);
 v___x_224_ = lean_alloc_ctor(0, 8, 0);
 lean_ctor_set(v___x_224_, 0, v_declName_220_);
 lean_ctor_set(v___x_224_, 1, v_levelParams_219_);
@@ -790,7 +790,6 @@ lean_ctor_set(v___x_224_, 4, v___x_209_);
 lean_ctor_set(v___x_224_, 5, v_declNameNonRec_210_);
 lean_ctor_set(v___x_224_, 6, v_argsPacker_211_);
 lean_ctor_set(v___x_224_, 7, v_fixedParamPerms_212_);
-lean_inc(v_declName_220_);
 v___x_225_ = l_Lean_MapDeclarationExtension_insert___redArg(v___x_223_, v_b_216_, v_declName_220_, v___x_224_);
 v___x_226_ = ((size_t)1ULL);
 v___x_227_ = lean_usize_add(v_i_214_, v___x_226_);
@@ -3659,9 +3658,8 @@ v_env_1241_ = lean_ctor_get(v___x_1240_, 0);
 lean_inc_ref(v_env_1241_);
 lean_dec(v___x_1240_);
 v___x_1242_ = l_Lean_Meta_unfoldThmSuffix;
-lean_inc(v_declName_1226_);
+lean_inc_n(v_declName_1226_, 2);
 v___x_1243_ = l_Lean_Meta_mkEqLikeNameFor(v_env_1241_, v_declName_1226_, v___x_1242_);
-lean_inc(v_declName_1226_);
 v___x_1244_ = l_Lean_findModuleOf_x3f___at___00__private_Lean_Elab_PreDefinition_WF_Eqns_0__Lean_Elab_WF_copyPrivateUnfoldTheorem_spec__0(v_declName_1226_, v_a_1227_, v_a_1228_, v_a_1229_, v_a_1230_);
 if (lean_obj_tag(v___x_1244_) == 0)
 {
@@ -4040,9 +4038,8 @@ v_env_1520_ = lean_ctor_get(v___x_1519_, 0);
 lean_inc_ref(v_env_1520_);
 lean_dec(v___x_1519_);
 v___x_1521_ = l_Lean_Meta_unfoldThmSuffix;
-lean_inc(v_declName_1226_);
+lean_inc_n(v_declName_1226_, 2);
 v___x_1522_ = l_Lean_Meta_mkEqLikeNameFor(v_env_1520_, v_declName_1226_, v___x_1521_);
-lean_inc(v_declName_1226_);
 v___x_1523_ = l_Lean_findModuleOf_x3f___at___00__private_Lean_Elab_PreDefinition_WF_Eqns_0__Lean_Elab_WF_copyPrivateUnfoldTheorem_spec__0(v_declName_1226_, v_a_1227_, v_a_1228_, v_a_1229_, v_a_1230_);
 if (lean_obj_tag(v___x_1523_) == 0)
 {
@@ -4549,9 +4546,8 @@ v_env_1391_ = lean_ctor_get(v___x_1390_, 0);
 lean_inc_ref(v_env_1391_);
 lean_dec(v___x_1390_);
 v___x_1392_ = l_Lean_Meta_unfoldThmSuffix;
-lean_inc(v_declName_1226_);
+lean_inc_n(v_declName_1226_, 2);
 v___x_1393_ = l_Lean_Meta_mkEqLikeNameFor(v_env_1391_, v_declName_1226_, v___x_1392_);
-lean_inc(v_declName_1226_);
 v___x_1394_ = l_Lean_findModuleOf_x3f___at___00__private_Lean_Elab_PreDefinition_WF_Eqns_0__Lean_Elab_WF_copyPrivateUnfoldTheorem_spec__0(v_declName_1226_, v_a_1227_, v_a_1228_, v_a_1229_, v_a_1230_);
 if (lean_obj_tag(v___x_1394_) == 0)
 {
@@ -4853,9 +4849,8 @@ v_env_1454_ = lean_ctor_get(v___x_1453_, 0);
 lean_inc_ref(v_env_1454_);
 lean_dec(v___x_1453_);
 v___x_1455_ = l_Lean_Meta_unfoldThmSuffix;
-lean_inc(v_declName_1226_);
+lean_inc_n(v_declName_1226_, 2);
 v___x_1456_ = l_Lean_Meta_mkEqLikeNameFor(v_env_1454_, v_declName_1226_, v___x_1455_);
-lean_inc(v_declName_1226_);
 v___x_1457_ = l_Lean_findModuleOf_x3f___at___00__private_Lean_Elab_PreDefinition_WF_Eqns_0__Lean_Elab_WF_copyPrivateUnfoldTheorem_spec__0(v_declName_1226_, v_a_1227_, v_a_1228_, v_a_1229_, v_a_1230_);
 if (lean_obj_tag(v___x_1457_) == 0)
 {

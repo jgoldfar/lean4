@@ -445,9 +445,8 @@ if (lean_obj_tag(v_parent_x3f_125_) == 1)
 {
 lean_object* v_val_126_; lean_object* v___x_127_; 
 v_val_126_ = lean_ctor_get(v_parent_x3f_125_, 0);
-lean_inc(v_val_126_);
+lean_inc_n(v_val_126_, 2);
 lean_dec_ref(v_parent_x3f_125_);
-lean_inc(v_val_126_);
 v___x_127_ = l___private_Lean_Meta_Tactic_Grind_Arith_Linear_Internalize_0__Lean_Meta_Grind_Arith_Linear_getType_x3f(v_val_126_);
 if (lean_obj_tag(v___x_127_) == 0)
 {

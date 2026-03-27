@@ -2288,9 +2288,8 @@ v_a_693_ = lean_ctor_get(v___x_692_, 0);
 lean_inc(v_a_693_);
 lean_dec_ref(v___x_692_);
 v_macroStack_694_ = lean_ctor_get(v___y_684_, 1);
-lean_inc(v_macroStack_694_);
+lean_inc_n(v_macroStack_694_, 2);
 v___x_695_ = l_Lean_Elab_getBetterRef(v_ref_691_, v_macroStack_694_);
-lean_inc(v_macroStack_694_);
 v___x_696_ = l_Lean_Elab_addMacroStack___at___00Lean_throwError___at___00Lean_Elab_Tactic_SolveByElim_elabConfig_spec__2_spec__6___redArg(v_a_693_, v_macroStack_694_, v___y_688_);
 v_a_697_ = lean_ctor_get(v___x_696_, 0);
 v_isSharedCheck_705_ = !lean_is_exclusive(v___x_696_);
@@ -4090,10 +4089,9 @@ else
 {
 lean_object* v_val_1472_; lean_object* v___x_1473_; uint8_t v___x_1474_; 
 v_val_1472_ = lean_ctor_get(v_s_1456_, 0);
-lean_inc(v_val_1472_);
+lean_inc_n(v_val_1472_, 2);
 lean_dec_ref(v_s_1456_);
 v___x_1473_ = ((lean_object*)(l_Lean_Elab_Tactic_SolveByElim_parseArgs___closed__2));
-lean_inc(v_val_1472_);
 v___x_1474_ = l_Lean_Syntax_isOfKind(v_val_1472_, v___x_1473_);
 if (v___x_1474_ == 0)
 {
@@ -4125,10 +4123,9 @@ v___x_1460_ = ((size_t)0ULL);
 v_args_1461_ = l___private_Init_Data_Array_Basic_0__Array_mapMUnsafe_map___at___00Lean_Elab_Tactic_SolveByElim_parseArgs_spec__1(v_sz_1459_, v___x_1460_, v___y_1458_);
 v_args_1462_ = lean_array_to_list(v_args_1461_);
 v___x_1463_ = lean_box(0);
-lean_inc(v_args_1462_);
+lean_inc_n(v_args_1462_, 2);
 v___x_1464_ = l_List_elem___at___00Lean_Elab_Tactic_SolveByElim_parseArgs_spec__2(v___x_1463_, v_args_1462_);
 v___x_1465_ = ((lean_object*)(l_Lean_Elab_Tactic_SolveByElim_parseArgs___closed__0));
-lean_inc(v_args_1462_);
 v___x_1466_ = l_List_filterMapTR_go___at___00Lean_Elab_Tactic_SolveByElim_parseArgs_spec__3(v_args_1462_, v___x_1465_);
 v___x_1467_ = l_List_filterMapTR_go___at___00Lean_Elab_Tactic_SolveByElim_parseArgs_spec__4(v_args_1462_, v___x_1465_);
 v___x_1468_ = lean_alloc_ctor(0, 2, 0);
@@ -4155,10 +4152,9 @@ else
 {
 lean_object* v_val_1489_; lean_object* v___x_1490_; uint8_t v___x_1491_; 
 v_val_1489_ = lean_ctor_get(v_s_1487_, 0);
-lean_inc(v_val_1489_);
+lean_inc_n(v_val_1489_, 2);
 lean_dec_ref(v_s_1487_);
 v___x_1490_ = ((lean_object*)(l_Lean_Elab_Tactic_SolveByElim_parseUsing___closed__1));
-lean_inc(v_val_1489_);
 v___x_1491_ = l_Lean_Syntax_isOfKind(v_val_1489_, v___x_1490_);
 if (v___x_1491_ == 0)
 {
@@ -5735,9 +5731,8 @@ v_env_2097_ = lean_ctor_get(v___x_2096_, 0);
 lean_inc_ref(v_env_2097_);
 lean_dec(v___x_2096_);
 v_name_2098_ = lean_ctor_get(v_head_2091_, 0);
-lean_inc(v_name_2098_);
+lean_inc_n(v_name_2098_, 2);
 lean_dec(v_head_2091_);
-lean_inc(v_name_2098_);
 v___x_2099_ = l_Lean_Environment_contains(v_env_2097_, v_name_2098_, v___x_2083_);
 if (v___x_2099_ == 0)
 {

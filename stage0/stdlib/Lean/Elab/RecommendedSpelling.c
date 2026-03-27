@@ -2246,10 +2246,9 @@ v___x_691_ = l_Lean_addMessageContextPartial___at___00Lean_throwError___at___00L
 v_a_692_ = lean_ctor_get(v___x_691_, 0);
 lean_inc(v_a_692_);
 lean_dec_ref(v___x_691_);
-lean_inc(v_macroStack_690_);
+lean_inc_n(v_macroStack_690_, 2);
 v___x_693_ = l_Lean_Elab_getBetterRef(v_a_689_, v_macroStack_690_);
 lean_dec(v_a_689_);
-lean_inc(v_macroStack_690_);
 v___x_694_ = l_Lean_Elab_addMacroStack___at___00Lean_throwError___at___00Lean_Elab_Term_Doc_elabRecommendedSpelling_spec__0_spec__1___redArg(v_a_692_, v_macroStack_690_, v___y_686_);
 v_a_695_ = lean_ctor_get(v___x_694_, 0);
 v_isSharedCheck_703_ = !lean_is_exclusive(v___x_694_);

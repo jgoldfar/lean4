@@ -3229,7 +3229,7 @@ v_a_923_ = lean_ctor_get(v___x_922_, 0);
 lean_inc(v_a_923_);
 lean_dec_ref(v___x_922_);
 v_fst_924_ = lean_ctor_get(v_a_923_, 0);
-lean_inc(v_fst_924_);
+lean_inc_n(v_fst_924_, 2);
 v_snd_925_ = lean_ctor_get(v_a_923_, 1);
 lean_inc(v_snd_925_);
 lean_dec(v_a_923_);
@@ -3237,10 +3237,8 @@ v_fvarIdToDecl_926_ = lean_ctor_get(v_fst_906_, 0);
 v_decls_927_ = lean_ctor_get(v_fst_906_, 1);
 v_auxDeclToFullName_928_ = lean_ctor_get(v_fst_906_, 2);
 v___x_929_ = l_Std_DHashMap_Internal_Raw_u2080_insert___at___00__private_Lean_Meta_Tactic_ExposeNames_0__Lean_Meta_getLCtxWithExposedNames_spec__0___redArg(v_snd_907_, v___y_914_, v_snd_925_);
-lean_inc(v_a_912_);
-lean_inc(v_fst_924_);
+lean_inc_n(v_a_912_, 2);
 v___x_930_ = l_Std_DHashMap_Internal_Raw_u2080_insert___at___00__private_Lean_Meta_Tactic_ExposeNames_0__Lean_Meta_getLCtxWithExposedNames_spec__0___redArg(v_fst_905_, v_fst_924_, v_a_912_);
-lean_inc(v_a_912_);
 lean_inc(v_fst_906_);
 v___x_931_ = lean_local_ctx_find(v_fst_906_, v_a_912_);
 if (lean_obj_tag(v___x_931_) == 0)
@@ -4820,9 +4818,8 @@ if (lean_obj_tag(v___x_1524_) == 0)
 {
 lean_object* v_a_1525_; lean_object* v___x_1526_; lean_object* v___x_1528_; uint8_t v_isShared_1529_; uint8_t v_isSharedCheck_1534_; 
 v_a_1525_ = lean_ctor_get(v___x_1524_, 0);
-lean_inc(v_a_1525_);
+lean_inc_n(v_a_1525_, 2);
 lean_dec_ref(v___x_1524_);
-lean_inc(v_a_1525_);
 v___x_1526_ = l_Lean_MVarId_assign___at___00Lean_MVarId_exposeNames_spec__0___redArg(v_mvarId_1506_, v_a_1525_, v___y_1509_);
 v_isSharedCheck_1534_ = !lean_is_exclusive(v___x_1526_);
 if (v_isSharedCheck_1534_ == 0)

@@ -1107,11 +1107,10 @@ if (lean_obj_tag(v___x_265_) == 0)
 {
 lean_object* v_a_266_; lean_object* v___x_267_; uint8_t v___x_268_; lean_object* v___x_269_; lean_object* v___x_270_; lean_object* v___x_271_; lean_object* v___x_272_; size_t v_sz_273_; size_t v___x_274_; lean_object* v___x_275_; 
 v_a_266_ = lean_ctor_get(v___x_265_, 0);
-lean_inc(v_a_266_);
+lean_inc_n(v_a_266_, 2);
 lean_dec_ref(v___x_265_);
 v___x_267_ = l_Lean_instEmptyCollectionFVarIdHashSet;
 v___x_268_ = 0;
-lean_inc(v_a_266_);
 v___x_269_ = l_Lean_Compiler_LCNF_Code_collectUsed(v___x_268_, v_a_266_, v___x_267_);
 lean_inc_ref(v_params_262_);
 v___x_270_ = l_Array_reverse___redArg(v_params_262_);

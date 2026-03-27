@@ -2621,7 +2621,7 @@ lean_inc(v___x_661_);
 lean_inc(v_declName_627_);
 v___x_662_ = l_Lean_mkConst(v_declName_627_, v___x_661_);
 lean_inc_ref(v___x_660_);
-lean_inc_ref(v___x_662_);
+lean_inc_ref_n(v___x_662_, 2);
 v___f_663_ = lean_alloc_closure((void*)(l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_getEnumToBitVecFor___lam__0___boxed), 12, 6);
 lean_closure_set(v___f_663_, 0, v___x_662_);
 lean_closure_set(v___f_663_, 1, v___x_660_);
@@ -2630,7 +2630,6 @@ lean_closure_set(v___f_663_, 3, v___x_661_);
 lean_closure_set(v___f_663_, 4, v___x_656_);
 lean_closure_set(v___f_663_, 5, v___x_655_);
 v___x_664_ = ((lean_object*)(l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_getEnumToBitVecFor___lam__1___closed__3));
-lean_inc_ref(v___x_662_);
 v___x_665_ = l_Lean_Meta_withLocalDeclD___at___00Lean_Elab_Tactic_BVDecide_Frontend_Normalize_getEnumToBitVecFor_spec__4___redArg(v___x_664_, v___x_662_, v___f_663_, v___y_645_, v___y_646_, v___y_647_, v___y_648_);
 if (lean_obj_tag(v___x_665_) == 0)
 {
@@ -2932,14 +2931,12 @@ _start:
 {
 lean_object* v___x_745_; lean_object* v_enumToBitVecName_746_; lean_object* v___f_747_; lean_object* v___x_748_; 
 v___x_745_ = ((lean_object*)(l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_enumToBitVecSuffix___closed__0));
-lean_inc(v_declName_739_);
+lean_inc_n(v_declName_739_, 2);
 v_enumToBitVecName_746_ = l_Lean_Name_str___override(v_declName_739_, v___x_745_);
-lean_inc(v_enumToBitVecName_746_);
-lean_inc(v_declName_739_);
+lean_inc_n(v_enumToBitVecName_746_, 2);
 v___f_747_ = lean_alloc_closure((void*)(l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_getEnumToBitVecFor___lam__1___boxed), 7, 2);
 lean_closure_set(v___f_747_, 0, v_declName_739_);
 lean_closure_set(v___f_747_, 1, v_enumToBitVecName_746_);
-lean_inc(v_enumToBitVecName_746_);
 v___x_748_ = l_Lean_Meta_realizeConst(v_declName_739_, v_enumToBitVecName_746_, v___f_747_, v_a_740_, v_a_741_, v_a_742_, v_a_743_);
 if (lean_obj_tag(v___x_748_) == 0)
 {
@@ -4038,9 +4035,8 @@ LEAN_EXPORT lean_object* l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_getEqIff
 _start:
 {
 lean_object* v___x_1431_; lean_object* v___x_1432_; 
-lean_inc_ref(v_y_1425_);
+lean_inc_ref_n(v_y_1425_, 2);
 v___x_1431_ = lean_apply_1(v___f_1424_, v_y_1425_);
-lean_inc_ref(v_y_1425_);
 v___x_1432_ = l_Lean_Meta_mkEq(v___x_1431_, v_y_1425_, v___y_1426_, v___y_1427_, v___y_1428_, v___y_1429_);
 if (lean_obj_tag(v___x_1432_) == 0)
 {
@@ -4324,19 +4320,17 @@ lean_object* v___x_1587_; lean_object* v___x_1588_; lean_object* v___x_1589_; le
 v___x_1587_ = lean_box(0);
 lean_inc(v_levelParams_1583_);
 v___x_1588_ = l_List_mapTR_loop___at___00Lean_Elab_Tactic_BVDecide_Frontend_Normalize_getEnumToBitVecFor_spec__2(v_levelParams_1583_, v___x_1587_);
-lean_inc(v___x_1588_);
+lean_inc_n(v___x_1588_, 2);
 v___x_1589_ = l_Lean_mkConst(v_a_1581_, v___x_1588_);
-lean_inc(v___x_1588_);
 lean_inc(v_declName_1565_);
 v___x_1590_ = l_Lean_mkConst(v_declName_1565_, v___x_1588_);
-lean_inc_ref(v___x_1590_);
+lean_inc_ref_n(v___x_1590_, 2);
 lean_inc_ref(v___x_1589_);
 v___f_1591_ = lean_alloc_closure((void*)(l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_getEqIffEnumToBitVecEqFor___lam__1___boxed), 9, 3);
 lean_closure_set(v___f_1591_, 0, v___x_1589_);
 lean_closure_set(v___f_1591_, 1, v___x_1587_);
 lean_closure_set(v___f_1591_, 2, v___x_1590_);
 v___x_1592_ = ((lean_object*)(l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_getEnumToBitVecFor___lam__1___closed__3));
-lean_inc_ref(v___x_1590_);
 v___x_1593_ = l_Lean_Meta_withLocalDeclD___at___00Lean_Elab_Tactic_BVDecide_Frontend_Normalize_getEnumToBitVecFor_spec__4___redArg(v___x_1592_, v___x_1590_, v___f_1591_, v___y_1568_, v___y_1569_, v___y_1570_, v___y_1571_);
 if (lean_obj_tag(v___x_1593_) == 0)
 {
@@ -4774,15 +4768,13 @@ _start:
 lean_object* v___x_1690_; lean_object* v___x_1691_; lean_object* v_eqIffEnumToBitVecEqName_1692_; lean_object* v___f_1693_; lean_object* v___x_1694_; 
 v___x_1690_ = l_Lean_instInhabitedExpr;
 v___x_1691_ = ((lean_object*)(l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_eqIffEnumToBitVecEqSuffix___closed__0));
-lean_inc(v_declName_1684_);
+lean_inc_n(v_declName_1684_, 2);
 v_eqIffEnumToBitVecEqName_1692_ = l_Lean_Name_str___override(v_declName_1684_, v___x_1691_);
-lean_inc(v_eqIffEnumToBitVecEqName_1692_);
-lean_inc(v_declName_1684_);
+lean_inc_n(v_eqIffEnumToBitVecEqName_1692_, 2);
 v___f_1693_ = lean_alloc_closure((void*)(l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_getEqIffEnumToBitVecEqFor___lam__8___boxed), 8, 3);
 lean_closure_set(v___f_1693_, 0, v_declName_1684_);
 lean_closure_set(v___f_1693_, 1, v___x_1690_);
 lean_closure_set(v___f_1693_, 2, v_eqIffEnumToBitVecEqName_1692_);
-lean_inc(v_eqIffEnumToBitVecEqName_1692_);
 v___x_1694_ = l_Lean_Meta_realizeConst(v_declName_1684_, v_eqIffEnumToBitVecEqName_1692_, v___f_1693_, v_a_1685_, v_a_1686_, v_a_1687_, v_a_1688_);
 if (lean_obj_tag(v___x_1694_) == 0)
 {
@@ -4921,10 +4913,9 @@ LEAN_EXPORT lean_object* l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_getEnumT
 _start:
 {
 lean_object* v___x_1762_; lean_object* v___x_1763_; lean_object* v___x_1764_; uint8_t v___x_1765_; uint8_t v___x_1766_; uint8_t v___x_1767_; lean_object* v___x_1768_; 
-lean_inc_ref(v_x_1756_);
+lean_inc_ref_n(v_x_1756_, 2);
 v___x_1762_ = lean_apply_1(v___f_1751_, v_x_1756_);
 v___x_1763_ = lean_mk_empty_array_with_capacity(v___x_1752_);
-lean_inc_ref(v_x_1756_);
 v___x_1764_ = lean_array_push(v___x_1763_, v_x_1756_);
 v___x_1765_ = 0;
 v___x_1766_ = 1;
@@ -5308,7 +5299,7 @@ lean_object* v_a_1875_; lean_object* v___x_1876_; lean_object* v___x_1877_; lean
 v_a_1875_ = lean_ctor_get(v___x_1874_, 0);
 lean_inc(v_a_1875_);
 lean_dec_ref(v___x_1874_);
-lean_inc(v___x_1863_);
+lean_inc_n(v___x_1863_, 2);
 v___x_1876_ = l_Lean_mkConst(v_a_1856_, v___x_1863_);
 v___x_1877_ = lean_unsigned_to_nat(1u);
 v___x_1878_ = lean_nat_sub(v___x_1864_, v___x_1877_);
@@ -5316,7 +5307,6 @@ lean_dec(v___x_1864_);
 v___x_1879_ = l_BitVec_ofNat(v___x_1865_, v___x_1878_);
 lean_dec(v___x_1878_);
 lean_dec(v___x_1865_);
-lean_inc(v___x_1863_);
 lean_inc(v_declName_1841_);
 v___x_1880_ = l_Lean_mkConst(v_declName_1841_, v___x_1863_);
 v___x_1881_ = lean_obj_once(&l___private_Init_Data_Nat_Fold_0__Nat_foldTR_loop___at___00Lean_Elab_Tactic_BVDecide_Frontend_Normalize_getEnumToBitVecFor_spec__3___redArg___closed__3, &l___private_Init_Data_Nat_Fold_0__Nat_foldTR_loop___at___00Lean_Elab_Tactic_BVDecide_Frontend_Normalize_getEnumToBitVecFor_spec__3___redArg___closed__3_once, _init_l___private_Init_Data_Nat_Fold_0__Nat_foldTR_loop___at___00Lean_Elab_Tactic_BVDecide_Frontend_Normalize_getEnumToBitVecFor_spec__3___redArg___closed__3);
@@ -5660,14 +5650,12 @@ _start:
 {
 lean_object* v___x_1960_; lean_object* v_enumToBitVecLeName_1961_; lean_object* v___f_1962_; lean_object* v___x_1963_; 
 v___x_1960_ = ((lean_object*)(l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_enumToBitVecLeSuffix___closed__0));
-lean_inc(v_declName_1954_);
+lean_inc_n(v_declName_1954_, 2);
 v_enumToBitVecLeName_1961_ = l_Lean_Name_str___override(v_declName_1954_, v___x_1960_);
-lean_inc(v_enumToBitVecLeName_1961_);
-lean_inc(v_declName_1954_);
+lean_inc_n(v_enumToBitVecLeName_1961_, 2);
 v___f_1962_ = lean_alloc_closure((void*)(l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_getEnumToBitVecLeFor___lam__3___boxed), 7, 2);
 lean_closure_set(v___f_1962_, 0, v_declName_1954_);
 lean_closure_set(v___f_1962_, 1, v_enumToBitVecLeName_1961_);
-lean_inc(v_enumToBitVecLeName_1961_);
 v___x_1963_ = l_Lean_Meta_realizeConst(v_declName_1954_, v_enumToBitVecLeName_1961_, v___f_1962_, v_a_1955_, v_a_1956_, v_a_1957_, v_a_1958_);
 if (lean_obj_tag(v___x_1963_) == 0)
 {
@@ -6043,9 +6031,8 @@ v_ctors_2130_ = lean_ctor_get(v_inductiveInfo_2111_, 4);
 lean_inc(v_ctors_2130_);
 lean_dec_ref(v_inductiveInfo_2111_);
 v_name_2131_ = lean_ctor_get(v_toConstantVal_2129_, 0);
-lean_inc(v_name_2131_);
+lean_inc_n(v_name_2131_, 2);
 lean_dec_ref(v_toConstantVal_2129_);
-lean_inc(v_name_2131_);
 v___x_2132_ = l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_getEnumToBitVecFor(v_name_2131_, v___y_2124_, v___y_2125_, v___y_2126_, v___y_2127_);
 if (lean_obj_tag(v___x_2132_) == 0)
 {
@@ -6060,11 +6047,10 @@ v___x_2136_ = lean_unsigned_to_nat(2u);
 v___x_2137_ = lean_mk_empty_array_with_capacity(v___x_2136_);
 lean_inc_ref(v___x_2137_);
 v___x_2138_ = lean_array_push(v___x_2137_, v___x_2135_);
-lean_inc_ref(v_x_2115_);
+lean_inc_ref_n(v_x_2115_, 2);
 v___x_2139_ = lean_array_push(v___x_2138_, v_x_2115_);
 v___x_2140_ = lean_unsigned_to_nat(1u);
 v___x_2141_ = lean_mk_empty_array_with_capacity(v___x_2140_);
-lean_inc_ref(v_x_2115_);
 v___x_2142_ = lean_array_push(v___x_2141_, v_x_2115_);
 lean_inc_ref(v___x_2142_);
 v___x_2143_ = l_Lean_Meta_mkAppM(v_a_2133_, v___x_2142_, v___y_2124_, v___y_2125_, v___y_2126_, v___y_2127_);
@@ -6106,12 +6092,11 @@ if (lean_obj_tag(v___x_2157_) == 0)
 {
 lean_object* v_a_2158_; uint8_t v___x_2159_; uint8_t v___x_2160_; uint8_t v___x_2161_; lean_object* v___x_2162_; 
 v_a_2158_ = lean_ctor_get(v___x_2157_, 0);
-lean_inc(v_a_2158_);
+lean_inc_n(v_a_2158_, 2);
 lean_dec_ref(v___x_2157_);
 v___x_2159_ = 0;
 v___x_2160_ = 1;
 v___x_2161_ = 1;
-lean_inc(v_a_2158_);
 v___x_2162_ = l_Lean_Meta_mkLambdaFVars(v___x_2142_, v_a_2158_, v___x_2159_, v___x_2160_, v___x_2159_, v___x_2160_, v___x_2161_, v___y_2124_, v___y_2125_, v___y_2126_, v___y_2127_);
 lean_dec_ref(v___x_2142_);
 if (lean_obj_tag(v___x_2162_) == 0)
@@ -6986,10 +6971,9 @@ v_toSeqLeft_2427_ = lean_ctor_get(v_toApplicative_2424_, 3);
 v_toSeqRight_2428_ = lean_ctor_get(v_toApplicative_2424_, 4);
 v___f_2429_ = ((lean_object*)(l___private_Lean_Meta_Basic_0__Lean_Meta_withLocalDecls_loop___at___00Lean_Meta_withLocalDecls___at___00Lean_Meta_withLocalDeclsD___at___00Lean_Meta_withLocalDeclsDND___at___00__private_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_Enums_0__Lean_Elab_Tactic_BVDecide_Frontend_Normalize_getMatchEqCondForAux_handleSimpleEnum_spec__4_spec__5_spec__7_spec__9___closed__2));
 v___f_2430_ = ((lean_object*)(l___private_Lean_Meta_Basic_0__Lean_Meta_withLocalDecls_loop___at___00Lean_Meta_withLocalDecls___at___00Lean_Meta_withLocalDeclsD___at___00Lean_Meta_withLocalDeclsDND___at___00__private_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_Enums_0__Lean_Elab_Tactic_BVDecide_Frontend_Normalize_getMatchEqCondForAux_handleSimpleEnum_spec__4_spec__5_spec__7_spec__9___closed__3));
-lean_inc_ref(v_toFunctor_2425_);
+lean_inc_ref_n(v_toFunctor_2425_, 2);
 v___f_2431_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__0), 6, 1);
 lean_closure_set(v___f_2431_, 0, v_toFunctor_2425_);
-lean_inc_ref(v_toFunctor_2425_);
 v___f_2432_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__1), 6, 1);
 lean_closure_set(v___f_2432_, 0, v_toFunctor_2425_);
 v___x_2433_ = lean_alloc_ctor(0, 2, 0);
@@ -7976,13 +7960,12 @@ if (lean_obj_tag(v_hs_2867_) == 0)
 lean_object* v_ctors_2873_; lean_object* v___x_2874_; lean_object* v___x_2875_; lean_object* v_ctor_2876_; lean_object* v___x_2877_; lean_object* v_new_2878_; lean_object* v___x_2879_; lean_object* v___x_2880_; lean_object* v___x_2881_; 
 v_ctors_2873_ = lean_ctor_get(v_inductiveInfo_2864_, 4);
 v___x_2874_ = lean_box(0);
-lean_inc(v_idx_2868_);
+lean_inc_n(v_idx_2868_, 2);
 v___x_2875_ = l_List_get_x21Internal___redArg(v___x_2874_, v_ctors_2873_, v_idx_2868_);
 lean_inc(v_discrParams_2866_);
 v_ctor_2876_ = l_Lean_mkConst(v___x_2875_, v_discrParams_2866_);
 lean_inc_ref(v_hdefault_2865_);
 v___x_2877_ = l_Lean_Expr_app___override(v_hdefault_2865_, v_ctor_2876_);
-lean_inc(v_idx_2868_);
 v_new_2878_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v_new_2878_, 0, v_idx_2868_);
 lean_ctor_set(v_new_2878_, 1, v___x_2877_);
@@ -8031,13 +8014,12 @@ lean_object* v_ctors_2891_; lean_object* v___x_2892_; lean_object* v___x_2893_; 
 lean_dec(v_snd_2886_);
 v_ctors_2891_ = lean_ctor_get(v_inductiveInfo_2864_, 4);
 v___x_2892_ = lean_box(0);
-lean_inc(v_idx_2868_);
+lean_inc_n(v_idx_2868_, 2);
 v___x_2893_ = l_List_get_x21Internal___redArg(v___x_2892_, v_ctors_2891_, v_idx_2868_);
 lean_inc(v_discrParams_2866_);
 v_ctor_2894_ = l_Lean_mkConst(v___x_2893_, v_discrParams_2866_);
 lean_inc_ref(v_hdefault_2865_);
 v___x_2895_ = l_Lean_Expr_app___override(v_hdefault_2865_, v_ctor_2894_);
-lean_inc(v_idx_2868_);
 if (v_isShared_2889_ == 0)
 {
 lean_ctor_set(v___x_2888_, 1, v___x_2895_);
@@ -8222,8 +8204,7 @@ lean_object* v_toConstantVal_2988_; lean_object* v_ctors_2989_; lean_object* v_n
 v_toConstantVal_2988_ = lean_ctor_get(v_inductiveInfo_2970_, 0);
 v_ctors_2989_ = lean_ctor_get(v_inductiveInfo_2970_, 4);
 v_name_2990_ = lean_ctor_get(v_toConstantVal_2988_, 0);
-lean_inc(v_name_2990_);
-lean_inc(v_name_2990_);
+lean_inc_n(v_name_2990_, 2);
 v___x_2991_ = l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_getEnumToBitVecFor(v_name_2990_, v___y_2983_, v___y_2984_, v___y_2985_, v___y_2986_);
 if (lean_obj_tag(v___x_2991_) == 0)
 {
@@ -8239,17 +8220,15 @@ v___x_2995_ = lean_unsigned_to_nat(2u);
 v___x_2996_ = lean_mk_empty_array_with_capacity(v___x_2995_);
 lean_inc_ref(v___x_2996_);
 v___x_2997_ = lean_array_push(v___x_2996_, v___x_2994_);
-lean_inc_ref(v_x_2974_);
+lean_inc_ref_n(v_x_2974_, 3);
 v___x_2998_ = lean_array_push(v___x_2997_, v_x_2974_);
 v___x_2999_ = lean_array_get_size(v_hs_2982_);
 v___x_3000_ = lean_unsigned_to_nat(1u);
 v___x_3001_ = lean_nat_sub(v___x_2999_, v___x_3000_);
 v___x_3002_ = lean_array_get_borrowed(v___x_2975_, v_hs_2982_, v___x_3001_);
-lean_inc_ref(v_x_2974_);
 lean_inc(v___x_3002_);
 v___x_3003_ = l_Lean_Expr_app___override(v___x_3002_, v_x_2974_);
 v___x_3004_ = lean_mk_empty_array_with_capacity(v___x_3000_);
-lean_inc_ref(v_x_2974_);
 v___x_3005_ = lean_array_push(v___x_3004_, v_x_2974_);
 lean_inc_ref(v___x_3005_);
 v___x_3006_ = l_Lean_Meta_mkAppM(v_a_2992_, v___x_3005_, v___y_2983_, v___y_2984_, v___y_2985_, v___y_2986_);
@@ -8290,12 +8269,11 @@ if (lean_obj_tag(v___x_3020_) == 0)
 {
 lean_object* v_a_3021_; uint8_t v___x_3022_; uint8_t v___x_3023_; uint8_t v___x_3024_; lean_object* v___x_3025_; 
 v_a_3021_ = lean_ctor_get(v___x_3020_, 0);
-lean_inc(v_a_3021_);
+lean_inc_n(v_a_3021_, 2);
 lean_dec_ref(v___x_3020_);
 v___x_3022_ = 0;
 v___x_3023_ = 1;
 v___x_3024_ = 1;
-lean_inc(v_a_3021_);
 v___x_3025_ = l_Lean_Meta_mkLambdaFVars(v___x_3005_, v_a_3021_, v___x_3022_, v___x_3023_, v___x_3022_, v___x_3023_, v___x_3024_, v___y_2983_, v___y_2984_, v___y_2985_, v___y_2986_);
 lean_dec_ref(v___x_3005_);
 if (lean_obj_tag(v___x_3025_) == 0)
@@ -9658,16 +9636,14 @@ _start:
 lean_object* v___f_3421_; lean_object* v___x_3422_; lean_object* v_matchEqCondName_3423_; lean_object* v___y_3424_; lean_object* v___x_3425_; 
 v___f_3421_ = ((lean_object*)(l___private_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_Enums_0__Lean_Elab_Tactic_BVDecide_Frontend_Normalize_getMatchEqCondForAux___closed__0));
 v___x_3422_ = ((lean_object*)(l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_matchEqCondSuffix___closed__0));
-lean_inc(v_declName_3414_);
+lean_inc_n(v_declName_3414_, 2);
 v_matchEqCondName_3423_ = l_Lean_Name_str___override(v_declName_3414_, v___x_3422_);
-lean_inc(v_matchEqCondName_3423_);
-lean_inc(v_declName_3414_);
+lean_inc_n(v_matchEqCondName_3423_, 2);
 v___y_3424_ = lean_alloc_closure((void*)(l___private_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_Enums_0__Lean_Elab_Tactic_BVDecide_Frontend_Normalize_getMatchEqCondForAux___lam__1___boxed), 9, 4);
 lean_closure_set(v___y_3424_, 0, v_kind_3415_);
 lean_closure_set(v___y_3424_, 1, v_declName_3414_);
 lean_closure_set(v___y_3424_, 2, v_matchEqCondName_3423_);
 lean_closure_set(v___y_3424_, 3, v___f_3421_);
-lean_inc(v_matchEqCondName_3423_);
 v___x_3425_ = l_Lean_Meta_realizeConst(v_declName_3414_, v_matchEqCondName_3423_, v___y_3424_, v_a_3416_, v_a_3417_, v_a_3418_, v_a_3419_);
 if (lean_obj_tag(v___x_3425_) == 0)
 {
@@ -13638,11 +13614,10 @@ v_val_4706_ = lean_ctor_get(v_a_4702_, 0);
 lean_inc_ref(v_val_4706_);
 lean_dec_ref(v_a_4702_);
 v_ctors_4707_ = lean_ctor_get(v_val_4706_, 4);
-lean_inc(v_ctors_4707_);
+lean_inc_n(v_ctors_4707_, 2);
 lean_dec_ref(v_val_4706_);
 v___f_4708_ = lean_alloc_closure((void*)(l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_enumToBitVecCtor___lam__0___boxed), 2, 1);
 lean_closure_set(v___f_4708_, 0, v_declName_4684_);
-lean_inc(v_ctors_4707_);
 v___x_4709_ = l_List_findIdx_x3f___redArg(v___f_4708_, v_ctors_4707_);
 if (lean_obj_tag(v___x_4709_) == 1)
 {
@@ -14056,10 +14031,9 @@ v_toSeqLeft_4917_ = lean_ctor_get(v_toApplicative_4914_, 3);
 v_toSeqRight_4918_ = lean_ctor_get(v_toApplicative_4914_, 4);
 v___f_4919_ = ((lean_object*)(l___private_Lean_Meta_Basic_0__Lean_Meta_withLocalDecls_loop___at___00Lean_Meta_withLocalDecls___at___00Lean_Meta_withLocalDeclsD___at___00Lean_Meta_withLocalDeclsDND___at___00__private_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_Enums_0__Lean_Elab_Tactic_BVDecide_Frontend_Normalize_getMatchEqCondForAux_handleSimpleEnum_spec__4_spec__5_spec__7_spec__9___closed__2));
 v___f_4920_ = ((lean_object*)(l___private_Lean_Meta_Basic_0__Lean_Meta_withLocalDecls_loop___at___00Lean_Meta_withLocalDecls___at___00Lean_Meta_withLocalDeclsD___at___00Lean_Meta_withLocalDeclsDND___at___00__private_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_Enums_0__Lean_Elab_Tactic_BVDecide_Frontend_Normalize_getMatchEqCondForAux_handleSimpleEnum_spec__4_spec__5_spec__7_spec__9___closed__3));
-lean_inc_ref(v_toFunctor_4915_);
+lean_inc_ref_n(v_toFunctor_4915_, 2);
 v___f_4921_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__0), 6, 1);
 lean_closure_set(v___f_4921_, 0, v_toFunctor_4915_);
-lean_inc_ref(v_toFunctor_4915_);
 v___f_4922_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__1), 6, 1);
 lean_closure_set(v___f_4922_, 0, v_toFunctor_4915_);
 v___x_4923_ = lean_alloc_ctor(0, 2, 0);
@@ -14817,13 +14791,12 @@ if (lean_obj_tag(v___x_5238_) == 0)
 {
 lean_object* v_a_5239_; lean_object* v___x_5240_; 
 v_a_5239_ = lean_ctor_get(v___x_5238_, 0);
-lean_inc(v_a_5239_);
+lean_inc_n(v_a_5239_, 2);
 lean_dec_ref(v___x_5238_);
 lean_inc(v___y_5216_);
 lean_inc_ref(v___y_5215_);
 lean_inc(v___y_5214_);
 lean_inc_ref(v___y_5213_);
-lean_inc(v_a_5239_);
 v___x_5240_ = lean_infer_type(v_a_5239_, v___y_5213_, v___y_5214_, v___y_5215_, v___y_5216_);
 if (lean_obj_tag(v___x_5240_) == 0)
 {
@@ -16636,11 +16609,10 @@ else
 {
 lean_object* v_key_5853_; lean_object* v_tail_5854_; lean_object* v___x_5855_; 
 v_key_5853_ = lean_ctor_get(v_a_5844_, 0);
-lean_inc(v_key_5853_);
+lean_inc_n(v_key_5853_, 2);
 v_tail_5854_ = lean_ctor_get(v_a_5844_, 2);
 lean_inc(v_tail_5854_);
 lean_dec_ref(v_a_5844_);
-lean_inc(v_key_5853_);
 v___x_5855_ = l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_getEqIffEnumToBitVecEqFor(v_key_5853_, v___y_5846_, v___y_5847_, v___y_5848_, v___y_5849_);
 if (lean_obj_tag(v___x_5855_) == 0)
 {
@@ -16693,10 +16665,9 @@ if (lean_obj_tag(v___x_5871_) == 0)
 {
 lean_object* v_a_5872_; lean_object* v___x_5873_; lean_object* v___x_5874_; lean_object* v___x_5875_; lean_object* v___x_5876_; lean_object* v___x_5877_; lean_object* v___x_5878_; lean_object* v___x_5879_; lean_object* v___x_5880_; lean_object* v___x_5881_; lean_object* v___x_5882_; lean_object* v___x_5883_; lean_object* v___x_5884_; lean_object* v___x_5885_; lean_object* v___x_5886_; lean_object* v___x_5887_; lean_object* v___x_5888_; lean_object* v___x_5889_; lean_object* v___x_5890_; lean_object* v___x_5891_; lean_object* v___x_5892_; lean_object* v___x_5893_; lean_object* v___x_5894_; lean_object* v___x_5896_; 
 v_a_5872_ = lean_ctor_get(v___x_5871_, 0);
-lean_inc(v_a_5872_);
+lean_inc_n(v_a_5872_, 3);
 lean_dec_ref(v___x_5871_);
 v___x_5873_ = lean_unsigned_to_nat(1u);
-lean_inc(v_a_5872_);
 v___x_5874_ = lean_alloc_ctor(4, 2, 0);
 lean_ctor_set(v___x_5874_, 0, v_a_5872_);
 lean_ctor_set(v___x_5874_, 1, v___x_5873_);
@@ -16710,7 +16681,6 @@ v___x_5881_ = lean_obj_once(&l___private_Std_Data_DHashMap_Internal_AssocList_Ba
 v___x_5882_ = l_Lean_Meta_Simp_Simprocs_addCore(v_fst_5857_, v___x_5879_, v___x_5880_, v___x_5862_, v___x_5881_);
 v___x_5883_ = ((lean_object*)(l___private_Std_Data_DHashMap_Internal_AssocList_Basic_0__Std_DHashMap_Internal_AssocList_forInStep_go___at___00Lean_Elab_Tactic_BVDecide_Frontend_Normalize_enumsPass_spec__1___redArg___closed__10));
 v___x_5884_ = lean_unsigned_to_nat(5u);
-lean_inc(v_a_5872_);
 lean_inc(v_key_5853_);
 v___x_5885_ = l_Lean_Elab_Tactic_BVDecide_Frontend_Normalize_mkApplyUnaryControlDiscrPath(v_key_5853_, v___x_5863_, v_a_5872_, v___x_5883_, v___x_5884_);
 v___x_5886_ = ((lean_object*)(l___private_Std_Data_DHashMap_Internal_AssocList_Basic_0__Std_DHashMap_Internal_AssocList_forInStep_go___at___00Lean_Elab_Tactic_BVDecide_Frontend_Normalize_enumsPass_spec__1___redArg___closed__12));
@@ -17069,12 +17039,11 @@ if (lean_obj_tag(v___x_5998_) == 0)
 {
 lean_object* v_a_5999_; uint8_t v___x_6000_; lean_object* v___x_6001_; uint8_t v___x_6002_; lean_object* v___x_6003_; lean_object* v___x_6004_; lean_object* v___x_6005_; lean_object* v___x_6006_; lean_object* v___x_6007_; 
 v_a_5999_ = lean_ctor_get(v___x_5998_, 0);
-lean_inc(v_a_5999_);
+lean_inc_n(v_a_5999_, 2);
 lean_dec_ref(v___x_5998_);
 v___x_6000_ = 1;
 v___x_6001_ = lean_unsigned_to_nat(0u);
 v___x_6002_ = lean_nat_dec_eq(v___x_5985_, v___x_6001_);
-lean_inc(v_a_5999_);
 v___x_6003_ = lean_alloc_ctor(0, 1, 2);
 lean_ctor_set(v___x_6003_, 0, v_a_5999_);
 lean_ctor_set_uint8(v___x_6003_, sizeof(void*)*1, v___x_6000_);

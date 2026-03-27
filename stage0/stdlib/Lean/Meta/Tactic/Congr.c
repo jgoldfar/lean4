@@ -746,11 +746,10 @@ v_a_155_ = lean_ctor_get(v___x_154_, 0);
 lean_inc(v_a_155_);
 lean_dec_ref(v___x_154_);
 v_fst_156_ = lean_ctor_get(v_a_155_, 0);
-lean_inc(v_fst_156_);
+lean_inc_n(v_fst_156_, 2);
 v_snd_157_ = lean_ctor_get(v_a_155_, 1);
 lean_inc(v_snd_157_);
 lean_dec(v_a_155_);
-lean_inc(v_fst_156_);
 v___x_158_ = l_Lean_mkFVar(v_fst_156_);
 v___x_159_ = ((lean_object*)(l___private_Lean_Meta_Tactic_Congr_0__Lean_applyCongrThm_x3f___closed__2));
 v___x_160_ = lean_box(0);
@@ -2246,9 +2245,8 @@ if (lean_obj_tag(v___x_581_) == 0)
 {
 lean_object* v_a_582_; lean_object* v___f_583_; lean_object* v___x_584_; 
 v_a_582_ = lean_ctor_get(v___x_581_, 0);
-lean_inc(v_a_582_);
+lean_inc_n(v_a_582_, 2);
 lean_dec_ref(v___x_581_);
-lean_inc(v_a_582_);
 v___f_583_ = lean_alloc_closure((void*)(l_Lean_MVarId_hcongr_x3f___lam__0___boxed), 6, 1);
 lean_closure_set(v___f_583_, 0, v_a_582_);
 v___x_584_ = l_Lean_MVarId_withContext___at___00Lean_MVarId_congr_x3f_spec__1___redArg(v_a_582_, v___f_583_, v___y_575_, v___y_576_, v___y_577_, v___y_578_);

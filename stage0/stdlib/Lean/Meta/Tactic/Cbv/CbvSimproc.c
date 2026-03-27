@@ -2464,11 +2464,10 @@ else
 lean_object* v_k_550_; lean_object* v___x_551_; lean_object* v___x_552_; lean_object* v_c_553_; lean_object* v___x_555_; 
 v_k_550_ = lean_array_fget_borrowed(v_keys_535_, v_x_537_);
 v___x_551_ = ((lean_object*)(l___private_Lean_Meta_DiscrTree_Basic_0__Lean_Meta_DiscrTree_insertAux___at___00Lean_Meta_DiscrTree_insertKeyValue___at___00Lean_Meta_Tactic_Cbv_CbvSimprocs_addCore_spec__2_spec__6___closed__1));
-lean_inc(v_k_550_);
+lean_inc_n(v_k_550_, 2);
 v___x_552_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_552_, 0, v_k_550_);
 lean_ctor_set(v___x_552_, 1, v___x_551_);
-lean_inc(v_k_550_);
 v_c_553_ = l_Array_binInsertM___at___00__private_Lean_Meta_DiscrTree_Basic_0__Lean_Meta_DiscrTree_insertAux___at___00Lean_Meta_DiscrTree_insertKeyValue___at___00Lean_Meta_Tactic_Cbv_CbvSimprocs_addCore_spec__2_spec__6_spec__13(v_x_537_, v_keys_535_, v_v_536_, v_k_550_, v_children_540_, v___x_552_);
 lean_dec_ref(v___x_552_);
 if (v_isShared_543_ == 0)
@@ -3744,9 +3743,8 @@ else
 {
 lean_object* v_val_941_; lean_object* v_keys_x27_942_; lean_object* v_vals_x27_943_; lean_object* v___x_945_; 
 v_val_941_ = lean_ctor_get(v___x_937_, 0);
-lean_inc(v_val_941_);
+lean_inc_n(v_val_941_, 2);
 lean_dec_ref(v___x_937_);
-lean_inc(v_val_941_);
 v_keys_x27_942_ = l_Array_eraseIdx___redArg(v_ks_932_, v_val_941_);
 v_vals_x27_943_ = l_Array_eraseIdx___redArg(v_vs_933_, v_val_941_);
 if (v_isShared_936_ == 0)
@@ -3853,7 +3851,7 @@ v_resetjp_974_:
 {
 lean_object* v___x_977_; lean_object* v_entry_978_; lean_object* v___x_979_; lean_object* v___x_980_; lean_object* v___x_981_; 
 lean_inc_ref(v_keys_965_);
-lean_inc(v_declName_966_);
+lean_inc_n(v_declName_966_, 2);
 v___x_977_ = lean_alloc_ctor(0, 2, 1);
 lean_ctor_set(v___x_977_, 0, v_declName_966_);
 lean_ctor_set(v___x_977_, 1, v_keys_965_);
@@ -3862,7 +3860,6 @@ v_entry_978_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v_entry_978_, 0, v___x_977_);
 lean_ctor_set(v_entry_978_, 1, v_proc_968_);
 v___x_979_ = lean_box(0);
-lean_inc(v_declName_966_);
 v___x_980_ = l_Lean_PersistentHashMap_insert___at___00Lean_Meta_Tactic_Cbv_CbvSimprocs_addCore_spec__0___redArg(v_simprocNames_972_, v_declName_966_, v___x_979_);
 v___x_981_ = l_Lean_PersistentHashMap_erase___at___00Lean_Meta_Tactic_Cbv_CbvSimprocs_addCore_spec__1___redArg(v_erased_973_, v_declName_966_);
 lean_dec(v_declName_966_);

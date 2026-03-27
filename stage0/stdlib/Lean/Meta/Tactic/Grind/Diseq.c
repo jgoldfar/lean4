@@ -512,9 +512,8 @@ v_resetjp_118_:
 {
 lean_object* v_fst_121_; lean_object* v___x_122_; 
 v_fst_121_ = lean_ctor_get(v_val_117_, 0);
-lean_inc(v_fst_121_);
+lean_inc_n(v_fst_121_, 2);
 lean_dec(v_val_117_);
-lean_inc(v_fst_121_);
 v___x_122_ = l_Lean_Meta_Grind_isEqFalse___redArg(v_fst_121_, v_a_101_, v_a_102_, v_a_103_, v_a_104_, v_a_105_, v_a_106_);
 if (lean_obj_tag(v___x_122_) == 0)
 {

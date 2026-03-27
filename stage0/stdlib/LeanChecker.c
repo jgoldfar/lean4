@@ -413,10 +413,9 @@ lean_del_object(v___x_67_);
 lean_dec(v_module_62_);
 v___x_179_ = lean_unsigned_to_nat(1u);
 v___x_180_ = lean_mk_empty_array_with_capacity(v___x_179_);
-lean_inc(v_a_65_);
+lean_inc_n(v_a_65_, 2);
 v___x_181_ = lean_array_push(v___x_180_, v_a_65_);
 v___x_182_ = 1;
-lean_inc(v_a_65_);
 v___x_183_ = l_Lean_OLeanLevel_adjustFileName(v_a_65_, v___x_182_);
 v___x_184_ = l_System_FilePath_pathExists(v___x_183_);
 if (v___x_184_ == 0)

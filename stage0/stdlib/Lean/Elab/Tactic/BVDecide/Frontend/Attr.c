@@ -766,13 +766,12 @@ lean_object* v___x_133_; lean_object* v___x_134_; lean_object* v___x_135_;
 lean_inc(v_defValue_128_);
 v___x_133_ = lean_alloc_ctor(0, 1, 0);
 lean_ctor_set(v___x_133_, 0, v_defValue_128_);
-lean_inc(v_name_124_);
+lean_inc_n(v_name_124_, 2);
 v___x_134_ = lean_alloc_ctor(0, 4, 0);
 lean_ctor_set(v___x_134_, 0, v_name_124_);
 lean_ctor_set(v___x_134_, 1, v_ref_126_);
 lean_ctor_set(v___x_134_, 2, v___x_133_);
 lean_ctor_set(v___x_134_, 3, v_descr_129_);
-lean_inc(v_name_124_);
 v___x_135_ = lean_register_option(v_name_124_, v___x_134_);
 if (lean_obj_tag(v___x_135_) == 0)
 {
@@ -2474,9 +2473,8 @@ v_a_782_ = lean_ctor_get(v___x_781_, 0);
 lean_inc(v_a_782_);
 lean_dec_ref(v___x_781_);
 v_macroStack_783_ = lean_ctor_get(v___y_773_, 1);
-lean_inc(v_macroStack_783_);
+lean_inc_n(v_macroStack_783_, 2);
 v___x_784_ = l_Lean_Elab_getBetterRef(v_ref_780_, v_macroStack_783_);
-lean_inc(v_macroStack_783_);
 v___x_785_ = l_Lean_Elab_addMacroStack___at___00Lean_throwError___at___00Lean_Elab_Tactic_BVDecide_Frontend_elabBVDecideConfig_spec__1_spec__5___redArg(v_a_782_, v_macroStack_783_, v___y_777_);
 v_a_786_ = lean_ctor_get(v___x_785_, 0);
 v_isSharedCheck_794_ = !lean_is_exclusive(v___x_785_);

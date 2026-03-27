@@ -5391,11 +5391,10 @@ if (lean_obj_tag(v___x_1767_) == 0)
 {
 lean_object* v_a_1768_; lean_object* v___x_1769_; lean_object* v___x_1770_; lean_object* v___x_1771_; lean_object* v___x_1772_; size_t v_sz_1773_; lean_object* v___x_1774_; 
 v_a_1768_ = lean_ctor_get(v___x_1767_, 0);
-lean_inc(v_a_1768_);
+lean_inc_n(v_a_1768_, 2);
 lean_dec_ref(v___x_1767_);
 v___x_1769_ = lean_mk_empty_array_with_capacity(v___y_1745_);
 v___x_1770_ = lean_array_get_size(v_a_1768_);
-lean_inc(v_a_1768_);
 v___x_1771_ = l_Array_toSubarray___redArg(v_a_1768_, v___y_1745_, v___x_1770_);
 v___x_1772_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_1772_, 0, v___x_1769_);

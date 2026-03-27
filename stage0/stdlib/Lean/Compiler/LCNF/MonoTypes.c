@@ -3254,9 +3254,8 @@ if (lean_obj_tag(v___x_937_) == 0)
 {
 lean_object* v_a_938_; lean_object* v___x_939_; lean_object* v___x_941_; uint8_t v_isShared_942_; uint8_t v_isSharedCheck_946_; 
 v_a_938_ = lean_ctor_get(v___x_937_, 0);
-lean_inc(v_a_938_);
+lean_inc_n(v_a_938_, 2);
 lean_dec_ref(v___x_937_);
-lean_inc(v_a_938_);
 v___x_939_ = l_Lean_Compiler_LCNF_CacheExtension_insert___at___00Lean_Compiler_LCNF_getOtherDeclMonoType_spec__1___redArg(v___x_928_, v_declName_924_, v_a_938_, v_a_926_);
 v_isSharedCheck_946_ = !lean_is_exclusive(v___x_939_);
 if (v_isSharedCheck_946_ == 0)

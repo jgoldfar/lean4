@@ -1620,8 +1620,7 @@ lean_object* v_value_436_; lean_object* v_name_437_; lean_object* v___x_438_; le
 v_value_436_ = lean_ctor_get(v_decl_417_, 1);
 lean_inc_ref(v_value_436_);
 v_name_437_ = lean_ctor_get(v_toSignature_424_, 0);
-lean_inc(v_name_437_);
-lean_inc(v_name_437_);
+lean_inc_n(v_name_437_, 2);
 v___x_438_ = l_Lean_Compiler_LCNF_setDeclPublic(v_env_425_, v_name_437_);
 v___x_439_ = lean_obj_once(&l_Lean_Compiler_LCNF_markDeclPublicRec___closed__2, &l_Lean_Compiler_LCNF_markDeclPublicRec___closed__2_once, _init_l_Lean_Compiler_LCNF_markDeclPublicRec___closed__2);
 if (v_isShared_435_ == 0)
@@ -6788,9 +6787,8 @@ lean_object* v_val_2123_; lean_object* v___x_2124_;
 lean_del_object(v___x_2109_);
 lean_dec(v_k_2102_);
 v_val_2123_ = lean_ctor_get(v___x_2122_, 0);
-lean_inc(v_val_2123_);
+lean_inc_n(v_val_2123_, 2);
 lean_dec_ref(v___x_2122_);
-lean_inc(v_val_2123_);
 v___x_2124_ = l_Lean_Compiler_LCNF_Decl_isTemplateLike___redArg(v_val_2123_, v___y_2099_, v___y_2100_);
 if (lean_obj_tag(v___x_2124_) == 0)
 {

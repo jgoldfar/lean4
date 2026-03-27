@@ -2939,10 +2939,9 @@ goto v_resetjp_842_;
 v_resetjp_842_:
 {
 lean_object* v___x_845_; lean_object* v___x_846_; lean_object* v___x_847_; lean_object* v___x_848_; 
-lean_inc_ref(v___y_835_);
+lean_inc_ref_n(v___y_835_, 2);
 v___x_845_ = l_Lean_FileMap_toPosition(v___y_835_, v___y_832_);
 lean_dec(v___y_832_);
-lean_inc_ref(v___y_835_);
 v___x_846_ = l_Lean_FileMap_toPosition(v___y_835_, v___y_838_);
 lean_dec(v___y_838_);
 v___x_847_ = lean_alloc_ctor(1, 1, 0);

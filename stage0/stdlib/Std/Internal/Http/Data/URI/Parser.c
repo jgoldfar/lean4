@@ -4375,12 +4375,11 @@ else
 {
 lean_object* v___x_994_; lean_object* v___x_995_; lean_object* v___x_996_; lean_object* v___x_997_; lean_object* v___x_998_; uint8_t v___x_999_; 
 v___x_994_ = lean_string_from_utf8_unchecked(v___x_990_);
-lean_inc(v___y_986_);
+lean_inc_n(v___y_986_, 4);
 lean_inc_ref(v___x_994_);
 v___x_995_ = l_String_mapAux___at___00__private_Std_Internal_Http_Data_URI_Parser_0__Std_Http_URI_Parser_parseScheme_spec__0(v___x_994_, v___y_986_);
 v___x_996_ = ((lean_object*)(l___private_Std_Internal_Http_Data_URI_Parser_0__Std_Http_URI_Parser_parseHost___closed__1));
 v___x_997_ = lean_box(0);
-lean_inc_n(v___y_986_, 3);
 v___x_998_ = l_String_splitOnAux(v___x_995_, v___x_996_, v___y_986_, v___y_986_, v___y_986_, v___x_997_);
 v___x_999_ = l_List_isEmpty___redArg(v___x_998_);
 lean_dec(v___x_998_);

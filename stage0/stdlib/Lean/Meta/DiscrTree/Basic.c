@@ -3979,7 +3979,7 @@ else
 lean_object* v___f_1334_; lean_object* v_k_1335_; lean_object* v___f_1336_; lean_object* v___f_1337_; lean_object* v___x_1338_; lean_object* v___x_1339_; lean_object* v___x_1340_; lean_object* v_c_1341_; lean_object* v___x_1343_; 
 v___f_1334_ = ((lean_object*)(l___private_Lean_Meta_DiscrTree_Basic_0__Lean_Meta_DiscrTree_insertAux___redArg___closed__0));
 v_k_1335_ = lean_array_fget(v_keys_1319_, v_x_1321_);
-lean_inc(v_k_1335_);
+lean_inc_n(v_k_1335_, 2);
 lean_inc(v_v_1320_);
 lean_inc_ref(v_keys_1319_);
 lean_inc(v_x_1321_);
@@ -3989,7 +3989,6 @@ lean_closure_set(v___f_1336_, 1, v_inst_1318_);
 lean_closure_set(v___f_1336_, 2, v_keys_1319_);
 lean_closure_set(v___f_1336_, 3, v_v_1320_);
 lean_closure_set(v___f_1336_, 4, v_k_1335_);
-lean_inc(v_k_1335_);
 v___f_1337_ = lean_alloc_closure((void*)(l___private_Lean_Meta_DiscrTree_Basic_0__Lean_Meta_DiscrTree_insertAux___redArg___lam__2___boxed), 5, 4);
 lean_closure_set(v___f_1337_, 0, v_x_1321_);
 lean_closure_set(v___f_1337_, 1, v_keys_1319_);

@@ -185,13 +185,12 @@ lean_object* v___x_10_; uint8_t v___x_11_; lean_object* v___x_12_; lean_object* 
 v___x_10_ = lean_alloc_ctor(1, 0, 1);
 v___x_11_ = lean_unbox(v_defValue_5_);
 lean_ctor_set_uint8(v___x_10_, 0, v___x_11_);
-lean_inc(v_name_1_);
+lean_inc_n(v_name_1_, 2);
 v___x_12_ = lean_alloc_ctor(0, 4, 0);
 lean_ctor_set(v___x_12_, 0, v_name_1_);
 lean_ctor_set(v___x_12_, 1, v_ref_3_);
 lean_ctor_set(v___x_12_, 2, v___x_10_);
 lean_ctor_set(v___x_12_, 3, v_descr_6_);
-lean_inc(v_name_1_);
 v___x_13_ = lean_register_option(v_name_1_, v___x_12_);
 if (lean_obj_tag(v___x_13_) == 0)
 {
@@ -666,9 +665,8 @@ v_a_180_ = lean_ctor_get(v___x_179_, 0);
 lean_inc(v_a_180_);
 lean_dec_ref(v___x_179_);
 v_macroStack_181_ = lean_ctor_get(v___y_171_, 1);
-lean_inc(v_macroStack_181_);
+lean_inc_n(v_macroStack_181_, 2);
 v___x_182_ = l_Lean_Elab_getBetterRef(v_ref_178_, v_macroStack_181_);
-lean_inc(v_macroStack_181_);
 v___x_183_ = l_Lean_Elab_addMacroStack___at___00Lean_throwError___at___00Lean_throwErrorAt___at___00Lean_Elab_Term_Quotation_getAntiquotationIds_spec__0_spec__0_spec__2___redArg(v_a_180_, v_macroStack_181_, v___y_175_);
 v_a_184_ = lean_ctor_get(v___x_183_, 0);
 v_isSharedCheck_192_ = !lean_is_exclusive(v___x_183_);

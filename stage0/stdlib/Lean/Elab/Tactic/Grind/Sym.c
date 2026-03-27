@@ -5655,9 +5655,8 @@ if (lean_obj_tag(v___x_2081_) == 0)
 {
 lean_object* v_a_2082_; lean_object* v___y_2084_; lean_object* v___y_2085_; lean_object* v___y_2086_; lean_object* v___y_2087_; lean_object* v___y_2088_; lean_object* v___y_2089_; uint8_t v___x_2111_; 
 v_a_2082_ = lean_ctor_get(v___x_2081_, 0);
-lean_inc(v_a_2082_);
+lean_inc_n(v_a_2082_, 2);
 lean_dec_ref(v___x_2081_);
-lean_inc(v_a_2082_);
 v___x_2111_ = l_Lean_Expr_isFalse(v_a_2082_);
 if (v___x_2111_ == 0)
 {
@@ -6464,9 +6463,8 @@ if (lean_obj_tag(v___x_2288_) == 0)
 {
 lean_object* v_a_2289_; lean_object* v___x_2290_; lean_object* v___x_2291_; 
 v_a_2289_ = lean_ctor_get(v___x_2288_, 0);
-lean_inc(v_a_2289_);
+lean_inc_n(v_a_2289_, 2);
 lean_dec_ref(v___x_2288_);
-lean_inc(v_a_2289_);
 v___x_2290_ = lean_alloc_ctor(0, 1, 0);
 lean_ctor_set(v___x_2290_, 0, v_a_2289_);
 v___x_2291_ = l_Lean_Meta_Sym_Simp_mkTheoremFromDecl(v_a_2289_, v___y_2243_, v___y_2244_, v___y_2245_, v___y_2246_);
@@ -10422,13 +10420,12 @@ goto v_resetjp_3457_;
 v_resetjp_3457_:
 {
 lean_object* v___f_3460_; lean_object* v___x_3461_; lean_object* v___x_3462_; 
-lean_inc(v_mvarId_3456_);
+lean_inc_n(v_mvarId_3456_, 2);
 v___f_3460_ = lean_alloc_closure((void*)(l___private_Lean_Elab_Tactic_Grind_Sym_0__Lean_Elab_Tactic_Grind_evalSymSimp___lam__0___boxed), 14, 4);
 lean_closure_set(v___f_3460_, 0, v_mvarId_3456_);
 lean_closure_set(v___f_3460_, 1, v_fst_3451_);
 lean_closure_set(v___f_3460_, 2, v_snd_3452_);
 lean_closure_set(v___f_3460_, 3, v___y_3448_);
-lean_inc(v_mvarId_3456_);
 v___x_3461_ = lean_alloc_closure((void*)(l_Lean_MVarId_withContext___at___00__private_Lean_Elab_Tactic_Grind_Sym_0__Lean_Elab_Tactic_Grind_evalSymSimp_spec__0___boxed), 13, 3);
 lean_closure_set(v___x_3461_, 0, lean_box(0));
 lean_closure_set(v___x_3461_, 1, v_mvarId_3456_);

@@ -4547,10 +4547,9 @@ goto v_resetjp_1553_;
 v_resetjp_1553_:
 {
 lean_object* v___x_1556_; lean_object* v___x_1557_; lean_object* v___x_1558_; lean_object* v___x_1559_; 
-lean_inc_ref(v___y_1547_);
+lean_inc_ref_n(v___y_1547_, 2);
 v___x_1556_ = l_Lean_FileMap_toPosition(v___y_1547_, v___y_1543_);
 lean_dec(v___y_1543_);
-lean_inc_ref(v___y_1547_);
 v___x_1557_ = l_Lean_FileMap_toPosition(v___y_1547_, v___y_1549_);
 lean_dec(v___y_1549_);
 v___x_1558_ = lean_alloc_ctor(1, 1, 0);
@@ -5806,10 +5805,9 @@ if (lean_obj_tag(v___x_2077_) == 0)
 {
 lean_object* v_a_2078_; uint8_t v___x_2079_; lean_object* v___x_2080_; 
 v_a_2078_ = lean_ctor_get(v___x_2077_, 0);
-lean_inc(v_a_2078_);
+lean_inc_n(v_a_2078_, 2);
 lean_dec_ref(v___x_2077_);
 v___x_2079_ = 1;
-lean_inc(v_a_2078_);
 v___x_2080_ = l_Lean_ConstantInfo_value_x3f(v_a_2078_, v___x_2079_);
 if (lean_obj_tag(v___x_2080_) == 1)
 {

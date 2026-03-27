@@ -910,10 +910,9 @@ _start:
 lean_object* v___x_243_; uint8_t v_fst_245_; lean_object* v_mctx_246_; lean_object* v___y_264_; lean_object* v_mctx_269_; lean_object* v___x_270_; lean_object* v___x_271_; uint8_t v___x_272_; 
 v___x_243_ = lean_st_ref_get(v___y_241_);
 v_mctx_269_ = lean_ctor_get(v___x_243_, 0);
-lean_inc_ref(v_mctx_269_);
+lean_inc_ref_n(v_mctx_269_, 2);
 lean_dec(v___x_243_);
 v___x_270_ = lean_obj_once(&l___private_Lean_Meta_Tactic_Cleanup_0__Lean_Meta_cleanupCore_addUsedFVars___closed__1, &l___private_Lean_Meta_Tactic_Cleanup_0__Lean_Meta_cleanupCore_addUsedFVars___closed__1_once, _init_l___private_Lean_Meta_Tactic_Cleanup_0__Lean_Meta_cleanupCore_addUsedFVars___closed__1);
-lean_inc_ref(v_mctx_269_);
 v___x_271_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_271_, 0, v___x_270_);
 lean_ctor_set(v___x_271_, 1, v_mctx_269_);
@@ -6588,9 +6587,8 @@ if (lean_obj_tag(v___x_1879_) == 0)
 {
 lean_object* v_a_1880_; lean_object* v___x_1881_; lean_object* v___x_1883_; uint8_t v_isShared_1884_; uint8_t v_isSharedCheck_1889_; 
 v_a_1880_ = lean_ctor_get(v___x_1879_, 0);
-lean_inc(v_a_1880_);
+lean_inc_n(v_a_1880_, 2);
 lean_dec_ref(v___x_1879_);
-lean_inc(v_a_1880_);
 v___x_1881_ = l_Lean_MVarId_assign___at___00__private_Lean_Meta_Tactic_Cleanup_0__Lean_Meta_cleanupCore_spec__2___redArg(v_mvarId_1845_, v_a_1880_, v___y_1851_);
 v_isSharedCheck_1889_ = !lean_is_exclusive(v___x_1881_);
 if (v_isSharedCheck_1889_ == 0)

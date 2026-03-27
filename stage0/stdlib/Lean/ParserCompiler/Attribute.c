@@ -2111,10 +2111,9 @@ if (lean_obj_tag(v___x_654_) == 0)
 {
 lean_object* v_a_655_; uint8_t v___x_656_; lean_object* v___x_657_; 
 v_a_655_ = lean_ctor_get(v___x_654_, 0);
-lean_inc(v_a_655_);
+lean_inc_n(v_a_655_, 2);
 lean_dec_ref(v___x_654_);
 v___x_656_ = 0;
-lean_inc(v_a_655_);
 v___x_657_ = l_Lean_recordExtraModUseFromDecl___at___00Lean_ParserCompiler_registerCombinatorAttribute_spec__2(v_a_655_, v___x_656_, v___y_647_, v___y_648_);
 if (lean_obj_tag(v___x_657_) == 0)
 {
@@ -2435,12 +2434,11 @@ if (lean_obj_tag(v___x_766_) == 0)
 {
 lean_object* v_a_767_; lean_object* v___f_768_; lean_object* v___f_769_; uint8_t v___x_770_; lean_object* v___x_771_; lean_object* v___x_772_; lean_object* v___x_773_; 
 v_a_767_ = lean_ctor_get(v___x_766_, 0);
-lean_inc(v_a_767_);
+lean_inc_n(v_a_767_, 2);
 lean_dec_ref(v___x_766_);
 lean_inc(v_name_756_);
 v___f_768_ = lean_alloc_closure((void*)(l_Lean_ParserCompiler_registerCombinatorAttribute___lam__2___boxed), 5, 1);
 lean_closure_set(v___f_768_, 0, v_name_756_);
-lean_inc(v_a_767_);
 v___f_769_ = lean_alloc_closure((void*)(l_Lean_ParserCompiler_registerCombinatorAttribute___lam__3___boxed), 7, 1);
 lean_closure_set(v___f_769_, 0, v_a_767_);
 v___x_770_ = 0;

@@ -12760,10 +12760,9 @@ _start:
 {
 lean_object* v_fvarId_4627_; lean_object* v_value_4628_; lean_object* v_k_4630_; lean_object* v___y_4631_; lean_object* v___y_4632_; lean_object* v___y_4633_; lean_object* v___y_4634_; lean_object* v___y_4635_; lean_object* v___y_4636_; lean_object* v___y_4668_; lean_object* v___y_4669_; lean_object* v___y_4670_; lean_object* v___y_4671_; lean_object* v___y_4672_; lean_object* v___y_4673_; lean_object* v___y_4674_; uint8_t v___y_4675_; lean_object* v_k_4678_; lean_object* v___y_4679_; lean_object* v___y_4680_; lean_object* v___y_4681_; lean_object* v___y_4682_; lean_object* v___y_4683_; lean_object* v___y_4684_; lean_object* v___x_4695_; lean_object* v_a_4696_; lean_object* v___x_4698_; uint8_t v_isShared_4699_; uint8_t v_isSharedCheck_4996_; 
 v_fvarId_4627_ = lean_ctor_get(v_decl_4618_, 0);
-lean_inc(v_fvarId_4627_);
+lean_inc_n(v_fvarId_4627_, 2);
 v_value_4628_ = lean_ctor_get(v_decl_4618_, 3);
 lean_inc(v_value_4628_);
-lean_inc(v_fvarId_4627_);
 v___x_4695_ = l___private_Lean_Compiler_LCNF_ExplicitRC_0__Lean_Compiler_LCNF_addDecIfNeeded___redArg(v_fvarId_4627_, v_k_4619_, v_a_4620_, v_a_4621_);
 v_a_4696_ = lean_ctor_get(v___x_4695_, 0);
 v_isSharedCheck_4996_ = !lean_is_exclusive(v___x_4695_);
@@ -13735,9 +13734,8 @@ v___jp_4893_:
 {
 lean_object* v_params_4895_; lean_object* v___x_4896_; 
 v_params_4895_ = lean_ctor_get(v___y_4894_, 3);
-lean_inc_ref(v_params_4895_);
+lean_inc_ref_n(v_params_4895_, 2);
 lean_dec_ref(v___y_4894_);
-lean_inc_ref(v_params_4895_);
 v___x_4896_ = l___private_Lean_Compiler_LCNF_ExplicitRC_0__Lean_Compiler_LCNF_addDecAfterFullApp(v_args_4803_, v_params_4895_, v_a_4696_, v_a_4620_, v_a_4621_, v_a_4622_, v_a_4623_, v_a_4624_, v_a_4625_);
 if (lean_obj_tag(v___x_4896_) == 0)
 {
@@ -18107,13 +18105,12 @@ _start:
 {
 lean_object* v_toSignature_6125_; lean_object* v_value_6126_; uint8_t v_recursive_6127_; lean_object* v_inlineAttr_x3f_6128_; lean_object* v___f_6129_; lean_object* v___x_6130_; 
 v_toSignature_6125_ = lean_ctor_get(v_decl_6119_, 0);
-lean_inc_ref(v_toSignature_6125_);
+lean_inc_ref_n(v_toSignature_6125_, 2);
 v_value_6126_ = lean_ctor_get(v_decl_6119_, 1);
 lean_inc_ref(v_value_6126_);
 v_recursive_6127_ = lean_ctor_get_uint8(v_decl_6119_, sizeof(void*)*3);
 v_inlineAttr_x3f_6128_ = lean_ctor_get(v_decl_6119_, 2);
 lean_inc(v_inlineAttr_x3f_6128_);
-lean_inc_ref(v_toSignature_6125_);
 v___f_6129_ = lean_alloc_closure((void*)(l___private_Lean_Compiler_LCNF_ExplicitRC_0__Lean_Compiler_LCNF_Decl_explicitRc___lam__0___boxed), 8, 2);
 lean_closure_set(v___f_6129_, 0, v_toSignature_6125_);
 lean_closure_set(v___f_6129_, 1, v_decl_6119_);

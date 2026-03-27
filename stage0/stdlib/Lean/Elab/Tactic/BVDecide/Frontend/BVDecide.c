@@ -5515,11 +5515,10 @@ else
 {
 lean_object* v_key_1397_; lean_object* v_tail_1398_; lean_object* v___x_1399_; 
 v_key_1397_ = lean_ctor_get(v_a_1388_, 0);
-lean_inc(v_key_1397_);
+lean_inc_n(v_key_1397_, 2);
 v_tail_1398_ = lean_ctor_get(v_a_1388_, 2);
 lean_inc(v_tail_1398_);
 lean_dec_ref(v_a_1388_);
-lean_inc(v_key_1397_);
 v___x_1399_ = l_Lean_FVarId_getType___redArg(v_key_1397_, v___y_1391_, v___y_1392_, v___y_1393_);
 if (lean_obj_tag(v___x_1399_) == 0)
 {
@@ -25630,7 +25629,7 @@ lean_dec_ref(v___x_8377_);
 v_fst_8379_ = lean_ctor_get(v_a_8378_, 0);
 lean_inc(v_fst_8379_);
 v_snd_8380_ = lean_ctor_get(v_a_8378_, 1);
-lean_inc(v_snd_8380_);
+lean_inc_n(v_snd_8380_, 2);
 lean_dec(v_a_8378_);
 lean_inc(v___y_8375_);
 lean_inc_ref(v___y_8374_);
@@ -25640,7 +25639,6 @@ lean_inc(v___y_8371_);
 lean_inc_ref(v___y_8370_);
 lean_inc(v___y_8369_);
 lean_inc_ref(v___y_8368_);
-lean_inc(v_snd_8380_);
 v_r_8381_ = lean_apply_11(v_f_8367_, v_fst_8379_, v_snd_8380_, v___y_8368_, v___y_8369_, v___y_8370_, v___y_8371_, v___y_8372_, v___y_8373_, v___y_8374_, v___y_8375_, lean_box(0));
 if (lean_obj_tag(v_r_8381_) == 0)
 {

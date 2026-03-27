@@ -4498,10 +4498,9 @@ _start:
 lean_object* v___x_1736_; lean_object* v_a_1737_; lean_object* v___y_1739_; lean_object* v___x_1742_; uint8_t v___x_1743_; 
 v___x_1736_ = l_Lean_Syntax_MonadTraverser_getCur___at___00Lean_Parser_Term_binderDefault_parenthesizer_spec__0___redArg(v_a_1732_);
 v_a_1737_ = lean_ctor_get(v___x_1736_, 0);
-lean_inc(v_a_1737_);
+lean_inc_n(v_a_1737_, 2);
 lean_dec_ref(v___x_1736_);
 v___x_1742_ = ((lean_object*)(l_Lean_Parser_Term_binderDefault___closed__1));
-lean_inc(v_a_1737_);
 v___x_1743_ = l_Lean_Syntax_isOfKind(v_a_1737_, v___x_1742_);
 if (v___x_1743_ == 0)
 {

@@ -639,9 +639,8 @@ if (lean_obj_tag(v___x_22_) == 0)
 {
 lean_object* v_a_23_; lean_object* v___x_24_; 
 v_a_23_ = lean_ctor_get(v___x_22_, 0);
-lean_inc(v_a_23_);
+lean_inc_n(v_a_23_, 2);
 lean_dec_ref(v___x_22_);
-lean_inc(v_a_23_);
 v___x_24_ = l_Lean_Meta_getLevel(v_a_23_, v_a_15_, v_a_16_, v_a_17_, v_a_18_);
 if (lean_obj_tag(v___x_24_) == 0)
 {
@@ -4600,9 +4599,8 @@ if (lean_obj_tag(v___x_1373_) == 4)
 {
 lean_object* v_declName_1374_; lean_object* v___y_1376_; lean_object* v___x_1391_; lean_object* v_a_1392_; 
 v_declName_1374_ = lean_ctor_get(v___x_1373_, 0);
-lean_inc(v_declName_1374_);
+lean_inc_n(v_declName_1374_, 2);
 lean_dec_ref(v___x_1373_);
-lean_inc(v_declName_1374_);
 v___x_1391_ = l_Lean_getProjectionFnInfo_x3f___at___00Lean_Meta_Grind_isSupportApp_spec__0___redArg(v_declName_1374_, v_a_1369_);
 v_a_1392_ = lean_ctor_get(v___x_1391_, 0);
 lean_inc(v_a_1392_);
@@ -10070,11 +10068,10 @@ _start:
 uint8_t v_verbose_3256_; lean_object* v_mvarId_3257_; uint8_t v___x_3258_; lean_object* v___x_3259_; lean_object* v___x_3260_; lean_object* v___y_3261_; lean_object* v___x_3262_; 
 v_verbose_3256_ = lean_ctor_get_uint8(v_config_3250_, sizeof(void*)*11 + 15);
 v_mvarId_3257_ = lean_ctor_get(v_goal_3249_, 1);
-lean_inc(v_mvarId_3257_);
+lean_inc_n(v_mvarId_3257_, 2);
 v___x_3258_ = 1;
 v___x_3259_ = lean_box(v_verbose_3256_);
 v___x_3260_ = lean_box(v___x_3258_);
-lean_inc(v_mvarId_3257_);
 v___y_3261_ = lean_alloc_closure((void*)(l_Lean_Meta_Grind_goalToMessageData___lam__0___boxed), 10, 5);
 lean_closure_set(v___y_3261_, 0, v___x_3259_);
 lean_closure_set(v___y_3261_, 1, v_mvarId_3257_);

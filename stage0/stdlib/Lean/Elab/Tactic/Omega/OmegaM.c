@@ -3850,9 +3850,8 @@ v___jp_1340_:
 {
 lean_object* v___x_1342_; lean_object* v___x_1343_; lean_object* v___x_1344_; lean_object* v___x_1345_; lean_object* v___x_1346_; lean_object* v___x_1347_; lean_object* v___x_1349_; 
 lean_inc_ref(v___x_1335_);
-lean_inc(v___x_1226_);
+lean_inc_n(v___x_1226_, 2);
 v___x_1342_ = l_Lean_mkApp3(v___x_1339_, v___x_1226_, v___y_1341_, v___x_1335_);
-lean_inc(v___x_1226_);
 lean_inc(v___x_1238_);
 v___x_1343_ = l_Lean_mkApp3(v___x_1337_, v___x_1238_, v___x_1226_, v___x_1342_);
 v___x_1344_ = ((lean_object*)(l_Lean_Elab_Tactic_Omega_analyzeAtom___redArg___closed__37));
@@ -4182,9 +4181,8 @@ v___x_1403_ = lean_obj_once(&l_Lean_Elab_Tactic_Omega_analyzeAtom___redArg___clo
 v___x_1404_ = lean_obj_once(&l_Lean_Elab_Tactic_Omega_analyzeAtom___redArg___closed__59, &l_Lean_Elab_Tactic_Omega_analyzeAtom___redArg___closed__59_once, _init_l_Lean_Elab_Tactic_Omega_analyzeAtom___redArg___closed__59);
 lean_inc_ref(v___x_1402_);
 lean_inc_ref(v___y_1394_);
-lean_inc(v___x_1226_);
+lean_inc_n(v___x_1226_, 2);
 v___x_1405_ = l_Lean_mkApp3(v___x_1404_, v___x_1226_, v___y_1394_, v___x_1402_);
-lean_inc(v___x_1226_);
 lean_inc(v___x_1238_);
 v___x_1406_ = l_Lean_mkApp3(v___x_1403_, v___x_1238_, v___x_1226_, v___x_1405_);
 v___x_1407_ = lean_obj_once(&l_Lean_Elab_Tactic_Omega_analyzeAtom___redArg___closed__60, &l_Lean_Elab_Tactic_Omega_analyzeAtom___redArg___closed__60_once, _init_l_Lean_Elab_Tactic_Omega_analyzeAtom___redArg___closed__60);
@@ -7164,8 +7162,7 @@ v___jp_2099_:
 lean_object* v___x_2102_; lean_object* v_size_2103_; lean_object* v___x_2104_; lean_object* v___x_2105_; lean_object* v___x_2106_; lean_object* v___x_2107_; lean_object* v___x_2109_; 
 v___x_2102_ = lean_st_ref_take(v___y_2101_);
 v_size_2103_ = lean_ctor_get(v___x_2102_, 0);
-lean_inc(v_size_2103_);
-lean_inc(v_size_2103_);
+lean_inc_n(v_size_2103_, 2);
 v___x_2104_ = l_Std_DHashMap_Internal_Raw_u2080_insert___at___00Lean_Elab_Tactic_Omega_lookup_spec__1___redArg(v___x_2102_, v_a_2095_, v_size_2103_);
 v___x_2105_ = lean_st_ref_set(v___y_2101_, v___x_2104_);
 v___x_2106_ = lean_alloc_ctor(1, 1, 0);
