@@ -307,18 +307,18 @@ if (v___y_11_ == 0)
 {
 lean_dec(v___y_10_);
 lean_dec_ref(v___y_9_);
-lean_dec(v___y_7_);
-return v___y_8_;
+lean_dec(v___y_8_);
+return v___y_7_;
 }
 else
 {
 lean_object* v___x_12_; lean_object* v___x_13_; lean_object* v___x_14_; lean_object* v___x_15_; 
-v___x_12_ = lean_int_ediv(v___y_7_, v___y_10_);
-lean_dec(v___y_7_);
+v___x_12_ = lean_int_ediv(v___y_8_, v___y_10_);
+lean_dec(v___y_8_);
 v___x_13_ = l_Int_Linear_Poly_div(v___y_10_, v___y_9_);
 lean_dec(v___y_10_);
 v___x_14_ = lean_alloc_ctor(3, 1, 0);
-lean_ctor_set(v___x_14_, 0, v___y_8_);
+lean_ctor_set(v___x_14_, 0, v___y_7_);
 v___x_15_ = lean_alloc_ctor(0, 3, 0);
 lean_ctor_set(v___x_15_, 0, v___x_12_);
 lean_ctor_set(v___x_15_, 1, v___x_13_);
@@ -332,11 +332,11 @@ lean_object* v___x_22_; lean_object* v___x_23_; uint8_t v___x_24_;
 v___x_22_ = l_Int_Linear_Poly_getConst(v___y_20_);
 v___x_23_ = lean_int_emod(v___x_22_, v___y_21_);
 lean_dec(v___x_22_);
-v___x_24_ = lean_int_dec_eq(v___x_23_, v___y_18_);
+v___x_24_ = lean_int_dec_eq(v___x_23_, v___y_17_);
 lean_dec(v___x_23_);
 if (v___x_24_ == 0)
 {
-v___y_7_ = v___y_17_;
+v___y_7_ = v___y_18_;
 v___y_8_ = v___y_19_;
 v___y_9_ = v___y_20_;
 v___y_10_ = v___y_21_;
@@ -350,7 +350,7 @@ v___x_25_ = lean_obj_once(&l_Lean_Meta_Grind_Arith_Cutsat_DvdCnstr_norm___closed
 v___x_26_ = lean_int_dec_eq(v___y_21_, v___x_25_);
 if (v___x_26_ == 0)
 {
-v___y_7_ = v___y_17_;
+v___y_7_ = v___y_18_;
 v___y_8_ = v___y_19_;
 v___y_9_ = v___y_20_;
 v___y_10_ = v___y_21_;
@@ -361,8 +361,8 @@ else
 {
 lean_dec(v___y_21_);
 lean_dec_ref(v___y_20_);
-lean_dec(v___y_17_);
-return v___y_19_;
+lean_dec(v___y_19_);
+return v___y_18_;
 }
 }
 }
@@ -375,9 +375,9 @@ v___x_32_ = lean_obj_once(&l_Lean_Meta_Grind_Arith_Cutsat_DvdCnstr_norm___closed
 v___x_33_ = lean_int_dec_lt(v_d_29_, v___x_32_);
 if (v___x_33_ == 0)
 {
-v___y_17_ = v_d_29_;
-v___y_18_ = v___x_32_;
-v___y_19_ = v___y_28_;
+v___y_17_ = v___x_32_;
+v___y_18_ = v___y_28_;
+v___y_19_ = v_d_29_;
 v___y_20_ = v_p_30_;
 v___y_21_ = v_g_31_;
 goto v___jp_16_;
@@ -387,9 +387,9 @@ else
 lean_object* v___x_34_; 
 v___x_34_ = lean_int_neg(v_g_31_);
 lean_dec(v_g_31_);
-v___y_17_ = v_d_29_;
-v___y_18_ = v___x_32_;
-v___y_19_ = v___y_28_;
+v___y_17_ = v___x_32_;
+v___y_18_ = v___y_28_;
+v___y_19_ = v_d_29_;
 v___y_20_ = v_p_30_;
 v___y_21_ = v___x_34_;
 goto v___jp_16_;

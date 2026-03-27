@@ -10860,11 +10860,11 @@ goto v___jp_3461_;
 v___jp_3488_:
 {
 lean_object* v___x_3495_; uint8_t v___x_3496_; 
-v___x_3495_ = lean_array_get_size(v___y_3490_);
-v___x_3496_ = lean_nat_dec_lt(v___y_3489_, v___x_3495_);
+v___x_3495_ = lean_array_get_size(v___y_3491_);
+v___x_3496_ = lean_nat_dec_lt(v___y_3490_, v___x_3495_);
 if (v___x_3496_ == 0)
 {
-v___y_3480_ = v___y_3491_;
+v___y_3480_ = v___y_3489_;
 v___y_3481_ = v___y_3493_;
 v___y_3482_ = v___y_3492_;
 v_a_3483_ = v_val_3494_;
@@ -10879,7 +10879,7 @@ if (v___x_3498_ == 0)
 {
 if (v___x_3496_ == 0)
 {
-v___y_3480_ = v___y_3491_;
+v___y_3480_ = v___y_3489_;
 v___y_3481_ = v___y_3493_;
 v___y_3482_ = v___y_3492_;
 v_a_3483_ = v_val_3494_;
@@ -10890,11 +10890,11 @@ else
 size_t v___x_3499_; size_t v___x_3500_; lean_object* v___x_3501_; 
 v___x_3499_ = ((size_t)0ULL);
 v___x_3500_ = lean_usize_of_nat(v___x_3495_);
-v___x_3501_ = l___private_Init_Data_Array_Basic_0__Array_foldlMUnsafe_fold___at___00Lake_CacheMap_parse_spec__0(v___y_3490_, v___x_3499_, v___x_3500_, v___x_3497_, v___y_3493_);
+v___x_3501_ = l___private_Init_Data_Array_Basic_0__Array_foldlMUnsafe_fold___at___00Lake_CacheMap_parse_spec__0(v___y_3491_, v___x_3499_, v___x_3500_, v___x_3497_, v___y_3493_);
 if (lean_obj_tag(v___x_3501_) == 0)
 {
 lean_dec_ref(v___x_3501_);
-v___y_3480_ = v___y_3491_;
+v___y_3480_ = v___y_3489_;
 v___y_3481_ = v___y_3493_;
 v___y_3482_ = v___y_3492_;
 v_a_3483_ = v_val_3494_;
@@ -10914,11 +10914,11 @@ else
 size_t v___x_3502_; size_t v___x_3503_; lean_object* v___x_3504_; 
 v___x_3502_ = ((size_t)0ULL);
 v___x_3503_ = lean_usize_of_nat(v___x_3495_);
-v___x_3504_ = l___private_Init_Data_Array_Basic_0__Array_foldlMUnsafe_fold___at___00Lake_CacheMap_parse_spec__0(v___y_3490_, v___x_3502_, v___x_3503_, v___x_3497_, v___y_3493_);
+v___x_3504_ = l___private_Init_Data_Array_Basic_0__Array_foldlMUnsafe_fold___at___00Lake_CacheMap_parse_spec__0(v___y_3491_, v___x_3502_, v___x_3503_, v___x_3497_, v___y_3493_);
 if (lean_obj_tag(v___x_3504_) == 0)
 {
 lean_dec_ref(v___x_3504_);
-v___y_3480_ = v___y_3491_;
+v___y_3480_ = v___y_3489_;
 v___y_3481_ = v___y_3493_;
 v___y_3482_ = v___y_3492_;
 v_a_3483_ = v_val_3494_;
@@ -11071,9 +11071,9 @@ goto v_reusejp_3538_;
 }
 v_reusejp_3538_:
 {
-v___y_3489_ = v___x_3523_;
-v___y_3490_ = v___x_3535_;
-v___y_3491_ = v_path_3511_;
+v___y_3489_ = v_path_3511_;
+v___y_3490_ = v___x_3523_;
+v___y_3491_ = v___x_3535_;
 v___y_3492_ = v_msg_3517_;
 v___y_3493_ = v___y_3509_;
 v_val_3494_ = v___x_3539_;
@@ -11103,9 +11103,9 @@ goto v_reusejp_3542_;
 }
 v_reusejp_3542_:
 {
-v___y_3489_ = v___x_3523_;
-v___y_3490_ = v___x_3535_;
-v___y_3491_ = v_path_3511_;
+v___y_3489_ = v_path_3511_;
+v___y_3490_ = v___x_3523_;
+v___y_3491_ = v___x_3535_;
 v___y_3492_ = v_msg_3517_;
 v___y_3493_ = v___y_3509_;
 v_val_3494_ = v___x_3543_;

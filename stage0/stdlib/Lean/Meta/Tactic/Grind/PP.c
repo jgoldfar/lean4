@@ -6005,8 +6005,8 @@ return v___x_1744_;
 }
 else
 {
-lean_dec_ref(v_head_1604_);
 lean_dec(v_tail_1638_);
+lean_dec_ref(v_head_1604_);
 lean_del_object(v___x_1607_);
 v___y_1623_ = v___y_1594_;
 goto v___jp_1622_;

@@ -1871,8 +1871,8 @@ return v___x_616_;
 else
 {
 lean_object* v___x_617_; 
-lean_dec(v_pre_588_);
 lean_dec_ref(v_fst_587_);
+lean_dec(v_pre_588_);
 lean_dec_ref(v___x_586_);
 v___x_617_ = l_Lean_Expr_int_x3f(v_n_585_);
 return v___x_617_;

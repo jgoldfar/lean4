@@ -5169,8 +5169,8 @@ v___x_1550_ = l_List_isEmpty___redArg(v_pre_1549_);
 if (v___x_1550_ == 0)
 {
 lean_object* v___x_1551_; 
-lean_dec(v_val_1546_);
 lean_dec_ref(v_stx_1541_);
+lean_dec(v_val_1546_);
 lean_dec_ref(v_k_1542_);
 v___x_1551_ = lean_alloc_ctor(0, 1, 0);
 lean_ctor_set(v___x_1551_, 0, v_pre_1549_);

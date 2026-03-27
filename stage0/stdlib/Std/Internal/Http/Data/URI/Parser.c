@@ -1355,8 +1355,8 @@ goto v___jp_215_;
 v___jp_260_:
 {
 lean_object* v___x_266_; lean_object* v___x_267_; lean_object* v___x_268_; lean_object* v___x_269_; lean_object* v___x_270_; lean_object* v___x_271_; uint8_t v___x_272_; 
-v___x_266_ = l_ByteArray_toByteSlice(v___y_261_, v_lower_264_, v_upper_265_);
-v___x_267_ = l_ByteSlice_toByteArray(v___y_263_);
+v___x_266_ = l_ByteArray_toByteSlice(v___y_263_, v_lower_264_, v_upper_265_);
+v___x_267_ = l_ByteSlice_toByteArray(v___y_262_);
 v___x_268_ = l_ByteSlice_toByteArray(v___x_266_);
 v___x_269_ = lean_byte_array_size(v___x_267_);
 v___x_270_ = lean_byte_array_size(v___x_268_);
@@ -1369,7 +1369,7 @@ lean_object* v___x_273_; lean_object* v___x_274_;
 lean_dec_ref(v___x_271_);
 v___x_273_ = lean_obj_once(&l___private_Std_Internal_Http_Data_URI_Parser_0__Std_Http_URI_Parser_parseScheme___closed__7, &l___private_Std_Internal_Http_Data_URI_Parser_0__Std_Http_URI_Parser_parseScheme___closed__7_once, _init_l___private_Std_Internal_Http_Data_URI_Parser_0__Std_Http_URI_Parser_parseScheme___closed__7);
 v___x_274_ = l_panic___at___00__private_Std_Internal_Http_Data_URI_Parser_0__Std_Http_URI_Parser_parseScheme_spec__1(v___x_273_);
-v___y_244_ = v___y_262_;
+v___y_244_ = v___y_261_;
 v___y_245_ = v___x_274_;
 goto v___jp_243_;
 }
@@ -1377,7 +1377,7 @@ else
 {
 lean_object* v___x_275_; 
 v___x_275_ = lean_string_from_utf8_unchecked(v___x_271_);
-v___y_244_ = v___y_262_;
+v___y_244_ = v___y_261_;
 v___y_245_ = v___x_275_;
 goto v___jp_243_;
 }
@@ -1389,9 +1389,9 @@ v___x_283_ = lean_nat_dec_le(v___y_281_, v___y_280_);
 if (v___x_283_ == 0)
 {
 lean_dec(v___y_281_);
-v___y_261_ = v___y_277_;
-v___y_262_ = v___y_279_;
-v___y_263_ = v___y_278_;
+v___y_261_ = v___y_279_;
+v___y_262_ = v___y_278_;
+v___y_263_ = v___y_277_;
 v_lower_264_ = v___y_282_;
 v_upper_265_ = v___y_280_;
 goto v___jp_260_;
@@ -1399,9 +1399,9 @@ goto v___jp_260_;
 else
 {
 lean_dec(v___y_280_);
-v___y_261_ = v___y_277_;
-v___y_262_ = v___y_279_;
-v___y_263_ = v___y_278_;
+v___y_261_ = v___y_279_;
+v___y_262_ = v___y_278_;
+v___y_263_ = v___y_277_;
 v_lower_264_ = v___y_282_;
 v_upper_265_ = v___y_281_;
 goto v___jp_260_;

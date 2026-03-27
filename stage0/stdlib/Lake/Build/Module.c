@@ -15488,9 +15488,9 @@ v___x_4784_ = l_Lean_LeanOptions_appendArray(v___x_4783_, v_leanOptions_4751_);
 v___x_4785_ = lean_alloc_ctor(0, 7, 1);
 lean_ctor_set(v___x_4785_, 0, v_name_4752_);
 lean_ctor_set(v___x_4785_, 1, v___y_4773_);
-lean_ctor_set(v___x_4785_, 2, v___y_4775_);
-lean_ctor_set(v___x_4785_, 3, v___y_4777_);
-lean_ctor_set(v___x_4785_, 4, v___y_4776_);
+lean_ctor_set(v___x_4785_, 2, v___y_4776_);
+lean_ctor_set(v___x_4785_, 3, v___y_4775_);
+lean_ctor_set(v___x_4785_, 4, v___y_4777_);
 lean_ctor_set(v___x_4785_, 5, v___y_4779_);
 lean_ctor_set(v___x_4785_, 6, v___x_4784_);
 lean_ctor_set_uint8(v___x_4785_, sizeof(void*)*7, v___y_4778_);
@@ -15535,9 +15535,9 @@ if (v___x_4813_ == 2)
 {
 v___y_4773_ = v___x_4806_;
 v___y_4774_ = v___x_4805_;
-v___y_4775_ = v___x_4807_;
-v___y_4776_ = v___x_4810_;
-v___y_4777_ = v___y_4788_;
+v___y_4775_ = v___y_4788_;
+v___y_4776_ = v___x_4807_;
+v___y_4777_ = v___x_4810_;
 v___y_4778_ = v_isModule_4804_;
 v___y_4779_ = v___x_4812_;
 v___y_4780_ = v_buildType_4759_;
@@ -15547,9 +15547,9 @@ else
 {
 v___y_4773_ = v___x_4806_;
 v___y_4774_ = v___x_4805_;
-v___y_4775_ = v___x_4807_;
-v___y_4776_ = v___x_4810_;
-v___y_4777_ = v___y_4788_;
+v___y_4775_ = v___y_4788_;
+v___y_4776_ = v___x_4807_;
+v___y_4777_ = v___x_4810_;
 v___y_4778_ = v_isModule_4804_;
 v___y_4779_ = v___x_4812_;
 v___y_4780_ = v_buildType_4758_;
@@ -15616,11 +15616,11 @@ v___jp_4829_:
 if (v_val_4834_ == 0)
 {
 lean_object* v___x_4835_; lean_object* v___x_4836_; lean_object* v___x_4837_; lean_object* v___x_4838_; 
-v___x_4835_ = l_Lake_BuildTrace_mix(v___y_4831_, v___y_4832_);
+v___x_4835_ = l_Lake_BuildTrace_mix(v___y_4831_, v___y_4833_);
 v___x_4836_ = l_Lake_BuildTrace_mix(v___x_4835_, v___y_4830_);
 v___x_4837_ = l_Lake_platformTrace;
 v___x_4838_ = l_Lake_BuildTrace_mix(v___x_4836_, v___x_4837_);
-v___y_4788_ = v___y_4833_;
+v___y_4788_ = v___y_4832_;
 v___y_4789_ = v___y_4765_;
 v___y_4790_ = v___y_4766_;
 v___y_4791_ = v___y_4767_;
@@ -15637,8 +15637,8 @@ else
 {
 lean_object* v___x_4839_; 
 lean_dec_ref(v___y_4830_);
-v___x_4839_ = l_Lake_BuildTrace_mix(v___y_4831_, v___y_4832_);
-v___y_4788_ = v___y_4833_;
+v___x_4839_ = l_Lake_BuildTrace_mix(v___y_4831_, v___y_4833_);
+v___y_4788_ = v___y_4832_;
 v___y_4789_ = v___y_4765_;
 v___y_4790_ = v___y_4766_;
 v___y_4791_ = v___y_4767_;
@@ -15751,8 +15751,8 @@ v_val_4867_ = lean_ctor_get(v_platformIndependent_4763_, 0);
 v___x_4868_ = lean_unbox(v_val_4867_);
 v___y_4830_ = v___x_4864_;
 v___y_4831_ = v___x_4862_;
-v___y_4832_ = v___x_4857_;
-v___y_4833_ = v_directArts_4845_;
+v___y_4832_ = v_directArts_4845_;
+v___y_4833_ = v___x_4857_;
 v_val_4834_ = v___x_4868_;
 goto v___jp_4829_;
 }
@@ -15764,8 +15764,8 @@ v_val_4869_ = lean_ctor_get(v_platformIndependent_4762_, 0);
 v___x_4870_ = lean_unbox(v_val_4869_);
 v___y_4830_ = v___x_4864_;
 v___y_4831_ = v___x_4862_;
-v___y_4832_ = v___x_4857_;
-v___y_4833_ = v_directArts_4845_;
+v___y_4832_ = v_directArts_4845_;
+v___y_4833_ = v___x_4857_;
 v_val_4834_ = v___x_4870_;
 goto v___jp_4829_;
 }

@@ -4079,8 +4079,8 @@ else
 {
 lean_object* v_a_1329_; lean_object* v___x_1331_; uint8_t v_isShared_1332_; uint8_t v_isSharedCheck_1336_; 
 lean_dec_ref(v_arg_1311_);
-lean_dec_ref(v_fn_1310_);
 lean_dec_ref(v_snd_1295_);
+lean_dec_ref(v_fn_1310_);
 lean_del_object(v___x_1297_);
 lean_dec(v_fst_1294_);
 v_a_1329_ = lean_ctor_get(v___x_1312_, 0);
