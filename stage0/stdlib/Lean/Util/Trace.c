@@ -876,8 +876,8 @@ static lean_once_cell_t l_Lean_addTraceAsMessages___redArg___lam__11___closed__1
 static lean_object* l_Lean_addTraceAsMessages___redArg___lam__11___closed__1;
 static const lean_closure_object l_Lean_addTraceAsMessages___redArg___lam__11___closed__2_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_closure_object) + sizeof(void*)*0, .m_other = 0, .m_tag = 245}, .m_fun = (void*)l_String_instHashableRaw_hash___boxed, .m_arity = 1, .m_num_fixed = 0, .m_objs = {} };
 static const lean_object* l_Lean_addTraceAsMessages___redArg___lam__11___closed__2 = (const lean_object*)&l_Lean_addTraceAsMessages___redArg___lam__11___closed__2_value;
-static lean_once_cell_t l_Lean_addTraceAsMessages___redArg___lam__11___closed__3_once = LEAN_ONCE_CELL_INITIALIZER;
-static lean_object* l_Lean_addTraceAsMessages___redArg___lam__11___closed__3;
+static const lean_closure_object l_Lean_addTraceAsMessages___redArg___lam__11___closed__3_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_closure_object) + sizeof(void*)*2, .m_other = 0, .m_tag = 245}, .m_fun = (void*)l_instHashableProd___redArg___lam__0___boxed, .m_arity = 3, .m_num_fixed = 2, .m_objs = {((lean_object*)&l_Lean_addTraceAsMessages___redArg___lam__11___closed__2_value),((lean_object*)&l_Lean_addTraceAsMessages___redArg___lam__11___closed__2_value)} };
+static const lean_object* l_Lean_addTraceAsMessages___redArg___lam__11___closed__3 = (const lean_object*)&l_Lean_addTraceAsMessages___redArg___lam__11___closed__3_value;
 static lean_once_cell_t l_Lean_addTraceAsMessages___redArg___lam__11___closed__4_once = LEAN_ONCE_CELL_INITIALIZER;
 static lean_object* l_Lean_addTraceAsMessages___redArg___lam__11___closed__4;
 static lean_once_cell_t l_Lean_addTraceAsMessages___redArg___lam__11___closed__5_once = LEAN_ONCE_CELL_INITIALIZER;
@@ -7846,17 +7846,6 @@ lean_closure_set(v___f_3483_, 1, v___f_3482_);
 return v___f_3483_;
 }
 }
-static lean_object* _init_l_Lean_addTraceAsMessages___redArg___lam__11___closed__3(void){
-_start:
-{
-lean_object* v___x_3485_; lean_object* v___f_3486_; 
-v___x_3485_ = ((lean_object*)(l_Lean_addTraceAsMessages___redArg___lam__11___closed__2));
-v___f_3486_ = lean_alloc_closure((void*)(l_instHashableProd___redArg___lam__0___boxed), 3, 2);
-lean_closure_set(v___f_3486_, 0, v___x_3485_);
-lean_closure_set(v___f_3486_, 1, v___x_3485_);
-return v___f_3486_;
-}
-}
 static lean_object* _init_l_Lean_addTraceAsMessages___redArg___lam__11___closed__4(void){
 _start:
 {
@@ -7888,7 +7877,7 @@ if (v___x_3499_ == 0)
 {
 lean_object* v___f_3500_; lean_object* v___f_3501_; lean_object* v___x_3502_; lean_object* v___f_3503_; lean_object* v_pos2traces_3504_; lean_object* v___x_3505_; lean_object* v___x_3506_; 
 v___f_3500_ = lean_obj_once(&l_Lean_addTraceAsMessages___redArg___lam__11___closed__1, &l_Lean_addTraceAsMessages___redArg___lam__11___closed__1_once, _init_l_Lean_addTraceAsMessages___redArg___lam__11___closed__1);
-v___f_3501_ = lean_obj_once(&l_Lean_addTraceAsMessages___redArg___lam__11___closed__3, &l_Lean_addTraceAsMessages___redArg___lam__11___closed__3_once, _init_l_Lean_addTraceAsMessages___redArg___lam__11___closed__3);
+v___f_3501_ = ((lean_object*)(l_Lean_addTraceAsMessages___redArg___lam__11___closed__3));
 v___x_3502_ = lean_box(v___x_3499_);
 lean_inc(v_toBind_3495_);
 v___f_3503_ = lean_alloc_closure((void*)(l_Lean_addTraceAsMessages___redArg___lam__10___boxed), 8, 6);

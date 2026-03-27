@@ -20387,7 +20387,6 @@ lean_inc_ref(v_erased_6278_);
 lean_dec_ref(v_simprocs_6229_);
 lean_inc_ref(v_a_6230_);
 v___x_6279_ = l_Lean_Meta_Tactic_Cbv_cbvSimprocDispatch(v_pre_6277_, v_erased_6278_, v_a_6230_, v_a_6231_, v_a_6232_, v_a_6233_, v_a_6234_, v_a_6235_, v_a_6236_, v_a_6237_, v_a_6238_, v_a_6239_);
-lean_dec_ref(v_erased_6278_);
 if (lean_obj_tag(v___x_6279_) == 0)
 {
 lean_object* v_a_6280_; 
@@ -20742,6 +20741,7 @@ v_erased_6350_ = lean_ctor_get(v_simprocs_6311_, 4);
 lean_inc_ref(v_erased_6350_);
 lean_dec_ref(v_simprocs_6311_);
 lean_inc_ref(v_a_6312_);
+lean_inc_ref(v_erased_6350_);
 v___x_6351_ = l_Lean_Meta_Tactic_Cbv_cbvSimprocDispatch(v_eval_6348_, v_erased_6350_, v_a_6312_, v_a_6313_, v_a_6314_, v_a_6315_, v_a_6316_, v_a_6317_, v_a_6318_, v_a_6319_, v_a_6320_, v_a_6321_);
 if (lean_obj_tag(v___x_6351_) == 0)
 {
@@ -20776,7 +20776,6 @@ lean_dec_ref(v___x_6363_);
 v_contextDependent_6366_ = lean_ctor_get_uint8(v_a_6364_, 1);
 lean_dec_ref(v_a_6364_);
 v___x_6367_ = l_Lean_Meta_Tactic_Cbv_cbvSimprocDispatch(v_post_6349_, v_erased_6350_, v_a_6312_, v_a_6313_, v_a_6314_, v_a_6315_, v_a_6316_, v_a_6317_, v_a_6318_, v_a_6319_, v_a_6320_, v_a_6321_);
-lean_dec_ref(v_erased_6350_);
 if (lean_obj_tag(v___x_6367_) == 0)
 {
 lean_object* v_a_6368_; uint8_t v___y_6370_; 

@@ -624,14 +624,10 @@ _start:
 lean_object* v___x_228_; lean_object* v_toEnvExtension_229_; lean_object* v_asyncMode_230_; lean_object* v___x_231_; uint8_t v___x_232_; lean_object* v___x_233_; 
 v___x_228_ = l_Lean_projectionFnInfoExt;
 v_toEnvExtension_229_ = lean_ctor_get(v___x_228_, 0);
-lean_inc_ref(v_toEnvExtension_229_);
 v_asyncMode_230_ = lean_ctor_get(v_toEnvExtension_229_, 2);
-lean_inc(v_asyncMode_230_);
-lean_dec_ref(v_toEnvExtension_229_);
 v___x_231_ = ((lean_object*)(l_Lean_instInhabitedProjectionFunctionInfo_default));
 v___x_232_ = 0;
 v___x_233_ = l_Lean_MapDeclarationExtension_find_x3f___redArg(v___x_231_, v___x_228_, v_env_226_, v_projName_227_, v_asyncMode_230_, v___x_232_);
-lean_dec(v_asyncMode_230_);
 return v___x_233_;
 }
 }
@@ -1159,14 +1155,10 @@ _start:
 lean_object* v___x_451_; lean_object* v_toEnvExtension_452_; lean_object* v_asyncMode_453_; lean_object* v___x_454_; uint8_t v___x_455_; lean_object* v___x_456_; 
 v___x_451_ = l_Lean_auxParentProjInfoExt;
 v_toEnvExtension_452_ = lean_ctor_get(v___x_451_, 0);
-lean_inc_ref(v_toEnvExtension_452_);
 v_asyncMode_453_ = lean_ctor_get(v_toEnvExtension_452_, 2);
-lean_inc(v_asyncMode_453_);
-lean_dec_ref(v_toEnvExtension_452_);
 v___x_454_ = ((lean_object*)(l_Lean_instInhabitedAuxParentProjectionInfo_default));
 v___x_455_ = 0;
 v___x_456_ = l_Lean_MapDeclarationExtension_find_x3f___redArg(v___x_454_, v___x_451_, v_env_449_, v_projName_450_, v_asyncMode_453_, v___x_455_);
-lean_dec(v_asyncMode_453_);
 return v___x_456_;
 }
 }

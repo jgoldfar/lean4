@@ -210,10 +210,7 @@ lean_inc_ref(v_env_7_);
 lean_dec(v___x_6_);
 v___x_8_ = l_Lean_declRangeExt;
 v_toEnvExtension_9_ = lean_ctor_get(v___x_8_, 0);
-lean_inc_ref(v_toEnvExtension_9_);
 v_asyncMode_10_ = lean_ctor_get(v_toEnvExtension_9_, 2);
-lean_inc(v_asyncMode_10_);
-lean_dec_ref(v_toEnvExtension_9_);
 v___x_11_ = l_Lean_instInhabitedDeclarationRanges_default;
 v___x_12_ = 0;
 lean_inc(v_declName_1_);
@@ -223,7 +220,6 @@ if (lean_obj_tag(v___x_13_) == 0)
 uint8_t v___x_14_; lean_object* v___x_15_; lean_object* v___x_16_; 
 v___x_14_ = 1;
 v___x_15_ = l_Lean_MapDeclarationExtension_find_x3f___redArg(v___x_11_, v___x_8_, v_env_7_, v_declName_1_, v_asyncMode_10_, v___x_14_);
-lean_dec(v_asyncMode_10_);
 v___x_16_ = lean_alloc_ctor(0, 1, 0);
 lean_ctor_set(v___x_16_, 0, v___x_15_);
 return v___x_16_;
@@ -231,7 +227,6 @@ return v___x_16_;
 else
 {
 lean_object* v___x_17_; 
-lean_dec(v_asyncMode_10_);
 lean_dec_ref(v_env_7_);
 lean_dec(v_declName_1_);
 v___x_17_ = lean_alloc_ctor(0, 1, 0);

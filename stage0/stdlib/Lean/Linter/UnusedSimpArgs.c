@@ -32,7 +32,7 @@ lean_object* l_Std_DTreeMap_Internal_Impl_Const_get_x3f___at___00Lean_NameMap_fi
 uint8_t l_Lean_MessageData_hasSyntheticSorry(lean_object*);
 lean_object* lean_nat_add(lean_object*, lean_object*);
 uint8_t lean_nat_dec_lt(lean_object*, lean_object*);
-lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
+lean_object* lean_array_get(lean_object*, lean_object*, lean_object*);
 extern lean_object* l_Lean_Elab_Tactic_linter_unusedSimpArgs;
 lean_object* l_Lean_stringToMessageData(lean_object*);
 lean_object* l_Lean_MessageData_ofName(lean_object*);
@@ -40,7 +40,6 @@ lean_object* l_Lean_MessageData_note(lean_object*);
 lean_object* l_Lean_Name_mkStr1(lean_object*);
 lean_object* l_Lean_Elab_Tactic_getSimpParams(lean_object*);
 lean_object* lean_array_get_size(lean_object*);
-lean_object* lean_array_get(lean_object*, lean_object*, lean_object*);
 uint8_t lean_nat_dec_eq(lean_object*, lean_object*);
 lean_object* lean_array_fget_borrowed(lean_object*, lean_object*);
 lean_object* lean_array_push(lean_object*, lean_object*);
@@ -1671,9 +1670,10 @@ lean_object* v___x_484_; uint8_t v___x_485_; lean_object* v___x_486_; lean_objec
 v___x_484_ = lean_box(0);
 v___x_485_ = 0;
 v___x_486_ = lean_box(v___x_485_);
-v___x_487_ = lean_array_get_borrowed(v___x_486_, v_snd_470_, v_a_472_);
+v___x_487_ = lean_array_get(v___x_486_, v_snd_470_, v_a_472_);
 lean_dec(v___x_486_);
 v___x_488_ = lean_unbox(v___x_487_);
+lean_dec(v___x_487_);
 if (v___x_488_ == 0)
 {
 lean_object* v___x_489_; lean_object* v___x_490_; 
@@ -1935,14 +1935,10 @@ lean_inc_ref(v_env_591_);
 lean_dec(v___x_590_);
 v___x_592_ = l_Lean_Linter_linterSetsExt;
 v_toEnvExtension_593_ = lean_ctor_get(v___x_592_, 0);
-lean_inc_ref(v_toEnvExtension_593_);
 v_asyncMode_594_ = lean_ctor_get(v_toEnvExtension_593_, 2);
-lean_inc(v_asyncMode_594_);
-lean_dec_ref(v_toEnvExtension_593_);
 v___x_595_ = lean_box(1);
 v___x_596_ = lean_box(0);
 v_linterSets_597_ = l_Lean_SimplePersistentEnvExtension_getState___redArg(v___x_595_, v___x_592_, v_env_591_, v_asyncMode_594_, v___x_596_);
-lean_dec(v_asyncMode_594_);
 v___x_598_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_598_, 0, v_o_587_);
 lean_ctor_set(v___x_598_, 1, v_linterSets_597_);

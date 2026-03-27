@@ -85,7 +85,7 @@ lean_object* l___private_Lean_Compiler_LCNF_Basic_0__Lean_Compiler_LCNF_LetValue
 lean_object* l_Lean_Compiler_LCNF_LitValue_impureTypeScalarNumLit(lean_object*, lean_object*);
 uint8_t l_Lean_Compiler_LCNF_CtorInfo_isScalar(lean_object*);
 lean_object* l_Lean_Compiler_LCNF_instInhabitedParam_default(uint8_t);
-lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
+lean_object* lean_array_get(lean_object*, lean_object*, lean_object*);
 lean_object* l___private_Lean_Compiler_LCNF_Basic_0__Lean_Compiler_LCNF_LetValue_updatePapImp(uint8_t, lean_object*, lean_object*, lean_object*);
 lean_object* l___private_Lean_Compiler_LCNF_CompilerM_0__Lean_Compiler_LCNF_updateFunDeclImp___redArg(uint8_t, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Compiler_LCNF_findFunDecl_x3f___redArg(uint8_t, lean_object*, lean_object*);
@@ -97,6 +97,7 @@ lean_object* l_Lean_mkConst(lean_object*, lean_object*);
 lean_object* l_Lean_Compiler_LCNF_Decl_elimDeadVars(uint8_t, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Name_mkStr2(lean_object*, lean_object*);
 lean_object* l___private_Lean_Compiler_LCNF_Basic_0__Lean_Compiler_LCNF_Arg_updateFVarImp___redArg(lean_object*, lean_object*);
+lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_registerTraceClass(lean_object*, uint8_t, lean_object*);
 LEAN_EXPORT uint8_t l___private_Init_Data_Array_Basic_0__Array_anyMUnsafe_any___at___00__private_Lean_Compiler_LCNF_ExplicitBoxing_0__Lean_Compiler_LCNF_requiresBoxedVersion_spec__0(lean_object*, size_t, size_t);
 LEAN_EXPORT lean_object* l___private_Init_Data_Array_Basic_0__Array_anyMUnsafe_any___at___00__private_Lean_Compiler_LCNF_ExplicitBoxing_0__Lean_Compiler_LCNF_requiresBoxedVersion_spec__0___boxed(lean_object*, lean_object*, lean_object*);
@@ -5895,10 +5896,11 @@ _start:
 {
 lean_object* v___x_1684_; lean_object* v___x_1685_; lean_object* v_type_1686_; 
 v___x_1684_ = l_Lean_Compiler_LCNF_instInhabitedParam_default(v___x_1681_);
-v___x_1685_ = lean_array_get_borrowed(v___x_1684_, v_params_1682_, v_i_1683_);
+v___x_1685_ = lean_array_get(v___x_1684_, v_params_1682_, v_i_1683_);
 lean_dec_ref(v___x_1684_);
 v_type_1686_ = lean_ctor_get(v___x_1685_, 2);
 lean_inc_ref(v_type_1686_);
+lean_dec(v___x_1685_);
 return v_type_1686_;
 }
 }
@@ -6440,10 +6442,11 @@ _start:
 {
 lean_object* v___x_1911_; lean_object* v___x_1912_; lean_object* v_type_1913_; 
 v___x_1911_ = l_Lean_Compiler_LCNF_instInhabitedParam_default(v___x_1908_);
-v___x_1912_ = lean_array_get_borrowed(v___x_1911_, v_params_1909_, v_i_1910_);
+v___x_1912_ = lean_array_get(v___x_1911_, v_params_1909_, v_i_1910_);
 lean_dec_ref(v___x_1911_);
 v_type_1913_ = lean_ctor_get(v___x_1912_, 2);
 lean_inc_ref(v_type_1913_);
+lean_dec(v___x_1912_);
 return v_type_1913_;
 }
 }

@@ -13008,12 +13008,13 @@ v___jp_3837_:
 {
 if (v___y_3838_ == 0)
 {
-size_t v___x_3839_; size_t v___x_3840_; lean_object* v___x_3841_; 
+size_t v___x_3839_; size_t v___x_3840_; 
 lean_del_object(v___x_3833_);
 v___x_3839_ = ((size_t)1ULL);
 v___x_3840_ = lean_usize_add(v_i_3825_, v___x_3839_);
-v___x_3841_ = l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00Lean_Meta_Grind_Arith_Cutsat_findDiseq_x3f_spec__0(v_v_3822_, v_as_3823_, v_sz_3824_, v___x_3840_, v___x_3836_);
-return v___x_3841_;
+v_i_3825_ = v___x_3840_;
+v_b_3826_ = v___x_3836_;
+goto _start;
 }
 else
 {
@@ -13198,12 +13199,13 @@ v___x_3897_ = lean_box(0);
 v___x_3898_ = l_instDecidableEqRat_decEq(v_v_3889_, v_fst_3896_);
 if (v___x_3898_ == 0)
 {
-lean_object* v___x_3899_; size_t v___x_3900_; size_t v___x_3901_; lean_object* v___x_3902_; 
+lean_object* v___x_3899_; size_t v___x_3900_; size_t v___x_3901_; 
 v___x_3899_ = ((lean_object*)(l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00Lean_Meta_Grind_Arith_Cutsat_findDiseq_x3f_spec__0___closed__0));
 v___x_3900_ = ((size_t)1ULL);
 v___x_3901_ = lean_usize_add(v_i_3892_, v___x_3900_);
-v___x_3902_ = l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00Lean_Meta_Grind_Arith_Cutsat_findRatDiseq_x3f_spec__0(v_v_3889_, v_as_3890_, v_sz_3891_, v___x_3901_, v___x_3899_);
-return v___x_3902_;
+v_i_3892_ = v___x_3901_;
+v_b_3893_ = v___x_3899_;
+goto _start;
 }
 else
 {

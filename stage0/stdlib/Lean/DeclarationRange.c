@@ -285,10 +285,7 @@ _start:
 lean_object* v___x_98_; lean_object* v_toEnvExtension_99_; lean_object* v_asyncMode_100_; uint8_t v___x_101_; lean_object* v___x_102_; 
 v___x_98_ = l_Lean_declRangeExt;
 v_toEnvExtension_99_ = lean_ctor_get(v___x_98_, 0);
-lean_inc_ref(v_toEnvExtension_99_);
 v_asyncMode_100_ = lean_ctor_get(v_toEnvExtension_99_, 2);
-lean_inc(v_asyncMode_100_);
-lean_dec_ref(v_toEnvExtension_99_);
 v___x_101_ = 0;
 lean_inc(v_declName_95_);
 lean_inc_ref(v___x_93_);
@@ -298,14 +295,12 @@ if (lean_obj_tag(v___x_102_) == 0)
 uint8_t v___x_103_; lean_object* v___x_104_; lean_object* v___x_105_; 
 v___x_103_ = 1;
 v___x_104_ = l_Lean_MapDeclarationExtension_find_x3f___redArg(v___x_93_, v___x_98_, v_____do__lift_97_, v_declName_95_, v_asyncMode_100_, v___x_103_);
-lean_dec(v_asyncMode_100_);
 v___x_105_ = lean_apply_2(v_toPure_96_, lean_box(0), v___x_104_);
 return v___x_105_;
 }
 else
 {
 lean_object* v___x_106_; 
-lean_dec(v_asyncMode_100_);
 lean_dec_ref(v_____do__lift_97_);
 lean_dec(v_declName_95_);
 lean_dec_ref(v___x_93_);

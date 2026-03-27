@@ -48,7 +48,7 @@ lean_object* lean_mk_array(lean_object*, lean_object*);
 lean_object* lean_array_fset(lean_object*, lean_object*, lean_object*);
 lean_object* lean_array_set(lean_object*, lean_object*, lean_object*);
 uint8_t l_Lean_instBEqFVarId_beq(lean_object*, lean_object*);
-lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
+lean_object* lean_array_get(lean_object*, lean_object*, lean_object*);
 uint8_t l_Lean_Compiler_LCNF_instBEqArg_beq___redArg(lean_object*, lean_object*);
 lean_object* l_Id_instMonad___lam__3(lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Id_instMonad___lam__6(lean_object*, lean_object*, lean_object*, lean_object*);
@@ -1064,7 +1064,7 @@ v___x_317_ = lean_array_fget_borrowed(v_params_306_, v_i_311_);
 v_fvarId_318_ = lean_ctor_get(v___x_317_, 0);
 v___x_319_ = ((lean_object*)(l___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00Lean_Compiler_LCNF_FixedParams_isEquivalentFunDecl_x3f_spec__0___redArg___closed__0));
 v___x_324_ = lean_box(0);
-v___x_325_ = lean_array_get_borrowed(v___x_324_, v_args_307_, v_i_311_);
+v___x_325_ = lean_array_get(v___x_324_, v_args_307_, v_i_311_);
 lean_inc(v_fvarId_318_);
 v___x_326_ = lean_alloc_ctor(1, 1, 0);
 lean_ctor_set(v___x_326_, 0, v_fvarId_318_);
@@ -1074,6 +1074,7 @@ if (v___x_327_ == 0)
 {
 if (v___x_308_ == 0)
 {
+lean_dec(v___x_325_);
 v_a_321_ = v___y_312_;
 goto v___jp_320_;
 }
@@ -1081,6 +1082,7 @@ else
 {
 uint8_t v___x_328_; 
 v___x_328_ = l_Lean_Compiler_LCNF_instBEqArg_beq___redArg(v___x_325_, v___x_324_);
+lean_dec(v___x_325_);
 if (v___x_328_ == 0)
 {
 lean_object* v___x_329_; lean_object* v___x_330_; 
@@ -1100,6 +1102,7 @@ goto v___jp_320_;
 }
 else
 {
+lean_dec(v___x_325_);
 v_a_321_ = v___y_312_;
 goto v___jp_320_;
 }

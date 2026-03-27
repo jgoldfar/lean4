@@ -17,7 +17,7 @@ lean_object* lean_nat_to_int(lean_object*);
 lean_object* lean_string_length(lean_object*);
 extern lean_object* l_Lean_Elab_Structural_instInhabitedIndGroupInst_default;
 lean_object* lean_mk_empty_array_with_capacity(lean_object*);
-lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
+lean_object* lean_array_get(lean_object*, lean_object*, lean_object*);
 lean_object* l_Nat_reprFast(lean_object*);
 lean_object* l_Repr_addAppParen(lean_object*, lean_object*);
 lean_object* l_Lean_Level_ofNat(lean_object*);
@@ -44,6 +44,7 @@ lean_object* l_Lean_Elab_FixedParamPerm_buildArgs___redArg(lean_object*, lean_ob
 size_t lean_array_size(lean_object*);
 uint8_t lean_usize_dec_lt(size_t, size_t);
 extern lean_object* l_Lean_instInhabitedExpr;
+lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
 static const lean_array_object l_Lean_Elab_Structural_instInhabitedRecArgInfo_default___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_array_object) + sizeof(void*)*0, .m_other = 0, .m_tag = 246}, .m_size = 0, .m_capacity = 0, .m_data = {}};
 static const lean_object* l_Lean_Elab_Structural_instInhabitedRecArgInfo_default___closed__0 = (const lean_object*)&l_Lean_Elab_Structural_instInhabitedRecArgInfo_default___closed__0_value;
 static lean_once_cell_t l_Lean_Elab_Structural_instInhabitedRecArgInfo_default___closed__1_once = LEAN_ONCE_CELL_INITIALIZER;
@@ -1272,8 +1273,7 @@ v_toIndGroupInfo_429_ = lean_ctor_get(v_indGroupInst_428_, 0);
 v_indIdx_430_ = lean_ctor_get(v_info_427_, 5);
 v_all_431_ = lean_ctor_get(v_toIndGroupInfo_429_, 0);
 v___x_432_ = lean_box(0);
-v___x_433_ = lean_array_get_borrowed(v___x_432_, v_all_431_, v_indIdx_430_);
-lean_inc(v___x_433_);
+v___x_433_ = lean_array_get(v___x_432_, v_all_431_, v_indIdx_430_);
 return v___x_433_;
 }
 }

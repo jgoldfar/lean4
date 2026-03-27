@@ -353,8 +353,8 @@ LEAN_EXPORT lean_object* l___private_Lean_Meta_Tactic_Grind_Order_Assert_0__Lean
 LEAN_EXPORT lean_object* l___private_Lean_Meta_Tactic_Grind_Order_Assert_0__Lean_Meta_Grind_Order_forEachCnstrsOf___lam__0___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 static const lean_closure_object l___private_Lean_Meta_Tactic_Grind_Order_Assert_0__Lean_Meta_Grind_Order_forEachCnstrsOf___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_closure_object) + sizeof(void*)*0, .m_other = 0, .m_tag = 245}, .m_fun = (void*)l_UInt64_ofNat___boxed, .m_arity = 1, .m_num_fixed = 0, .m_objs = {} };
 static const lean_object* l___private_Lean_Meta_Tactic_Grind_Order_Assert_0__Lean_Meta_Grind_Order_forEachCnstrsOf___closed__0 = (const lean_object*)&l___private_Lean_Meta_Tactic_Grind_Order_Assert_0__Lean_Meta_Grind_Order_forEachCnstrsOf___closed__0_value;
-static lean_once_cell_t l___private_Lean_Meta_Tactic_Grind_Order_Assert_0__Lean_Meta_Grind_Order_forEachCnstrsOf___closed__1_once = LEAN_ONCE_CELL_INITIALIZER;
-static lean_object* l___private_Lean_Meta_Tactic_Grind_Order_Assert_0__Lean_Meta_Grind_Order_forEachCnstrsOf___closed__1;
+static const lean_closure_object l___private_Lean_Meta_Tactic_Grind_Order_Assert_0__Lean_Meta_Grind_Order_forEachCnstrsOf___closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_closure_object) + sizeof(void*)*2, .m_other = 0, .m_tag = 245}, .m_fun = (void*)l_instHashableProd___redArg___lam__0___boxed, .m_arity = 3, .m_num_fixed = 2, .m_objs = {((lean_object*)&l___private_Lean_Meta_Tactic_Grind_Order_Assert_0__Lean_Meta_Grind_Order_forEachCnstrsOf___closed__0_value),((lean_object*)&l___private_Lean_Meta_Tactic_Grind_Order_Assert_0__Lean_Meta_Grind_Order_forEachCnstrsOf___closed__0_value)} };
+static const lean_object* l___private_Lean_Meta_Tactic_Grind_Order_Assert_0__Lean_Meta_Grind_Order_forEachCnstrsOf___closed__1 = (const lean_object*)&l___private_Lean_Meta_Tactic_Grind_Order_Assert_0__Lean_Meta_Grind_Order_forEachCnstrsOf___closed__1_value;
 static lean_once_cell_t l___private_Lean_Meta_Tactic_Grind_Order_Assert_0__Lean_Meta_Grind_Order_forEachCnstrsOf___closed__2_once = LEAN_ONCE_CELL_INITIALIZER;
 static lean_object* l___private_Lean_Meta_Tactic_Grind_Order_Assert_0__Lean_Meta_Grind_Order_forEachCnstrsOf___closed__2;
 static lean_once_cell_t l___private_Lean_Meta_Tactic_Grind_Order_Assert_0__Lean_Meta_Grind_Order_forEachCnstrsOf___closed__3_once = LEAN_ONCE_CELL_INITIALIZER;
@@ -2207,30 +2207,28 @@ _start:
 lean_object* v___x_602_; lean_object* v_toApplicative_603_; lean_object* v_toFunctor_604_; lean_object* v_toSeq_605_; lean_object* v_toSeqLeft_606_; lean_object* v_toSeqRight_607_; lean_object* v___f_608_; lean_object* v___f_609_; lean_object* v___f_610_; lean_object* v___f_611_; lean_object* v___x_612_; lean_object* v___f_613_; lean_object* v___f_614_; lean_object* v___f_615_; lean_object* v___x_616_; lean_object* v___x_617_; lean_object* v___x_618_; lean_object* v_toApplicative_619_; lean_object* v___x_621_; uint8_t v_isShared_622_; uint8_t v_isSharedCheck_673_; 
 v___x_602_ = lean_obj_once(&l___private_Lean_Meta_Tactic_Grind_Order_Assert_0__Lean_Meta_Grind_Order_forEachSourceOf___closed__1, &l___private_Lean_Meta_Tactic_Grind_Order_Assert_0__Lean_Meta_Grind_Order_forEachSourceOf___closed__1_once, _init_l___private_Lean_Meta_Tactic_Grind_Order_Assert_0__Lean_Meta_Grind_Order_forEachSourceOf___closed__1);
 v_toApplicative_603_ = lean_ctor_get(v___x_602_, 0);
-lean_inc_ref(v_toApplicative_603_);
 v_toFunctor_604_ = lean_ctor_get(v_toApplicative_603_, 0);
-lean_inc_ref(v_toFunctor_604_);
 v_toSeq_605_ = lean_ctor_get(v_toApplicative_603_, 2);
-lean_inc(v_toSeq_605_);
 v_toSeqLeft_606_ = lean_ctor_get(v_toApplicative_603_, 3);
-lean_inc(v_toSeqLeft_606_);
 v_toSeqRight_607_ = lean_ctor_get(v_toApplicative_603_, 4);
-lean_inc(v_toSeqRight_607_);
-lean_dec_ref(v_toApplicative_603_);
 v___f_608_ = ((lean_object*)(l___private_Lean_Meta_Tactic_Grind_Order_Assert_0__Lean_Meta_Grind_Order_forEachSourceOf___closed__2));
 v___f_609_ = ((lean_object*)(l___private_Lean_Meta_Tactic_Grind_Order_Assert_0__Lean_Meta_Grind_Order_forEachSourceOf___closed__3));
 lean_inc_ref(v_toFunctor_604_);
 v___f_610_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__0), 6, 1);
 lean_closure_set(v___f_610_, 0, v_toFunctor_604_);
+lean_inc_ref(v_toFunctor_604_);
 v___f_611_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__1), 6, 1);
 lean_closure_set(v___f_611_, 0, v_toFunctor_604_);
 v___x_612_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_612_, 0, v___f_610_);
 lean_ctor_set(v___x_612_, 1, v___f_611_);
+lean_inc(v_toSeqRight_607_);
 v___f_613_ = lean_alloc_closure((void*)(l_ReaderT_instApplicativeOfMonad___redArg___lam__1), 6, 1);
 lean_closure_set(v___f_613_, 0, v_toSeqRight_607_);
+lean_inc(v_toSeqLeft_606_);
 v___f_614_ = lean_alloc_closure((void*)(l_ReaderT_instApplicativeOfMonad___redArg___lam__3), 6, 1);
 lean_closure_set(v___f_614_, 0, v_toSeqLeft_606_);
+lean_inc(v_toSeq_605_);
 v___f_615_ = lean_alloc_closure((void*)(l_ReaderT_instApplicativeOfMonad___redArg___lam__4), 6, 1);
 lean_closure_set(v___f_615_, 0, v_toSeq_605_);
 v___x_616_ = lean_alloc_ctor(0, 5, 0);
@@ -2489,30 +2487,28 @@ _start:
 lean_object* v___x_704_; lean_object* v_toApplicative_705_; lean_object* v_toFunctor_706_; lean_object* v_toSeq_707_; lean_object* v_toSeqLeft_708_; lean_object* v_toSeqRight_709_; lean_object* v___f_710_; lean_object* v___f_711_; lean_object* v___f_712_; lean_object* v___f_713_; lean_object* v___x_714_; lean_object* v___f_715_; lean_object* v___f_716_; lean_object* v___f_717_; lean_object* v___x_718_; lean_object* v___x_719_; lean_object* v___x_720_; lean_object* v_toApplicative_721_; lean_object* v___x_723_; uint8_t v_isShared_724_; uint8_t v_isSharedCheck_775_; 
 v___x_704_ = lean_obj_once(&l___private_Lean_Meta_Tactic_Grind_Order_Assert_0__Lean_Meta_Grind_Order_forEachSourceOf___closed__1, &l___private_Lean_Meta_Tactic_Grind_Order_Assert_0__Lean_Meta_Grind_Order_forEachSourceOf___closed__1_once, _init_l___private_Lean_Meta_Tactic_Grind_Order_Assert_0__Lean_Meta_Grind_Order_forEachSourceOf___closed__1);
 v_toApplicative_705_ = lean_ctor_get(v___x_704_, 0);
-lean_inc_ref(v_toApplicative_705_);
 v_toFunctor_706_ = lean_ctor_get(v_toApplicative_705_, 0);
-lean_inc_ref(v_toFunctor_706_);
 v_toSeq_707_ = lean_ctor_get(v_toApplicative_705_, 2);
-lean_inc(v_toSeq_707_);
 v_toSeqLeft_708_ = lean_ctor_get(v_toApplicative_705_, 3);
-lean_inc(v_toSeqLeft_708_);
 v_toSeqRight_709_ = lean_ctor_get(v_toApplicative_705_, 4);
-lean_inc(v_toSeqRight_709_);
-lean_dec_ref(v_toApplicative_705_);
 v___f_710_ = ((lean_object*)(l___private_Lean_Meta_Tactic_Grind_Order_Assert_0__Lean_Meta_Grind_Order_forEachSourceOf___closed__2));
 v___f_711_ = ((lean_object*)(l___private_Lean_Meta_Tactic_Grind_Order_Assert_0__Lean_Meta_Grind_Order_forEachSourceOf___closed__3));
 lean_inc_ref(v_toFunctor_706_);
 v___f_712_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__0), 6, 1);
 lean_closure_set(v___f_712_, 0, v_toFunctor_706_);
+lean_inc_ref(v_toFunctor_706_);
 v___f_713_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__1), 6, 1);
 lean_closure_set(v___f_713_, 0, v_toFunctor_706_);
 v___x_714_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_714_, 0, v___f_712_);
 lean_ctor_set(v___x_714_, 1, v___f_713_);
+lean_inc(v_toSeqRight_709_);
 v___f_715_ = lean_alloc_closure((void*)(l_ReaderT_instApplicativeOfMonad___redArg___lam__1), 6, 1);
 lean_closure_set(v___f_715_, 0, v_toSeqRight_709_);
+lean_inc(v_toSeqLeft_708_);
 v___f_716_ = lean_alloc_closure((void*)(l_ReaderT_instApplicativeOfMonad___redArg___lam__3), 6, 1);
 lean_closure_set(v___f_716_, 0, v_toSeqLeft_708_);
+lean_inc(v_toSeq_707_);
 v___f_717_ = lean_alloc_closure((void*)(l_ReaderT_instApplicativeOfMonad___redArg___lam__4), 6, 1);
 lean_closure_set(v___f_717_, 0, v_toSeq_707_);
 v___x_718_ = lean_alloc_ctor(0, 5, 0);
@@ -8187,17 +8183,6 @@ lean_dec(v___y_2560_);
 return v_res_2572_;
 }
 }
-static lean_object* _init_l___private_Lean_Meta_Tactic_Grind_Order_Assert_0__Lean_Meta_Grind_Order_forEachCnstrsOf___closed__1(void){
-_start:
-{
-lean_object* v___f_2574_; lean_object* v___f_2575_; 
-v___f_2574_ = ((lean_object*)(l___private_Lean_Meta_Tactic_Grind_Order_Assert_0__Lean_Meta_Grind_Order_forEachCnstrsOf___closed__0));
-v___f_2575_ = lean_alloc_closure((void*)(l_instHashableProd___redArg___lam__0___boxed), 3, 2);
-lean_closure_set(v___f_2575_, 0, v___f_2574_);
-lean_closure_set(v___f_2575_, 1, v___f_2574_);
-return v___f_2575_;
-}
-}
 static lean_object* _init_l___private_Lean_Meta_Tactic_Grind_Order_Assert_0__Lean_Meta_Grind_Order_forEachCnstrsOf___closed__2(void){
 _start:
 {
@@ -8225,30 +8210,28 @@ _start:
 lean_object* v___x_2595_; lean_object* v_toApplicative_2596_; lean_object* v_toFunctor_2597_; lean_object* v_toSeq_2598_; lean_object* v_toSeqLeft_2599_; lean_object* v_toSeqRight_2600_; lean_object* v___f_2601_; lean_object* v___f_2602_; lean_object* v___f_2603_; lean_object* v___f_2604_; lean_object* v___x_2605_; lean_object* v___f_2606_; lean_object* v___f_2607_; lean_object* v___f_2608_; lean_object* v___x_2609_; lean_object* v___x_2610_; lean_object* v___x_2611_; lean_object* v_toApplicative_2612_; lean_object* v___x_2614_; uint8_t v_isShared_2615_; uint8_t v_isSharedCheck_2673_; 
 v___x_2595_ = lean_obj_once(&l___private_Lean_Meta_Tactic_Grind_Order_Assert_0__Lean_Meta_Grind_Order_forEachSourceOf___closed__1, &l___private_Lean_Meta_Tactic_Grind_Order_Assert_0__Lean_Meta_Grind_Order_forEachSourceOf___closed__1_once, _init_l___private_Lean_Meta_Tactic_Grind_Order_Assert_0__Lean_Meta_Grind_Order_forEachSourceOf___closed__1);
 v_toApplicative_2596_ = lean_ctor_get(v___x_2595_, 0);
-lean_inc_ref(v_toApplicative_2596_);
 v_toFunctor_2597_ = lean_ctor_get(v_toApplicative_2596_, 0);
-lean_inc_ref(v_toFunctor_2597_);
 v_toSeq_2598_ = lean_ctor_get(v_toApplicative_2596_, 2);
-lean_inc(v_toSeq_2598_);
 v_toSeqLeft_2599_ = lean_ctor_get(v_toApplicative_2596_, 3);
-lean_inc(v_toSeqLeft_2599_);
 v_toSeqRight_2600_ = lean_ctor_get(v_toApplicative_2596_, 4);
-lean_inc(v_toSeqRight_2600_);
-lean_dec_ref(v_toApplicative_2596_);
 v___f_2601_ = ((lean_object*)(l___private_Lean_Meta_Tactic_Grind_Order_Assert_0__Lean_Meta_Grind_Order_forEachSourceOf___closed__2));
 v___f_2602_ = ((lean_object*)(l___private_Lean_Meta_Tactic_Grind_Order_Assert_0__Lean_Meta_Grind_Order_forEachSourceOf___closed__3));
 lean_inc_ref(v_toFunctor_2597_);
 v___f_2603_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__0), 6, 1);
 lean_closure_set(v___f_2603_, 0, v_toFunctor_2597_);
+lean_inc_ref(v_toFunctor_2597_);
 v___f_2604_ = lean_alloc_closure((void*)(l_ReaderT_instFunctorOfMonad___redArg___lam__1), 6, 1);
 lean_closure_set(v___f_2604_, 0, v_toFunctor_2597_);
 v___x_2605_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_2605_, 0, v___f_2603_);
 lean_ctor_set(v___x_2605_, 1, v___f_2604_);
+lean_inc(v_toSeqRight_2600_);
 v___f_2606_ = lean_alloc_closure((void*)(l_ReaderT_instApplicativeOfMonad___redArg___lam__1), 6, 1);
 lean_closure_set(v___f_2606_, 0, v_toSeqRight_2600_);
+lean_inc(v_toSeqLeft_2599_);
 v___f_2607_ = lean_alloc_closure((void*)(l_ReaderT_instApplicativeOfMonad___redArg___lam__3), 6, 1);
 lean_closure_set(v___f_2607_, 0, v_toSeqLeft_2599_);
+lean_inc(v_toSeq_2598_);
 v___f_2608_ = lean_alloc_closure((void*)(l_ReaderT_instApplicativeOfMonad___redArg___lam__4), 6, 1);
 lean_closure_set(v___f_2608_, 0, v_toSeq_2598_);
 v___x_2609_ = lean_alloc_ctor(0, 5, 0);
@@ -8378,7 +8361,7 @@ v___x_2638_ = l_ReaderT_instMonad___redArg(v___x_2637_);
 v___x_2639_ = l_ReaderT_instMonad___redArg(v___x_2638_);
 v___x_2640_ = l_StateRefT_x27_instMonad___redArg(v___x_2639_);
 v___x_2641_ = l_ReaderT_instMonad___redArg(v___x_2640_);
-v___f_2642_ = lean_obj_once(&l___private_Lean_Meta_Tactic_Grind_Order_Assert_0__Lean_Meta_Grind_Order_forEachCnstrsOf___closed__1, &l___private_Lean_Meta_Tactic_Grind_Order_Assert_0__Lean_Meta_Grind_Order_forEachCnstrsOf___closed__1_once, _init_l___private_Lean_Meta_Tactic_Grind_Order_Assert_0__Lean_Meta_Grind_Order_forEachCnstrsOf___closed__1);
+v___f_2642_ = ((lean_object*)(l___private_Lean_Meta_Tactic_Grind_Order_Assert_0__Lean_Meta_Grind_Order_forEachCnstrsOf___closed__1));
 v___x_2643_ = l_Lean_Meta_Grind_Order_getStruct(v_a_2583_, v_a_2584_, v_a_2585_, v_a_2586_, v_a_2587_, v_a_2588_, v_a_2589_, v_a_2590_, v_a_2591_, v_a_2592_, v_a_2593_);
 if (lean_obj_tag(v___x_2643_) == 0)
 {

@@ -432,10 +432,10 @@ static const lean_object* l___private_Lean_Server_FileWorker_0__Lean_Server_File
 LEAN_EXPORT lean_object* l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_mkImportClosureNotification(lean_object*);
 static const lean_array_object l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_instInhabitedReportSnapshotsState_default___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_array_object) + sizeof(void*)*0, .m_other = 0, .m_tag = 246}, .m_size = 0, .m_capacity = 0, .m_data = {}};
 static const lean_object* l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_instInhabitedReportSnapshotsState_default___closed__0 = (const lean_object*)&l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_instInhabitedReportSnapshotsState_default___closed__0_value;
-static lean_once_cell_t l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_instInhabitedReportSnapshotsState_default___closed__1_once = LEAN_ONCE_CELL_INITIALIZER;
-static lean_object* l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_instInhabitedReportSnapshotsState_default___closed__1;
-LEAN_EXPORT lean_object* l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_instInhabitedReportSnapshotsState_default;
-LEAN_EXPORT lean_object* l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_instInhabitedReportSnapshotsState;
+static const lean_ctor_object l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_instInhabitedReportSnapshotsState_default___closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 0}, .m_objs = {((lean_object*)&l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_instInhabitedReportSnapshotsState_default___closed__0_value),((lean_object*)&l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_instInhabitedReportSnapshotsState_default___closed__0_value),LEAN_SCALAR_PTR_LITERAL(0, 0, 0, 0, 0, 0, 0, 0)}};
+static const lean_object* l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_instInhabitedReportSnapshotsState_default___closed__1 = (const lean_object*)&l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_instInhabitedReportSnapshotsState_default___closed__1_value;
+LEAN_EXPORT const lean_object* l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_instInhabitedReportSnapshotsState_default = (const lean_object*)&l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_instInhabitedReportSnapshotsState_default___closed__1_value;
+LEAN_EXPORT const lean_object* l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_instInhabitedReportSnapshotsState = (const lean_object*)&l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_instInhabitedReportSnapshotsState_default___closed__1_value;
 LEAN_EXPORT lean_object* l_Lean_Option_register___at___00Lean_Server_FileWorker_initFn_00___x40_Lean_Server_FileWorker_3591085687____hygCtx___hyg_4__spec__0(lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l_Lean_Option_register___at___00Lean_Server_FileWorker_initFn_00___x40_Lean_Server_FileWorker_3591085687____hygCtx___hyg_4__spec__0___boxed(lean_object*, lean_object*, lean_object*, lean_object*);
 static const lean_string_object l_Lean_Server_FileWorker_initFn___closed__0_00___x40_Lean_Server_FileWorker_3591085687____hygCtx___hyg_4__value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 7, .m_capacity = 7, .m_length = 6, .m_data = "server"};
@@ -534,8 +534,8 @@ LEAN_EXPORT lean_object* l___private_Lean_Server_FileWorker_0__Lean_Server_FileW
 static const lean_closure_object l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_reportSnapshots___lam__2___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_closure_object) + sizeof(void*)*0, .m_other = 0, .m_tag = 245}, .m_fun = (void*)l_Lean_Language_Lean_instToSnapshotTreeCommandParsedSnapshot_go, .m_arity = 1, .m_num_fixed = 0, .m_objs = {} };
 static const lean_object* l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_reportSnapshots___lam__2___closed__0 = (const lean_object*)&l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_reportSnapshots___lam__2___closed__0_value;
 LEAN_EXPORT lean_object* l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_reportSnapshots___lam__2(lean_object*, lean_object*);
-static lean_once_cell_t l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_reportSnapshots___lam__1___closed__0_once = LEAN_ONCE_CELL_INITIALIZER;
-static lean_object* l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_reportSnapshots___lam__1___closed__0;
+static const lean_ctor_object l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_reportSnapshots___lam__1___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 0}, .m_objs = {((lean_object*)&l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_reportSnapshots_handleNode___closed__0_value),((lean_object*)&l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_reportSnapshots_handleNode___closed__0_value),LEAN_SCALAR_PTR_LITERAL(0, 0, 0, 0, 0, 0, 0, 0)}};
+static const lean_object* l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_reportSnapshots___lam__1___closed__0 = (const lean_object*)&l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_reportSnapshots___lam__1___closed__0_value;
 LEAN_EXPORT lean_object* l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_reportSnapshots___lam__1(uint32_t, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_reportSnapshots___lam__1___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 static const lean_closure_object l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_reportSnapshots___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_closure_object) + sizeof(void*)*0, .m_other = 0, .m_tag = 245}, .m_fun = (void*)l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_reportSnapshots___lam__0, .m_arity = 1, .m_num_fixed = 0, .m_objs = {} };
@@ -7547,36 +7547,6 @@ lean_ctor_set(v___x_1540_, 1, v_importClosure_1538_);
 return v___x_1540_;
 }
 }
-static lean_object* _init_l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_instInhabitedReportSnapshotsState_default___closed__1(void){
-_start:
-{
-lean_object* v___x_1543_; uint8_t v___x_1544_; lean_object* v___x_1545_; 
-v___x_1543_ = ((lean_object*)(l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_instInhabitedReportSnapshotsState_default___closed__0));
-v___x_1544_ = 0;
-v___x_1545_ = lean_alloc_ctor(0, 2, 2);
-lean_ctor_set(v___x_1545_, 0, v___x_1543_);
-lean_ctor_set(v___x_1545_, 1, v___x_1543_);
-lean_ctor_set_uint8(v___x_1545_, sizeof(void*)*2, v___x_1544_);
-lean_ctor_set_uint8(v___x_1545_, sizeof(void*)*2 + 1, v___x_1544_);
-return v___x_1545_;
-}
-}
-static lean_object* _init_l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_instInhabitedReportSnapshotsState_default(void){
-_start:
-{
-lean_object* v___x_1546_; 
-v___x_1546_ = lean_obj_once(&l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_instInhabitedReportSnapshotsState_default___closed__1, &l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_instInhabitedReportSnapshotsState_default___closed__1_once, _init_l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_instInhabitedReportSnapshotsState_default___closed__1);
-return v___x_1546_;
-}
-}
-static lean_object* _init_l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_instInhabitedReportSnapshotsState(void){
-_start:
-{
-lean_object* v___x_1547_; 
-v___x_1547_ = l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_instInhabitedReportSnapshotsState_default;
-return v___x_1547_;
-}
-}
 LEAN_EXPORT lean_object* l_Lean_Option_register___at___00Lean_Server_FileWorker_initFn_00___x40_Lean_Server_FileWorker_3591085687____hygCtx___hyg_4__spec__0(lean_object* v_name_1548_, lean_object* v_decl_1549_, lean_object* v_ref_1550_){
 _start:
 {
@@ -10136,20 +10106,6 @@ return v___x_2413_;
 }
 }
 }
-static lean_object* _init_l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_reportSnapshots___lam__1___closed__0(void){
-_start:
-{
-lean_object* v___x_2429_; uint8_t v___x_2430_; lean_object* v___x_2431_; 
-v___x_2429_ = ((lean_object*)(l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_reportSnapshots_handleNode___closed__0));
-v___x_2430_ = 0;
-v___x_2431_ = lean_alloc_ctor(0, 2, 2);
-lean_ctor_set(v___x_2431_, 0, v___x_2429_);
-lean_ctor_set(v___x_2431_, 1, v___x_2429_);
-lean_ctor_set_uint8(v___x_2431_, sizeof(void*)*2, v___x_2430_);
-lean_ctor_set_uint8(v___x_2431_, sizeof(void*)*2 + 1, v___x_2430_);
-return v___x_2431_;
-}
-}
 LEAN_EXPORT lean_object* l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_reportSnapshots___lam__1(uint32_t v___x_2432_, lean_object* v_doc_2433_, lean_object* v_chanOut_2434_, lean_object* v_ctx_2435_, lean_object* v___f_2436_, lean_object* v_cancelTk_2437_, lean_object* v___f_2438_){
 _start:
 {
@@ -10370,7 +10326,7 @@ lean_ctor_set(v___x_2499_, 1, v___x_2498_);
 v___x_2500_ = l_Lean_Language_SnapshotTask_finished___redArg(v___x_2488_, v___x_2499_);
 v___x_2501_ = lean_array_push(v___x_2496_, v___x_2500_);
 v___x_2502_ = lean_unsigned_to_nat(0u);
-v___x_2503_ = lean_obj_once(&l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_reportSnapshots___lam__1___closed__0, &l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_reportSnapshots___lam__1___closed__0_once, _init_l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_reportSnapshots___lam__1___closed__0);
+v___x_2503_ = ((lean_object*)(l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_reportSnapshots___lam__1___closed__0));
 lean_inc_ref(v_doc_2433_);
 lean_inc_ref(v_ctx_2435_);
 v___x_2504_ = l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_reportSnapshots_handleTasks(v_ctx_2435_, v_doc_2433_, v_cancelTk_2437_, v___x_2501_, v___x_2503_);
@@ -33224,10 +33180,6 @@ lean_dec_ref(res);
 res = runtime_initialize_Init_Data_String_OrderInstances(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_instInhabitedReportSnapshotsState_default = _init_l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_instInhabitedReportSnapshotsState_default();
-lean_mark_persistent(l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_instInhabitedReportSnapshotsState_default);
-l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_instInhabitedReportSnapshotsState = _init_l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_instInhabitedReportSnapshotsState();
-lean_mark_persistent(l___private_Lean_Server_FileWorker_0__Lean_Server_FileWorker_instInhabitedReportSnapshotsState);
 res = l_Lean_Server_FileWorker_initFn_00___x40_Lean_Server_FileWorker_3591085687____hygCtx___hyg_4_();
 if (lean_io_result_is_error(res)) return res;
 l_Lean_Server_FileWorker_server_reportDelayMs = lean_io_result_get_value(res);

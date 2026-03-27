@@ -3665,9 +3665,9 @@ _start:
 lean_object* v___x_1119_; lean_object* v_up_1120_; uint8_t v___x_1121_; uint8_t v___x_1122_; lean_object* v___x_1123_; 
 v___x_1119_ = l_Lean_Meta_NormCast_normCastExt;
 v_up_1120_ = lean_ctor_get(v___x_1119_, 0);
-lean_inc_ref(v_up_1120_);
 v___x_1121_ = 1;
 v___x_1122_ = 0;
+lean_inc_ref(v_up_1120_);
 v___x_1123_ = l_Lean_Meta_addSimpTheorem(v_up_1120_, v_decl_1111_, v___x_1121_, v___x_1122_, v_kind_1112_, v_prio_1113_, v_a_1114_, v_a_1115_, v_a_1116_, v_a_1117_);
 return v___x_1123_;
 }
@@ -3701,22 +3701,21 @@ lean_object* v___x_1146_; lean_object* v_up_1147_; lean_object* v_down_1148_; le
 lean_dec_ref(v___x_1145_);
 v___x_1146_ = l_Lean_Meta_NormCast_normCastExt;
 v_up_1147_ = lean_ctor_get(v___x_1146_, 0);
-lean_inc_ref(v_up_1147_);
 v_down_1148_ = lean_ctor_get(v___x_1146_, 1);
-lean_inc_ref(v_down_1148_);
 lean_inc(v_prio_1136_);
 lean_inc(v_decl_1134_);
+lean_inc_ref(v_up_1147_);
 v___x_1149_ = l_Lean_Meta_addSimpTheorem(v_up_1147_, v_decl_1134_, v___x_1143_, v___x_1143_, v_kind_1135_, v_prio_1136_, v_a_1137_, v_a_1138_, v_a_1139_, v_a_1140_);
 if (lean_obj_tag(v___x_1149_) == 0)
 {
 lean_object* v___x_1150_; 
 lean_dec_ref(v___x_1149_);
+lean_inc_ref(v_down_1148_);
 v___x_1150_ = l_Lean_Meta_addSimpTheorem(v_down_1148_, v_decl_1134_, v___x_1143_, v___x_1144_, v_kind_1135_, v_prio_1136_, v_a_1137_, v_a_1138_, v_a_1139_, v_a_1140_);
 return v___x_1150_;
 }
 else
 {
-lean_dec_ref(v_down_1148_);
 lean_dec(v_prio_1136_);
 lean_dec(v_decl_1134_);
 return v___x_1149_;
@@ -3759,22 +3758,21 @@ lean_object* v___x_1173_; lean_object* v_down_1174_; lean_object* v_squash_1175_
 lean_dec_ref(v___x_1172_);
 v___x_1173_ = l_Lean_Meta_NormCast_normCastExt;
 v_down_1174_ = lean_ctor_get(v___x_1173_, 1);
-lean_inc_ref(v_down_1174_);
 v_squash_1175_ = lean_ctor_get(v___x_1173_, 2);
-lean_inc_ref(v_squash_1175_);
 lean_inc(v_prio_1163_);
 lean_inc(v_decl_1161_);
+lean_inc_ref(v_squash_1175_);
 v___x_1176_ = l_Lean_Meta_addSimpTheorem(v_squash_1175_, v_decl_1161_, v___x_1170_, v___x_1171_, v_kind_1162_, v_prio_1163_, v_a_1164_, v_a_1165_, v_a_1166_, v_a_1167_);
 if (lean_obj_tag(v___x_1176_) == 0)
 {
 lean_object* v___x_1177_; 
 lean_dec_ref(v___x_1176_);
+lean_inc_ref(v_down_1174_);
 v___x_1177_ = l_Lean_Meta_addSimpTheorem(v_down_1174_, v_decl_1161_, v___x_1170_, v___x_1171_, v_kind_1162_, v_prio_1163_, v_a_1164_, v_a_1165_, v_a_1166_, v_a_1167_);
 return v___x_1177_;
 }
 else
 {
-lean_dec_ref(v_down_1174_);
 lean_dec(v_prio_1163_);
 lean_dec(v_decl_1161_);
 return v___x_1176_;

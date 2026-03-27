@@ -273,11 +273,12 @@ goto v___jp_24_;
 }
 v___jp_24_:
 {
-lean_object* v___x_25_; lean_object* v___x_26_; 
+lean_object* v___x_25_; 
 v___x_25_ = lean_nat_add(v_i_18_, v_step_20_);
 lean_dec(v_i_18_);
-v___x_26_ = l___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00Lean_Meta_mkStringLitNeProof_spec__1___redArg(v_l_u2081_14_, v_l_u2082_15_, v_range_16_, v___x_23_, v___x_25_);
-return v___x_26_;
+v_b_17_ = v___x_23_;
+v_i_18_ = v___x_25_;
+goto _start;
 }
 }
 }

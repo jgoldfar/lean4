@@ -47,7 +47,7 @@ uint64_t l_Lean_Meta_Sym_hashPtrExpr_unsafe__1(lean_object*);
 size_t lean_uint64_to_usize(uint64_t);
 size_t lean_usize_land(size_t, size_t);
 lean_object* lean_usize_to_nat(size_t);
-lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
+lean_object* lean_array_get(lean_object*, lean_object*, lean_object*);
 uint8_t l___private_Lean_Meta_Sym_ExprPtr_0__Lean_Meta_Sym_isSameExpr_unsafe__1(lean_object*, lean_object*);
 size_t lean_usize_shift_right(size_t, size_t);
 lean_object* lean_array_get_size(lean_object*);
@@ -1176,26 +1176,34 @@ if (lean_obj_tag(v_x_322_) == 0)
 {
 lean_object* v_es_325_; lean_object* v___x_326_; size_t v___x_327_; size_t v___x_328_; size_t v___x_329_; lean_object* v_j_330_; lean_object* v___x_331_; 
 v_es_325_ = lean_ctor_get(v_x_322_, 0);
+lean_inc_ref(v_es_325_);
+lean_dec_ref(v_x_322_);
 v___x_326_ = lean_box(2);
 v___x_327_ = ((size_t)5ULL);
 v___x_328_ = lean_usize_once(&l_Lean_PersistentHashMap_containsAux___at___00Lean_PersistentHashMap_contains___at___00Lean_Meta_Grind_Arith_Cutsat_hasVar_spec__0_spec__0___redArg___closed__1, &l_Lean_PersistentHashMap_containsAux___at___00Lean_PersistentHashMap_contains___at___00Lean_Meta_Grind_Arith_Cutsat_hasVar_spec__0_spec__0___redArg___closed__1_once, _init_l_Lean_PersistentHashMap_containsAux___at___00Lean_PersistentHashMap_contains___at___00Lean_Meta_Grind_Arith_Cutsat_hasVar_spec__0_spec__0___redArg___closed__1);
 v___x_329_ = lean_usize_land(v_x_323_, v___x_328_);
 v_j_330_ = lean_usize_to_nat(v___x_329_);
-v___x_331_ = lean_array_get_borrowed(v___x_326_, v_es_325_, v_j_330_);
+v___x_331_ = lean_array_get(v___x_326_, v_es_325_, v_j_330_);
 lean_dec(v_j_330_);
+lean_dec_ref(v_es_325_);
 switch(lean_obj_tag(v___x_331_))
 {
 case 0:
 {
 lean_object* v_key_332_; uint8_t v___x_333_; 
 v_key_332_ = lean_ctor_get(v___x_331_, 0);
+lean_inc(v_key_332_);
+lean_dec_ref(v___x_331_);
 v___x_333_ = l___private_Lean_Meta_Sym_ExprPtr_0__Lean_Meta_Sym_isSameExpr_unsafe__1(v_x_324_, v_key_332_);
+lean_dec(v_key_332_);
 return v___x_333_;
 }
 case 1:
 {
 lean_object* v_node_334_; size_t v___x_335_; 
 v_node_334_ = lean_ctor_get(v___x_331_, 0);
+lean_inc(v_node_334_);
+lean_dec_ref(v___x_331_);
 v___x_335_ = lean_usize_shift_right(v_x_323_, v___x_327_);
 v_x_322_ = v_node_334_;
 v_x_323_ = v___x_335_;
@@ -1213,8 +1221,11 @@ else
 {
 lean_object* v_ks_338_; lean_object* v___x_339_; uint8_t v___x_340_; 
 v_ks_338_ = lean_ctor_get(v_x_322_, 0);
+lean_inc_ref(v_ks_338_);
+lean_dec_ref(v_x_322_);
 v___x_339_ = lean_unsigned_to_nat(0u);
 v___x_340_ = l_Lean_PersistentHashMap_containsAtAux___at___00Lean_PersistentHashMap_containsAux___at___00Lean_PersistentHashMap_contains___at___00Lean_Meta_Grind_Arith_Cutsat_hasVar_spec__0_spec__0_spec__1___redArg(v_ks_338_, v___x_339_, v_x_324_);
+lean_dec_ref(v_ks_338_);
 return v___x_340_;
 }
 }
@@ -1227,7 +1238,6 @@ v_x_853__boxed_344_ = lean_unbox_usize(v_x_342_);
 lean_dec(v_x_342_);
 v_res_345_ = l_Lean_PersistentHashMap_containsAux___at___00Lean_PersistentHashMap_contains___at___00Lean_Meta_Grind_Arith_Cutsat_hasVar_spec__0_spec__0___redArg(v_x_341_, v_x_853__boxed_344_, v_x_343_);
 lean_dec_ref(v_x_343_);
-lean_dec_ref(v_x_341_);
 v_r_346_ = lean_box(v_res_345_);
 return v_r_346_;
 }
@@ -1248,7 +1258,6 @@ _start:
 uint8_t v_res_354_; lean_object* v_r_355_; 
 v_res_354_ = l_Lean_PersistentHashMap_contains___at___00Lean_Meta_Grind_Arith_Cutsat_hasVar_spec__0___redArg(v_x_352_, v_x_353_);
 lean_dec_ref(v_x_353_);
-lean_dec_ref(v_x_352_);
 v_r_355_ = lean_box(v_res_354_);
 return v_r_355_;
 }
@@ -1284,7 +1293,6 @@ v_varMap_365_ = lean_ctor_get(v_a_361_, 1);
 lean_inc_ref(v_varMap_365_);
 lean_dec(v_a_361_);
 v___x_366_ = l_Lean_PersistentHashMap_contains___at___00Lean_Meta_Grind_Arith_Cutsat_hasVar_spec__0___redArg(v_varMap_365_, v_e_356_);
-lean_dec_ref(v_varMap_365_);
 v___x_367_ = lean_box(v___x_366_);
 if (v_isShared_364_ == 0)
 {
@@ -1401,7 +1409,6 @@ _start:
 uint8_t v_res_418_; lean_object* v_r_419_; 
 v_res_418_ = l_Lean_PersistentHashMap_contains___at___00Lean_Meta_Grind_Arith_Cutsat_hasVar_spec__0(v_00_u03b2_415_, v_x_416_, v_x_417_);
 lean_dec_ref(v_x_417_);
-lean_dec_ref(v_x_416_);
 v_r_419_ = lean_box(v_res_418_);
 return v_r_419_;
 }
@@ -1422,7 +1429,6 @@ v_x_966__boxed_429_ = lean_unbox_usize(v_x_427_);
 lean_dec(v_x_427_);
 v_res_430_ = l_Lean_PersistentHashMap_containsAux___at___00Lean_PersistentHashMap_contains___at___00Lean_Meta_Grind_Arith_Cutsat_hasVar_spec__0_spec__0(v_00_u03b2_425_, v_x_426_, v_x_966__boxed_429_, v_x_428_);
 lean_dec_ref(v_x_428_);
-lean_dec_ref(v_x_426_);
 v_r_431_ = lean_box(v_res_430_);
 return v_r_431_;
 }

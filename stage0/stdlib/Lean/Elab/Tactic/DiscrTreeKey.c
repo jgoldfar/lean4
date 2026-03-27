@@ -550,8 +550,8 @@ v___jp_79_:
 lean_object* v___x_81_; lean_object* v_config_82_; uint64_t v___x_83_; lean_object* v___x_84_; lean_object* v___x_85_; 
 v___x_81_ = l_Lean_Meta_simpGlobalConfig;
 v_config_82_ = lean_ctor_get(v___x_81_, 0);
-lean_inc_ref(v_config_82_);
 v___x_83_ = l___private_Lean_Meta_Basic_0__Lean_Meta_Config_toKey(v_config_82_);
+lean_inc_ref(v_config_82_);
 v___x_84_ = lean_alloc_ctor(0, 1, 8);
 lean_ctor_set(v___x_84_, 0, v_config_82_);
 lean_ctor_set_uint64(v___x_84_, sizeof(void*)*1, v___x_83_);

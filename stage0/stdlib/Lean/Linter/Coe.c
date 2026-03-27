@@ -314,11 +314,9 @@ _start:
 lean_object* v___x_29_; lean_object* v_name_30_; lean_object* v_map_31_; uint8_t v___x_32_; lean_object* v___x_33_; 
 v___x_29_ = l_Lean_Linter_Coe_linter_deprecatedCoercions;
 v_name_30_ = lean_ctor_get(v___x_29_, 0);
-lean_inc(v_name_30_);
 v_map_31_ = lean_ctor_get(v_____do__lift_28_, 0);
 v___x_32_ = 1;
 v___x_33_ = l_Std_DTreeMap_Internal_Impl_Const_get_x3f___at___00Lean_NameMap_find_x3f_spec__0___redArg(v_map_31_, v_name_30_);
-lean_dec(v_name_30_);
 if (lean_obj_tag(v___x_33_) == 0)
 {
 lean_object* v___x_34_; lean_object* v___x_35_; 
@@ -3855,14 +3853,10 @@ lean_inc_ref(v_env_1190_);
 lean_dec(v___x_1189_);
 v___x_1191_ = l_Lean_Linter_linterSetsExt;
 v_toEnvExtension_1192_ = lean_ctor_get(v___x_1191_, 0);
-lean_inc_ref(v_toEnvExtension_1192_);
 v_asyncMode_1193_ = lean_ctor_get(v_toEnvExtension_1192_, 2);
-lean_inc(v_asyncMode_1193_);
-lean_dec_ref(v_toEnvExtension_1192_);
 v___x_1194_ = lean_box(1);
 v___x_1195_ = lean_box(0);
 v_linterSets_1196_ = l_Lean_SimplePersistentEnvExtension_getState___redArg(v___x_1194_, v___x_1191_, v_env_1190_, v_asyncMode_1193_, v___x_1195_);
-lean_dec(v_asyncMode_1193_);
 v___x_1197_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_1197_, 0, v_o_1186_);
 lean_ctor_set(v___x_1197_, 1, v_linterSets_1196_);

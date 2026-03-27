@@ -14131,13 +14131,14 @@ return v___x_4356_;
 }
 else
 {
-lean_object* v___x_4357_; size_t v___x_4358_; size_t v___x_4359_; lean_object* v___x_4360_; 
+lean_object* v___x_4357_; size_t v___x_4358_; size_t v___x_4359_; 
 lean_dec(v___x_4354_);
 v___x_4357_ = ((lean_object*)(l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00__private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00Lean_PersistentArray_findSomeM_x3f___at___00Lean_Elab_Tactic_GuardMsgs_guardMsgsCodeAction_spec__0_spec__1_spec__4___closed__0));
 v___x_4358_ = ((size_t)1ULL);
 v___x_4359_ = lean_usize_add(v_i_4349_, v___x_4358_);
-v___x_4360_ = l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00Lean_PersistentArray_findSomeMAux___at___00Lean_PersistentArray_findSomeM_x3f___at___00Lean_Elab_Tactic_GuardMsgs_guardMsgsCodeAction_spec__0_spec__0_spec__2(v_as_4347_, v_sz_4348_, v___x_4359_, v___x_4357_);
-return v___x_4360_;
+v_i_4349_ = v___x_4359_;
+v_b_4350_ = v___x_4357_;
+goto _start;
 }
 }
 }

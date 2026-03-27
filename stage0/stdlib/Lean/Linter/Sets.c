@@ -309,16 +309,12 @@ _start:
 lean_object* v___x_4_; lean_object* v_toEnvExtension_5_; lean_object* v_asyncMode_6_; lean_object* v___x_7_; lean_object* v___x_8_; lean_object* v___x_9_; 
 v___x_4_ = l_Lean_Linter_linterSetsExt;
 v_toEnvExtension_5_ = lean_ctor_get(v___x_4_, 0);
-lean_inc_ref(v_toEnvExtension_5_);
 v_asyncMode_6_ = lean_ctor_get(v_toEnvExtension_5_, 2);
-lean_inc(v_asyncMode_6_);
-lean_dec_ref(v_toEnvExtension_5_);
 v___x_7_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_7_, 0, v_setName_1_);
 lean_ctor_set(v___x_7_, 1, v_linterNames_2_);
 v___x_8_ = lean_box(0);
 v___x_9_ = l_Lean_PersistentEnvExtension_addEntry___redArg(v___x_4_, v_x_3_, v___x_7_, v_asyncMode_6_, v___x_8_);
-lean_dec(v_asyncMode_6_);
 return v___x_9_;
 }
 }
@@ -708,16 +704,12 @@ v_resetjp_223_:
 lean_object* v___x_226_; lean_object* v_toEnvExtension_227_; lean_object* v_asyncMode_228_; lean_object* v___x_229_; lean_object* v___x_230_; lean_object* v___x_231_; lean_object* v___x_233_; 
 v___x_226_ = l_Lean_Linter_linterSetsExt;
 v_toEnvExtension_227_ = lean_ctor_get(v___x_226_, 0);
-lean_inc_ref(v_toEnvExtension_227_);
 v_asyncMode_228_ = lean_ctor_get(v_toEnvExtension_227_, 2);
-lean_inc(v_asyncMode_228_);
-lean_dec_ref(v_toEnvExtension_227_);
 v___x_229_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_229_, 0, v_setName_207_);
 lean_ctor_set(v___x_229_, 1, v_linterNames_208_);
 v___x_230_ = lean_box(0);
 v___x_231_ = l_Lean_PersistentEnvExtension_addEntry___redArg(v___x_226_, v_env_212_, v___x_229_, v_asyncMode_228_, v___x_230_);
-lean_dec(v_asyncMode_228_);
 if (v_isShared_225_ == 0)
 {
 lean_ctor_set(v___x_224_, 0, v___x_231_);

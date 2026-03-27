@@ -391,15 +391,11 @@ _start:
 lean_object* v___x_90_; lean_object* v_toEnvExtension_91_; lean_object* v_asyncMode_92_; lean_object* v___x_93_; lean_object* v___x_94_; lean_object* v_state_95_; lean_object* v___x_96_; lean_object* v___x_97_; lean_object* v_moduleName_98_; uint8_t v___x_99_; 
 v___x_90_ = l___private_Lean_Elab_Tactic_Grind_Annotated_0__Lean_Elab_Tactic_Grind_grindAnnotatedExt;
 v_toEnvExtension_91_ = lean_ctor_get(v___x_90_, 0);
-lean_inc_ref(v_toEnvExtension_91_);
 v_asyncMode_92_ = lean_ctor_get(v_toEnvExtension_91_, 2);
-lean_inc(v_asyncMode_92_);
-lean_dec_ref(v_toEnvExtension_91_);
 v___x_93_ = lean_box(1);
 v___x_94_ = lean_box(0);
 lean_inc_ref(v_env_88_);
 v_state_95_ = l_Lean_SimplePersistentEnvExtension_getState___redArg(v___x_93_, v___x_90_, v_env_88_, v_asyncMode_92_, v___x_94_);
-lean_dec(v_asyncMode_92_);
 v___x_96_ = l_Lean_Environment_header(v_env_88_);
 lean_dec_ref(v_env_88_);
 v___x_97_ = l_Lean_EnvironmentHeader_moduleNames(v___x_96_);
@@ -1174,13 +1170,9 @@ v_resetjp_348_:
 lean_object* v___x_351_; lean_object* v_toEnvExtension_352_; lean_object* v_asyncMode_353_; lean_object* v___x_354_; lean_object* v___x_355_; lean_object* v___x_357_; 
 v___x_351_ = l___private_Lean_Elab_Tactic_Grind_Annotated_0__Lean_Elab_Tactic_Grind_grindAnnotatedExt;
 v_toEnvExtension_352_ = lean_ctor_get(v___x_351_, 0);
-lean_inc_ref(v_toEnvExtension_352_);
 v_asyncMode_353_ = lean_ctor_get(v_toEnvExtension_352_, 2);
-lean_inc(v_asyncMode_353_);
-lean_dec_ref(v_toEnvExtension_352_);
 v___x_354_ = lean_box(0);
 v___x_355_ = l_Lean_PersistentEnvExtension_addEntry___redArg(v___x_351_, v_env_337_, v_a_332_, v_asyncMode_353_, v___x_354_);
-lean_dec(v_asyncMode_353_);
 if (v_isShared_350_ == 0)
 {
 lean_ctor_set(v___x_349_, 0, v___x_355_);

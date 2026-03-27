@@ -415,8 +415,8 @@ LEAN_EXPORT lean_object* l___private_Init_Data_Array_Basic_0__Array_forIn_x27Uns
 LEAN_EXPORT lean_object* l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00Lean_Meta_Tactic_TryThis_addExactSuggestions_spec__2___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 static const lean_array_object l_Lean_Meta_Tactic_TryThis_addExactSuggestions___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_array_object) + sizeof(void*)*0, .m_other = 0, .m_tag = 246}, .m_size = 0, .m_capacity = 0, .m_data = {}};
 static const lean_object* l_Lean_Meta_Tactic_TryThis_addExactSuggestions___closed__0 = (const lean_object*)&l_Lean_Meta_Tactic_TryThis_addExactSuggestions___closed__0_value;
-static lean_once_cell_t l_Lean_Meta_Tactic_TryThis_addExactSuggestions___closed__1_once = LEAN_ONCE_CELL_INITIALIZER;
-static lean_object* l_Lean_Meta_Tactic_TryThis_addExactSuggestions___closed__1;
+static const lean_ctor_object l_Lean_Meta_Tactic_TryThis_addExactSuggestions___closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 0}, .m_objs = {((lean_object*)&l_Lean_Meta_Tactic_TryThis_addExactSuggestions___closed__0_value),((lean_object*)&l_Lean_Meta_Tactic_TryThis_addExactSuggestions___closed__0_value)}};
+static const lean_object* l_Lean_Meta_Tactic_TryThis_addExactSuggestions___closed__1 = (const lean_object*)&l_Lean_Meta_Tactic_TryThis_addExactSuggestions___closed__1_value;
 static const lean_string_object l_Lean_Meta_Tactic_TryThis_addExactSuggestions___closed__2_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 11, .m_capacity = 11, .m_length = 10, .m_data = "Try these:"};
 static const lean_object* l_Lean_Meta_Tactic_TryThis_addExactSuggestions___closed__2 = (const lean_object*)&l_Lean_Meta_Tactic_TryThis_addExactSuggestions___closed__2_value;
 LEAN_EXPORT lean_object* l_Lean_Meta_Tactic_TryThis_addExactSuggestions(lean_object*, lean_object*, lean_object*, uint8_t, lean_object*, lean_object*, uint8_t, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
@@ -6309,17 +6309,6 @@ lean_dec_ref(v_as_2111_);
 return v_res_2126_;
 }
 }
-static lean_object* _init_l_Lean_Meta_Tactic_TryThis_addExactSuggestions___closed__1(void){
-_start:
-{
-lean_object* v___x_2129_; lean_object* v___x_2130_; 
-v___x_2129_ = ((lean_object*)(l_Lean_Meta_Tactic_TryThis_addExactSuggestions___closed__0));
-v___x_2130_ = lean_alloc_ctor(0, 2, 0);
-lean_ctor_set(v___x_2130_, 0, v___x_2129_);
-lean_ctor_set(v___x_2130_, 1, v___x_2129_);
-return v___x_2130_;
-}
-}
 LEAN_EXPORT lean_object* l_Lean_Meta_Tactic_TryThis_addExactSuggestions(lean_object* v_ref_2132_, lean_object* v_es_2133_, lean_object* v_origSpan_x3f_2134_, uint8_t v_addSubgoalsMsg_2135_, lean_object* v_codeActionPrefix_x3f_2136_, lean_object* v_checkState_x3f_2137_, uint8_t v_tacticErrorAsInfo_2138_, lean_object* v_a_2139_, lean_object* v_a_2140_, lean_object* v_a_2141_, lean_object* v_a_2142_, lean_object* v_a_2143_, lean_object* v_a_2144_, lean_object* v_a_2145_, lean_object* v_a_2146_){
 _start:
 {
@@ -6333,7 +6322,7 @@ lean_object* v_a_2151_; lean_object* v___x_2152_; size_t v_sz_2153_; lean_object
 v_a_2151_ = lean_ctor_get(v___x_2150_, 0);
 lean_inc(v_a_2151_);
 lean_dec_ref(v___x_2150_);
-v___x_2152_ = lean_obj_once(&l_Lean_Meta_Tactic_TryThis_addExactSuggestions___closed__1, &l_Lean_Meta_Tactic_TryThis_addExactSuggestions___closed__1_once, _init_l_Lean_Meta_Tactic_TryThis_addExactSuggestions___closed__1);
+v___x_2152_ = ((lean_object*)(l_Lean_Meta_Tactic_TryThis_addExactSuggestions___closed__1));
 v_sz_2153_ = lean_array_size(v_a_2151_);
 v___x_2154_ = l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00Lean_Meta_Tactic_TryThis_addExactSuggestions_spec__1___redArg(v_tacticErrorAsInfo_2138_, v_a_2151_, v_sz_2153_, v___x_2149_, v___x_2152_, v_a_2143_, v_a_2144_, v_a_2145_, v_a_2146_);
 lean_dec(v_a_2151_);

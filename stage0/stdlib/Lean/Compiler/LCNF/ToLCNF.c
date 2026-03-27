@@ -14386,13 +14386,9 @@ lean_inc_ref(v_env_4119_);
 lean_dec(v___x_4118_);
 v___x_4120_ = l_Lean_noncomputableExt;
 v_toEnvExtension_4121_ = lean_ctor_get(v___x_4120_, 0);
-lean_inc_ref(v_toEnvExtension_4121_);
 v_asyncMode_4122_ = lean_ctor_get(v_toEnvExtension_4121_, 2);
-lean_inc(v_asyncMode_4122_);
-lean_dec_ref(v_toEnvExtension_4121_);
 lean_inc(v_ref_4083_);
 v___x_4123_ = l_Lean_isNoncomputable(v_env_4119_, v_ref_4083_, v_asyncMode_4122_);
-lean_dec(v_asyncMode_4122_);
 if (v___x_4123_ == 0)
 {
 lean_object* v___x_4124_; lean_object* v_env_4125_; lean_object* v___x_4126_; 

@@ -7035,15 +7035,11 @@ if (v___x_2069_ == 0)
 lean_object* v___x_2070_; lean_object* v_toEnvExtension_2071_; lean_object* v_asyncMode_2072_; lean_object* v___x_2073_; lean_object* v___x_2074_; lean_object* v___x_2075_; size_t v___x_2076_; size_t v___x_2077_; 
 v___x_2070_ = l_Lean_Compiler_LCNF_impureSigExt;
 v_toEnvExtension_2071_ = lean_ctor_get(v___x_2070_, 0);
-lean_inc_ref(v_toEnvExtension_2071_);
 v_asyncMode_2072_ = lean_ctor_get(v_toEnvExtension_2071_, 2);
-lean_inc(v_asyncMode_2072_);
-lean_dec_ref(v_toEnvExtension_2071_);
 v___x_2073_ = lean_box(0);
 v___x_2074_ = lean_array_uget_borrowed(v_as_2065_, v_i_2066_);
 lean_inc(v___x_2074_);
 v___x_2075_ = l_Lean_PersistentEnvExtension_addEntry___redArg(v___x_2070_, v_b_2068_, v___x_2074_, v_asyncMode_2072_, v___x_2073_);
-lean_dec(v_asyncMode_2072_);
 v___x_2076_ = ((size_t)1ULL);
 v___x_2077_ = lean_usize_add(v_i_2066_, v___x_2076_);
 v_i_2066_ = v___x_2077_;
@@ -9781,7 +9777,6 @@ v___jp_2914_:
 lean_object* v___x_2920_; lean_object* v_toEnvExtension_2921_; lean_object* v_asyncMode_2922_; lean_object* v___x_2923_; lean_object* v_importedEntries_2924_; lean_object* v_state_2925_; lean_object* v___x_2926_; lean_object* v___x_2927_; uint8_t v___x_2928_; 
 v___x_2920_ = l_Lean_IR_declMapExt;
 v_toEnvExtension_2921_ = lean_ctor_get(v___x_2920_, 0);
-lean_inc_ref(v_toEnvExtension_2921_);
 v_asyncMode_2922_ = lean_ctor_get(v_toEnvExtension_2921_, 2);
 lean_inc(v___y_2918_);
 lean_inc_ref(v___y_2919_);
@@ -10023,9 +10018,9 @@ lean_inc(v_a_2981_);
 lean_dec_ref(v___x_2980_);
 v___x_2982_ = l_Lean_Compiler_CSimp_ext;
 v_ext_2983_ = lean_ctor_get(v___x_2982_, 1);
-lean_inc_ref(v_ext_2983_);
 lean_inc(v_name_2489_);
 v___x_2984_ = l_Lean_Environment_setMainModule(v_a_2981_, v_name_2489_);
+lean_inc_ref(v_ext_2983_);
 v___x_2985_ = l_main___elam__0___redArg(v___x_2979_, v___x_2498_, v_ext_2983_, v___x_2984_);
 if (lean_obj_tag(v___x_2985_) == 0)
 {

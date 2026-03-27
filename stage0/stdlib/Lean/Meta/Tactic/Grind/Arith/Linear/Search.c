@@ -10823,12 +10823,13 @@ v___x_3409_ = lean_box(0);
 v___x_3410_ = l_instDecidableEqRat_decEq(v_fst_3408_, v_v_3401_);
 if (v___x_3410_ == 0)
 {
-lean_object* v___x_3411_; size_t v___x_3412_; size_t v___x_3413_; lean_object* v___x_3414_; 
+lean_object* v___x_3411_; size_t v___x_3412_; size_t v___x_3413_; 
 v___x_3411_ = ((lean_object*)(l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00Lean_Meta_Grind_Arith_Linear_findDiseq_x3f_spec__0___closed__0));
 v___x_3412_ = ((size_t)1ULL);
 v___x_3413_ = lean_usize_add(v_i_3404_, v___x_3412_);
-v___x_3414_ = l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00Lean_Meta_Grind_Arith_Linear_findDiseq_x3f_spec__0(v_v_3401_, v_as_3402_, v_sz_3403_, v___x_3413_, v___x_3411_);
-return v___x_3414_;
+v_i_3404_ = v___x_3413_;
+v_b_3405_ = v___x_3411_;
+goto _start;
 }
 else
 {

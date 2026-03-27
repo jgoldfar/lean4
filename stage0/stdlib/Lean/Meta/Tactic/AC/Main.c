@@ -771,9 +771,10 @@ _start:
 lean_object* v_snd_32_; lean_object* v___x_33_; lean_object* v___x_34_; uint8_t v___x_35_; 
 v_snd_32_ = lean_ctor_get(v_ctx_30_, 1);
 v___x_33_ = lean_box(v___x_29_);
-v___x_34_ = lean_array_get_borrowed(v___x_33_, v_snd_32_, v_x_31_);
+v___x_34_ = lean_array_get(v___x_33_, v_snd_32_, v_x_31_);
 lean_dec(v___x_33_);
 v___x_35_ = lean_unbox(v___x_34_);
+lean_dec(v___x_34_);
 return v___x_35_;
 }
 }
@@ -5048,9 +5049,10 @@ lean_object* v_snd_1725_; uint8_t v___x_1726_; lean_object* v___x_1727_; lean_ob
 v_snd_1725_ = lean_ctor_get(v_ctx_1718_, 1);
 v___x_1726_ = 0;
 v___x_1727_ = lean_box(v___x_1726_);
-v___x_1728_ = lean_array_get_borrowed(v___x_1727_, v_snd_1725_, v_head_1720_);
+v___x_1728_ = lean_array_get(v___x_1727_, v_snd_1725_, v_head_1720_);
 lean_dec(v___x_1727_);
 v___x_1729_ = lean_unbox(v___x_1728_);
+lean_dec(v___x_1728_);
 if (v___x_1729_ == 0)
 {
 lean_object* v___x_1730_; lean_object* v___x_1732_; 

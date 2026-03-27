@@ -697,7 +697,6 @@ lean_inc(v_a_107_);
 lean_dec_ref(v___x_106_);
 v___x_108_ = l_Lean_Meta_simpGlobalConfig;
 v_config_109_ = lean_ctor_get(v___x_108_, 0);
-lean_inc_ref(v_config_109_);
 v_trackZetaDelta_110_ = lean_ctor_get_uint8(v_a_101_, sizeof(void*)*7);
 v_zetaDeltaSet_111_ = lean_ctor_get(v_a_101_, 1);
 v_lctx_112_ = lean_ctor_get(v_a_101_, 2);
@@ -710,6 +709,7 @@ v_inTypeClassResolution_118_ = lean_ctor_get_uint8(v_a_101_, sizeof(void*)*7 + 2
 v_cacheInferType_119_ = lean_ctor_get_uint8(v_a_101_, sizeof(void*)*7 + 3);
 v___x_120_ = l___private_Lean_Meta_Basic_0__Lean_Meta_Config_toKey(v_config_109_);
 v___x_121_ = 0;
+lean_inc_ref(v_config_109_);
 v___x_122_ = lean_alloc_ctor(0, 1, 8);
 lean_ctor_set(v___x_122_, 0, v_config_109_);
 lean_ctor_set_uint64(v___x_122_, sizeof(void*)*1, v___x_120_);

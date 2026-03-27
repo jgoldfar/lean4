@@ -216,10 +216,10 @@ static const lean_string_object l_Lake_Dependency_materialize___closed__10_value
 static const lean_object* l_Lake_Dependency_materialize___closed__10 = (const lean_object*)&l_Lake_Dependency_materialize___closed__10_value;
 LEAN_EXPORT lean_object* l_Lake_Dependency_materialize(lean_object*, uint8_t, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l_Lake_Dependency_materialize___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-static lean_once_cell_t l___private_Lake_Load_Materialize_0__Lake_PackageEntry_materialize_mkDep___closed__0_once = LEAN_ONCE_CELL_INITIALIZER;
-static lean_object* l___private_Lake_Load_Materialize_0__Lake_PackageEntry_materialize_mkDep___closed__0;
-static lean_once_cell_t l___private_Lake_Load_Materialize_0__Lake_PackageEntry_materialize_mkDep___closed__1_once = LEAN_ONCE_CELL_INITIALIZER;
-static lean_object* l___private_Lake_Load_Materialize_0__Lake_PackageEntry_materialize_mkDep___closed__1;
+static const lean_ctor_object l___private_Lake_Load_Materialize_0__Lake_PackageEntry_materialize_mkDep___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 11}, .m_objs = {((lean_object*)&l_Lake_instInhabitedMaterializedDep_default___closed__0_value),((lean_object*)&l_Lake_instInhabitedMaterializedDep_default___closed__0_value),LEAN_SCALAR_PTR_LITERAL(0, 0, 0, 0, 0, 0, 0, 0)}};
+static const lean_object* l___private_Lake_Load_Materialize_0__Lake_PackageEntry_materialize_mkDep___closed__0 = (const lean_object*)&l___private_Lake_Load_Materialize_0__Lake_PackageEntry_materialize_mkDep___closed__0_value;
+static const lean_ctor_object l___private_Lake_Load_Materialize_0__Lake_PackageEntry_materialize_mkDep___closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*1 + 0, .m_other = 1, .m_tag = 0}, .m_objs = {((lean_object*)&l___private_Lake_Load_Materialize_0__Lake_PackageEntry_materialize_mkDep___closed__0_value)}};
+static const lean_object* l___private_Lake_Load_Materialize_0__Lake_PackageEntry_materialize_mkDep___closed__1 = (const lean_object*)&l___private_Lake_Load_Materialize_0__Lake_PackageEntry_materialize_mkDep___closed__1_value;
 LEAN_EXPORT lean_object* l___private_Lake_Load_Materialize_0__Lake_PackageEntry_materialize_mkDep(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l___private_Lake_Load_Materialize_0__Lake_PackageEntry_materialize_mkDep___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 static const lean_string_object l_Lake_PackageEntry_materialize___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 5, .m_capacity = 5, .m_length = 4, .m_data = "HEAD"};
@@ -6356,12 +6356,13 @@ v___x_1594_ = lean_box(0);
 v___x_1595_ = l_Lake_VerRange_test(v_ver_1586_, v_version_1593_);
 if (v___x_1595_ == 0)
 {
-lean_object* v___x_1596_; size_t v___x_1597_; size_t v___x_1598_; lean_object* v___x_1599_; 
+lean_object* v___x_1596_; size_t v___x_1597_; size_t v___x_1598_; 
 v___x_1596_ = ((lean_object*)(l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00Lake_Dependency_materialize_spec__1___closed__0));
 v___x_1597_ = ((size_t)1ULL);
 v___x_1598_ = lean_usize_add(v_i_1589_, v___x_1597_);
-v___x_1599_ = l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00Lake_Dependency_materialize_spec__1(v_ver_1586_, v_as_1587_, v_sz_1588_, v___x_1598_, v___x_1596_);
-return v___x_1599_;
+v_i_1589_ = v___x_1598_;
+v_b_1590_ = v___x_1596_;
+goto _start;
 }
 else
 {
@@ -8427,29 +8428,6 @@ lean_dec_ref(v_a_2090_);
 return v_res_2093_;
 }
 }
-static lean_object* _init_l___private_Lake_Load_Materialize_0__Lake_PackageEntry_materialize_mkDep___closed__0(void){
-_start:
-{
-uint32_t v___x_2094_; lean_object* v___x_2095_; lean_object* v___x_2096_; 
-v___x_2094_ = 0;
-v___x_2095_ = ((lean_object*)(l_Lake_instInhabitedMaterializedDep_default___closed__0));
-v___x_2096_ = lean_alloc_ctor(11, 2, 4);
-lean_ctor_set(v___x_2096_, 0, v___x_2095_);
-lean_ctor_set(v___x_2096_, 1, v___x_2095_);
-lean_ctor_set_uint32(v___x_2096_, sizeof(void*)*2, v___x_2094_);
-return v___x_2096_;
-}
-}
-static lean_object* _init_l___private_Lake_Load_Materialize_0__Lake_PackageEntry_materialize_mkDep___closed__1(void){
-_start:
-{
-lean_object* v___x_2097_; lean_object* v___x_2098_; 
-v___x_2097_ = lean_obj_once(&l___private_Lake_Load_Materialize_0__Lake_PackageEntry_materialize_mkDep___closed__0, &l___private_Lake_Load_Materialize_0__Lake_PackageEntry_materialize_mkDep___closed__0_once, _init_l___private_Lake_Load_Materialize_0__Lake_PackageEntry_materialize_mkDep___closed__0);
-v___x_2098_ = lean_alloc_ctor(0, 1, 0);
-lean_ctor_set(v___x_2098_, 0, v___x_2097_);
-return v___x_2098_;
-}
-}
 LEAN_EXPORT lean_object* l___private_Lake_Load_Materialize_0__Lake_PackageEntry_materialize_mkDep(lean_object* v_manifestEntry_2099_, lean_object* v_pkgDir_2100_, lean_object* v_relPkgDir_2101_, lean_object* v_remoteUrl_2102_, lean_object* v_a_2103_){
 _start:
 {
@@ -8706,7 +8684,7 @@ else
 {
 lean_object* v___x_2164_; 
 lean_dec_ref(v_pkgDir_2100_);
-v___x_2164_ = lean_obj_once(&l___private_Lake_Load_Materialize_0__Lake_PackageEntry_materialize_mkDep___closed__1, &l___private_Lake_Load_Materialize_0__Lake_PackageEntry_materialize_mkDep___closed__1_once, _init_l___private_Lake_Load_Materialize_0__Lake_PackageEntry_materialize_mkDep___closed__1);
+v___x_2164_ = ((lean_object*)(l___private_Lake_Load_Materialize_0__Lake_PackageEntry_materialize_mkDep___closed__1));
 v_a_2106_ = v___x_2164_;
 goto v___jp_2105_;
 }
@@ -9009,7 +8987,7 @@ else
 {
 lean_object* v___x_2282_; 
 lean_dec_ref(v_wsDir_2175_);
-v___x_2282_ = lean_obj_once(&l___private_Lake_Load_Materialize_0__Lake_PackageEntry_materialize_mkDep___closed__1, &l___private_Lake_Load_Materialize_0__Lake_PackageEntry_materialize_mkDep___closed__1_once, _init_l___private_Lake_Load_Materialize_0__Lake_PackageEntry_materialize_mkDep___closed__1);
+v___x_2282_ = ((lean_object*)(l___private_Lake_Load_Materialize_0__Lake_PackageEntry_materialize_mkDep___closed__1));
 v_a_2226_ = v___x_2282_;
 goto v___jp_2225_;
 }
@@ -9313,7 +9291,7 @@ else
 {
 lean_object* v___x_2318_; 
 lean_dec_ref(v_gitDir_2292_);
-v___x_2318_ = lean_obj_once(&l___private_Lake_Load_Materialize_0__Lake_PackageEntry_materialize_mkDep___closed__1, &l___private_Lake_Load_Materialize_0__Lake_PackageEntry_materialize_mkDep___closed__1_once, _init_l___private_Lake_Load_Materialize_0__Lake_PackageEntry_materialize_mkDep___closed__1);
+v___x_2318_ = ((lean_object*)(l___private_Lake_Load_Materialize_0__Lake_PackageEntry_materialize_mkDep___closed__1));
 v___y_2180_ = v___y_2294_;
 v___y_2181_ = v___y_2296_;
 v_a_2182_ = v___x_2318_;

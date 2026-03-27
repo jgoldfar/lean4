@@ -516,8 +516,8 @@ LEAN_EXPORT lean_object* l___private_Init_Data_Array_Basic_0__Array_forIn_x27Uns
 LEAN_EXPORT lean_object* l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00Lean_Server_Watchdog_eraseFileWorker_spec__0___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 static const lean_array_object l_Lean_Server_Watchdog_eraseFileWorker___lam__2___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_array_object) + sizeof(void*)*0, .m_other = 0, .m_tag = 246}, .m_size = 0, .m_capacity = 0, .m_data = {}};
 static const lean_object* l_Lean_Server_Watchdog_eraseFileWorker___lam__2___closed__0 = (const lean_object*)&l_Lean_Server_Watchdog_eraseFileWorker___lam__2___closed__0_value;
-static lean_once_cell_t l_Lean_Server_Watchdog_eraseFileWorker___lam__2___closed__1_once = LEAN_ONCE_CELL_INITIALIZER;
-static lean_object* l_Lean_Server_Watchdog_eraseFileWorker___lam__2___closed__1;
+static const lean_ctor_object l_Lean_Server_Watchdog_eraseFileWorker___lam__2___closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 0}, .m_objs = {((lean_object*)&l_Lean_Server_Watchdog_eraseFileWorker___lam__2___closed__0_value),((lean_object*)&l_Lean_Server_Watchdog_eraseFileWorker___lam__2___closed__0_value)}};
+static const lean_object* l_Lean_Server_Watchdog_eraseFileWorker___lam__2___closed__1 = (const lean_object*)&l_Lean_Server_Watchdog_eraseFileWorker___lam__2___closed__1_value;
 LEAN_EXPORT lean_object* l_Lean_Server_Watchdog_eraseFileWorker___lam__2(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l_Lean_Server_Watchdog_eraseFileWorker___lam__2___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l_Lean_Server_Watchdog_eraseFileWorker(lean_object*, lean_object*);
@@ -19892,17 +19892,6 @@ lean_dec_ref(v_uri_4376_);
 return v_res_4383_;
 }
 }
-static lean_object* _init_l_Lean_Server_Watchdog_eraseFileWorker___lam__2___closed__1(void){
-_start:
-{
-lean_object* v_bs_4386_; lean_object* v___x_4387_; 
-v_bs_4386_ = ((lean_object*)(l_Lean_Server_Watchdog_eraseFileWorker___lam__2___closed__0));
-v___x_4387_ = lean_alloc_ctor(0, 2, 0);
-lean_ctor_set(v___x_4387_, 0, v_bs_4386_);
-lean_ctor_set(v___x_4387_, 1, v_bs_4386_);
-return v___x_4387_;
-}
-}
 LEAN_EXPORT lean_object* l_Lean_Server_Watchdog_eraseFileWorker___lam__2(lean_object* v___f_4388_, lean_object* v_uri_4389_, lean_object* v___f_4390_, lean_object* v___y_4391_, lean_object* v___y_4392_){
 _start:
 {
@@ -19934,7 +19923,7 @@ goto v_resetjp_4400_;
 v_resetjp_4400_:
 {
 lean_object* v___x_4403_; size_t v_sz_4404_; size_t v___x_4405_; lean_object* v___x_4406_; lean_object* v_fst_4407_; lean_object* v_snd_4408_; lean_object* v___x_4410_; 
-v___x_4403_ = lean_obj_once(&l_Lean_Server_Watchdog_eraseFileWorker___lam__2___closed__1, &l_Lean_Server_Watchdog_eraseFileWorker___lam__2___closed__1_once, _init_l_Lean_Server_Watchdog_eraseFileWorker___lam__2___closed__1);
+v___x_4403_ = ((lean_object*)(l_Lean_Server_Watchdog_eraseFileWorker___lam__2___closed__1));
 v_sz_4404_ = lean_array_size(v_pendingWaitForILeanRequests_4399_);
 v___x_4405_ = ((size_t)0ULL);
 v___x_4406_ = l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00Lean_Server_Watchdog_eraseFileWorker_spec__0(v_uri_4389_, v_pendingWaitForILeanRequests_4399_, v_sz_4404_, v___x_4405_, v___x_4403_);
@@ -21153,7 +21142,7 @@ goto v_resetjp_4865_;
 v_resetjp_4865_:
 {
 lean_object* v___x_4868_; size_t v_sz_4869_; size_t v___x_4870_; lean_object* v___x_4871_; lean_object* v_fst_4872_; lean_object* v_snd_4873_; lean_object* v___x_4875_; 
-v___x_4868_ = lean_obj_once(&l_Lean_Server_Watchdog_eraseFileWorker___lam__2___closed__1, &l_Lean_Server_Watchdog_eraseFileWorker___lam__2___closed__1_once, _init_l_Lean_Server_Watchdog_eraseFileWorker___lam__2___closed__1);
+v___x_4868_ = ((lean_object*)(l_Lean_Server_Watchdog_eraseFileWorker___lam__2___closed__1));
 v_sz_4869_ = lean_array_size(v_pendingWaitForILeanRequests_4864_);
 v___x_4870_ = ((size_t)0ULL);
 v___x_4871_ = l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00Lean_Server_Watchdog_eraseFileWorker_spec__0(v_uri_4852_, v_pendingWaitForILeanRequests_4864_, v_sz_4869_, v___x_4870_, v___x_4868_);

@@ -49,7 +49,6 @@ uint8_t l_Std_Time_PlainDate_weekday(lean_object*);
 lean_object* l_Std_Time_PlainDate_addMonthsClip(lean_object*, lean_object*);
 lean_object* l_Std_Time_PlainDate_addMonthsRollOver(lean_object*, lean_object*);
 lean_object* lean_mk_empty_array_with_capacity(lean_object*);
-lean_object* lean_array_fget(lean_object*, lean_object*);
 lean_object* l_Std_Time_PlainDateTime_weekOfMonth(lean_object*);
 extern lean_object* l_Std_Time_instInhabitedTimeZone_default;
 extern lean_object* l_Std_Time_TimeZone_instInhabitedZoneRules_default;
@@ -758,7 +757,8 @@ _start:
 lean_object* v___x_166_; lean_object* v___x_167_; lean_object* v___x_168_; 
 v___x_166_ = lean_obj_once(&l_Std_Time_ZonedDateTime_ofPlainDateTimeWithZone___closed__1, &l_Std_Time_ZonedDateTime_ofPlainDateTimeWithZone___closed__1_once, _init_l_Std_Time_ZonedDateTime_ofPlainDateTimeWithZone___closed__1);
 v___x_167_ = ((lean_object*)(l_Std_Time_ZonedDateTime_ofTimestampWithZone___closed__0));
-v___x_168_ = lean_array_fget(v___x_167_, v___x_166_);
+v___x_168_ = lean_array_fget_borrowed(v___x_167_, v___x_166_);
+lean_inc(v___x_168_);
 return v___x_168_;
 }
 }
@@ -802,12 +802,12 @@ lean_dec_ref(v_ltt_179_);
 v_val_206_ = lean_ctor_get(v___x_205_, 0);
 lean_inc(v_val_206_);
 lean_dec_ref(v___x_205_);
-v_next_207_ = lean_array_fget(v___x_181_, v_val_206_);
+v_next_207_ = lean_array_fget_borrowed(v___x_181_, v_val_206_);
 v_time_208_ = lean_ctor_get(v_next_207_, 0);
 v___x_209_ = lean_unsigned_to_nat(1u);
 v___x_210_ = lean_nat_sub(v_val_206_, v___x_209_);
 lean_dec(v_val_206_);
-v_last_211_ = lean_array_fget(v___x_181_, v___x_210_);
+v_last_211_ = lean_array_fget_borrowed(v___x_181_, v___x_210_);
 lean_dec(v___x_210_);
 v_localTimeType_212_ = lean_ctor_get(v_last_211_, 1);
 v_gmtOffset_213_ = lean_ctor_get(v_localTimeType_212_, 0);
@@ -820,13 +820,11 @@ lean_dec(v___x_216_);
 lean_dec(v_second_176_);
 if (v___x_217_ == 0)
 {
-lean_dec(v_last_211_);
 v_val_202_ = v_next_207_;
 goto v___jp_201_;
 }
 else
 {
-lean_dec(v_next_207_);
 v_val_202_ = v_last_211_;
 goto v___jp_201_;
 }

@@ -2408,14 +2408,10 @@ lean_inc_ref(v_env_809_);
 lean_dec(v___x_808_);
 v___x_810_ = l_Lean_Compiler_LCNF_passManagerExt;
 v_toEnvExtension_811_ = lean_ctor_get(v___x_810_, 0);
-lean_inc_ref(v_toEnvExtension_811_);
 v_asyncMode_812_ = lean_ctor_get(v_toEnvExtension_811_, 2);
-lean_inc(v_asyncMode_812_);
-lean_dec_ref(v_toEnvExtension_811_);
 v___x_813_ = lean_obj_once(&l_Lean_Compiler_LCNF_getPassManager___redArg___closed__0, &l_Lean_Compiler_LCNF_getPassManager___redArg___closed__0_once, _init_l_Lean_Compiler_LCNF_getPassManager___redArg___closed__0);
 v___x_814_ = lean_box(0);
 v___x_815_ = l_Lean_PersistentEnvExtension_getState___redArg(v___x_813_, v___x_810_, v_env_809_, v_asyncMode_812_, v___x_814_);
-lean_dec(v_asyncMode_812_);
 v_snd_816_ = lean_ctor_get(v___x_815_, 1);
 lean_inc(v_snd_816_);
 lean_dec(v___x_815_);
@@ -3485,15 +3481,11 @@ v_resetjp_1208_:
 lean_object* v___x_1211_; lean_object* v_toEnvExtension_1212_; lean_object* v_asyncMode_1213_; lean_object* v___x_1214_; lean_object* v___x_1215_; lean_object* v___x_1216_; lean_object* v___x_1218_; 
 v___x_1211_ = l_Lean_Compiler_LCNF_passManagerExt;
 v_toEnvExtension_1212_ = lean_ctor_get(v___x_1211_, 0);
-lean_inc_ref(v_toEnvExtension_1212_);
 v_asyncMode_1213_ = lean_ctor_get(v_toEnvExtension_1212_, 2);
-lean_inc(v_asyncMode_1213_);
-lean_dec_ref(v_toEnvExtension_1212_);
 v___x_1214_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_1214_, 0, v_declName_1161_);
 lean_ctor_set(v___x_1214_, 1, v_a_1195_);
 v___x_1215_ = l_Lean_PersistentEnvExtension_addEntry___redArg(v___x_1211_, v_env_1200_, v___x_1214_, v_asyncMode_1213_, v_pre_1179_);
-lean_dec(v_asyncMode_1213_);
 v___x_1216_ = lean_obj_once(&l___private_Init_Data_Array_Basic_0__Array_mapMUnsafe_map___at___00Lean_Compiler_LCNF_Pass_saveImpure_spec__0___redArg___closed__2, &l___private_Init_Data_Array_Basic_0__Array_mapMUnsafe_map___at___00Lean_Compiler_LCNF_Pass_saveImpure_spec__0___redArg___closed__2_once, _init_l___private_Init_Data_Array_Basic_0__Array_mapMUnsafe_map___at___00Lean_Compiler_LCNF_Pass_saveImpure_spec__0___redArg___closed__2);
 if (v_isShared_1210_ == 0)
 {

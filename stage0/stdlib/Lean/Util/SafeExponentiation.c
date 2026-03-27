@@ -1135,7 +1135,6 @@ else
 {
 lean_object* v_name_352_; lean_object* v___x_353_; lean_object* v___x_354_; lean_object* v___x_355_; lean_object* v___x_356_; lean_object* v___x_357_; lean_object* v___x_358_; lean_object* v___x_359_; lean_object* v___x_360_; lean_object* v___x_361_; uint8_t v___x_362_; lean_object* v___x_363_; lean_object* v___x_364_; lean_object* v___x_365_; lean_object* v___x_366_; lean_object* v___x_368_; 
 v_name_352_ = lean_ctor_get(v___x_339_, 0);
-lean_inc(v_name_352_);
 v___x_353_ = ((lean_object*)(l_Lean_checkExponent___closed__2));
 v___x_354_ = l_Nat_reprFast(v_n_329_);
 v___x_355_ = lean_string_append(v___x_353_, v___x_354_);
@@ -1149,6 +1148,7 @@ v___x_360_ = ((lean_object*)(l_Lean_checkExponent___closed__4));
 v___x_361_ = lean_string_append(v___x_359_, v___x_360_);
 v___x_362_ = lean_unbox(v_a_347_);
 lean_dec(v_a_347_);
+lean_inc(v_name_352_);
 v___x_363_ = l_Lean_Name_toStringWithToken___at___00Lean_Name_toString_spec__0(v_name_352_, v___x_362_);
 v___x_364_ = lean_string_append(v___x_361_, v___x_363_);
 lean_dec_ref(v___x_363_);

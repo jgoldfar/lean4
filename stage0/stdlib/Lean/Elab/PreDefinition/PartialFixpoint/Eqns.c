@@ -6297,15 +6297,11 @@ lean_object* v___x_2113_; lean_object* v_toEnvExtension_2114_; lean_object* v_as
 lean_dec(v___x_2110_);
 v___x_2113_ = l_Lean_Elab_PartialFixpoint_eqnInfoExt;
 v_toEnvExtension_2114_ = lean_ctor_get(v___x_2113_, 0);
-lean_inc_ref(v_toEnvExtension_2114_);
 v_asyncMode_2115_ = lean_ctor_get(v_toEnvExtension_2114_, 2);
-lean_inc(v_asyncMode_2115_);
-lean_dec_ref(v_toEnvExtension_2114_);
 v___x_2116_ = l_Lean_Elab_PartialFixpoint_instInhabitedEqnInfo_default;
 v___x_2117_ = 0;
 lean_inc(v_declName_2099_);
 v___x_2118_ = l_Lean_MapDeclarationExtension_find_x3f___redArg(v___x_2116_, v___x_2113_, v_env_2108_, v_declName_2099_, v_asyncMode_2115_, v___x_2117_);
-lean_dec(v_asyncMode_2115_);
 if (lean_obj_tag(v___x_2118_) == 1)
 {
 lean_object* v_val_2119_; lean_object* v___x_2121_; uint8_t v_isShared_2122_; uint8_t v_isSharedCheck_2143_; 

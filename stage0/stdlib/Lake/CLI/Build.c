@@ -1660,12 +1660,13 @@ v___x_515_ = lean_box(0);
 v___x_516_ = lean_name_eq(v_baseName_514_, v___x_507_);
 if (v___x_516_ == 0)
 {
-lean_object* v___x_517_; size_t v___x_518_; size_t v___x_519_; lean_object* v___x_520_; 
+lean_object* v___x_517_; size_t v___x_518_; size_t v___x_519_; 
 v___x_517_ = ((lean_object*)(l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00Lake_parsePackageSpec_spec__0___closed__0));
 v___x_518_ = ((size_t)1ULL);
 v___x_519_ = lean_usize_add(v_i_510_, v___x_518_);
-v___x_520_ = l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00Lake_parsePackageSpec_spec__0(v___x_507_, v_as_508_, v_sz_509_, v___x_519_, v___x_517_);
-return v___x_520_;
+v_i_510_ = v___x_519_;
+v_b_511_ = v___x_517_;
+goto _start;
 }
 else
 {

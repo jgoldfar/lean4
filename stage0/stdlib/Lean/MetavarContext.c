@@ -16183,6 +16183,7 @@ else
 {
 lean_object* v___x_5633_; uint8_t v___x_5634_; 
 v___x_5633_ = l_Lean_Expr_fvarId_x21(v___x_5631_);
+lean_inc_ref(v_lctx_5620_);
 v___x_5634_ = l_Lean_LocalContext_contains(v_lctx_5620_, v___x_5633_);
 lean_dec(v___x_5633_);
 if (v___x_5634_ == 0)
@@ -16202,6 +16203,7 @@ goto v___jp_5625_;
 }
 else
 {
+lean_dec_ref(v_lctx_5620_);
 return v_b_5624_;
 }
 v___jp_5625_:
@@ -16225,7 +16227,6 @@ v_stop_boxed_5642_ = lean_unbox_usize(v_stop_5639_);
 lean_dec(v_stop_5639_);
 v_res_5643_ = l___private_Init_Data_Array_Basic_0__Array_foldlMUnsafe_fold___at___00__private_Lean_MetavarContext_0__Lean_MetavarContext_MkBinding_getInScope_spec__0(v_lctx_5636_, v_as_5637_, v_i_boxed_5641_, v_stop_boxed_5642_, v_b_5640_);
 lean_dec_ref(v_as_5637_);
-lean_dec_ref(v_lctx_5636_);
 return v_res_5643_;
 }
 }
@@ -16239,6 +16240,7 @@ v___x_5650_ = lean_array_get_size(v_xs_5647_);
 v___x_5651_ = lean_nat_dec_lt(v___x_5648_, v___x_5650_);
 if (v___x_5651_ == 0)
 {
+lean_dec_ref(v_lctx_5646_);
 return v___x_5649_;
 }
 else
@@ -16249,6 +16251,7 @@ if (v___x_5652_ == 0)
 {
 if (v___x_5651_ == 0)
 {
+lean_dec_ref(v_lctx_5646_);
 return v___x_5649_;
 }
 else
@@ -16277,7 +16280,6 @@ _start:
 lean_object* v_res_5661_; 
 v_res_5661_ = l___private_Lean_MetavarContext_0__Lean_MetavarContext_MkBinding_getInScope(v_lctx_5659_, v_xs_5660_);
 lean_dec_ref(v_xs_5660_);
-lean_dec_ref(v_lctx_5659_);
 return v_res_5661_;
 }
 }
@@ -17939,6 +17941,7 @@ v_kind_6224_ = lean_ctor_get_uint8(v___x_6220_, sizeof(void*)*7);
 v_numScopeArgs_6225_ = lean_ctor_get(v___x_6220_, 5);
 lean_inc(v_numScopeArgs_6225_);
 lean_dec_ref(v___x_6220_);
+lean_inc_ref(v_lctx_6221_);
 v___x_6226_ = l___private_Lean_MetavarContext_0__Lean_MetavarContext_MkBinding_getInScope(v_lctx_6221_, v_xs_6169_);
 v___x_6227_ = lean_array_get_size(v___x_6226_);
 v___x_6228_ = lean_unsigned_to_nat(0u);
@@ -22468,7 +22471,6 @@ lean_inc(v_fvarId_7688_);
 lean_dec_ref(v_x_7685_);
 v___x_7689_ = l_Lean_LocalContext_contains(v_lctx_7684_, v_fvarId_7688_);
 lean_dec(v_fvarId_7688_);
-lean_dec_ref(v_lctx_7684_);
 v___x_7690_ = lean_box(v___x_7689_);
 v___x_7691_ = lean_apply_2(v_toPure_7687_, lean_box(0), v___x_7690_);
 return v___x_7691_;

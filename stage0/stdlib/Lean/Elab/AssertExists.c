@@ -659,10 +659,9 @@ lean_object* v___x_51_; lean_object* v___x_52_; lean_object* v___x_53_; lean_obj
 lean_del_object(v___x_36_);
 lean_dec(v_snd_34_);
 v___x_51_ = lean_box(0);
-v___x_52_ = lean_array_get_borrowed(v___x_51_, v_modNames_22_, v_i_25_);
+v___x_52_ = lean_array_get(v___x_51_, v_modNames_22_, v_i_25_);
 lean_inc(v___x_52_);
 v___x_53_ = lean_array_push(v_fst_33_, v___x_52_);
-lean_inc(v___x_52_);
 v___x_54_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_54_, 0, v___x_53_);
 lean_ctor_set(v___x_54_, 1, v___x_52_);
@@ -1512,17 +1511,13 @@ v_resetjp_380_:
 lean_object* v___x_383_; lean_object* v_toEnvExtension_384_; lean_object* v_asyncMode_385_; lean_object* v___x_386_; lean_object* v___x_387_; lean_object* v___x_388_; lean_object* v___x_390_; 
 v___x_383_ = l_Lean_Elab_Command_assertExistsExt;
 v_toEnvExtension_384_ = lean_ctor_get(v___x_383_, 0);
-lean_inc_ref(v_toEnvExtension_384_);
 v_asyncMode_385_ = lean_ctor_get(v_toEnvExtension_384_, 2);
-lean_inc(v_asyncMode_385_);
-lean_dec_ref(v_toEnvExtension_384_);
 v___x_386_ = lean_alloc_ctor(0, 2, 1);
 lean_ctor_set(v___x_386_, 0, v_declName_364_);
 lean_ctor_set(v___x_386_, 1, v_mod_365_);
 lean_ctor_set_uint8(v___x_386_, sizeof(void*)*2, v_isDecl_363_);
 v___x_387_ = lean_box(0);
 v___x_388_ = l_Lean_PersistentEnvExtension_addEntry___redArg(v___x_383_, v_env_369_, v___x_386_, v_asyncMode_385_, v___x_387_);
-lean_dec(v_asyncMode_385_);
 if (v_isShared_382_ == 0)
 {
 lean_ctor_set(v___x_381_, 0, v___x_388_);
@@ -1787,14 +1782,10 @@ _start:
 lean_object* v___y_483_; lean_object* v___y_484_; lean_object* v___y_485_; lean_object* v___y_486_; lean_object* v___y_491_; lean_object* v___x_498_; lean_object* v_toEnvExtension_499_; lean_object* v_asyncMode_500_; lean_object* v___x_501_; lean_object* v___x_502_; lean_object* v___x_503_; lean_object* v_size_504_; lean_object* v_buckets_505_; lean_object* v___x_506_; lean_object* v___x_507_; lean_object* v___x_508_; uint8_t v___x_509_; 
 v___x_498_ = l_Lean_Elab_Command_assertExistsExt;
 v_toEnvExtension_499_ = lean_ctor_get(v___x_498_, 0);
-lean_inc_ref(v_toEnvExtension_499_);
 v_asyncMode_500_ = lean_ctor_get(v_toEnvExtension_499_, 2);
-lean_inc(v_asyncMode_500_);
-lean_dec_ref(v_toEnvExtension_499_);
 v___x_501_ = lean_obj_once(&l_Lean_Elab_Command_getSortedAssertExists___closed__0, &l_Lean_Elab_Command_getSortedAssertExists___closed__0_once, _init_l_Lean_Elab_Command_getSortedAssertExists___closed__0);
 v___x_502_ = lean_box(0);
 v___x_503_ = l_Lean_SimplePersistentEnvExtension_getState___redArg(v___x_501_, v___x_498_, v_env_481_, v_asyncMode_500_, v___x_502_);
-lean_dec(v_asyncMode_500_);
 v_size_504_ = lean_ctor_get(v___x_503_, 0);
 lean_inc(v_size_504_);
 v_buckets_505_ = lean_ctor_get(v___x_503_, 1);

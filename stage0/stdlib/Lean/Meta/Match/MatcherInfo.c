@@ -6717,16 +6717,12 @@ _start:
 lean_object* v___x_2000_; lean_object* v_toEnvExtension_2001_; lean_object* v_asyncMode_2002_; lean_object* v___x_2003_; lean_object* v___x_2004_; 
 v___x_2000_ = l_Lean_Meta_Match_Extension_extension;
 v_toEnvExtension_2001_ = lean_ctor_get(v___x_2000_, 0);
-lean_inc_ref(v_toEnvExtension_2001_);
 v_asyncMode_2002_ = lean_ctor_get(v_toEnvExtension_2001_, 2);
-lean_inc(v_asyncMode_2002_);
-lean_dec_ref(v_toEnvExtension_2001_);
 lean_inc(v_matcherName_1998_);
 v___x_2003_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_2003_, 0, v_matcherName_1998_);
 lean_ctor_set(v___x_2003_, 1, v_info_1999_);
 v___x_2004_ = l_Lean_PersistentEnvExtension_addEntry___redArg(v___x_2000_, v_env_1997_, v___x_2003_, v_asyncMode_2002_, v_matcherName_1998_);
-lean_dec(v_asyncMode_2002_);
 return v___x_2004_;
 }
 }
@@ -7136,14 +7132,10 @@ else
 lean_object* v___x_2132_; lean_object* v_toEnvExtension_2133_; lean_object* v_asyncMode_2134_; lean_object* v___x_2135_; lean_object* v___x_2136_; lean_object* v___x_2137_; 
 v___x_2132_ = l_Lean_Meta_Match_Extension_extension;
 v_toEnvExtension_2133_ = lean_ctor_get(v___x_2132_, 0);
-lean_inc_ref(v_toEnvExtension_2133_);
 v_asyncMode_2134_ = lean_ctor_get(v_toEnvExtension_2133_, 2);
-lean_inc(v_asyncMode_2134_);
-lean_dec_ref(v_toEnvExtension_2133_);
 v___x_2135_ = l_Lean_Meta_Match_Extension_instInhabitedState;
 lean_inc(v_declName_2121_);
 v___x_2136_ = l_Lean_SimplePersistentEnvExtension_getState___redArg(v___x_2135_, v___x_2132_, v_env_2120_, v_asyncMode_2134_, v_declName_2121_);
-lean_dec(v_asyncMode_2134_);
 v___x_2137_ = l_Lean_SMap_find_x3f___at___00Lean_Meta_Match_Extension_getMatcherInfo_x3f_spec__0___redArg(v___x_2136_, v_declName_2121_);
 lean_dec(v_declName_2121_);
 return v___x_2137_;
@@ -7598,12 +7590,8 @@ _start:
 lean_object* v___x_2335_; lean_object* v_toEnvExtension_2336_; lean_object* v_asyncMode_2337_; uint8_t v___x_2338_; 
 v___x_2335_ = l_Lean_Meta_matcherLikeExt;
 v_toEnvExtension_2336_ = lean_ctor_get(v___x_2335_, 0);
-lean_inc_ref(v_toEnvExtension_2336_);
 v_asyncMode_2337_ = lean_ctor_get(v_toEnvExtension_2336_, 2);
-lean_inc(v_asyncMode_2337_);
-lean_dec_ref(v_toEnvExtension_2336_);
 v___x_2338_ = l_Lean_TagDeclarationExtension_isTagged(v___x_2335_, v_env_2333_, v_declName_2334_, v_asyncMode_2337_);
-lean_dec(v_asyncMode_2337_);
 return v___x_2338_;
 }
 }

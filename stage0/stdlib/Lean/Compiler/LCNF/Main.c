@@ -8328,14 +8328,10 @@ lean_inc_ref(v_env_2259_);
 lean_dec(v___x_2258_);
 v___x_2260_ = l_Lean_Compiler_LCNF_postponedCompileDeclsExt;
 v_toEnvExtension_2261_ = lean_ctor_get(v___x_2260_, 0);
-lean_inc_ref(v_toEnvExtension_2261_);
 v_asyncMode_2262_ = lean_ctor_get(v_toEnvExtension_2261_, 2);
-lean_inc(v_asyncMode_2262_);
-lean_dec_ref(v_toEnvExtension_2261_);
 v___x_2263_ = lean_box(1);
 v___x_2264_ = lean_box(0);
 v___x_2265_ = l_Lean_SimplePersistentEnvExtension_getState___redArg(v___x_2263_, v___x_2260_, v_env_2259_, v_asyncMode_2262_, v___x_2264_);
-lean_dec(v_asyncMode_2262_);
 v___x_2266_ = l_Std_DTreeMap_Internal_Impl_Const_get_x3f___at___00Lean_NameMap_find_x3f_spec__0___redArg(v___x_2265_, v_declName_2254_);
 lean_dec(v___x_2265_);
 if (lean_obj_tag(v___x_2266_) == 1)
@@ -15430,16 +15426,12 @@ v_resetjp_4655_:
 lean_object* v___x_4658_; lean_object* v_toEnvExtension_4659_; lean_object* v_asyncMode_4660_; lean_object* v___x_4661_; lean_object* v___x_4662_; lean_object* v___x_4663_; lean_object* v___x_4664_; lean_object* v___x_4666_; 
 v___x_4658_ = l_Lean_Compiler_LCNF_postponedCompileDeclsExt;
 v_toEnvExtension_4659_ = lean_ctor_get(v___x_4658_, 0);
-lean_inc_ref(v_toEnvExtension_4659_);
 v_asyncMode_4660_ = lean_ctor_get(v_toEnvExtension_4659_, 2);
-lean_inc(v_asyncMode_4660_);
-lean_dec_ref(v_toEnvExtension_4659_);
 lean_inc(v_a_4634_);
 v___x_4661_ = l___private_Init_Data_Array_Basic_0__Array_mapMUnsafe_map___at___00Lean_Compiler_LCNF_PassManager_run_spec__12(v_sz_4635_, v___x_4425_, v_a_4634_);
 v___x_4662_ = lean_box(0);
 lean_inc_ref(v___x_4661_);
 v___x_4663_ = l_Lean_PersistentEnvExtension_addEntry___redArg(v___x_4658_, v_env_4647_, v___x_4661_, v_asyncMode_4660_, v___x_4662_);
-lean_dec(v_asyncMode_4660_);
 v___x_4664_ = lean_obj_once(&l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00Lean_Compiler_LCNF_checkpoint_spec__5___closed__9, &l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00Lean_Compiler_LCNF_checkpoint_spec__5___closed__9_once, _init_l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00Lean_Compiler_LCNF_checkpoint_spec__5___closed__9);
 if (v_isShared_4657_ == 0)
 {

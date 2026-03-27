@@ -1563,11 +1563,11 @@ v_resetjp_424_:
 lean_object* v___x_427_; lean_object* v_fn_428_; lean_object* v_inputString_429_; lean_object* v___x_430_; lean_object* v___x_431_; lean_object* v___x_432_; lean_object* v___x_433_; lean_object* v___x_434_; lean_object* v___x_435_; lean_object* v___x_436_; lean_object* v___x_437_; lean_object* v___x_438_; lean_object* v___x_439_; lean_object* v_stxStack_440_; lean_object* v_pos_441_; lean_object* v_errorMsg_442_; lean_object* v___y_444_; uint8_t v___y_445_; lean_object* v___y_446_; uint8_t v___y_447_; lean_object* v___y_455_; uint8_t v___y_456_; lean_object* v___y_457_; uint8_t v___y_458_; lean_object* v___y_462_; lean_object* v_messages_463_; size_t v___y_474_; lean_object* v___y_475_; lean_object* v___y_476_; lean_object* v___y_477_; lean_object* v___x_492_; lean_object* v___y_494_; lean_object* v___y_495_; size_t v___y_496_; lean_object* v___y_497_; lean_object* v___y_498_; lean_object* v___y_499_; lean_object* v_moduleTk_x3f_500_; lean_object* v___y_510_; uint8_t v___x_540_; 
 v___x_427_ = l_Lean_Parser_Module_header;
 v_fn_428_ = lean_ctor_get(v___x_427_, 1);
-lean_inc_ref(v_fn_428_);
 v_inputString_429_ = lean_ctor_get(v_inputCtx_419_, 0);
 lean_inc(v_a_423_);
 v___x_430_ = l_Lean_Parser_getTokenTable(v_a_423_);
 v___x_431_ = ((lean_object*)(l_Lean_Parser_parseHeader___closed__0));
+lean_inc_ref(v_fn_428_);
 v___x_432_ = lean_alloc_closure((void*)(l_Lean_Parser_andthenFn), 4, 2);
 lean_closure_set(v___x_432_, 0, v___x_431_);
 lean_closure_set(v___x_432_, 1, v_fn_428_);

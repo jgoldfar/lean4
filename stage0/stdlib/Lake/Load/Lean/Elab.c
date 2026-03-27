@@ -2727,13 +2727,10 @@ v_resetjp_738_:
 lean_object* v___x_741_; lean_object* v_asyncMode_742_; lean_object* v___x_743_; lean_object* v_asyncMode_744_; lean_object* v___x_745_; lean_object* v_asyncMode_746_; lean_object* v___x_747_; lean_object* v___x_748_; lean_object* v___x_750_; 
 v___x_741_ = l_Lake_nameExt;
 v_asyncMode_742_ = lean_ctor_get(v___x_741_, 2);
-lean_inc(v_asyncMode_742_);
 v___x_743_ = l_Lake_dirExt;
 v_asyncMode_744_ = lean_ctor_get(v___x_743_, 2);
-lean_inc(v_asyncMode_744_);
 v___x_745_ = l_Lake_optsExt;
 v_asyncMode_746_ = lean_ctor_get(v___x_745_, 2);
-lean_inc(v_asyncMode_746_);
 v___x_747_ = ((lean_object*)(l_Lake_configModuleName));
 v___x_748_ = l_Lean_Environment_setMainModule(v_fst_736_, v___x_747_);
 if (v_isShared_740_ == 0)
@@ -2756,7 +2753,6 @@ v_reusejp_749_:
 {
 lean_object* v___x_751_; lean_object* v___x_753_; 
 v___x_751_ = l_Lean_EnvExtension_setState___redArg(v___x_741_, v___x_748_, v___x_750_, v_asyncMode_742_);
-lean_dec(v_asyncMode_742_);
 if (v_isShared_735_ == 0)
 {
 lean_ctor_set_tag(v___x_734_, 1);
@@ -2776,7 +2772,6 @@ v_reusejp_752_:
 {
 lean_object* v___x_754_; lean_object* v___x_756_; 
 v___x_754_ = l_Lean_EnvExtension_setState___redArg(v___x_743_, v___x_751_, v___x_753_, v_asyncMode_744_);
-lean_dec(v_asyncMode_744_);
 if (v_isShared_723_ == 0)
 {
 lean_ctor_set_tag(v___x_722_, 1);
@@ -2796,7 +2791,6 @@ v_reusejp_755_:
 {
 lean_object* v___x_757_; lean_object* v___x_758_; lean_object* v___x_759_; 
 v___x_757_ = l_Lean_EnvExtension_setState___redArg(v___x_745_, v___x_754_, v___x_756_, v_asyncMode_746_);
-lean_dec(v_asyncMode_746_);
 v___x_758_ = l_Lean_Elab_Command_mkState(v___x_757_, v_snd_737_, v_leanOpts_710_);
 v___x_759_ = l_Lean_Elab_IO_processCommands(v___x_718_, v_fst_726_, v___x_758_);
 if (lean_obj_tag(v___x_759_) == 0)

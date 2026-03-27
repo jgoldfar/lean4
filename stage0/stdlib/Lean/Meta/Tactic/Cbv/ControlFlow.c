@@ -619,12 +619,8 @@ lean_inc_ref(v_env_10_);
 lean_dec(v___x_9_);
 v___x_11_ = l_Lean_noncomputableExt;
 v_toEnvExtension_12_ = lean_ctor_get(v___x_11_, 0);
-lean_inc_ref(v_toEnvExtension_12_);
 v_asyncMode_13_ = lean_ctor_get(v_toEnvExtension_12_, 2);
-lean_inc(v_asyncMode_13_);
-lean_dec_ref(v_toEnvExtension_12_);
 v___x_14_ = l_Lean_isNoncomputable(v_env_10_, v_p_1_, v_asyncMode_13_);
-lean_dec(v_asyncMode_13_);
 v___x_15_ = lean_box(v___x_14_);
 if (v_isShared_8_ == 0)
 {

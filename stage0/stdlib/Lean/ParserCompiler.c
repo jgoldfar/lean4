@@ -114,8 +114,10 @@ static const lean_string_object l_Lean_ParserCompiler_replaceParserTy___redArg__
 static const lean_object* l_Lean_ParserCompiler_replaceParserTy___redArg___lam__0___closed__0 = (const lean_object*)&l_Lean_ParserCompiler_replaceParserTy___redArg___lam__0___closed__0_value;
 static const lean_string_object l_Lean_ParserCompiler_replaceParserTy___redArg___lam__0___closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 7, .m_capacity = 7, .m_length = 6, .m_data = "Parser"};
 static const lean_object* l_Lean_ParserCompiler_replaceParserTy___redArg___lam__0___closed__1 = (const lean_object*)&l_Lean_ParserCompiler_replaceParserTy___redArg___lam__0___closed__1_value;
-static lean_once_cell_t l_Lean_ParserCompiler_replaceParserTy___redArg___lam__0___closed__2_once = LEAN_ONCE_CELL_INITIALIZER;
-static lean_object* l_Lean_ParserCompiler_replaceParserTy___redArg___lam__0___closed__2;
+static const lean_ctor_object l_Lean_ParserCompiler_replaceParserTy___redArg___lam__0___closed__2_value_aux_0 = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)(((size_t)(0) << 1) | 1)),((lean_object*)&l_Lean_ParserCompiler_replaceParserTy___redArg___lam__0___closed__0_value),LEAN_SCALAR_PTR_LITERAL(70, 193, 83, 126, 233, 67, 208, 165)}};
+static const lean_ctor_object l_Lean_ParserCompiler_replaceParserTy___redArg___lam__0___closed__2_value_aux_1 = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&l_Lean_ParserCompiler_replaceParserTy___redArg___lam__0___closed__2_value_aux_0),((lean_object*)&l_Lean_ParserCompiler_replaceParserTy___redArg___lam__0___closed__1_value),LEAN_SCALAR_PTR_LITERAL(103, 136, 125, 166, 167, 98, 71, 111)}};
+static const lean_ctor_object l_Lean_ParserCompiler_replaceParserTy___redArg___lam__0___closed__2_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&l_Lean_ParserCompiler_replaceParserTy___redArg___lam__0___closed__2_value_aux_1),((lean_object*)&l_Lean_ParserCompiler_replaceParserTy___redArg___lam__0___closed__1_value),LEAN_SCALAR_PTR_LITERAL(114, 164, 180, 82, 232, 106, 164, 24)}};
+static const lean_object* l_Lean_ParserCompiler_replaceParserTy___redArg___lam__0___closed__2 = (const lean_object*)&l_Lean_ParserCompiler_replaceParserTy___redArg___lam__0___closed__2_value;
 LEAN_EXPORT lean_object* l_Lean_ParserCompiler_replaceParserTy___redArg___lam__0(lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l_Lean_ParserCompiler_replaceParserTy___redArg___lam__0___boxed(lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l_Lean_ParserCompiler_replaceParserTy___redArg(lean_object*, lean_object*);
@@ -460,16 +462,6 @@ lean_dec_ref(v_ctx_11_);
 return v_res_12_;
 }
 }
-static lean_object* _init_l_Lean_ParserCompiler_replaceParserTy___redArg___lam__0___closed__2(void){
-_start:
-{
-lean_object* v___x_15_; lean_object* v___x_16_; lean_object* v___x_17_; 
-v___x_15_ = ((lean_object*)(l_Lean_ParserCompiler_replaceParserTy___redArg___lam__0___closed__1));
-v___x_16_ = ((lean_object*)(l_Lean_ParserCompiler_replaceParserTy___redArg___lam__0___closed__0));
-v___x_17_ = l_Lean_Name_mkStr3(v___x_16_, v___x_15_, v___x_15_);
-return v___x_17_;
-}
-}
 LEAN_EXPORT lean_object* l_Lean_ParserCompiler_replaceParserTy___redArg___lam__0(lean_object* v_ctx_18_, lean_object* v_e_19_){
 _start:
 {
@@ -493,7 +485,7 @@ goto v___jp_20_;
 v___jp_20_:
 {
 lean_object* v___x_22_; uint8_t v___x_23_; 
-v___x_22_ = lean_obj_once(&l_Lean_ParserCompiler_replaceParserTy___redArg___lam__0___closed__2, &l_Lean_ParserCompiler_replaceParserTy___redArg___lam__0___closed__2_once, _init_l_Lean_ParserCompiler_replaceParserTy___redArg___lam__0___closed__2);
+v___x_22_ = ((lean_object*)(l_Lean_ParserCompiler_replaceParserTy___redArg___lam__0___closed__2));
 v___x_23_ = l_Lean_Expr_isConstOf(v___y_21_, v___x_22_);
 lean_dec_ref(v___y_21_);
 if (v___x_23_ == 0)
@@ -1005,7 +997,7 @@ lean_inc_ref(v___x_257_);
 v___x_270_ = l_Lean_LocalContext_getFVar_x21(v___x_257_, v_fst_269_);
 v___x_271_ = l_Lean_LocalDecl_type(v___x_270_);
 lean_dec_ref(v___x_270_);
-v___x_272_ = lean_obj_once(&l_Lean_ParserCompiler_replaceParserTy___redArg___lam__0___closed__2, &l_Lean_ParserCompiler_replaceParserTy___redArg___lam__0___closed__2_once, _init_l_Lean_ParserCompiler_replaceParserTy___redArg___lam__0___closed__2);
+v___x_272_ = ((lean_object*)(l_Lean_ParserCompiler_replaceParserTy___redArg___lam__0___closed__2));
 v___x_273_ = l_Lean_Expr_isConstOf(v___x_271_, v___x_272_);
 lean_dec_ref(v___x_271_);
 if (v___x_273_ == 0)
@@ -3021,7 +3013,7 @@ v___x_1332_ = l_Lean_Expr_isConstOf(v_a_1115_, v___x_1331_);
 if (v___x_1332_ == 0)
 {
 lean_object* v___x_1333_; uint8_t v___x_1334_; 
-v___x_1333_ = lean_obj_once(&l_Lean_ParserCompiler_replaceParserTy___redArg___lam__0___closed__2, &l_Lean_ParserCompiler_replaceParserTy___redArg___lam__0___closed__2_once, _init_l_Lean_ParserCompiler_replaceParserTy___redArg___lam__0___closed__2);
+v___x_1333_ = ((lean_object*)(l_Lean_ParserCompiler_replaceParserTy___redArg___lam__0___closed__2));
 v___x_1334_ = l_Lean_Expr_isConstOf(v_a_1115_, v___x_1333_);
 lean_dec(v_a_1115_);
 v___y_1281_ = v___x_1334_;

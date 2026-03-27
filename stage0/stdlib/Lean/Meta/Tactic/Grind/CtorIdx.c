@@ -571,7 +571,6 @@ v___x_257_ = l_Lean_Expr_constLevels_x21(v___x_256_);
 lean_dec_ref(v___x_256_);
 v___x_258_ = l_Lean_Meta_mkCtorIdxHInjTheoremNameFor(v_name_245_);
 v___x_259_ = l_Lean_Environment_containsOnBranch(v_env_255_, v___x_258_);
-lean_dec_ref(v_env_255_);
 if (v___x_259_ == 0)
 {
 lean_object* v___x_260_; 

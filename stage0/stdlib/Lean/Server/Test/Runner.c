@@ -1531,8 +1531,8 @@ LEAN_EXPORT lean_object* l___private_Init_Data_Array_Basic_0__Array_mapMUnsafe_m
 LEAN_EXPORT lean_object* l___private_Init_Data_Array_Basic_0__Array_mapMUnsafe_map___at___00Lean_Widget_TaggedText_mapM___at___00Lean_Server_Test_Runner_expandTraces_spec__0_spec__0___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 static lean_once_cell_t l_panic___at___00Lean_Server_Test_Runner_processEdit_spec__1___closed__0_once = LEAN_ONCE_CELL_INITIALIZER;
 static lean_object* l_panic___at___00Lean_Server_Test_Runner_processEdit_spec__1___closed__0;
-static lean_once_cell_t l_panic___at___00Lean_Server_Test_Runner_processEdit_spec__1___closed__1_once = LEAN_ONCE_CELL_INITIALIZER;
-static lean_object* l_panic___at___00Lean_Server_Test_Runner_processEdit_spec__1___closed__1;
+static const lean_ctor_object l_panic___at___00Lean_Server_Test_Runner_processEdit_spec__1___closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 0}, .m_objs = {((lean_object*)&l_Std_Internal_Parsec_manyCharsCore___at___00Lean_Server_Test_Runner_word_spec__0___closed__1_value),((lean_object*)&l_Std_Internal_Parsec_manyCharsCore___at___00Lean_Server_Test_Runner_word_spec__0___closed__1_value)}};
+static const lean_object* l_panic___at___00Lean_Server_Test_Runner_processEdit_spec__1___closed__1 = (const lean_object*)&l_panic___at___00Lean_Server_Test_Runner_processEdit_spec__1___closed__1_value;
 LEAN_EXPORT lean_object* l_panic___at___00Lean_Server_Test_Runner_processEdit_spec__1(lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l_panic___at___00Lean_Server_Test_Runner_processEdit_spec__1___boxed(lean_object*, lean_object*, lean_object*, lean_object*);
 static const lean_ctor_object l_String_Slice_splitToSubslice___at___00Lean_Server_Test_Runner_processEdit_spec__2___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 0}, .m_objs = {((lean_object*)(((size_t)(0) << 1) | 1)),((lean_object*)(((size_t)(0) << 1) | 1))}};
@@ -35283,17 +35283,6 @@ v___x_9256_ = l_instMonadEIO(lean_box(0));
 return v___x_9256_;
 }
 }
-static lean_object* _init_l_panic___at___00Lean_Server_Test_Runner_processEdit_spec__1___closed__1(void){
-_start:
-{
-lean_object* v___x_9257_; lean_object* v___x_9258_; 
-v___x_9257_ = ((lean_object*)(l_Std_Internal_Parsec_manyCharsCore___at___00Lean_Server_Test_Runner_word_spec__0___closed__1));
-v___x_9258_ = lean_alloc_ctor(0, 2, 0);
-lean_ctor_set(v___x_9258_, 0, v___x_9257_);
-lean_ctor_set(v___x_9258_, 1, v___x_9257_);
-return v___x_9258_;
-}
-}
 LEAN_EXPORT lean_object* l_panic___at___00Lean_Server_Test_Runner_processEdit_spec__1(lean_object* v_msg_9259_, lean_object* v___y_9260_, lean_object* v___y_9261_){
 _start:
 {
@@ -35338,7 +35327,7 @@ lean_closure_set(v___x_9273_, 2, v___x_9264_);
 v___x_9274_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_9274_, 0, v___x_9272_);
 lean_ctor_set(v___x_9274_, 1, v___x_9273_);
-v___x_9275_ = lean_obj_once(&l_panic___at___00Lean_Server_Test_Runner_processEdit_spec__1___closed__1, &l_panic___at___00Lean_Server_Test_Runner_processEdit_spec__1___closed__1_once, _init_l_panic___at___00Lean_Server_Test_Runner_processEdit_spec__1___closed__1);
+v___x_9275_ = ((lean_object*)(l_panic___at___00Lean_Server_Test_Runner_processEdit_spec__1___closed__1));
 v___x_9276_ = l_instInhabitedOfMonad___redArg(v___x_9274_, v___x_9275_);
 v___x_11149__overap_9277_ = lean_panic_fn_borrowed(v___x_9276_, v_msg_9259_);
 lean_dec(v___x_9276_);

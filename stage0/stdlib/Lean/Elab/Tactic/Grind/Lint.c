@@ -1896,15 +1896,11 @@ lean_inc_ref(v_env_422_);
 lean_dec(v___x_421_);
 v___x_423_ = l___private_Lean_Elab_Tactic_Grind_Lint_0__Lean_Elab_Tactic_Grind_skipExt;
 v_toEnvExtension_424_ = lean_ctor_get(v___x_423_, 0);
-lean_inc_ref(v_toEnvExtension_424_);
 v_asyncMode_425_ = lean_ctor_get(v_toEnvExtension_424_, 2);
-lean_inc(v_asyncMode_425_);
-lean_dec_ref(v_toEnvExtension_424_);
 v___x_426_ = lean_box(0);
 v___x_471_ = lean_box(1);
 v___x_472_ = lean_box(0);
 v___x_473_ = l_Lean_SimplePersistentEnvExtension_getState___redArg(v___x_471_, v___x_423_, v_env_422_, v_asyncMode_425_, v___x_472_);
-lean_dec(v_asyncMode_425_);
 v___x_474_ = l_Lean_NameSet_contains(v___x_473_, v_a_419_);
 lean_dec(v___x_473_);
 if (v___x_474_ == 0)
@@ -1945,7 +1941,6 @@ v___jp_427_:
 lean_object* v___x_430_; lean_object* v_toEnvExtension_431_; lean_object* v_env_432_; lean_object* v_nextMacroScope_433_; lean_object* v_ngen_434_; lean_object* v_auxDeclNGen_435_; lean_object* v_traceState_436_; lean_object* v_messages_437_; lean_object* v_infoState_438_; lean_object* v_snapshotTasks_439_; lean_object* v___x_441_; uint8_t v_isShared_442_; uint8_t v_isSharedCheck_469_; 
 v___x_430_ = lean_st_ref_take(v___y_429_);
 v_toEnvExtension_431_ = lean_ctor_get(v___x_423_, 0);
-lean_inc_ref(v_toEnvExtension_431_);
 v_env_432_ = lean_ctor_get(v___x_430_, 0);
 v_nextMacroScope_433_ = lean_ctor_get(v___x_430_, 1);
 v_ngen_434_ = lean_ctor_get(v___x_430_, 2);
@@ -1983,11 +1978,8 @@ v_resetjp_440_:
 {
 lean_object* v_asyncMode_443_; lean_object* v___x_444_; lean_object* v___x_445_; lean_object* v___x_446_; lean_object* v___x_448_; 
 v_asyncMode_443_ = lean_ctor_get(v_toEnvExtension_431_, 2);
-lean_inc(v_asyncMode_443_);
-lean_dec_ref(v_toEnvExtension_431_);
 v___x_444_ = lean_box(0);
 v___x_445_ = l_Lean_PersistentEnvExtension_addEntry___redArg(v___x_423_, v_env_432_, v_a_419_, v_asyncMode_443_, v___x_444_);
-lean_dec(v_asyncMode_443_);
 v___x_446_ = lean_obj_once(&l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00__private_Lean_Elab_Tactic_Grind_Lint_0__Lean_Elab_Tactic_Grind_elabGrindLintSkip_spec__1___closed__2, &l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00__private_Lean_Elab_Tactic_Grind_Lint_0__Lean_Elab_Tactic_Grind_elabGrindLintSkip_spec__1___closed__2_once, _init_l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00__private_Lean_Elab_Tactic_Grind_Lint_0__Lean_Elab_Tactic_Grind_elabGrindLintSkip_spec__1___closed__2);
 if (v_isShared_442_ == 0)
 {
@@ -2178,17 +2170,13 @@ lean_inc_ref(v_env_520_);
 lean_dec(v___x_519_);
 v___x_521_ = l___private_Lean_Elab_Tactic_Grind_Lint_0__Lean_Elab_Tactic_Grind_skipSuffixExt;
 v_toEnvExtension_522_ = lean_ctor_get(v___x_521_, 0);
-lean_inc_ref(v_toEnvExtension_522_);
 v_asyncMode_523_ = lean_ctor_get(v_toEnvExtension_522_, 2);
-lean_inc(v_asyncMode_523_);
-lean_dec_ref(v_toEnvExtension_522_);
 v___x_524_ = lean_box(0);
 v_a_525_ = lean_array_uget_borrowed(v_as_506_, v_i_508_);
 v___x_526_ = l_Lean_TSyntax_getId(v_a_525_);
 v___x_571_ = lean_box(1);
 v___x_572_ = lean_box(0);
 v___x_573_ = l_Lean_SimplePersistentEnvExtension_getState___redArg(v___x_571_, v___x_521_, v_env_520_, v_asyncMode_523_, v___x_572_);
-lean_dec(v_asyncMode_523_);
 v___x_574_ = l_Lean_NameSet_contains(v___x_573_, v___x_526_);
 lean_dec(v___x_573_);
 if (v___x_574_ == 0)
@@ -2229,7 +2217,6 @@ v___jp_527_:
 lean_object* v___x_530_; lean_object* v_toEnvExtension_531_; lean_object* v_env_532_; lean_object* v_nextMacroScope_533_; lean_object* v_ngen_534_; lean_object* v_auxDeclNGen_535_; lean_object* v_traceState_536_; lean_object* v_messages_537_; lean_object* v_infoState_538_; lean_object* v_snapshotTasks_539_; lean_object* v___x_541_; uint8_t v_isShared_542_; uint8_t v_isSharedCheck_569_; 
 v___x_530_ = lean_st_ref_take(v___y_529_);
 v_toEnvExtension_531_ = lean_ctor_get(v___x_521_, 0);
-lean_inc_ref(v_toEnvExtension_531_);
 v_env_532_ = lean_ctor_get(v___x_530_, 0);
 v_nextMacroScope_533_ = lean_ctor_get(v___x_530_, 1);
 v_ngen_534_ = lean_ctor_get(v___x_530_, 2);
@@ -2267,11 +2254,8 @@ v_resetjp_540_:
 {
 lean_object* v_asyncMode_543_; lean_object* v___x_544_; lean_object* v___x_545_; lean_object* v___x_546_; lean_object* v___x_548_; 
 v_asyncMode_543_ = lean_ctor_get(v_toEnvExtension_531_, 2);
-lean_inc(v_asyncMode_543_);
-lean_dec_ref(v_toEnvExtension_531_);
 v___x_544_ = lean_box(0);
 v___x_545_ = l_Lean_PersistentEnvExtension_addEntry___redArg(v___x_521_, v_env_532_, v___x_526_, v_asyncMode_543_, v___x_544_);
-lean_dec(v_asyncMode_543_);
 v___x_546_ = lean_obj_once(&l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00__private_Lean_Elab_Tactic_Grind_Lint_0__Lean_Elab_Tactic_Grind_elabGrindLintSkip_spec__1___closed__2, &l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00__private_Lean_Elab_Tactic_Grind_Lint_0__Lean_Elab_Tactic_Grind_elabGrindLintSkip_spec__1___closed__2_once, _init_l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00__private_Lean_Elab_Tactic_Grind_Lint_0__Lean_Elab_Tactic_Grind_elabGrindLintSkip_spec__1___closed__2);
 if (v_isShared_542_ == 0)
 {
@@ -2751,15 +2735,11 @@ lean_inc_ref(v_env_795_);
 lean_dec(v___x_794_);
 v___x_796_ = l___private_Lean_Elab_Tactic_Grind_Lint_0__Lean_Elab_Tactic_Grind_muteExt;
 v_toEnvExtension_797_ = lean_ctor_get(v___x_796_, 0);
-lean_inc_ref(v_toEnvExtension_797_);
 v_asyncMode_798_ = lean_ctor_get(v_toEnvExtension_797_, 2);
-lean_inc(v_asyncMode_798_);
-lean_dec_ref(v_toEnvExtension_797_);
 v___x_799_ = lean_box(0);
 v___x_844_ = lean_box(1);
 v___x_845_ = lean_box(0);
 v___x_846_ = l_Lean_SimplePersistentEnvExtension_getState___redArg(v___x_844_, v___x_796_, v_env_795_, v_asyncMode_798_, v___x_845_);
-lean_dec(v_asyncMode_798_);
 v___x_847_ = l_Lean_NameSet_contains(v___x_846_, v_a_792_);
 lean_dec(v___x_846_);
 if (v___x_847_ == 0)
@@ -2800,7 +2780,6 @@ v___jp_800_:
 lean_object* v___x_803_; lean_object* v_toEnvExtension_804_; lean_object* v_env_805_; lean_object* v_nextMacroScope_806_; lean_object* v_ngen_807_; lean_object* v_auxDeclNGen_808_; lean_object* v_traceState_809_; lean_object* v_messages_810_; lean_object* v_infoState_811_; lean_object* v_snapshotTasks_812_; lean_object* v___x_814_; uint8_t v_isShared_815_; uint8_t v_isSharedCheck_842_; 
 v___x_803_ = lean_st_ref_take(v___y_802_);
 v_toEnvExtension_804_ = lean_ctor_get(v___x_796_, 0);
-lean_inc_ref(v_toEnvExtension_804_);
 v_env_805_ = lean_ctor_get(v___x_803_, 0);
 v_nextMacroScope_806_ = lean_ctor_get(v___x_803_, 1);
 v_ngen_807_ = lean_ctor_get(v___x_803_, 2);
@@ -2838,11 +2817,8 @@ v_resetjp_813_:
 {
 lean_object* v_asyncMode_816_; lean_object* v___x_817_; lean_object* v___x_818_; lean_object* v___x_819_; lean_object* v___x_821_; 
 v_asyncMode_816_ = lean_ctor_get(v_toEnvExtension_804_, 2);
-lean_inc(v_asyncMode_816_);
-lean_dec_ref(v_toEnvExtension_804_);
 v___x_817_ = lean_box(0);
 v___x_818_ = l_Lean_PersistentEnvExtension_addEntry___redArg(v___x_796_, v_env_805_, v_a_792_, v_asyncMode_816_, v___x_817_);
-lean_dec(v_asyncMode_816_);
 v___x_819_ = lean_obj_once(&l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00__private_Lean_Elab_Tactic_Grind_Lint_0__Lean_Elab_Tactic_Grind_elabGrindLintSkip_spec__1___closed__2, &l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00__private_Lean_Elab_Tactic_Grind_Lint_0__Lean_Elab_Tactic_Grind_elabGrindLintSkip_spec__1___closed__2_once, _init_l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00__private_Lean_Elab_Tactic_Grind_Lint_0__Lean_Elab_Tactic_Grind_elabGrindLintSkip_spec__1___closed__2);
 if (v_isShared_815_ == 0)
 {
@@ -3377,14 +3353,10 @@ lean_inc_ref(v_env_1057_);
 lean_dec(v___x_1032_);
 v___x_1058_ = l___private_Lean_Elab_Tactic_Grind_Lint_0__Lean_Elab_Tactic_Grind_muteExt;
 v_toEnvExtension_1059_ = lean_ctor_get(v___x_1058_, 0);
-lean_inc_ref(v_toEnvExtension_1059_);
 v_asyncMode_1060_ = lean_ctor_get(v_toEnvExtension_1059_, 2);
-lean_inc(v_asyncMode_1060_);
-lean_dec_ref(v_toEnvExtension_1059_);
 v___x_1061_ = lean_box(1);
 v___x_1062_ = lean_box(0);
 v___x_1063_ = l_Lean_SimplePersistentEnvExtension_getState___redArg(v___x_1061_, v___x_1058_, v_env_1057_, v_asyncMode_1060_, v___x_1062_);
-lean_dec(v_asyncMode_1060_);
 lean_inc_ref(v_ematch_1056_);
 v___x_1064_ = l_Std_DTreeMap_Internal_Impl_forInStep___at___00__private_Lean_Elab_Tactic_Grind_Lint_0__Lean_Elab_Tactic_Grind_mkParams_spec__0(v_ematch_1056_, v___x_1063_, v_a_1022_, v_a_1023_, v_a_1024_, v_a_1025_);
 if (lean_obj_tag(v___x_1064_) == 0)
@@ -8977,10 +8949,7 @@ lean_inc_ref(v_env_3256_);
 lean_dec(v___x_3254_);
 v___x_3257_ = l___private_Lean_Elab_Tactic_Grind_Lint_0__Lean_Elab_Tactic_Grind_skipExt;
 v_toEnvExtension_3258_ = lean_ctor_get(v___x_3257_, 0);
-lean_inc_ref(v_toEnvExtension_3258_);
 v_asyncMode_3259_ = lean_ctor_get(v_toEnvExtension_3258_, 2);
-lean_inc(v_asyncMode_3259_);
-lean_dec_ref(v_toEnvExtension_3258_);
 v___x_3260_ = l_Lean_Meta_Grind_grindExt;
 v___x_3261_ = l_Lean_Meta_Grind_Extension_getEMatchTheorems___redArg(v___x_3260_, v_a_3252_);
 if (lean_obj_tag(v___x_3261_) == 0)
@@ -9011,19 +8980,14 @@ lean_inc_ref(v_env_3267_);
 lean_dec(v___x_3255_);
 v___x_3268_ = l___private_Lean_Elab_Tactic_Grind_Lint_0__Lean_Elab_Tactic_Grind_skipSuffixExt;
 v_toEnvExtension_3269_ = lean_ctor_get(v___x_3268_, 0);
-lean_inc_ref(v_toEnvExtension_3269_);
 v_asyncMode_3270_ = lean_ctor_get(v_toEnvExtension_3269_, 2);
-lean_inc(v_asyncMode_3270_);
-lean_dec_ref(v_toEnvExtension_3269_);
 v_env_3271_ = lean_ctor_get(v___x_3266_, 0);
 lean_inc_ref(v_env_3271_);
 lean_dec(v___x_3266_);
 v___x_3272_ = lean_box(1);
 v___x_3273_ = lean_box(0);
 v___x_3274_ = l_Lean_SimplePersistentEnvExtension_getState___redArg(v___x_3272_, v___x_3257_, v_env_3256_, v_asyncMode_3259_, v___x_3273_);
-lean_dec(v_asyncMode_3259_);
 v___x_3275_ = l_Lean_SimplePersistentEnvExtension_getState___redArg(v___x_3272_, v___x_3268_, v_env_3267_, v_asyncMode_3270_, v___x_3273_);
-lean_dec(v_asyncMode_3270_);
 v___x_3276_ = l_Lean_Meta_Grind_Theorems_getOrigins___redArg(v_a_3262_);
 lean_dec(v_a_3262_);
 v___x_3277_ = ((lean_object*)(l___private_Lean_Elab_Tactic_Grind_Lint_0__Lean_Elab_Tactic_Grind_getTheorems___redArg___closed__0));
@@ -9053,7 +9017,6 @@ return v___x_3280_;
 else
 {
 lean_object* v_a_3283_; lean_object* v___x_3285_; uint8_t v_isShared_3286_; uint8_t v_isSharedCheck_3290_; 
-lean_dec(v_asyncMode_3259_);
 lean_dec_ref(v_env_3256_);
 lean_dec(v___x_3255_);
 v_a_3283_ = lean_ctor_get(v___x_3261_, 0);

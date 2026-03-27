@@ -35,7 +35,7 @@ lean_object* l_Lean_Syntax_getId(lean_object*);
 lean_object* lean_erase_macro_scopes(lean_object*);
 uint8_t lean_nat_dec_eq(lean_object*, lean_object*);
 lean_object* lean_nat_sub(lean_object*, lean_object*);
-lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
+lean_object* lean_array_get(lean_object*, lean_object*, lean_object*);
 uint8_t l_Lean_Syntax_isOfKind(lean_object*, lean_object*);
 lean_object* lean_array_pop(lean_object*);
 lean_object* l_Lean_MessageData_ofSyntax(lean_object*);
@@ -111,8 +111,8 @@ LEAN_EXPORT lean_object* l___private_Init_Data_Array_Basic_0__Array_foldlMUnsafe
 LEAN_EXPORT lean_object* l___private_Init_Data_Array_Basic_0__Array_foldlMUnsafe_fold___at___00Lean_Elab_Term_expandArgs_spec__0___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 static const lean_array_object l_Lean_Elab_Term_expandArgs___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_array_object) + sizeof(void*)*0, .m_other = 0, .m_tag = 246}, .m_size = 0, .m_capacity = 0, .m_data = {}};
 static const lean_object* l_Lean_Elab_Term_expandArgs___closed__0 = (const lean_object*)&l_Lean_Elab_Term_expandArgs___closed__0_value;
-static lean_once_cell_t l_Lean_Elab_Term_expandArgs___closed__1_once = LEAN_ONCE_CELL_INITIALIZER;
-static lean_object* l_Lean_Elab_Term_expandArgs___closed__1;
+static const lean_ctor_object l_Lean_Elab_Term_expandArgs___closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 0}, .m_objs = {((lean_object*)&l_Lean_Elab_Term_expandArgs___closed__0_value),((lean_object*)&l_Lean_Elab_Term_expandArgs___closed__0_value)}};
+static const lean_object* l_Lean_Elab_Term_expandArgs___closed__1 = (const lean_object*)&l_Lean_Elab_Term_expandArgs___closed__1_value;
 LEAN_EXPORT lean_object* l_Lean_Elab_Term_expandArgs(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l_Lean_Elab_Term_expandArgs___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l_Lean_Elab_Term_expandApp(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
@@ -855,17 +855,6 @@ lean_dec_ref(v_as_314_);
 return v_res_325_;
 }
 }
-static lean_object* _init_l_Lean_Elab_Term_expandArgs___closed__1(void){
-_start:
-{
-lean_object* v___x_328_; lean_object* v___x_329_; 
-v___x_328_ = ((lean_object*)(l_Lean_Elab_Term_expandArgs___closed__0));
-v___x_329_ = lean_alloc_ctor(0, 2, 0);
-lean_ctor_set(v___x_329_, 0, v___x_328_);
-lean_ctor_set(v___x_329_, 1, v___x_328_);
-return v___x_329_;
-}
-}
 LEAN_EXPORT lean_object* l_Lean_Elab_Term_expandArgs(lean_object* v_args_330_, lean_object* v_a_331_, lean_object* v_a_332_, lean_object* v_a_333_, lean_object* v_a_334_){
 _start:
 {
@@ -879,10 +868,9 @@ lean_object* v___x_376_; lean_object* v___x_377_; lean_object* v___x_378_; lean_
 v___x_376_ = lean_box(0);
 v___x_377_ = lean_unsigned_to_nat(1u);
 v___x_378_ = lean_nat_sub(v___x_373_, v___x_377_);
-v___x_379_ = lean_array_get_borrowed(v___x_376_, v_args_330_, v___x_378_);
+v___x_379_ = lean_array_get(v___x_376_, v_args_330_, v___x_378_);
 lean_dec(v___x_378_);
 v___x_380_ = ((lean_object*)(l___private_Init_Data_Array_Basic_0__Array_foldlMUnsafe_fold___at___00Lean_Elab_Term_expandArgs_spec__0___closed__6));
-lean_inc(v___x_379_);
 v___x_381_ = l_Lean_Syntax_isOfKind(v___x_379_, v___x_380_);
 if (v___x_381_ == 0)
 {
@@ -999,7 +987,7 @@ goto v___jp_336_;
 else
 {
 lean_object* v___x_365_; uint8_t v___x_366_; 
-v___x_365_ = lean_obj_once(&l_Lean_Elab_Term_expandArgs___closed__1, &l_Lean_Elab_Term_expandArgs___closed__1_once, _init_l_Lean_Elab_Term_expandArgs___closed__1);
+v___x_365_ = ((lean_object*)(l_Lean_Elab_Term_expandArgs___closed__1));
 v___x_366_ = lean_nat_dec_le(v___x_363_, v___x_363_);
 if (v___x_366_ == 0)
 {

@@ -59,7 +59,7 @@ lean_object* l_Lean_Meta_getPropHyps(lean_object*, lean_object*, lean_object*, l
 uint8_t lean_usize_dec_eq(size_t, size_t);
 lean_object* lean_mk_empty_array_with_capacity(lean_object*);
 lean_object* lean_array_fget_borrowed(lean_object*, lean_object*);
-lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
+lean_object* lean_array_get(lean_object*, lean_object*, lean_object*);
 lean_object* lean_st_mk_ref(lean_object*);
 uint8_t lean_nat_dec_eq(lean_object*, lean_object*);
 size_t lean_array_size(lean_object*);
@@ -2575,13 +2575,12 @@ lean_inc_ref(v_rewriteCache_913_);
 lean_dec(v___x_910_);
 v___x_914_ = lean_box(0);
 v___x_915_ = lean_box(0);
-v___x_916_ = lean_array_get_borrowed(v___x_915_, v_fst_875_, v_a_876_);
+v___x_916_ = lean_array_get(v___x_915_, v_fst_875_, v_a_876_);
 v___x_917_ = l_Std_DHashMap_Internal_Raw_u2080_contains___at___00Lean_Elab_Tactic_BVDecide_Frontend_Normalize_andFlatteningPass_spec__1___redArg(v_rewriteCache_913_, v_original_912_);
 lean_dec_ref(v_rewriteCache_913_);
 if (v___x_917_ == 0)
 {
 lean_object* v___x_918_; 
-lean_inc(v___x_916_);
 v___x_918_ = l_WellFounded_opaqueFix_u2083___at___00Lean_Elab_Tactic_BVDecide_Frontend_Normalize_andFlatteningPass_spec__3___redArg___lam__0(v_original_912_, v___x_914_, v___x_916_, v___x_914_, v___y_878_, v___y_879_, v___y_880_, v___y_881_, v___y_882_, v___y_883_);
 v___y_886_ = v___x_918_;
 goto v___jp_885_;
@@ -2635,7 +2634,6 @@ v_reusejp_927_:
 {
 lean_object* v___x_929_; lean_object* v___x_930_; 
 v___x_929_ = lean_st_ref_set(v___y_879_, v___x_928_);
-lean_inc(v___x_916_);
 v___x_930_ = l_WellFounded_opaqueFix_u2083___at___00Lean_Elab_Tactic_BVDecide_Frontend_Normalize_andFlatteningPass_spec__3___redArg___lam__0(v_original_912_, v___x_914_, v___x_916_, v___x_914_, v___y_878_, v___y_879_, v___y_880_, v___y_881_, v___y_882_, v___y_883_);
 v___y_886_ = v___x_930_;
 goto v___jp_885_;

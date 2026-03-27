@@ -5067,9 +5067,7 @@ lean_object* v___y_1883_; lean_object* v___y_1884_; lean_object* v___y_1885_; le
 v___x_1936_ = lean_st_ref_get(v_a_1880_);
 v___x_1937_ = l_Lean_versoDocStringExt;
 v_toEnvExtension_1938_ = lean_ctor_get(v___x_1937_, 0);
-lean_inc_ref(v_toEnvExtension_1938_);
 v_asyncMode_1939_ = lean_ctor_get(v_toEnvExtension_1938_, 2);
-lean_inc(v_asyncMode_1939_);
 v___x_1940_ = l_Lean_getBuiltinVersoDocStrings();
 if (lean_obj_tag(v___x_1940_) == 0)
 {
@@ -5091,8 +5089,6 @@ lean_dec(v___x_1936_);
 v___x_1946_ = lean_obj_once(&l_Lean_Doc_checkPostponed___closed__8, &l_Lean_Doc_checkPostponed___closed__8_once, _init_l_Lean_Doc_checkPostponed___closed__8);
 v___x_1947_ = lean_box(0);
 v___x_1948_ = l___private_Lean_Environment_0__Lean_EnvExtension_getStateUnsafe___redArg(v___x_1946_, v_toEnvExtension_1938_, v_env_1945_, v_asyncMode_1939_, v___x_1947_);
-lean_dec(v_asyncMode_1939_);
-lean_dec_ref(v_toEnvExtension_1938_);
 v_a_1976_ = lean_ctor_get(v_a_1944_, 0);
 lean_inc(v_a_1976_);
 lean_dec(v_a_1944_);
@@ -5218,8 +5214,6 @@ return v___x_1973_;
 else
 {
 lean_object* v_a_1977_; lean_object* v___x_1979_; uint8_t v_isShared_1980_; uint8_t v_isSharedCheck_1984_; 
-lean_dec(v_asyncMode_1939_);
-lean_dec_ref(v_toEnvExtension_1938_);
 lean_dec(v___x_1936_);
 v_a_1977_ = lean_ctor_get(v___x_1943_, 0);
 v_isSharedCheck_1984_ = !lean_is_exclusive(v___x_1943_);
@@ -5263,8 +5257,6 @@ return v___x_1982_;
 else
 {
 lean_object* v_a_1985_; lean_object* v___x_1987_; uint8_t v_isShared_1988_; uint8_t v_isSharedCheck_1997_; 
-lean_dec(v_asyncMode_1939_);
-lean_dec_ref(v_toEnvExtension_1938_);
 lean_dec(v___x_1936_);
 v_a_1985_ = lean_ctor_get(v___x_1940_, 0);
 v_isSharedCheck_1997_ = !lean_is_exclusive(v___x_1940_);

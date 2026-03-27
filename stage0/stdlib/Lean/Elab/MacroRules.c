@@ -1130,12 +1130,13 @@ v___x_242_ = l_Lean_Elab_Command_checkRuleKind(v___x_241_, v_k_233_);
 lean_dec(v___x_241_);
 if (v___x_242_ == 0)
 {
-lean_object* v___x_243_; size_t v___x_244_; size_t v___x_245_; lean_object* v___x_246_; 
+lean_object* v___x_243_; size_t v___x_244_; size_t v___x_245_; 
 v___x_243_ = ((lean_object*)(l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00Lean_Elab_Command_elabMacroRulesAux_spec__2___closed__0));
 v___x_244_ = ((size_t)1ULL);
 v___x_245_ = lean_usize_add(v_i_236_, v___x_244_);
-v___x_246_ = l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00Lean_Elab_Command_elabMacroRulesAux_spec__2(v_k_233_, v_as_234_, v_sz_235_, v___x_245_, v___x_243_);
-return v___x_246_;
+v_i_236_ = v___x_245_;
+v_b_237_ = v___x_243_;
+goto _start;
 }
 else
 {

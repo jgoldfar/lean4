@@ -5945,12 +5945,10 @@ lean_inc_ref(v_opts_1661_);
 lean_dec(v___x_1660_);
 v___x_1662_ = l_Lean_Linter_List_linter_indexVariables;
 v_name_1663_ = lean_ctor_get(v___x_1662_, 0);
-lean_inc(v_name_1663_);
 v_map_1664_ = lean_ctor_get(v_opts_1661_, 0);
 lean_inc(v_map_1664_);
 lean_dec_ref(v_opts_1661_);
 v___x_1665_ = l_Std_DTreeMap_Internal_Impl_Const_get_x3f___at___00Lean_NameMap_find_x3f_spec__0___redArg(v_map_1664_, v_name_1663_);
-lean_dec(v_name_1663_);
 lean_dec(v_map_1664_);
 if (lean_obj_tag(v___x_1665_) == 0)
 {
@@ -10843,12 +10841,10 @@ lean_inc_ref(v_opts_3207_);
 lean_dec(v___x_3206_);
 v___x_3208_ = l_Lean_Linter_List_linter_listVariables;
 v_name_3209_ = lean_ctor_get(v___x_3208_, 0);
-lean_inc(v_name_3209_);
 v_map_3210_ = lean_ctor_get(v_opts_3207_, 0);
 lean_inc(v_map_3210_);
 lean_dec_ref(v_opts_3207_);
 v___x_3211_ = l_Std_DTreeMap_Internal_Impl_Const_get_x3f___at___00Lean_NameMap_find_x3f_spec__0___redArg(v_map_3210_, v_name_3209_);
-lean_dec(v_name_3209_);
 lean_dec(v_map_3210_);
 if (lean_obj_tag(v___x_3211_) == 0)
 {

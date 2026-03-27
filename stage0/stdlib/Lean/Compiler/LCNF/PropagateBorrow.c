@@ -38,7 +38,6 @@ lean_object* lean_array_fset(lean_object*, lean_object*, lean_object*);
 lean_object* lean_st_ref_get(lean_object*);
 uint8_t lean_string_dec_eq(lean_object*, lean_object*);
 lean_object* lean_array_get(lean_object*, lean_object*, lean_object*);
-lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
 lean_object* l_mkPanicMessageWithDecl(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_instMonadEIO(lean_object*);
 lean_object* l_StateRefT_x27_instMonad___redArg(lean_object*);
@@ -2220,11 +2219,13 @@ lean_object* v___x_796_; lean_object* v___x_797_; lean_object* v___x_798_;
 lean_dec_ref(v_str_719_);
 v___x_796_ = lean_box(0);
 v___x_797_ = lean_unsigned_to_nat(1u);
-v___x_798_ = lean_array_get_borrowed(v___x_796_, v_args_709_, v___x_797_);
+v___x_798_ = lean_array_get(v___x_796_, v_args_709_, v___x_797_);
 if (lean_obj_tag(v___x_798_) == 1)
 {
 lean_object* v_fvarId_799_; lean_object* v___x_800_; lean_object* v___x_801_; lean_object* v_snd_803_; lean_object* v_values_805_; lean_object* v_values_806_; uint8_t v___x_807_; lean_object* v___x_808_; lean_object* v___x_809_; lean_object* v___x_810_; lean_object* v_old_811_; uint8_t v___x_812_; uint8_t v___x_813_; uint8_t v_new_814_; uint8_t v___x_815_; uint8_t v___x_816_; 
 v_fvarId_799_ = lean_ctor_get(v___x_798_, 0);
+lean_inc(v_fvarId_799_);
+lean_dec_ref(v___x_798_);
 v___x_800_ = lean_st_ref_get(v_a_628_);
 v___x_801_ = lean_st_ref_take(v_a_628_);
 v_values_805_ = lean_ctor_get(v___x_800_, 0);
@@ -2236,6 +2237,7 @@ v___x_807_ = 0;
 v___x_808_ = lean_box(v___x_807_);
 v___x_809_ = l_Std_DHashMap_Internal_Raw_u2080_Const_getD___at___00__private_Lean_Compiler_LCNF_PropagateBorrow_0__Lean_Compiler_LCNF_Decl_analyzePropagatedBorrows_collectLetValue_spec__0___redArg(v_values_805_, v_fvarId_799_, v___x_808_);
 lean_dec(v___x_808_);
+lean_dec(v_fvarId_799_);
 lean_dec_ref(v_values_805_);
 v___x_810_ = lean_box(v___x_807_);
 v_old_811_ = l_Std_DHashMap_Internal_Raw_u2080_Const_getD___at___00__private_Lean_Compiler_LCNF_PropagateBorrow_0__Lean_Compiler_LCNF_Decl_analyzePropagatedBorrows_collectLetValue_spec__0___redArg(v_values_806_, v_z_626_, v___x_810_);
@@ -2311,6 +2313,7 @@ goto v___jp_761_;
 }
 else
 {
+lean_dec(v___x_798_);
 v___y_762_ = v_a_628_;
 goto v___jp_761_;
 }

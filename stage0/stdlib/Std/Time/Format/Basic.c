@@ -81,7 +81,7 @@ lean_object* l_Std_Time_PlainDateTime_ofTimestampAssumingUTC(lean_object*);
 lean_object* l_Std_Time_PlainDateTime_toTimestampAssumingUTC(lean_object*);
 lean_object* lean_mk_thunk(lean_object*);
 lean_object* l___private_Init_Data_Array_Basic_0__Array_findFinIdx_x3f_loop(lean_object*, lean_object*, lean_object*, lean_object*);
-lean_object* lean_array_fget(lean_object*, lean_object*);
+lean_object* lean_array_fget_borrowed(lean_object*, lean_object*);
 lean_object* l_Std_Time_Month_Ordinal_days(uint8_t, lean_object*);
 uint8_t l_Std_Time_Day_instDecidableLeOrdinal___aux__1(lean_object*, lean_object*);
 lean_object* lean_nat_mod(lean_object*, lean_object*);
@@ -43199,7 +43199,8 @@ _start:
 lean_object* v___x_11534_; lean_object* v___x_11535_; lean_object* v___x_11536_; 
 v___x_11534_ = lean_obj_once(&l___private_Std_Time_Format_Basic_0__Std_Time_GenericFormat_DateBuilder_build___closed__2, &l___private_Std_Time_Format_Basic_0__Std_Time_GenericFormat_DateBuilder_build___closed__2_once, _init_l___private_Std_Time_Format_Basic_0__Std_Time_GenericFormat_DateBuilder_build___closed__2);
 v___x_11535_ = ((lean_object*)(l___private_Std_Time_Format_Basic_0__Std_Time_GenericFormat_DateBuilder_build___closed__0));
-v___x_11536_ = lean_array_fget(v___x_11535_, v___x_11534_);
+v___x_11536_ = lean_array_fget_borrowed(v___x_11535_, v___x_11534_);
+lean_inc(v___x_11536_);
 return v___x_11536_;
 }
 }
@@ -43825,12 +43826,12 @@ lean_dec_ref(v_ltt_11697_);
 v_val_11703_ = lean_ctor_get(v___x_11702_, 0);
 lean_inc(v_val_11703_);
 lean_dec_ref(v___x_11702_);
-v_next_11704_ = lean_array_fget(v___x_11699_, v_val_11703_);
+v_next_11704_ = lean_array_fget_borrowed(v___x_11699_, v_val_11703_);
 v_time_11705_ = lean_ctor_get(v_next_11704_, 0);
 v___x_11706_ = lean_unsigned_to_nat(1u);
 v___x_11707_ = lean_nat_sub(v_val_11703_, v___x_11706_);
 lean_dec(v_val_11703_);
-v_last_11708_ = lean_array_fget(v___x_11699_, v___x_11707_);
+v_last_11708_ = lean_array_fget_borrowed(v___x_11699_, v___x_11707_);
 lean_dec(v___x_11707_);
 v_localTimeType_11709_ = lean_ctor_get(v_last_11708_, 1);
 v_gmtOffset_11710_ = lean_ctor_get(v_localTimeType_11709_, 0);
@@ -43843,7 +43844,6 @@ lean_dec(v___x_11713_);
 lean_dec(v_second_11694_);
 if (v___x_11714_ == 0)
 {
-lean_dec(v_last_11708_);
 v___y_11643_ = v___x_11700_;
 v___y_11644_ = v___x_11698_;
 v___y_11645_ = v_tm_11693_;
@@ -43852,7 +43852,6 @@ goto v___jp_11642_;
 }
 else
 {
-lean_dec(v_next_11704_);
 v___y_11643_ = v___x_11700_;
 v___y_11644_ = v___x_11698_;
 v___y_11645_ = v_tm_11693_;

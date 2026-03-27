@@ -197,12 +197,8 @@ _start:
 lean_object* v___x_41_; lean_object* v_toEnvExtension_42_; lean_object* v_asyncMode_43_; uint8_t v___x_44_; 
 v___x_41_ = l___private_Lean_Compiler_MetaAttr_0__Lean_metaExt;
 v_toEnvExtension_42_ = lean_ctor_get(v___x_41_, 0);
-lean_inc_ref(v_toEnvExtension_42_);
 v_asyncMode_43_ = lean_ctor_get(v_toEnvExtension_42_, 2);
-lean_inc(v_asyncMode_43_);
-lean_dec_ref(v_toEnvExtension_42_);
 v___x_44_ = l_Lean_TagDeclarationExtension_isTagged(v___x_41_, v_env_39_, v_declName_40_, v_asyncMode_43_);
-lean_dec(v_asyncMode_43_);
 return v___x_44_;
 }
 }
@@ -590,14 +586,10 @@ if (lean_obj_tag(v___x_198_) == 0)
 lean_object* v___x_199_; lean_object* v_toEnvExtension_200_; lean_object* v_asyncMode_201_; lean_object* v___x_202_; lean_object* v___x_203_; lean_object* v___x_204_; uint8_t v___x_205_; 
 v___x_199_ = l___private_Lean_Compiler_MetaAttr_0__Lean_declMetaExt;
 v_toEnvExtension_200_ = lean_ctor_get(v___x_199_, 0);
-lean_inc_ref(v_toEnvExtension_200_);
 v_asyncMode_201_ = lean_ctor_get(v_toEnvExtension_200_, 2);
-lean_inc(v_asyncMode_201_);
-lean_dec_ref(v_toEnvExtension_200_);
 v___x_202_ = lean_box(1);
 v___x_203_ = lean_box(0);
 v___x_204_ = l_Lean_SimplePersistentEnvExtension_getState___redArg(v___x_202_, v___x_199_, v_env_190_, v_asyncMode_201_, v___x_203_);
-lean_dec(v_asyncMode_201_);
 v___x_205_ = l_Lean_NameSet_contains(v___x_204_, v___y_197_);
 lean_dec(v___x_204_);
 return v___x_205_;
@@ -688,13 +680,9 @@ if (v___x_244_ == 0)
 lean_object* v___x_245_; lean_object* v_toEnvExtension_246_; lean_object* v_asyncMode_247_; lean_object* v___x_248_; lean_object* v___x_249_; 
 v___x_245_ = l___private_Lean_Compiler_MetaAttr_0__Lean_declMetaExt;
 v_toEnvExtension_246_ = lean_ctor_get(v___x_245_, 0);
-lean_inc_ref(v_toEnvExtension_246_);
 v_asyncMode_247_ = lean_ctor_get(v_toEnvExtension_246_, 2);
-lean_inc(v_asyncMode_247_);
-lean_dec_ref(v_toEnvExtension_246_);
 v___x_248_ = lean_box(0);
 v___x_249_ = l_Lean_PersistentEnvExtension_addEntry___redArg(v___x_245_, v_env_242_, v_declName_243_, v_asyncMode_247_, v___x_248_);
-lean_dec(v_asyncMode_247_);
 return v___x_249_;
 }
 else

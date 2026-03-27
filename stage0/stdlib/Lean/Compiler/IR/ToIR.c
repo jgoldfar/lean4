@@ -1293,13 +1293,9 @@ v_resetjp_421_:
 lean_object* v___x_424_; lean_object* v_toEnvExtension_425_; lean_object* v_asyncMode_426_; lean_object* v___x_427_; lean_object* v___x_428_; lean_object* v___x_429_; lean_object* v___x_431_; 
 v___x_424_ = l_Lean_IR_declMapExt;
 v_toEnvExtension_425_ = lean_ctor_get(v___x_424_, 0);
-lean_inc_ref(v_toEnvExtension_425_);
 v_asyncMode_426_ = lean_ctor_get(v_toEnvExtension_425_, 2);
-lean_inc(v_asyncMode_426_);
-lean_dec_ref(v_toEnvExtension_425_);
 v___x_427_ = lean_box(0);
 v___x_428_ = l_Lean_PersistentEnvExtension_addEntry___redArg(v___x_424_, v_env_413_, v_d_409_, v_asyncMode_426_, v___x_427_);
-lean_dec(v_asyncMode_426_);
 v___x_429_ = lean_obj_once(&l_Lean_IR_ToIR_addDecl___redArg___closed__2, &l_Lean_IR_ToIR_addDecl___redArg___closed__2_once, _init_l_Lean_IR_ToIR_addDecl___redArg___closed__2);
 if (v_isShared_423_ == 0)
 {

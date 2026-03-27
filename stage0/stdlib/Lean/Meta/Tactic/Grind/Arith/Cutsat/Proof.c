@@ -13748,12 +13748,13 @@ v___x_4989_ = lean_box(0);
 v___x_4990_ = lean_expr_eqv(v_fst_4988_, v_e_4981_);
 if (v___x_4990_ == 0)
 {
-lean_object* v___x_4991_; size_t v___x_4992_; size_t v___x_4993_; lean_object* v___x_4994_; 
+lean_object* v___x_4991_; size_t v___x_4992_; size_t v___x_4993_; 
 v___x_4991_ = ((lean_object*)(l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00__private_Lean_Meta_Tactic_Grind_Arith_Cutsat_Proof_0__Lean_Meta_Grind_Arith_Cutsat_mkMulEqProof_goVar_spec__1___closed__0));
 v___x_4992_ = ((size_t)1ULL);
 v___x_4993_ = lean_usize_add(v_i_4984_, v___x_4992_);
-v___x_4994_ = l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00__private_Lean_Meta_Tactic_Grind_Arith_Cutsat_Proof_0__Lean_Meta_Grind_Arith_Cutsat_mkMulEqProof_goVar_spec__1(v_e_4981_, v_as_4982_, v_sz_4983_, v___x_4993_, v___x_4991_);
-return v___x_4994_;
+v_i_4984_ = v___x_4993_;
+v_b_4985_ = v___x_4991_;
+goto _start;
 }
 else
 {

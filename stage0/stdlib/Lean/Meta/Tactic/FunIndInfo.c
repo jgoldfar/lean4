@@ -114,10 +114,10 @@ LEAN_EXPORT uint8_t l_Lean_Meta_instInhabitedFunIndParamKind_default;
 LEAN_EXPORT uint8_t l_Lean_Meta_instInhabitedFunIndParamKind;
 static const lean_array_object l_Lean_Meta_instInhabitedFunIndInfo_default___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_array_object) + sizeof(void*)*0, .m_other = 0, .m_tag = 246}, .m_size = 0, .m_capacity = 0, .m_data = {}};
 static const lean_object* l_Lean_Meta_instInhabitedFunIndInfo_default___closed__0 = (const lean_object*)&l_Lean_Meta_instInhabitedFunIndInfo_default___closed__0_value;
-static lean_once_cell_t l_Lean_Meta_instInhabitedFunIndInfo_default___closed__1_once = LEAN_ONCE_CELL_INITIALIZER;
-static lean_object* l_Lean_Meta_instInhabitedFunIndInfo_default___closed__1;
-LEAN_EXPORT lean_object* l_Lean_Meta_instInhabitedFunIndInfo_default;
-LEAN_EXPORT lean_object* l_Lean_Meta_instInhabitedFunIndInfo;
+static const lean_ctor_object l_Lean_Meta_instInhabitedFunIndInfo_default___closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*4 + 0, .m_other = 4, .m_tag = 0}, .m_objs = {((lean_object*)(((size_t)(0) << 1) | 1)),((lean_object*)(((size_t)(0) << 1) | 1)),((lean_object*)&l_Lean_Meta_instInhabitedFunIndInfo_default___closed__0_value),((lean_object*)&l_Lean_Meta_instInhabitedFunIndInfo_default___closed__0_value)}};
+static const lean_object* l_Lean_Meta_instInhabitedFunIndInfo_default___closed__1 = (const lean_object*)&l_Lean_Meta_instInhabitedFunIndInfo_default___closed__1_value;
+LEAN_EXPORT const lean_object* l_Lean_Meta_instInhabitedFunIndInfo_default = (const lean_object*)&l_Lean_Meta_instInhabitedFunIndInfo_default___closed__1_value;
+LEAN_EXPORT const lean_object* l_Lean_Meta_instInhabitedFunIndInfo = (const lean_object*)&l_Lean_Meta_instInhabitedFunIndInfo_default___closed__1_value;
 LEAN_EXPORT lean_object* l_Nat_cast___at___00Lean_Meta_instReprFunIndInfo_repr_spec__2(lean_object*);
 LEAN_EXPORT lean_object* l_List_foldl___at___00List_foldl___at___00Std_Format_joinSep___at___00Array_repr___at___00Lean_Meta_instReprFunIndInfo_repr_spec__0_spec__0_spec__2_spec__4(lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l_List_foldl___at___00Std_Format_joinSep___at___00Array_repr___at___00Lean_Meta_instReprFunIndInfo_repr_spec__0_spec__0_spec__2(lean_object*, lean_object*, lean_object*);
@@ -730,36 +730,6 @@ _start:
 uint8_t v___x_135_; 
 v___x_135_ = 0;
 return v___x_135_;
-}
-}
-static lean_object* _init_l_Lean_Meta_instInhabitedFunIndInfo_default___closed__1(void){
-_start:
-{
-lean_object* v___x_138_; lean_object* v___x_139_; lean_object* v___x_140_; 
-v___x_138_ = ((lean_object*)(l_Lean_Meta_instInhabitedFunIndInfo_default___closed__0));
-v___x_139_ = lean_box(0);
-v___x_140_ = lean_alloc_ctor(0, 4, 0);
-lean_ctor_set(v___x_140_, 0, v___x_139_);
-lean_ctor_set(v___x_140_, 1, v___x_139_);
-lean_ctor_set(v___x_140_, 2, v___x_138_);
-lean_ctor_set(v___x_140_, 3, v___x_138_);
-return v___x_140_;
-}
-}
-static lean_object* _init_l_Lean_Meta_instInhabitedFunIndInfo_default(void){
-_start:
-{
-lean_object* v___x_141_; 
-v___x_141_ = lean_obj_once(&l_Lean_Meta_instInhabitedFunIndInfo_default___closed__1, &l_Lean_Meta_instInhabitedFunIndInfo_default___closed__1_once, _init_l_Lean_Meta_instInhabitedFunIndInfo_default___closed__1);
-return v___x_141_;
-}
-}
-static lean_object* _init_l_Lean_Meta_instInhabitedFunIndInfo(void){
-_start:
-{
-lean_object* v___x_142_; 
-v___x_142_ = l_Lean_Meta_instInhabitedFunIndInfo_default;
-return v___x_142_;
 }
 }
 LEAN_EXPORT lean_object* l_Nat_cast___at___00Lean_Meta_instReprFunIndInfo_repr_spec__2(lean_object* v_a_143_){
@@ -2851,7 +2821,7 @@ lean_inc_ref(v_env_960_);
 lean_dec(v___x_959_);
 v_funIndName_961_ = lean_ctor_get(v_funIndInfo_955_, 1);
 lean_inc(v_funIndName_961_);
-v___x_962_ = l_Lean_Meta_instInhabitedFunIndInfo_default;
+v___x_962_ = ((lean_object*)(l_Lean_Meta_instInhabitedFunIndInfo_default));
 v___x_963_ = l_Lean_Meta_funIndInfoExt;
 lean_inc(v_funIndName_961_);
 v___x_964_ = l_Lean_MapDeclarationExtension_contains___redArg(v___x_962_, v___x_963_, v_env_960_, v_funIndName_961_);
@@ -2962,14 +2932,10 @@ lean_inc_ref(v_env_998_);
 lean_dec(v___x_997_);
 v___x_999_ = l_Lean_Meta_funIndInfoExt;
 v_toEnvExtension_1000_ = lean_ctor_get(v___x_999_, 0);
-lean_inc_ref(v_toEnvExtension_1000_);
 v_asyncMode_1001_ = lean_ctor_get(v_toEnvExtension_1000_, 2);
-lean_inc(v_asyncMode_1001_);
-lean_dec_ref(v_toEnvExtension_1000_);
-v___x_1002_ = l_Lean_Meta_instInhabitedFunIndInfo_default;
+v___x_1002_ = ((lean_object*)(l_Lean_Meta_instInhabitedFunIndInfo_default));
 v___x_1003_ = 0;
 v___x_1004_ = l_Lean_MapDeclarationExtension_find_x3f___redArg(v___x_1002_, v___x_999_, v_env_998_, v_inductName_994_, v_asyncMode_1001_, v___x_1003_);
-lean_dec(v_asyncMode_1001_);
 v___x_1005_ = lean_alloc_ctor(0, 1, 0);
 lean_ctor_set(v___x_1005_, 0, v___x_1004_);
 return v___x_1005_;
@@ -3134,10 +3100,6 @@ if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 l_Lean_Meta_instInhabitedFunIndParamKind_default = _init_l_Lean_Meta_instInhabitedFunIndParamKind_default();
 l_Lean_Meta_instInhabitedFunIndParamKind = _init_l_Lean_Meta_instInhabitedFunIndParamKind();
-l_Lean_Meta_instInhabitedFunIndInfo_default = _init_l_Lean_Meta_instInhabitedFunIndInfo_default();
-lean_mark_persistent(l_Lean_Meta_instInhabitedFunIndInfo_default);
-l_Lean_Meta_instInhabitedFunIndInfo = _init_l_Lean_Meta_instInhabitedFunIndInfo();
-lean_mark_persistent(l_Lean_Meta_instInhabitedFunIndInfo);
 res = l_Lean_Meta_initFn_00___x40_Lean_Meta_Tactic_FunIndInfo_2193198776____hygCtx___hyg_2_();
 if (lean_io_result_is_error(res)) return res;
 l_Lean_Meta_funIndInfoExt = lean_io_result_get_value(res);

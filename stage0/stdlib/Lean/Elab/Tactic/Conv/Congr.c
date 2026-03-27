@@ -79,6 +79,7 @@ uint8_t l_Lean_Expr_hasLooseBVars(lean_object*);
 lean_object* l_Lean_Meta_mkEqRefl(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Expr_forallE___override(lean_object*, lean_object*, lean_object*, uint8_t);
 lean_object* lean_nat_mul(lean_object*, lean_object*);
+lean_object* lean_array_get(lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Elab_Tactic_mkInitialTacticInfo(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 uint8_t l_Lean_Syntax_isOfKind(lean_object*, lean_object*);
 lean_object* l_Lean_replaceRef(lean_object*, lean_object*);
@@ -119,7 +120,6 @@ uint64_t l_Lean_Meta_TransparencyMode_toUInt64(uint8_t);
 uint64_t lean_uint64_lor(uint64_t, uint64_t);
 uint8_t l_Lean_BinderInfo_isExplicit(uint8_t);
 lean_object* lean_nat_abs(lean_object*);
-lean_object* lean_array_get(lean_object*, lean_object*, lean_object*);
 uint8_t lean_nat_dec_le(lean_object*, lean_object*);
 lean_object* l_Nat_reprFast(lean_object*);
 lean_object* l_Lean_MessageData_ofFormat(lean_object*);
@@ -263,8 +263,8 @@ LEAN_EXPORT lean_object* l_WellFounded_opaqueFix_u2083___at___00__private_Lean_E
 LEAN_EXPORT lean_object* l_WellFounded_opaqueFix_u2083___at___00__private_Lean_Elab_Tactic_Conv_Congr_0__Lean_Elab_Tactic_Conv_mkCongrThm_spec__0___redArg___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 static const lean_array_object l___private_Lean_Elab_Tactic_Conv_Congr_0__Lean_Elab_Tactic_Conv_mkCongrThm___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_array_object) + sizeof(void*)*0, .m_other = 0, .m_tag = 246}, .m_size = 0, .m_capacity = 0, .m_data = {}};
 static const lean_object* l___private_Lean_Elab_Tactic_Conv_Congr_0__Lean_Elab_Tactic_Conv_mkCongrThm___closed__0 = (const lean_object*)&l___private_Lean_Elab_Tactic_Conv_Congr_0__Lean_Elab_Tactic_Conv_mkCongrThm___closed__0_value;
-static lean_once_cell_t l___private_Lean_Elab_Tactic_Conv_Congr_0__Lean_Elab_Tactic_Conv_mkCongrThm___closed__1_once = LEAN_ONCE_CELL_INITIALIZER;
-static lean_object* l___private_Lean_Elab_Tactic_Conv_Congr_0__Lean_Elab_Tactic_Conv_mkCongrThm___closed__1;
+static const lean_ctor_object l___private_Lean_Elab_Tactic_Conv_Congr_0__Lean_Elab_Tactic_Conv_mkCongrThm___closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 0}, .m_objs = {((lean_object*)&l___private_Lean_Elab_Tactic_Conv_Congr_0__Lean_Elab_Tactic_Conv_mkCongrThm___closed__0_value),((lean_object*)&l___private_Lean_Elab_Tactic_Conv_Congr_0__Lean_Elab_Tactic_Conv_mkCongrThm___closed__0_value)}};
+static const lean_object* l___private_Lean_Elab_Tactic_Conv_Congr_0__Lean_Elab_Tactic_Conv_mkCongrThm___closed__1 = (const lean_object*)&l___private_Lean_Elab_Tactic_Conv_Congr_0__Lean_Elab_Tactic_Conv_mkCongrThm___closed__1_value;
 static const lean_string_object l___private_Lean_Elab_Tactic_Conv_Congr_0__Lean_Elab_Tactic_Conv_mkCongrThm___closed__2_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 56, .m_capacity = 56, .m_length = 55, .m_data = "'congr' conv tactic failed to create congruence theorem"};
 static const lean_object* l___private_Lean_Elab_Tactic_Conv_Congr_0__Lean_Elab_Tactic_Conv_mkCongrThm___closed__2 = (const lean_object*)&l___private_Lean_Elab_Tactic_Conv_Congr_0__Lean_Elab_Tactic_Conv_mkCongrThm___closed__2_value;
 static lean_once_cell_t l___private_Lean_Elab_Tactic_Conv_Congr_0__Lean_Elab_Tactic_Conv_mkCongrThm___closed__3_once = LEAN_ONCE_CELL_INITIALIZER;
@@ -2873,17 +2873,6 @@ lean_dec_ref(v___y_620_);
 return v_res_625_;
 }
 }
-static lean_object* _init_l___private_Lean_Elab_Tactic_Conv_Congr_0__Lean_Elab_Tactic_Conv_mkCongrThm___closed__1(void){
-_start:
-{
-lean_object* v___x_628_; lean_object* v___x_629_; 
-v___x_628_ = ((lean_object*)(l___private_Lean_Elab_Tactic_Conv_Congr_0__Lean_Elab_Tactic_Conv_mkCongrThm___closed__0));
-v___x_629_ = lean_alloc_ctor(0, 2, 0);
-lean_ctor_set(v___x_629_, 0, v___x_628_);
-lean_ctor_set(v___x_629_, 1, v___x_628_);
-return v___x_629_;
-}
-}
 static lean_object* _init_l___private_Lean_Elab_Tactic_Conv_Congr_0__Lean_Elab_Tactic_Conv_mkCongrThm___closed__3(void){
 _start:
 {
@@ -2937,7 +2926,7 @@ lean_inc_ref(v_argKinds_660_);
 lean_dec(v_val_658_);
 v___x_661_ = lean_unsigned_to_nat(0u);
 v___x_662_ = lean_array_get_size(v_argKinds_660_);
-v___x_663_ = lean_obj_once(&l___private_Lean_Elab_Tactic_Conv_Congr_0__Lean_Elab_Tactic_Conv_mkCongrThm___closed__1, &l___private_Lean_Elab_Tactic_Conv_Congr_0__Lean_Elab_Tactic_Conv_mkCongrThm___closed__1_once, _init_l___private_Lean_Elab_Tactic_Conv_Congr_0__Lean_Elab_Tactic_Conv_mkCongrThm___closed__1);
+v___x_663_ = ((lean_object*)(l___private_Lean_Elab_Tactic_Conv_Congr_0__Lean_Elab_Tactic_Conv_mkCongrThm___closed__1));
 v___x_664_ = lean_nat_dec_lt(v___x_662_, v___x_650_);
 v___x_665_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_665_, 0, v_proof_659_);
@@ -7267,9 +7256,10 @@ lean_dec(v_val_2118_);
 v___x_2147_ = 0;
 v___x_2148_ = lean_unsigned_to_nat(0u);
 v___x_2149_ = lean_box(v___x_2147_);
-v___x_2150_ = lean_array_get_borrowed(v___x_2149_, v_argKinds_2120_, v___x_2148_);
+v___x_2150_ = lean_array_get(v___x_2149_, v_argKinds_2120_, v___x_2148_);
 lean_dec(v___x_2149_);
 v___x_2151_ = lean_unbox(v___x_2150_);
+lean_dec(v___x_2150_);
 if (v___x_2151_ == 2)
 {
 v___y_2122_ = v_a_2073_;
@@ -17484,7 +17474,7 @@ v___x_5605_ = lean_box(0);
 v___x_5606_ = lean_unsigned_to_nat(0u);
 v___x_5607_ = lean_unsigned_to_nat(1u);
 v___x_5608_ = lean_nat_mul(v___x_5603_, v_a_5590_);
-v___x_5609_ = lean_array_get_borrowed(v___x_5604_, v_enterArgsAndSeps_5589_, v___x_5608_);
+v___x_5609_ = lean_array_get(v___x_5604_, v_enterArgsAndSeps_5589_, v___x_5608_);
 v___x_5640_ = lean_nat_add(v___x_5608_, v___x_5607_);
 lean_dec(v___x_5608_);
 v___x_5641_ = lean_array_get_size(v_enterArgsAndSeps_5589_);
@@ -17532,7 +17522,6 @@ v___x_5624_ = ((lean_object*)(l_WellFounded_opaqueFix_u2083___at___00Lean_Elab_T
 lean_inc(v___x_5609_);
 v___x_5625_ = l_Lean_Syntax_isOfKind(v___x_5609_, v___x_5624_);
 v___x_5626_ = lean_box(v___x_5625_);
-lean_inc(v___x_5609_);
 v___f_5627_ = lean_alloc_closure((void*)(l_WellFounded_opaqueFix_u2083___at___00Lean_Elab_Tactic_Conv_evalEnter_spec__1___redArg___lam__0___boxed), 18, 9);
 lean_closure_set(v___f_5627_, 0, v___x_5626_);
 lean_closure_set(v___f_5627_, 1, v___x_5605_);
@@ -17565,6 +17554,7 @@ return v___x_5629_;
 else
 {
 lean_object* v_a_5632_; lean_object* v___x_5634_; uint8_t v_isShared_5635_; uint8_t v_isSharedCheck_5639_; 
+lean_dec(v___x_5609_);
 lean_dec(v_a_5590_);
 v_a_5632_ = lean_ctor_get(v___x_5618_, 0);
 v_isSharedCheck_5639_ = !lean_is_exclusive(v___x_5618_);

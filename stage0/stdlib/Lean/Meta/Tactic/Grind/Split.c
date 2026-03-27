@@ -699,10 +699,10 @@ LEAN_EXPORT lean_object* l_List_mapIdx_go___at___00Lean_Meta_Grind_Action_splitC
 LEAN_EXPORT lean_object* l_List_mapIdx_go___at___00Lean_Meta_Grind_Action_splitCore_spec__2___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 static const lean_array_object l_Lean_Meta_Grind_Action_splitCore___redArg___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_array_object) + sizeof(void*)*0, .m_other = 0, .m_tag = 246}, .m_size = 0, .m_capacity = 0, .m_data = {}};
 static const lean_object* l_Lean_Meta_Grind_Action_splitCore___redArg___closed__0 = (const lean_object*)&l_Lean_Meta_Grind_Action_splitCore___redArg___closed__0_value;
-static lean_once_cell_t l_Lean_Meta_Grind_Action_splitCore___redArg___closed__1_once = LEAN_ONCE_CELL_INITIALIZER;
-static lean_object* l_Lean_Meta_Grind_Action_splitCore___redArg___closed__1;
-static lean_once_cell_t l_Lean_Meta_Grind_Action_splitCore___redArg___closed__2_once = LEAN_ONCE_CELL_INITIALIZER;
-static lean_object* l_Lean_Meta_Grind_Action_splitCore___redArg___closed__2;
+static const lean_ctor_object l_Lean_Meta_Grind_Action_splitCore___redArg___closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 0}, .m_objs = {((lean_object*)&l_Lean_Meta_Grind_Action_splitCore___redArg___closed__0_value),((lean_object*)&l_Lean_Meta_Grind_Action_splitCore___redArg___closed__0_value)}};
+static const lean_object* l_Lean_Meta_Grind_Action_splitCore___redArg___closed__1 = (const lean_object*)&l_Lean_Meta_Grind_Action_splitCore___redArg___closed__1_value;
+static const lean_ctor_object l_Lean_Meta_Grind_Action_splitCore___redArg___closed__2_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 0}, .m_objs = {((lean_object*)(((size_t)(0) << 1) | 1)),((lean_object*)&l_Lean_Meta_Grind_Action_splitCore___redArg___closed__1_value)}};
+static const lean_object* l_Lean_Meta_Grind_Action_splitCore___redArg___closed__2 = (const lean_object*)&l_Lean_Meta_Grind_Action_splitCore___redArg___closed__2_value;
 static const lean_ctor_object l_Lean_Meta_Grind_Action_splitCore___redArg___closed__3_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*1 + 0, .m_other = 1, .m_tag = 0}, .m_objs = {((lean_object*)(((size_t)(0) << 1) | 1))}};
 static const lean_object* l_Lean_Meta_Grind_Action_splitCore___redArg___closed__3 = (const lean_object*)&l_Lean_Meta_Grind_Action_splitCore___redArg___closed__3_value;
 static const lean_string_object l_Lean_Meta_Grind_Action_splitCore___redArg___closed__4_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 6, .m_capacity = 6, .m_length = 5, .m_data = "cases"};
@@ -16298,29 +16298,6 @@ lean_dec_ref(v_c_5263_);
 return v_res_5270_;
 }
 }
-static lean_object* _init_l_Lean_Meta_Grind_Action_splitCore___redArg___closed__1(void){
-_start:
-{
-lean_object* v___x_5273_; lean_object* v___x_5274_; 
-v___x_5273_ = ((lean_object*)(l_Lean_Meta_Grind_Action_splitCore___redArg___closed__0));
-v___x_5274_ = lean_alloc_ctor(0, 2, 0);
-lean_ctor_set(v___x_5274_, 0, v___x_5273_);
-lean_ctor_set(v___x_5274_, 1, v___x_5273_);
-return v___x_5274_;
-}
-}
-static lean_object* _init_l_Lean_Meta_Grind_Action_splitCore___redArg___closed__2(void){
-_start:
-{
-lean_object* v___x_5275_; lean_object* v___x_5276_; lean_object* v___x_5277_; 
-v___x_5275_ = lean_obj_once(&l_Lean_Meta_Grind_Action_splitCore___redArg___closed__1, &l_Lean_Meta_Grind_Action_splitCore___redArg___closed__1_once, _init_l_Lean_Meta_Grind_Action_splitCore___redArg___closed__1);
-v___x_5276_ = lean_box(0);
-v___x_5277_ = lean_alloc_ctor(0, 2, 0);
-lean_ctor_set(v___x_5277_, 0, v___x_5276_);
-lean_ctor_set(v___x_5277_, 1, v___x_5275_);
-return v___x_5277_;
-}
-}
 static lean_object* _init_l_Lean_Meta_Grind_Action_splitCore___redArg___closed__9(void){
 _start:
 {
@@ -16392,7 +16369,7 @@ lean_inc_ref(v___x_5322_);
 lean_inc(v_snd_5329_);
 v___x_5335_ = l_List_mapIdx_go___at___00Lean_Meta_Grind_Action_splitCore_spec__2(v_snd_5329_, v_c_5299_, v___x_5322_, v___x_5332_, v_isRec_5301_, v_fst_5330_, v___x_5334_);
 lean_dec_ref(v_c_5299_);
-v___x_5336_ = lean_obj_once(&l_Lean_Meta_Grind_Action_splitCore___redArg___closed__2, &l_Lean_Meta_Grind_Action_splitCore___redArg___closed__2_once, _init_l_Lean_Meta_Grind_Action_splitCore___redArg___closed__2);
+v___x_5336_ = ((lean_object*)(l_Lean_Meta_Grind_Action_splitCore___redArg___closed__2));
 lean_inc(v_snd_5329_);
 v___x_5337_ = l_List_forIn_x27_loop___at___00Lean_Meta_Grind_Action_splitCore_spec__3___redArg(v_kp_5305_, v_snd_5329_, v_stopAtFirstFailure_5302_, v___x_5335_, v___x_5336_, v_a_5306_, v_a_5307_, v_a_5308_, v_a_5309_, v_a_5310_, v_a_5311_, v_a_5312_, v_a_5313_, v_a_5314_);
 if (lean_obj_tag(v___x_5337_) == 0)

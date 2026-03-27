@@ -244,13 +244,9 @@ _start:
 uint8_t v___y_54_; lean_object* v___x_59_; lean_object* v_toEnvExtension_60_; lean_object* v_asyncMode_61_; uint8_t v___x_62_; 
 v___x_59_ = l_Lean_auxRecExt;
 v_toEnvExtension_60_ = lean_ctor_get(v___x_59_, 0);
-lean_inc_ref(v_toEnvExtension_60_);
 v_asyncMode_61_ = lean_ctor_get(v_toEnvExtension_60_, 2);
-lean_inc(v_asyncMode_61_);
-lean_dec_ref(v_toEnvExtension_60_);
 lean_inc(v_declName_52_);
 v___x_62_ = l_Lean_TagDeclarationExtension_isTagged(v___x_59_, v_env_51_, v_declName_52_, v_asyncMode_61_);
-lean_dec(v_asyncMode_61_);
 if (v___x_62_ == 0)
 {
 lean_object* v___x_63_; uint8_t v___x_64_; 
@@ -464,12 +460,8 @@ _start:
 lean_object* v___x_148_; lean_object* v_toEnvExtension_149_; lean_object* v_asyncMode_150_; uint8_t v___x_151_; 
 v___x_148_ = l___private_Lean_AuxRecursor_0__Lean_sparseCasesOnExt;
 v_toEnvExtension_149_ = lean_ctor_get(v___x_148_, 0);
-lean_inc_ref(v_toEnvExtension_149_);
 v_asyncMode_150_ = lean_ctor_get(v_toEnvExtension_149_, 2);
-lean_inc(v_asyncMode_150_);
-lean_dec_ref(v_toEnvExtension_149_);
 v___x_151_ = l_Lean_TagDeclarationExtension_isTagged(v___x_148_, v_env_146_, v_declName_147_, v_asyncMode_150_);
-lean_dec(v_asyncMode_150_);
 return v___x_151_;
 }
 }
@@ -878,14 +870,10 @@ _start:
 lean_object* v___x_321_; lean_object* v_toEnvExtension_322_; lean_object* v_asyncMode_323_; lean_object* v___x_324_; uint8_t v___x_325_; lean_object* v___x_326_; 
 v___x_321_ = l_Lean_noConfusionExt;
 v_toEnvExtension_322_ = lean_ctor_get(v___x_321_, 0);
-lean_inc_ref(v_toEnvExtension_322_);
 v_asyncMode_323_ = lean_ctor_get(v_toEnvExtension_322_, 2);
-lean_inc(v_asyncMode_323_);
-lean_dec_ref(v_toEnvExtension_322_);
 v___x_324_ = ((lean_object*)(l_Lean_instInhabitedNoConfusionInfo_default));
 v___x_325_ = 0;
 v___x_326_ = l_Lean_MapDeclarationExtension_find_x3f___redArg(v___x_324_, v___x_321_, v_env_319_, v_n_320_, v_asyncMode_323_, v___x_325_);
-lean_dec(v_asyncMode_323_);
 if (lean_obj_tag(v___x_326_) == 0)
 {
 lean_object* v___x_327_; lean_object* v___x_328_; 

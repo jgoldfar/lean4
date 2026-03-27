@@ -4041,9 +4041,9 @@ _start:
 lean_object* v___x_637_; lean_object* v_fn_638_; lean_object* v___f_639_; lean_object* v___x_640_; 
 v___x_637_ = l_Lean_Parser_skip;
 v_fn_638_ = lean_ctor_get(v___x_637_, 1);
-lean_inc_ref(v_fn_638_);
 v___f_639_ = lean_alloc_closure((void*)(l___private_Lean_DocString_Parser_0__Lean_Doc_Parser_fakeAtomHere___lam__0___boxed), 4, 1);
 lean_closure_set(v___f_639_, 0, v_str_634_);
+lean_inc_ref(v_fn_638_);
 v___x_640_ = l___private_Lean_DocString_Parser_0__Lean_Doc_Parser_withInfoSyntaxFn(v_fn_638_, v___f_639_, v_a_635_, v_a_636_);
 return v___x_640_;
 }

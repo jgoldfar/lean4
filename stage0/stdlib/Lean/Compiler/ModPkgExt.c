@@ -696,14 +696,10 @@ _start:
 lean_object* v___x_264_; lean_object* v_toEnvExtension_265_; lean_object* v_asyncMode_266_; lean_object* v___x_267_; lean_object* v___x_268_; lean_object* v___x_269_; 
 v___x_264_ = l___private_Lean_Compiler_ModPkgExt_0__Lean_modPkgExt;
 v_toEnvExtension_265_ = lean_ctor_get(v___x_264_, 0);
-lean_inc_ref(v_toEnvExtension_265_);
 v_asyncMode_266_ = lean_ctor_get(v_toEnvExtension_265_, 2);
-lean_inc(v_asyncMode_266_);
-lean_dec_ref(v_toEnvExtension_265_);
 v___x_267_ = lean_box(0);
 v___x_268_ = lean_box(0);
 v___x_269_ = l_Lean_PersistentEnvExtension_getState___redArg(v___x_267_, v___x_264_, v_env_263_, v_asyncMode_266_, v___x_268_);
-lean_dec(v_asyncMode_266_);
 return v___x_269_;
 }
 }
@@ -726,14 +722,10 @@ if (lean_obj_tag(v___x_280_) == 0)
 lean_object* v___x_281_; lean_object* v_toEnvExtension_282_; lean_object* v_asyncMode_283_; lean_object* v___x_284_; lean_object* v___x_285_; lean_object* v___x_286_; 
 v___x_281_ = l___private_Lean_Compiler_ModPkgExt_0__Lean_modPkgExt;
 v_toEnvExtension_282_ = lean_ctor_get(v___x_281_, 0);
-lean_inc_ref(v_toEnvExtension_282_);
 v_asyncMode_283_ = lean_ctor_get(v_toEnvExtension_282_, 2);
-lean_inc(v_asyncMode_283_);
-lean_dec_ref(v_toEnvExtension_282_);
 v___x_284_ = lean_box(0);
 v___x_285_ = lean_box(0);
 v___x_286_ = l_Lean_PersistentEnvExtension_getState___redArg(v___x_284_, v___x_281_, v_env_274_, v_asyncMode_283_, v___x_285_);
-lean_dec(v_asyncMode_283_);
 v___y_277_ = v___x_286_;
 goto v___jp_276_;
 }

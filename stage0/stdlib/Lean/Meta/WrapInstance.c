@@ -125,9 +125,9 @@ lean_object* l_Lean_Name_str___override(lean_object*, lean_object*);
 lean_object* l_Lean_Name_num___override(lean_object*, lean_object*);
 lean_object* l_Lean_Expr_getAppFn(lean_object*);
 lean_object* l___private_Lean_Expr_0__Lean_Expr_getAppArgsAux(lean_object*, lean_object*, lean_object*);
-lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
 uint8_t l_Lean_BinderInfo_isInstImplicit(uint8_t);
 extern lean_object* l_Lean_instInhabitedExpr;
+lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
 lean_object* l_Array_extract___redArg(lean_object*, lean_object*, lean_object*);
 lean_object* l_Array_append___redArg(lean_object*, lean_object*);
 lean_object* l_Lean_Name_mkStr3(lean_object*, lean_object*, lean_object*);
@@ -1616,9 +1616,10 @@ uint8_t v___x_463_; lean_object* v___x_464_; lean_object* v___x_468_; lean_objec
 v___x_463_ = 0;
 v___x_464_ = lean_box(0);
 v___x_468_ = lean_box(v___x_463_);
-v___x_469_ = lean_array_get_borrowed(v___x_468_, v_fst_448_, v_i_453_);
+v___x_469_ = lean_array_get(v___x_468_, v_fst_448_, v_i_453_);
 lean_dec(v___x_468_);
 v___x_470_ = lean_unbox(v___x_469_);
+lean_dec(v___x_469_);
 v___x_471_ = l_Lean_BinderInfo_isInstImplicit(v___x_470_);
 if (v___x_471_ == 0)
 {

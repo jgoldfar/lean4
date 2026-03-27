@@ -3507,17 +3507,11 @@ _start:
 lean_object* v___x_984_; lean_object* v_ext_985_; lean_object* v_toEnvExtension_986_; lean_object* v_asyncMode_987_; lean_object* v___x_988_; lean_object* v_m_989_; lean_object* v___x_990_; 
 v___x_984_ = l_Lean_reducibilityExtraExt;
 v_ext_985_ = lean_ctor_get(v___x_984_, 1);
-lean_inc_ref(v_ext_985_);
 v_toEnvExtension_986_ = lean_ctor_get(v_ext_985_, 0);
-lean_inc_ref(v_toEnvExtension_986_);
-lean_dec_ref(v_ext_985_);
 v_asyncMode_987_ = lean_ctor_get(v_toEnvExtension_986_, 2);
-lean_inc(v_asyncMode_987_);
-lean_dec_ref(v_toEnvExtension_986_);
 v___x_988_ = lean_obj_once(&l_Lean_getReducibilityStatusCore___closed__2, &l_Lean_getReducibilityStatusCore___closed__2_once, _init_l_Lean_getReducibilityStatusCore___closed__2);
 lean_inc_ref(v_env_982_);
 v_m_989_ = l_Lean_ScopedEnvExtension_getState___redArg(v___x_988_, v___x_984_, v_env_982_, v_asyncMode_987_);
-lean_dec(v_asyncMode_987_);
 v___x_990_ = l_Lean_SMap_find_x3f___at___00Lean_getReducibilityStatusCore_spec__0___redArg(v_m_989_, v_declName_983_);
 if (lean_obj_tag(v___x_990_) == 1)
 {
@@ -3542,13 +3536,9 @@ if (lean_obj_tag(v___x_994_) == 0)
 lean_object* v___x_995_; lean_object* v_toEnvExtension_996_; lean_object* v_asyncMode_997_; lean_object* v___x_998_; lean_object* v___x_999_; 
 v___x_995_ = l_Lean_reducibilityCoreExt;
 v_toEnvExtension_996_ = lean_ctor_get(v___x_995_, 0);
-lean_inc_ref(v_toEnvExtension_996_);
 v_asyncMode_997_ = lean_ctor_get(v_toEnvExtension_996_, 2);
-lean_inc(v_asyncMode_997_);
-lean_dec_ref(v_toEnvExtension_996_);
 lean_inc(v_declName_983_);
 v___x_998_ = l_Lean_PersistentEnvExtension_getState___redArg(v___x_993_, v___x_995_, v_env_982_, v_asyncMode_997_, v_declName_983_);
-lean_dec(v_asyncMode_997_);
 v___x_999_ = l_Std_DTreeMap_Internal_Impl_Const_get_x3f___at___00Lean_NameMap_find_x3f_spec__0___redArg(v___x_998_, v_declName_983_);
 lean_dec(v_declName_983_);
 lean_dec(v___x_998_);
@@ -3786,17 +3776,13 @@ if (lean_obj_tag(v___x_1099_) == 0)
 lean_object* v___x_1100_; lean_object* v_toEnvExtension_1101_; lean_object* v_asyncMode_1102_; lean_object* v___x_1103_; lean_object* v___x_1104_; lean_object* v___x_1105_; 
 v___x_1100_ = l_Lean_reducibilityCoreExt;
 v_toEnvExtension_1101_ = lean_ctor_get(v___x_1100_, 0);
-lean_inc_ref(v_toEnvExtension_1101_);
 v_asyncMode_1102_ = lean_ctor_get(v_toEnvExtension_1101_, 2);
-lean_inc(v_asyncMode_1102_);
-lean_dec_ref(v_toEnvExtension_1101_);
 v___x_1103_ = lean_box(v_status_1096_);
 lean_inc(v_declName_1095_);
 v___x_1104_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_1104_, 0, v_declName_1095_);
 lean_ctor_set(v___x_1104_, 1, v___x_1103_);
 v___x_1105_ = l_Lean_PersistentEnvExtension_addEntry___redArg(v___x_1100_, v_env_1094_, v___x_1104_, v_asyncMode_1102_, v_declName_1095_);
-lean_dec(v_asyncMode_1102_);
 return v___x_1105_;
 }
 else

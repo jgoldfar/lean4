@@ -11976,12 +11976,15 @@ lean_object* v___x_3885_; lean_object* v___x_3886_; lean_object* v___x_3887_;
 lean_dec_ref(v_str_3873_);
 v___x_3885_ = lean_box(0);
 v___x_3886_ = lean_unsigned_to_nat(1u);
-v___x_3887_ = lean_array_get_borrowed(v___x_3885_, v_args_3803_, v___x_3886_);
+v___x_3887_ = lean_array_get(v___x_3885_, v_args_3803_, v___x_3886_);
 if (lean_obj_tag(v___x_3887_) == 1)
 {
 lean_object* v_fvarId_3888_; lean_object* v___x_3889_; lean_object* v_a_3890_; lean_object* v___x_3892_; uint8_t v_isShared_3893_; uint8_t v_isSharedCheck_3899_; 
 v_fvarId_3888_ = lean_ctor_get(v___x_3887_, 0);
+lean_inc(v_fvarId_3888_);
+lean_dec_ref(v___x_3887_);
 v___x_3889_ = l___private_Lean_Compiler_LCNF_InferBorrow_0__Lean_Compiler_LCNF_infer_isOwned___redArg(v_fvarId_3888_, v_a_3717_);
+lean_dec(v_fvarId_3888_);
 v_a_3890_ = lean_ctor_get(v___x_3889_, 0);
 v_isSharedCheck_3899_ = !lean_is_exclusive(v___x_3889_);
 if (v_isSharedCheck_3899_ == 0)
@@ -12061,6 +12064,7 @@ return v___x_3897_;
 }
 else
 {
+lean_dec(v___x_3887_);
 v___y_3805_ = v_a_3716_;
 v___y_3806_ = v_a_3717_;
 v___y_3807_ = v_a_3718_;

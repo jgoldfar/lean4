@@ -43957,10 +43957,7 @@ v_resetjp_14211_:
 lean_object* v___x_14214_; lean_object* v_toEnvExtension_14215_; lean_object* v_asyncMode_14216_; lean_object* v___x_14217_; lean_object* v___x_14218_; lean_object* v___x_14219_; lean_object* v___x_14220_; lean_object* v___x_14221_; lean_object* v___x_14223_; 
 v___x_14214_ = l_Lean_Compiler_LCNF_Simp_ConstantFold_folderExt;
 v_toEnvExtension_14215_ = lean_ctor_get(v___x_14214_, 0);
-lean_inc_ref(v_toEnvExtension_14215_);
 v_asyncMode_14216_ = lean_ctor_get(v_toEnvExtension_14215_, 2);
-lean_inc(v_asyncMode_14216_);
-lean_dec_ref(v_toEnvExtension_14215_);
 v___x_14217_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_14217_, 0, v_declName_14192_);
 lean_ctor_set(v___x_14217_, 1, v_folderDeclName_14193_);
@@ -43969,7 +43966,6 @@ lean_ctor_set(v___x_14218_, 0, v___x_14217_);
 lean_ctor_set(v___x_14218_, 1, v_a_14198_);
 v___x_14219_ = lean_box(0);
 v___x_14220_ = l_Lean_PersistentEnvExtension_addEntry___redArg(v___x_14214_, v_env_14203_, v___x_14218_, v_asyncMode_14216_, v___x_14219_);
-lean_dec(v_asyncMode_14216_);
 v___x_14221_ = lean_obj_once(&l_Lean_Compiler_LCNF_Simp_ConstantFold_registerFolder___closed__2, &l_Lean_Compiler_LCNF_Simp_ConstantFold_registerFolder___closed__2_once, _init_l_Lean_Compiler_LCNF_Simp_ConstantFold_registerFolder___closed__2);
 if (v_isShared_14213_ == 0)
 {
@@ -44108,14 +44104,10 @@ lean_inc_ref(v_env_14258_);
 lean_dec(v___x_14257_);
 v___x_14259_ = l_Lean_Compiler_LCNF_Simp_ConstantFold_folderExt;
 v_toEnvExtension_14260_ = lean_ctor_get(v___x_14259_, 0);
-lean_inc_ref(v_toEnvExtension_14260_);
 v_asyncMode_14261_ = lean_ctor_get(v_toEnvExtension_14260_, 2);
-lean_inc(v_asyncMode_14261_);
-lean_dec_ref(v_toEnvExtension_14260_);
 v___x_14262_ = lean_obj_once(&l_Lean_Compiler_LCNF_Simp_ConstantFold_getFolders___redArg___closed__3, &l_Lean_Compiler_LCNF_Simp_ConstantFold_getFolders___redArg___closed__3_once, _init_l_Lean_Compiler_LCNF_Simp_ConstantFold_getFolders___redArg___closed__3);
 v___x_14263_ = lean_box(0);
 v___x_14264_ = l_Lean_PersistentEnvExtension_getState___redArg(v___x_14262_, v___x_14259_, v_env_14258_, v_asyncMode_14261_, v___x_14263_);
-lean_dec(v_asyncMode_14261_);
 v_snd_14265_ = lean_ctor_get(v___x_14264_, 1);
 lean_inc(v_snd_14265_);
 lean_dec(v___x_14264_);

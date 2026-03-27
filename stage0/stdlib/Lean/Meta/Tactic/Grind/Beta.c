@@ -1011,12 +1011,13 @@ v_a_292_ = lean_array_uget_borrowed(v_as_286_, v_i_288_);
 v___x_293_ = l___private_Lean_Meta_Sym_ExprPtr_0__Lean_Meta_Sym_isSameExpr_unsafe__1(v_a_292_, v___y_285_);
 if (v___x_293_ == 0)
 {
-lean_object* v___x_294_; size_t v___x_295_; size_t v___x_296_; lean_object* v___x_297_; 
+lean_object* v___x_294_; size_t v___x_295_; size_t v___x_296_; 
 v___x_294_ = ((lean_object*)(l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00Lean_Meta_Grind_getFnRoots_spec__0___closed__0));
 v___x_295_ = ((size_t)1ULL);
 v___x_296_ = lean_usize_add(v_i_288_, v___x_295_);
-v___x_297_ = l___private_Init_Data_Array_Basic_0__Array_forIn_x27Unsafe_loop___at___00Lean_Meta_Grind_getFnRoots_spec__0(v___y_285_, v_as_286_, v_sz_287_, v___x_296_, v___x_294_);
-return v___x_297_;
+v_i_288_ = v___x_296_;
+v_b_289_ = v___x_294_;
+goto _start;
 }
 else
 {

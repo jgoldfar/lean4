@@ -626,13 +626,9 @@ _start:
 lean_object* v___x_199_; lean_object* v_toEnvExtension_200_; lean_object* v_asyncMode_201_; lean_object* v___x_202_; lean_object* v_linterSets_203_; lean_object* v___x_204_; lean_object* v___x_205_; 
 v___x_199_ = l_Lean_Linter_linterSetsExt;
 v_toEnvExtension_200_ = lean_ctor_get(v___x_199_, 0);
-lean_inc_ref(v_toEnvExtension_200_);
 v_asyncMode_201_ = lean_ctor_get(v_toEnvExtension_200_, 2);
-lean_inc(v_asyncMode_201_);
-lean_dec_ref(v_toEnvExtension_200_);
 v___x_202_ = lean_box(0);
 v_linterSets_203_ = l_Lean_SimplePersistentEnvExtension_getState___redArg(v___x_195_, v___x_199_, v_____do__lift_198_, v_asyncMode_201_, v___x_202_);
-lean_dec(v_asyncMode_201_);
 v___x_204_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_204_, 0, v_o_196_);
 lean_ctor_set(v___x_204_, 1, v_linterSets_203_);
@@ -963,9 +959,7 @@ _start:
 lean_object* v___x_329_; lean_object* v_name_330_; uint8_t v___x_331_; 
 v___x_329_ = l_Lean_Linter_linter_all;
 v_name_330_ = lean_ctor_get(v___x_329_, 0);
-lean_inc(v_name_330_);
 v___x_331_ = l_Lean_Linter_LinterOptions_get___at___00Lean_Linter_getLinterAll_spec__0(v_o_327_, v_name_330_, v_defValue_328_);
-lean_dec(v_name_330_);
 return v___x_331_;
 }
 }

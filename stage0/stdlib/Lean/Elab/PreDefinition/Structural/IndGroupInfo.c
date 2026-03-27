@@ -70,6 +70,7 @@ lean_object* lean_infer_type(lean_object*, lean_object*, lean_object*, lean_obje
 lean_object* lean_array_pop(lean_object*);
 lean_object* l_Lean_Meta_mkForallFVars(lean_object*, lean_object*, uint8_t, uint8_t, uint8_t, uint8_t, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* lean_array_uset(lean_object*, size_t, lean_object*);
+lean_object* lean_array_get(lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_mkRecName(lean_object*);
 lean_object* l_Lean_Expr_const___override(lean_object*, lean_object*);
 lean_object* l_Lean_mkAppN(lean_object*, lean_object*);
@@ -78,7 +79,6 @@ uint8_t lean_nat_dec_le(lean_object*, lean_object*);
 lean_object* lean_mk_empty_array_with_capacity(lean_object*);
 lean_object* lean_name_append_index_after(lean_object*, lean_object*);
 lean_object* l_Lean_mkBRecOnName(lean_object*);
-lean_object* lean_array_get(lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_MessageData_ofExpr(lean_object*);
 lean_object* lean_array_mk(lean_object*);
 LEAN_EXPORT uint8_t l_Array_isEqvAux___at___00Lean_Elab_Structural_instBEqIndGroupInfo_beq_spec__0___redArg(lean_object*, lean_object*, lean_object*);
@@ -2897,8 +2897,7 @@ if (v___x_1026_ == 0)
 {
 lean_object* v___x_1027_; lean_object* v___x_1028_; lean_object* v_recName_1029_; lean_object* v___x_1030_; 
 v___x_1027_ = lean_box(0);
-v___x_1028_ = lean_array_get_borrowed(v___x_1027_, v_all_1023_, v___x_1025_);
-lean_inc(v___x_1028_);
+v___x_1028_ = lean_array_get(v___x_1027_, v_all_1023_, v___x_1025_);
 v_recName_1029_ = l_Lean_mkRecName(v___x_1028_);
 lean_inc(v_recName_1029_);
 v___x_1030_ = l_Lean_getConstInfoRec___at___00Lean_Elab_Structural_IndGroupInst_nestedTypeFormers_spec__2(v_recName_1029_, v_a_1006_, v_a_1007_, v_a_1008_, v_a_1009_);

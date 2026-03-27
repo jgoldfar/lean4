@@ -14582,15 +14582,11 @@ lean_inc_ref(v_env_3993_);
 lean_dec(v___x_3992_);
 v___x_3994_ = l_Lean_Elab_Structural_eqnInfoExt;
 v_toEnvExtension_3995_ = lean_ctor_get(v___x_3994_, 0);
-lean_inc_ref(v_toEnvExtension_3995_);
 v_asyncMode_3996_ = lean_ctor_get(v_toEnvExtension_3995_, 2);
-lean_inc(v_asyncMode_3996_);
-lean_dec_ref(v_toEnvExtension_3995_);
 v___x_3997_ = l_Lean_Elab_Structural_instInhabitedEqnInfo_default;
 v___x_3998_ = 0;
 lean_inc(v_declName_3986_);
 v___x_3999_ = l_Lean_MapDeclarationExtension_find_x3f___redArg(v___x_3997_, v___x_3994_, v_env_3993_, v_declName_3986_, v_asyncMode_3996_, v___x_3998_);
-lean_dec(v_asyncMode_3996_);
 if (lean_obj_tag(v___x_3999_) == 1)
 {
 lean_object* v_val_4000_; lean_object* v___x_4002_; uint8_t v_isShared_4003_; uint8_t v_isSharedCheck_4024_; 
@@ -14752,14 +14748,10 @@ lean_inc_ref(v_env_4038_);
 lean_dec(v___x_4037_);
 v___x_4039_ = l_Lean_Elab_Structural_eqnInfoExt;
 v_toEnvExtension_4040_ = lean_ctor_get(v___x_4039_, 0);
-lean_inc_ref(v_toEnvExtension_4040_);
 v_asyncMode_4041_ = lean_ctor_get(v_toEnvExtension_4040_, 2);
-lean_inc(v_asyncMode_4041_);
-lean_dec_ref(v_toEnvExtension_4040_);
 v___x_4042_ = l_Lean_Elab_Structural_instInhabitedEqnInfo_default;
 v___x_4043_ = 0;
 v___x_4044_ = l_Lean_MapDeclarationExtension_find_x3f___redArg(v___x_4042_, v___x_4039_, v_env_4038_, v_declName_4034_, v_asyncMode_4041_, v___x_4043_);
-lean_dec(v_asyncMode_4041_);
 if (lean_obj_tag(v___x_4044_) == 1)
 {
 lean_object* v_val_4045_; lean_object* v___x_4047_; uint8_t v_isShared_4048_; uint8_t v_isSharedCheck_4054_; 

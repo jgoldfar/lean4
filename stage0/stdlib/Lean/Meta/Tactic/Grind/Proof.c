@@ -75,7 +75,7 @@ lean_object* lean_array_fget_borrowed(lean_object*, lean_object*);
 lean_object* l_Lean_Meta_FunInfo_getArity(lean_object*);
 lean_object* l_Lean_Meta_Grind_mkHCongrWithArity___redArg(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_mkApp3(lean_object*, lean_object*, lean_object*, lean_object*);
-lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
+lean_object* lean_array_get(lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Core_mkFreshUserName(lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Expr_sort___override(lean_object*);
 lean_object* lean_mk_array(lean_object*, lean_object*);
@@ -8049,10 +8049,11 @@ v___x_2393_ = l_Lean_Expr_appArg_x21(v_lhs_2368_);
 v___x_2394_ = l_Lean_Expr_appArg_x21(v_rhs_2369_);
 v___x_2407_ = 0;
 v___x_2408_ = lean_box(v___x_2407_);
-v___x_2409_ = lean_array_get_borrowed(v___x_2408_, v_argKinds_2392_, v_i_2387_);
+v___x_2409_ = lean_array_get(v___x_2408_, v_argKinds_2392_, v_i_2387_);
 lean_dec(v_i_2387_);
 lean_dec(v___x_2408_);
 v___x_2410_ = lean_unbox(v___x_2409_);
+lean_dec(v___x_2409_);
 if (v___x_2410_ == 4)
 {
 v___y_2396_ = v___x_2383_;

@@ -1755,9 +1755,7 @@ v___jp_472_:
 lean_object* v___x_479_; lean_object* v_asyncMode_480_; lean_object* v___x_481_; lean_object* v_snd_482_; 
 v___x_479_ = l_Lake_nameExt;
 v_asyncMode_480_ = lean_ctor_get(v___x_479_, 2);
-lean_inc(v_asyncMode_480_);
 v___x_481_ = l___private_Lean_Environment_0__Lean_EnvExtension_getStateUnsafe___redArg(v___x_471_, v___x_479_, v_env_469_, v_asyncMode_480_, v___x_470_);
-lean_dec(v_asyncMode_480_);
 v_snd_482_ = lean_ctor_get(v___x_481_, 1);
 lean_inc(v_snd_482_);
 if (lean_obj_tag(v_snd_482_) == 0)
@@ -1983,11 +1981,9 @@ lean_inc_ref(v_env_712_);
 lean_dec(v___x_704_);
 v___x_713_ = l_Lake_dirExt;
 v_asyncMode_714_ = lean_ctor_get(v___x_713_, 2);
-lean_inc(v_asyncMode_714_);
 v___x_715_ = lean_box(0);
 v___x_716_ = lean_box(0);
 v___x_717_ = l___private_Lean_Environment_0__Lean_EnvExtension_getStateUnsafe___redArg(v___x_715_, v___x_713_, v_env_712_, v_asyncMode_714_, v___x_716_);
-lean_dec(v_asyncMode_714_);
 if (lean_obj_tag(v___x_717_) == 1)
 {
 lean_object* v_val_718_; uint8_t v___x_719_; lean_object* v___x_720_; lean_object* v___x_721_; lean_object* v___x_722_; lean_object* v___x_723_; lean_object* v___x_724_; lean_object* v___x_725_; lean_object* v___x_726_; lean_object* v___x_727_; 
@@ -2217,13 +2213,11 @@ lean_inc_ref(v_env_965_);
 lean_dec(v___x_964_);
 v___x_966_ = l_Lake_optsExt;
 v_asyncMode_967_ = lean_ctor_get(v___x_966_, 2);
-lean_inc(v_asyncMode_967_);
 v___x_968_ = lean_unsigned_to_nat(1u);
 v___x_969_ = l_Lean_Syntax_getArg(v_stx_945_, v___x_968_);
 v___x_970_ = lean_box(0);
 v___x_971_ = lean_box(0);
 v___x_972_ = l___private_Lean_Environment_0__Lean_EnvExtension_getStateUnsafe___redArg(v___x_970_, v___x_966_, v_env_965_, v_asyncMode_967_, v___x_971_);
-lean_dec(v_asyncMode_967_);
 if (lean_obj_tag(v___x_972_) == 1)
 {
 lean_object* v_val_973_; lean_object* v___x_974_; lean_object* v___x_975_; 

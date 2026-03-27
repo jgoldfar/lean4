@@ -11976,8 +11976,8 @@ else
 {
 lean_object* v_a_4219_; lean_object* v___x_4221_; uint8_t v_isShared_4222_; uint8_t v_isSharedCheck_4226_; 
 lean_dec(v_us_4162_);
-lean_dec(v_declName_4161_);
 lean_dec_ref(v___x_4160_);
+lean_dec(v_declName_4161_);
 lean_dec_ref(v___y_4158_);
 lean_dec_ref(v_lhs_4127_);
 v_a_4219_ = lean_ctor_get(v___x_4164_, 0);

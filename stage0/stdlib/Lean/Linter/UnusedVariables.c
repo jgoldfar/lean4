@@ -1620,10 +1620,8 @@ _start:
 lean_object* v___x_153_; lean_object* v_name_154_; uint8_t v___x_155_; uint8_t v___x_156_; 
 v___x_153_ = l_Lean_Linter_linter_unusedVariables_funArgs;
 v_name_154_ = lean_ctor_get(v___x_153_, 0);
-lean_inc(v_name_154_);
 v___x_155_ = l_Lean_Linter_getLinterUnusedVariables(v_o_152_);
 v___x_156_ = l_Lean_Linter_LinterOptions_get___at___00Lean_Linter_getLinterUnusedVariablesFunArgs_spec__0(v_o_152_, v_name_154_, v___x_155_);
-lean_dec(v_name_154_);
 return v___x_156_;
 }
 }
@@ -1643,10 +1641,8 @@ _start:
 lean_object* v___x_161_; lean_object* v_name_162_; uint8_t v___x_163_; uint8_t v___x_164_; 
 v___x_161_ = l_Lean_Linter_linter_unusedVariables_patternVars;
 v_name_162_ = lean_ctor_get(v___x_161_, 0);
-lean_inc(v_name_162_);
 v___x_163_ = l_Lean_Linter_getLinterUnusedVariables(v_o_160_);
 v___x_164_ = l_Lean_Linter_LinterOptions_get___at___00Lean_Linter_getLinterUnusedVariablesFunArgs_spec__0(v_o_160_, v_name_162_, v___x_163_);
-lean_dec(v_name_162_);
 return v___x_164_;
 }
 }
@@ -3697,15 +3693,11 @@ lean_inc_ref(v_env_904_);
 lean_dec(v___x_896_);
 v___x_905_ = l_Lean_Linter_unusedVariablesIgnoreFnsExt;
 v_toEnvExtension_906_ = lean_ctor_get(v___x_905_, 0);
-lean_inc_ref(v_toEnvExtension_906_);
 v_asyncMode_907_ = lean_ctor_get(v_toEnvExtension_906_, 2);
-lean_inc(v_asyncMode_907_);
-lean_dec_ref(v_toEnvExtension_906_);
 v___x_908_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_908_, 0, v_decl_887_);
 lean_ctor_set(v___x_908_, 1, v_a_903_);
 v___x_909_ = l_Lean_PersistentEnvExtension_addEntry___redArg(v___x_905_, v_env_904_, v___x_908_, v_asyncMode_907_, v___x_883_);
-lean_dec(v_asyncMode_907_);
 v___x_910_ = l_Lean_setEnv___at___00__private_Lean_Linter_UnusedVariables_0__Lean_Linter_initFn_00___x40_Lean_Linter_UnusedVariables_1088826556____hygCtx___hyg_2__spec__1___redArg(v___x_909_, v___y_895_);
 return v___x_910_;
 }
@@ -5751,14 +5743,10 @@ lean_inc_ref(v_env_1971_);
 lean_dec(v___x_1970_);
 v___x_1972_ = l_Lean_Linter_unusedVariablesIgnoreFnsExt;
 v_toEnvExtension_1973_ = lean_ctor_get(v___x_1972_, 0);
-lean_inc_ref(v_toEnvExtension_1973_);
 v_asyncMode_1974_ = lean_ctor_get(v_toEnvExtension_1973_, 2);
-lean_inc(v_asyncMode_1974_);
-lean_dec_ref(v_toEnvExtension_1973_);
 v___x_1975_ = lean_obj_once(&l_Lean_Linter_getUnusedVariablesIgnoreFns___redArg___closed__1, &l_Lean_Linter_getUnusedVariablesIgnoreFns___redArg___closed__1_once, _init_l_Lean_Linter_getUnusedVariablesIgnoreFns___redArg___closed__1);
 v___x_1976_ = lean_box(0);
 v___x_1977_ = l_Lean_PersistentEnvExtension_getState___redArg(v___x_1975_, v___x_1972_, v_env_1971_, v_asyncMode_1974_, v___x_1976_);
-lean_dec(v_asyncMode_1974_);
 v_snd_1978_ = lean_ctor_get(v___x_1977_, 1);
 lean_inc(v_snd_1978_);
 lean_dec(v___x_1977_);
@@ -13036,14 +13024,10 @@ lean_inc_ref(v_env_4369_);
 lean_dec(v___x_4368_);
 v___x_4370_ = l_Lean_Linter_linterSetsExt;
 v_toEnvExtension_4371_ = lean_ctor_get(v___x_4370_, 0);
-lean_inc_ref(v_toEnvExtension_4371_);
 v_asyncMode_4372_ = lean_ctor_get(v_toEnvExtension_4371_, 2);
-lean_inc(v_asyncMode_4372_);
-lean_dec_ref(v_toEnvExtension_4371_);
 v___x_4373_ = lean_box(1);
 v___x_4374_ = lean_box(0);
 v_linterSets_4375_ = l_Lean_SimplePersistentEnvExtension_getState___redArg(v___x_4373_, v___x_4370_, v_env_4369_, v_asyncMode_4372_, v___x_4374_);
-lean_dec(v_asyncMode_4372_);
 v___x_4376_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_4376_, 0, v_o_4365_);
 lean_ctor_set(v___x_4376_, 1, v_linterSets_4375_);
@@ -18393,16 +18377,12 @@ lean_inc_ref(v_env_6070_);
 lean_dec(v___x_6061_);
 v___x_6071_ = l_Lean_Linter_linterSetsExt;
 v_toEnvExtension_6072_ = lean_ctor_get(v___x_6071_, 0);
-lean_inc_ref(v_toEnvExtension_6072_);
 v_asyncMode_6073_ = lean_ctor_get(v_toEnvExtension_6072_, 2);
-lean_inc(v_asyncMode_6073_);
-lean_dec_ref(v_toEnvExtension_6072_);
 v___x_6074_ = lean_box(1);
 v___x_6075_ = l_Lean_PersistentArray_toArray___redArg(v_trees_6069_);
 lean_dec_ref(v_trees_6069_);
 v___x_6076_ = lean_box(0);
 v___x_6077_ = l_Lean_SimplePersistentEnvExtension_getState___redArg(v___x_6074_, v___x_6071_, v_env_6070_, v_asyncMode_6073_, v___x_6076_);
-lean_dec(v_asyncMode_6073_);
 v___x_6078_ = l_Lean_Linter_UnusedVariables_collectReferences(v___x_6075_, v_val_6055_, v___x_6077_, v___x_6067_);
 if (lean_obj_tag(v___x_6078_) == 0)
 {
@@ -19176,9 +19156,7 @@ _start:
 lean_object* v___x_6346_; lean_object* v_name_6347_; uint8_t v___x_6348_; 
 v___x_6346_ = l_Lean_Linter_linter_unusedVariables;
 v_name_6347_ = lean_ctor_get(v___x_6346_, 0);
-lean_inc(v_name_6347_);
 v___x_6348_ = lean_name_eq(v_x_6345_, v_name_6347_);
-lean_dec(v_name_6347_);
 return v___x_6348_;
 }
 }

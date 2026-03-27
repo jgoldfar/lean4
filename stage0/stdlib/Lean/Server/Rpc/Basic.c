@@ -3465,12 +3465,10 @@ lean_object* v___x_1087_; lean_object* v___x_1088_; lean_object* v_toApplicative
 v___x_1087_ = lean_obj_once(&l_Lean_Server_instRpcEncodableOfFromJsonOfToJson___redArg___closed__10, &l_Lean_Server_instRpcEncodableOfFromJsonOfToJson___redArg___closed__10_once, _init_l_Lean_Server_instRpcEncodableOfFromJsonOfToJson___redArg___closed__10);
 v___x_1088_ = lean_obj_once(&l_Lean_Server_instRpcEncodableOfFromJsonOfToJson___redArg___closed__20, &l_Lean_Server_instRpcEncodableOfFromJsonOfToJson___redArg___closed__20_once, _init_l_Lean_Server_instRpcEncodableOfFromJsonOfToJson___redArg___closed__20);
 v_toApplicative_1089_ = lean_ctor_get(v___x_1087_, 0);
-lean_inc_ref(v_toApplicative_1089_);
 v_toPure_1090_ = lean_ctor_get(v_toApplicative_1089_, 1);
-lean_inc(v_toPure_1090_);
-lean_dec_ref(v_toApplicative_1089_);
 v___f_1091_ = lean_alloc_closure((void*)(l_Lean_Server_instRpcEncodableOfFromJsonOfToJson___redArg___lam__0), 3, 1);
 lean_closure_set(v___f_1091_, 0, v_inst_1086_);
+lean_inc(v_toPure_1090_);
 v___f_1092_ = lean_alloc_closure((void*)(l_instMonadExceptOfExceptTOfMonad___redArg___lam__0), 3, 1);
 lean_closure_set(v___f_1092_, 0, v_toPure_1090_);
 v___x_1093_ = lean_obj_once(&l_Lean_Server_instRpcEncodableOfFromJsonOfToJson___redArg___closed__21, &l_Lean_Server_instRpcEncodableOfFromJsonOfToJson___redArg___closed__21_once, _init_l_Lean_Server_instRpcEncodableOfFromJsonOfToJson___redArg___closed__21);

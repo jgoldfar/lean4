@@ -1939,7 +1939,7 @@ v_a_473_ = lean_ctor_get(v___x_472_, 0);
 lean_inc(v_a_473_);
 lean_dec_ref(v___x_472_);
 v___x_482_ = lean_box(0);
-v___x_483_ = lean_array_get_borrowed(v___x_482_, v_args_447_, v_a_473_);
+v___x_483_ = lean_array_get(v___x_482_, v_args_447_, v_a_473_);
 if (lean_obj_tag(v___x_483_) == 1)
 {
 lean_object* v_fvarId_484_; lean_object* v___x_485_; uint8_t v___x_486_; 
@@ -1949,18 +1949,19 @@ v___x_486_ = l_Std_DHashMap_Internal_Raw_u2080_contains___at___00Lean_Compiler_L
 lean_dec(v___x_485_);
 if (v___x_486_ == 0)
 {
-lean_inc_ref(v___x_483_);
 v_a_475_ = v___x_483_;
 goto v___jp_474_;
 }
 else
 {
+lean_dec_ref(v___x_483_);
 v_a_475_ = v___x_482_;
 goto v___jp_474_;
 }
 }
 else
 {
+lean_dec(v___x_483_);
 v_a_475_ = v___x_482_;
 goto v___jp_474_;
 }
@@ -2901,7 +2902,7 @@ else
 {
 lean_object* v___x_842_; lean_object* v___x_843_; 
 v___x_842_ = lean_box(0);
-v___x_843_ = lean_array_get_borrowed(v___x_842_, v_args_829_, v_a_830_);
+v___x_843_ = lean_array_get(v___x_842_, v_args_829_, v_a_830_);
 if (lean_obj_tag(v___x_843_) == 1)
 {
 lean_object* v_fvarId_844_; lean_object* v___x_845_; uint8_t v___x_846_; 
@@ -2911,18 +2912,19 @@ v___x_846_ = l_Std_DHashMap_Internal_Raw_u2080_contains___at___00Lean_Compiler_L
 lean_dec(v___x_845_);
 if (v___x_846_ == 0)
 {
-lean_inc_ref(v___x_843_);
 v_a_835_ = v___x_843_;
 goto v___jp_834_;
 }
 else
 {
+lean_dec_ref(v___x_843_);
 v_a_835_ = v___x_842_;
 goto v___jp_834_;
 }
 }
 else
 {
+lean_dec(v___x_843_);
 v_a_835_ = v___x_842_;
 goto v___jp_834_;
 }
@@ -3367,12 +3369,13 @@ lean_del_object(v___x_964_);
 lean_dec(v_declName_961_);
 v___x_1127_ = lean_box(0);
 v___x_1128_ = lean_unsigned_to_nat(2u);
-v___x_1129_ = lean_array_get_borrowed(v___x_1127_, v_args_962_, v___x_1128_);
+v___x_1129_ = lean_array_get(v___x_1127_, v_args_962_, v___x_1128_);
 if (lean_obj_tag(v___x_1129_) == 1)
 {
 lean_object* v_fvarId_1130_; lean_object* v___x_1131_; lean_object* v___x_1132_; lean_object* v___x_1133_; lean_object* v_extraArgs_1134_; lean_object* v___x_1135_; 
 v_fvarId_1130_ = lean_ctor_get(v___x_1129_, 0);
 lean_inc(v_fvarId_1130_);
+lean_dec_ref(v___x_1129_);
 v___x_1131_ = lean_array_get_size(v_args_962_);
 v___x_1132_ = lean_unsigned_to_nat(3u);
 v___x_1133_ = lean_nat_sub(v___x_1131_, v___x_1132_);
@@ -3471,6 +3474,7 @@ return v___x_1150_;
 else
 {
 lean_object* v___x_1153_; lean_object* v___x_1154_; 
+lean_dec(v___x_1129_);
 lean_dec_ref(v_args_962_);
 v___x_1153_ = lean_box(1);
 v___x_1154_ = lean_alloc_ctor(0, 1, 0);

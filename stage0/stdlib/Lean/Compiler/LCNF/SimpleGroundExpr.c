@@ -55,13 +55,13 @@ uint64_t lean_uint64_shift_right(uint64_t, uint64_t);
 uint64_t lean_uint64_xor(uint64_t, uint64_t);
 size_t lean_usize_of_nat(lean_object*);
 uint8_t l_Lean_instBEqFVarId_beq(lean_object*, lean_object*);
-lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
 lean_object* lean_st_mk_ref(lean_object*);
 size_t lean_array_size(lean_object*);
 uint8_t lean_usize_dec_lt(size_t, size_t);
 uint8_t lean_nat_dec_eq(lean_object*, lean_object*);
 lean_object* lean_array_uset(lean_object*, size_t, lean_object*);
 uint8_t lean_string_dec_eq(lean_object*, lean_object*);
+lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Name_num___override(lean_object*, lean_object*);
 uint8_t lean_nat_dec_le(lean_object*, lean_object*);
 uint8_t lean_uint64_to_uint8(uint64_t);
@@ -135,10 +135,10 @@ LEAN_EXPORT lean_object* l_Lean_Compiler_LCNF_SimpleGroundExpr_byteArray_elim___
 LEAN_EXPORT lean_object* l_Lean_Compiler_LCNF_SimpleGroundExpr_byteArray_elim(lean_object*, lean_object*, lean_object*, lean_object*);
 static const lean_array_object l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExpr_default___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_array_object) + sizeof(void*)*0, .m_other = 0, .m_tag = 246}, .m_size = 0, .m_capacity = 0, .m_data = {}};
 static const lean_object* l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExpr_default___closed__0 = (const lean_object*)&l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExpr_default___closed__0_value;
-static lean_once_cell_t l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExpr_default___closed__1_once = LEAN_ONCE_CELL_INITIALIZER;
-static lean_object* l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExpr_default___closed__1;
-LEAN_EXPORT lean_object* l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExpr_default;
-LEAN_EXPORT lean_object* l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExpr;
+static const lean_ctor_object l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExpr_default___closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*4 + 0, .m_other = 4, .m_tag = 0}, .m_objs = {((lean_object*)(((size_t)(0) << 1) | 1)),((lean_object*)&l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExpr_default___closed__0_value),((lean_object*)&l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExpr_default___closed__0_value),((lean_object*)&l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExpr_default___closed__0_value)}};
+static const lean_object* l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExpr_default___closed__1 = (const lean_object*)&l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExpr_default___closed__1_value;
+LEAN_EXPORT const lean_object* l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExpr_default = (const lean_object*)&l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExpr_default___closed__1_value;
+LEAN_EXPORT const lean_object* l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExpr = (const lean_object*)&l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExpr_default___closed__1_value;
 static lean_once_cell_t l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExtState_default___closed__0_once = LEAN_ONCE_CELL_INITIALIZER;
 static lean_object* l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExtState_default___closed__0;
 static lean_once_cell_t l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExtState_default___closed__1_once = LEAN_ONCE_CELL_INITIALIZER;
@@ -869,36 +869,6 @@ v___x_144_ = l_Lean_Compiler_LCNF_SimpleGroundExpr_ctorElim___redArg(v_t_141_, v
 return v___x_144_;
 }
 }
-static lean_object* _init_l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExpr_default___closed__1(void){
-_start:
-{
-lean_object* v___x_147_; lean_object* v___x_148_; lean_object* v___x_149_; 
-v___x_147_ = ((lean_object*)(l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExpr_default___closed__0));
-v___x_148_ = lean_unsigned_to_nat(0u);
-v___x_149_ = lean_alloc_ctor(0, 4, 0);
-lean_ctor_set(v___x_149_, 0, v___x_148_);
-lean_ctor_set(v___x_149_, 1, v___x_147_);
-lean_ctor_set(v___x_149_, 2, v___x_147_);
-lean_ctor_set(v___x_149_, 3, v___x_147_);
-return v___x_149_;
-}
-}
-static lean_object* _init_l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExpr_default(void){
-_start:
-{
-lean_object* v___x_150_; 
-v___x_150_ = lean_obj_once(&l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExpr_default___closed__1, &l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExpr_default___closed__1_once, _init_l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExpr_default___closed__1);
-return v___x_150_;
-}
-}
-static lean_object* _init_l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExpr(void){
-_start:
-{
-lean_object* v___x_151_; 
-v___x_151_ = l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExpr_default;
-return v___x_151_;
-}
-}
 static lean_object* _init_l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExtState_default___closed__0(void){
 _start:
 {
@@ -949,7 +919,7 @@ LEAN_EXPORT lean_object* l_panic___at___00Lean_Compiler_LCNF_initFn_00___x40_Lea
 _start:
 {
 lean_object* v___x_161_; lean_object* v___x_162_; 
-v___x_161_ = l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExpr_default;
+v___x_161_ = ((lean_object*)(l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExpr_default));
 v___x_162_ = lean_panic_fn_borrowed(v___x_161_, v_msg_160_);
 return v___x_162_;
 }
@@ -2108,13 +2078,11 @@ _start:
 lean_object* v___x_567_; lean_object* v_asyncMode_568_; lean_object* v___f_569_; lean_object* v___x_570_; lean_object* v___x_571_; 
 v___x_567_ = l___private_Lean_Compiler_LCNF_SimpleGroundExpr_0__Lean_Compiler_LCNF_simpleGroundDeclExt;
 v_asyncMode_568_ = lean_ctor_get(v___x_567_, 2);
-lean_inc(v_asyncMode_568_);
 v___f_569_ = lean_alloc_closure((void*)(l_Lean_Compiler_LCNF_addSimpleGroundDecl___lam__0), 3, 2);
 lean_closure_set(v___f_569_, 0, v_declName_565_);
 lean_closure_set(v___f_569_, 1, v_expr_566_);
 v___x_570_ = lean_box(0);
 v___x_571_ = l_Lean_EnvExtension_modifyState___redArg(v___x_567_, v_env_564_, v___f_569_, v_asyncMode_568_, v___x_570_);
-lean_dec(v_asyncMode_568_);
 return v___x_571_;
 }
 }
@@ -2124,11 +2092,9 @@ _start:
 lean_object* v___x_574_; lean_object* v_asyncMode_575_; lean_object* v___x_576_; lean_object* v___x_577_; lean_object* v___x_578_; lean_object* v_constNames_579_; lean_object* v___x_580_; 
 v___x_574_ = l___private_Lean_Compiler_LCNF_SimpleGroundExpr_0__Lean_Compiler_LCNF_simpleGroundDeclExt;
 v_asyncMode_575_ = lean_ctor_get(v___x_574_, 2);
-lean_inc(v_asyncMode_575_);
 v___x_576_ = l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExtState_default;
 v___x_577_ = lean_box(0);
 v___x_578_ = l___private_Lean_Environment_0__Lean_EnvExtension_getStateUnsafe___redArg(v___x_576_, v___x_574_, v_env_572_, v_asyncMode_575_, v___x_577_);
-lean_dec(v_asyncMode_575_);
 v_constNames_579_ = lean_ctor_get(v___x_578_, 0);
 lean_inc_ref(v_constNames_579_);
 lean_dec(v___x_578_);
@@ -2313,26 +2279,34 @@ if (lean_obj_tag(v_x_626_) == 0)
 {
 lean_object* v_es_629_; lean_object* v___x_630_; size_t v___x_631_; size_t v___x_632_; size_t v___x_633_; lean_object* v_j_634_; lean_object* v___x_635_; 
 v_es_629_ = lean_ctor_get(v_x_626_, 0);
+lean_inc_ref(v_es_629_);
+lean_dec_ref(v_x_626_);
 v___x_630_ = lean_box(2);
 v___x_631_ = ((size_t)5ULL);
 v___x_632_ = lean_usize_once(&l_Lean_PersistentHashMap_insertAux___at___00Lean_PersistentHashMap_insert___at___00Lean_Compiler_LCNF_initFn_00___x40_Lean_Compiler_LCNF_SimpleGroundExpr_160484116____hygCtx___hyg_2__spec__0_spec__0___redArg___closed__1, &l_Lean_PersistentHashMap_insertAux___at___00Lean_PersistentHashMap_insert___at___00Lean_Compiler_LCNF_initFn_00___x40_Lean_Compiler_LCNF_SimpleGroundExpr_160484116____hygCtx___hyg_2__spec__0_spec__0___redArg___closed__1_once, _init_l_Lean_PersistentHashMap_insertAux___at___00Lean_PersistentHashMap_insert___at___00Lean_Compiler_LCNF_initFn_00___x40_Lean_Compiler_LCNF_SimpleGroundExpr_160484116____hygCtx___hyg_2__spec__0_spec__0___redArg___closed__1);
 v___x_633_ = lean_usize_land(v_x_627_, v___x_632_);
 v_j_634_ = lean_usize_to_nat(v___x_633_);
-v___x_635_ = lean_array_get_borrowed(v___x_630_, v_es_629_, v_j_634_);
+v___x_635_ = lean_array_get(v___x_630_, v_es_629_, v_j_634_);
 lean_dec(v_j_634_);
+lean_dec_ref(v_es_629_);
 switch(lean_obj_tag(v___x_635_))
 {
 case 0:
 {
 lean_object* v_key_636_; uint8_t v___x_637_; 
 v_key_636_ = lean_ctor_get(v___x_635_, 0);
+lean_inc(v_key_636_);
+lean_dec_ref(v___x_635_);
 v___x_637_ = lean_name_eq(v_x_628_, v_key_636_);
+lean_dec(v_key_636_);
 return v___x_637_;
 }
 case 1:
 {
 lean_object* v_node_638_; size_t v___x_639_; 
 v_node_638_ = lean_ctor_get(v___x_635_, 0);
+lean_inc(v_node_638_);
+lean_dec_ref(v___x_635_);
 v___x_639_ = lean_usize_shift_right(v_x_627_, v___x_631_);
 v_x_626_ = v_node_638_;
 v_x_627_ = v___x_639_;
@@ -2350,8 +2324,11 @@ else
 {
 lean_object* v_ks_642_; lean_object* v___x_643_; uint8_t v___x_644_; 
 v_ks_642_ = lean_ctor_get(v_x_626_, 0);
+lean_inc_ref(v_ks_642_);
+lean_dec_ref(v_x_626_);
 v___x_643_ = lean_unsigned_to_nat(0u);
 v___x_644_ = l_Lean_PersistentHashMap_containsAtAux___at___00Lean_PersistentHashMap_containsAux___at___00Lean_PersistentHashMap_contains___at___00Lean_Compiler_LCNF_isSimpleGroundDecl_spec__0_spec__0_spec__1___redArg(v_ks_642_, v___x_643_, v_x_628_);
+lean_dec_ref(v_ks_642_);
 return v___x_644_;
 }
 }
@@ -2364,7 +2341,6 @@ v_x_140__boxed_648_ = lean_unbox_usize(v_x_646_);
 lean_dec(v_x_646_);
 v_res_649_ = l_Lean_PersistentHashMap_containsAux___at___00Lean_PersistentHashMap_contains___at___00Lean_Compiler_LCNF_isSimpleGroundDecl_spec__0_spec__0___redArg(v_x_645_, v_x_140__boxed_648_, v_x_647_);
 lean_dec(v_x_647_);
-lean_dec_ref(v_x_645_);
 v_r_650_ = lean_box(v_res_649_);
 return v_r_650_;
 }
@@ -2402,7 +2378,6 @@ _start:
 uint8_t v_res_661_; lean_object* v_r_662_; 
 v_res_661_ = l_Lean_PersistentHashMap_contains___at___00Lean_Compiler_LCNF_isSimpleGroundDecl_spec__0___redArg(v_x_659_, v_x_660_);
 lean_dec(v_x_660_);
-lean_dec_ref(v_x_659_);
 v_r_662_ = lean_box(v_res_661_);
 return v_r_662_;
 }
@@ -2413,16 +2388,13 @@ _start:
 lean_object* v___x_665_; lean_object* v_asyncMode_666_; lean_object* v___x_667_; lean_object* v___x_668_; lean_object* v___x_669_; lean_object* v_constNames_670_; uint8_t v___x_671_; 
 v___x_665_ = l___private_Lean_Compiler_LCNF_SimpleGroundExpr_0__Lean_Compiler_LCNF_simpleGroundDeclExt;
 v_asyncMode_666_ = lean_ctor_get(v___x_665_, 2);
-lean_inc(v_asyncMode_666_);
 v___x_667_ = l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExtState_default;
 v___x_668_ = lean_box(0);
 v___x_669_ = l___private_Lean_Environment_0__Lean_EnvExtension_getStateUnsafe___redArg(v___x_667_, v___x_665_, v_env_663_, v_asyncMode_666_, v___x_668_);
-lean_dec(v_asyncMode_666_);
 v_constNames_670_ = lean_ctor_get(v___x_669_, 0);
 lean_inc_ref(v_constNames_670_);
 lean_dec(v___x_669_);
 v___x_671_ = l_Lean_PersistentHashMap_contains___at___00Lean_Compiler_LCNF_isSimpleGroundDecl_spec__0___redArg(v_constNames_670_, v_declName_664_);
-lean_dec_ref(v_constNames_670_);
 return v___x_671_;
 }
 }
@@ -2450,7 +2422,6 @@ _start:
 uint8_t v_res_683_; lean_object* v_r_684_; 
 v_res_683_ = l_Lean_PersistentHashMap_contains___at___00Lean_Compiler_LCNF_isSimpleGroundDecl_spec__0(v_00_u03b2_680_, v_x_681_, v_x_682_);
 lean_dec(v_x_682_);
-lean_dec_ref(v_x_681_);
 v_r_684_ = lean_box(v_res_683_);
 return v_r_684_;
 }
@@ -2471,7 +2442,6 @@ v_x_220__boxed_694_ = lean_unbox_usize(v_x_692_);
 lean_dec(v_x_692_);
 v_res_695_ = l_Lean_PersistentHashMap_containsAux___at___00Lean_PersistentHashMap_contains___at___00Lean_Compiler_LCNF_isSimpleGroundDecl_spec__0_spec__0(v_00_u03b2_690_, v_x_691_, v_x_220__boxed_694_, v_x_693_);
 lean_dec(v_x_693_);
-lean_dec_ref(v_x_691_);
 v_r_696_ = lean_box(v_res_695_);
 return v_r_696_;
 }
@@ -11780,10 +11750,6 @@ lean_dec_ref(res);
 res = runtime_initialize_Init_While(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExpr_default = _init_l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExpr_default();
-lean_mark_persistent(l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExpr_default);
-l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExpr = _init_l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExpr();
-lean_mark_persistent(l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExpr);
 l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExtState_default = _init_l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExtState_default();
 lean_mark_persistent(l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExtState_default);
 l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExtState = _init_l_Lean_Compiler_LCNF_instInhabitedSimpleGroundExtState();

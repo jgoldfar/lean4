@@ -1845,10 +1845,8 @@ v___jp_393_:
 {
 lean_object* v_fieldMap_399_; lean_object* v___x_400_; 
 v_fieldMap_399_ = lean_ctor_get(v___x_392_, 1);
-lean_inc(v_fieldMap_399_);
 v___x_400_ = l___private_Lake_DSL_DeclUtil_0__Lake_DSL_mkConfigFields(v_tyName_300_, v_fieldMap_399_, v_fs_395_, v___y_397_, v___y_398_);
 lean_dec_ref(v_fs_395_);
-lean_dec(v_fieldMap_399_);
 if (lean_obj_tag(v___x_400_) == 0)
 {
 lean_object* v_a_401_; lean_object* v___x_402_; lean_object* v_whereTk_403_; lean_object* v___x_404_; lean_object* v___x_405_; lean_object* v___x_406_; lean_object* v___x_407_; 
@@ -3397,11 +3395,9 @@ lean_inc_ref(v_env_1058_);
 lean_dec(v___x_1057_);
 v___x_1059_ = l_Lake_nameExt;
 v_asyncMode_1060_ = lean_ctor_get(v___x_1059_, 2);
-lean_inc(v_asyncMode_1060_);
 v___x_1061_ = lean_box(0);
 v___x_1062_ = ((lean_object*)(l___private_Lake_DSL_Package_0__Lake_DSL_elabPackageCommand___closed__60));
 v___x_1063_ = l___private_Lean_Environment_0__Lean_EnvExtension_getStateUnsafe___redArg(v___x_1062_, v___x_1059_, v_env_1058_, v_asyncMode_1060_, v___x_1061_);
-lean_dec(v_asyncMode_1060_);
 v_fst_1064_ = lean_ctor_get(v___x_1063_, 0);
 lean_inc(v_fst_1064_);
 v_snd_1065_ = lean_ctor_get(v___x_1063_, 1);

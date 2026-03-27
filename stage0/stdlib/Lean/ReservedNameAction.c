@@ -3222,7 +3222,6 @@ v_env_898_ = lean_ctor_get(v___x_897_, 0);
 lean_inc_ref(v_env_898_);
 lean_dec(v___x_897_);
 v___x_899_ = l_Lean_Environment_containsOnBranch(v_env_898_, v_fst_891_);
-lean_dec_ref(v_env_898_);
 if (v___x_899_ == 0)
 {
 lean_del_object(v___x_884_);
