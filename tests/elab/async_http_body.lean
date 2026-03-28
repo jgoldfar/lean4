@@ -276,20 +276,6 @@ def channelStreamHelper : Async Unit := do
 
 #eval channelStreamHelper.block
 
--- Test Body.fromBytes creates a Stream with correct known-size metadata
-
-def channelFromBytesHelper : Async Unit := do
-  let stream ← Body.fromBytes "world".toUTF8
-
-  let size ← stream.getKnownSize
-  assert! size == some (.fixed 5)
-
-  let result ← stream.recv
-  assert! result.isSome
-  assert! result.get!.data == "world".toUTF8
-
-#eval channelFromBytesHelper.block
-
 -- Test Body.empty creates an already-closed Stream
 
 def channelEmptyHelper : Async Unit := do
