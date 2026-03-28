@@ -39,7 +39,7 @@ lean_object* l_Lean_Meta_getLevel(lean_object*, lean_object*, lean_object*, lean
 lean_object* l_Lean_Meta_decLevel_x3f(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_mkConst(lean_object*, lean_object*);
 lean_object* l_Lean_mkAppB(lean_object*, lean_object*, lean_object*);
-lean_object* l_Lean_Meta_Grind_synthInstanceMeta_x3f(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
+lean_object* l_Lean_Meta_Sym_synthInstanceMeta_x3f(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Name_mkStr3(lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_mkApp3(lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* lean_st_ref_take(lean_object*);
@@ -359,7 +359,7 @@ v___x_70_ = l_Lean_mkConst(v___x_22_, v___x_69_);
 lean_inc_ref(v_op_14_);
 lean_inc_ref(v_binderType_34_);
 v___x_71_ = l_Lean_mkAppB(v___x_70_, v_binderType_34_, v_op_14_);
-v___x_72_ = l_Lean_Meta_Grind_synthInstanceMeta_x3f(v___x_71_, v_a_15_, v_a_16_, v_a_17_, v_a_18_);
+v___x_72_ = l_Lean_Meta_Sym_synthInstanceMeta_x3f(v___x_71_, v_a_15_, v_a_16_, v_a_17_, v_a_18_);
 if (lean_obj_tag(v___x_72_) == 0)
 {
 lean_object* v_a_73_; lean_object* v___x_75_; uint8_t v_isShared_76_; uint8_t v_isSharedCheck_95_; 

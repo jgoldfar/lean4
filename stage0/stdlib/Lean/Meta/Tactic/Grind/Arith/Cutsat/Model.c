@@ -5318,7 +5318,7 @@ _start:
 {
 lean_object* v_toGoalState_1438_; lean_object* v_exprs_1439_; lean_object* v_model_1440_; lean_object* v___x_1441_; 
 v_toGoalState_1438_ = lean_ctor_get(v_goal_1432_, 0);
-v_exprs_1439_ = lean_ctor_get(v_toGoalState_1438_, 3);
+v_exprs_1439_ = lean_ctor_get(v_toGoalState_1438_, 2);
 v_model_1440_ = lean_obj_once(&l_Lean_Meta_Grind_Arith_Cutsat_mkModel___closed__1, &l_Lean_Meta_Grind_Arith_Cutsat_mkModel___closed__1_once, _init_l_Lean_Meta_Grind_Arith_Cutsat_mkModel___closed__1);
 lean_inc_ref(v_exprs_1439_);
 lean_inc_ref(v_goal_1432_);

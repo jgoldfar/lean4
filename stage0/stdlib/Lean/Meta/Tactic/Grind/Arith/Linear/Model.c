@@ -7786,7 +7786,7 @@ v_toGoalState_2160_ = lean_ctor_get(v_goal_2150_, 0);
 v_structs_2161_ = lean_ctor_get(v_a_2159_, 0);
 lean_inc_ref(v_structs_2161_);
 lean_dec(v_a_2159_);
-v_exprs_2162_ = lean_ctor_get(v_toGoalState_2160_, 3);
+v_exprs_2162_ = lean_ctor_get(v_toGoalState_2160_, 2);
 v___x_2163_ = l_Lean_Meta_Grind_Arith_Linear_instInhabitedStruct_default;
 v_model_2164_ = lean_obj_once(&l_Lean_Meta_Grind_Arith_Linear_mkModel___closed__1, &l_Lean_Meta_Grind_Arith_Linear_mkModel___closed__1_once, _init_l_Lean_Meta_Grind_Arith_Linear_mkModel___closed__1);
 v___x_2165_ = lean_array_get(v___x_2163_, v_structs_2161_, v_structId_2151_);

@@ -1,6 +1,6 @@
 // Lean compiler output
 // Module: Lean.Meta.Tactic.Grind.Arith.FieldNormNum
-// Imports: public import Lean.Meta.Basic import Lean.Meta.Tactic.Grind.SynthInstance import Init.Grind.FieldNormNum
+// Imports: public import Lean.Meta.Basic import Init.Grind.FieldNormNum import Lean.Meta.Tactic.Grind.SynthInstance import Lean.Meta.AppBuilder import Lean.Meta.LitValues import Lean.Util.SafeExponentiation
 #include <lean/lean.h>
 #if defined(__clang__)
 #pragma clang diagnostic ignored "-Wunused-parameter"
@@ -63,7 +63,7 @@ lean_object* l_Rat_ofInt(lean_object*);
 lean_object* l_Lean_Meta_getDecLevel_x3f(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Name_mkStr3(lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Expr_app___override(lean_object*, lean_object*);
-lean_object* l_Lean_Meta_Grind_synthInstanceMeta_x3f(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
+lean_object* l_Lean_Meta_Sym_synthInstanceMeta_x3f(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Meta_checkWithKernel(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 uint8_t lean_int_dec_eq(lean_object*, lean_object*);
 lean_object* l_Lean_Meta_mkAppM(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
@@ -553,7 +553,7 @@ lean_inc_ref(v___x_50_);
 v___x_51_ = l_Lean_mkConst(v___x_48_, v___x_50_);
 lean_inc_ref(v_type_35_);
 v___x_52_ = l_Lean_Expr_app___override(v___x_51_, v_type_35_);
-v___x_53_ = l_Lean_Meta_Grind_synthInstanceMeta_x3f(v___x_52_, v_a_37_, v_a_38_, v_a_39_, v_a_40_);
+v___x_53_ = l_Lean_Meta_Sym_synthInstanceMeta_x3f(v___x_52_, v_a_37_, v_a_38_, v_a_39_, v_a_40_);
 if (lean_obj_tag(v___x_53_) == 0)
 {
 lean_object* v_a_54_; lean_object* v___x_56_; uint8_t v_isShared_57_; uint8_t v_isSharedCheck_106_; 
@@ -605,7 +605,7 @@ if (lean_obj_tag(v___x_72_) == 0)
 {
 lean_object* v___x_73_; 
 lean_dec_ref(v___x_72_);
-v___x_73_ = l_Lean_Meta_Grind_synthInstanceMeta_x3f(v___x_71_, v_a_37_, v_a_38_, v_a_39_, v_a_40_);
+v___x_73_ = l_Lean_Meta_Sym_synthInstanceMeta_x3f(v___x_71_, v_a_37_, v_a_38_, v_a_39_, v_a_40_);
 if (lean_obj_tag(v___x_73_) == 0)
 {
 lean_object* v_a_74_; lean_object* v___x_76_; uint8_t v_isShared_77_; uint8_t v_isSharedCheck_85_; 
@@ -8192,8 +8192,11 @@ return v_res_2364_;
 }
 }
 lean_object* runtime_initialize_Lean_Meta_Basic(uint8_t builtin);
-lean_object* runtime_initialize_Lean_Meta_Tactic_Grind_SynthInstance(uint8_t builtin);
 lean_object* runtime_initialize_Init_Grind_FieldNormNum(uint8_t builtin);
+lean_object* runtime_initialize_Lean_Meta_Tactic_Grind_SynthInstance(uint8_t builtin);
+lean_object* runtime_initialize_Lean_Meta_AppBuilder(uint8_t builtin);
+lean_object* runtime_initialize_Lean_Meta_LitValues(uint8_t builtin);
+lean_object* runtime_initialize_Lean_Util_SafeExponentiation(uint8_t builtin);
 static bool _G_runtime_initialized = false;
 LEAN_EXPORT lean_object* runtime_initialize_Lean_Meta_Tactic_Grind_Arith_FieldNormNum(uint8_t builtin) {
 lean_object * res;
@@ -8202,10 +8205,19 @@ _G_runtime_initialized = true;
 res = runtime_initialize_Lean_Meta_Basic(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
+res = runtime_initialize_Init_Grind_FieldNormNum(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
 res = runtime_initialize_Lean_Meta_Tactic_Grind_SynthInstance(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-res = runtime_initialize_Init_Grind_FieldNormNum(builtin);
+res = runtime_initialize_Lean_Meta_AppBuilder(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = runtime_initialize_Lean_Meta_LitValues(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = runtime_initialize_Lean_Util_SafeExponentiation(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 return lean_io_result_mk_ok(lean_box(0));
@@ -8218,8 +8230,11 @@ _G_meta_initialized = true;
 return lean_io_result_mk_ok(lean_box(0));
 }
 lean_object* initialize_Lean_Meta_Basic(uint8_t builtin);
-lean_object* initialize_Lean_Meta_Tactic_Grind_SynthInstance(uint8_t builtin);
 lean_object* initialize_Init_Grind_FieldNormNum(uint8_t builtin);
+lean_object* initialize_Lean_Meta_Tactic_Grind_SynthInstance(uint8_t builtin);
+lean_object* initialize_Lean_Meta_AppBuilder(uint8_t builtin);
+lean_object* initialize_Lean_Meta_LitValues(uint8_t builtin);
+lean_object* initialize_Lean_Util_SafeExponentiation(uint8_t builtin);
 static bool _G_initialized = false;
 LEAN_EXPORT lean_object* initialize_Lean_Meta_Tactic_Grind_Arith_FieldNormNum(uint8_t builtin) {
 lean_object * res;
@@ -8228,10 +8243,19 @@ _G_initialized = true;
 res = initialize_Lean_Meta_Basic(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
+res = initialize_Init_Grind_FieldNormNum(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
 res = initialize_Lean_Meta_Tactic_Grind_SynthInstance(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-res = initialize_Init_Grind_FieldNormNum(builtin);
+res = initialize_Lean_Meta_AppBuilder(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Lean_Meta_LitValues(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Lean_Util_SafeExponentiation(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 res = runtime_initialize_Lean_Meta_Tactic_Grind_Arith_FieldNormNum(builtin);

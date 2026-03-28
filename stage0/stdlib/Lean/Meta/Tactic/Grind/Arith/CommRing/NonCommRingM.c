@@ -27,7 +27,7 @@ lean_object* lean_array_get_size(lean_object*);
 uint8_t lean_nat_dec_lt(lean_object*, lean_object*);
 lean_object* lean_array_fget_borrowed(lean_object*, lean_object*);
 lean_object* lean_nat_add(lean_object*, lean_object*);
-lean_object* l_Lean_Meta_Grind_synthInstanceMeta_x3f(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
+lean_object* l_Lean_Meta_Sym_synthInstanceMeta_x3f(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* lean_array_fget(lean_object*, lean_object*);
 lean_object* lean_array_fset(lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_PersistentHashMap_mkCollisionNode___redArg(lean_object*, lean_object*, lean_object*, lean_object*);
@@ -44,7 +44,7 @@ lean_object* l_Lean_indentExpr(lean_object*);
 lean_object* l_Lean_Meta_Sym_reportIssue(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 extern lean_object* l_Lean_Meta_Grind_Arith_CommRing_ringExt;
 lean_object* l___private_Lean_Meta_Tactic_Grind_Types_0__Lean_Meta_Grind_SolverExtension_modifyStateImpl___redArg(lean_object*, lean_object*, lean_object*);
-lean_object* lean_grind_canon(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
+lean_object* l_Lean_Meta_Sym_canon(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Meta_Sym_shareCommon___redArg(lean_object*, lean_object*);
 lean_object* lean_st_ref_get(lean_object*);
 LEAN_EXPORT lean_object* l_Lean_Meta_Grind_Arith_CommRing_NonCommRingM_run___redArg(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
@@ -212,17 +212,7 @@ LEAN_EXPORT lean_object* l_Lean_Meta_Grind_Arith_CommRing_instMonadCanonNonCommR
 _start:
 {
 lean_object* v___x_72_; 
-lean_inc(v___y_70_);
-lean_inc_ref(v___y_69_);
-lean_inc(v___y_68_);
-lean_inc_ref(v___y_67_);
-lean_inc(v___y_66_);
-lean_inc_ref(v___y_65_);
-lean_inc(v___y_64_);
-lean_inc_ref(v___y_63_);
-lean_inc(v___y_62_);
-lean_inc(v___y_61_);
-v___x_72_ = lean_grind_canon(v_e_59_, v___y_61_, v___y_62_, v___y_63_, v___y_64_, v___y_65_, v___y_66_, v___y_67_, v___y_68_, v___y_69_, v___y_70_);
+v___x_72_ = l_Lean_Meta_Sym_canon(v_e_59_, v___y_65_, v___y_66_, v___y_67_, v___y_68_, v___y_69_, v___y_70_);
 if (lean_obj_tag(v___x_72_) == 0)
 {
 lean_object* v_a_73_; lean_object* v___x_74_; 
@@ -261,7 +251,7 @@ LEAN_EXPORT lean_object* l_Lean_Meta_Grind_Arith_CommRing_instMonadCanonNonCommR
 _start:
 {
 lean_object* v___x_102_; 
-v___x_102_ = l_Lean_Meta_Grind_synthInstanceMeta_x3f(v_e_89_, v___y_97_, v___y_98_, v___y_99_, v___y_100_);
+v___x_102_ = l_Lean_Meta_Sym_synthInstanceMeta_x3f(v_e_89_, v___y_97_, v___y_98_, v___y_99_, v___y_100_);
 return v___x_102_;
 }
 }

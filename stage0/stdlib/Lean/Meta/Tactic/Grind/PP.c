@@ -3601,7 +3601,7 @@ _start:
 {
 lean_object* v_toGoalState_946_; lean_object* v_exprs_947_; lean_object* v_r_948_; lean_object* v___x_949_; 
 v_toGoalState_946_ = lean_ctor_get(v_goal_940_, 0);
-v_exprs_947_ = lean_ctor_get(v_toGoalState_946_, 3);
+v_exprs_947_ = lean_ctor_get(v_toGoalState_946_, 2);
 v_r_948_ = lean_obj_once(&l_Lean_Meta_Grind_Goal_ppState___closed__1, &l_Lean_Meta_Grind_Goal_ppState___closed__1_once, _init_l_Lean_Meta_Grind_Goal_ppState___closed__1);
 lean_inc_ref(v_exprs_947_);
 lean_inc_ref(v_goal_940_);
@@ -6992,7 +6992,7 @@ _start:
 {
 lean_object* v_toGoalState_2116_; lean_object* v_ematch_2117_; lean_object* v_thms_2118_; lean_object* v_newThms_2119_; lean_object* v___x_2120_; size_t v_sz_2121_; size_t v___x_2122_; lean_object* v___x_2123_; 
 v_toGoalState_2116_ = lean_ctor_get(v_a_2109_, 0);
-v_ematch_2117_ = lean_ctor_get(v_toGoalState_2116_, 13);
+v_ematch_2117_ = lean_ctor_get(v_toGoalState_2116_, 12);
 v_thms_2118_ = lean_ctor_get(v_ematch_2117_, 2);
 v_newThms_2119_ = lean_ctor_get(v_ematch_2117_, 3);
 v___x_2120_ = l_Lean_PersistentArray_toArray___redArg(v_thms_2118_);
@@ -8880,9 +8880,9 @@ _start:
 {
 lean_object* v_toGoalState_2749_; lean_object* v_exprs_2750_; lean_object* v_ematch_2751_; lean_object* v_split_2752_; lean_object* v___x_2753_; lean_object* v_msgs_2755_; lean_object* v___y_2756_; lean_object* v___y_2757_; lean_object* v___x_2788_; lean_object* v_splits_2789_; lean_object* v_ematch_2790_; lean_object* v_gen_2791_; lean_object* v_instances_2792_; lean_object* v_numInstances_2793_; lean_object* v_num_2794_; lean_object* v___x_2795_; lean_object* v_msgs_2797_; lean_object* v___y_2798_; lean_object* v___y_2799_; lean_object* v_msgs_2816_; lean_object* v___y_2817_; lean_object* v___y_2818_; lean_object* v_msgs_2836_; lean_object* v___y_2837_; lean_object* v___y_2838_; uint8_t v___x_2854_; 
 v_toGoalState_2749_ = lean_ctor_get(v_a_2745_, 0);
-v_exprs_2750_ = lean_ctor_get(v_toGoalState_2749_, 3);
-v_ematch_2751_ = lean_ctor_get(v_toGoalState_2749_, 13);
-v_split_2752_ = lean_ctor_get(v_toGoalState_2749_, 15);
+v_exprs_2750_ = lean_ctor_get(v_toGoalState_2749_, 2);
+v_ematch_2751_ = lean_ctor_get(v_toGoalState_2749_, 12);
+v_split_2752_ = lean_ctor_get(v_toGoalState_2749_, 14);
 v___x_2753_ = lean_unsigned_to_nat(0u);
 v___x_2788_ = l_Lean_PersistentArray_foldlM___at___00__private_Lean_Meta_Tactic_Grind_PP_0__Lean_Meta_Grind_ppThresholds_spec__0(v_a_2745_, v_exprs_2750_, v___x_2753_, v___x_2753_);
 v_splits_2789_ = lean_ctor_get(v_c_2744_, 0);
@@ -9438,7 +9438,7 @@ _start:
 {
 lean_object* v_toGoalState_2976_; lean_object* v_split_2977_; lean_object* v_trace_2978_; uint8_t v___x_2979_; 
 v_toGoalState_2976_ = lean_ctor_get(v_a_2969_, 0);
-v_split_2977_ = lean_ctor_get(v_toGoalState_2976_, 15);
+v_split_2977_ = lean_ctor_get(v_toGoalState_2976_, 14);
 v_trace_2978_ = lean_ctor_get(v_split_2977_, 4);
 v___x_2979_ = l_List_isEmpty___redArg(v_trace_2978_);
 if (v___x_2979_ == 0)
@@ -9518,7 +9518,7 @@ _start:
 {
 lean_object* v_toGoalState_3039_; lean_object* v_facts_3040_; lean_object* v___x_3041_; lean_object* v___x_3042_; lean_object* v___x_3043_; lean_object* v___x_3044_; lean_object* v___x_3045_; lean_object* v___x_3046_; lean_object* v_a_3047_; lean_object* v_snd_3048_; lean_object* v___x_3049_; 
 v_toGoalState_3039_ = lean_ctor_get(v_goal_3029_, 0);
-v_facts_3040_ = lean_ctor_get(v_toGoalState_3039_, 11);
+v_facts_3040_ = lean_ctor_get(v_toGoalState_3039_, 10);
 v___x_3041_ = ((lean_object*)(l___private_Lean_Meta_Tactic_Grind_PP_0__Lean_Meta_Grind_goalDiagToMessageData_go___closed__1));
 v___x_3042_ = ((lean_object*)(l___private_Lean_Meta_Tactic_Grind_PP_0__Lean_Meta_Grind_goalDiagToMessageData_go___closed__2));
 v___x_3043_ = l_Lean_PersistentArray_toArray___redArg(v_facts_3040_);

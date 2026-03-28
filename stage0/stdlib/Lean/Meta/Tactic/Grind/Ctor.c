@@ -70,7 +70,7 @@ uint8_t l_Lean_Expr_isApp(lean_object*);
 lean_object* l_Lean_Expr_appFnCleanup___redArg(lean_object*);
 lean_object* l_Lean_Name_mkStr1(lean_object*);
 uint8_t l_Lean_Expr_isConstOf(lean_object*, lean_object*);
-lean_object* l_Lean_Meta_Grind_preprocessLight(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
+lean_object* l_Lean_Meta_Grind_preprocessLight___redArg(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* lean_grind_internalize(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Meta_Grind_pushEqCore___redArg(lean_object*, lean_object*, lean_object*, uint8_t, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Expr_proj___override(lean_object*, lean_object*, lean_object*);
@@ -348,14 +348,14 @@ else
 {
 lean_object* v___x_72_; 
 lean_dec_ref(v_eqs_13_);
-v___x_72_ = l_Lean_Meta_Grind_preprocessLight(v_arg_64_, v_a_16_, v_a_17_, v_a_18_, v_a_19_, v_a_20_, v_a_21_, v_a_22_, v_a_23_, v_a_24_, v_a_25_);
+v___x_72_ = l_Lean_Meta_Grind_preprocessLight___redArg(v_arg_64_, v_a_17_, v_a_18_, v_a_19_, v_a_20_, v_a_21_, v_a_22_, v_a_23_, v_a_24_, v_a_25_);
 if (lean_obj_tag(v___x_72_) == 0)
 {
 lean_object* v_a_73_; lean_object* v___x_74_; 
 v_a_73_ = lean_ctor_get(v___x_72_, 0);
 lean_inc(v_a_73_);
 lean_dec_ref(v___x_72_);
-v___x_74_ = l_Lean_Meta_Grind_preprocessLight(v_arg_56_, v_a_16_, v_a_17_, v_a_18_, v_a_19_, v_a_20_, v_a_21_, v_a_22_, v_a_23_, v_a_24_, v_a_25_);
+v___x_74_ = l_Lean_Meta_Grind_preprocessLight___redArg(v_arg_56_, v_a_17_, v_a_18_, v_a_19_, v_a_20_, v_a_21_, v_a_22_, v_a_23_, v_a_24_, v_a_25_);
 if (lean_obj_tag(v___x_74_) == 0)
 {
 lean_object* v_a_75_; lean_object* v___x_76_; lean_object* v___x_77_; 
@@ -514,14 +514,14 @@ lean_object* v___x_96_;
 lean_dec_ref(v___x_65_);
 lean_dec_ref(v_arg_64_);
 lean_dec_ref(v_eqs_13_);
-v___x_96_ = l_Lean_Meta_Grind_preprocessLight(v_arg_59_, v_a_16_, v_a_17_, v_a_18_, v_a_19_, v_a_20_, v_a_21_, v_a_22_, v_a_23_, v_a_24_, v_a_25_);
+v___x_96_ = l_Lean_Meta_Grind_preprocessLight___redArg(v_arg_59_, v_a_17_, v_a_18_, v_a_19_, v_a_20_, v_a_21_, v_a_22_, v_a_23_, v_a_24_, v_a_25_);
 if (lean_obj_tag(v___x_96_) == 0)
 {
 lean_object* v_a_97_; lean_object* v___x_98_; 
 v_a_97_ = lean_ctor_get(v___x_96_, 0);
 lean_inc(v_a_97_);
 lean_dec_ref(v___x_96_);
-v___x_98_ = l_Lean_Meta_Grind_preprocessLight(v_arg_56_, v_a_16_, v_a_17_, v_a_18_, v_a_19_, v_a_20_, v_a_21_, v_a_22_, v_a_23_, v_a_24_, v_a_25_);
+v___x_98_ = l_Lean_Meta_Grind_preprocessLight___redArg(v_arg_56_, v_a_17_, v_a_18_, v_a_19_, v_a_20_, v_a_21_, v_a_22_, v_a_23_, v_a_24_, v_a_25_);
 if (lean_obj_tag(v___x_98_) == 0)
 {
 lean_object* v_a_99_; lean_object* v___x_100_; lean_object* v___x_101_; 

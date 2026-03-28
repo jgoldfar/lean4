@@ -3184,7 +3184,7 @@ lean_object* v_toGoalState_850_; lean_object* v_ematch_851_; lean_object* v_thms
 v_toGoalState_850_ = lean_ctor_get(v_goal_839_, 0);
 lean_inc_ref(v_toGoalState_850_);
 lean_dec_ref(v_goal_839_);
-v_ematch_851_ = lean_ctor_get(v_toGoalState_850_, 13);
+v_ematch_851_ = lean_ctor_get(v_toGoalState_850_, 12);
 lean_inc_ref(v_ematch_851_);
 lean_dec_ref(v_toGoalState_850_);
 v_thms_852_ = lean_ctor_get(v_ematch_851_, 2);

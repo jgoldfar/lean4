@@ -7494,7 +7494,7 @@ _start:
 lean_object* v___x_2609_; lean_object* v___x_2610_; lean_object* v___x_2611_; lean_object* v___x_2612_; lean_object* v___x_2613_; lean_object* v___x_2614_; 
 v___x_2609_ = ((lean_object*)(l___private_Lean_Meta_Tactic_Lets_0__Lean_Meta_ExtractLets_extractCore_extractLetLike___lam__0___closed__2));
 v___x_2610_ = lean_unsigned_to_nat(27u);
-v___x_2611_ = lean_unsigned_to_nat(1940u);
+v___x_2611_ = lean_unsigned_to_nat(1946u);
 v___x_2612_ = ((lean_object*)(l___private_Lean_Meta_Tactic_Lets_0__Lean_Meta_ExtractLets_extractCore_extractLetLike___lam__0___closed__1));
 v___x_2613_ = ((lean_object*)(l___private_Lean_Meta_Tactic_Lets_0__Lean_Meta_ExtractLets_extractCore_extractLetLike___lam__0___closed__0));
 v___x_2614_ = l_mkPanicMessageWithDecl(v___x_2613_, v___x_2612_, v___x_2611_, v___x_2610_, v___x_2609_);
