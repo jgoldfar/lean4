@@ -1,6 +1,6 @@
 // Lean compiler output
 // Module: Lean.Elab.Tactic.Grind.Config
-// Imports: public import Lean.Elab.Tactic.Grind.Basic import Lean.Elab.Tactic.ConfigSetter
+// Imports: public import Lean.Elab.Tactic.Grind.Basic import Lean.Elab.Tactic.ConfigSetter import Lean.Elab.DeprecatedSyntax
 #include <lean/lean.h>
 #if defined(__clang__)
 #pragma clang diagnostic ignored "-Wunused-parameter"
@@ -17293,6 +17293,7 @@ return v_res_5299_;
 }
 lean_object* runtime_initialize_Lean_Elab_Tactic_Grind_Basic(uint8_t builtin);
 lean_object* runtime_initialize_Lean_Elab_Tactic_ConfigSetter(uint8_t builtin);
+lean_object* runtime_initialize_Lean_Elab_DeprecatedSyntax(uint8_t builtin);
 static bool _G_runtime_initialized = false;
 LEAN_EXPORT lean_object* runtime_initialize_Lean_Elab_Tactic_Grind_Config(uint8_t builtin) {
 lean_object * res;
@@ -17302,6 +17303,9 @@ res = runtime_initialize_Lean_Elab_Tactic_Grind_Basic(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 res = runtime_initialize_Lean_Elab_Tactic_ConfigSetter(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = runtime_initialize_Lean_Elab_DeprecatedSyntax(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 return lean_io_result_mk_ok(lean_box(0));
@@ -17315,6 +17319,7 @@ return lean_io_result_mk_ok(lean_box(0));
 }
 lean_object* initialize_Lean_Elab_Tactic_Grind_Basic(uint8_t builtin);
 lean_object* initialize_Lean_Elab_Tactic_ConfigSetter(uint8_t builtin);
+lean_object* initialize_Lean_Elab_DeprecatedSyntax(uint8_t builtin);
 static bool _G_initialized = false;
 LEAN_EXPORT lean_object* initialize_Lean_Elab_Tactic_Grind_Config(uint8_t builtin) {
 lean_object * res;
@@ -17324,6 +17329,9 @@ res = initialize_Lean_Elab_Tactic_Grind_Basic(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 res = initialize_Lean_Elab_Tactic_ConfigSetter(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Lean_Elab_DeprecatedSyntax(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 res = runtime_initialize_Lean_Elab_Tactic_Grind_Config(builtin);
