@@ -188,6 +188,7 @@ where
     profileitM Exception profilerName (← getOptions) do
       let mut state : (pu : Purity) × Array (Decl pu) := ⟨inPhase, decls⟩
       for pass in passes do
+        checkSystem "LCNF compiler"
         state ← withTraceNode `Compiler (fun _ => return m!"compiler phase: {pass.phase}, pass: {pass.name}") do
           let decls ← withPhase pass.phase do
             state.fst.withAssertPurity pass.phase.toPurity fun h => do

@@ -453,6 +453,9 @@ Throws an internal interrupt exception if cancellation has been requested. The e
 caught by `try catch` but is intended to be caught by `Command.withLoggingExceptions` at the top
 level of elaboration. In particular, we want to skip producing further incremental snapshots after
 the exception has been thrown.
+
+Like `checkSystem` but without the global heartbeat check, for callers that have their own
+heartbeat tracking (e.g. `SynthInstance`).
  -/
 @[inline] def checkInterrupted : CoreM Unit := do
   if let some tk := (← read).cancelTk? then
