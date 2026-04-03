@@ -1044,7 +1044,7 @@ def reportMatcherResultErrors (altLHSS : List AltLHS) (result : MatcherResult) :
   unless result.counterExamples.isEmpty do
     let maxCEx := Meta.Match.match.maxCounterExamples.get (← getOptions)
     let (shown, truncated) :=
-      if result.counterExamples.length > maxCEx then
+      if result.counterExamples.size > maxCEx then
         (result.counterExamples.take maxCEx, true)
       else
         (result.counterExamples, false)

@@ -210,7 +210,7 @@ structure State where
   Used during splitter generation to avoid going through all pairs of patterns.
   -/
   overlaps        : Overlaps := {}
-  counterExamples : List (List Example) := []
+  counterExamples : Array (List Example) := #[]
 
 /-- Return true if the given (sub-)problem has been solved. -/
 private def isDone (p : Problem) : Bool :=
@@ -284,7 +284,7 @@ private def isConstructorTransition (p : Problem) : StateRefT State MetaM Bool :
        counter-examples, stop exploring further case splits. This prevents
        combinatorial explosion when generating "missing cases" diagnostics. -/
     let maxCEx := match.maxCounterExamples.get (← getOptions)
-    return (← get).counterExamples.length < maxCEx
+    return (← get).counterExamples.size < maxCEx
   else
     return hasCtorPattern p && p.alts.all fun alt => match alt.patterns with
       | .ctor .. :: _        => true
@@ -481,7 +481,7 @@ where
         trace[Meta.Match.match] "contradiction succeeded"
       else
         trace[Meta.Match.match] "contradiction failed, missing alternative"
-        modify fun s => { s with counterExamples := p.examples :: s.counterExamples }
+        modify fun s => { s with counterExamples := s.counterExamples.push p.examples }
     | alt :: overlapped =>
       solveCnstrs p.mvarId alt
       for otherAlt in overlapped do

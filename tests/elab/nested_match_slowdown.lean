@@ -50,11 +50,11 @@ inductive Op (w : Nat) where
 -- it stops early and reports the first 5 missing cases quickly.
 /--
 error: Missing cases:
-(c19 _ _)
-(c18 _ _)
-(c17 _ _)
-(c16 _ _)
-(c15 _ _)
+(add (Operand.r0 _) (Operand.r0 _))
+(add (Operand.r0 _) (Operand.r1 _))
+(add (Operand.r0 _) (Operand.r2 _))
+(add (Operand.r0 _) (Operand.r3 _))
+(add (Operand.r0 _) (Operand.r4 _))
 (further cases omitted, increase `set_option match.maxCounterExamples 5` to see more)
 -/
 #guard_msgs in
