@@ -137,6 +137,10 @@ Hint: Using one of these would be valid:
   [apply] `List.Sublist.below.cons`
   [apply] `Lean.Grind.AC.Seq.cons`
   [apply] `Std.DHashMap.Internal.AssocList.cons`
+  [apply] `String.Slice.Pattern.Model.IsLongestMatchAtChain.cons`
+  [apply] `String.Slice.Pattern.Model.IsLongestRevMatchAtChain.cons`
+  [apply] `String.Slice.Pattern.Model.IsLongestMatchAtChain.below.cons`
+  [apply] `String.Slice.Pattern.Model.IsLongestRevMatchAtChain.below.cons`
 ---
 warning: Local variable 'nil' resembles constructor 'List.nil' - write '.nil' (with a dot) or 'List.nil' to use the constructor.
 
@@ -170,6 +174,10 @@ Hint: Using one of these would be valid:
   [apply] `List.Sublist.below.cons`
   [apply] `Lean.Grind.AC.Seq.cons`
   [apply] `Std.DHashMap.Internal.AssocList.cons`
+  [apply] `String.Slice.Pattern.Model.IsLongestMatchAtChain.cons`
+  [apply] `String.Slice.Pattern.Model.IsLongestRevMatchAtChain.cons`
+  [apply] `String.Slice.Pattern.Model.IsLongestMatchAtChain.below.cons`
+  [apply] `String.Slice.Pattern.Model.IsLongestRevMatchAtChain.below.cons`
 ---
 warning: Local variable 'nil' resembles constructor 'List.nil' - write '.nil' (with a dot) or 'List.nil' to use the constructor.
 
