@@ -283,6 +283,7 @@ def handleProj : Simproc := fun e => do
         let newProof ← mkEqOfHEq newProof (check := false)
         return .step (← Lean.Expr.updateProjS! e e') newProof
 
+open Sym.Internal in
 /--
 For an application whose head is neither a constant nor a lambda (e.g. a projection
 like `p.1 x`), simplify the function head and lift the proof via `congrArg`.
