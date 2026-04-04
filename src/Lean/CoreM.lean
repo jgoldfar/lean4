@@ -20,6 +20,8 @@ register_builtin_option diagnostics : Bool := {
   descr    := "collect diagnostic information"
 }
 
+builtin_initialize registerTraceClass `diagnostics
+
 register_builtin_option diagnostics.threshold : Nat := {
   defValue := 20
   descr    := "only diagnostic counters above this threshold are reported by the definitional equality"
