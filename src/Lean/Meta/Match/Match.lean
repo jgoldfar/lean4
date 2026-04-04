@@ -1108,6 +1108,9 @@ def mkMatcherAuxDefinition (name : Name) (type : Expr) (value : Expr) (isSplitte
       -- matcher bodies should always be exported, if not private anyway
       withExporting do
         addDecl decl
+      -- if `matcher` is not private, we mark it as `implicit_reducible` too
+      unless isPrivateName name do
+        setReducibilityStatus name .implicitReducible
       unless isSplitter do
         modifyEnv fun env => matcherExt.modifyState env fun s => s.insert key name
         addMatcherInfo name mi
