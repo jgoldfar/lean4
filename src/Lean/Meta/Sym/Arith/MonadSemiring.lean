@@ -1,14 +1,13 @@
 /-
-Copyright (c) 2025 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+Copyright (c) 2026 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Leonardo de Moura
 -/
 module
 prelude
 public import Lean.Meta.Sym.Arith.MonadCanon
-public import Lean.Meta.Tactic.Grind.Arith.CommRing.Types
 public section
-namespace Lean.Meta.Grind.Arith.CommRing
+namespace Lean.Meta.Sym.Arith
 
 class MonadSemiring (m : Type → Type) where
   getSemiring : m Semiring
@@ -37,4 +36,4 @@ instance (m) [Monad m] [MonadCommSemiring m] : MonadSemiring m where
   getSemiring := return (← getCommSemiring).toSemiring
   modifySemiring f := modifyCommSemiring fun s => { s with toSemiring := f s.toSemiring }
 
-end Lean.Meta.Grind.Arith.CommRing
+end Lean.Meta.Sym.Arith

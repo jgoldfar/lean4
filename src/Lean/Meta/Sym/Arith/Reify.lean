@@ -1,17 +1,36 @@
 /-
-Copyright (c) 2025 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+Copyright (c) 2026 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Leonardo de Moura
 -/
 module
 prelude
-public import Lean.Meta.Tactic.Grind.Arith.CommRing.NonCommRingM
-public import Lean.Meta.Tactic.Grind.Arith.CommRing.NonCommSemiringM
+public import Lean.Meta.Sym.Arith.Functions
+public import Lean.Meta.Sym.Arith.MonadVar
+public import Lean.Meta.Sym.LitValues
 public section
-namespace Lean.Meta.Grind.Arith.CommRing
+namespace Lean.Meta.Sym.Arith
 open Sym.Arith (MonadCanon)
 
-variable [MonadLiftT MetaM m] [MonadError m] [Monad m] [MonadCanon m] [MonadRing m]
+/-!
+# Reification of arithmetic expressions
+
+Converts Lean expressions into `CommRing.Expr` (ring) or `CommSemiring.Expr`
+(semiring) for reflection-based normalization.
+
+Instance validation uses pointer equality (`isSameExpr`) against cached function
+expressions from `Functions.lean`.
+
+## Differences from grind's `Reify.lean`
+
+- Uses `MonadMkVar` for variable creation instead of grind's `internalize` + `mkVarCore`
+- Uses `Sym.getNatValue?`/`Sym.getIntValue?` (pure) instead of `MetaM` versions
+- No `MonadSetTermId` — term-to-ring-id tracking is grind-specific
+-/
+
+section RingReify
+
+variable [MonadLiftT SymM m] [MonadLiftT MetaM m] [MonadError m] [Monad m] [MonadCanon m] [MonadRing m] [MonadMkVar m]
 
 def isAddInst (inst : Expr) : m Bool :=
   return isSameExpr (← getAddFn).appArg! inst
@@ -28,28 +47,21 @@ def isIntCastInst (inst : Expr) : m Bool :=
 def isNatCastInst (inst : Expr) : m Bool :=
   return isSameExpr (← getNatCastFn).appArg! inst
 
-private def reportAppIssue (e : Expr) : GoalM Unit := do
+private def reportRingAppIssue [MonadLiftT SymM m] (e : Expr) : m Unit := do
   reportIssue! "ring term with unexpected instance{indentExpr e}"
 
-variable [MonadLiftT GoalM m] [MonadSetTermId m]
-
 /--
-Converts a Lean expression `e` in the `CommRing` into a `CommRing.Expr` object.
+Converts a Lean expression `e` into a `RingExpr`.
 
-If `skipVar` is `true`, then the result is `none` if `e` is not an interpreted `CommRing` term.
-We use `skipVar := false` when processing inequalities, and `skipVar := true` for equalities and disequalities
+If `skipVar` is `true`, returns `none` if `e` is not an interpreted ring term
+(used for equalities/disequalities). If `false`, treats non-interpreted terms
+as variables (used for inequalities).
 -/
-partial def reifyCore? (e : Expr) (skipVar : Bool) (gen : Nat) : m (Option RingExpr) := do
-  let mkVar (e : Expr) : m Var := do
-    if (← alreadyInternalized e) then
-      mkVarCore e
-    else
-      internalize e gen
-      mkVarCore e
+partial def reifyRing? (e : Expr) (skipVar : Bool := true) : m (Option RingExpr) := do
   let toVar (e : Expr) : m RingExpr := do
     return .var (← mkVar e)
   let asVar (e : Expr) : m RingExpr := do
-    reportAppIssue e
+    reportRingAppIssue e
     return .var (← mkVar e)
   let rec go (e : Expr) : m RingExpr := do
     match_expr e with
@@ -60,27 +72,33 @@ partial def reifyCore? (e : Expr) (skipVar : Bool) (gen : Nat) : m (Option RingE
     | HSub.hSub _ _ _ i a b =>
       if (← isSubInst i) then return .sub (← go a) (← go b) else asVar e
     | HPow.hPow _ _ _ i a b =>
-      let some k ← getNatValue? b | toVar e
+      let some k := Sym.getNatValue? b |>.run | toVar e
       if (← isPowInst i) then return .pow (← go a) k else asVar e
     | Neg.neg _ i a =>
       if (← isNegInst i) then return .neg (← go a) else asVar e
     | IntCast.intCast _ i a =>
       if (← isIntCastInst i) then
-        let some k ← getIntValue? a | toVar e
+        let some k := Sym.getIntValue? a |>.run | toVar e
         return .intCast k
       else
         asVar e
     | NatCast.natCast _ i a =>
       if (← isNatCastInst i) then
-        let some k ← getNatValue? a | toVar e
+        let some k := Sym.getNatValue? a |>.run | toVar e
         return .natCast k
       else
         asVar e
     | OfNat.ofNat _ n _ =>
-      let some k ← getNatValue? n | toVar e
+      /-
+      **Note**: We extract `n` directly as a raw nat literal. The grind version uses `MetaM`'s
+      `getNatValue?` which handles multiple encodings (raw literals, nested `OfNat`, etc.).
+      In `SymM`, we assume terms have been canonicalized by `Sym.canon` before reification,
+      so `OfNat.ofNat _ n _` always has a raw nat literal at position 1.
+      -/
+      let .lit (.natVal k) := n | toVar e
       return .num k
     | BitVec.ofNat _ n =>
-      let some k ← getNatValue? n | toVar e
+      let .lit (.natVal k) := n | toVar e
       return .num k
     | _ => toVar e
   let toTopVar (e : Expr) : m (Option RingExpr) := do
@@ -89,7 +107,7 @@ partial def reifyCore? (e : Expr) (skipVar : Bool) (gen : Nat) : m (Option RingE
     else
       return some (← toVar e)
   let asTopVar (e : Expr) : m (Option RingExpr) := do
-    reportAppIssue e
+    reportRingAppIssue e
     toTopVar e
   match_expr e with
   | HAdd.hAdd _ _ _ i a b =>
@@ -99,53 +117,45 @@ partial def reifyCore? (e : Expr) (skipVar : Bool) (gen : Nat) : m (Option RingE
   | HSub.hSub _ _ _ i a b =>
     if (← isSubInst i) then return some (.sub (← go a) (← go b)) else asTopVar e
   | HPow.hPow _ _ _ i a b =>
-    let some k ← getNatValue? b | asTopVar e
+    let some k := Sym.getNatValue? b |>.run | asTopVar e
     if (← isPowInst i) then return some (.pow (← go a) k) else asTopVar e
   | Neg.neg _ i a =>
     if (← isNegInst i) then return some (.neg (← go a)) else asTopVar e
   | IntCast.intCast _ i a =>
     if (← isIntCastInst i) then
-      let some k ← getIntValue? a | toTopVar e
+      let some k := Sym.getIntValue? a |>.run | toTopVar e
       return some (.intCast k)
     else
       asTopVar e
   | NatCast.natCast _ i a =>
     if (← isNatCastInst i) then
-      let some k ← getNatValue? a | toTopVar e
+      let some k := Sym.getNatValue? a |>.run | toTopVar e
       return some (.natCast k)
     else
       asTopVar e
   | OfNat.ofNat _ n _ =>
-    let some k ← getNatValue? n | asTopVar e
+    let .lit (.natVal k) := n | asTopVar e
     return some (.num k)
   | _ => toTopVar e
 
-/-- Reify ring expression. -/
-def reify? (e : Expr) (skipVar := true) (gen : Nat := 0) : RingM (Option RingExpr) := do
-  reifyCore? e skipVar gen
+end RingReify
 
-/-- Reify non-commutative ring expression. -/
-def ncreify? (e : Expr) (skipVar := true) (gen : Nat := 0) : NonCommRingM (Option RingExpr) := do
-  reifyCore? e skipVar gen
+section SemiringReify
 
-private def reportSAppIssue (e : Expr) : GoalM Unit := do
+variable [MonadLiftT SymM m] [MonadLiftT MetaM m] [MonadError m] [Monad m] [MonadCanon m] [MonadSemiring m] [MonadMkVar m]
+
+private def reportSemiringAppIssue [MonadLiftT SymM m] (e : Expr) : m Unit := do
   reportIssue! "semiring term with unexpected instance{indentExpr e}"
 
-section
-variable [MonadLiftT GoalM m] [MonadError m] [Monad m] [MonadCanon m] [MonadSemiring m] [MonadSetTermId m]
-
 /--
-Similar to `reify?` but for `CommSemiring`
+Converts a Lean expression `e` into a `SemiringExpr`.
+Only recognizes `add`, `mul`, `pow`, `natCast`, and numerals (no `sub`, `neg`, `intCast`).
 -/
-partial def sreifyCore? (e : Expr) : m (Option SemiringExpr) := do
-  let mkVar (e : Expr) : m Var := do
-    unless (← alreadyInternalized e) do
-      internalize e 0
-    mkSVarCore e
+partial def reifySemiring? (e : Expr) : m (Option SemiringExpr) := do
   let toVar (e : Expr) : m SemiringExpr := do
     return .var (← mkVar e)
   let asVar (e : Expr) : m SemiringExpr := do
-    reportSAppIssue e
+    reportSemiringAppIssue e
     return .var (← mkVar e)
   let rec go (e : Expr) : m SemiringExpr := do
     match_expr e with
@@ -154,22 +164,22 @@ partial def sreifyCore? (e : Expr) : m (Option SemiringExpr) := do
     | HMul.hMul _ _ _ i a b =>
       if isSameExpr (← getMulFn').appArg! i then return .mul (← go a) (← go b) else asVar e
     | HPow.hPow _ _ _ i a b =>
-      let some k ← getNatValue? b | toVar e
+      let some k := Sym.getNatValue? b |>.run | toVar e
       if isSameExpr (← getPowFn').appArg! i then return .pow (← go a) k else asVar e
     | NatCast.natCast _ i a =>
       if isSameExpr (← getNatCastFn').appArg! i then
-        let some k ← getNatValue? a | toVar e
+        let some k := Sym.getNatValue? a |>.run | toVar e
         return .num k
       else
         asVar e
     | OfNat.ofNat _ n _ =>
-      let some k ← getNatValue? n | toVar e
+      let .lit (.natVal k) := n | toVar e
       return .num k
     | _ => toVar e
   let toTopVar (e : Expr) : m (Option SemiringExpr) := do
     return some (← toVar e)
   let asTopVar (e : Expr) : m (Option SemiringExpr) := do
-    reportSAppIssue e
+    reportSemiringAppIssue e
     toTopVar e
   match_expr e with
   | HAdd.hAdd _ _ _ i a b =>
@@ -177,27 +187,19 @@ partial def sreifyCore? (e : Expr) : m (Option SemiringExpr) := do
   | HMul.hMul _ _ _ i a b =>
     if isSameExpr (← getMulFn').appArg! i then return some (.mul (← go a) (← go b)) else asTopVar e
   | HPow.hPow _ _ _ i a b =>
-    let some k ← getNatValue? b | return none
+    let some k := Sym.getNatValue? b |>.run | return none
     if isSameExpr (← getPowFn').appArg! i then return some (.pow (← go a) k) else asTopVar e
   | NatCast.natCast _ i a =>
     if isSameExpr (← getNatCastFn').appArg! i then
-      let some k ← getNatValue? a | toTopVar e
+      let some k := Sym.getNatValue? a |>.run | toTopVar e
       return some (.num k)
     else
       asTopVar e
   | OfNat.ofNat _ n _ =>
-    let some k ← getNatValue? n | asTopVar e
+    let .lit (.natVal k) := n | asTopVar e
     return some (.num k)
   | _ => toTopVar e
 
-end
+end SemiringReify
 
-/-- Reify semiring expression. -/
-def sreify? (e : Expr) : SemiringM (Option SemiringExpr) := do
-  sreifyCore? e
-
-/-- Reify non-commutative semiring expression. -/
-def ncsreify? (e : Expr) : NonCommSemiringM (Option SemiringExpr) := do
-  sreifyCore? e
-
-end  Lean.Meta.Grind.Arith.CommRing
+end Lean.Meta.Sym.Arith
