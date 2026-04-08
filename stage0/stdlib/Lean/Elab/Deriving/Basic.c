@@ -207,7 +207,7 @@ lean_object* lean_array_to_list(lean_object*);
 uint8_t l_Lean_Environment_hasUnsafe(lean_object*, lean_object*);
 lean_object* l_Lean_addDecl(lean_object*, uint8_t, lean_object*, lean_object*);
 lean_object* l_Lean_addNoncomputable(lean_object*, lean_object*);
-lean_object* l_Lean_addAndCompile(lean_object*, uint8_t, lean_object*, lean_object*);
+lean_object* l_Lean_addAndCompile(lean_object*, uint8_t, uint8_t, lean_object*, lean_object*);
 uint8_t l_Lean_isNoncomputable(lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_mkPtrSet___redArg(lean_object*);
 lean_object* l___private_Lean_Util_FoldConsts_0__Lean_Expr_FoldConstsImpl_fold_visit(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
@@ -17957,7 +17957,7 @@ goto v_reusejp_5627_;
 v_reusejp_5627_:
 {
 lean_object* v___x_5629_; 
-v___x_5629_ = l_Lean_addAndCompile(v___x_5628_, v___x_5473_, v___y_5624_, v___y_5625_);
+v___x_5629_ = l_Lean_addAndCompile(v___x_5628_, v___x_5473_, v___x_5471_, v___y_5624_, v___y_5625_);
 if (lean_obj_tag(v___x_5629_) == 0)
 {
 lean_dec_ref(v___x_5629_);
