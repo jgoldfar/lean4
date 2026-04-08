@@ -481,11 +481,9 @@ def execute_release_steps(repo, version, config):
         run_command("lake update", cwd=repo_path, stream_output=True)
     elif repo_name == "verso":
         # verso has nested Lake projects in test-projects/ that each have their own
-        # lake-manifest.json with a subverso pin. After updating the root manifest via
-        # `lake update`, sync the de-modulized subverso rev into all sub-manifests.
-        # The sub-projects use an old toolchain (v4.21.0) that doesn't support module/prelude
-        # syntax, so they need the de-modulized version (tagged no-modules/<root-rev>).
-        # The "SubVerso version consistency" CI check accepts either the root or de-modulized rev.
+        # lake-manifest.json with a subverso pin and their own lean-toolchain.
+        # After updating the root manifest via `lake update`, sync the de-modulized
+        # subverso rev into all sub-manifests, and update their lean-toolchain files.
         run_command("lake update", cwd=repo_path, stream_output=True)
         print(blue("Syncing de-modulized subverso rev to test-project sub-manifests..."))
         sync_script = (
@@ -498,6 +496,15 @@ def execute_release_steps(repo, version, config):
         )
         run_command(sync_script, cwd=repo_path)
         print(green("Synced de-modulized subverso rev to all test-project sub-manifests"))
+        # Update all lean-toolchain files in test-projects/ to match the root
+        print(blue("Updating lean-toolchain files in test-projects/..."))
+        find_result = run_command("find test-projects -name lean-toolchain", cwd=repo_path)
+        for tc_path in find_result.stdout.strip().splitlines():
+            if tc_path:
+                tc_file = repo_path / tc_path
+                with open(tc_file, "w") as f:
+                    f.write(f"leanprover/lean4:{version}\n")
+                print(green(f"  Updated {tc_path}"))
     elif dependencies:
         run_command(f'perl -pi -e \'s/"v4\\.[0-9]+(\\.[0-9]+)?(-rc[0-9]+)?"/"' + version + '"/g\' lakefile.*', cwd=repo_path)
         run_command("lake update", cwd=repo_path, stream_output=True)
