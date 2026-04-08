@@ -1331,6 +1331,8 @@ lean_object* lean_runtime_mark_persistent(lean_object*);
 LEAN_EXPORT lean_object* l_Runtime_markPersistent___boxed(lean_object*, lean_object*, lean_object*);
 lean_object* lean_runtime_forget(lean_object*);
 LEAN_EXPORT lean_object* l_Runtime_forget___boxed(lean_object*, lean_object*, lean_object*);
+lean_object* lean_runtime_hold(lean_object*);
+LEAN_EXPORT lean_object* l_Runtime_hold___boxed(lean_object*, lean_object*, lean_object*);
 static lean_object* _init_l_IO_RealWorld_nonemptyType(void){
 _start:
 {
@@ -16102,6 +16104,15 @@ _start:
 lean_object* v_res_5499_; 
 v_res_5499_ = lean_runtime_forget(v_a_5497_);
 return v_res_5499_;
+}
+}
+LEAN_EXPORT lean_object* l_Runtime_hold___boxed(lean_object* v_00_u03b1_5503_, lean_object* v_a_5504_, lean_object* v_a_00___x40___internal___hyg_5505_){
+_start:
+{
+lean_object* v_res_5506_; 
+v_res_5506_ = lean_runtime_hold(v_a_5504_);
+lean_dec(v_a_5504_);
+return v_res_5506_;
 }
 }
 lean_object* runtime_initialize_Init_Control_Do(uint8_t builtin);

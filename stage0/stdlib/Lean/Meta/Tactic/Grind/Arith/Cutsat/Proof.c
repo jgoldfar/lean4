@@ -1,6 +1,6 @@
 // Lean compiler output
 // Module: Lean.Meta.Tactic.Grind.Arith.Cutsat.Proof
-// Imports: public import Lean.Meta.Tactic.Grind.Arith.Cutsat.Types import Init.Data.Int.OfNat import Lean.Meta.Tactic.Grind.Diseq import Lean.Meta.Tactic.Grind.ProofUtil import Lean.Meta.Tactic.Simp.Arith.Int.Simp import Lean.Meta.Tactic.Grind.Arith.Cutsat.CommRing import Lean.Meta.Tactic.Grind.Arith.Cutsat.Util import Lean.Meta.Tactic.Grind.Arith.Cutsat.Nat import Lean.Meta.Tactic.Grind.Arith.Cutsat.VarRename import Lean.Meta.Tactic.Grind.Arith.CommRing.VarRename import Lean.Meta.Tactic.Grind.Arith.CommRing.ToExpr import Init.Data.Nat.Order import Init.Data.Order.Lemmas
+// Imports: public import Lean.Meta.Tactic.Grind.Arith.Cutsat.Types import Init.Data.Int.OfNat import Lean.Meta.Tactic.Grind.Diseq import Lean.Meta.Tactic.Grind.ProofUtil import Lean.Meta.Tactic.Simp.Arith.Int.Simp import Lean.Meta.Tactic.Grind.Arith.Cutsat.CommRing import Lean.Meta.Tactic.Grind.Arith.Cutsat.Util import Lean.Meta.Tactic.Grind.Arith.Cutsat.Nat import Lean.Meta.Tactic.Grind.Arith.Cutsat.VarRename import Lean.Meta.Sym.Arith.VarRename import Lean.Meta.Sym.Arith.ToExpr import Init.Data.Nat.Order import Init.Data.Order.Lemmas
 #include <lean/lean.h>
 #if defined(__clang__)
 #pragma clang diagnostic ignored "-Wunused-parameter"
@@ -158,9 +158,9 @@ lean_object* l_Lean_Grind_CommRing_Poly_collectVars(lean_object*, lean_object*);
 lean_object* l_Lean_Meta_Grind_FoundVars_toArray(lean_object*);
 lean_object* l_Lean_Meta_Grind_mkVarRename(lean_object*);
 lean_object* l_Lean_Grind_CommRing_Poly_renameVars(lean_object*, lean_object*);
-lean_object* l_Lean_Meta_Grind_Arith_CommRing_ofPoly(lean_object*);
+lean_object* l_Lean_Meta_Sym_Arith_ofPoly(lean_object*);
 lean_object* l_Lean_Grind_CommRing_Expr_renameVars(lean_object*, lean_object*);
-lean_object* l_Lean_Meta_Grind_Arith_CommRing_ofRingExpr(lean_object*);
+lean_object* l_Lean_Meta_Sym_Arith_ofRingExpr(lean_object*);
 lean_object* l_Array_reverse___redArg(lean_object*);
 lean_object* lean_name_append_index_after(lean_object*, lean_object*);
 lean_object* l_Lean_Expr_letE___override(lean_object*, lean_object*, lean_object*, lean_object*, uint8_t);
@@ -10811,7 +10811,7 @@ _start:
 {
 lean_object* v___x_3850_; lean_object* v___x_3851_; 
 v___x_3850_ = l_Lean_Grind_CommRing_Poly_renameVars(v_p_3849_, v___x_3848_);
-v___x_3851_ = l_Lean_Meta_Grind_Arith_CommRing_ofPoly(v___x_3850_);
+v___x_3851_ = l_Lean_Meta_Sym_Arith_ofPoly(v___x_3850_);
 return v___x_3851_;
 }
 }
@@ -10829,7 +10829,7 @@ _start:
 {
 lean_object* v___x_3857_; lean_object* v___x_3858_; 
 v___x_3857_ = l_Lean_Grind_CommRing_Expr_renameVars(v_e_3856_, v___x_3855_);
-v___x_3858_ = l_Lean_Meta_Grind_Arith_CommRing_ofRingExpr(v___x_3857_);
+v___x_3858_ = l_Lean_Meta_Sym_Arith_ofRingExpr(v___x_3857_);
 return v___x_3858_;
 }
 }
@@ -34665,8 +34665,8 @@ lean_object* runtime_initialize_Lean_Meta_Tactic_Grind_Arith_Cutsat_CommRing(uin
 lean_object* runtime_initialize_Lean_Meta_Tactic_Grind_Arith_Cutsat_Util(uint8_t builtin);
 lean_object* runtime_initialize_Lean_Meta_Tactic_Grind_Arith_Cutsat_Nat(uint8_t builtin);
 lean_object* runtime_initialize_Lean_Meta_Tactic_Grind_Arith_Cutsat_VarRename(uint8_t builtin);
-lean_object* runtime_initialize_Lean_Meta_Tactic_Grind_Arith_CommRing_VarRename(uint8_t builtin);
-lean_object* runtime_initialize_Lean_Meta_Tactic_Grind_Arith_CommRing_ToExpr(uint8_t builtin);
+lean_object* runtime_initialize_Lean_Meta_Sym_Arith_VarRename(uint8_t builtin);
+lean_object* runtime_initialize_Lean_Meta_Sym_Arith_ToExpr(uint8_t builtin);
 lean_object* runtime_initialize_Init_Data_Nat_Order(uint8_t builtin);
 lean_object* runtime_initialize_Init_Data_Order_Lemmas(uint8_t builtin);
 static bool _G_runtime_initialized = false;
@@ -34701,10 +34701,10 @@ lean_dec_ref(res);
 res = runtime_initialize_Lean_Meta_Tactic_Grind_Arith_Cutsat_VarRename(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-res = runtime_initialize_Lean_Meta_Tactic_Grind_Arith_CommRing_VarRename(builtin);
+res = runtime_initialize_Lean_Meta_Sym_Arith_VarRename(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-res = runtime_initialize_Lean_Meta_Tactic_Grind_Arith_CommRing_ToExpr(builtin);
+res = runtime_initialize_Lean_Meta_Sym_Arith_ToExpr(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 res = runtime_initialize_Init_Data_Nat_Order(builtin);
@@ -34731,8 +34731,8 @@ lean_object* initialize_Lean_Meta_Tactic_Grind_Arith_Cutsat_CommRing(uint8_t bui
 lean_object* initialize_Lean_Meta_Tactic_Grind_Arith_Cutsat_Util(uint8_t builtin);
 lean_object* initialize_Lean_Meta_Tactic_Grind_Arith_Cutsat_Nat(uint8_t builtin);
 lean_object* initialize_Lean_Meta_Tactic_Grind_Arith_Cutsat_VarRename(uint8_t builtin);
-lean_object* initialize_Lean_Meta_Tactic_Grind_Arith_CommRing_VarRename(uint8_t builtin);
-lean_object* initialize_Lean_Meta_Tactic_Grind_Arith_CommRing_ToExpr(uint8_t builtin);
+lean_object* initialize_Lean_Meta_Sym_Arith_VarRename(uint8_t builtin);
+lean_object* initialize_Lean_Meta_Sym_Arith_ToExpr(uint8_t builtin);
 lean_object* initialize_Init_Data_Nat_Order(uint8_t builtin);
 lean_object* initialize_Init_Data_Order_Lemmas(uint8_t builtin);
 static bool _G_initialized = false;
@@ -34767,10 +34767,10 @@ lean_dec_ref(res);
 res = initialize_Lean_Meta_Tactic_Grind_Arith_Cutsat_VarRename(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-res = initialize_Lean_Meta_Tactic_Grind_Arith_CommRing_VarRename(builtin);
+res = initialize_Lean_Meta_Sym_Arith_VarRename(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-res = initialize_Lean_Meta_Tactic_Grind_Arith_CommRing_ToExpr(builtin);
+res = initialize_Lean_Meta_Sym_Arith_ToExpr(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 res = initialize_Init_Data_Nat_Order(builtin);

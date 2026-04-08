@@ -26,7 +26,7 @@ lean_object* l_Lean_MessageData_ofName(lean_object*);
 lean_object* l_Lean_indentExpr(lean_object*);
 lean_object* l_Lean_mkApp4(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_mkApp3(lean_object*, lean_object*, lean_object*, lean_object*);
-lean_object* l_Lean_Meta_Grind_Arith_CommRing_MonadCanon_synthInstance___redArg(lean_object*, lean_object*, lean_object*, lean_object*);
+lean_object* l_Lean_Meta_Sym_Arith_MonadCanon_synthInstance___redArg(lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Meta_Grind_internalize___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_mkRawNatLit(lean_object*);
 lean_object* l_Lean_Level_ofNat(lean_object*);
@@ -663,7 +663,7 @@ lean_closure_set(v___f_159_, 5, v_inst_147_);
 lean_closure_set(v___f_159_, 6, v_toBind_156_);
 v___x_160_ = l_Lean_mkConst(v_instDeclName_153_, v___x_158_);
 v___x_161_ = l_Lean_Expr_app___override(v___x_160_, v_type_151_);
-v___x_162_ = l_Lean_Meta_Grind_Arith_CommRing_MonadCanon_synthInstance___redArg(v_inst_149_, v_inst_148_, v_inst_150_, v___x_161_);
+v___x_162_ = l_Lean_Meta_Sym_Arith_MonadCanon_synthInstance___redArg(v_inst_149_, v_inst_148_, v_inst_150_, v___x_161_);
 v___x_163_ = lean_apply_4(v_toBind_156_, lean_box(0), lean_box(0), v___x_162_, v___f_159_);
 return v___x_163_;
 }
@@ -741,7 +741,7 @@ lean_closure_set(v___f_211_, 5, v_inst_197_);
 lean_closure_set(v___f_211_, 6, v_toBind_206_);
 v___x_212_ = l_Lean_mkConst(v_instDeclName_203_, v___x_210_);
 v___x_213_ = l_Lean_mkApp3(v___x_212_, v_type_201_, v_type_201_, v_type_201_);
-v___x_214_ = l_Lean_Meta_Grind_Arith_CommRing_MonadCanon_synthInstance___redArg(v_inst_199_, v_inst_198_, v_inst_200_, v___x_213_);
+v___x_214_ = l_Lean_Meta_Sym_Arith_MonadCanon_synthInstance___redArg(v_inst_199_, v_inst_198_, v_inst_200_, v___x_213_);
 v___x_215_ = lean_apply_4(v_toBind_206_, lean_box(0), lean_box(0), v___x_214_, v___f_211_);
 return v___x_215_;
 }
@@ -842,7 +842,7 @@ lean_closure_set(v___f_289_, 6, v___x_288_);
 lean_closure_set(v___f_289_, 7, v_inst_272_);
 lean_closure_set(v___f_289_, 8, v_toBind_279_);
 v___x_290_ = l_Lean_mkApp3(v___x_287_, v_type_277_, v___x_288_, v_type_277_);
-v___x_291_ = l_Lean_Meta_Grind_Arith_CommRing_MonadCanon_synthInstance___redArg(v_inst_274_, v_inst_273_, v_inst_275_, v___x_290_);
+v___x_291_ = l_Lean_Meta_Sym_Arith_MonadCanon_synthInstance___redArg(v_inst_274_, v_inst_273_, v_inst_275_, v___x_290_);
 v___x_292_ = lean_apply_4(v_toBind_279_, lean_box(0), lean_box(0), v___x_291_, v___f_289_);
 return v___x_292_;
 }
