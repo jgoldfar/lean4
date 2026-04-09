@@ -19085,8 +19085,8 @@ else
 {
 lean_dec(v_a_6202_);
 lean_dec_ref(v___x_6188_);
-lean_dec_ref(v_name_6152_);
 lean_dec(v_pre_6164_);
+lean_dec_ref(v_name_6152_);
 v_a_6195_ = v___x_6170_;
 goto v___jp_6194_;
 }
