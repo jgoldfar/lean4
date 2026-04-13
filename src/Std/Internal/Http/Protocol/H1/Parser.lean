@@ -260,7 +260,7 @@ and returns the `RequestTarget` together with the raw major/minor version number
 Both `parseRequestLine` and `parseRequestLineRawVersion` call this after consuming
 the method token, keeping URI validation and version parsing in one place.
 -/
-private def parseRequestLineBody (limits : H1.Config) : Parser (RequestTarget × Nat × Nat) := do
+def parseRequestLineBody (limits : H1.Config) : Parser (RequestTarget × Nat × Nat) := do
   let rawUri ← parseURI limits <* sp
   let uri ← match (Std.Http.URI.Parser.parseRequestTarget <* eof).run rawUri with
   | .ok res => pure res
@@ -446,7 +446,7 @@ Returns `true` if `name` (compared case-insensitively) is a field that MUST NOT 
 trailer sections per RFC 9112 §6.5. Forbidden fields are those required for message framing
 (`content-length`, `transfer-encoding`), routing (`host`), or connection management (`connection`).
 -/
-private def isForbiddenTrailerField (name : String) : Bool :=
+def isForbiddenTrailerField (name : String) : Bool :=
   let n := name.toLower
   n == "content-length" || n == "transfer-encoding" || n == "host" ||
   n == "connection" || n == "expect" || n == "te" ||
