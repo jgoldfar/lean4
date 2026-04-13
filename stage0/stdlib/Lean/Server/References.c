@@ -9013,6 +9013,7 @@ v___x_2076_ = lean_alloc_ctor(1, 2, 0);
 lean_ctor_set(v___x_2076_, 0, v___x_2065_);
 lean_ctor_set(v___x_2076_, 1, v___x_2075_);
 v___x_2077_ = l_Lean_Json_mkObj(v___x_2076_);
+lean_dec_ref(v___x_2076_);
 v___x_2078_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_2078_, 0, v___x_2059_);
 lean_ctor_set(v___x_2078_, 1, v___x_2077_);
@@ -9418,6 +9419,7 @@ v___x_2270_ = l_Std_DTreeMap_Internal_Impl_foldrM___at___00Lean_Server_instToJso
 lean_dec(v_references_2251_);
 v___x_2271_ = l_List_mapTR_loop___at___00Lean_Server_instToJsonIlean_toJson_spec__6(v___x_2270_, v___x_2257_);
 v___x_2272_ = l_Lean_Json_mkObj(v___x_2271_);
+lean_dec(v___x_2271_);
 v___x_2273_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_2273_, 0, v___x_2269_);
 lean_ctor_set(v___x_2273_, 1, v___x_2272_);
@@ -9429,6 +9431,7 @@ v___x_2276_ = l_Std_DTreeMap_Internal_Impl_foldrM___at___00Lean_Server_instToJso
 lean_dec(v_decls_2252_);
 v___x_2277_ = l_List_mapTR_loop___at___00Lean_Server_instToJsonIlean_toJson_spec__8(v___x_2276_, v___x_2257_);
 v___x_2278_ = l_Lean_Json_mkObj(v___x_2277_);
+lean_dec(v___x_2277_);
 v___x_2279_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_2279_, 0, v___x_2275_);
 lean_ctor_set(v___x_2279_, 1, v___x_2278_);
@@ -9453,6 +9456,7 @@ lean_ctor_set(v___x_2285_, 1, v___x_2284_);
 v___x_2286_ = ((lean_object*)(l_Lean_Server_instToJsonIlean_toJson___closed__0));
 v___x_2287_ = l___private_Init_Data_List_Impl_0__List_flatMapTR_go___at___00Lean_Server_instToJsonIlean_toJson_spec__9(v___x_2285_, v___x_2286_);
 v___x_2288_ = l_Lean_Json_mkObj(v___x_2287_);
+lean_dec(v___x_2287_);
 return v___x_2288_;
 }
 }

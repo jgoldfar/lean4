@@ -3114,9 +3114,9 @@ v___x_908_ = l_Lean_addMessageContextPartial___at___00Lean_logAt___at___00Lean_l
 v_a_909_ = lean_ctor_get(v___x_908_, 0);
 lean_inc(v_a_909_);
 lean_dec_ref(v___x_908_);
-lean_inc_n(v_macroStack_907_, 2);
 v___x_910_ = l_Lean_Elab_getBetterRef(v_a_906_, v_macroStack_907_);
 lean_dec(v_a_906_);
+lean_inc(v_macroStack_907_);
 v___x_911_ = l_Lean_Elab_addMacroStack___at___00Lean_throwError___at___00Lean_throwErrorAt___at___00Lean_throwUnknownIdentifierAt___at___00Lean_throwUnknownConstantAt___at___00Lean_throwUnknownConstant___at___00Lean_getConstVal___at___00Lean_mkConstWithLevelParams___at___00Lean_Elab_Command_elabImportPath_spec__0_spec__0_spec__1_spec__3_spec__8_spec__10_spec__12_spec__13___redArg(v_a_909_, v_macroStack_907_, v___y_903_);
 v_a_912_ = lean_ctor_get(v___x_911_, 0);
 v_isSharedCheck_920_ = !lean_is_exclusive(v___x_911_);

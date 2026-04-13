@@ -903,9 +903,9 @@ v___x_170_ = l_Lean_addMessageContextPartial___at___00Lean_throwError___at___00L
 v_a_171_ = lean_ctor_get(v___x_170_, 0);
 lean_inc(v_a_171_);
 lean_dec_ref(v___x_170_);
-lean_inc_n(v_macroStack_169_, 2);
 v___x_172_ = l_Lean_Elab_getBetterRef(v_a_168_, v_macroStack_169_);
 lean_dec(v_a_168_);
+lean_inc(v_macroStack_169_);
 v___x_173_ = l_Lean_Elab_addMacroStack___at___00Lean_throwError___at___00Lean_throwErrorAt___at___00Lean_Elab_Command_elabMacroRulesAux_spec__1_spec__1_spec__4___redArg(v_a_171_, v_macroStack_169_, v___y_165_);
 v_a_174_ = lean_ctor_get(v___x_173_, 0);
 v_isSharedCheck_182_ = !lean_is_exclusive(v___x_173_);

@@ -3601,6 +3601,7 @@ lean_dec(v___y_1111_);
 lean_dec_ref(v___y_1110_);
 lean_dec(v___y_1109_);
 lean_dec_ref(v_usedThms_1107_);
+lean_dec_ref(v_goal_1106_);
 return v_res_1120_;
 }
 }

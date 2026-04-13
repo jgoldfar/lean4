@@ -767,27 +767,23 @@ else
 {
 lean_object* v_head_301_; lean_object* v_tail_302_; lean_object* v_expr_303_; uint8_t v_symm_304_; lean_object* v_result_305_; lean_object* v_mctx_306_; lean_object* v___x_307_; lean_object* v___f_308_; lean_object* v___x_309_; 
 v_head_301_ = lean_ctor_get(v_as_x27_289_, 0);
-lean_inc(v_head_301_);
 v_tail_302_ = lean_ctor_get(v_as_x27_289_, 1);
-lean_inc(v_tail_302_);
-lean_dec_ref(v_as_x27_289_);
 v_expr_303_ = lean_ctor_get(v_head_301_, 0);
-lean_inc_ref(v_expr_303_);
 v_symm_304_ = lean_ctor_get_uint8(v_head_301_, sizeof(void*)*4);
 v_result_305_ = lean_ctor_get(v_head_301_, 2);
-lean_inc_ref(v_result_305_);
 v_mctx_306_ = lean_ctor_get(v_head_301_, 3);
-lean_inc_ref(v_mctx_306_);
-lean_dec(v_head_301_);
 v___x_307_ = lean_box(v_symm_304_);
 lean_inc(v_tk_288_);
 lean_inc(v_f_287_);
+lean_inc_ref(v_expr_303_);
+lean_inc_ref(v_result_305_);
 v___f_308_ = lean_alloc_closure((void*)(l_List_forIn_x27_loop___at___00Lean_Elab_Rewrites_evalExact_spec__5___redArg___lam__0___boxed), 14, 5);
 lean_closure_set(v___f_308_, 0, v_result_305_);
 lean_closure_set(v___f_308_, 1, v_expr_303_);
 lean_closure_set(v___f_308_, 2, v___x_307_);
 lean_closure_set(v___f_308_, 3, v_f_287_);
 lean_closure_set(v___f_308_, 4, v_tk_288_);
+lean_inc_ref(v_mctx_306_);
 v___x_309_ = l_Lean_Meta_withMCtx___at___00Lean_Elab_Rewrites_evalExact_spec__4___redArg(v_mctx_306_, v___f_308_, v___y_291_, v___y_292_, v___y_293_, v___y_294_, v___y_295_, v___y_296_, v___y_297_, v___y_298_);
 if (lean_obj_tag(v___x_309_) == 0)
 {
@@ -800,7 +796,6 @@ goto _start;
 }
 else
 {
-lean_dec(v_tail_302_);
 lean_dec(v_tk_288_);
 lean_dec(v_f_287_);
 return v___x_309_;
@@ -821,6 +816,7 @@ lean_dec(v___y_319_);
 lean_dec_ref(v___y_318_);
 lean_dec(v___y_317_);
 lean_dec_ref(v___y_316_);
+lean_dec(v_as_x27_314_);
 return v_res_325_;
 }
 }
@@ -1005,7 +1001,6 @@ v___jp_368_:
 {
 lean_object* v___x_377_; lean_object* v___x_378_; 
 v___x_377_ = lean_box(0);
-lean_inc(v_a_367_);
 lean_inc(v_f_338_);
 v___x_378_ = l_List_forIn_x27_loop___at___00Lean_Elab_Rewrites_evalExact_spec__5___redArg(v_f_338_, v_tk_335_, v_a_367_, v___x_377_, v___y_369_, v___y_370_, v___y_371_, v___y_372_, v___y_373_, v___y_374_, v___y_375_, v___y_376_);
 if (lean_obj_tag(v___x_378_) == 0)
@@ -3087,6 +3082,7 @@ lean_dec(v___y_1078_);
 lean_dec_ref(v___y_1077_);
 lean_dec(v___y_1076_);
 lean_dec_ref(v___y_1075_);
+lean_dec(v_as_x27_1072_);
 lean_dec(v_as_1071_);
 return v_res_1084_;
 }

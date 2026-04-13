@@ -1234,6 +1234,7 @@ v___x_180_ = lean_alloc_ctor(1, 2, 0);
 lean_ctor_set(v___x_180_, 0, v___x_178_);
 lean_ctor_set(v___x_180_, 1, v___x_179_);
 v___x_181_ = l_Lean_Json_mkObj(v___x_180_);
+lean_dec_ref(v___x_180_);
 return v___x_181_;
 }
 else
@@ -1250,6 +1251,7 @@ v___x_186_ = lean_alloc_ctor(1, 2, 0);
 lean_ctor_set(v___x_186_, 0, v___x_184_);
 lean_ctor_set(v___x_186_, 1, v___x_185_);
 v___x_187_ = l_Lean_Json_mkObj(v___x_186_);
+lean_dec_ref(v___x_186_);
 return v___x_187_;
 }
 }
@@ -2723,6 +2725,7 @@ v___x_659_ = lean_alloc_ctor(1, 2, 0);
 lean_ctor_set(v___x_659_, 0, v___x_657_);
 lean_ctor_set(v___x_659_, 1, v___x_658_);
 v___x_660_ = l_Lean_Json_mkObj(v___x_659_);
+lean_dec_ref(v___x_659_);
 return v___x_660_;
 }
 case 1:
@@ -2740,6 +2743,7 @@ v___x_665_ = lean_alloc_ctor(1, 2, 0);
 lean_ctor_set(v___x_665_, 0, v___x_663_);
 lean_ctor_set(v___x_665_, 1, v___x_664_);
 v___x_666_ = l_Lean_Json_mkObj(v___x_665_);
+lean_dec_ref(v___x_665_);
 return v___x_666_;
 }
 case 2:
@@ -2800,6 +2804,7 @@ v___x_680_ = lean_alloc_ctor(1, 2, 0);
 lean_ctor_set(v___x_680_, 0, v___x_675_);
 lean_ctor_set(v___x_680_, 1, v___x_679_);
 v___x_681_ = l_Lean_Json_mkObj(v___x_680_);
+lean_dec_ref(v___x_680_);
 v___x_682_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_682_, 0, v___x_672_);
 lean_ctor_set(v___x_682_, 1, v___x_681_);
@@ -2807,6 +2812,7 @@ v___x_683_ = lean_alloc_ctor(1, 2, 0);
 lean_ctor_set(v___x_683_, 0, v___x_682_);
 lean_ctor_set(v___x_683_, 1, v___x_678_);
 v___x_684_ = l_Lean_Json_mkObj(v___x_683_);
+lean_dec_ref(v___x_683_);
 return v___x_684_;
 }
 }
@@ -2863,6 +2869,7 @@ v___x_708_ = lean_alloc_ctor(1, 2, 0);
 lean_ctor_set(v___x_708_, 0, v___x_694_);
 lean_ctor_set(v___x_708_, 1, v___x_707_);
 v___x_709_ = l_Lean_Json_mkObj(v___x_708_);
+lean_dec_ref(v___x_708_);
 v___x_710_ = lean_alloc_ctor(0, 2, 0);
 lean_ctor_set(v___x_710_, 0, v___x_692_);
 lean_ctor_set(v___x_710_, 1, v___x_709_);
@@ -2870,6 +2877,7 @@ v___x_711_ = lean_alloc_ctor(1, 2, 0);
 lean_ctor_set(v___x_711_, 0, v___x_710_);
 lean_ctor_set(v___x_711_, 1, v___x_703_);
 v___x_712_ = l_Lean_Json_mkObj(v___x_711_);
+lean_dec_ref(v___x_711_);
 return v___x_712_;
 }
 }
@@ -2976,6 +2984,7 @@ v___x_750_ = lean_alloc_ctor(1, 2, 0);
 lean_ctor_set(v___x_750_, 0, v___x_748_);
 lean_ctor_set(v___x_750_, 1, v___x_749_);
 v___x_751_ = l_Lean_Json_mkObj(v___x_750_);
+lean_dec_ref(v___x_750_);
 return v___x_751_;
 }
 }
@@ -2996,6 +3005,7 @@ v___x_759_ = lean_alloc_ctor(1, 2, 0);
 lean_ctor_set(v___x_759_, 0, v___x_757_);
 lean_ctor_set(v___x_759_, 1, v___x_758_);
 v___x_760_ = l_Lean_Json_mkObj(v___x_759_);
+lean_dec_ref(v___x_759_);
 return v___x_760_;
 }
 default: 
@@ -3055,6 +3065,7 @@ v___x_776_ = lean_alloc_ctor(1, 2, 0);
 lean_ctor_set(v___x_776_, 0, v___x_774_);
 lean_ctor_set(v___x_776_, 1, v___x_775_);
 v___x_777_ = l_Lean_Json_mkObj(v___x_776_);
+lean_dec_ref(v___x_776_);
 return v___x_777_;
 }
 }
@@ -7026,6 +7037,7 @@ lean_ctor_set(v___x_1870_, 1, v___x_1869_);
 v___x_1871_ = ((lean_object*)(l_Lean_Widget_instToJsonRpcEncodablePacket_toJson___closed__0_00___x40_Lean_Widget_InteractiveDiagnostic_3833933514____hygCtx___hyg_57_));
 v___x_1872_ = l___private_Init_Data_List_Impl_0__List_flatMapTR_go___at___00Lean_Widget_instToJsonRpcEncodablePacket_toJson_00___x40_Lean_Widget_InteractiveDiagnostic_3833933514____hygCtx___hyg_57__spec__1(v___x_1870_, v___x_1871_);
 v___x_1873_ = l_Lean_Json_mkObj(v___x_1872_);
+lean_dec(v___x_1872_);
 return v___x_1873_;
 }
 }

@@ -5156,8 +5156,8 @@ v_a_1532_ = lean_ctor_get(v___x_1531_, 0);
 lean_inc(v_a_1532_);
 lean_dec_ref(v___x_1531_);
 v_macroStack_1533_ = lean_ctor_get(v___y_1523_, 1);
-lean_inc_n(v_macroStack_1533_, 2);
 v___x_1534_ = l_Lean_Elab_getBetterRef(v_ref_1530_, v_macroStack_1533_);
+lean_inc(v_macroStack_1533_);
 v___x_1535_ = l_Lean_Elab_addMacroStack___at___00Lean_throwError___at___00Lean_getConstInfoCtor___at___00__private_Lean_Elab_Deriving_BEq_0__Lean_Elab_Deriving_BEq_mkMatchOld_mkAlts_spec__0_spec__0_spec__3___redArg(v_a_1532_, v_macroStack_1533_, v___y_1527_);
 v_a_1536_ = lean_ctor_get(v___x_1535_, 0);
 v_isSharedCheck_1544_ = !lean_is_exclusive(v___x_1535_);
@@ -5476,10 +5476,8 @@ else
 {
 lean_object* v_head_1641_; lean_object* v_tail_1642_; lean_object* v___x_1643_; 
 v_head_1641_ = lean_ctor_get(v_as_x27_1631_, 0);
-lean_inc_n(v_head_1641_, 2);
 v_tail_1642_ = lean_ctor_get(v_as_x27_1631_, 1);
-lean_inc(v_tail_1642_);
-lean_dec_ref(v_as_x27_1631_);
+lean_inc(v_head_1641_);
 v___x_1643_ = l_Lean_getConstInfoCtor___at___00__private_Lean_Elab_Deriving_BEq_0__Lean_Elab_Deriving_BEq_mkMatchOld_mkAlts_spec__0(v_head_1641_, v___y_1633_, v___y_1634_, v___y_1635_, v___y_1636_, v___y_1637_, v___y_1638_);
 if (lean_obj_tag(v___x_1643_) == 0)
 {
@@ -5498,6 +5496,7 @@ lean_dec_ref(v_toConstantVal_1645_);
 v___f_1648_ = ((lean_object*)(l_List_forIn_x27_loop___at___00__private_Lean_Elab_Deriving_BEq_0__Lean_Elab_Deriving_BEq_mkMatchOld_mkAlts_spec__5___redArg___closed__0));
 v___x_1649_ = lean_unsigned_to_nat(0u);
 v_alts_1650_ = ((lean_object*)(l___private_Lean_Elab_Deriving_BEq_0__Lean_Elab_Deriving_BEq_mkMatchOld_mkElseAlt___closed__0));
+lean_inc(v_head_1641_);
 lean_inc(v_auxFunName_1630_);
 lean_inc_ref(v_indVal_1629_);
 v___f_1651_ = lean_alloc_closure((void*)(l_List_forIn_x27_loop___at___00__private_Lean_Elab_Deriving_BEq_0__Lean_Elab_Deriving_BEq_mkMatchOld_mkAlts_spec__5___redArg___lam__1___boxed), 16, 7);
@@ -5524,7 +5523,6 @@ goto _start;
 else
 {
 lean_object* v_a_1657_; lean_object* v___x_1659_; uint8_t v_isShared_1660_; uint8_t v_isSharedCheck_1664_; 
-lean_dec(v_tail_1642_);
 lean_dec_ref(v_b_1632_);
 lean_dec(v_auxFunName_1630_);
 lean_dec_ref(v_indVal_1629_);
@@ -5570,8 +5568,6 @@ return v___x_1662_;
 else
 {
 lean_object* v_a_1665_; lean_object* v___x_1667_; uint8_t v_isShared_1668_; uint8_t v_isSharedCheck_1672_; 
-lean_dec(v_tail_1642_);
-lean_dec(v_head_1641_);
 lean_dec_ref(v_b_1632_);
 lean_dec(v_auxFunName_1630_);
 lean_dec_ref(v_indVal_1629_);
@@ -5627,6 +5623,7 @@ lean_dec(v___y_1680_);
 lean_dec_ref(v___y_1679_);
 lean_dec(v___y_1678_);
 lean_dec_ref(v___y_1677_);
+lean_dec(v_as_x27_1675_);
 return v_res_1684_;
 }
 }
@@ -5672,7 +5669,6 @@ _start:
 lean_object* v_ctors_1711_; lean_object* v_alts_1712_; lean_object* v___x_1713_; 
 v_ctors_1711_ = lean_ctor_get(v_indVal_1702_, 4);
 v_alts_1712_ = ((lean_object*)(l___private_Lean_Elab_Deriving_BEq_0__Lean_Elab_Deriving_BEq_mkMatchOld_mkElseAlt___closed__0));
-lean_inc(v_ctors_1711_);
 lean_inc_ref(v_indVal_1702_);
 v___x_1713_ = l_List_forIn_x27_loop___at___00__private_Lean_Elab_Deriving_BEq_0__Lean_Elab_Deriving_BEq_mkMatchOld_mkAlts_spec__5___redArg(v_indVal_1702_, v_auxFunName_1703_, v_ctors_1711_, v_alts_1712_, v_a_1704_, v_a_1705_, v_a_1706_, v_a_1707_, v_a_1708_, v_a_1709_);
 if (lean_obj_tag(v___x_1713_) == 0)
@@ -5906,6 +5902,7 @@ lean_dec(v___y_1861_);
 lean_dec_ref(v___y_1860_);
 lean_dec(v___y_1859_);
 lean_dec_ref(v___y_1858_);
+lean_dec(v_as_x27_1855_);
 lean_dec(v_as_1854_);
 return v_res_1865_;
 }
@@ -11973,9 +11970,9 @@ v___x_4251_ = l_Lean_addMessageContextPartial___at___00Lean_throwError___at___00
 v_a_4252_ = lean_ctor_get(v___x_4251_, 0);
 lean_inc(v_a_4252_);
 lean_dec_ref(v___x_4251_);
-lean_inc_n(v_macroStack_4250_, 2);
 v___x_4253_ = l_Lean_Elab_getBetterRef(v_a_4249_, v_macroStack_4250_);
 lean_dec(v_a_4249_);
+lean_inc(v_macroStack_4250_);
 v___x_4254_ = l_Lean_Elab_addMacroStack___at___00Lean_throwError___at___00Lean_throwErrorAt___at___00Lean_throwUnknownIdentifierAt___at___00Lean_throwUnknownConstantAt___at___00Lean_throwUnknownConstant___at___00Lean_getConstInfo___at___00Lean_isEnumType___at___00__private_Lean_Elab_Deriving_BEq_0__Lean_Elab_Deriving_BEq_mkBEqInstance_spec__1_spec__1_spec__2_spec__4_spec__6_spec__8_spec__10_spec__12___redArg(v_a_4252_, v_macroStack_4250_, v___y_4246_);
 v_a_4255_ = lean_ctor_get(v___x_4254_, 0);
 v_isSharedCheck_4263_ = !lean_is_exclusive(v___x_4254_);

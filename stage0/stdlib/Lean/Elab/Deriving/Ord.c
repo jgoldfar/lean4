@@ -4025,8 +4025,8 @@ v_a_1205_ = lean_ctor_get(v___x_1204_, 0);
 lean_inc(v_a_1205_);
 lean_dec_ref(v___x_1204_);
 v_macroStack_1206_ = lean_ctor_get(v___y_1196_, 1);
-lean_inc_n(v_macroStack_1206_, 2);
 v___x_1207_ = l_Lean_Elab_getBetterRef(v_ref_1203_, v_macroStack_1206_);
+lean_inc(v_macroStack_1206_);
 v___x_1208_ = l_Lean_Elab_addMacroStack___at___00Lean_throwError___at___00Lean_getConstInfoCtor___at___00__private_Lean_Elab_Deriving_Ord_0__Lean_Elab_Deriving_Ord_mkMatchOld_mkAlts_spec__0_spec__0_spec__3___redArg(v_a_1205_, v_macroStack_1206_, v___y_1200_);
 v_a_1209_ = lean_ctor_get(v___x_1208_, 0);
 v_isSharedCheck_1217_ = !lean_is_exclusive(v___x_1208_);
@@ -4380,10 +4380,8 @@ else
 {
 lean_object* v_head_1333_; lean_object* v_tail_1334_; lean_object* v___x_1335_; 
 v_head_1333_ = lean_ctor_get(v_as_x27_1323_, 0);
-lean_inc_n(v_head_1333_, 2);
 v_tail_1334_ = lean_ctor_get(v_as_x27_1323_, 1);
-lean_inc(v_tail_1334_);
-lean_dec_ref(v_as_x27_1323_);
+lean_inc(v_head_1333_);
 v___x_1335_ = l_Lean_getConstInfoCtor___at___00__private_Lean_Elab_Deriving_Ord_0__Lean_Elab_Deriving_Ord_mkMatchOld_mkAlts_spec__0(v_head_1333_, v___y_1325_, v___y_1326_, v___y_1327_, v___y_1328_, v___y_1329_, v___y_1330_);
 if (lean_obj_tag(v___x_1335_) == 0)
 {
@@ -4403,6 +4401,7 @@ v___f_1340_ = ((lean_object*)(l_List_forIn_x27_loop___at___00__private_Lean_Elab
 v___f_1341_ = ((lean_object*)(l_List_forIn_x27_loop___at___00__private_Lean_Elab_Deriving_Ord_0__Lean_Elab_Deriving_Ord_mkMatchOld_mkAlts_spec__7___redArg___closed__1));
 v___x_1342_ = lean_unsigned_to_nat(0u);
 v_alts_1343_ = ((lean_object*)(l_List_forIn_x27_loop___at___00__private_Lean_Elab_Deriving_Ord_0__Lean_Elab_Deriving_Ord_mkMatchOld_mkAlts_spec__7___redArg___closed__2));
+lean_inc(v_head_1333_);
 lean_inc_ref(v_indVal_1322_);
 v___f_1344_ = lean_alloc_closure((void*)(l_List_forIn_x27_loop___at___00__private_Lean_Elab_Deriving_Ord_0__Lean_Elab_Deriving_Ord_mkMatchOld_mkAlts_spec__7___redArg___lam__2___boxed), 16, 7);
 lean_closure_set(v___f_1344_, 0, v_indVal_1322_);
@@ -4431,7 +4430,6 @@ goto _start;
 }
 else
 {
-lean_dec(v_tail_1334_);
 lean_dec_ref(v_b_1324_);
 lean_dec_ref(v_indVal_1322_);
 return v___x_1346_;
@@ -4440,8 +4438,6 @@ return v___x_1346_;
 else
 {
 lean_object* v_a_1353_; lean_object* v___x_1355_; uint8_t v_isShared_1356_; uint8_t v_isSharedCheck_1360_; 
-lean_dec(v_tail_1334_);
-lean_dec(v_head_1333_);
 lean_dec_ref(v_b_1324_);
 lean_dec_ref(v_indVal_1322_);
 v_a_1353_ = lean_ctor_get(v___x_1335_, 0);
@@ -4496,6 +4492,7 @@ lean_dec(v___y_1367_);
 lean_dec_ref(v___y_1366_);
 lean_dec(v___y_1365_);
 lean_dec_ref(v___y_1364_);
+lean_dec(v_as_x27_1362_);
 return v_res_1371_;
 }
 }
@@ -4507,6 +4504,7 @@ v_ctors_1380_ = lean_ctor_get(v_indVal_1372_, 4);
 lean_inc(v_ctors_1380_);
 v_alts_1381_ = ((lean_object*)(l_List_forIn_x27_loop___at___00__private_Lean_Elab_Deriving_Ord_0__Lean_Elab_Deriving_Ord_mkMatchOld_mkAlts_spec__7___redArg___closed__2));
 v___x_1382_ = l_List_forIn_x27_loop___at___00__private_Lean_Elab_Deriving_Ord_0__Lean_Elab_Deriving_Ord_mkMatchOld_mkAlts_spec__7___redArg(v_indVal_1372_, v_ctors_1380_, v_alts_1381_, v_a_1373_, v_a_1374_, v_a_1375_, v_a_1376_, v_a_1377_, v_a_1378_);
+lean_dec(v_ctors_1380_);
 if (lean_obj_tag(v___x_1382_) == 0)
 {
 lean_object* v_a_1383_; lean_object* v___x_1385_; uint8_t v_isShared_1386_; uint8_t v_isSharedCheck_1392_; 
@@ -4662,6 +4660,7 @@ lean_dec(v___y_1513_);
 lean_dec_ref(v___y_1512_);
 lean_dec(v___y_1511_);
 lean_dec_ref(v___y_1510_);
+lean_dec(v_as_x27_1507_);
 lean_dec(v_as_1506_);
 return v_res_1517_;
 }
@@ -9354,9 +9353,9 @@ v___x_3580_ = l_Lean_addMessageContextPartial___at___00Lean_throwError___at___00
 v_a_3581_ = lean_ctor_get(v___x_3580_, 0);
 lean_inc(v_a_3581_);
 lean_dec_ref(v___x_3580_);
-lean_inc_n(v_macroStack_3579_, 2);
 v___x_3582_ = l_Lean_Elab_getBetterRef(v_a_3578_, v_macroStack_3579_);
 lean_dec(v_a_3578_);
+lean_inc(v_macroStack_3579_);
 v___x_3583_ = l_Lean_Elab_addMacroStack___at___00Lean_throwError___at___00Lean_throwErrorAt___at___00Lean_throwUnknownIdentifierAt___at___00Lean_throwUnknownConstantAt___at___00Lean_throwUnknownConstant___at___00Lean_getConstInfo___at___00Lean_isEnumType___at___00__private_Lean_Elab_Deriving_Ord_0__Lean_Elab_Deriving_Ord_mkOrdInstance_spec__0_spec__0_spec__1_spec__3_spec__5_spec__7_spec__9_spec__11___redArg(v_a_3581_, v_macroStack_3579_, v___y_3575_);
 v_a_3584_ = lean_ctor_get(v___x_3583_, 0);
 v_isSharedCheck_3592_ = !lean_is_exclusive(v___x_3583_);

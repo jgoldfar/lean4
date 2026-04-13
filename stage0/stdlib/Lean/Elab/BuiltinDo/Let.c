@@ -2411,8 +2411,8 @@ v_a_595_ = lean_ctor_get(v___x_594_, 0);
 lean_inc(v_a_595_);
 lean_dec_ref(v___x_594_);
 v_macroStack_596_ = lean_ctor_get(v___y_586_, 1);
-lean_inc_n(v_macroStack_596_, 2);
 v___x_597_ = l_Lean_Elab_getBetterRef(v_ref_593_, v_macroStack_596_);
+lean_inc(v_macroStack_596_);
 v___x_598_ = l_Lean_Elab_addMacroStack___at___00Lean_throwError___at___00__private_Lean_Elab_BuiltinDo_Let_0__Lean_Elab_Do_pushTypeIntoReassignment_spec__0_spec__1___redArg(v_a_595_, v_macroStack_596_, v___y_590_);
 v_a_599_ = lean_ctor_get(v___x_598_, 0);
 v_isSharedCheck_607_ = !lean_is_exclusive(v___x_598_);
@@ -8608,11 +8608,9 @@ else
 {
 lean_object* v_head_3064_; lean_object* v_tail_3065_; uint8_t v___x_3066_; lean_object* v___x_3067_; 
 v_head_3064_ = lean_ctor_get(v_as_x27_3053_, 0);
-lean_inc(v_head_3064_);
 v_tail_3065_ = lean_ctor_get(v_as_x27_3053_, 1);
-lean_inc(v_tail_3065_);
-lean_dec_ref(v_as_x27_3053_);
 v___x_3066_ = 1;
+lean_inc(v_head_3064_);
 v___x_3067_ = l_Lean_recordExtraModUseFromDecl___at___00Lean_Elab_liftMacroM___at___00Lean_Elab_Do_elabDoLetOrReassign_spec__9_spec__13(v_head_3064_, v___x_3066_, v___y_3055_, v___y_3056_, v___y_3057_, v___y_3058_, v___y_3059_, v___y_3060_, v___y_3061_);
 if (lean_obj_tag(v___x_3067_) == 0)
 {
@@ -8625,7 +8623,6 @@ goto _start;
 }
 else
 {
-lean_dec(v_tail_3065_);
 return v___x_3067_;
 }
 }
@@ -8643,6 +8640,7 @@ lean_dec_ref(v___y_3075_);
 lean_dec(v___y_3074_);
 lean_dec_ref(v___y_3073_);
 lean_dec_ref(v___y_3072_);
+lean_dec(v_as_x27_3070_);
 return v_res_3080_;
 }
 }
@@ -8867,6 +8865,7 @@ lean_inc(v_expandedMacroDecls_3188_);
 lean_dec(v_a_3184_);
 v___x_3189_ = lean_box(0);
 v___x_3190_ = l_List_forIn_x27_loop___at___00Lean_Elab_liftMacroM___at___00Lean_Elab_Do_elabDoLetOrReassign_spec__9_spec__14___redArg(v_expandedMacroDecls_3188_, v___x_3189_, v___y_3154_, v___y_3155_, v___y_3156_, v___y_3157_, v___y_3158_, v___y_3159_, v___y_3160_);
+lean_dec(v_expandedMacroDecls_3188_);
 if (lean_obj_tag(v___x_3190_) == 0)
 {
 lean_object* v___x_3191_; lean_object* v_env_3192_; lean_object* v_ngen_3193_; lean_object* v_auxDeclNGen_3194_; lean_object* v_traceState_3195_; lean_object* v_cache_3196_; lean_object* v_messages_3197_; lean_object* v_infoState_3198_; lean_object* v_snapshotTasks_3199_; lean_object* v___x_3201_; uint8_t v_isShared_3202_; uint8_t v_isSharedCheck_3225_; 
@@ -10557,6 +10556,7 @@ lean_dec_ref(v___y_3814_);
 lean_dec(v___y_3813_);
 lean_dec_ref(v___y_3812_);
 lean_dec_ref(v___y_3811_);
+lean_dec(v_as_x27_3808_);
 lean_dec(v_as_3807_);
 return v_res_3819_;
 }
