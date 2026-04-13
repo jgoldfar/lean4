@@ -33581,9 +33581,9 @@ return v___x_10813_;
 LEAN_EXPORT lean_object* l_Lean_Elab_Tactic_Omega_evalOmega___lam__0___boxed(lean_object* v___x_10833_, lean_object* v___y_10834_, lean_object* v___y_10835_, lean_object* v___y_10836_, lean_object* v___y_10837_, lean_object* v___y_10838_, lean_object* v___y_10839_, lean_object* v___y_10840_, lean_object* v___y_10841_, lean_object* v___y_10842_){
 _start:
 {
-uint8_t v___x_3416__boxed_10843_; lean_object* v_res_10844_; 
-v___x_3416__boxed_10843_ = lean_unbox(v___x_10833_);
-v_res_10844_ = l_Lean_Elab_Tactic_Omega_evalOmega___lam__0(v___x_3416__boxed_10843_, v___y_10834_, v___y_10835_, v___y_10836_, v___y_10837_, v___y_10838_, v___y_10839_, v___y_10840_, v___y_10841_);
+uint8_t v___x_3419__boxed_10843_; lean_object* v_res_10844_; 
+v___x_3419__boxed_10843_ = lean_unbox(v___x_10833_);
+v_res_10844_ = l_Lean_Elab_Tactic_Omega_evalOmega___lam__0(v___x_3419__boxed_10843_, v___y_10834_, v___y_10835_, v___y_10836_, v___y_10837_, v___y_10838_, v___y_10839_, v___y_10840_, v___y_10841_);
 lean_dec(v___y_10841_);
 lean_dec_ref(v___y_10840_);
 lean_dec(v___y_10839_);
