@@ -20825,7 +20825,7 @@ LEAN_EXPORT lean_object* l_Lean_Compiler_LCNF_instInhabitedDecl_default(uint8_t 
 _start:
 {
 lean_object* v___x_6604_; lean_object* v___x_6605_; uint8_t v___x_6606_; lean_object* v___x_6607_; lean_object* v___x_6608_; 
-v___x_6604_ = lean_obj_once(&l_Lean_Compiler_LCNF_instInhabitedSignature_default___closed__1, &l_Lean_Compiler_LCNF_instInhabitedSignature_default___closed__1_once, _init_l_Lean_Compiler_LCNF_instInhabitedSignature_default___closed__1);
+v___x_6604_ = l_Lean_Compiler_LCNF_instInhabitedSignature_default(v_pu_6603_);
 v___x_6605_ = l_Lean_Compiler_LCNF_instInhabitedDeclValue_default(v_pu_6603_);
 v___x_6606_ = 0;
 v___x_6607_ = lean_box(0);

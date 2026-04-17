@@ -3109,8 +3109,8 @@ lean_object* v_snd_993_;
 v_snd_993_ = lean_ctor_get(v___y_992_, 1);
 lean_inc(v_snd_993_);
 lean_dec_ref(v___y_992_);
-v___y_973_ = v___y_990_;
-v___y_974_ = v___y_991_;
+v___y_973_ = v___y_991_;
+v___y_974_ = v___y_990_;
 v_snd_975_ = v_snd_993_;
 goto v___jp_972_;
 }
@@ -3275,8 +3275,8 @@ v___x_1027_ = ((size_t)0ULL);
 v___x_1028_ = lean_usize_of_nat(v___x_1023_);
 lean_inc(v_id_927_);
 v___x_1029_ = l___private_Init_Data_Array_Basic_0__Array_foldlMUnsafe_fold___at___00__private_Lean_Elab_Tactic_BVDecide_LRAT_Trim_0__Lean_Elab_Tactic_BVDecide_LRAT_trim_useAnalysis_go_spec__4(v_id_927_, v_rupHints_1021_, v___x_1027_, v___x_1028_, v___x_1025_, v_a_915_, v_snd_995_);
-v___y_990_ = v_ratHints_1022_;
-v___y_991_ = v_rupHints_1021_;
+v___y_990_ = v_rupHints_1021_;
+v___y_991_ = v_ratHints_1022_;
 v___y_992_ = v___x_1029_;
 goto v___jp_989_;
 }
@@ -3288,8 +3288,8 @@ v___x_1030_ = ((size_t)0ULL);
 v___x_1031_ = lean_usize_of_nat(v___x_1023_);
 lean_inc(v_id_927_);
 v___x_1032_ = l___private_Init_Data_Array_Basic_0__Array_foldlMUnsafe_fold___at___00__private_Lean_Elab_Tactic_BVDecide_LRAT_Trim_0__Lean_Elab_Tactic_BVDecide_LRAT_trim_useAnalysis_go_spec__4(v_id_927_, v_rupHints_1021_, v___x_1030_, v___x_1031_, v___x_1025_, v_a_915_, v_snd_995_);
-v___y_990_ = v_ratHints_1022_;
-v___y_991_ = v_rupHints_1021_;
+v___y_990_ = v_rupHints_1021_;
+v___y_991_ = v_ratHints_1022_;
 v___y_992_ = v___x_1032_;
 goto v___jp_989_;
 }
@@ -4479,8 +4479,8 @@ lean_dec_ref(v___y_1528_);
 lean_dec(v_snd_1520_);
 lean_dec(v_fst_1519_);
 v___y_1512_ = v___y_1526_;
-v___y_1513_ = v___f_1530_;
-v___y_1514_ = v___x_1531_;
+v___y_1513_ = v___x_1531_;
+v___y_1514_ = v___f_1530_;
 goto v___jp_1511_;
 }
 else
@@ -4552,8 +4552,8 @@ lean_dec_ref(v___y_1528_);
 lean_dec(v_snd_1520_);
 lean_dec(v_fst_1519_);
 v___y_1512_ = v___y_1526_;
-v___y_1513_ = v___f_1530_;
-v___y_1514_ = v___x_1531_;
+v___y_1513_ = v___x_1531_;
+v___y_1514_ = v___f_1530_;
 goto v___jp_1511_;
 }
 }
@@ -4755,7 +4755,7 @@ v___jp_1511_:
 lean_object* v___x_1515_; lean_object* v___x_1516_; 
 v___x_1515_ = lean_box(0);
 lean_inc_ref(v___y_1488_);
-v___x_1516_ = lean_apply_4(v___y_1513_, v___x_1515_, v___y_1514_, v___y_1488_, v___y_1512_);
+v___x_1516_ = lean_apply_4(v___y_1514_, v___x_1515_, v___y_1513_, v___y_1488_, v___y_1512_);
 v___y_1497_ = v___x_1516_;
 goto v___jp_1496_;
 }

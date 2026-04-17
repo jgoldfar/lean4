@@ -2577,8 +2577,8 @@ return v___x_628_;
 else
 {
 lean_object* v___x_631_; 
-lean_dec_ref(v_a_569_);
 lean_dec(v_typeName_573_);
+lean_dec_ref(v_a_569_);
 if (v_isShared_572_ == 0)
 {
 lean_ctor_set(v___x_571_, 0, v_a_566_);
@@ -4828,8 +4828,8 @@ return v___x_1388_;
 else
 {
 lean_object* v___x_1389_; lean_object* v___x_1390_; 
-lean_dec_ref(v_type_1373_);
 lean_dec_ref(v___x_1380_);
+lean_dec_ref(v_type_1373_);
 v___x_1389_ = lean_obj_once(&l_Lean_Compiler_LCNF_toImpureType___closed__3, &l_Lean_Compiler_LCNF_toImpureType___closed__3_once, _init_l_Lean_Compiler_LCNF_toImpureType___closed__3);
 v___x_1390_ = l_panic___at___00Lean_Compiler_LCNF_toImpureType_spec__1(v___x_1389_, v_a_1374_, v_a_1375_);
 return v___x_1390_;

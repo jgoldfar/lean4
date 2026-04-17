@@ -2009,8 +2009,8 @@ v___jp_458_:
 uint8_t v___x_462_; 
 lean_inc(v___y_461_);
 lean_inc(v_x_441_);
-lean_inc_ref(v___y_459_);
-v___x_462_ = l_List_elem___redArg(v___y_459_, v_x_441_, v___y_461_);
+lean_inc_ref(v___y_460_);
+v___x_462_ = l_List_elem___redArg(v___y_460_, v_x_441_, v___y_461_);
 if (v___x_462_ == 0)
 {
 lean_object* v___f_463_; lean_object* v___x_464_; lean_object* v___x_465_; 
@@ -2020,7 +2020,7 @@ lean_closure_set(v___f_463_, 0, v_x_441_);
 lean_closure_set(v___f_463_, 1, v___y_461_);
 lean_closure_set(v___f_463_, 2, v_a_454_);
 v___x_464_ = l_Lean_Meta_Grind_Arith_Cutsat_cutsatExt;
-v___x_465_ = l___private_Lean_Meta_Tactic_Grind_Types_0__Lean_Meta_Grind_SolverExtension_modifyStateImpl___redArg(v___x_464_, v___f_463_, v___y_460_);
+v___x_465_ = l___private_Lean_Meta_Tactic_Grind_Types_0__Lean_Meta_Grind_SolverExtension_modifyStateImpl___redArg(v___x_464_, v___f_463_, v___y_459_);
 return v___x_465_;
 }
 else
@@ -2070,8 +2070,8 @@ if (lean_obj_tag(v___x_477_) == 0)
 {
 lean_object* v___x_478_; 
 v___x_478_ = lean_box(0);
-v___y_459_ = v___f_476_;
-v___y_460_ = v___y_471_;
+v___y_459_ = v___y_471_;
+v___y_460_ = v___f_476_;
 v___y_461_ = v___x_478_;
 goto v___jp_458_;
 }
@@ -2081,8 +2081,8 @@ lean_object* v_val_479_;
 v_val_479_ = lean_ctor_get(v___x_477_, 0);
 lean_inc(v_val_479_);
 lean_dec_ref(v___x_477_);
-v___y_459_ = v___f_476_;
-v___y_460_ = v___y_471_;
+v___y_459_ = v___y_471_;
+v___y_460_ = v___f_476_;
 v___y_461_ = v_val_479_;
 goto v___jp_458_;
 }
