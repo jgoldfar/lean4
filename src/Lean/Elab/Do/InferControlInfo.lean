@@ -129,10 +129,18 @@ partial def ofElem (stx : TSyntax `doElem) : TermElabM ControlInfo := do
     return thenInfo.alternative info
   | `(doElem| unless $_ do $elseSeq) =>
     ControlInfo.alternative {} <$> ofSeq elseSeq
+  -- For/Repeat
   | `(doElem| for $[$[$_ :]? $_ in $_],* do $bodySeq) =>
     let info ← ofSeq bodySeq
     return { info with  -- keep only reassigns and earlyReturn
       numRegularExits := 1,
+      continues := false,
+      breaks := false
+    }
+  | `(doRepeat| repeat $bodySeq) =>
+    let info ← ofSeq bodySeq
+    return { info with
+      numRegularExits := if info.breaks then 1 else 0,
       continues := false,
       breaks := false
     }

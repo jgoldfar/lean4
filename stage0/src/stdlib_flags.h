@@ -1,5 +1,6 @@
 #include "util/options.h"
 
+// bump for ControlInfo handler
 namespace lean {
 options get_default_options() {
     options opts;
