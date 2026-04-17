@@ -273,6 +273,18 @@ with debug assertions enabled (see the `debugAssertions` option).
 @[builtin_doElem_parser] def doDebugAssert := leading_parser:leadPrec
   "debug_assert! " >> termParser
 
+-- Lower priority than the bootstrapping `syntax` declarations in `Init.While` so that, during the
+-- transition period where both exist, only the `Init.While` parser fires (no `choice` ambiguity).
+-- After the next stage0 update, `Init.While` syntax will be removed and these become sole parsers.
+@[builtin_doElem_parser low] def doRepeat      := leading_parser
+  "repeat " >> doSeq
+@[builtin_doElem_parser low] def doWhileH      := leading_parser
+  "while " >> ident >> " : " >> withForbidden "do" termParser >> " do " >> doSeq
+@[builtin_doElem_parser low] def doWhile       := leading_parser
+  "while " >> withForbidden "do" termParser >> " do " >> doSeq
+@[builtin_doElem_parser low] def doRepeatUntil := leading_parser
+  "repeat " >> doSeq >> ppDedent ppLine >> "until " >> termParser
+
 /-
 We use `notFollowedBy` to avoid counterintuitive behavior.
 
