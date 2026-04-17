@@ -3431,12 +3431,12 @@ goto v___jp_1046_;
 v___jp_1070_:
 {
 lean_object* v_neutral_x3f_1073_; lean_object* v___x_1074_; lean_object* v___x_1075_; 
-v_neutral_x3f_1073_ = lean_ctor_get(v___y_1072_, 4);
+v_neutral_x3f_1073_ = lean_ctor_get(v___y_1071_, 4);
 lean_inc(v_neutral_x3f_1073_);
 v___x_1074_ = lean_obj_once(&l___private_Lean_Meta_Tactic_Grind_AC_PP_0__Lean_Meta_Grind_AC_ppStruct_x3f___closed__9, &l___private_Lean_Meta_Tactic_Grind_AC_PP_0__Lean_Meta_Grind_AC_ppStruct_x3f___closed__9_once, _init_l___private_Lean_Meta_Tactic_Grind_AC_PP_0__Lean_Meta_Grind_AC_ppStruct_x3f___closed__9);
-v___x_1075_ = lean_array_push(v___y_1071_, v___x_1074_);
+v___x_1075_ = lean_array_push(v___y_1072_, v___x_1074_);
 v_info_1054_ = v___x_1075_;
-v___y_1055_ = v___y_1072_;
+v___y_1055_ = v___y_1071_;
 v_neutral_x3f_1056_ = v_neutral_x3f_1073_;
 goto v___jp_1053_;
 }
@@ -3454,8 +3454,8 @@ goto v___jp_1053_;
 else
 {
 lean_dec(v_neutral_x3f_1079_);
-v___y_1071_ = v_info_1077_;
-v___y_1072_ = v___y_1078_;
+v___y_1071_ = v___y_1078_;
+v___y_1072_ = v_info_1077_;
 goto v___jp_1070_;
 }
 }
@@ -3463,8 +3463,8 @@ else
 {
 lean_dec_ref(v_idempotentInst_x3f_1080_);
 lean_dec(v_neutral_x3f_1079_);
-v___y_1071_ = v_info_1077_;
-v___y_1072_ = v___y_1078_;
+v___y_1071_ = v___y_1078_;
+v___y_1072_ = v_info_1077_;
 goto v___jp_1070_;
 }
 }

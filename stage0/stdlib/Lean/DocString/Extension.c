@@ -9100,16 +9100,16 @@ goto v___jp_2649_;
 }
 else
 {
-lean_dec(v_pre_2669_);
 lean_dec_ref(v_kind_2668_);
+lean_dec(v_pre_2669_);
 lean_dec_ref(v___x_2666_);
 goto v___jp_2649_;
 }
 }
 else
 {
-lean_dec_ref(v___x_2666_);
 lean_dec(v_kind_2668_);
+lean_dec_ref(v___x_2666_);
 goto v___jp_2649_;
 }
 }
@@ -11379,12 +11379,12 @@ goto v___jp_3508_;
 v___jp_3493_:
 {
 lean_object* v___x_3499_; 
-lean_inc(v___y_3494_);
+lean_inc(v___y_3495_);
 if (v_isShared_3492_ == 0)
 {
 lean_ctor_set_tag(v___x_3491_, 5);
 lean_ctor_set(v___x_3491_, 1, v___y_3497_);
-lean_ctor_set(v___x_3491_, 0, v___y_3494_);
+lean_ctor_set(v___x_3491_, 0, v___y_3495_);
 v___x_3499_ = v___x_3491_;
 goto v_reusejp_3498_;
 }
@@ -11392,7 +11392,7 @@ else
 {
 lean_object* v_reuseFailAlloc_3507_; 
 v_reuseFailAlloc_3507_ = lean_alloc_ctor(5, 2, 0);
-lean_ctor_set(v_reuseFailAlloc_3507_, 0, v___y_3494_);
+lean_ctor_set(v_reuseFailAlloc_3507_, 0, v___y_3495_);
 lean_ctor_set(v_reuseFailAlloc_3507_, 1, v___y_3497_);
 v___x_3499_ = v_reuseFailAlloc_3507_;
 goto v_reusejp_3498_;
@@ -11408,9 +11408,9 @@ v___x_3501_ = l_Array_repr___at___00Lean_Doc_instReprBlock_repr___at___00Array_r
 v___x_3502_ = lean_alloc_ctor(5, 2, 0);
 lean_ctor_set(v___x_3502_, 0, v___x_3500_);
 lean_ctor_set(v___x_3502_, 1, v___x_3501_);
-lean_inc(v___y_3495_);
+lean_inc(v___y_3494_);
 v___x_3503_ = lean_alloc_ctor(4, 2, 0);
-lean_ctor_set(v___x_3503_, 0, v___y_3495_);
+lean_ctor_set(v___x_3503_, 0, v___y_3494_);
 lean_ctor_set(v___x_3503_, 1, v___x_3502_);
 v___x_3504_ = 0;
 v___x_3505_ = lean_alloc_ctor(6, 1, 1);
@@ -11434,8 +11434,8 @@ v___x_3514_ = l_Int_repr(v_start_3488_);
 lean_dec(v_start_3488_);
 v___x_3515_ = lean_alloc_ctor(3, 1, 0);
 lean_ctor_set(v___x_3515_, 0, v___x_3514_);
-v___y_3494_ = v___x_3511_;
-v___y_3495_ = v___y_3509_;
+v___y_3494_ = v___y_3509_;
+v___y_3495_ = v___x_3511_;
 v___y_3496_ = v___x_3510_;
 v___y_3497_ = v___x_3515_;
 goto v___jp_3493_;
@@ -11449,8 +11449,8 @@ lean_dec(v_start_3488_);
 v___x_3518_ = lean_alloc_ctor(3, 1, 0);
 lean_ctor_set(v___x_3518_, 0, v___x_3517_);
 v___x_3519_ = l_Repr_addAppParen(v___x_3518_, v___x_3516_);
-v___y_3494_ = v___x_3511_;
-v___y_3495_ = v___y_3509_;
+v___y_3494_ = v___y_3509_;
+v___y_3495_ = v___x_3511_;
 v___y_3496_ = v___x_3510_;
 v___y_3497_ = v___x_3519_;
 goto v___jp_3493_;

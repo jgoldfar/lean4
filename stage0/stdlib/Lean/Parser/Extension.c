@@ -13818,8 +13818,8 @@ goto v___jp_4490_;
 }
 else
 {
-lean_dec_ref(v_head_4492_);
 lean_dec(v_tail_4493_);
+lean_dec_ref(v_head_4492_);
 lean_dec(v_ref_4488_);
 goto v___jp_4490_;
 }

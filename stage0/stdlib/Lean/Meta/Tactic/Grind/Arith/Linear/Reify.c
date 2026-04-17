@@ -4085,8 +4085,8 @@ return v___x_1136_;
 else
 {
 lean_object* v___x_1138_; 
-lean_dec_ref(v___x_1136_);
 lean_dec(v_a_1137_);
+lean_dec_ref(v___x_1136_);
 v___x_1138_ = l___private_Lean_Meta_Tactic_Grind_Arith_Linear_Reify_0__Lean_Meta_Grind_Arith_Linear_reify_x3f_asTopVar(v_skipVar_1001_, v_generation_1002_, v_e_1000_, v_a_1003_, v_a_1004_, v_a_1005_, v_a_1006_, v_a_1007_, v_a_1008_, v_a_1009_, v_a_1010_, v_a_1011_, v_a_1012_, v_a_1013_);
 return v___x_1138_;
 }

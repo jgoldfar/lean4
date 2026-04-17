@@ -11978,7 +11978,7 @@ if (v___x_3981_ == 0)
 if (v_noDefaults_3959_ == 0)
 {
 v___y_3970_ = v___y_3980_;
-v___y_3971_ = v___y_3977_;
+v___y_3971_ = v___y_3976_;
 goto v___jp_3969_;
 }
 else
@@ -11987,9 +11987,9 @@ if (v_star_3960_ == 0)
 {
 lean_object* v___x_3982_; lean_object* v___x_3983_; lean_object* v_a_3984_; lean_object* v___x_3986_; uint8_t v_isShared_3987_; uint8_t v_isSharedCheck_3991_; 
 lean_dec(v___y_3980_);
-lean_dec_ref(v___y_3977_);
+lean_dec_ref(v___y_3976_);
 v___x_3982_ = lean_obj_once(&l_Lean_Meta_SolveByElim_mkAssumptionSet___closed__1, &l_Lean_Meta_SolveByElim_mkAssumptionSet___closed__1_once, _init_l_Lean_Meta_SolveByElim_mkAssumptionSet___closed__1);
-v___x_3983_ = l_Lean_throwError___at___00Lean_Meta_SolveByElim_SolveByElimConfig_testPartialSolutions_spec__3___redArg(v___x_3982_, v___y_3979_, v___y_3975_, v___y_3976_, v___y_3978_);
+v___x_3983_ = l_Lean_throwError___at___00Lean_Meta_SolveByElim_SolveByElimConfig_testPartialSolutions_spec__3___redArg(v___x_3982_, v___y_3979_, v___y_3975_, v___y_3978_, v___y_3977_);
 v_a_3984_ = lean_ctor_get(v___x_3983_, 0);
 v_isSharedCheck_3991_ = !lean_is_exclusive(v___x_3983_);
 if (v_isSharedCheck_3991_ == 0)
@@ -12031,7 +12031,7 @@ return v___x_3989_;
 else
 {
 v___y_3970_ = v___y_3980_;
-v___y_3971_ = v___y_3977_;
+v___y_3971_ = v___y_3976_;
 goto v___jp_3969_;
 }
 }
@@ -12039,7 +12039,7 @@ goto v___jp_3969_;
 else
 {
 v___y_3970_ = v___y_3980_;
-v___y_3971_ = v___y_3977_;
+v___y_3971_ = v___y_3976_;
 goto v___jp_3969_;
 }
 }
@@ -12054,11 +12054,11 @@ if (v_noDefaults_3959_ == 0)
 lean_object* v___x_4005_; lean_object* v___x_4006_; lean_object* v___x_4007_; 
 v___x_4005_ = l_List_mapTR_loop___at___00Lean_Meta_SolveByElim_mkAssumptionSet_spec__3(v_add_3961_, v___y_3997_);
 v___x_4006_ = l_List_appendTR___redArg(v___x_4005_, v___x_4004_);
-v___x_4007_ = l_List_appendTR___redArg(v___x_4006_, v___y_3999_);
+v___x_4007_ = l_List_appendTR___redArg(v___x_4006_, v___y_4001_);
 v___y_3975_ = v___y_3996_;
-v___y_3976_ = v___y_3998_;
-v___y_3977_ = v___f_3994_;
-v___y_3978_ = v___y_4001_;
+v___y_3976_ = v___f_3994_;
+v___y_3977_ = v___y_3999_;
+v___y_3978_ = v___y_3998_;
 v___y_3979_ = v___y_4000_;
 v___y_3980_ = v___x_4007_;
 goto v___jp_3974_;
@@ -12066,13 +12066,13 @@ goto v___jp_3974_;
 else
 {
 lean_object* v___x_4008_; lean_object* v___x_4009_; 
-lean_dec(v___y_3999_);
+lean_dec(v___y_4001_);
 v___x_4008_ = l_List_mapTR_loop___at___00Lean_Meta_SolveByElim_mkAssumptionSet_spec__3(v_add_3961_, v___y_3997_);
 v___x_4009_ = l_List_appendTR___redArg(v___x_4008_, v___x_4004_);
 v___y_3975_ = v___y_3996_;
-v___y_3976_ = v___y_3998_;
-v___y_3977_ = v___f_3994_;
-v___y_3978_ = v___y_4001_;
+v___y_3976_ = v___f_3994_;
+v___y_3977_ = v___y_3999_;
+v___y_3978_ = v___y_3998_;
 v___y_3979_ = v___y_4000_;
 v___y_3980_ = v___x_4009_;
 goto v___jp_3974_;
@@ -12171,9 +12171,9 @@ lean_dec(v_a_4034_);
 v___y_3996_ = v___y_4012_;
 v___y_3997_ = v___x_4042_;
 v___y_3998_ = v___y_4013_;
-v___y_3999_ = v___x_4055_;
+v___y_3999_ = v___y_4014_;
 v___y_4000_ = v___y_4011_;
-v___y_4001_ = v___y_4014_;
+v___y_4001_ = v___x_4055_;
 v___y_4002_ = v___x_4057_;
 goto v___jp_3995_;
 }
@@ -12189,9 +12189,9 @@ lean_dec(v_a_4034_);
 v___y_3996_ = v___y_4012_;
 v___y_3997_ = v___x_4042_;
 v___y_3998_ = v___y_4013_;
-v___y_3999_ = v___x_4055_;
+v___y_3999_ = v___y_4014_;
 v___y_4000_ = v___y_4011_;
-v___y_4001_ = v___y_4014_;
+v___y_4001_ = v___x_4055_;
 v___y_4002_ = v___x_4057_;
 goto v___jp_3995_;
 }
@@ -12204,9 +12204,9 @@ lean_dec(v_a_4034_);
 v___y_3996_ = v___y_4012_;
 v___y_3997_ = v___x_4042_;
 v___y_3998_ = v___y_4013_;
-v___y_3999_ = v___x_4055_;
+v___y_3999_ = v___y_4014_;
 v___y_4000_ = v___y_4011_;
-v___y_4001_ = v___y_4014_;
+v___y_4001_ = v___x_4055_;
 v___y_4002_ = v___x_4062_;
 goto v___jp_3995_;
 }
@@ -12220,9 +12220,9 @@ lean_dec(v_a_4034_);
 v___y_3996_ = v___y_4012_;
 v___y_3997_ = v___x_4042_;
 v___y_3998_ = v___y_4013_;
-v___y_3999_ = v___x_4055_;
+v___y_3999_ = v___y_4014_;
 v___y_4000_ = v___y_4011_;
-v___y_4001_ = v___y_4014_;
+v___y_4001_ = v___x_4055_;
 v___y_4002_ = v___x_4064_;
 goto v___jp_3995_;
 }
