@@ -17908,7 +17908,7 @@ lean_object* v___x_7254_; lean_object* v___x_7255_; lean_object* v___x_7256_; le
 v___x_7254_ = ((lean_object*)(l___private_Lean_Parser_Do_0__Lean_Parser_initFn___closed__2_00___x40_Lean_Parser_Do_1779894534____hygCtx___hyg_2_));
 v___x_7255_ = ((lean_object*)(l_Lean_Parser_Term_doRepeat___closed__1));
 v___x_7256_ = l_Lean_Parser_Term_doRepeat;
-v___x_7257_ = lean_unsigned_to_nat(100u);
+v___x_7257_ = lean_unsigned_to_nat(1000u);
 v___x_7258_ = l_Lean_Parser_addBuiltinLeadingParser(v___x_7254_, v___x_7255_, v___x_7256_, v___x_7257_);
 return v___x_7258_;
 }
@@ -18154,7 +18154,7 @@ lean_object* v___x_7384_; lean_object* v___x_7385_; lean_object* v___x_7386_; le
 v___x_7384_ = ((lean_object*)(l___private_Lean_Parser_Do_0__Lean_Parser_initFn___closed__2_00___x40_Lean_Parser_Do_1779894534____hygCtx___hyg_2_));
 v___x_7385_ = ((lean_object*)(l_Lean_Parser_Term_doWhileH___closed__1));
 v___x_7386_ = l_Lean_Parser_Term_doWhileH;
-v___x_7387_ = lean_unsigned_to_nat(100u);
+v___x_7387_ = lean_unsigned_to_nat(1000u);
 v___x_7388_ = l_Lean_Parser_addBuiltinLeadingParser(v___x_7384_, v___x_7385_, v___x_7386_, v___x_7387_);
 return v___x_7388_;
 }
@@ -18419,7 +18419,7 @@ lean_object* v___x_7517_; lean_object* v___x_7518_; lean_object* v___x_7519_; le
 v___x_7517_ = ((lean_object*)(l___private_Lean_Parser_Do_0__Lean_Parser_initFn___closed__2_00___x40_Lean_Parser_Do_1779894534____hygCtx___hyg_2_));
 v___x_7518_ = ((lean_object*)(l_Lean_Parser_Term_doWhile___closed__1));
 v___x_7519_ = l_Lean_Parser_Term_doWhile;
-v___x_7520_ = lean_unsigned_to_nat(100u);
+v___x_7520_ = lean_unsigned_to_nat(1000u);
 v___x_7521_ = l_Lean_Parser_addBuiltinLeadingParser(v___x_7517_, v___x_7518_, v___x_7519_, v___x_7520_);
 return v___x_7521_;
 }
@@ -18675,7 +18675,7 @@ lean_object* v___x_7646_; lean_object* v___x_7647_; lean_object* v___x_7648_; le
 v___x_7646_ = ((lean_object*)(l___private_Lean_Parser_Do_0__Lean_Parser_initFn___closed__2_00___x40_Lean_Parser_Do_1779894534____hygCtx___hyg_2_));
 v___x_7647_ = ((lean_object*)(l_Lean_Parser_Term_doRepeatUntil___closed__1));
 v___x_7648_ = l_Lean_Parser_Term_doRepeatUntil;
-v___x_7649_ = lean_unsigned_to_nat(100u);
+v___x_7649_ = lean_unsigned_to_nat(1000u);
 v___x_7650_ = l_Lean_Parser_addBuiltinLeadingParser(v___x_7646_, v___x_7647_, v___x_7648_, v___x_7649_);
 return v___x_7650_;
 }
