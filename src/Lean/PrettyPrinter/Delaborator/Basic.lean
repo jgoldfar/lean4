@@ -484,6 +484,7 @@ open SubExpr (Pos PosMap)
 open Delaborator (OptionsPerPos topDownAnalyze DelabM getPPOption)
 
 def delabLevel (l : Level) (prec : Nat) : MetaM Syntax.Level := do
+  let l ← if getPPInstantiateMVars (← getOptions) then instantiateLevelMVars l else pure l
   let mvars := getPPMVarsLevels (← getOptions)
   return Level.quote l prec (mvars := mvars) (lIndex? := (← getMCtx).findLevelIndex?)
 
