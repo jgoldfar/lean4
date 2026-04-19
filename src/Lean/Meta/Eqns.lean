@@ -46,7 +46,7 @@ def eqnAffectingOptions : Array (Lean.Option Bool) := #[backward.eqns.nonrecursi
 keyed by declaration name. Only populated when at least one option has a non-default value.
 Stores an association list of (option name, value) pairs for options that differ from defaults. -/
 builtin_initialize eqnOptionsExt : MapDeclarationExtension (Array (Name × DataValue)) ←
-  mkMapDeclarationExtension (asyncMode := .async .asyncEnv)
+  mkMapDeclarationExtension (asyncMode := .local)
 
 def eqnThmSuffixBase := "eq"
 def eqnThmSuffixBasePrefix := eqnThmSuffixBase ++ "_"
