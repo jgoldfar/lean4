@@ -68,7 +68,10 @@ def setGoals (goals : List Goal) : GrindTacticM Unit :=
 
 def pruneSolvedGoals : GrindTacticM Unit := do
   let gs ← getGoals
-  let gs := gs.filter fun g => !g.inconsistent
+  let gs ← gs.filterM fun g => do
+    if g.inconsistent then return false
+    -- The metavariable may have been assigned by `isDefEq`
+    return !(← g.mvarId.isAssigned)
   setGoals gs
 
 def getUnsolvedGoals : GrindTacticM (List Goal) := do

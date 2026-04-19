@@ -14,3 +14,8 @@ example (x y : Nat) (h : x ≤ y) : (1 - 1) + x  ≤ y + (1 + 0) := by
     simp chainSimp
     -- In the following tactic the goal is closed while preprocessing the target
     lia
+
+example : ∃ x, x = a := by
+  sym =>
+    apply Exists.intro
+    apply Eq.refl
