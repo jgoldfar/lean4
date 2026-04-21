@@ -65,3 +65,18 @@ example : IO Nat := do
       pure ()
     return 42
   return 1
+
+-- Break-less `repeat` under both branches of an `if`. If `repeat` reported
+-- `numRegularExits := 0`, the if's combined info would have `numRegularExits = 0` too, and the
+-- dead-code warning would fire on `return 2`. The user cannot remove `return 2` though: the loop
+-- expression is `Id PUnit`, so without a trailing element the do block's result type can't be
+-- `Id Nat`. We therefore pin `repeat`'s `numRegularExits` at `1` (same as `for ... in`).
+#guard_msgs in
+example (x : Nat) : Id Nat := do
+  if x = 3 then
+    repeat
+      pure ()
+  else
+    repeat
+      pure ()
+  return 2

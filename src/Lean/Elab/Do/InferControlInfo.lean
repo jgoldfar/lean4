@@ -132,17 +132,17 @@ partial def ofElem (stx : TSyntax `doElem) : TermElabM ControlInfo := do
   | `(doElem| unless $_ do $elseSeq) =>
     ControlInfo.alternative {} <$> ofSeq elseSeq
   -- For/Repeat
-  | `(doElem| for $[$[$_ :]? $_ in $_],* do $bodySeq) =>
+  | `(doElem| for $[$[$_ :]? $_ in $_],* do $bodySeq)
+  | `(doRepeat| repeat $bodySeq) =>
+    -- `numRegularExits := 1` unconditionally, matching `for ... in`. For break-less `repeat` the
+    -- loop never terminates normally, so `0` looks more accurate semantically. But the loop
+    -- expression still has type `m Unit`, and the do block's continuation after the loop is what
+    -- carries that type. Reporting `0` makes the elaborator flag that continuation as dead code,
+    -- yet the user has no way to remove it without breaking the type of the enclosing do block
+    -- (unless its monadic result type happens to be `Unit`). So we pin at `1`; see #13437.
     let info ← ofSeq bodySeq
     return { info with  -- keep only reassigns and earlyReturn
       numRegularExits := 1,
-      continues := false,
-      breaks := false
-    }
-  | `(doRepeat| repeat $bodySeq) =>
-    let info ← ofSeq bodySeq
-    return { info with
-      numRegularExits := if info.breaks then 1 else 0,
       continues := false,
       breaks := false
     }
