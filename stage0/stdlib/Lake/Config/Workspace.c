@@ -1,6 +1,6 @@
 // Lean compiler output
 // Module: Lake.Config.Workspace
-// Imports: public import Lake.Config.Env public import Lake.Config.LeanExe public import Lake.Config.ExternLib public import Lake.Config.FacetConfig public import Lake.Config.TargetConfig public import Lake.Config.LakeConfig meta import Lake.Util.OpaqueType import Lean.DocString.Syntax
+// Imports: public import Lake.Config.Env public import Lake.Config.LeanExe public import Lake.Config.ExternLib public import Lake.Config.FacetConfig public import Lake.Config.TargetConfig public import Lake.Config.LakeConfig meta import Lake.Util.OpaqueType import Lean.DocString.Syntax import Init.Data.Range.Polymorphic.Iterators import Init.Data.Range.Polymorphic.Lemmas
 #include <lean/lean.h>
 #if defined(__clang__)
 #pragma clang diagnostic ignored "-Wunused-parameter"
@@ -3981,9 +3981,9 @@ goto v___jp_1399_;
 v___jp_1349_:
 {
 lean_object* v___x_1355_; lean_object* v___x_1356_; lean_object* v___x_1357_; lean_object* v___x_1358_; lean_object* v___x_1359_; lean_object* v___x_1360_; lean_object* v___x_1361_; lean_object* v___x_1362_; lean_object* v___x_1363_; lean_object* v___x_1364_; lean_object* v___x_1365_; lean_object* v___x_1366_; lean_object* v___x_1367_; lean_object* v___x_1368_; lean_object* v_vars_1369_; uint8_t v___x_1370_; 
-lean_inc_ref(v___y_1352_);
+lean_inc_ref(v___y_1351_);
 v___x_1355_ = lean_alloc_ctor(0, 2, 0);
-lean_ctor_set(v___x_1355_, 0, v___y_1352_);
+lean_ctor_set(v___x_1355_, 0, v___y_1351_);
 lean_ctor_set(v___x_1355_, 1, v___y_1354_);
 v___x_1356_ = ((lean_object*)(l_Lake_Workspace_augmentedEnvVars___closed__1));
 v___x_1357_ = l_Lake_Workspace_augmentedPath(v_self_1340_);
@@ -3996,9 +3996,9 @@ lean_ctor_set(v___x_1360_, 1, v___x_1359_);
 v___x_1361_ = lean_unsigned_to_nat(6u);
 v___x_1362_ = lean_mk_empty_array_with_capacity(v___x_1361_);
 v___x_1363_ = lean_array_push(v___x_1362_, v___x_1348_);
-v___x_1364_ = lean_array_push(v___x_1363_, v___y_1351_);
+v___x_1364_ = lean_array_push(v___x_1363_, v___y_1350_);
 v___x_1365_ = lean_array_push(v___x_1364_, v___y_1353_);
-v___x_1366_ = lean_array_push(v___x_1365_, v___y_1350_);
+v___x_1366_ = lean_array_push(v___x_1365_, v___y_1352_);
 v___x_1367_ = lean_array_push(v___x_1366_, v___x_1355_);
 v___x_1368_ = lean_array_push(v___x_1367_, v___x_1360_);
 v_vars_1369_ = l_Array_append___redArg(v___x_1345_, v___x_1368_);
@@ -4058,9 +4058,9 @@ lean_object* v___x_1396_; lean_object* v___x_1397_;
 v___x_1396_ = l_Lake_Env_leanGithash(v_lakeEnv_1341_);
 v___x_1397_ = lean_alloc_ctor(1, 1, 0);
 lean_ctor_set(v___x_1397_, 0, v___x_1396_);
-v___y_1350_ = v___x_1394_;
-v___y_1351_ = v___x_1384_;
-v___y_1352_ = v___x_1395_;
+v___y_1350_ = v___x_1384_;
+v___y_1351_ = v___x_1395_;
+v___y_1352_ = v___x_1394_;
 v___y_1353_ = v___x_1389_;
 v___y_1354_ = v___x_1397_;
 goto v___jp_1349_;
@@ -4069,9 +4069,9 @@ else
 {
 lean_object* v___x_1398_; 
 v___x_1398_ = lean_box(0);
-v___y_1350_ = v___x_1394_;
-v___y_1351_ = v___x_1384_;
-v___y_1352_ = v___x_1395_;
+v___y_1350_ = v___x_1384_;
+v___y_1351_ = v___x_1395_;
+v___y_1352_ = v___x_1394_;
 v___y_1353_ = v___x_1389_;
 v___y_1354_ = v___x_1398_;
 goto v___jp_1349_;
@@ -4211,6 +4211,8 @@ lean_object* runtime_initialize_Lake_Config_FacetConfig(uint8_t builtin);
 lean_object* runtime_initialize_Lake_Config_TargetConfig(uint8_t builtin);
 lean_object* runtime_initialize_Lake_Config_LakeConfig(uint8_t builtin);
 lean_object* runtime_initialize_Lean_DocString_Syntax(uint8_t builtin);
+lean_object* runtime_initialize_Init_Data_Range_Polymorphic_Iterators(uint8_t builtin);
+lean_object* runtime_initialize_Init_Data_Range_Polymorphic_Lemmas(uint8_t builtin);
 static bool _G_runtime_initialized = false;
 LEAN_EXPORT lean_object* runtime_initialize_Lake_Config_Workspace(uint8_t builtin) {
 lean_object * res;
@@ -4237,6 +4239,12 @@ lean_dec_ref(res);
 res = runtime_initialize_Lean_DocString_Syntax(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
+res = runtime_initialize_Init_Data_Range_Polymorphic_Iterators(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = runtime_initialize_Init_Data_Range_Polymorphic_Lemmas(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
 return lean_io_result_mk_ok(lean_box(0));
 }
 lean_object* runtime_initialize_Lake_Util_OpaqueType(uint8_t builtin);
@@ -4258,6 +4266,8 @@ lean_object* initialize_Lake_Config_TargetConfig(uint8_t builtin);
 lean_object* initialize_Lake_Config_LakeConfig(uint8_t builtin);
 lean_object* initialize_Lake_Util_OpaqueType(uint8_t builtin);
 lean_object* initialize_Lean_DocString_Syntax(uint8_t builtin);
+lean_object* initialize_Init_Data_Range_Polymorphic_Iterators(uint8_t builtin);
+lean_object* initialize_Init_Data_Range_Polymorphic_Lemmas(uint8_t builtin);
 static bool _G_initialized = false;
 LEAN_EXPORT lean_object* initialize_Lake_Config_Workspace(uint8_t builtin) {
 lean_object * res;
@@ -4285,6 +4295,12 @@ res = initialize_Lake_Util_OpaqueType(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 res = initialize_Lean_DocString_Syntax(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Init_Data_Range_Polymorphic_Iterators(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Init_Data_Range_Polymorphic_Lemmas(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 res = runtime_initialize_Lake_Config_Workspace(builtin);
